@@ -53,12 +53,64 @@ label {
 .btn.social {
   color: #FFFFFF;
   text-align: center;
+  height: 32px;
+  width: 32px;
+  padding: 2px;
+  font-size: 18px;
 }
 .btn.facebook {
   background: #3b5998;
 }
 .btn.facebook:hover {
   background: #4c70ba;
+}
+.btn.twitter {
+  background: #00aced;
+}
+.btn.twitter:hover {
+  background: #21c2ff;
+}
+.btn.youtube {
+  background: #bb0000;
+}
+.btn.youtube:hover {
+  background: #ee0000;
+}
+.btn.gplus {
+  background: #dd4b39;
+}
+.btn.gplus:hover {
+  background: #e47365;
+}
+.btn.instagram {
+  background: #517fa4;
+}
+.btn.instagram:hover {
+  background: #7098b8;
+}
+.btn.flickr {
+  background: #ff0084;
+}
+.btn.flickr:hover {
+  background: #ff339d;
+}
+.btn.linkedin {
+  background: #007bb6;
+}
+.btn.linkedin:hover {
+  background: #009de9;
+}
+.btn.blogger {
+  background: #ff6600;
+}
+.btn.blogger:hover {
+  background: #ff8533;
+}
+.btn.foursquare {
+  background: #0072b1;
+}
+.btn.foursquare:hover {
+  background: #0093e4;
 }
 
 /* BOTÕES DOS MENUS DO MEC E DE SENTIMENTO */
@@ -477,7 +529,7 @@ label {
 /* CITAÇÃO */
 .quote {
   background-color: white;
-  margin: 0 0 20px 0;
+  margin: 0 0 40px 0;
   /*quote-content*/
   /*footer*/
   /* citação pequena */
@@ -489,6 +541,8 @@ label {
 .quote .quote-content .user-img {
   float: left;
   position: relative;
+  width: 100px;
+  height: 100px;
 }
 .quote .quote-content .user-img img {
   width: 100%;
@@ -515,7 +569,7 @@ label {
   display: block;
   float: right;
   position: relative;
-  top: 5px;
+  top: -5px;
   right: -5px;
   width: 230px;
 }
@@ -573,7 +627,7 @@ label {
   max-height: 150px;
 }
 .quote footer {
-  background-color: #bdc3c7;
+  background-color: #e4e6e8;
 }
 .quote footer .feeling-menu .btn {
   width: 34px;
@@ -596,6 +650,8 @@ label {
 }
 .quote .accordion-hidden {
   padding: 0px 20px 20px 100px;
+  max-height: 300px;
+  overflow: auto;
 }
 .quote.quote-small {
   padding: 20px 0;
@@ -619,13 +675,13 @@ label {
   height: 80px;
 }
 .quote.quote-small .quote-content .quote-data {
-  width: 680px;
+  width: 670px;
 }
 .quote.quote-small .quote-content .sidebar {
   width: 32px;
 }
 .quote.quote-small footer .mec-menu {
-  margin: 0 58px;
+  margin: 0 52px;
 }
 .quote.quote-small footer .quote-actions {
   float: right;
