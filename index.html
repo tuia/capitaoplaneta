@@ -1,0 +1,593 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Planeta Y</title>
+
+    <!-- STYLES -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <!--/FONTAWESOME-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!--/GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+    <!--/NAVBAR-->
+    <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <!--/MENU INSTITUIÇÃO-->
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Instituição <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul><!--/.dropdown-menu-->
+          </li><!--/.dropdown-->
+        </ul><!--/.navbar-nav-->
+
+        <!--/LOGO-->
+        <a class="navbar-brand" href="#">Planeta Y</a>
+
+        <!--/MENU USUÁRIO-->
+        <ul class="nav navbar-nav pull-right">          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuário <span class="caret"></span></a>
+            <ul class="dropdown-menu pull-right" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul><!--/.dropdown-menu-->
+          </li><!--/.dropdown-->
+        </ul><!--/.navbar-nav-->
+
+      </div><!-- /.container-->
+    </nav><!--/.navbar-->
+
+    <header id="header" class=""></header>
+
+    <!--/CONTEÚDO DA PÁGINA-->
+    <div id="content">
+      <div class="container">
+      
+
+        <!--/CITAÇÃO-->
+        <!--/aqui vão se aplicar classes como SELECTED-->
+        <div class="quote accordion-box">
+
+          <div class="quote-content">
+
+            <!--/IMAGEM DO USUÁRIO-->
+            <div class="user-img">
+              <img src="assets/img/user-01.jpg" alt="nome do usuário">
+            </div><!--/user-img-->
+
+            <!--/CITAÇÃO-->
+            <div class="quote-data"> 
+              <h5>
+                <a href="perfil-do-usuario.html" class="user-name">Nome do Usuário</a>
+                <small><a href="citacao-original" target="blank" class="light">terça-feira, 25/04/14 <span class="lighter">às</span> 10:30</a> <span class="lighter">via</span> <a href="fanpage" target="blank" class="light">fanpage</a></small>
+              </h5>
+
+              <p class="quote-txt">As notas estão postadas. Aos alunos que passaram direto, desejo excelentes férias, um Feliz Natal e um Ano Novo com ainda mais alegrias. Aos demais, ainda nos encontraremos no dia 17/12/13.</p>
+            </div><!--/.quote-data-->
+
+
+            <!--/CONTROLES-->
+
+              <!--/BARRA DE STATUS-->
+              <div class="sidebar">
+                <div class="dropdown status-bar">
+                  <a data-toggle="dropdown" href="#" class="ribbon status-btn aguardando">Aguardando</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li><a href="#" class="btn aberta">aberta</a></li>
+                    <li><a href="#" class="btn aguardando">aguardando</a></li>
+                    <li><a href="#" class="btn fechada">fechada</a></li>
+                  </ul>
+                </div><!--/.dropdown-->
+
+                <!--/REDE SOCIAL-->
+                <a href="#" class="btn social facebook"><i class="fa fa-facebook"></i></a>
+
+                <div class="clearfix"></div>
+
+                <!--/TAGS-->
+                <div class="tags">
+                  <p><span class="badge">responder depois</span> <span class="badge">lead</span> <span class="badge">calendario</span> <span class="badge">teste</span> </p>
+                </div><!--/.tags-->                  
+                <div class="dropdown tags-menu">
+                  <a data-toggle="dropdown" href="#" class="btn tags-btn"><i class="glyphicon glyphicon-tag"></i></a>
+                  <div class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+                    <form role="form">
+
+                      <div class="form-group">
+                        <label for="search">marcar como:</label>
+                        <input type="search" class="form-control" id="" placeholder="">
+                      </div><!--/form-group-->
+
+                      <div class="auto">
+                        <div class="checkbox">
+                          <label><input type="checkbox"> <i class="glyphicon glyphicon-star"></i> favoritos</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox"> lead</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox"> responder depois</label>
+                        </div>
+                      </div><!--/auto-->
+
+                      <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#newtag-modal"><span class="glyphicon glyphicon-plus"></span> novo marcador</a></div>
+                      <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#configtag-modal"><span class="glyphicon glyphicon-cog"></span> gerenciar marcadores</a></div>
+                      <div class=""><a href="#" class="btn-primary btn btn-block">aplicar</a></div>
+                      
+                    </form>
+                  </div><!--/.dropdown-menu-->
+                </div><!--/.dropdown-->
+
+
+              </div><!--/sidebar-->
+
+              <div class="clearfix"></div>
+          </div><!--/quote-content-->
+
+
+          <footer>
+
+            <!--/SENTIMENTO-->
+            <div class="feeling-menu btn-group">
+              <button type="button" class="btn good active" data-toggle="tooltip" title="positivo">positivo</button>
+              <button type="button" class="btn neutral" data-toggle="tooltip" title="neutro">neutro</button>
+              <button type="button" class="btn bad" data-toggle="tooltip" title="negativo">negativo</button>
+            </div><!--/.feeling-menu .btn-droup-->
+
+
+            <!--/INDICADORES MEC-->
+            <div class="mec-menu btn-group">
+
+              <!--/CAPTAÇÃO-->
+              <div class="btn-group dropup">
+                <button type="button" class="btn dropdown-toggle captacao" data-toggle="dropdown" title="captação">captação</button>
+                <ul class="dropdown-menu feeling-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/EMPREGABILIDADE-->
+              <div class="btn-group dropup">
+                <button type="button" class="btn dropdown-toggle empregabilidade" data-toggle="dropdown" title="empregabilidade">empregabilidade</button>
+                <ul class="dropdown-menu feeling-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/LOCALIZAÇÃO-->
+              <div class="btn-group dropup">
+                <button type="button" class="btn dropdown-toggle localizacao" data-toggle="dropdown" title="localização">localização</button>
+                <ul class="dropdown-menu feeling-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/ATUAÇÃO ÉTICA-->
+              <div class="btn-group dropup">
+                <button type="button" class="btn dropdown-toggle atuacao-etica" data-toggle="dropdown" title="atuação ética">atuação ética</button>
+                <ul class="dropdown-menu feeling-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/CORPO DOCENTE-->
+              <div class="btn-group dropup">
+                <button type="button" class="btn dropdown-toggle corpo-docente" data-toggle="dropdown" title="coprpo docente">corpo docente</button>
+                <ul class="dropdown-menu feeling-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/CREDENCIAMENTO NO MEC-->
+              <div class="btn-group dropup">
+                <button type="button" class="btn dropdown-toggle credenciamento-no-mec" data-toggle="dropdown" title="credenciamento no mec">credenciamento no mec</button>
+                <ul class="dropdown-menu feeling-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/PREÇO-->
+              <div class="btn-group dropup">
+                <button type="button" class="btn dropdown-toggle preco" data-toggle="dropdown" title="preço">preço</button>
+                <ul class="dropdown-menu feeling-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/QUALIDADE DE ENSINO-->
+              <div class="btn-group dropup">
+                <button type="button" class="btn dropdown-toggle qualidade-de-ensino" data-toggle="dropdown" title="qualidade de ensino">qualidade de ensino</button>
+                <ul class="dropdown-menu feeling-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/INFRAESTRUTURA-->
+              <div class="btn-group dropup">
+                <button type="button" class="btn dropdown-toggle infraestrutura" data-toggle="dropdown" title="infraestrutura">infraestrutura</button>
+                <ul class="dropdown-menu feeling-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/RELACIONAMENTO-->
+              <div class="btn-group dropup">
+                <button type="button" class="btn dropdown-toggle relacionamento" data-toggle="dropdown" title="relacionamento">relacionamento</button>
+                <ul class="dropdown-menu feeling-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+            </div><!--/.mec-menu .btn-group--> 
+
+
+            <!--/AÇÕES - ENCAMINHAR E RESPONDER-->
+            <div class="quote-actions btn-group">
+
+              <!--/ENCAMINAR-->
+              <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-arrow-right"></span> encaminhar</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">captação</a></li>
+                  <li><a href="#">CRM</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#foward-modal">email</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/RESPONDER-->
+              <button type="button" class="btn" data-toggle="modal" data-target="#answer-modal"><i class="fa fa-reply"></i> responder</button>
+
+            </div><!--/.quote-actions .btn-group--> 
+
+
+            <!--/Expandir-->
+            <a href="#" class="btn btn-default pull-right accordion-trigger"><i class="fa fa-chevron-down"></i></a>
+
+          </footer>
+
+          <!--/CONTEÚDO ESCONDIDO-->
+          <div class="accordion-hidden">
+
+            <!--/HISTÓRICO DA CITAÇÃO-->
+
+            <!--/CITAÇÃO 01-->
+            <div class="quote quote-small">
+              <div class="quote-content">
+                <!--/IMAGEM DO USUÁRIO-->
+                <div class="user-img">
+                  <img src="assets/img/instituicao-01.png" alt="nome da instituição">
+                </div><!--/user-img-->
+                <!--/CITAÇÃO-->
+                <div class="quote-data"> 
+                  <h5>
+                    <a href="perfil-do-usuario.html" class="user-name">Você</a>
+                    <small><a href="citacao-original" target="blank" class="light">segunda-feira, 24/04/14 <span class="lighter">às</span> 11:30</a> <span class="lighter">via</span> <a href="fanpage" target="blank" class="light">fanpage</a></small>
+                  </h5>
+                  <p class="quote-txt">Olá, Gustavo! Você sabia que a Universus está oferecendo cursos gratuitos na área de saúde? Confira neste link, quem sabe você não se interessa? <a href="#">http://t.co/sUQhVfzv9x</a></p>
+                </div><!--/.quote-data-->
+                  <!--/BARRA DE STATUS-->
+                  <div class="sidebar">
+                    <!--/REDE SOCIAL-->
+                    <a href="#" class="btn social facebook"><i class="fa fa-facebook"></i></a>
+                    <div class="clearfix"></div>
+                  </div><!--/sidebar-->
+                <div class="clearfix"></div>
+              </div><!--/quote-content-->
+            </div><!--/.quote-->
+
+            <!--/CITAÇÃO 02-->
+            <div class="quote quote-small">
+              <div class="quote-content">
+                <!--/IMAGEM DO USUÁRIO-->
+                <div class="user-img">
+                  <img src="assets/img/user-01.jpg" alt="nome do usuário">
+                </div><!--/user-img-->
+                <!--/CITAÇÃO-->
+                <div class="quote-data"> 
+                  <h5>
+                    <a href="perfil-do-usuario.html" class="user-name">Você</a>
+                    <small><a href="citacao-original" target="blank" class="light">segunda-feira, 24/04/14 <span class="lighter">às</span> 11:30</a> <span class="lighter">via</span> <a href="fanpage" target="blank" class="light">fanpage</a></small>
+                  </h5>
+                  <p class="quote-txt">Olá, Gustavo! Você sabia que a Universus está oferecendo cursos gratuitos na área de saúde? Confira neste link, quem sabe você não se interessa? <a href="#">http://t.co/sUQhVfzv9x</a></p>
+                </div><!--/.quote-data-->
+                  <!--/BARRA DE STATUS-->
+                  <div class="sidebar">
+                    <!--/REDE SOCIAL-->
+                    <a href="#" class="btn social facebook"><i class="fa fa-facebook"></i></a>
+                    <div class="clearfix"></div>
+                  </div><!--/sidebar-->
+                <div class="clearfix"></div>
+              </div><!--/quote-content-->
+              <footer>
+                <!--/SENTIMENTO-->
+                <div class="feeling-menu btn-group">
+                  <button type="button" class="btn good" data-toggle="tooltip" title="positivo">positivo</button>
+                  <button type="button" class="btn neutral" data-toggle="tooltip" title="neutro">neutro</button>
+                  <button type="button" class="btn bad" data-toggle="tooltip" title="negativo">negativo</button>
+                </div><!--/.feeling-menu .btn-droup-->
+                <!--/INDICADORES MEC-->
+                <div class="mec-menu btn-group">
+                  <!--/CAPTAÇÃO-->
+                  <div class="btn-group dropup">
+                    <button type="button" class="btn dropdown-toggle captacao" data-toggle="dropdown" title="captação">captação</button>
+                    <ul class="dropdown-menu feeling-menu" role="menu">
+                      <li><a href="#" class="btn good">positivo</a></li>
+                      <li><a href="#" class="btn neutral">neutro</a></li>
+                      <li><a href="#" class="btn bad">negativo</a></li>
+                      <li><a href="#" class="btn remove">remover</a></li>
+                    </ul>
+                  </div><!--/.dropup btn-group-->
+                  <!--/EMPREGABILIDADE-->
+                  <div class="btn-group dropup">
+                    <button type="button" class="btn dropdown-toggle empregabilidade" data-toggle="dropdown" title="empregabilidade">empregabilidade</button>
+                    <ul class="dropdown-menu feeling-menu" role="menu">
+                      <li><a href="#" class="btn good">positivo</a></li>
+                      <li><a href="#" class="btn neutral">neutro</a></li>
+                      <li><a href="#" class="btn bad">negativo</a></li>
+                      <li><a href="#" class="btn remove">remover</a></li>
+                    </ul>
+                  </div><!--/.dropup btn-group-->
+                  <!--/LOCALIZAÇÃO-->
+                  <div class="btn-group dropup">
+                    <button type="button" class="btn dropdown-toggle localizacao" data-toggle="dropdown" title="localização">localização</button>
+                    <ul class="dropdown-menu feeling-menu" role="menu">
+                      <li><a href="#" class="btn good">positivo</a></li>
+                      <li><a href="#" class="btn neutral">neutro</a></li>
+                      <li><a href="#" class="btn bad">negativo</a></li>
+                      <li><a href="#" class="btn remove">remover</a></li>
+                    </ul>
+                  </div><!--/.dropup btn-group-->
+                  <!--/ATUAÇÃO ÉTICA-->
+                  <div class="btn-group dropup">
+                    <button type="button" class="btn dropdown-toggle atuacao-etica" data-toggle="dropdown" title="atuação ética">atuação ética</button>
+                    <ul class="dropdown-menu feeling-menu" role="menu">
+                      <li><a href="#" class="btn good">positivo</a></li>
+                      <li><a href="#" class="btn neutral">neutro</a></li>
+                      <li><a href="#" class="btn bad">negativo</a></li>
+                      <li><a href="#" class="btn remove">remover</a></li>
+                    </ul>
+                  </div><!--/.dropup btn-group-->
+                  <!--/CORPO DOCENTE-->
+                  <div class="btn-group dropup">
+                    <button type="button" class="btn dropdown-toggle corpo-docente" data-toggle="dropdown" title="coprpo docente">corpo docente</button>
+                    <ul class="dropdown-menu feeling-menu" role="menu">
+                      <li><a href="#" class="btn good">positivo</a></li>
+                      <li><a href="#" class="btn neutral">neutro</a></li>
+                      <li><a href="#" class="btn bad">negativo</a></li>
+                      <li><a href="#" class="btn remove">remover</a></li>
+                    </ul>
+                  </div><!--/.dropup btn-group-->
+                  <!--/CREDENCIAMENTO NO MEC-->
+                  <div class="btn-group dropup">
+                    <button type="button" class="btn dropdown-toggle credenciamento-no-mec" data-toggle="dropdown" title="credenciamento no mec">credenciamento no mec</button>
+                    <ul class="dropdown-menu feeling-menu" role="menu">
+                      <li><a href="#" class="btn good">positivo</a></li>
+                      <li><a href="#" class="btn neutral">neutro</a></li>
+                      <li><a href="#" class="btn bad">negativo</a></li>
+                      <li><a href="#" class="btn remove">remover</a></li>
+                    </ul>
+                  </div><!--/.dropup btn-group-->
+                  <!--/PREÇO-->
+                  <div class="btn-group dropup">
+                    <button type="button" class="btn dropdown-toggle preco" data-toggle="dropdown" title="preço">preço</button>
+                    <ul class="dropdown-menu feeling-menu" role="menu">
+                      <li><a href="#" class="btn good">positivo</a></li>
+                      <li><a href="#" class="btn neutral">neutro</a></li>
+                      <li><a href="#" class="btn bad">negativo</a></li>
+                      <li><a href="#" class="btn remove">remover</a></li>
+                    </ul>
+                  </div><!--/.dropup btn-group-->
+                  <!--/QUALIDADE DE ENSINO-->
+                  <div class="btn-group dropup">
+                    <button type="button" class="btn dropdown-toggle qualidade-de-ensino" data-toggle="dropdown" title="qualidade de ensino">qualidade de ensino</button>
+                    <ul class="dropdown-menu feeling-menu" role="menu">
+                      <li><a href="#" class="btn good">positivo</a></li>
+                      <li><a href="#" class="btn neutral">neutro</a></li>
+                      <li><a href="#" class="btn bad">negativo</a></li>
+                      <li><a href="#" class="btn remove">remover</a></li>
+                    </ul>
+                  </div><!--/.dropup btn-group-->
+                  <!--/INFRAESTRUTURA-->
+                  <div class="btn-group dropup">
+                    <button type="button" class="btn dropdown-toggle infraestrutura" data-toggle="dropdown" title="infraestrutura">infraestrutura</button>
+                    <ul class="dropdown-menu feeling-menu" role="menu">
+                      <li><a href="#" class="btn good">positivo</a></li>
+                      <li><a href="#" class="btn neutral">neutro</a></li>
+                      <li><a href="#" class="btn bad">negativo</a></li>
+                      <li><a href="#" class="btn remove">remover</a></li>
+                    </ul>
+                  </div><!--/.dropup btn-group-->
+                  <!--/RELACIONAMENTO-->
+                  <div class="btn-group dropup">
+                    <button type="button" class="btn dropdown-toggle relacionamento" data-toggle="dropdown" title="relacionamento">relacionamento</button>
+                    <ul class="dropdown-menu feeling-menu" role="menu">
+                      <li><a href="#" class="btn good">positivo</a></li>
+                      <li><a href="#" class="btn neutral">neutro</a></li>
+                      <li><a href="#" class="btn bad">negativo</a></li>
+                      <li><a href="#" class="btn remove">remover</a></li>
+                    </ul>
+                  </div><!--/.dropup btn-group-->
+                </div><!--/.mec-menu .btn-group--> 
+                <!--/AÇÕES - ENCAMINHAR E RESPONDER-->
+                <div class="quote-actions btn-group">
+                  <!--/ENCAMINAR-->
+                  <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-arrow-right"></span> encaminhar</button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">captação</a></li>
+                      <li><a href="#">CRM</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#foward-modal">email</a></li>
+                    </ul>
+                  </div><!--/.dropup btn-group-->
+                  <!--/RESPONDER-->
+                  <button type="button" class="btn" data-toggle="modal" data-target="#answer-modal"><i class="fa fa-reply"></i> responder</button>
+                </div><!--/.quote-actions .btn-group-->
+              </footer>
+            </div><!--/.quote-->
+
+
+          </div><!--/accordion-hidden-->
+        </div><!--/.quote-->
+        
+      </div><!--/container-->
+    </div><!--/#content-->
+
+
+    <!--/#FOOTER-->
+    <footer id="#footer"></footer>
+
+
+    <!--/MODAIS-->
+
+    <!-- ANSWER MODAL -->
+    <div class="modal fade" id="answer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Responder citação</h4>
+          </div><!--/.modal-header-->
+          <div class="modal-body">
+            ...
+          </div><!--/.modal-body-->
+          <div class="modal-footer">
+            <a href="#" class="" data-dismiss="modal">cancelar</a> 
+            <button type="button" class="btn btn-default">Salvar resposta</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div><!--/.modal-footer-->
+        </div><!--/.modal-content-->
+      </div><!--/.modal-dialog-->
+    </div><!--/.modal-->
+
+    <!-- FOWARD MODAL -->
+    <div class="modal fade" id="foward-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Encaminhar citação</h4>
+          </div><!--/.modal-header-->
+          <div class="modal-body">
+            ...
+          </div><!--/.modal-body-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">cancelar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div><!--/.modal-footer-->
+        </div><!--/.modal-content-->
+      </div><!--/.modal-dialog-->
+    </div><!--/.modal-->
+    
+
+    <!-- NOVO MARCADOR MODAL -->
+    <div class="modal fade" id="newtag-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Novo marcador</h4>
+          </div><!--/.modal-header-->
+          <div class="modal-body">
+            <form role="form">
+              <label for="novomarcador">insira o nome do novo marcador</label>
+              <input type="text" class="form-control" id="novomarcador" placeholder="novo marcador">
+            </form>
+          </div><!--/.modal-body-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">cancelar</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">ok</button>
+          </div><!--/.modal-footer-->
+        </div><!--/.modal-content-->
+      </div><!--/.modal-dialog-->
+    </div><!--/.modal-->
+    
+
+    <!-- GERENCIAR TAGS MODAL -->
+    <div class="modal fade" id="configtag-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Gerenciar marcadores</h4>
+          </div><!--/.modal-header-->
+          <div class="modal-body">
+            ...
+          </div><!--/.modal-body-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">ok</button>
+          </div><!--/.modal-footer-->
+        </div><!--/.modal-content-->
+      </div><!--/.modal-dialog-->
+    </div><!--/.modal-->
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery1.11.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+  </body>
+</html>

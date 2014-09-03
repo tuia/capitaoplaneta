@@ -1,0 +1,492 @@
+/* VARIAVEIS */
+
+
+/* Cores */
+
+	/* STATUS */
+	$open: #D35400;
+	$waiting: #E67E22;
+	$done: #F39C12;
+
+	/* FEELING */
+	$good: #27AE60;
+	$neutral: #2980B9;
+	$bad: #C0392B;
+
+	/* TYPOGRAPHY*/
+	$light: #666666;
+	$lighter: #999999;
+
+	/* QUOTE BUTTONS */
+	$quote-btn-bg: #F1F1F1;
+	$hover-quote-btn-txt-color: #808080;
+	$quote-btn-txt-color: #7E7E7E;
+
+	/* BOXES */
+	$light-box-bg: #FFFFFF;
+	$box-bg: #BDC3C7;
+
+	/* SOCIAL */
+	$facebook-color: #3b5998;
+
+	/* HEADER */
+	$header-bg-gray: #95A5A6;
+
+
+/* THE CSS */
+
+/*typography*/
+body, p {font-family: 'Roboto', sans-serif;}
+.light {color: $light}
+.lighter {color: $lighter}
+.badge {border-radius: 0}
+label {font-weight: normal;}
+
+/*HELPERS*/
+.auto {overflow: auto}
+.accordion-hidden {display: none;}
+
+/*Media queries breakpoints*/
+.container { width: 950px !important;}
+
+
+/* COMPONENTES */
+
+	/* SOCIAL ICONS */
+	.btn {
+		&.social {
+			color: #FFFFFF;
+			text-align: center;
+			
+		}
+
+		&.facebook {
+			background: $facebook-color;
+
+			&:hover { background: lighten($facebook-color, 10%) }
+		}
+	}
+
+	/* BOTÕES DOS MENUS DO MEC E DE SENTIMENTO */
+	.mec-menu .btn, .feeling-menu .btn {
+	    background-image: url("../img/mec-feel-sprite.png");
+	    background-color: $quote-btn-bg;
+	    border: none !important;    
+	    height: 32px;
+	    margin: 0;
+	    overflow: hidden;
+	    padding: 0;
+	    text-indent: -999px;
+	    width: 33px;
+
+	    &:hover {
+	    	border: none !important;
+	    }
+
+	    /* SENTIMENTO */
+	    &.good {
+	    	background-position: -330px -0px;
+	    	&:hover, &:active {background-position: -330px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&.active {background-position: -330px -64px; background-color: $good;}
+	    }
+	    &.neutral {
+	    	background-position: -363px -0px;
+	    	&:hover, &:active {background-position: -363px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&.active {background-position: -363px -64px; background-color: $neutral;}
+	    }
+	    &.bad {
+	    	background-position: -396px -0px;
+	    	&:hover, &:active {background-position: -396px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&.active {background-position: -396px -64px; background-color: $bad;}
+	    }
+	    &.remove {
+	    	display: none;
+	    	background-position: -363px -96px;
+	    	&:hover, &:active {background-position: -396px -96px; background-color: lighten($quote-btn-bg, 5%)}
+	    }
+
+	    /* INDICADORES MEC */
+	    &.captacao {
+	    	background-position: -0px -0px;
+	    	&:hover, &:active, &.active {background-position: -0px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&.good {background-color: $good; background-position: -0px -64px}
+	    	&.neutral {background-color: $neutral; background-position: -0px -64px}
+	    	&.bad {background-color: $bad; background-position: -0px -64px}
+	    }/*captacao*/
+
+	    &.empregabilidade {
+	    	background-position: -33px -0px;
+	    	&:hover, &:active, &.active {background-position: -33px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&.good {background-color: $good; background-position: -33px -64px;}
+	    	&.neutral {background-color: $neutral; background-position: -33px -64px;}
+	    	&.bad {background-color: $bad; background-position: -33px -64px;}
+	    }/*empregabilidade*/
+
+	    &.localizacao {
+	    	background-position: -66px -0px;
+	    	&:hover, &:active, &.active {background-position: -66px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&.good {background-color: $good; background-position: -66px -64px;}
+	    	&.neutral {background-color: $neutral; background-position: -66px -64px;}
+	    	&.bad {background-color: $bad; background-position: -66px -64px;}
+	    }/*localizacao*/
+
+	    &.atuacao-etica {
+	    	background-position: -99px -0px;
+	    	&:hover, &:active, &.active {background-position: -99px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&.good {background-color: $good; background-position: -99px -64px;}
+	    	&.neutral {background-color: $neutral; background-position: -99px -64px;}
+	    	&.bad {background-color: $bad; background-position: -99px -64px;}
+	    }/*atuacao-etica*/
+
+	    &.corpo-docente {
+	    	background-position: -132px -0px;
+	    	&:hover, &:active, &.active {background-position: -132px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&.good {background-color: $good; background-position: -132px -64px;}
+	    	&.neutral {background-color: $neutral; background-position: -132px -64px;}
+	    	&.bad {background-color: $bad; background-position: -132px -64px;}
+	    }/*corpo-docente*/
+
+	    &.credenciamento-no-mec {
+	    	background-position: -165px -0px;
+	    	&:hover, &:active, &.active {background-position: -165px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&.good {background-color: $good; background-position: -165px -64px;}
+	    	&.neutral {background-color: $neutral; background-position: -165px -64px;}
+	    	&.bad {background-color: $bad; background-position: -165px -64px;}
+	    }/*credenciamento-no-mec*/
+
+	    &.preco {
+	    	background-position: -198px -0px;
+	    	&:hover, &:active, &.active {background-position: -198px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&.good {background-color: $good; background-position: -198px -64px;}
+	    	&.neutral {background-color: $neutral; background-position: -198px -64px;}
+	    	&.bad {background-color: $bad; background-position: -198px -64px;}
+	    }/*preco*/
+
+	    &.qualidade-de-ensino {
+	    	background-position: -231px -0px;
+	    	&:hover, &:active, &.active {background-position: -231px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&.good {background-color: $good; background-position: -231px -64px;}
+	    	&.neutral {background-color: $neutral; background-position: -231px -64px;}
+	    	&.bad {background-color: $bad; background-position: -231px -64px;}
+	    }/*qualidade-de-ensino*/
+
+	    &.infraestrutura {
+	    	background-position: -264px -0px;
+	    	&:hover, &:active, &.active {background-position: -264px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&.good {background-color: $good; background-position: -264px -64px;}
+	    	&.neutral {background-color: $neutral; background-position: -264px -64px;}
+	    	&.bad {background-color: $bad; background-position: -264px -64px;}
+	    }/*infraestrutura*/
+
+	    &.relacionamento {
+	    	background-position: -297px -0px;
+	    	&:hover, &:active, &.active {background-position: -297px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&.good {background-color: $good; background-position: -297px -64px;}
+	    	&.neutral {background-color: $neutral; background-position: -297px -64px;}
+	    	&.bad {background-color: $bad; background-position: -297px -64px;}
+	    }/*relacionamento*/
+	    
+	}/*btn*/
+
+
+	/* TAGS DROPDOWN */
+	.tags-menu {
+		.dropdown-menu {
+			background: $light-box-bg;
+			width: 190px;
+
+			.auto {
+				margin: 10px 0;
+			}
+			.form-group {
+				padding: 0 5px;
+				margin: 0;
+			}
+			.checkbox {
+				background: $quote-btn-bg;
+				cursor: pointer;
+				display: block;
+				margin: 1px;
+				padding: 5px;
+				font-size: .9em;
+				&:hover { background: lighten($quote-btn-bg, 5%);}
+
+				label {
+					display: block;
+				}
+			}
+		}
+	}/*tags-dropdown*/
+
+	/*MENU DO MEC*/
+	.mec-menu {
+		margin: 0 66px;
+
+		.dropdown-menu.feeling-menu {
+			min-width: 33px;
+			padding: 1px;
+			margin-left: -2px;
+			li {
+				margin-bottom: 1px
+			}
+		}
+	}/*mec-menu*/
+
+
+
+	/* RIBBON */
+	.ribbon {
+		background-color: $box-bg;
+		display: inline-block;
+		padding: 6px;
+		text-transform: uppercase;
+		color: $light-box-bg;
+		font-weight: bold;
+
+		&:before, &:after {
+		    content: " ";
+		    position: absolute;
+		    height: 0;
+		    width: 0;
+		}
+		&:before {
+			border-bottom: 16px solid transparent;
+			border-top: 16px solid transparent;
+		    border-right: 10px solid $box-bg;
+		    left: -10px;
+		    top: 0px;
+		}
+		&:after {
+			border-top: 5px solid transparent;
+		    border-left: 5px solid $box-bg;
+		    right: 0;
+		    top: -5px;
+		}
+
+		/* CORES STATUS */
+		&.aberta {
+			background-color: $open;
+			&:before {border-right: 10px solid $open}
+			&:after {border-left: 5px solid lighten($open, 5%)}
+			&:hover { 
+				background: lighten($open, 5%); color: #FFFFFF;
+				&:before {border-right: 10px solid lighten($open, 5%)}
+				&:after {border-left: 5px solid lighten($open, 5%)}
+			}	
+		}
+		&.aguardando {
+			background-color: $waiting;
+			&:before {border-right: 10px solid $waiting}
+			&:after {border-left: 5px solid lighten($waiting, 5%)}
+			&:hover { 
+				background: lighten($waiting, 5%); color: #FFFFFF;
+				&:before {border-right: 10px solid lighten($waiting, 5%)}
+				&:after {border-left: 5px solid lighten($waiting, 5%)}
+			}
+		}
+		&.fechada {
+			background-color: $done;
+			&:before {border-right: 10px solid $done}
+			&:after {border-left: 5px solid lighten($done, 5%)}
+			&:hover { 
+				background: lighten($done, 5%); color: #FFFFFF;
+				&:before {border-right: 10px solid lighten($done, 5%)}
+				&:after {border-left: 5px solid lighten($done, 5%)}
+			}
+		}
+
+	}/*ribbon*/
+
+
+/* NAVBAR TOPO */
+#navigation {
+	position: relative;
+
+	.navbar-brand {
+		background: url(../img/planeta-y-logo.png) no-repeat center;
+		width: 120px;
+		height: 26px;
+		text-indent: -9999px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		margin: 0 -60px;
+		outline: none;
+	}
+}
+
+
+/* CABEÇALHO*/
+#header {
+	height: 130px;
+	background-color: $header-bg-gray;
+	margin: -20px 0 30px;
+}
+
+
+/* CITAÇÃO */
+.quote {
+
+	background-color: $light-box-bg;
+	margin: 0 0 20px 0;
+
+	.quote-content {
+		position: relative;
+
+		.user-img {
+			float: left;
+			position: relative;
+			img {
+				width: 100%;				
+			}
+		}
+
+		.quote-data {
+			font-size: 14px;
+			float: left;
+			width: 590px;
+			padding: 0 10px;
+
+
+			h5 {
+				margin: 6px 0;
+
+				.user-name {
+					font-weight: bold;
+				}
+			}
+
+			p {margin-bottom: 15px}
+
+			.quote-txt {
+				line-height: 1.3em
+			}
+		}
+
+		.sidebar {
+			display: block;
+			float: right;
+			position: relative;
+			top: 5px;
+			right: -5px;
+			width: 230px;
+
+			.status-bar {
+				height: 32px;
+				float: left;
+
+				.status-btn {
+					&:active, &:hover, &:link, &:visited, &:focus {color: #FFFFFF; text-decoration: none;}
+				}
+
+				.ribbon {
+					width: 198px;
+
+					&:after {
+						display: none;
+					}
+				}
+			}
+			.social, .tags-btn {
+				float: left;
+				width: 32px;
+				max-height: 32px;
+				overflow: hidden;
+			}
+
+			.tags {
+				float: left;
+			    width: 198px;
+				background: $box-bg;
+			    display: block;
+			    height: 47px;
+			    margin: 7px 0 0 0;
+			    padding: 2px 5px;
+			    overflow: auto;
+
+			    p {
+			    	line-height: 1.4em;
+			    	margin: 0;
+			    	.badge {
+			    		font-size: .7em
+			    	}
+			    }
+			}
+			.tags-menu {			
+			    margin: 7px 0 0 0;
+			    float: left;	
+
+				.tags-btn {
+					background-color: $box-bg;
+				    text-align: center;
+				    color: #FFFFFF;
+				    padding: 6px 9px;
+				    &:hover { background-color: lighten($box-bg, 5%)}
+				}
+
+				.auto { max-height: 150px}
+			}
+		}/*sidebar*/
+
+	}/*quote-content*/
+
+	footer {
+
+		background-color: $box-bg;
+
+		.feeling-menu {
+			.btn {
+				width: 34px;
+			}
+		}
+		.btn {
+		    text-transform: uppercase;
+		    font-weight: normal;
+		    border: none !important;
+		    
+		    color: $quote-btn-txt-color;
+		    height: 32px;
+		    margin: 0;
+		    &:link, &:visited, {background-color: $quote-btn-bg; color: $quote-btn-txt-color;}
+		    &:hover, &:active, &:focus {background-color: lighten($quote-btn-bg, 5%); color: $hover-quote-btn-txt-color;}
+		}
+	}/*footer*/
+
+	.accordion-hidden {
+		padding: 0px 20px 20px 100px;
+	}
+
+	/* citação pequena */
+	&.quote-small {
+		padding: 20px 0;
+		border-bottom: 1px solid darken($light-box-bg, 10%);
+		margin: 0;
+
+		&:last-child {
+			border-bottom: none;
+		}
+		.quote-content {
+			background-color: darken($light-box-bg, 3%);
+			.user-img {
+				width: 80px;
+				height: 80px;
+				img {
+					width: 80px;
+					height: 80px;
+
+				}
+			}
+			.quote-data {width: 680px}
+			.sidebar {width: 32px}
+		}/*quote-content*/
+
+		footer {
+			.mec-menu { margin: 0 58px}
+			.quote-actions {float: right;}
+		}/*footer*/
+
+	}
+
+
+}/* citação */
+
