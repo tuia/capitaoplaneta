@@ -682,24 +682,28 @@ label {
 .quote.selected footer {
   background-color: #d9dcde;
 }
-/* line 388, ../scss/_default.scss */
+/* line 385, ../scss/_default.scss */
+.quote.selected .accordion-hidden {
+  background-color: #e6e9ea;
+}
+/* line 389, ../scss/_default.scss */
 .quote .quote-content {
   position: relative;
   background-color: white;
   /*sidebar*/
 }
-/* line 392, ../scss/_default.scss */
+/* line 393, ../scss/_default.scss */
 .quote .quote-content .user-img {
   float: left;
   position: relative;
   width: 100px;
   height: 100px;
 }
-/* line 397, ../scss/_default.scss */
+/* line 398, ../scss/_default.scss */
 .quote .quote-content .user-img img {
   width: 100%;
 }
-/* line 402, ../scss/_default.scss */
+/* line 403, ../scss/_default.scss */
 .quote .quote-content .quote-checkbox {
   position: absolute;
   top: 0;
@@ -707,39 +711,39 @@ label {
   margin: 0;
   text-align: center;
 }
-/* line 408, ../scss/_default.scss */
+/* line 409, ../scss/_default.scss */
 .quote .quote-content .quote-checkbox label {
   padding: 50px;
   display: block;
 }
-/* line 409, ../scss/_default.scss */
+/* line 410, ../scss/_default.scss */
 .quote .quote-content .quote-checkbox input {
   margin: -45px;
 }
-/* line 413, ../scss/_default.scss */
+/* line 414, ../scss/_default.scss */
 .quote .quote-content .quote-data {
   font-size: 14px;
   float: left;
   width: 580px;
   padding: 0 10px;
 }
-/* line 420, ../scss/_default.scss */
+/* line 421, ../scss/_default.scss */
 .quote .quote-content .quote-data h5 {
   margin: 6px 0;
 }
-/* line 423, ../scss/_default.scss */
+/* line 424, ../scss/_default.scss */
 .quote .quote-content .quote-data h5 .user-name {
   font-weight: bold;
 }
-/* line 428, ../scss/_default.scss */
+/* line 429, ../scss/_default.scss */
 .quote .quote-content .quote-data p {
   margin-bottom: 15px;
 }
-/* line 430, ../scss/_default.scss */
+/* line 431, ../scss/_default.scss */
 .quote .quote-content .quote-data .quote-txt {
   line-height: 1.3em;
 }
-/* line 435, ../scss/_default.scss */
+/* line 436, ../scss/_default.scss */
 .quote .quote-content .sidebar {
   display: block;
   float: right;
@@ -748,32 +752,32 @@ label {
   right: -5px;
   width: 230px;
 }
-/* line 443, ../scss/_default.scss */
+/* line 444, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar {
   height: 32px;
   float: left;
 }
-/* line 448, ../scss/_default.scss */
+/* line 449, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .status-btn:active, .quote .quote-content .sidebar .status-bar .status-btn:hover, .quote .quote-content .sidebar .status-bar .status-btn:link, .quote .quote-content .sidebar .status-bar .status-btn:visited, .quote .quote-content .sidebar .status-bar .status-btn:focus {
   color: #FFFFFF;
   text-decoration: none;
 }
-/* line 451, ../scss/_default.scss */
+/* line 452, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .ribbon {
   width: 198px;
 }
-/* line 454, ../scss/_default.scss */
+/* line 455, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .ribbon:after {
   display: none;
 }
-/* line 459, ../scss/_default.scss */
+/* line 460, ../scss/_default.scss */
 .quote .quote-content .sidebar .social, .quote .quote-content .sidebar .tags-btn {
   float: left;
   width: 32px;
   max-height: 32px;
   overflow: hidden;
 }
-/* line 466, ../scss/_default.scss */
+/* line 467, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags {
   float: left;
   width: 198px;
@@ -784,45 +788,45 @@ label {
   padding: 2px 5px;
   overflow: auto;
 }
-/* line 476, ../scss/_default.scss */
+/* line 477, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p {
   line-height: 1.4em;
   margin: 0;
 }
-/* line 479, ../scss/_default.scss */
+/* line 480, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge {
   font-size: .7em;
   margin-right: 2px;
 }
-/* line 485, ../scss/_default.scss */
+/* line 486, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu {
   margin: 7px 0 0 0;
   float: left;
 }
-/* line 489, ../scss/_default.scss */
+/* line 490, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .tags-btn {
   background-color: #bdc3c7;
   text-align: center;
   color: #FFFFFF;
   padding: 6px 9px;
 }
-/* line 494, ../scss/_default.scss */
+/* line 495, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .tags-btn:hover {
   background-color: #cbd0d3;
 }
-/* line 497, ../scss/_default.scss */
+/* line 498, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .auto {
   max-height: 150px;
 }
-/* line 503, ../scss/_default.scss */
+/* line 504, ../scss/_default.scss */
 .quote footer {
   background-color: #e4e6e8;
 }
-/* line 508, ../scss/_default.scss */
+/* line 509, ../scss/_default.scss */
 .quote footer .feeling-menu .btn {
   width: 34px;
 }
-/* line 512, ../scss/_default.scss */
+/* line 513, ../scss/_default.scss */
 .quote footer .btn {
   text-transform: uppercase;
   font-weight: normal;
@@ -831,23 +835,23 @@ label {
   height: 32px;
   margin: 0;
 }
-/* line 520, ../scss/_default.scss */
+/* line 521, ../scss/_default.scss */
 .quote footer .btn:link, .quote footer .btn:visited {
   background-color: #f1f1f1;
   color: #7e7e7e;
 }
-/* line 521, ../scss/_default.scss */
+/* line 522, ../scss/_default.scss */
 .quote footer .btn:hover, .quote footer .btn:active, .quote footer .btn:focus {
   background-color: #fefefe;
   color: gray;
 }
-/* line 525, ../scss/_default.scss */
+/* line 526, ../scss/_default.scss */
 .quote .accordion-hidden {
   padding: 0px 20px 20px 100px;
   max-height: 300px;
   overflow: auto;
 }
-/* line 532, ../scss/_default.scss */
+/* line 533, ../scss/_default.scss */
 .quote.quote-small {
   padding: 20px 0;
   border-bottom: 1px solid #e6e6e6;
@@ -855,37 +859,37 @@ label {
   /*quote-content*/
   /*footer*/
 }
-/* line 537, ../scss/_default.scss */
+/* line 538, ../scss/_default.scss */
 .quote.quote-small:last-child {
   border-bottom: none;
 }
-/* line 540, ../scss/_default.scss */
+/* line 541, ../scss/_default.scss */
 .quote.quote-small .quote-content {
   background-color: #f7f7f7;
 }
-/* line 542, ../scss/_default.scss */
+/* line 543, ../scss/_default.scss */
 .quote.quote-small .quote-content .user-img {
   width: 80px;
   height: 80px;
 }
-/* line 545, ../scss/_default.scss */
+/* line 546, ../scss/_default.scss */
 .quote.quote-small .quote-content .user-img img {
   width: 80px;
   height: 80px;
 }
-/* line 551, ../scss/_default.scss */
+/* line 552, ../scss/_default.scss */
 .quote.quote-small .quote-content .quote-data {
   width: 670px;
 }
-/* line 552, ../scss/_default.scss */
+/* line 553, ../scss/_default.scss */
 .quote.quote-small .quote-content .sidebar {
   width: 32px;
 }
-/* line 556, ../scss/_default.scss */
+/* line 557, ../scss/_default.scss */
 .quote.quote-small footer .mec-menu {
   margin: 0 52px;
 }
-/* line 557, ../scss/_default.scss */
+/* line 558, ../scss/_default.scss */
 .quote.quote-small footer .quote-actions {
   float: right;
 }

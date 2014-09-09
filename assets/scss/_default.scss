@@ -382,6 +382,7 @@ label {font-weight: normal;}
 			background-color: lighten($box-bg, 5%);
 		}
 		footer {background-color: lighten($box-bg, 10%)}
+		.accordion-hidden {background-color: lighten($box-bg, 15%)}
 		
 	}
 
