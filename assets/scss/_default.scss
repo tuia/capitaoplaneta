@@ -486,6 +486,23 @@ label {font-weight: normal;}
 			    	.badge {
 			    		font-size: .7em;
 			    		margin-right: 2px;
+			    		padding: 3px 0px 3px 7px;
+			    		transition: padding .1s linear;
+
+			    		.remove-tag {
+			    			visibility: hidden;
+			    			color: darken($light-box-bg, 15%);
+			    			margin: 0 -2px;
+			    			cursor: pointer;
+			    		}
+			    		&:hover {
+			    			padding-right: 7px;
+			    			.remove-tag {
+			    				visibility: visible;
+			    				padding-left: 2px;
+			    				color: $light-box-bg;
+			    				margin: 0}
+			    		}
 			    	}
 			    }
 			}
@@ -530,6 +547,7 @@ label {font-weight: normal;}
 	}/*footer*/
 
 	.accordion-hidden {
+		background-color: $light-box-bg;
 		padding: 0px 20px 20px 100px;
 		max-height: 300px;
 		overflow: auto;
