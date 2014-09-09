@@ -48,7 +48,7 @@
 body, p {font-family: 'Roboto', sans-serif;}
 .light {color: $light}
 .lighter {color: $lighter}
-.badge {border-radius: 0}
+.badge {@include border-radius(0)}
 label {font-weight: normal;}
 
 /*HELPERS*/
@@ -236,16 +236,13 @@ label {font-weight: normal;}
 	}/*btn*/
 	.dropdown-menu.feeling-menu{
 		.btn.good {
-			background-color: $good; background-position: -330px -64px;
-			&:hover {background-color: lighten($good, 10%)}
+			&:hover {background-color: $good; background-position: -330px -64px;}
 		}
 		.btn.neutral {
-			background-color: $neutral; background-position: -363px -64px;
-			&:hover {background-color: lighten($neutral, 10%)}
+			&:hover {background-color: $neutral; background-position: -363px -64px;}
 		}
 		.btn.bad {
-			background-color: $bad; background-position: -396px -64px;
-			&:hover {background-color: lighten($bad, 10%)}
+			&:hover {background-color: $bad; background-position: -396px -64px;}
 		}
 	}
 
@@ -501,7 +498,7 @@ label {font-weight: normal;}
 			    		font-size: .7em;
 			    		margin-right: 2px;
 			    		padding: 3px 0px 3px 7px;
-			    		transition: padding .1s linear;
+			    		@include transition (padding, .1s, linear);
 
 			    		.remove-tag {
 			    			visibility: hidden;
