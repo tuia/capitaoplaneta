@@ -1,131 +1,905 @@
 /*
-Syntax error: Invalid CSS after "... 		margin-right": expected ";", was ": 2px;"
-        on line 475 of /Users/Tuia/repositorios/capitaoplaneta/assets/scss/_default.scss
-        from line 5 of /Users/Tuia/repositorios/capitaoplaneta/assets/scss/app.scss
-
-Backtrace:
-/Users/Tuia/repositorios/capitaoplaneta/assets/scss/_default.scss:475
-/Users/Tuia/repositorios/capitaoplaneta/assets/scss/app.scss:5
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1129:in `expected'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066:in `expected'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1061:in `tok!'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:569:in `declaration_or_ruleset'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1104:in `rethrow'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:575:in `declaration_or_ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:537:in `block_child'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:526:in `block_contents'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:518:in `block'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:512:in `ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:574:in `declaration_or_ruleset'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1104:in `rethrow'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:575:in `declaration_or_ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:537:in `block_child'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:529:in `block_contents'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:518:in `block'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:512:in `ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:574:in `declaration_or_ruleset'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1104:in `rethrow'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:575:in `declaration_or_ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:537:in `block_child'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:529:in `block_contents'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:518:in `block'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:512:in `ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:574:in `declaration_or_ruleset'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1104:in `rethrow'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:575:in `declaration_or_ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:537:in `block_child'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:529:in `block_contents'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:518:in `block'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:512:in `ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:574:in `declaration_or_ruleset'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1104:in `rethrow'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:575:in `declaration_or_ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:537:in `block_child'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:529:in `block_contents'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:518:in `block'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:512:in `ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:574:in `declaration_or_ruleset'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1104:in `rethrow'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:575:in `declaration_or_ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:537:in `block_child'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:529:in `block_contents'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:518:in `block'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:512:in `ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:536:in `block_child'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:529:in `block_contents'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:70:in `stylesheet'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:27:in `parse'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:342:in `_to_tree'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:272:in `to_tree'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:222:in `visit_import'
-org/jruby/RubyKernel.java:2096:in `send'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2336:in `collect'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `visit_children'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
-org/jruby/RubyKernel.java:2096:in `send'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-org/jruby/RubyKernel.java:2096:in `send'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-org/jruby/RubyMethod.java:133:in `call'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyKernel.java:1419:in `loop'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Applications/Scout.app/Contents/Resources/bin/compass:12:in `(root)'
+** DEFAULT
+** Onde você coloca todas as suas variaveis
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"... 		margin-right\": expected \";\", was \": 2px;\"\A         on line 475 of /Users/Tuia/repositorios/capitaoplaneta/assets/scss/_default.scss\A         from line 5 of /Users/Tuia/repositorios/capitaoplaneta/assets/scss/app.scss"; }
+/* VARIAVEIS */
+/* Cores */
+/* STATUS */
+/* FEELING */
+/* TYPOGRAPHY*/
+/* QUOTE BUTTONS */
+/* BOXES */
+/* SOCIAL */
+/* HEADER */
+/* THE CSS */
+/*typography*/
+/* line 48, ../scss/_default.scss */
+body, p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 49, ../scss/_default.scss */
+.light {
+  color: #666666;
+}
+
+/* line 50, ../scss/_default.scss */
+.lighter {
+  color: #999999;
+}
+
+/* line 51, ../scss/_default.scss */
+.badge {
+  border-radius: 0;
+}
+
+/* line 52, ../scss/_default.scss */
+label {
+  font-weight: normal;
+}
+
+/*HELPERS*/
+/* line 55, ../scss/_default.scss */
+.auto {
+  overflow: auto;
+}
+
+/* line 56, ../scss/_default.scss */
+.accordion-hidden {
+  display: none;
+}
+
+/*Media queries breakpoints*/
+/* line 59, ../scss/_default.scss */
+.container {
+  width: 950px !important;
+}
+
+/* COMPONENTES */
+/* SOCIAL ICONS */
+/* line 66, ../scss/_default.scss */
+.btn.social {
+  color: #FFFFFF;
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  padding: 2px;
+  font-size: 18px;
+}
+/* line 75, ../scss/_default.scss */
+.btn.facebook {
+  background: #3b5998;
+}
+/* line 77, ../scss/_default.scss */
+.btn.facebook:hover {
+  background: #4c70ba;
+}
+/* line 79, ../scss/_default.scss */
+.btn.twitter {
+  background: #00aced;
+}
+/* line 81, ../scss/_default.scss */
+.btn.twitter:hover {
+  background: #21c2ff;
+}
+/* line 83, ../scss/_default.scss */
+.btn.youtube {
+  background: #bb0000;
+}
+/* line 85, ../scss/_default.scss */
+.btn.youtube:hover {
+  background: #ee0000;
+}
+/* line 87, ../scss/_default.scss */
+.btn.gplus {
+  background: #dd4b39;
+}
+/* line 89, ../scss/_default.scss */
+.btn.gplus:hover {
+  background: #e47365;
+}
+/* line 91, ../scss/_default.scss */
+.btn.instagram {
+  background: #517fa4;
+}
+/* line 93, ../scss/_default.scss */
+.btn.instagram:hover {
+  background: #7098b8;
+}
+/* line 95, ../scss/_default.scss */
+.btn.flickr {
+  background: #ff0084;
+}
+/* line 97, ../scss/_default.scss */
+.btn.flickr:hover {
+  background: #ff339d;
+}
+/* line 99, ../scss/_default.scss */
+.btn.linkedin {
+  background: #007bb6;
+}
+/* line 101, ../scss/_default.scss */
+.btn.linkedin:hover {
+  background: #009de9;
+}
+/* line 103, ../scss/_default.scss */
+.btn.blogger {
+  background: #ff6600;
+}
+/* line 105, ../scss/_default.scss */
+.btn.blogger:hover {
+  background: #ff8533;
+}
+/* line 107, ../scss/_default.scss */
+.btn.foursquare {
+  background: #0072b1;
+}
+/* line 109, ../scss/_default.scss */
+.btn.foursquare:hover {
+  background: #0093e4;
+}
+/* line 111, ../scss/_default.scss */
+.btn.reclame-aqui {
+  background: #008751;
+}
+/* line 113, ../scss/_default.scss */
+.btn.reclame-aqui:hover {
+  background: #00a160;
+}
+/* line 114, ../scss/_default.scss */
+.btn.reclame-aqui .reclame-aqui-icon {
+  width: 70%;
+  padding: 5% 0 15%;
+}
+
+/* BOTÕES DOS MENUS DO MEC E DE SENTIMENTO */
+/* line 119, ../scss/_default.scss */
+.mec-menu .btn, .feeling-menu .btn {
+  background-image: url("../img/mec-feel-sprite.png");
+  background-color: #f1f1f1;
+  border: none !important;
+  height: 32px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  text-indent: -999px;
+  width: 33px;
+  /* SENTIMENTO */
+  /* INDICADORES MEC */
+  /*captacao*/
+  /*empregabilidade*/
+  /*localizacao*/
+  /*atuacao-etica*/
+  /*corpo-docente*/
+  /*credenciamento-no-mec*/
+  /*preco*/
+  /*qualidade-de-ensino*/
+  /*infraestrutura*/
+  /*relacionamento*/
+}
+/* line 130, ../scss/_default.scss */
+.mec-menu .btn:hover, .feeling-menu .btn:hover {
+  border: none !important;
+}
+/* line 135, ../scss/_default.scss */
+.mec-menu .btn.good, .feeling-menu .btn.good {
+  background-position: -330px 0px;
+}
+/* line 137, ../scss/_default.scss */
+.mec-menu .btn.good:hover, .mec-menu .btn.good:active, .feeling-menu .btn.good:hover, .feeling-menu .btn.good:active {
+  background-position: -330px -32px;
+  background-color: #fefefe;
+}
+/* line 138, ../scss/_default.scss */
+.mec-menu .btn.good.active, .feeling-menu .btn.good.active {
+  background-position: -330px -64px;
+  background-color: #27ae60;
+}
+/* line 140, ../scss/_default.scss */
+.mec-menu .btn.neutral, .feeling-menu .btn.neutral {
+  background-position: -363px 0px;
+}
+/* line 142, ../scss/_default.scss */
+.mec-menu .btn.neutral:hover, .mec-menu .btn.neutral:active, .feeling-menu .btn.neutral:hover, .feeling-menu .btn.neutral:active {
+  background-position: -363px -32px;
+  background-color: #fefefe;
+}
+/* line 143, ../scss/_default.scss */
+.mec-menu .btn.neutral.active, .feeling-menu .btn.neutral.active {
+  background-position: -363px -64px;
+  background-color: #2980b9;
+}
+/* line 145, ../scss/_default.scss */
+.mec-menu .btn.bad, .feeling-menu .btn.bad {
+  background-position: -396px 0px;
+}
+/* line 147, ../scss/_default.scss */
+.mec-menu .btn.bad:hover, .mec-menu .btn.bad:active, .feeling-menu .btn.bad:hover, .feeling-menu .btn.bad:active {
+  background-position: -396px -32px;
+  background-color: #fefefe;
+}
+/* line 148, ../scss/_default.scss */
+.mec-menu .btn.bad.active, .feeling-menu .btn.bad.active {
+  background-position: -396px -64px;
+  background-color: #c0392b;
+}
+/* line 150, ../scss/_default.scss */
+.mec-menu .btn.remove, .feeling-menu .btn.remove {
+  background-position: -363px -96px;
+}
+/* line 152, ../scss/_default.scss */
+.mec-menu .btn.remove:hover, .mec-menu .btn.remove:active, .feeling-menu .btn.remove:hover, .feeling-menu .btn.remove:active {
+  background-position: -396px -96px;
+  background-color: #fefefe;
+}
+/* line 156, ../scss/_default.scss */
+.mec-menu .btn.captacao, .feeling-menu .btn.captacao {
+  background-position: 0px 0px;
+}
+/* line 158, ../scss/_default.scss */
+.mec-menu .btn.captacao:hover, .mec-menu .btn.captacao:active, .mec-menu .btn.captacao.active, .feeling-menu .btn.captacao:hover, .feeling-menu .btn.captacao:active, .feeling-menu .btn.captacao.active {
+  background-position: 0px -32px;
+  background-color: #fefefe;
+}
+/* line 159, ../scss/_default.scss */
+.mec-menu .btn.captacao.good, .feeling-menu .btn.captacao.good {
+  background-color: #27ae60;
+  background-position: 0px -64px;
+}
+/* line 160, ../scss/_default.scss */
+.mec-menu .btn.captacao.neutral, .feeling-menu .btn.captacao.neutral {
+  background-color: #2980b9;
+  background-position: 0px -64px;
+}
+/* line 161, ../scss/_default.scss */
+.mec-menu .btn.captacao.bad, .feeling-menu .btn.captacao.bad {
+  background-color: #c0392b;
+  background-position: 0px -64px;
+}
+/* line 164, ../scss/_default.scss */
+.mec-menu .btn.empregabilidade, .feeling-menu .btn.empregabilidade {
+  background-position: -33px 0px;
+}
+/* line 166, ../scss/_default.scss */
+.mec-menu .btn.empregabilidade:hover, .mec-menu .btn.empregabilidade:active, .mec-menu .btn.empregabilidade.active, .feeling-menu .btn.empregabilidade:hover, .feeling-menu .btn.empregabilidade:active, .feeling-menu .btn.empregabilidade.active {
+  background-position: -33px -32px;
+  background-color: #fefefe;
+}
+/* line 167, ../scss/_default.scss */
+.mec-menu .btn.empregabilidade.good, .feeling-menu .btn.empregabilidade.good {
+  background-color: #27ae60;
+  background-position: -33px -64px;
+}
+/* line 168, ../scss/_default.scss */
+.mec-menu .btn.empregabilidade.neutral, .feeling-menu .btn.empregabilidade.neutral {
+  background-color: #2980b9;
+  background-position: -33px -64px;
+}
+/* line 169, ../scss/_default.scss */
+.mec-menu .btn.empregabilidade.bad, .feeling-menu .btn.empregabilidade.bad {
+  background-color: #c0392b;
+  background-position: -33px -64px;
+}
+/* line 172, ../scss/_default.scss */
+.mec-menu .btn.localizacao, .feeling-menu .btn.localizacao {
+  background-position: -66px 0px;
+}
+/* line 174, ../scss/_default.scss */
+.mec-menu .btn.localizacao:hover, .mec-menu .btn.localizacao:active, .mec-menu .btn.localizacao.active, .feeling-menu .btn.localizacao:hover, .feeling-menu .btn.localizacao:active, .feeling-menu .btn.localizacao.active {
+  background-position: -66px -32px;
+  background-color: #fefefe;
+}
+/* line 175, ../scss/_default.scss */
+.mec-menu .btn.localizacao.good, .feeling-menu .btn.localizacao.good {
+  background-color: #27ae60;
+  background-position: -66px -64px;
+}
+/* line 176, ../scss/_default.scss */
+.mec-menu .btn.localizacao.neutral, .feeling-menu .btn.localizacao.neutral {
+  background-color: #2980b9;
+  background-position: -66px -64px;
+}
+/* line 177, ../scss/_default.scss */
+.mec-menu .btn.localizacao.bad, .feeling-menu .btn.localizacao.bad {
+  background-color: #c0392b;
+  background-position: -66px -64px;
+}
+/* line 180, ../scss/_default.scss */
+.mec-menu .btn.atuacao-etica, .feeling-menu .btn.atuacao-etica {
+  background-position: -99px 0px;
+}
+/* line 182, ../scss/_default.scss */
+.mec-menu .btn.atuacao-etica:hover, .mec-menu .btn.atuacao-etica:active, .mec-menu .btn.atuacao-etica.active, .feeling-menu .btn.atuacao-etica:hover, .feeling-menu .btn.atuacao-etica:active, .feeling-menu .btn.atuacao-etica.active {
+  background-position: -99px -32px;
+  background-color: #fefefe;
+}
+/* line 183, ../scss/_default.scss */
+.mec-menu .btn.atuacao-etica.good, .feeling-menu .btn.atuacao-etica.good {
+  background-color: #27ae60;
+  background-position: -99px -64px;
+}
+/* line 184, ../scss/_default.scss */
+.mec-menu .btn.atuacao-etica.neutral, .feeling-menu .btn.atuacao-etica.neutral {
+  background-color: #2980b9;
+  background-position: -99px -64px;
+}
+/* line 185, ../scss/_default.scss */
+.mec-menu .btn.atuacao-etica.bad, .feeling-menu .btn.atuacao-etica.bad {
+  background-color: #c0392b;
+  background-position: -99px -64px;
+}
+/* line 188, ../scss/_default.scss */
+.mec-menu .btn.corpo-docente, .feeling-menu .btn.corpo-docente {
+  background-position: -132px 0px;
+}
+/* line 190, ../scss/_default.scss */
+.mec-menu .btn.corpo-docente:hover, .mec-menu .btn.corpo-docente:active, .mec-menu .btn.corpo-docente.active, .feeling-menu .btn.corpo-docente:hover, .feeling-menu .btn.corpo-docente:active, .feeling-menu .btn.corpo-docente.active {
+  background-position: -132px -32px;
+  background-color: #fefefe;
+}
+/* line 191, ../scss/_default.scss */
+.mec-menu .btn.corpo-docente.good, .feeling-menu .btn.corpo-docente.good {
+  background-color: #27ae60;
+  background-position: -132px -64px;
+}
+/* line 192, ../scss/_default.scss */
+.mec-menu .btn.corpo-docente.neutral, .feeling-menu .btn.corpo-docente.neutral {
+  background-color: #2980b9;
+  background-position: -132px -64px;
+}
+/* line 193, ../scss/_default.scss */
+.mec-menu .btn.corpo-docente.bad, .feeling-menu .btn.corpo-docente.bad {
+  background-color: #c0392b;
+  background-position: -132px -64px;
+}
+/* line 196, ../scss/_default.scss */
+.mec-menu .btn.credenciamento-no-mec, .feeling-menu .btn.credenciamento-no-mec {
+  background-position: -165px 0px;
+}
+/* line 198, ../scss/_default.scss */
+.mec-menu .btn.credenciamento-no-mec:hover, .mec-menu .btn.credenciamento-no-mec:active, .mec-menu .btn.credenciamento-no-mec.active, .feeling-menu .btn.credenciamento-no-mec:hover, .feeling-menu .btn.credenciamento-no-mec:active, .feeling-menu .btn.credenciamento-no-mec.active {
+  background-position: -165px -32px;
+  background-color: #fefefe;
+}
+/* line 199, ../scss/_default.scss */
+.mec-menu .btn.credenciamento-no-mec.good, .feeling-menu .btn.credenciamento-no-mec.good {
+  background-color: #27ae60;
+  background-position: -165px -64px;
+}
+/* line 200, ../scss/_default.scss */
+.mec-menu .btn.credenciamento-no-mec.neutral, .feeling-menu .btn.credenciamento-no-mec.neutral {
+  background-color: #2980b9;
+  background-position: -165px -64px;
+}
+/* line 201, ../scss/_default.scss */
+.mec-menu .btn.credenciamento-no-mec.bad, .feeling-menu .btn.credenciamento-no-mec.bad {
+  background-color: #c0392b;
+  background-position: -165px -64px;
+}
+/* line 204, ../scss/_default.scss */
+.mec-menu .btn.preco, .feeling-menu .btn.preco {
+  background-position: -198px 0px;
+}
+/* line 206, ../scss/_default.scss */
+.mec-menu .btn.preco:hover, .mec-menu .btn.preco:active, .mec-menu .btn.preco.active, .feeling-menu .btn.preco:hover, .feeling-menu .btn.preco:active, .feeling-menu .btn.preco.active {
+  background-position: -198px -32px;
+  background-color: #fefefe;
+}
+/* line 207, ../scss/_default.scss */
+.mec-menu .btn.preco.good, .feeling-menu .btn.preco.good {
+  background-color: #27ae60;
+  background-position: -198px -64px;
+}
+/* line 208, ../scss/_default.scss */
+.mec-menu .btn.preco.neutral, .feeling-menu .btn.preco.neutral {
+  background-color: #2980b9;
+  background-position: -198px -64px;
+}
+/* line 209, ../scss/_default.scss */
+.mec-menu .btn.preco.bad, .feeling-menu .btn.preco.bad {
+  background-color: #c0392b;
+  background-position: -198px -64px;
+}
+/* line 212, ../scss/_default.scss */
+.mec-menu .btn.qualidade-de-ensino, .feeling-menu .btn.qualidade-de-ensino {
+  background-position: -231px 0px;
+}
+/* line 214, ../scss/_default.scss */
+.mec-menu .btn.qualidade-de-ensino:hover, .mec-menu .btn.qualidade-de-ensino:active, .mec-menu .btn.qualidade-de-ensino.active, .feeling-menu .btn.qualidade-de-ensino:hover, .feeling-menu .btn.qualidade-de-ensino:active, .feeling-menu .btn.qualidade-de-ensino.active {
+  background-position: -231px -32px;
+  background-color: #fefefe;
+}
+/* line 215, ../scss/_default.scss */
+.mec-menu .btn.qualidade-de-ensino.good, .feeling-menu .btn.qualidade-de-ensino.good {
+  background-color: #27ae60;
+  background-position: -231px -64px;
+}
+/* line 216, ../scss/_default.scss */
+.mec-menu .btn.qualidade-de-ensino.neutral, .feeling-menu .btn.qualidade-de-ensino.neutral {
+  background-color: #2980b9;
+  background-position: -231px -64px;
+}
+/* line 217, ../scss/_default.scss */
+.mec-menu .btn.qualidade-de-ensino.bad, .feeling-menu .btn.qualidade-de-ensino.bad {
+  background-color: #c0392b;
+  background-position: -231px -64px;
+}
+/* line 220, ../scss/_default.scss */
+.mec-menu .btn.infraestrutura, .feeling-menu .btn.infraestrutura {
+  background-position: -264px 0px;
+}
+/* line 222, ../scss/_default.scss */
+.mec-menu .btn.infraestrutura:hover, .mec-menu .btn.infraestrutura:active, .mec-menu .btn.infraestrutura.active, .feeling-menu .btn.infraestrutura:hover, .feeling-menu .btn.infraestrutura:active, .feeling-menu .btn.infraestrutura.active {
+  background-position: -264px -32px;
+  background-color: #fefefe;
+}
+/* line 223, ../scss/_default.scss */
+.mec-menu .btn.infraestrutura.good, .feeling-menu .btn.infraestrutura.good {
+  background-color: #27ae60;
+  background-position: -264px -64px;
+}
+/* line 224, ../scss/_default.scss */
+.mec-menu .btn.infraestrutura.neutral, .feeling-menu .btn.infraestrutura.neutral {
+  background-color: #2980b9;
+  background-position: -264px -64px;
+}
+/* line 225, ../scss/_default.scss */
+.mec-menu .btn.infraestrutura.bad, .feeling-menu .btn.infraestrutura.bad {
+  background-color: #c0392b;
+  background-position: -264px -64px;
+}
+/* line 228, ../scss/_default.scss */
+.mec-menu .btn.relacionamento, .feeling-menu .btn.relacionamento {
+  background-position: -297px 0px;
+}
+/* line 230, ../scss/_default.scss */
+.mec-menu .btn.relacionamento:hover, .mec-menu .btn.relacionamento:active, .mec-menu .btn.relacionamento.active, .feeling-menu .btn.relacionamento:hover, .feeling-menu .btn.relacionamento:active, .feeling-menu .btn.relacionamento.active {
+  background-position: -297px -32px;
+  background-color: #fefefe;
+}
+/* line 231, ../scss/_default.scss */
+.mec-menu .btn.relacionamento.good, .feeling-menu .btn.relacionamento.good {
+  background-color: #27ae60;
+  background-position: -297px -64px;
+}
+/* line 232, ../scss/_default.scss */
+.mec-menu .btn.relacionamento.neutral, .feeling-menu .btn.relacionamento.neutral {
+  background-color: #2980b9;
+  background-position: -297px -64px;
+}
+/* line 233, ../scss/_default.scss */
+.mec-menu .btn.relacionamento.bad, .feeling-menu .btn.relacionamento.bad {
+  background-color: #c0392b;
+  background-position: -297px -64px;
+}
+
+/*btn*/
+/* TAGS DROPDOWN */
+/* line 241, ../scss/_default.scss */
+.tags-menu .dropdown-menu {
+  background: white;
+  width: 190px;
+}
+/* line 245, ../scss/_default.scss */
+.tags-menu .dropdown-menu .auto {
+  margin: 10px 0;
+}
+/* line 248, ../scss/_default.scss */
+.tags-menu .dropdown-menu .form-group {
+  padding: 0 5px;
+  margin: 0;
+}
+/* line 252, ../scss/_default.scss */
+.tags-menu .dropdown-menu .checkbox {
+  background: #f1f1f1;
+  cursor: pointer;
+  display: block;
+  margin: 1px;
+  padding: 5px;
+  font-size: .9em;
+}
+/* line 259, ../scss/_default.scss */
+.tags-menu .dropdown-menu .checkbox:hover {
+  background: #fefefe;
+}
+/* line 261, ../scss/_default.scss */
+.tags-menu .dropdown-menu .checkbox label {
+  display: block;
+}
+
+/*tags-dropdown*/
+/*MENU DO MEC*/
+/* line 269, ../scss/_default.scss */
+.mec-menu {
+  margin: 0 66px;
+}
+/* line 272, ../scss/_default.scss */
+.mec-menu .dropdown-menu.feeling-menu {
+  min-width: 33px;
+  padding: 1px;
+  margin-left: -2px;
+}
+/* line 276, ../scss/_default.scss */
+.mec-menu .dropdown-menu.feeling-menu li {
+  margin-bottom: 1px;
+}
+
+/*mec-menu*/
+/* RIBBON */
+/* line 285, ../scss/_default.scss */
+.ribbon {
+  background-color: #bdc3c7;
+  display: inline-block;
+  padding: 6px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  /* CORES STATUS */
+}
+/* line 293, ../scss/_default.scss */
+.ribbon:before, .ribbon:after {
+  content: " ";
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+/* line 299, ../scss/_default.scss */
+.ribbon:before {
+  border-bottom: 16px solid transparent;
+  border-top: 16px solid transparent;
+  border-right: 10px solid #bdc3c7;
+  left: -10px;
+  top: 0px;
+}
+/* line 306, ../scss/_default.scss */
+.ribbon:after {
+  border-top: 5px solid transparent;
+  border-left: 5px solid #bdc3c7;
+  right: 0;
+  top: -5px;
+}
+/* line 314, ../scss/_default.scss */
+.ribbon.aberta {
+  background-color: #d35400;
+}
+/* line 316, ../scss/_default.scss */
+.ribbon.aberta:before {
+  border-right: 10px solid #d35400;
+}
+/* line 317, ../scss/_default.scss */
+.ribbon.aberta:after {
+  border-left: 5px solid #ec5e00;
+}
+/* line 318, ../scss/_default.scss */
+.ribbon.aberta:hover {
+  background: #ec5e00;
+  color: #FFFFFF;
+}
+/* line 320, ../scss/_default.scss */
+.ribbon.aberta:hover:before {
+  border-right: 10px solid #ec5e00;
+}
+/* line 321, ../scss/_default.scss */
+.ribbon.aberta:hover:after {
+  border-left: 5px solid #ec5e00;
+}
+/* line 324, ../scss/_default.scss */
+.ribbon.aguardando {
+  background-color: #e67e22;
+}
+/* line 326, ../scss/_default.scss */
+.ribbon.aguardando:before {
+  border-right: 10px solid #e67e22;
+}
+/* line 327, ../scss/_default.scss */
+.ribbon.aguardando:after {
+  border-left: 5px solid #e98b39;
+}
+/* line 328, ../scss/_default.scss */
+.ribbon.aguardando:hover {
+  background: #e98b39;
+  color: #FFFFFF;
+}
+/* line 330, ../scss/_default.scss */
+.ribbon.aguardando:hover:before {
+  border-right: 10px solid #e98b39;
+}
+/* line 331, ../scss/_default.scss */
+.ribbon.aguardando:hover:after {
+  border-left: 5px solid #e98b39;
+}
+/* line 334, ../scss/_default.scss */
+.ribbon.fechada {
+  background-color: #f39c12;
+}
+/* line 336, ../scss/_default.scss */
+.ribbon.fechada:before {
+  border-right: 10px solid #f39c12;
+}
+/* line 337, ../scss/_default.scss */
+.ribbon.fechada:after {
+  border-left: 5px solid #f4a62a;
+}
+/* line 338, ../scss/_default.scss */
+.ribbon.fechada:hover {
+  background: #f4a62a;
+  color: #FFFFFF;
+}
+/* line 340, ../scss/_default.scss */
+.ribbon.fechada:hover:before {
+  border-right: 10px solid #f4a62a;
+}
+/* line 341, ../scss/_default.scss */
+.ribbon.fechada:hover:after {
+  border-left: 5px solid #f4a62a;
+}
+
+/*ribbon*/
+/* NAVBAR TOPO */
+/* line 349, ../scss/_default.scss */
+#navigation {
+  position: relative;
+}
+/* line 352, ../scss/_default.scss */
+#navigation .navbar-brand {
+  background: url(../img/planeta-y-logo.png) no-repeat center;
+  width: 120px;
+  height: 26px;
+  text-indent: -9999px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin: 0 -60px;
+  outline: none;
+}
+
+/* CABEÇALHO*/
+/* line 367, ../scss/_default.scss */
+#header {
+  height: 130px;
+  background-color: #95a5a6;
+  margin: -20px 0 30px;
+}
+
+/* CITAÇÃO */
+/* line 375, ../scss/_default.scss */
+.quote {
+  margin: 0 0 40px 0;
+  border: 3px solid transparent;
+  /*quote-content*/
+  /*footer*/
+  /* citação pequena */
+}
+/* line 379, ../scss/_default.scss */
+.quote.selected {
+  border-color: #a1aab0;
+}
+/* line 381, ../scss/_default.scss */
+.quote.selected .quote-content {
+  background-color: #cbd0d3;
+}
+/* line 384, ../scss/_default.scss */
+.quote.selected footer {
+  background-color: #d9dcde;
+}
+/* line 388, ../scss/_default.scss */
+.quote .quote-content {
+  position: relative;
+  background-color: white;
+  /*sidebar*/
+}
+/* line 392, ../scss/_default.scss */
+.quote .quote-content .user-img {
+  float: left;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+/* line 397, ../scss/_default.scss */
+.quote .quote-content .user-img img {
+  width: 100%;
+}
+/* line 402, ../scss/_default.scss */
+.quote .quote-content .quote-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  text-align: center;
+}
+/* line 408, ../scss/_default.scss */
+.quote .quote-content .quote-checkbox label {
+  padding: 50px;
+  display: block;
+}
+/* line 409, ../scss/_default.scss */
+.quote .quote-content .quote-checkbox input {
+  margin: -45px;
+}
+/* line 413, ../scss/_default.scss */
+.quote .quote-content .quote-data {
+  font-size: 14px;
+  float: left;
+  width: 580px;
+  padding: 0 10px;
+}
+/* line 420, ../scss/_default.scss */
+.quote .quote-content .quote-data h5 {
+  margin: 6px 0;
+}
+/* line 423, ../scss/_default.scss */
+.quote .quote-content .quote-data h5 .user-name {
+  font-weight: bold;
+}
+/* line 428, ../scss/_default.scss */
+.quote .quote-content .quote-data p {
+  margin-bottom: 15px;
+}
+/* line 430, ../scss/_default.scss */
+.quote .quote-content .quote-data .quote-txt {
+  line-height: 1.3em;
+}
+/* line 435, ../scss/_default.scss */
+.quote .quote-content .sidebar {
+  display: block;
+  float: right;
+  position: relative;
+  top: -5px;
+  right: -5px;
+  width: 230px;
+}
+/* line 443, ../scss/_default.scss */
+.quote .quote-content .sidebar .status-bar {
+  height: 32px;
+  float: left;
+}
+/* line 448, ../scss/_default.scss */
+.quote .quote-content .sidebar .status-bar .status-btn:active, .quote .quote-content .sidebar .status-bar .status-btn:hover, .quote .quote-content .sidebar .status-bar .status-btn:link, .quote .quote-content .sidebar .status-bar .status-btn:visited, .quote .quote-content .sidebar .status-bar .status-btn:focus {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 451, ../scss/_default.scss */
+.quote .quote-content .sidebar .status-bar .ribbon {
+  width: 198px;
+}
+/* line 454, ../scss/_default.scss */
+.quote .quote-content .sidebar .status-bar .ribbon:after {
+  display: none;
+}
+/* line 459, ../scss/_default.scss */
+.quote .quote-content .sidebar .social, .quote .quote-content .sidebar .tags-btn {
+  float: left;
+  width: 32px;
+  max-height: 32px;
+  overflow: hidden;
+}
+/* line 466, ../scss/_default.scss */
+.quote .quote-content .sidebar .tags {
+  float: left;
+  width: 198px;
+  background: #bdc3c7;
+  display: block;
+  height: 47px;
+  margin: 7px 0 0 0;
+  padding: 2px 5px;
+  overflow: auto;
+}
+/* line 476, ../scss/_default.scss */
+.quote .quote-content .sidebar .tags p {
+  line-height: 1.4em;
+  margin: 0;
+}
+/* line 479, ../scss/_default.scss */
+.quote .quote-content .sidebar .tags p .badge {
+  font-size: .7em;
+  margin-right: 2px;
+}
+/* line 485, ../scss/_default.scss */
+.quote .quote-content .sidebar .tags-menu {
+  margin: 7px 0 0 0;
+  float: left;
+}
+/* line 489, ../scss/_default.scss */
+.quote .quote-content .sidebar .tags-menu .tags-btn {
+  background-color: #bdc3c7;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 6px 9px;
+}
+/* line 494, ../scss/_default.scss */
+.quote .quote-content .sidebar .tags-menu .tags-btn:hover {
+  background-color: #cbd0d3;
+}
+/* line 497, ../scss/_default.scss */
+.quote .quote-content .sidebar .tags-menu .auto {
+  max-height: 150px;
+}
+/* line 503, ../scss/_default.scss */
+.quote footer {
+  background-color: #e4e6e8;
+}
+/* line 508, ../scss/_default.scss */
+.quote footer .feeling-menu .btn {
+  width: 34px;
+}
+/* line 512, ../scss/_default.scss */
+.quote footer .btn {
+  text-transform: uppercase;
+  font-weight: normal;
+  border: none !important;
+  color: #7e7e7e;
+  height: 32px;
+  margin: 0;
+}
+/* line 520, ../scss/_default.scss */
+.quote footer .btn:link, .quote footer .btn:visited {
+  background-color: #f1f1f1;
+  color: #7e7e7e;
+}
+/* line 521, ../scss/_default.scss */
+.quote footer .btn:hover, .quote footer .btn:active, .quote footer .btn:focus {
+  background-color: #fefefe;
+  color: gray;
+}
+/* line 525, ../scss/_default.scss */
+.quote .accordion-hidden {
+  padding: 0px 20px 20px 100px;
+  max-height: 300px;
+  overflow: auto;
+}
+/* line 532, ../scss/_default.scss */
+.quote.quote-small {
+  padding: 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0;
+  /*quote-content*/
+  /*footer*/
+}
+/* line 537, ../scss/_default.scss */
+.quote.quote-small:last-child {
+  border-bottom: none;
+}
+/* line 540, ../scss/_default.scss */
+.quote.quote-small .quote-content {
+  background-color: #f7f7f7;
+}
+/* line 542, ../scss/_default.scss */
+.quote.quote-small .quote-content .user-img {
+  width: 80px;
+  height: 80px;
+}
+/* line 545, ../scss/_default.scss */
+.quote.quote-small .quote-content .user-img img {
+  width: 80px;
+  height: 80px;
+}
+/* line 551, ../scss/_default.scss */
+.quote.quote-small .quote-content .quote-data {
+  width: 670px;
+}
+/* line 552, ../scss/_default.scss */
+.quote.quote-small .quote-content .sidebar {
+  width: 32px;
+}
+/* line 556, ../scss/_default.scss */
+.quote.quote-small footer .mec-menu {
+  margin: 0 52px;
+}
+/* line 557, ../scss/_default.scss */
+.quote.quote-small footer .quote-actions {
+  float: right;
+}
+
+/* citação */
+/*
+** GENERIC
+** Todos os componentes reutilizaveis
+*/
+/* COISINHAS QUE SE REPETEM */
+/* MIXINS */
+/* COMPONENTES REUTILIZÁVEIS */
+/*
+** PARTIALS
+** partial são as suas páginas
+*/
+/*@import 'partials/home';*/

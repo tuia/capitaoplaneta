@@ -36,6 +36,7 @@
 	$linkedin-color: #007bb6;
 	$blogger-color: #FF6600;
 	$foursquare-color: #0072b1;
+	$reclameaqui-color: #008751;
 
 	/* HEADER */
 	$header-bg-gray: #95A5A6;
@@ -106,6 +107,11 @@ label {font-weight: normal;}
 		&.foursquare {
 			background: $foursquare-color;
 			&:hover { background: lighten($foursquare-color, 10%) }
+		}
+		&.reclame-aqui{
+			background: $reclameaqui-color;
+			&:hover { background: lighten($reclameaqui-color, 5%) }
+			.reclame-aqui-icon {width: 70%; padding: 5% 0 15%}
 		}
 	}
 
@@ -471,7 +477,7 @@ label {font-weight: normal;}
 			    	line-height: 1.4em;
 			    	margin: 0;
 			    	.badge {
-			    		font-size: .7em
+			    		font-size: .7em;
 			    		margin-right: 2px;
 			    	}
 			    }
