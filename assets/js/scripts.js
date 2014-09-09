@@ -76,4 +76,20 @@ $('.accordion-box .accordion-trigger').not('.disabled').click( function() {
 		return false;
 	});
 
+	$('.status-btn').click( function() {
+		if ( !$(this).hasClass('atendimento') ) {
+				console.log('tenho a classe atendimento')
+			
+		  $(this).addClass('atendimento').addClass('aberta');
+		  $(this).text('aberta');
+		  setTimeout( function() {
+		    $(this).parents('.dropdown.open').removeClass('open');
+		  }, 1000); 
+		  return false;
+		}
+	});
+
+
+
+
 
