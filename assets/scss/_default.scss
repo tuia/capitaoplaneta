@@ -56,6 +56,7 @@ a:hover {text-decoration: none;}
 /*HELPERS*/
 .auto {overflow: auto}
 .accordion-hidden {display: none;}
+.accordion-trigger.disabled {@include opacity(.3)}
 
 /*Media queries breakpoints*/
 .container { width: 950px !important; padding: 0;}

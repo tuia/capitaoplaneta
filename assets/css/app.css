@@ -131,8 +131,17 @@ a:hover {
   display: none;
 }
 
+/* line 59, ../scss/_default.scss */
+.accordion-trigger.disabled {
+  filter: alpha(opacity=30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
+  opacity: 0.3;
+}
+
 /*Media queries breakpoints*/
-/* line 61, ../scss/_default.scss */
+/* line 62, ../scss/_default.scss */
 .container {
   width: 950px !important;
   padding: 0;
@@ -140,7 +149,7 @@ a:hover {
 
 /* COMPONENTES */
 /* SOCIAL ICONS */
-/* line 68, ../scss/_default.scss */
+/* line 69, ../scss/_default.scss */
 .btn.social {
   color: #FFFFFF;
   text-align: center;
@@ -149,94 +158,94 @@ a:hover {
   padding: 2px;
   font-size: 18px;
 }
-/* line 77, ../scss/_default.scss */
+/* line 78, ../scss/_default.scss */
 .btn.facebook {
   background: #3b5998;
 }
-/* line 79, ../scss/_default.scss */
+/* line 80, ../scss/_default.scss */
 .btn.facebook:hover {
   background: #4c70ba;
 }
-/* line 81, ../scss/_default.scss */
+/* line 82, ../scss/_default.scss */
 .btn.twitter {
   background: #00aced;
 }
-/* line 83, ../scss/_default.scss */
+/* line 84, ../scss/_default.scss */
 .btn.twitter:hover {
   background: #21c2ff;
 }
-/* line 85, ../scss/_default.scss */
+/* line 86, ../scss/_default.scss */
 .btn.youtube {
   background: #bb0000;
 }
-/* line 87, ../scss/_default.scss */
+/* line 88, ../scss/_default.scss */
 .btn.youtube:hover {
   background: #ee0000;
 }
-/* line 89, ../scss/_default.scss */
+/* line 90, ../scss/_default.scss */
 .btn.gplus {
   background: #dd4b39;
 }
-/* line 91, ../scss/_default.scss */
+/* line 92, ../scss/_default.scss */
 .btn.gplus:hover {
   background: #e47365;
 }
-/* line 93, ../scss/_default.scss */
+/* line 94, ../scss/_default.scss */
 .btn.instagram {
   background: #517fa4;
 }
-/* line 95, ../scss/_default.scss */
+/* line 96, ../scss/_default.scss */
 .btn.instagram:hover {
   background: #7098b8;
 }
-/* line 97, ../scss/_default.scss */
+/* line 98, ../scss/_default.scss */
 .btn.flickr {
   background: #ff0084;
 }
-/* line 99, ../scss/_default.scss */
+/* line 100, ../scss/_default.scss */
 .btn.flickr:hover {
   background: #ff339d;
 }
-/* line 101, ../scss/_default.scss */
+/* line 102, ../scss/_default.scss */
 .btn.linkedin {
   background: #007bb6;
 }
-/* line 103, ../scss/_default.scss */
+/* line 104, ../scss/_default.scss */
 .btn.linkedin:hover {
   background: #009de9;
 }
-/* line 105, ../scss/_default.scss */
+/* line 106, ../scss/_default.scss */
 .btn.blogger {
   background: #ff6600;
 }
-/* line 107, ../scss/_default.scss */
+/* line 108, ../scss/_default.scss */
 .btn.blogger:hover {
   background: #ff8533;
 }
-/* line 109, ../scss/_default.scss */
+/* line 110, ../scss/_default.scss */
 .btn.foursquare {
   background: #0072b1;
 }
-/* line 111, ../scss/_default.scss */
+/* line 112, ../scss/_default.scss */
 .btn.foursquare:hover {
   background: #0093e4;
 }
-/* line 113, ../scss/_default.scss */
+/* line 114, ../scss/_default.scss */
 .btn.reclame-aqui {
   background: #008751;
 }
-/* line 115, ../scss/_default.scss */
+/* line 116, ../scss/_default.scss */
 .btn.reclame-aqui:hover {
   background: #00a160;
 }
-/* line 116, ../scss/_default.scss */
+/* line 117, ../scss/_default.scss */
 .btn.reclame-aqui .reclame-aqui-icon {
   width: 70%;
   padding: 5% 0 15%;
 }
 
 /* BOTÕES DOS MENUS DO MEC E DE SENTIMENTO */
-/* line 121, ../scss/_default.scss */
+/* line 122, ../scss/_default.scss */
 .mec-menu .btn, .feeling-menu .btn {
   background-image: url("../img/mec-feel-sprite.png");
   background-color: #f1f1f1;
@@ -260,335 +269,335 @@ a:hover {
   /*infraestrutura*/
   /*relacionamento*/
 }
-/* line 132, ../scss/_default.scss */
+/* line 133, ../scss/_default.scss */
 .mec-menu .btn:hover, .feeling-menu .btn:hover {
   border: none !important;
 }
-/* line 137, ../scss/_default.scss */
+/* line 138, ../scss/_default.scss */
 .mec-menu .btn.good, .feeling-menu .btn.good {
   background-position: -330px 0px;
 }
-/* line 139, ../scss/_default.scss */
+/* line 140, ../scss/_default.scss */
 .mec-menu .btn.good:hover, .mec-menu .btn.good:active, .feeling-menu .btn.good:hover, .feeling-menu .btn.good:active {
   background-position: -330px -32px;
   background-color: #fefefe;
 }
-/* line 140, ../scss/_default.scss */
+/* line 141, ../scss/_default.scss */
 .mec-menu .btn.good.active, .feeling-menu .btn.good.active {
   background-position: -330px -64px;
   background-color: #27ae60;
 }
-/* line 142, ../scss/_default.scss */
+/* line 143, ../scss/_default.scss */
 .mec-menu .btn.neutral, .feeling-menu .btn.neutral {
   background-position: -363px 0px;
 }
-/* line 144, ../scss/_default.scss */
+/* line 145, ../scss/_default.scss */
 .mec-menu .btn.neutral:hover, .mec-menu .btn.neutral:active, .feeling-menu .btn.neutral:hover, .feeling-menu .btn.neutral:active {
   background-position: -363px -32px;
   background-color: #fefefe;
 }
-/* line 145, ../scss/_default.scss */
+/* line 146, ../scss/_default.scss */
 .mec-menu .btn.neutral.active, .feeling-menu .btn.neutral.active {
   background-position: -363px -64px;
   background-color: #2980b9;
 }
-/* line 147, ../scss/_default.scss */
+/* line 148, ../scss/_default.scss */
 .mec-menu .btn.bad, .feeling-menu .btn.bad {
   background-position: -396px 0px;
 }
-/* line 149, ../scss/_default.scss */
+/* line 150, ../scss/_default.scss */
 .mec-menu .btn.bad:hover, .mec-menu .btn.bad:active, .feeling-menu .btn.bad:hover, .feeling-menu .btn.bad:active {
   background-position: -396px -32px;
   background-color: #fefefe;
 }
-/* line 150, ../scss/_default.scss */
+/* line 151, ../scss/_default.scss */
 .mec-menu .btn.bad.active, .feeling-menu .btn.bad.active {
   background-position: -396px -64px;
   background-color: #c0392b;
 }
-/* line 152, ../scss/_default.scss */
+/* line 153, ../scss/_default.scss */
 .mec-menu .btn.remove, .feeling-menu .btn.remove {
   background-position: -363px -96px;
 }
-/* line 154, ../scss/_default.scss */
+/* line 155, ../scss/_default.scss */
 .mec-menu .btn.remove:hover, .mec-menu .btn.remove:active, .feeling-menu .btn.remove:hover, .feeling-menu .btn.remove:active {
   background-position: -396px -96px;
   background-color: #fefefe;
 }
-/* line 158, ../scss/_default.scss */
+/* line 159, ../scss/_default.scss */
 .mec-menu .btn.captacao, .feeling-menu .btn.captacao {
   background-position: 0px 0px;
 }
-/* line 160, ../scss/_default.scss */
+/* line 161, ../scss/_default.scss */
 .mec-menu .btn.captacao:hover, .mec-menu .btn.captacao:active, .mec-menu .btn.captacao.active, .feeling-menu .btn.captacao:hover, .feeling-menu .btn.captacao:active, .feeling-menu .btn.captacao.active {
   background-position: 0px -32px;
   background-color: #fefefe;
 }
-/* line 161, ../scss/_default.scss */
+/* line 162, ../scss/_default.scss */
 .mec-menu .btn.captacao.good, .feeling-menu .btn.captacao.good {
   background-color: #27ae60;
   background-position: 0px -64px;
 }
-/* line 162, ../scss/_default.scss */
+/* line 163, ../scss/_default.scss */
 .mec-menu .btn.captacao.neutral, .feeling-menu .btn.captacao.neutral {
   background-color: #2980b9;
   background-position: 0px -64px;
 }
-/* line 163, ../scss/_default.scss */
+/* line 164, ../scss/_default.scss */
 .mec-menu .btn.captacao.bad, .feeling-menu .btn.captacao.bad {
   background-color: #c0392b;
   background-position: 0px -64px;
 }
-/* line 166, ../scss/_default.scss */
+/* line 167, ../scss/_default.scss */
 .mec-menu .btn.empregabilidade, .feeling-menu .btn.empregabilidade {
   background-position: -33px 0px;
 }
-/* line 168, ../scss/_default.scss */
+/* line 169, ../scss/_default.scss */
 .mec-menu .btn.empregabilidade:hover, .mec-menu .btn.empregabilidade:active, .mec-menu .btn.empregabilidade.active, .feeling-menu .btn.empregabilidade:hover, .feeling-menu .btn.empregabilidade:active, .feeling-menu .btn.empregabilidade.active {
   background-position: -33px -32px;
   background-color: #fefefe;
 }
-/* line 169, ../scss/_default.scss */
+/* line 170, ../scss/_default.scss */
 .mec-menu .btn.empregabilidade.good, .feeling-menu .btn.empregabilidade.good {
   background-color: #27ae60;
   background-position: -33px -64px;
 }
-/* line 170, ../scss/_default.scss */
+/* line 171, ../scss/_default.scss */
 .mec-menu .btn.empregabilidade.neutral, .feeling-menu .btn.empregabilidade.neutral {
   background-color: #2980b9;
   background-position: -33px -64px;
 }
-/* line 171, ../scss/_default.scss */
+/* line 172, ../scss/_default.scss */
 .mec-menu .btn.empregabilidade.bad, .feeling-menu .btn.empregabilidade.bad {
   background-color: #c0392b;
   background-position: -33px -64px;
 }
-/* line 174, ../scss/_default.scss */
+/* line 175, ../scss/_default.scss */
 .mec-menu .btn.localizacao, .feeling-menu .btn.localizacao {
   background-position: -66px 0px;
 }
-/* line 176, ../scss/_default.scss */
+/* line 177, ../scss/_default.scss */
 .mec-menu .btn.localizacao:hover, .mec-menu .btn.localizacao:active, .mec-menu .btn.localizacao.active, .feeling-menu .btn.localizacao:hover, .feeling-menu .btn.localizacao:active, .feeling-menu .btn.localizacao.active {
   background-position: -66px -32px;
   background-color: #fefefe;
 }
-/* line 177, ../scss/_default.scss */
+/* line 178, ../scss/_default.scss */
 .mec-menu .btn.localizacao.good, .feeling-menu .btn.localizacao.good {
   background-color: #27ae60;
   background-position: -66px -64px;
 }
-/* line 178, ../scss/_default.scss */
+/* line 179, ../scss/_default.scss */
 .mec-menu .btn.localizacao.neutral, .feeling-menu .btn.localizacao.neutral {
   background-color: #2980b9;
   background-position: -66px -64px;
 }
-/* line 179, ../scss/_default.scss */
+/* line 180, ../scss/_default.scss */
 .mec-menu .btn.localizacao.bad, .feeling-menu .btn.localizacao.bad {
   background-color: #c0392b;
   background-position: -66px -64px;
 }
-/* line 182, ../scss/_default.scss */
+/* line 183, ../scss/_default.scss */
 .mec-menu .btn.atuacao-etica, .feeling-menu .btn.atuacao-etica {
   background-position: -99px 0px;
 }
-/* line 184, ../scss/_default.scss */
+/* line 185, ../scss/_default.scss */
 .mec-menu .btn.atuacao-etica:hover, .mec-menu .btn.atuacao-etica:active, .mec-menu .btn.atuacao-etica.active, .feeling-menu .btn.atuacao-etica:hover, .feeling-menu .btn.atuacao-etica:active, .feeling-menu .btn.atuacao-etica.active {
   background-position: -99px -32px;
   background-color: #fefefe;
 }
-/* line 185, ../scss/_default.scss */
+/* line 186, ../scss/_default.scss */
 .mec-menu .btn.atuacao-etica.good, .feeling-menu .btn.atuacao-etica.good {
   background-color: #27ae60;
   background-position: -99px -64px;
 }
-/* line 186, ../scss/_default.scss */
+/* line 187, ../scss/_default.scss */
 .mec-menu .btn.atuacao-etica.neutral, .feeling-menu .btn.atuacao-etica.neutral {
   background-color: #2980b9;
   background-position: -99px -64px;
 }
-/* line 187, ../scss/_default.scss */
+/* line 188, ../scss/_default.scss */
 .mec-menu .btn.atuacao-etica.bad, .feeling-menu .btn.atuacao-etica.bad {
   background-color: #c0392b;
   background-position: -99px -64px;
 }
-/* line 190, ../scss/_default.scss */
+/* line 191, ../scss/_default.scss */
 .mec-menu .btn.corpo-docente, .feeling-menu .btn.corpo-docente {
   background-position: -132px 0px;
 }
-/* line 192, ../scss/_default.scss */
+/* line 193, ../scss/_default.scss */
 .mec-menu .btn.corpo-docente:hover, .mec-menu .btn.corpo-docente:active, .mec-menu .btn.corpo-docente.active, .feeling-menu .btn.corpo-docente:hover, .feeling-menu .btn.corpo-docente:active, .feeling-menu .btn.corpo-docente.active {
   background-position: -132px -32px;
   background-color: #fefefe;
 }
-/* line 193, ../scss/_default.scss */
+/* line 194, ../scss/_default.scss */
 .mec-menu .btn.corpo-docente.good, .feeling-menu .btn.corpo-docente.good {
   background-color: #27ae60;
   background-position: -132px -64px;
 }
-/* line 194, ../scss/_default.scss */
+/* line 195, ../scss/_default.scss */
 .mec-menu .btn.corpo-docente.neutral, .feeling-menu .btn.corpo-docente.neutral {
   background-color: #2980b9;
   background-position: -132px -64px;
 }
-/* line 195, ../scss/_default.scss */
+/* line 196, ../scss/_default.scss */
 .mec-menu .btn.corpo-docente.bad, .feeling-menu .btn.corpo-docente.bad {
   background-color: #c0392b;
   background-position: -132px -64px;
 }
-/* line 198, ../scss/_default.scss */
+/* line 199, ../scss/_default.scss */
 .mec-menu .btn.credenciamento-no-mec, .feeling-menu .btn.credenciamento-no-mec {
   background-position: -165px 0px;
 }
-/* line 200, ../scss/_default.scss */
+/* line 201, ../scss/_default.scss */
 .mec-menu .btn.credenciamento-no-mec:hover, .mec-menu .btn.credenciamento-no-mec:active, .mec-menu .btn.credenciamento-no-mec.active, .feeling-menu .btn.credenciamento-no-mec:hover, .feeling-menu .btn.credenciamento-no-mec:active, .feeling-menu .btn.credenciamento-no-mec.active {
   background-position: -165px -32px;
   background-color: #fefefe;
 }
-/* line 201, ../scss/_default.scss */
+/* line 202, ../scss/_default.scss */
 .mec-menu .btn.credenciamento-no-mec.good, .feeling-menu .btn.credenciamento-no-mec.good {
   background-color: #27ae60;
   background-position: -165px -64px;
 }
-/* line 202, ../scss/_default.scss */
+/* line 203, ../scss/_default.scss */
 .mec-menu .btn.credenciamento-no-mec.neutral, .feeling-menu .btn.credenciamento-no-mec.neutral {
   background-color: #2980b9;
   background-position: -165px -64px;
 }
-/* line 203, ../scss/_default.scss */
+/* line 204, ../scss/_default.scss */
 .mec-menu .btn.credenciamento-no-mec.bad, .feeling-menu .btn.credenciamento-no-mec.bad {
   background-color: #c0392b;
   background-position: -165px -64px;
 }
-/* line 206, ../scss/_default.scss */
+/* line 207, ../scss/_default.scss */
 .mec-menu .btn.preco, .feeling-menu .btn.preco {
   background-position: -198px 0px;
 }
-/* line 208, ../scss/_default.scss */
+/* line 209, ../scss/_default.scss */
 .mec-menu .btn.preco:hover, .mec-menu .btn.preco:active, .mec-menu .btn.preco.active, .feeling-menu .btn.preco:hover, .feeling-menu .btn.preco:active, .feeling-menu .btn.preco.active {
   background-position: -198px -32px;
   background-color: #fefefe;
 }
-/* line 209, ../scss/_default.scss */
+/* line 210, ../scss/_default.scss */
 .mec-menu .btn.preco.good, .feeling-menu .btn.preco.good {
   background-color: #27ae60;
   background-position: -198px -64px;
 }
-/* line 210, ../scss/_default.scss */
+/* line 211, ../scss/_default.scss */
 .mec-menu .btn.preco.neutral, .feeling-menu .btn.preco.neutral {
   background-color: #2980b9;
   background-position: -198px -64px;
 }
-/* line 211, ../scss/_default.scss */
+/* line 212, ../scss/_default.scss */
 .mec-menu .btn.preco.bad, .feeling-menu .btn.preco.bad {
   background-color: #c0392b;
   background-position: -198px -64px;
 }
-/* line 214, ../scss/_default.scss */
+/* line 215, ../scss/_default.scss */
 .mec-menu .btn.qualidade-de-ensino, .feeling-menu .btn.qualidade-de-ensino {
   background-position: -231px 0px;
 }
-/* line 216, ../scss/_default.scss */
+/* line 217, ../scss/_default.scss */
 .mec-menu .btn.qualidade-de-ensino:hover, .mec-menu .btn.qualidade-de-ensino:active, .mec-menu .btn.qualidade-de-ensino.active, .feeling-menu .btn.qualidade-de-ensino:hover, .feeling-menu .btn.qualidade-de-ensino:active, .feeling-menu .btn.qualidade-de-ensino.active {
   background-position: -231px -32px;
   background-color: #fefefe;
 }
-/* line 217, ../scss/_default.scss */
+/* line 218, ../scss/_default.scss */
 .mec-menu .btn.qualidade-de-ensino.good, .feeling-menu .btn.qualidade-de-ensino.good {
   background-color: #27ae60;
   background-position: -231px -64px;
 }
-/* line 218, ../scss/_default.scss */
+/* line 219, ../scss/_default.scss */
 .mec-menu .btn.qualidade-de-ensino.neutral, .feeling-menu .btn.qualidade-de-ensino.neutral {
   background-color: #2980b9;
   background-position: -231px -64px;
 }
-/* line 219, ../scss/_default.scss */
+/* line 220, ../scss/_default.scss */
 .mec-menu .btn.qualidade-de-ensino.bad, .feeling-menu .btn.qualidade-de-ensino.bad {
   background-color: #c0392b;
   background-position: -231px -64px;
 }
-/* line 222, ../scss/_default.scss */
+/* line 223, ../scss/_default.scss */
 .mec-menu .btn.infraestrutura, .feeling-menu .btn.infraestrutura {
   background-position: -264px 0px;
 }
-/* line 224, ../scss/_default.scss */
+/* line 225, ../scss/_default.scss */
 .mec-menu .btn.infraestrutura:hover, .mec-menu .btn.infraestrutura:active, .mec-menu .btn.infraestrutura.active, .feeling-menu .btn.infraestrutura:hover, .feeling-menu .btn.infraestrutura:active, .feeling-menu .btn.infraestrutura.active {
   background-position: -264px -32px;
   background-color: #fefefe;
 }
-/* line 225, ../scss/_default.scss */
+/* line 226, ../scss/_default.scss */
 .mec-menu .btn.infraestrutura.good, .feeling-menu .btn.infraestrutura.good {
   background-color: #27ae60;
   background-position: -264px -64px;
 }
-/* line 226, ../scss/_default.scss */
+/* line 227, ../scss/_default.scss */
 .mec-menu .btn.infraestrutura.neutral, .feeling-menu .btn.infraestrutura.neutral {
   background-color: #2980b9;
   background-position: -264px -64px;
 }
-/* line 227, ../scss/_default.scss */
+/* line 228, ../scss/_default.scss */
 .mec-menu .btn.infraestrutura.bad, .feeling-menu .btn.infraestrutura.bad {
   background-color: #c0392b;
   background-position: -264px -64px;
 }
-/* line 230, ../scss/_default.scss */
+/* line 231, ../scss/_default.scss */
 .mec-menu .btn.relacionamento, .feeling-menu .btn.relacionamento {
   background-position: -297px 0px;
 }
-/* line 232, ../scss/_default.scss */
+/* line 233, ../scss/_default.scss */
 .mec-menu .btn.relacionamento:hover, .mec-menu .btn.relacionamento:active, .mec-menu .btn.relacionamento.active, .feeling-menu .btn.relacionamento:hover, .feeling-menu .btn.relacionamento:active, .feeling-menu .btn.relacionamento.active {
   background-position: -297px -32px;
   background-color: #fefefe;
 }
-/* line 233, ../scss/_default.scss */
+/* line 234, ../scss/_default.scss */
 .mec-menu .btn.relacionamento.good, .feeling-menu .btn.relacionamento.good {
   background-color: #27ae60;
   background-position: -297px -64px;
 }
-/* line 234, ../scss/_default.scss */
+/* line 235, ../scss/_default.scss */
 .mec-menu .btn.relacionamento.neutral, .feeling-menu .btn.relacionamento.neutral {
   background-color: #2980b9;
   background-position: -297px -64px;
 }
-/* line 235, ../scss/_default.scss */
+/* line 236, ../scss/_default.scss */
 .mec-menu .btn.relacionamento.bad, .feeling-menu .btn.relacionamento.bad {
   background-color: #c0392b;
   background-position: -297px -64px;
 }
 
 /*btn*/
-/* line 241, ../scss/_default.scss */
+/* line 242, ../scss/_default.scss */
 .dropdown-menu.feeling-menu .btn.good:hover {
   background-color: #27ae60;
   background-position: -330px -64px;
 }
-/* line 244, ../scss/_default.scss */
+/* line 245, ../scss/_default.scss */
 .dropdown-menu.feeling-menu .btn.neutral:hover {
   background-color: #2980b9;
   background-position: -363px -64px;
 }
-/* line 247, ../scss/_default.scss */
+/* line 248, ../scss/_default.scss */
 .dropdown-menu.feeling-menu .btn.bad:hover {
   background-color: #c0392b;
   background-position: -396px -64px;
 }
 
 /* TAGS DROPDOWN */
-/* line 254, ../scss/_default.scss */
+/* line 255, ../scss/_default.scss */
 .tags-menu .dropdown-menu {
   background: white;
   width: 190px;
 }
-/* line 258, ../scss/_default.scss */
+/* line 259, ../scss/_default.scss */
 .tags-menu .dropdown-menu .auto {
   margin: 10px 0;
 }
-/* line 261, ../scss/_default.scss */
+/* line 262, ../scss/_default.scss */
 .tags-menu .dropdown-menu .form-group {
   padding: 0 5px;
   margin: 0;
 }
-/* line 265, ../scss/_default.scss */
+/* line 266, ../scss/_default.scss */
 .tags-menu .dropdown-menu .checkbox {
   background: #f1f1f1;
   cursor: pointer;
@@ -597,35 +606,35 @@ a:hover {
   padding: 5px;
   font-size: .9em;
 }
-/* line 272, ../scss/_default.scss */
+/* line 273, ../scss/_default.scss */
 .tags-menu .dropdown-menu .checkbox:hover {
   background: #fefefe;
 }
-/* line 274, ../scss/_default.scss */
+/* line 275, ../scss/_default.scss */
 .tags-menu .dropdown-menu .checkbox label {
   display: block;
 }
 
 /*tags-dropdown*/
 /*MENU DO MEC*/
-/* line 282, ../scss/_default.scss */
+/* line 283, ../scss/_default.scss */
 .mec-menu {
   margin: 0 66px;
 }
-/* line 285, ../scss/_default.scss */
+/* line 286, ../scss/_default.scss */
 .mec-menu .dropdown-menu.feeling-menu {
   min-width: 33px;
   padding: 1px;
   margin-left: -2px;
 }
-/* line 289, ../scss/_default.scss */
+/* line 290, ../scss/_default.scss */
 .mec-menu .dropdown-menu.feeling-menu li {
   margin-bottom: 1px;
 }
 
 /*mec-menu*/
 /* RIBBON */
-/* line 298, ../scss/_default.scss */
+/* line 299, ../scss/_default.scss */
 .ribbon {
   background-color: #869198;
   display: inline-block;
@@ -635,14 +644,14 @@ a:hover {
   font-weight: bold;
   /* CORES STATUS */
 }
-/* line 306, ../scss/_default.scss */
+/* line 307, ../scss/_default.scss */
 .ribbon:before, .ribbon:after {
   content: " ";
   position: absolute;
   height: 0;
   width: 0;
 }
-/* line 312, ../scss/_default.scss */
+/* line 313, ../scss/_default.scss */
 .ribbon:before {
   border-bottom: 16px solid transparent;
   border-top: 16px solid transparent;
@@ -650,96 +659,96 @@ a:hover {
   left: -10px;
   top: 0px;
 }
-/* line 319, ../scss/_default.scss */
+/* line 320, ../scss/_default.scss */
 .ribbon:after {
   border-top: 5px solid transparent;
   border-left: 5px solid #869198;
   right: 0;
   top: -5px;
 }
-/* line 327, ../scss/_default.scss */
+/* line 328, ../scss/_default.scss */
 .ribbon.aberta {
   background-color: #d35400;
 }
-/* line 329, ../scss/_default.scss */
+/* line 330, ../scss/_default.scss */
 .ribbon.aberta:before {
   border-right: 10px solid #d35400;
 }
-/* line 330, ../scss/_default.scss */
+/* line 331, ../scss/_default.scss */
 .ribbon.aberta:after {
   border-left: 5px solid #ec5e00;
 }
-/* line 331, ../scss/_default.scss */
+/* line 332, ../scss/_default.scss */
 .ribbon.aberta:hover {
   background: #ec5e00;
   color: #FFFFFF;
 }
-/* line 333, ../scss/_default.scss */
+/* line 334, ../scss/_default.scss */
 .ribbon.aberta:hover:before {
   border-right: 10px solid #ec5e00;
 }
-/* line 334, ../scss/_default.scss */
+/* line 335, ../scss/_default.scss */
 .ribbon.aberta:hover:after {
   border-left: 5px solid #ec5e00;
 }
-/* line 337, ../scss/_default.scss */
+/* line 338, ../scss/_default.scss */
 .ribbon.aguardando {
   background-color: #e67e22;
 }
-/* line 339, ../scss/_default.scss */
+/* line 340, ../scss/_default.scss */
 .ribbon.aguardando:before {
   border-right: 10px solid #e67e22;
 }
-/* line 340, ../scss/_default.scss */
+/* line 341, ../scss/_default.scss */
 .ribbon.aguardando:after {
   border-left: 5px solid #e98b39;
 }
-/* line 341, ../scss/_default.scss */
+/* line 342, ../scss/_default.scss */
 .ribbon.aguardando:hover {
   background: #e98b39;
   color: #FFFFFF;
 }
-/* line 343, ../scss/_default.scss */
+/* line 344, ../scss/_default.scss */
 .ribbon.aguardando:hover:before {
   border-right: 10px solid #e98b39;
 }
-/* line 344, ../scss/_default.scss */
+/* line 345, ../scss/_default.scss */
 .ribbon.aguardando:hover:after {
   border-left: 5px solid #e98b39;
 }
-/* line 347, ../scss/_default.scss */
+/* line 348, ../scss/_default.scss */
 .ribbon.fechada {
   background-color: #f39c12;
 }
-/* line 349, ../scss/_default.scss */
+/* line 350, ../scss/_default.scss */
 .ribbon.fechada:before {
   border-right: 10px solid #f39c12;
 }
-/* line 350, ../scss/_default.scss */
+/* line 351, ../scss/_default.scss */
 .ribbon.fechada:after {
   border-left: 5px solid #f4a62a;
 }
-/* line 351, ../scss/_default.scss */
+/* line 352, ../scss/_default.scss */
 .ribbon.fechada:hover {
   background: #f4a62a;
   color: #FFFFFF;
 }
-/* line 353, ../scss/_default.scss */
+/* line 354, ../scss/_default.scss */
 .ribbon.fechada:hover:before {
   border-right: 10px solid #f4a62a;
 }
-/* line 354, ../scss/_default.scss */
+/* line 355, ../scss/_default.scss */
 .ribbon.fechada:hover:after {
   border-left: 5px solid #f4a62a;
 }
 
 /*ribbon*/
 /* NAVBAR TOPO */
-/* line 362, ../scss/_default.scss */
+/* line 363, ../scss/_default.scss */
 #navigation {
   position: relative;
 }
-/* line 365, ../scss/_default.scss */
+/* line 366, ../scss/_default.scss */
 #navigation .navbar-brand {
   background: url(../img/planeta-y-logo.png) no-repeat center;
   width: 120px;
@@ -751,7 +760,7 @@ a:hover {
   margin: 0 -60px;
   outline: none;
 }
-/* line 377, ../scss/_default.scss */
+/* line 378, ../scss/_default.scss */
 #navigation .nav-img {
   width: 20px;
   height: 20px;
@@ -759,7 +768,7 @@ a:hover {
 }
 
 /* CABEÇALHO*/
-/* line 386, ../scss/_default.scss */
+/* line 387, ../scss/_default.scss */
 #header {
   background-color: #95a5a6;
   margin: -20px 0 40px;
@@ -767,7 +776,7 @@ a:hover {
 }
 
 /* CITAÇÃO */
-/* line 394, ../scss/_default.scss */
+/* line 395, ../scss/_default.scss */
 .quote {
   margin: 0 0 40px 0;
   border: 3px solid transparent;
@@ -775,40 +784,40 @@ a:hover {
   /*footer*/
   /* citação pequena */
 }
-/* line 398, ../scss/_default.scss */
+/* line 399, ../scss/_default.scss */
 .quote.selected {
   border-color: #a1aab0;
 }
-/* line 400, ../scss/_default.scss */
+/* line 401, ../scss/_default.scss */
 .quote.selected .quote-content {
   background-color: #cbd0d3;
 }
-/* line 403, ../scss/_default.scss */
+/* line 404, ../scss/_default.scss */
 .quote.selected footer {
   background-color: #d9dcde;
 }
-/* line 404, ../scss/_default.scss */
+/* line 405, ../scss/_default.scss */
 .quote.selected .accordion-hidden {
   background-color: #e6e9ea;
 }
-/* line 408, ../scss/_default.scss */
+/* line 409, ../scss/_default.scss */
 .quote .quote-content {
   position: relative;
   background-color: white;
   /*sidebar*/
 }
-/* line 412, ../scss/_default.scss */
+/* line 413, ../scss/_default.scss */
 .quote .quote-content .user-img {
   float: left;
   position: relative;
   width: 100px;
   height: 100px;
 }
-/* line 417, ../scss/_default.scss */
+/* line 418, ../scss/_default.scss */
 .quote .quote-content .user-img img {
   width: 100%;
 }
-/* line 422, ../scss/_default.scss */
+/* line 423, ../scss/_default.scss */
 .quote .quote-content .quote-checkbox {
   position: absolute;
   top: 0;
@@ -816,39 +825,39 @@ a:hover {
   margin: 0;
   text-align: center;
 }
-/* line 428, ../scss/_default.scss */
+/* line 429, ../scss/_default.scss */
 .quote .quote-content .quote-checkbox label {
   padding: 50px;
   display: block;
 }
-/* line 429, ../scss/_default.scss */
+/* line 430, ../scss/_default.scss */
 .quote .quote-content .quote-checkbox input {
   margin: -45px;
 }
-/* line 433, ../scss/_default.scss */
+/* line 434, ../scss/_default.scss */
 .quote .quote-content .quote-data {
   font-size: 14px;
   float: left;
   width: 580px;
   padding: 0 10px;
 }
-/* line 440, ../scss/_default.scss */
+/* line 441, ../scss/_default.scss */
 .quote .quote-content .quote-data h5 {
   margin: 6px 0;
 }
-/* line 443, ../scss/_default.scss */
+/* line 444, ../scss/_default.scss */
 .quote .quote-content .quote-data h5 .user-name {
   font-weight: bold;
 }
-/* line 448, ../scss/_default.scss */
+/* line 449, ../scss/_default.scss */
 .quote .quote-content .quote-data p {
   margin-bottom: 15px;
 }
-/* line 450, ../scss/_default.scss */
+/* line 451, ../scss/_default.scss */
 .quote .quote-content .quote-data .quote-txt {
   line-height: 1.3em;
 }
-/* line 455, ../scss/_default.scss */
+/* line 456, ../scss/_default.scss */
 .quote .quote-content .sidebar {
   display: block;
   float: right;
@@ -858,12 +867,12 @@ a:hover {
   width: 240px;
   padding-left: 10px;
 }
-/* line 464, ../scss/_default.scss */
+/* line 465, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar {
   height: 32px;
   float: left;
 }
-/* line 468, ../scss/_default.scss */
+/* line 469, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .status-btn {
   position: relative;
   padding: 6px 6px 6px 20px;
@@ -876,17 +885,17 @@ a:hover {
   -o-transition: width 0.4s ease-in-out, right 0.4s ease-in-out, text-indent 0.2s 0.2s step-start;
   transition: width 0.4s ease-in-out, right 0.4s ease-in-out, text-indent 0.2s 0.2s step-start;
 }
-/* line 480, ../scss/_default.scss */
+/* line 481, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .status-btn:active, .quote .quote-content .sidebar .status-bar .status-btn:hover, .quote .quote-content .sidebar .status-bar .status-btn:link, .quote .quote-content .sidebar .status-bar .status-btn:visited, .quote .quote-content .sidebar .status-bar .status-btn:focus {
   color: #FFFFFF;
 }
-/* line 482, ../scss/_default.scss */
+/* line 483, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .status-btn:hover {
   width: 198px;
   right: 0;
   text-indent: 0;
 }
-/* line 488, ../scss/_default.scss */
+/* line 489, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .status-btn.atendimento {
   width: 198px;
   right: 0;
@@ -896,11 +905,11 @@ a:hover {
   -o-transition: none;
   transition: none;
 }
-/* line 498, ../scss/_default.scss */
+/* line 499, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .status-btn:after {
   display: none;
 }
-/* line 503, ../scss/_default.scss */
+/* line 504, ../scss/_default.scss */
 .quote .quote-content .sidebar .social, .quote .quote-content .sidebar .tags-btn {
   float: right;
   width: 32px;
@@ -908,7 +917,7 @@ a:hover {
   overflow: hidden;
   position: relative;
 }
-/* line 511, ../scss/_default.scss */
+/* line 512, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags {
   float: left;
   width: 198px;
@@ -919,12 +928,12 @@ a:hover {
   padding: 2px 5px;
   overflow: auto;
 }
-/* line 521, ../scss/_default.scss */
+/* line 522, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p {
   line-height: 1.4em;
   margin: 0;
 }
-/* line 524, ../scss/_default.scss */
+/* line 525, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge {
   font-size: .7em;
   margin-right: 2px;
@@ -935,53 +944,53 @@ a:hover {
   -ms-transition: padding 0.1s linear;
   transition: padding 0.1s linear;
 }
-/* line 530, ../scss/_default.scss */
+/* line 531, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge .remove-tag {
   visibility: hidden;
   color: #d9d9d9;
   margin: 0 -2px;
   cursor: pointer;
 }
-/* line 536, ../scss/_default.scss */
+/* line 537, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge:hover {
   padding-right: 7px;
 }
-/* line 538, ../scss/_default.scss */
+/* line 539, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge:hover .remove-tag {
   visibility: visible;
   padding-left: 2px;
   color: white;
   margin: 0;
 }
-/* line 547, ../scss/_default.scss */
+/* line 548, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu {
   margin: 7px 0 0 0;
   float: left;
 }
-/* line 551, ../scss/_default.scss */
+/* line 552, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .tags-btn {
   background-color: #bdc3c7;
   text-align: center;
   color: #FFFFFF;
   padding: 6px 9px;
 }
-/* line 556, ../scss/_default.scss */
+/* line 557, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .tags-btn:hover {
   background-color: #cbd0d3;
 }
-/* line 559, ../scss/_default.scss */
+/* line 560, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .auto {
   max-height: 150px;
 }
-/* line 565, ../scss/_default.scss */
+/* line 566, ../scss/_default.scss */
 .quote footer {
   background-color: #e4e6e8;
 }
-/* line 570, ../scss/_default.scss */
+/* line 571, ../scss/_default.scss */
 .quote footer .feeling-menu .btn {
   width: 34px;
 }
-/* line 574, ../scss/_default.scss */
+/* line 575, ../scss/_default.scss */
 .quote footer .btn {
   text-transform: uppercase;
   font-weight: normal;
@@ -990,24 +999,24 @@ a:hover {
   height: 32px;
   margin: 0;
 }
-/* line 582, ../scss/_default.scss */
+/* line 583, ../scss/_default.scss */
 .quote footer .btn:link, .quote footer .btn:visited {
   background-color: #f1f1f1;
   color: #7e7e7e;
 }
-/* line 583, ../scss/_default.scss */
+/* line 584, ../scss/_default.scss */
 .quote footer .btn:hover, .quote footer .btn:active, .quote footer .btn:focus {
   background-color: #fefefe;
   color: gray;
 }
-/* line 587, ../scss/_default.scss */
+/* line 588, ../scss/_default.scss */
 .quote .accordion-hidden {
   background-color: white;
   padding: 0px 20px 20px 100px;
   max-height: 300px;
   overflow: auto;
 }
-/* line 595, ../scss/_default.scss */
+/* line 596, ../scss/_default.scss */
 .quote.quote-small {
   padding: 20px 0;
   border-bottom: 1px solid #e6e6e6;
@@ -1015,37 +1024,37 @@ a:hover {
   /*quote-content*/
   /*footer*/
 }
-/* line 600, ../scss/_default.scss */
+/* line 601, ../scss/_default.scss */
 .quote.quote-small:last-child {
   border-bottom: none;
 }
-/* line 603, ../scss/_default.scss */
+/* line 604, ../scss/_default.scss */
 .quote.quote-small .quote-content {
   background-color: #f7f7f7;
 }
-/* line 605, ../scss/_default.scss */
+/* line 606, ../scss/_default.scss */
 .quote.quote-small .quote-content .user-img {
   width: 80px;
   height: 80px;
 }
-/* line 608, ../scss/_default.scss */
+/* line 609, ../scss/_default.scss */
 .quote.quote-small .quote-content .user-img img {
   width: 80px;
   height: 80px;
 }
-/* line 614, ../scss/_default.scss */
+/* line 615, ../scss/_default.scss */
 .quote.quote-small .quote-content .quote-data {
   width: 670px;
 }
-/* line 615, ../scss/_default.scss */
+/* line 616, ../scss/_default.scss */
 .quote.quote-small .quote-content .sidebar {
   width: 32px;
 }
-/* line 619, ../scss/_default.scss */
+/* line 620, ../scss/_default.scss */
 .quote.quote-small footer .mec-menu {
   margin: 0 52px;
 }
-/* line 620, ../scss/_default.scss */
+/* line 621, ../scss/_default.scss */
 .quote.quote-small footer .quote-actions {
   float: right;
 }

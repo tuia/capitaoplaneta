@@ -7,7 +7,7 @@ $('[data-toggle="tooltip"], .mec-menu .dropdown-toggle').tooltip({
 
 
 /* ACCORDIONS */
-$('.accordion-box .accordion-trigger').click( function() {
+$('.accordion-box .accordion-trigger').not('.disabled').click( function() {
 	$(this).toggleClass('open');
 	$(this).parents('.accordion-box').find('.accordion-hidden').slideToggle();
 	if ( $(this).hasClass('open') ) {
