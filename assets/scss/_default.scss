@@ -296,7 +296,7 @@ a:hover {text-decoration: none;}
 
 	/* RIBBON */
 	.ribbon {
-		background-color: $box-bg;
+		background-color: darken($box-bg, 20%);
 		display: inline-block;
 		padding: 6px;
 		text-transform: uppercase;
@@ -312,13 +312,13 @@ a:hover {text-decoration: none;}
 		&:before {
 			border-bottom: 16px solid transparent;
 			border-top: 16px solid transparent;
-		    border-right: 10px solid $box-bg;
+		    border-right: 10px solid darken($box-bg, 20%);
 		    left: -10px;
 		    top: 0px;
 		}
 		&:after {
 			border-top: 5px solid transparent;
-		    border-left: 5px solid $box-bg;
+		    border-left: 5px solid darken($box-bg, 20%);
 		    right: 0;
 		    top: -5px;
 		}
@@ -458,18 +458,42 @@ a:hover {text-decoration: none;}
 			position: relative;
 			top: -5px;
 			right: -5px;
-			width: 230px;
+			width: 240px;
+			padding-left: 10px;
 
 			.status-bar {
 				height: 32px;
 				float: left;
 
 				.status-btn {
-					&:active, &:hover, &:link, &:visited, &:focus {color: #FFFFFF;}
-				}
+					position: relative;
+					padding: 6px 6px 6px 20px;
+					right: -180px;
+					width: 18px;
+					text-indent: 9999px;
+					outline: none;
+					-webkit-transition: width .4s ease-in-out, right .4s ease-in-out, text-indent .2s .2s step-start;
+					-moz-transition: width .4s ease-in-out, right .4s ease-in-out, text-indent .2s .2s step-start;
+					-o-transition: width .4s ease-in-out, right .4s ease-in-out, text-indent .2s .2s step-start;
+					transition: width .4s ease-in-out, right .4s ease-in-out, text-indent .2s .2s step-start;
 
-				.ribbon {
-					width: 198px;
+					&:active, &:hover, &:link, &:visited, &:focus {color: #FFFFFF;}
+
+					&:hover{
+						width: 198px;
+						right: 0;
+						text-indent: 0;
+					}
+
+					&.atendimento {
+						width: 198px;
+						right: 0;
+						text-indent: 0;	
+						-webkit-transition: none;
+						-moz-transition: none;
+						-o-transition: none;
+						transition: none;
+					}
 
 					&:after {
 						display: none;
@@ -477,10 +501,11 @@ a:hover {text-decoration: none;}
 				}
 			}
 			.social, .tags-btn {
-				float: left;
+				float: right;
 				width: 32px;
 				max-height: 32px;
 				overflow: hidden;
+				position: relative;
 			}
 
 			.tags {

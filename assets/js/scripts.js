@@ -63,7 +63,7 @@ $('.accordion-box .accordion-trigger').click( function() {
 	$('.status-bar .dropdown-menu .btn').click( function() {
 		var value = $(this).text(),
 		btn = $(this).parents('.status-bar').find('.status-btn');
-		
+
 		btn.text(value);
 		btn.removeClass('aberta').removeClass('aguardando').removeClass('fechada');
 		btn.addClass(value);
@@ -73,7 +73,7 @@ $('.accordion-box .accordion-trigger').click( function() {
 
 		$(this).parents('.dropdown.open').removeClass('open');
 
-		return false
+		return false;
 	});
 
 

@@ -627,7 +627,7 @@ a:hover {
 /* RIBBON */
 /* line 298, ../scss/_default.scss */
 .ribbon {
-  background-color: #bdc3c7;
+  background-color: #869198;
   display: inline-block;
   padding: 6px;
   text-transform: uppercase;
@@ -646,14 +646,14 @@ a:hover {
 .ribbon:before {
   border-bottom: 16px solid transparent;
   border-top: 16px solid transparent;
-  border-right: 10px solid #bdc3c7;
+  border-right: 10px solid #869198;
   left: -10px;
   top: 0px;
 }
 /* line 319, ../scss/_default.scss */
 .ribbon:after {
   border-top: 5px solid transparent;
-  border-left: 5px solid #bdc3c7;
+  border-left: 5px solid #869198;
   right: 0;
   top: -5px;
 }
@@ -855,33 +855,60 @@ a:hover {
   position: relative;
   top: -5px;
   right: -5px;
-  width: 230px;
+  width: 240px;
+  padding-left: 10px;
 }
-/* line 463, ../scss/_default.scss */
+/* line 464, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar {
   height: 32px;
   float: left;
 }
 /* line 468, ../scss/_default.scss */
+.quote .quote-content .sidebar .status-bar .status-btn {
+  position: relative;
+  padding: 6px 6px 6px 20px;
+  right: -180px;
+  width: 18px;
+  text-indent: 9999px;
+  outline: none;
+  -webkit-transition: width 0.4s ease-in-out, right 0.4s ease-in-out, text-indent 0.2s 0.2s step-start;
+  -moz-transition: width 0.4s ease-in-out, right 0.4s ease-in-out, text-indent 0.2s 0.2s step-start;
+  -o-transition: width 0.4s ease-in-out, right 0.4s ease-in-out, text-indent 0.2s 0.2s step-start;
+  transition: width 0.4s ease-in-out, right 0.4s ease-in-out, text-indent 0.2s 0.2s step-start;
+}
+/* line 480, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .status-btn:active, .quote .quote-content .sidebar .status-bar .status-btn:hover, .quote .quote-content .sidebar .status-bar .status-btn:link, .quote .quote-content .sidebar .status-bar .status-btn:visited, .quote .quote-content .sidebar .status-bar .status-btn:focus {
   color: #FFFFFF;
 }
-/* line 471, ../scss/_default.scss */
-.quote .quote-content .sidebar .status-bar .ribbon {
+/* line 482, ../scss/_default.scss */
+.quote .quote-content .sidebar .status-bar .status-btn:hover {
   width: 198px;
+  right: 0;
+  text-indent: 0;
 }
-/* line 474, ../scss/_default.scss */
-.quote .quote-content .sidebar .status-bar .ribbon:after {
+/* line 488, ../scss/_default.scss */
+.quote .quote-content .sidebar .status-bar .status-btn.atendimento {
+  width: 198px;
+  right: 0;
+  text-indent: 0;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+/* line 498, ../scss/_default.scss */
+.quote .quote-content .sidebar .status-bar .status-btn:after {
   display: none;
 }
-/* line 479, ../scss/_default.scss */
+/* line 503, ../scss/_default.scss */
 .quote .quote-content .sidebar .social, .quote .quote-content .sidebar .tags-btn {
-  float: left;
+  float: right;
   width: 32px;
   max-height: 32px;
   overflow: hidden;
+  position: relative;
 }
-/* line 486, ../scss/_default.scss */
+/* line 511, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags {
   float: left;
   width: 198px;
@@ -892,69 +919,69 @@ a:hover {
   padding: 2px 5px;
   overflow: auto;
 }
-/* line 496, ../scss/_default.scss */
+/* line 521, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p {
   line-height: 1.4em;
   margin: 0;
 }
-/* line 499, ../scss/_default.scss */
+/* line 524, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge {
   font-size: .7em;
   margin-right: 2px;
   padding: 3px 0px 3px 7px;
-  -moz-transition: padding 0s linear;
-  -o-transition: padding 0s linear;
-  -webkit-transition: padding 0s linear;
-  -ms-transition: padding 0s linear;
-  transition: padding 0s linear;
+  -moz-transition: padding 0.1s linear;
+  -o-transition: padding 0.1s linear;
+  -webkit-transition: padding 0.1s linear;
+  -ms-transition: padding 0.1s linear;
+  transition: padding 0.1s linear;
 }
-/* line 505, ../scss/_default.scss */
+/* line 530, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge .remove-tag {
   visibility: hidden;
   color: #d9d9d9;
   margin: 0 -2px;
   cursor: pointer;
 }
-/* line 511, ../scss/_default.scss */
+/* line 536, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge:hover {
   padding-right: 7px;
 }
-/* line 513, ../scss/_default.scss */
+/* line 538, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge:hover .remove-tag {
   visibility: visible;
   padding-left: 2px;
   color: white;
   margin: 0;
 }
-/* line 522, ../scss/_default.scss */
+/* line 547, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu {
   margin: 7px 0 0 0;
   float: left;
 }
-/* line 526, ../scss/_default.scss */
+/* line 551, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .tags-btn {
   background-color: #bdc3c7;
   text-align: center;
   color: #FFFFFF;
   padding: 6px 9px;
 }
-/* line 531, ../scss/_default.scss */
+/* line 556, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .tags-btn:hover {
   background-color: #cbd0d3;
 }
-/* line 534, ../scss/_default.scss */
+/* line 559, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .auto {
   max-height: 150px;
 }
-/* line 540, ../scss/_default.scss */
+/* line 565, ../scss/_default.scss */
 .quote footer {
   background-color: #e4e6e8;
 }
-/* line 545, ../scss/_default.scss */
+/* line 570, ../scss/_default.scss */
 .quote footer .feeling-menu .btn {
   width: 34px;
 }
-/* line 549, ../scss/_default.scss */
+/* line 574, ../scss/_default.scss */
 .quote footer .btn {
   text-transform: uppercase;
   font-weight: normal;
@@ -963,24 +990,24 @@ a:hover {
   height: 32px;
   margin: 0;
 }
-/* line 557, ../scss/_default.scss */
+/* line 582, ../scss/_default.scss */
 .quote footer .btn:link, .quote footer .btn:visited {
   background-color: #f1f1f1;
   color: #7e7e7e;
 }
-/* line 558, ../scss/_default.scss */
+/* line 583, ../scss/_default.scss */
 .quote footer .btn:hover, .quote footer .btn:active, .quote footer .btn:focus {
   background-color: #fefefe;
   color: gray;
 }
-/* line 562, ../scss/_default.scss */
+/* line 587, ../scss/_default.scss */
 .quote .accordion-hidden {
   background-color: white;
   padding: 0px 20px 20px 100px;
   max-height: 300px;
   overflow: auto;
 }
-/* line 570, ../scss/_default.scss */
+/* line 595, ../scss/_default.scss */
 .quote.quote-small {
   padding: 20px 0;
   border-bottom: 1px solid #e6e6e6;
@@ -988,37 +1015,37 @@ a:hover {
   /*quote-content*/
   /*footer*/
 }
-/* line 575, ../scss/_default.scss */
+/* line 600, ../scss/_default.scss */
 .quote.quote-small:last-child {
   border-bottom: none;
 }
-/* line 578, ../scss/_default.scss */
+/* line 603, ../scss/_default.scss */
 .quote.quote-small .quote-content {
   background-color: #f7f7f7;
 }
-/* line 580, ../scss/_default.scss */
+/* line 605, ../scss/_default.scss */
 .quote.quote-small .quote-content .user-img {
   width: 80px;
   height: 80px;
 }
-/* line 583, ../scss/_default.scss */
+/* line 608, ../scss/_default.scss */
 .quote.quote-small .quote-content .user-img img {
   width: 80px;
   height: 80px;
 }
-/* line 589, ../scss/_default.scss */
+/* line 614, ../scss/_default.scss */
 .quote.quote-small .quote-content .quote-data {
   width: 670px;
 }
-/* line 590, ../scss/_default.scss */
+/* line 615, ../scss/_default.scss */
 .quote.quote-small .quote-content .sidebar {
   width: 32px;
 }
-/* line 594, ../scss/_default.scss */
+/* line 619, ../scss/_default.scss */
 .quote.quote-small footer .mec-menu {
   margin: 0 52px;
 }
-/* line 595, ../scss/_default.scss */
+/* line 620, ../scss/_default.scss */
 .quote.quote-small footer .quote-actions {
   float: right;
 }
