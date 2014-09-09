@@ -238,3 +238,24 @@
     -moz-box-shadow:    0 0 0 1px $colorTwo, 0 0 0 2px $colorThree;
     box-shadow:         0 0 0 1px $colorTwo, 0 0 0 2px $colorThree;
 }
+
+
+
+
+
+
+/* -------------------------------------------------------------
+
+ANIMATIONS
+
+-------------------------------------------------------------  */
+
+/* ROTATE */
+@keyframes anim-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} /* example: animation: anim-rotate 2s infinite linear; */

@@ -1,0 +1,29 @@
+
+/* CITAÇÕES */
+.reload-box {
+	padding: 20px 0;
+
+	.reload-btn {
+		display: block;
+		color: $default-color;
+		font-size: .85em;
+
+		&:hover {
+			color: $light;
+		}
+
+		&.loading {
+			content: "atualizando...";
+			.fa.fa-refresh {
+				animation: anim-rotate 2s infinite linear;
+			}
+		}/*loading*/
+
+		&.done {
+			.fa.fa-refresh {
+				animation: none;
+			}
+		}/*loading*/
+	}
+
+}/*reload-box*/
