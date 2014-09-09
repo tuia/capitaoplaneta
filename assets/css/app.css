@@ -475,22 +475,50 @@ label {
 }
 
 /*btn*/
+/* line 238, ../scss/_default.scss */
+.dropdown-menu.feeling-menu .btn.good {
+  background-color: #27ae60;
+  background-position: -330px -64px;
+}
+/* line 240, ../scss/_default.scss */
+.dropdown-menu.feeling-menu .btn.good:hover {
+  background-color: #36d278;
+}
+/* line 242, ../scss/_default.scss */
+.dropdown-menu.feeling-menu .btn.neutral {
+  background-color: #2980b9;
+  background-position: -363px -64px;
+}
+/* line 244, ../scss/_default.scss */
+.dropdown-menu.feeling-menu .btn.neutral:hover {
+  background-color: #409ad5;
+}
+/* line 246, ../scss/_default.scss */
+.dropdown-menu.feeling-menu .btn.bad {
+  background-color: #c0392b;
+  background-position: -396px -64px;
+}
+/* line 248, ../scss/_default.scss */
+.dropdown-menu.feeling-menu .btn.bad:hover {
+  background-color: #d65548;
+}
+
 /* TAGS DROPDOWN */
-/* line 241, ../scss/_default.scss */
+/* line 255, ../scss/_default.scss */
 .tags-menu .dropdown-menu {
   background: white;
   width: 190px;
 }
-/* line 245, ../scss/_default.scss */
+/* line 259, ../scss/_default.scss */
 .tags-menu .dropdown-menu .auto {
   margin: 10px 0;
 }
-/* line 248, ../scss/_default.scss */
+/* line 262, ../scss/_default.scss */
 .tags-menu .dropdown-menu .form-group {
   padding: 0 5px;
   margin: 0;
 }
-/* line 252, ../scss/_default.scss */
+/* line 266, ../scss/_default.scss */
 .tags-menu .dropdown-menu .checkbox {
   background: #f1f1f1;
   cursor: pointer;
@@ -499,35 +527,35 @@ label {
   padding: 5px;
   font-size: .9em;
 }
-/* line 259, ../scss/_default.scss */
+/* line 273, ../scss/_default.scss */
 .tags-menu .dropdown-menu .checkbox:hover {
   background: #fefefe;
 }
-/* line 261, ../scss/_default.scss */
+/* line 275, ../scss/_default.scss */
 .tags-menu .dropdown-menu .checkbox label {
   display: block;
 }
 
 /*tags-dropdown*/
 /*MENU DO MEC*/
-/* line 269, ../scss/_default.scss */
+/* line 283, ../scss/_default.scss */
 .mec-menu {
   margin: 0 66px;
 }
-/* line 272, ../scss/_default.scss */
+/* line 286, ../scss/_default.scss */
 .mec-menu .dropdown-menu.feeling-menu {
   min-width: 33px;
   padding: 1px;
   margin-left: -2px;
 }
-/* line 276, ../scss/_default.scss */
+/* line 290, ../scss/_default.scss */
 .mec-menu .dropdown-menu.feeling-menu li {
   margin-bottom: 1px;
 }
 
 /*mec-menu*/
 /* RIBBON */
-/* line 285, ../scss/_default.scss */
+/* line 299, ../scss/_default.scss */
 .ribbon {
   background-color: #bdc3c7;
   display: inline-block;
@@ -537,14 +565,14 @@ label {
   font-weight: bold;
   /* CORES STATUS */
 }
-/* line 293, ../scss/_default.scss */
+/* line 307, ../scss/_default.scss */
 .ribbon:before, .ribbon:after {
   content: " ";
   position: absolute;
   height: 0;
   width: 0;
 }
-/* line 299, ../scss/_default.scss */
+/* line 313, ../scss/_default.scss */
 .ribbon:before {
   border-bottom: 16px solid transparent;
   border-top: 16px solid transparent;
@@ -552,96 +580,96 @@ label {
   left: -10px;
   top: 0px;
 }
-/* line 306, ../scss/_default.scss */
+/* line 320, ../scss/_default.scss */
 .ribbon:after {
   border-top: 5px solid transparent;
   border-left: 5px solid #bdc3c7;
   right: 0;
   top: -5px;
 }
-/* line 314, ../scss/_default.scss */
+/* line 328, ../scss/_default.scss */
 .ribbon.aberta {
   background-color: #d35400;
 }
-/* line 316, ../scss/_default.scss */
+/* line 330, ../scss/_default.scss */
 .ribbon.aberta:before {
   border-right: 10px solid #d35400;
 }
-/* line 317, ../scss/_default.scss */
+/* line 331, ../scss/_default.scss */
 .ribbon.aberta:after {
   border-left: 5px solid #ec5e00;
 }
-/* line 318, ../scss/_default.scss */
+/* line 332, ../scss/_default.scss */
 .ribbon.aberta:hover {
   background: #ec5e00;
   color: #FFFFFF;
 }
-/* line 320, ../scss/_default.scss */
+/* line 334, ../scss/_default.scss */
 .ribbon.aberta:hover:before {
   border-right: 10px solid #ec5e00;
 }
-/* line 321, ../scss/_default.scss */
+/* line 335, ../scss/_default.scss */
 .ribbon.aberta:hover:after {
   border-left: 5px solid #ec5e00;
 }
-/* line 324, ../scss/_default.scss */
+/* line 338, ../scss/_default.scss */
 .ribbon.aguardando {
   background-color: #e67e22;
 }
-/* line 326, ../scss/_default.scss */
+/* line 340, ../scss/_default.scss */
 .ribbon.aguardando:before {
   border-right: 10px solid #e67e22;
 }
-/* line 327, ../scss/_default.scss */
+/* line 341, ../scss/_default.scss */
 .ribbon.aguardando:after {
   border-left: 5px solid #e98b39;
 }
-/* line 328, ../scss/_default.scss */
+/* line 342, ../scss/_default.scss */
 .ribbon.aguardando:hover {
   background: #e98b39;
   color: #FFFFFF;
 }
-/* line 330, ../scss/_default.scss */
+/* line 344, ../scss/_default.scss */
 .ribbon.aguardando:hover:before {
   border-right: 10px solid #e98b39;
 }
-/* line 331, ../scss/_default.scss */
+/* line 345, ../scss/_default.scss */
 .ribbon.aguardando:hover:after {
   border-left: 5px solid #e98b39;
 }
-/* line 334, ../scss/_default.scss */
+/* line 348, ../scss/_default.scss */
 .ribbon.fechada {
   background-color: #f39c12;
 }
-/* line 336, ../scss/_default.scss */
+/* line 350, ../scss/_default.scss */
 .ribbon.fechada:before {
   border-right: 10px solid #f39c12;
 }
-/* line 337, ../scss/_default.scss */
+/* line 351, ../scss/_default.scss */
 .ribbon.fechada:after {
   border-left: 5px solid #f4a62a;
 }
-/* line 338, ../scss/_default.scss */
+/* line 352, ../scss/_default.scss */
 .ribbon.fechada:hover {
   background: #f4a62a;
   color: #FFFFFF;
 }
-/* line 340, ../scss/_default.scss */
+/* line 354, ../scss/_default.scss */
 .ribbon.fechada:hover:before {
   border-right: 10px solid #f4a62a;
 }
-/* line 341, ../scss/_default.scss */
+/* line 355, ../scss/_default.scss */
 .ribbon.fechada:hover:after {
   border-left: 5px solid #f4a62a;
 }
 
 /*ribbon*/
 /* NAVBAR TOPO */
-/* line 349, ../scss/_default.scss */
+/* line 363, ../scss/_default.scss */
 #navigation {
   position: relative;
 }
-/* line 352, ../scss/_default.scss */
+/* line 366, ../scss/_default.scss */
 #navigation .navbar-brand {
   background: url(../img/planeta-y-logo.png) no-repeat center;
   width: 120px;
@@ -653,7 +681,7 @@ label {
   margin: 0 -60px;
   outline: none;
 }
-/* line 364, ../scss/_default.scss */
+/* line 378, ../scss/_default.scss */
 #navigation .nav-img {
   width: 20px;
   height: 20px;
@@ -661,7 +689,7 @@ label {
 }
 
 /* CABEÇALHO*/
-/* line 373, ../scss/_default.scss */
+/* line 387, ../scss/_default.scss */
 #header {
   background-color: #95a5a6;
   margin: -20px 0 40px;
@@ -669,7 +697,7 @@ label {
 }
 
 /* CITAÇÃO */
-/* line 381, ../scss/_default.scss */
+/* line 395, ../scss/_default.scss */
 .quote {
   margin: 0 0 40px 0;
   border: 3px solid transparent;
@@ -677,40 +705,40 @@ label {
   /*footer*/
   /* citação pequena */
 }
-/* line 385, ../scss/_default.scss */
+/* line 399, ../scss/_default.scss */
 .quote.selected {
   border-color: #a1aab0;
 }
-/* line 387, ../scss/_default.scss */
+/* line 401, ../scss/_default.scss */
 .quote.selected .quote-content {
   background-color: #cbd0d3;
 }
-/* line 390, ../scss/_default.scss */
+/* line 404, ../scss/_default.scss */
 .quote.selected footer {
   background-color: #d9dcde;
 }
-/* line 391, ../scss/_default.scss */
+/* line 405, ../scss/_default.scss */
 .quote.selected .accordion-hidden {
   background-color: #e6e9ea;
 }
-/* line 395, ../scss/_default.scss */
+/* line 409, ../scss/_default.scss */
 .quote .quote-content {
   position: relative;
   background-color: white;
   /*sidebar*/
 }
-/* line 399, ../scss/_default.scss */
+/* line 413, ../scss/_default.scss */
 .quote .quote-content .user-img {
   float: left;
   position: relative;
   width: 100px;
   height: 100px;
 }
-/* line 404, ../scss/_default.scss */
+/* line 418, ../scss/_default.scss */
 .quote .quote-content .user-img img {
   width: 100%;
 }
-/* line 409, ../scss/_default.scss */
+/* line 423, ../scss/_default.scss */
 .quote .quote-content .quote-checkbox {
   position: absolute;
   top: 0;
@@ -718,39 +746,39 @@ label {
   margin: 0;
   text-align: center;
 }
-/* line 415, ../scss/_default.scss */
+/* line 429, ../scss/_default.scss */
 .quote .quote-content .quote-checkbox label {
   padding: 50px;
   display: block;
 }
-/* line 416, ../scss/_default.scss */
+/* line 430, ../scss/_default.scss */
 .quote .quote-content .quote-checkbox input {
   margin: -45px;
 }
-/* line 420, ../scss/_default.scss */
+/* line 434, ../scss/_default.scss */
 .quote .quote-content .quote-data {
   font-size: 14px;
   float: left;
   width: 580px;
   padding: 0 10px;
 }
-/* line 427, ../scss/_default.scss */
+/* line 441, ../scss/_default.scss */
 .quote .quote-content .quote-data h5 {
   margin: 6px 0;
 }
-/* line 430, ../scss/_default.scss */
+/* line 444, ../scss/_default.scss */
 .quote .quote-content .quote-data h5 .user-name {
   font-weight: bold;
 }
-/* line 435, ../scss/_default.scss */
+/* line 449, ../scss/_default.scss */
 .quote .quote-content .quote-data p {
   margin-bottom: 15px;
 }
-/* line 437, ../scss/_default.scss */
+/* line 451, ../scss/_default.scss */
 .quote .quote-content .quote-data .quote-txt {
   line-height: 1.3em;
 }
-/* line 442, ../scss/_default.scss */
+/* line 456, ../scss/_default.scss */
 .quote .quote-content .sidebar {
   display: block;
   float: right;
@@ -759,32 +787,32 @@ label {
   right: -5px;
   width: 230px;
 }
-/* line 450, ../scss/_default.scss */
+/* line 464, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar {
   height: 32px;
   float: left;
 }
-/* line 455, ../scss/_default.scss */
+/* line 469, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .status-btn:active, .quote .quote-content .sidebar .status-bar .status-btn:hover, .quote .quote-content .sidebar .status-bar .status-btn:link, .quote .quote-content .sidebar .status-bar .status-btn:visited, .quote .quote-content .sidebar .status-bar .status-btn:focus {
   color: #FFFFFF;
   text-decoration: none;
 }
-/* line 458, ../scss/_default.scss */
+/* line 472, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .ribbon {
   width: 198px;
 }
-/* line 461, ../scss/_default.scss */
+/* line 475, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .ribbon:after {
   display: none;
 }
-/* line 466, ../scss/_default.scss */
+/* line 480, ../scss/_default.scss */
 .quote .quote-content .sidebar .social, .quote .quote-content .sidebar .tags-btn {
   float: left;
   width: 32px;
   max-height: 32px;
   overflow: hidden;
 }
-/* line 473, ../scss/_default.scss */
+/* line 487, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags {
   float: left;
   width: 198px;
@@ -795,65 +823,65 @@ label {
   padding: 2px 5px;
   overflow: auto;
 }
-/* line 483, ../scss/_default.scss */
+/* line 497, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p {
   line-height: 1.4em;
   margin: 0;
 }
-/* line 486, ../scss/_default.scss */
+/* line 500, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge {
   font-size: .7em;
   margin-right: 2px;
   padding: 3px 0px 3px 7px;
   transition: padding .1s linear;
 }
-/* line 492, ../scss/_default.scss */
+/* line 506, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge .remove-tag {
   visibility: hidden;
   color: #d9d9d9;
   margin: 0 -2px;
   cursor: pointer;
 }
-/* line 498, ../scss/_default.scss */
+/* line 512, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge:hover {
   padding-right: 7px;
 }
-/* line 500, ../scss/_default.scss */
+/* line 514, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge:hover .remove-tag {
   visibility: visible;
   padding-left: 2px;
   color: white;
   margin: 0;
 }
-/* line 509, ../scss/_default.scss */
+/* line 523, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu {
   margin: 7px 0 0 0;
   float: left;
 }
-/* line 513, ../scss/_default.scss */
+/* line 527, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .tags-btn {
   background-color: #bdc3c7;
   text-align: center;
   color: #FFFFFF;
   padding: 6px 9px;
 }
-/* line 518, ../scss/_default.scss */
+/* line 532, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .tags-btn:hover {
   background-color: #cbd0d3;
 }
-/* line 521, ../scss/_default.scss */
+/* line 535, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .auto {
   max-height: 150px;
 }
-/* line 527, ../scss/_default.scss */
+/* line 541, ../scss/_default.scss */
 .quote footer {
   background-color: #e4e6e8;
 }
-/* line 532, ../scss/_default.scss */
+/* line 546, ../scss/_default.scss */
 .quote footer .feeling-menu .btn {
   width: 34px;
 }
-/* line 536, ../scss/_default.scss */
+/* line 550, ../scss/_default.scss */
 .quote footer .btn {
   text-transform: uppercase;
   font-weight: normal;
@@ -862,24 +890,24 @@ label {
   height: 32px;
   margin: 0;
 }
-/* line 544, ../scss/_default.scss */
+/* line 558, ../scss/_default.scss */
 .quote footer .btn:link, .quote footer .btn:visited {
   background-color: #f1f1f1;
   color: #7e7e7e;
 }
-/* line 545, ../scss/_default.scss */
+/* line 559, ../scss/_default.scss */
 .quote footer .btn:hover, .quote footer .btn:active, .quote footer .btn:focus {
   background-color: #fefefe;
   color: gray;
 }
-/* line 549, ../scss/_default.scss */
+/* line 563, ../scss/_default.scss */
 .quote .accordion-hidden {
   background-color: white;
   padding: 0px 20px 20px 100px;
   max-height: 300px;
   overflow: auto;
 }
-/* line 557, ../scss/_default.scss */
+/* line 571, ../scss/_default.scss */
 .quote.quote-small {
   padding: 20px 0;
   border-bottom: 1px solid #e6e6e6;
@@ -887,37 +915,37 @@ label {
   /*quote-content*/
   /*footer*/
 }
-/* line 562, ../scss/_default.scss */
+/* line 576, ../scss/_default.scss */
 .quote.quote-small:last-child {
   border-bottom: none;
 }
-/* line 565, ../scss/_default.scss */
+/* line 579, ../scss/_default.scss */
 .quote.quote-small .quote-content {
   background-color: #f7f7f7;
 }
-/* line 567, ../scss/_default.scss */
+/* line 581, ../scss/_default.scss */
 .quote.quote-small .quote-content .user-img {
   width: 80px;
   height: 80px;
 }
-/* line 570, ../scss/_default.scss */
+/* line 584, ../scss/_default.scss */
 .quote.quote-small .quote-content .user-img img {
   width: 80px;
   height: 80px;
 }
-/* line 576, ../scss/_default.scss */
+/* line 590, ../scss/_default.scss */
 .quote.quote-small .quote-content .quote-data {
   width: 670px;
 }
-/* line 577, ../scss/_default.scss */
+/* line 591, ../scss/_default.scss */
 .quote.quote-small .quote-content .sidebar {
   width: 32px;
 }
-/* line 581, ../scss/_default.scss */
+/* line 595, ../scss/_default.scss */
 .quote.quote-small footer .mec-menu {
   margin: 0 52px;
 }
-/* line 582, ../scss/_default.scss */
+/* line 596, ../scss/_default.scss */
 .quote.quote-small footer .quote-actions {
   float: right;
 }

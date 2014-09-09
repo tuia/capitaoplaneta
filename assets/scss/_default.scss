@@ -234,6 +234,20 @@ label {font-weight: normal;}
 	    }/*relacionamento*/
 	    
 	}/*btn*/
+	.dropdown-menu.feeling-menu{
+		.btn.good {
+			background-color: $good; background-position: -330px -64px;
+			&:hover {background-color: lighten($good, 10%)}
+		}
+		.btn.neutral {
+			background-color: $neutral; background-position: -363px -64px;
+			&:hover {background-color: lighten($neutral, 10%)}
+		}
+		.btn.bad {
+			background-color: $bad; background-position: -396px -64px;
+			&:hover {background-color: lighten($bad, 10%)}
+		}
+	}
 
 
 	/* TAGS DROPDOWN */
