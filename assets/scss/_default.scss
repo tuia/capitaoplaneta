@@ -57,6 +57,7 @@ a:hover {text-decoration: none;}
 .auto {overflow: auto}
 .accordion-hidden {display: none;}
 .accordion-trigger.disabled {@include opacity(.3)}
+.center-box {text-align: center;} 
 
 /*Media queries breakpoints*/
 .container { width: 950px !important; padding: 0;}
@@ -119,7 +120,7 @@ a:hover {text-decoration: none;}
 	}
 
 	/* BOTÕES DOS MENUS DO MEC E DE SENTIMENTO */
-	.mec-menu .btn, .feeling-menu .btn {
+	.mec-menu .btn, .feeling-menu .btn, .feeling-icon, .mec-icon {
 	    background-image: url("../img/mec-feel-sprite.png");
 	    background-color: $quote-btn-bg;
 	    border: none !important;    
@@ -132,6 +133,10 @@ a:hover {text-decoration: none;}
 
 	    &:hover {
 	    	border: none !important;
+	    }
+
+	    &.inderteminate {
+	    	background-position: -330px -96px;
 	    }
 
 	    /* SENTIMENTO */
@@ -237,7 +242,24 @@ a:hover {text-decoration: none;}
 	    }/*relacionamento*/
 	    
 	}/*btn*/
+	
+	/*isolated icons*/
+	.feeling-icon, .mec-icon {
+		display: inline-block;
+		background-color: transparent;
+		margin: -12px -7px;
+	}
+	a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hover  {background-color: transparent !important}
+
+	/* dropdown feeling-menu with reduced width */
 	.dropdown-menu.feeling-menu{
+		min-width: 33px;
+		padding: 1px;
+		margin-left: -2px;
+
+		li {
+			margin-bottom: 1px
+		}
 		.btn.good {
 			&:hover {background-color: $good; background-position: -330px -64px;}
 		}
@@ -248,6 +270,7 @@ a:hover {text-decoration: none;}
 			&:hover {background-color: $bad; background-position: -396px -64px;}
 		}
 	}
+		
 
 
 	/* TAGS DROPDOWN */
@@ -255,6 +278,10 @@ a:hover {text-decoration: none;}
 		.dropdown-menu {
 			background: $light-box-bg;
 			width: 190px;
+
+			.form-control {
+				height: 30px
+			}
 
 			.auto {
 				margin: 10px 0;
@@ -278,20 +305,6 @@ a:hover {text-decoration: none;}
 			}
 		}
 	}/*tags-dropdown*/
-
-	/*MENU DO MEC*/
-	.mec-menu {
-		margin: 0 66px;
-
-		.dropdown-menu.feeling-menu {
-			min-width: 33px;
-			padding: 1px;
-			margin-left: -2px;
-			li {
-				margin-bottom: 1px
-			}
-		}
-	}/*mec-menu*/
 
 
 
@@ -393,7 +406,7 @@ a:hover {text-decoration: none;}
 
 /* CITAÇÃO */
 .quote {
-	margin: 0 0 40px 0;
+	margin: 0 0 30px 0;
 	border: 3px solid transparent;
 
 	&.selected {
@@ -566,6 +579,9 @@ a:hover {text-decoration: none;}
 	footer {
 
 		background-color: lighten($box-bg, 14%);
+
+		/*MENU DO MEC*/
+		.mec-menu {	margin: 0 66px;	}/*mec-menu*/
 
 		.feeling-menu {
 			.btn {

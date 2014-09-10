@@ -1,5 +1,7 @@
 
 /* CITAÇÕES */
+
+/*botão de atualizar*/
 .reload-box {
 	padding: 20px 0;
 
@@ -27,3 +29,29 @@
 	}
 
 }/*reload-box*/
+
+
+
+/*actions bar*/
+#actions-bar {
+	.checkbox {margin: 0}
+	.btn > .fa, .btn > .glyphicon { color: $lighter }
+	.dropdown {margin: 0px}
+	.dropdown-menu {
+		a {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			.mec-icon {margin-right: 0}
+		}
+	}
+}
+#actions-bar > .btn-group {
+	margin-right: 15px;
+}
+#actions-bar > .btn-group > .btn, #actions-bar > .btn-group > .dropdown > .btn {
+	text-transform: uppercase;
+	padding: 6px 10px;
+	border: none;
+	margin-left: 1px;
+}
+

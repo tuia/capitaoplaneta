@@ -27,7 +27,7 @@
   <body>
 
 
-    <!--/NAVBAR-->
+    <!--/#NAVIGATION-->
     <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
 
@@ -43,7 +43,7 @@
               <li class="divider"></li>
               <li><a href="#">Grupo educacional</a></li>
               <li class="divider"></li>
-              <li><a href="#"><i class="fa fa-cog"></i> Gerenciar instituições</a></li>
+              <li><a href="gerenciar-instituicoes.html"><i class="fa fa-cog"></i> Gerenciar instituições</a></li>
             </ul><!--/.dropdown-menu-->
           </li><!--/.dropdown-->
         </ul><!--/.navbar-nav-->
@@ -58,14 +58,14 @@
               <img src="assets/img/user-01.jpg" alt="anhanguera" class="nav-img">
               Juliana <span class="caret"></span>
             </a>
-            <ul class="dropdown-menu pull-right" role="menu">
-              <li><a href="#">Dados cadastrais</a></li>
-              <li><a href="#">Planos</a></li>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li><a href="dados-cadastrais.html">Dados cadastrais</a></li>
+              <li><a href="planos.html">Planos</a></li>
               <li><a href="#">Sair</a></li>
               <li class="divider"></li>
-              <li><a href="#">Ajuda</a></li>
-              <li><a href="#">Sobre o Planeta Y</a></li>
-              <li><a href="#">Reportar problema</a></li>
+              <li><a href="ajuda.html">Ajuda</a></li>
+              <li><a href="sobre-o-planetay.html">Sobre o Planeta Y</a></li>
+              <li><a href="reportar-problema.html">Reportar problema</a></li>
             </ul><!--/.dropdown-menu-->
           </li><!--/.dropdown-->
         </ul><!--/.navbar-nav-->
@@ -83,31 +83,159 @@
     <div id="content">
       <div class="container">
 
-        <img src="assets/img/actions-bar.png" />
+
+        <!--/#ACTIONS BAR-->
+        <div id="actions-bar">
+
+          <!--/checkbox-->
+          <div class="dropdown btn-group">
+            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> 
+              <span class="checkbox">
+                <label><input type="checkbox"> <span class="caret"></span></label>
+              </span><!--/.checkbox-->
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">todas desta página</a></li>
+              <li><a href="#">todas</a></li>
+              <li class="disabled"><a href="#">nenhuma</a></li>
+              <li class="divider"></li>
+              <li><a href="#">atendimentos</a></li>
+              <li><a href="#">não-atendimentos</a></li>
+              <li class="divider"></li>
+              <li><a href="#">abertas</a></li>
+              <li><a href="#">aguardando</a></li>
+              <li><a href="#">fechadas</a></li>
+            </ul>
+          </div><!--/btn-group-->
+
+          <!--/lido/naolido-->
+          <div class="btn-group">
+            <button type="button" class="btn btn-default"><i class="fa fa-circle"></i> lido</button>
+            <button type="button" class="btn btn-default"><i class="fa fa-circle-o"></i> não lido</button>
+          </div><!--/btn-group-->
+
+          <!--/status-->
+          <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">status <span class="caret"></span></button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">aberta</a></li>
+                <li><a href="#">aguardando</a></li>
+                <li><a href="#">fechada</a></li>
+              </ul>
+          </div><!--/btn-group-->
+
+          <!--/encaminhar e responder-->
+          <div class="btn-group">
+            <div class="dropdown btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle hastooltip" data-toggle="dropdown" title="encaminhar"><span class="glyphicon glyphicon-arrow-right"></span></button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CRM</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#foward-modal">email</a></li>
+              </ul>
+            </div><!--/btn-group-->
+            <button type="button" class="btn btn-default hastooltip" data-toggle="modal" data-target="#answer-modal" title="responder"><i class="fa fa-reply"></i></button>
+          </div><!--/btn-group-->
+
+          <!--/sentimento, mec e tags-->
+          <div class="btn-group">
+          
+            <!--/sentimento-->
+            <div class="dropdown btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="feeling-icon inderteminate"></span> <span class="caret"></span></button>
+              <ul class="dropdown-menu feeling-menu" role="menu">
+                <li><a href="#" class="btn good"> positivo</a></li>
+                <li><a href="#" class="btn neutral"> neutro</a></li>
+                <li><a href="#" class="btn bad"> negativo</a></li>
+              </ul>
+            </div><!--/btn-group-->
+          
+            <!--/mec-->
+            <div class="dropdown btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> MEC <span class="caret"></span></button>
+              <ul class="dropdown-menu mec-menu" role="menu">
+                <li><a href="#" class="captacao"> <span class="mec-icon captacao"></span> captação</a></li>
+                <li><a href="#" class="empregabilidade"> <span class="mec-icon empregabilidade"></span>  empregabilidade</a></li>
+                <li><a href="#" class="localizacao"> <span class="mec-icon localizacao"></span>  localizacao</a></li>
+                <li><a href="#" class="atuacao-etica"> <span class="mec-icon atuacao-etica"></span>  atuacao etica</a></li>
+                <li><a href="#" class="corpo-docente"> <span class="mec-icon corpo-docente"></span>  corpo docente</a></li>
+                <li><a href="#" class="credenciamento-no-mec"> <span class="mec-icon credenciamento-no-mec"></span>  credenciamento no mec</a></li>
+                <li><a href="#" class="preco"> <span class="mec-icon preco"></span>  preço</a></li>
+                <li><a href="#" class="qualidade-de-ensino"> <span class="mec-icon qualidade-de-ensino"></span>  qualidade de ensino</a></li>
+                <li><a href="#" class="infraestrutura"> <span class="mec-icon infraestrutura"></span>  infraestrutura</a></li>
+                <li><a href="#" class="relacionamento"> <span class="mec-icon relacionamento"></span>  relacionamento</a></li>
+              </ul>
+            </div><!--/btn-group-->
+
+            <!--/tags-->
+            <div class="btn-group dropdown tags-menu">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tag"></i> <span class="caret"></span></button>
+              <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
+                <form role="form">
+
+                  <div class="form-group">
+                    <label for="search">marcar como:</label>
+                    <input type="search" class="form-control" id="" placeholder="">
+                  </div><!--/form-group-->
+
+                  <div class="auto">
+                    <div class="checkbox">
+                      <label><input type="checkbox"> <i class="glyphicon glyphicon-star"></i> favoritos</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox"> lead</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox"> responder depois</label>
+                    </div>
+                  </div><!--/auto-->
+
+                  <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#newtag-modal"><span class="glyphicon glyphicon-plus"></span> novo marcador</a></div>
+                  <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#configtag-modal"><span class="glyphicon glyphicon-cog"></span> gerenciar marcadores</a></div>
+                  <div class=""><a href="#" class="btn-primary btn btn-block">aplicar</a></div>
+                  
+                </form>
+              </div><!--/.dropdown-menu-->
+            </div><!--/.dropdown-->
+          </div><!--/btn-group-->
+
+          <!--/mais-->
+          <div class="dropdown btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> mais <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#"><i class="fa fa-trash-o"></i> excluir</a></li>
+              <li class="divider"></li>
+              <li><a href="#"> copiar como texto</a></li>
+              <li><a href="#"> copiar como imagem</a></li>
+              <li><a href="#"> copiar como planilha</a></li>
+              <li class="divider"></li>
+              <li><a href="#"> gerar relatório</a></li>
+            </ul>
+          </div><!--/btn-group-->
+              
+
+        </div><!--/#actions-bar-->
 
 
         <!--/RELOAD-->
         <div class="reload-box">
-          <!--/DEFAULT-->
+        <!--/STATES
+          DEFAULT
           <a href="#" class="reload-btn"><i class="fa fa-refresh"></i> <span>atualizado a 2 minutos</span></a>
-          <!--/MOUSEOVER HOVER-->
+          MOUSEOVER HOVER
           <a href="#" class="reload-btn"><i class="fa fa-refresh"></i> <span>atualizar</span></a>
+          DONE
+          <a href="#" class="reload-btn done"><i class="fa fa-refresh"></i> <span>atualizado a poucos segundos</span></a>
+        -->
 
           <!--/LOADING-->
           <a href="#" class="reload-btn loading"><i class="fa fa-refresh"></i> <span>atualizando</span></a>
-
-          <!--/DONE-->
-          <a href="#" class="reload-btn done"><i class="fa fa-refresh"></i> <span>atualizado a poucos segundos</span></a>
 
         </div><!--/reload-box-->
       
 
         <!--/CITAÇÃO-->
 
-        <!--/!!!!!!!!!!!!!!!!!!!!!!!!!-->
-        <!--/A CLASSE PARA QUANDO A CITAÇÃO FOR SELECIONADA PELO CHECKBOX É "SELECTED" EM QUOTE-->
-        <!--/!!!!!!!!!!!!!!!!!!!!!!!!!-->
-        <div class="quote accordion-box selected">
+        <div class="quote accordion-box">
 
           <div class="quote-content">
 
@@ -139,9 +267,10 @@
                 <div class="dropdown status-bar">
                   <a data-toggle="dropdown" href="#" class="ribbon status-btn">abrir&nbsp;atendimento</a>
                   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                    <li><a href="javascript:void(0)" class="btn aberta">aberta</a></li>
-                    <li><a href="javascript:void(0)" class="btn aguardando">aguardando</a></li>
-                    <li><a href="javascript:void(0)" class="btn fechada">fechada</a></li>
+                    <li><a href="javascript:void(0)" class="aberta">aberta</a></li>
+                    <li><a href="javascript:void(0)" class="aguardando">aguardando</a></li>
+                    <li><a href="javascript:void(0)" class="fechada">fechada</a></li>
+                    <li><a href="javascript:void(0)" class="fechada"><i class="fa fa-pencil"></i> editar atendimento</a></li>
                   </ul>
                 </div><!--/.dropdown-->
 
@@ -161,7 +290,7 @@
                 </div><!--/.tags-->                  
                 <div class="dropdown tags-menu">
                   <a data-toggle="dropdown" href="#" class="btn tags-btn"><i class="glyphicon glyphicon-tag"></i></a>
-                  <div class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+                  <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
                     <form role="form">
 
                       <div class="form-group">
@@ -540,6 +669,11 @@
               <img src="assets/img/user-03.jpg" alt="nome do usuário">
             </div><!--/user-img-->
 
+            <!--/CHECKBOX-->
+            <div class="quote-checkbox checkbox">
+              <label><input type="checkbox"></label>
+            </div><!--/.checkbox-->
+
             <!--/CITAÇÃO-->
             <div class="quote-data"> 
               <h5>
@@ -558,9 +692,10 @@
                 <div class="dropdown status-bar">
                   <a data-toggle="dropdown" href="#" class="ribbon status-btn atendimento aberta">Aberta</a>
                   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                    <li><a href="javascript:void(0)" class="btn aberta">aberta</a></li>
-                    <li><a href="javascript:void(0)" class="btn aguardando">aguardando</a></li>
-                    <li><a href="javascript:void(0)" class="btn fechada">fechada</a></li>
+                    <li><a href="javascript:void(0)" class="aberta">aberta</a></li>
+                    <li><a href="javascript:void(0)" class="aguardando">aguardando</a></li>
+                    <li><a href="javascript:void(0)" class="fechada">fechada</a></li>
+                    <li><a href="javascript:void(0)" class="fechada"><i class="fa fa-pencil"></i> editar atendimento</a></li>
                   </ul>
                 </div><!--/.dropdown-->
 
@@ -580,7 +715,7 @@
                 </div><!--/.tags-->        
                 <div class="dropdown tags-menu">
                   <a data-toggle="dropdown" href="#" class="btn tags-btn"><i class="glyphicon glyphicon-tag"></i></a>
-                  <div class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+                  <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
                     <form role="form">
 
                       <div class="form-group">
@@ -780,6 +915,11 @@
               <img src="assets/img/user-04.jpg" alt="nome do usuário">
             </div><!--/user-img-->
 
+            <!--/CHECKBOX-->
+            <div class="quote-checkbox checkbox">
+              <label><input type="checkbox"></label>
+            </div><!--/.checkbox-->
+
             <!--/CITAÇÃO-->
             <div class="quote-data"> 
               <h5>
@@ -798,9 +938,10 @@
                 <div class="dropdown status-bar">
                   <a data-toggle="dropdown" href="#" class="ribbon status-btn atendimento aguardando">Aguardando</a>
                   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                    <li><a href="javascript:void(0)" class="btn aberta">aberta</a></li>
-                    <li><a href="javascript:void(0)" class="btn aguardando">aguardando</a></li>
-                    <li><a href="javascript:void(0)" class="btn fechada">fechada</a></li>
+                    <li><a href="javascript:void(0)" class="aberta">aberta</a></li>
+                    <li><a href="javascript:void(0)" class="aguardando">aguardando</a></li>
+                    <li><a href="javascript:void(0)" class="fechada">fechada</a></li>
+                    <li><a href="javascript:void(0)" class="fechada"><i class="fa fa-pencil"></i> editar atendimento</a></li>
                   </ul>
                 </div><!--/.dropdown-->
 
@@ -820,7 +961,7 @@
                 </div><!--/.tags-->                  
                 <div class="dropdown tags-menu">
                   <a data-toggle="dropdown" href="#" class="btn tags-btn"><i class="glyphicon glyphicon-tag"></i></a>
-                  <div class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+                  <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
                     <form role="form">
 
                       <div class="form-group">
@@ -1199,6 +1340,11 @@
               <img src="assets/img/user-02.jpg" alt="nome do usuário">
             </div><!--/user-img-->
 
+            <!--/CHECKBOX-->
+            <div class="quote-checkbox checkbox">
+              <label><input type="checkbox"></label>
+            </div><!--/.checkbox-->
+
             <!--/CITAÇÃO-->
             <div class="quote-data"> 
               <h5>
@@ -1217,9 +1363,10 @@
                 <div class="dropdown status-bar">
                   <a data-toggle="dropdown" href="#" class="ribbon status-btn atendimento fechada">Fechada</a>
                   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                    <li><a href="javascript:void(0)" class="btn aberta">aberta</a></li>
-                    <li><a href="javascript:void(0)" class="btn aguardando">aguardando</a></li>
-                    <li><a href="javascript:void(0)" class="btn fechada">fechada</a></li>
+                    <li><a href="javascript:void(0)" class="aberta">aberta</a></li>
+                    <li><a href="javascript:void(0)" class="aguardando">aguardando</a></li>
+                    <li><a href="javascript:void(0)" class="fechada">fechada</a></li>
+                    <li><a href="javascript:void(0)" class="fechada"><i class="fa fa-pencil"></i> editar atendimento</a></li>
                   </ul>
                 </div><!--/.dropdown-->
 
@@ -1239,7 +1386,7 @@
                 </div><!--/.tags-->                  
                 <div class="dropdown tags-menu">
                   <a data-toggle="dropdown" href="#" class="btn tags-btn"><i class="glyphicon glyphicon-tag"></i></a>
-                  <div class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+                  <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
                     <form role="form">
 
                       <div class="form-group">
@@ -1606,6 +1753,19 @@
 
           </div><!--/accordion-hidden-->
         </div><!--/.quote-->
+
+        <!--/PAGINAÇÃO-->
+        <div class="center-box">
+          <ul class="pagination">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
         
       </div><!--/container-->
     </div><!--/#content-->

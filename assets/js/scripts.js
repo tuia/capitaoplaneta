@@ -1,7 +1,7 @@
 //SRCIPTS
 
 /* TOOLTIP */
-$('[data-toggle="tooltip"], .mec-menu .dropdown-toggle').tooltip({
+$('[data-toggle="tooltip"], .hastooltip, .mec-menu .dropdown-toggle').tooltip({
 	delay: { show: 400, hide: 10 }
 });
 
@@ -17,6 +17,9 @@ $('.accordion-box .accordion-trigger').not('.disabled').click( function() {
 	}
 	return false
 });
+
+/* INDERTAMINATE CHECKBOX */
+$("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+
 
 
 /*CITAÇÃO*/
@@ -87,6 +90,11 @@ $('.accordion-box .accordion-trigger').not('.disabled').click( function() {
 		  }, 1000); 
 		  return false;
 		}
+	});
+
+	/*CHECKBOX*/
+	$('.quote-checkbox input').change( function() {
+		$(this).parents('.quote').toggleClass('selected');
 	});
 
 

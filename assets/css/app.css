@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 ** GENERIC
 ** Todos os componentes reutilizaveis
@@ -60,17 +61,14 @@ ANIMATIONS
 -------------------------------------------------------------  */
 /* ROTATE */
 @keyframes anim-rotate {
-  /* line 254, ../scss/generic/_mixin.scss */
   0% {
     transform: rotate(0);
   }
 
-  /* line 257, ../scss/generic/_mixin.scss */
   100% {
     transform: rotate(360deg);
   }
 }
-
 /* example: animation: anim-rotate 2s infinite linear; */
 /*
 ** DEFAULT
@@ -87,51 +85,42 @@ ANIMATIONS
 /* HEADER */
 /* THE CSS */
 /*typography*/
-/* line 49, ../scss/_default.scss */
 body, p {
   font-family: 'Roboto', sans-serif;
   color: #333333;
 }
 
-/* line 50, ../scss/_default.scss */
 .light {
   color: #666666;
 }
 
-/* line 51, ../scss/_default.scss */
 .lighter {
   color: #999999;
 }
 
-/* line 52, ../scss/_default.scss */
 .badge {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
 
-/* line 53, ../scss/_default.scss */
 label {
   font-weight: normal;
 }
 
-/* line 54, ../scss/_default.scss */
 a:hover {
   text-decoration: none;
 }
 
 /*HELPERS*/
-/* line 57, ../scss/_default.scss */
 .auto {
   overflow: auto;
 }
 
-/* line 58, ../scss/_default.scss */
 .accordion-hidden {
   display: none;
 }
 
-/* line 59, ../scss/_default.scss */
 .accordion-trigger.disabled {
   filter: alpha(opacity=30);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
@@ -140,8 +129,11 @@ a:hover {
   opacity: 0.3;
 }
 
+.center-box {
+  text-align: center;
+}
+
 /*Media queries breakpoints*/
-/* line 62, ../scss/_default.scss */
 .container {
   width: 950px !important;
   padding: 0;
@@ -149,7 +141,6 @@ a:hover {
 
 /* COMPONENTES */
 /* SOCIAL ICONS */
-/* line 69, ../scss/_default.scss */
 .btn.social {
   color: #FFFFFF;
   text-align: center;
@@ -158,95 +149,73 @@ a:hover {
   padding: 2px;
   font-size: 18px;
 }
-/* line 78, ../scss/_default.scss */
 .btn.facebook {
   background: #3b5998;
 }
-/* line 80, ../scss/_default.scss */
 .btn.facebook:hover {
   background: #4c70ba;
 }
-/* line 82, ../scss/_default.scss */
 .btn.twitter {
   background: #00aced;
 }
-/* line 84, ../scss/_default.scss */
 .btn.twitter:hover {
   background: #21c2ff;
 }
-/* line 86, ../scss/_default.scss */
 .btn.youtube {
   background: #bb0000;
 }
-/* line 88, ../scss/_default.scss */
 .btn.youtube:hover {
   background: #ee0000;
 }
-/* line 90, ../scss/_default.scss */
 .btn.gplus {
   background: #dd4b39;
 }
-/* line 92, ../scss/_default.scss */
 .btn.gplus:hover {
   background: #e47365;
 }
-/* line 94, ../scss/_default.scss */
 .btn.instagram {
   background: #517fa4;
 }
-/* line 96, ../scss/_default.scss */
 .btn.instagram:hover {
   background: #7098b8;
 }
-/* line 98, ../scss/_default.scss */
 .btn.flickr {
   background: #ff0084;
 }
-/* line 100, ../scss/_default.scss */
 .btn.flickr:hover {
   background: #ff339d;
 }
-/* line 102, ../scss/_default.scss */
 .btn.linkedin {
   background: #007bb6;
 }
-/* line 104, ../scss/_default.scss */
 .btn.linkedin:hover {
   background: #009de9;
 }
-/* line 106, ../scss/_default.scss */
 .btn.blogger {
   background: #ff6600;
 }
-/* line 108, ../scss/_default.scss */
 .btn.blogger:hover {
   background: #ff8533;
 }
-/* line 110, ../scss/_default.scss */
 .btn.foursquare {
   background: #0072b1;
 }
-/* line 112, ../scss/_default.scss */
 .btn.foursquare:hover {
   background: #0093e4;
 }
-/* line 114, ../scss/_default.scss */
 .btn.reclame-aqui {
   background: #008751;
 }
-/* line 116, ../scss/_default.scss */
 .btn.reclame-aqui:hover {
   background: #00a160;
 }
-/* line 117, ../scss/_default.scss */
 .btn.reclame-aqui .reclame-aqui-icon {
   width: 70%;
   padding: 5% 0 15%;
 }
 
 /* BOTÕES DOS MENUS DO MEC E DE SENTIMENTO */
-/* line 122, ../scss/_default.scss */
-.mec-menu .btn, .feeling-menu .btn {
+.mec-menu .btn, .feeling-menu .btn, .feeling-icon, .mec-icon {
   background-image: url("../img/mec-feel-sprite.png");
   background-color: #f1f1f1;
   border: none !important;
@@ -269,335 +238,292 @@ a:hover {
   /*infraestrutura*/
   /*relacionamento*/
 }
-/* line 133, ../scss/_default.scss */
-.mec-menu .btn:hover, .feeling-menu .btn:hover {
+.mec-menu .btn:hover, .feeling-menu .btn:hover, .feeling-icon:hover, .mec-icon:hover {
   border: none !important;
 }
-/* line 138, ../scss/_default.scss */
-.mec-menu .btn.good, .feeling-menu .btn.good {
-  background-position: -330px 0px;
+.mec-menu .btn.inderteminate, .feeling-menu .btn.inderteminate, .feeling-icon.inderteminate, .mec-icon.inderteminate {
+  background-position: -330px -96px;
 }
-/* line 140, ../scss/_default.scss */
-.mec-menu .btn.good:hover, .mec-menu .btn.good:active, .feeling-menu .btn.good:hover, .feeling-menu .btn.good:active {
+.mec-menu .btn.good, .feeling-menu .btn.good, .feeling-icon.good, .mec-icon.good {
+  background-position: -330px -0px;
+}
+.mec-menu .btn.good:hover, .mec-menu .btn.good:active, .feeling-menu .btn.good:hover, .feeling-menu .btn.good:active, .feeling-icon.good:hover, .feeling-icon.good:active, .mec-icon.good:hover, .mec-icon.good:active {
   background-position: -330px -32px;
   background-color: #fefefe;
 }
-/* line 141, ../scss/_default.scss */
-.mec-menu .btn.good.active, .feeling-menu .btn.good.active {
+.mec-menu .btn.good.active, .feeling-menu .btn.good.active, .feeling-icon.good.active, .mec-icon.good.active {
   background-position: -330px -64px;
   background-color: #27ae60;
 }
-/* line 143, ../scss/_default.scss */
-.mec-menu .btn.neutral, .feeling-menu .btn.neutral {
-  background-position: -363px 0px;
+.mec-menu .btn.neutral, .feeling-menu .btn.neutral, .feeling-icon.neutral, .mec-icon.neutral {
+  background-position: -363px -0px;
 }
-/* line 145, ../scss/_default.scss */
-.mec-menu .btn.neutral:hover, .mec-menu .btn.neutral:active, .feeling-menu .btn.neutral:hover, .feeling-menu .btn.neutral:active {
+.mec-menu .btn.neutral:hover, .mec-menu .btn.neutral:active, .feeling-menu .btn.neutral:hover, .feeling-menu .btn.neutral:active, .feeling-icon.neutral:hover, .feeling-icon.neutral:active, .mec-icon.neutral:hover, .mec-icon.neutral:active {
   background-position: -363px -32px;
   background-color: #fefefe;
 }
-/* line 146, ../scss/_default.scss */
-.mec-menu .btn.neutral.active, .feeling-menu .btn.neutral.active {
+.mec-menu .btn.neutral.active, .feeling-menu .btn.neutral.active, .feeling-icon.neutral.active, .mec-icon.neutral.active {
   background-position: -363px -64px;
   background-color: #2980b9;
 }
-/* line 148, ../scss/_default.scss */
-.mec-menu .btn.bad, .feeling-menu .btn.bad {
-  background-position: -396px 0px;
+.mec-menu .btn.bad, .feeling-menu .btn.bad, .feeling-icon.bad, .mec-icon.bad {
+  background-position: -396px -0px;
 }
-/* line 150, ../scss/_default.scss */
-.mec-menu .btn.bad:hover, .mec-menu .btn.bad:active, .feeling-menu .btn.bad:hover, .feeling-menu .btn.bad:active {
+.mec-menu .btn.bad:hover, .mec-menu .btn.bad:active, .feeling-menu .btn.bad:hover, .feeling-menu .btn.bad:active, .feeling-icon.bad:hover, .feeling-icon.bad:active, .mec-icon.bad:hover, .mec-icon.bad:active {
   background-position: -396px -32px;
   background-color: #fefefe;
 }
-/* line 151, ../scss/_default.scss */
-.mec-menu .btn.bad.active, .feeling-menu .btn.bad.active {
+.mec-menu .btn.bad.active, .feeling-menu .btn.bad.active, .feeling-icon.bad.active, .mec-icon.bad.active {
   background-position: -396px -64px;
   background-color: #c0392b;
 }
-/* line 153, ../scss/_default.scss */
-.mec-menu .btn.remove, .feeling-menu .btn.remove {
+.mec-menu .btn.remove, .feeling-menu .btn.remove, .feeling-icon.remove, .mec-icon.remove {
   background-position: -363px -96px;
 }
-/* line 155, ../scss/_default.scss */
-.mec-menu .btn.remove:hover, .mec-menu .btn.remove:active, .feeling-menu .btn.remove:hover, .feeling-menu .btn.remove:active {
+.mec-menu .btn.remove:hover, .mec-menu .btn.remove:active, .feeling-menu .btn.remove:hover, .feeling-menu .btn.remove:active, .feeling-icon.remove:hover, .feeling-icon.remove:active, .mec-icon.remove:hover, .mec-icon.remove:active {
   background-position: -396px -96px;
   background-color: #fefefe;
 }
-/* line 159, ../scss/_default.scss */
-.mec-menu .btn.captacao, .feeling-menu .btn.captacao {
-  background-position: 0px 0px;
+.mec-menu .btn.captacao, .feeling-menu .btn.captacao, .feeling-icon.captacao, .mec-icon.captacao {
+  background-position: -0px -0px;
 }
-/* line 161, ../scss/_default.scss */
-.mec-menu .btn.captacao:hover, .mec-menu .btn.captacao:active, .mec-menu .btn.captacao.active, .feeling-menu .btn.captacao:hover, .feeling-menu .btn.captacao:active, .feeling-menu .btn.captacao.active {
-  background-position: 0px -32px;
+.mec-menu .btn.captacao:hover, .mec-menu .btn.captacao:active, .mec-menu .btn.captacao.active, .feeling-menu .btn.captacao:hover, .feeling-menu .btn.captacao:active, .feeling-menu .btn.captacao.active, .feeling-icon.captacao:hover, .feeling-icon.captacao:active, .feeling-icon.captacao.active, .mec-icon.captacao:hover, .mec-icon.captacao:active, .mec-icon.captacao.active {
+  background-position: -0px -32px;
   background-color: #fefefe;
 }
-/* line 162, ../scss/_default.scss */
-.mec-menu .btn.captacao.good, .feeling-menu .btn.captacao.good {
+.mec-menu .btn.captacao.good, .feeling-menu .btn.captacao.good, .feeling-icon.captacao.good, .mec-icon.captacao.good {
   background-color: #27ae60;
-  background-position: 0px -64px;
+  background-position: -0px -64px;
 }
-/* line 163, ../scss/_default.scss */
-.mec-menu .btn.captacao.neutral, .feeling-menu .btn.captacao.neutral {
+.mec-menu .btn.captacao.neutral, .feeling-menu .btn.captacao.neutral, .feeling-icon.captacao.neutral, .mec-icon.captacao.neutral {
   background-color: #2980b9;
-  background-position: 0px -64px;
+  background-position: -0px -64px;
 }
-/* line 164, ../scss/_default.scss */
-.mec-menu .btn.captacao.bad, .feeling-menu .btn.captacao.bad {
+.mec-menu .btn.captacao.bad, .feeling-menu .btn.captacao.bad, .feeling-icon.captacao.bad, .mec-icon.captacao.bad {
   background-color: #c0392b;
-  background-position: 0px -64px;
+  background-position: -0px -64px;
 }
-/* line 167, ../scss/_default.scss */
-.mec-menu .btn.empregabilidade, .feeling-menu .btn.empregabilidade {
-  background-position: -33px 0px;
+.mec-menu .btn.empregabilidade, .feeling-menu .btn.empregabilidade, .feeling-icon.empregabilidade, .mec-icon.empregabilidade {
+  background-position: -33px -0px;
 }
-/* line 169, ../scss/_default.scss */
-.mec-menu .btn.empregabilidade:hover, .mec-menu .btn.empregabilidade:active, .mec-menu .btn.empregabilidade.active, .feeling-menu .btn.empregabilidade:hover, .feeling-menu .btn.empregabilidade:active, .feeling-menu .btn.empregabilidade.active {
+.mec-menu .btn.empregabilidade:hover, .mec-menu .btn.empregabilidade:active, .mec-menu .btn.empregabilidade.active, .feeling-menu .btn.empregabilidade:hover, .feeling-menu .btn.empregabilidade:active, .feeling-menu .btn.empregabilidade.active, .feeling-icon.empregabilidade:hover, .feeling-icon.empregabilidade:active, .feeling-icon.empregabilidade.active, .mec-icon.empregabilidade:hover, .mec-icon.empregabilidade:active, .mec-icon.empregabilidade.active {
   background-position: -33px -32px;
   background-color: #fefefe;
 }
-/* line 170, ../scss/_default.scss */
-.mec-menu .btn.empregabilidade.good, .feeling-menu .btn.empregabilidade.good {
+.mec-menu .btn.empregabilidade.good, .feeling-menu .btn.empregabilidade.good, .feeling-icon.empregabilidade.good, .mec-icon.empregabilidade.good {
   background-color: #27ae60;
   background-position: -33px -64px;
 }
-/* line 171, ../scss/_default.scss */
-.mec-menu .btn.empregabilidade.neutral, .feeling-menu .btn.empregabilidade.neutral {
+.mec-menu .btn.empregabilidade.neutral, .feeling-menu .btn.empregabilidade.neutral, .feeling-icon.empregabilidade.neutral, .mec-icon.empregabilidade.neutral {
   background-color: #2980b9;
   background-position: -33px -64px;
 }
-/* line 172, ../scss/_default.scss */
-.mec-menu .btn.empregabilidade.bad, .feeling-menu .btn.empregabilidade.bad {
+.mec-menu .btn.empregabilidade.bad, .feeling-menu .btn.empregabilidade.bad, .feeling-icon.empregabilidade.bad, .mec-icon.empregabilidade.bad {
   background-color: #c0392b;
   background-position: -33px -64px;
 }
-/* line 175, ../scss/_default.scss */
-.mec-menu .btn.localizacao, .feeling-menu .btn.localizacao {
-  background-position: -66px 0px;
+.mec-menu .btn.localizacao, .feeling-menu .btn.localizacao, .feeling-icon.localizacao, .mec-icon.localizacao {
+  background-position: -66px -0px;
 }
-/* line 177, ../scss/_default.scss */
-.mec-menu .btn.localizacao:hover, .mec-menu .btn.localizacao:active, .mec-menu .btn.localizacao.active, .feeling-menu .btn.localizacao:hover, .feeling-menu .btn.localizacao:active, .feeling-menu .btn.localizacao.active {
+.mec-menu .btn.localizacao:hover, .mec-menu .btn.localizacao:active, .mec-menu .btn.localizacao.active, .feeling-menu .btn.localizacao:hover, .feeling-menu .btn.localizacao:active, .feeling-menu .btn.localizacao.active, .feeling-icon.localizacao:hover, .feeling-icon.localizacao:active, .feeling-icon.localizacao.active, .mec-icon.localizacao:hover, .mec-icon.localizacao:active, .mec-icon.localizacao.active {
   background-position: -66px -32px;
   background-color: #fefefe;
 }
-/* line 178, ../scss/_default.scss */
-.mec-menu .btn.localizacao.good, .feeling-menu .btn.localizacao.good {
+.mec-menu .btn.localizacao.good, .feeling-menu .btn.localizacao.good, .feeling-icon.localizacao.good, .mec-icon.localizacao.good {
   background-color: #27ae60;
   background-position: -66px -64px;
 }
-/* line 179, ../scss/_default.scss */
-.mec-menu .btn.localizacao.neutral, .feeling-menu .btn.localizacao.neutral {
+.mec-menu .btn.localizacao.neutral, .feeling-menu .btn.localizacao.neutral, .feeling-icon.localizacao.neutral, .mec-icon.localizacao.neutral {
   background-color: #2980b9;
   background-position: -66px -64px;
 }
-/* line 180, ../scss/_default.scss */
-.mec-menu .btn.localizacao.bad, .feeling-menu .btn.localizacao.bad {
+.mec-menu .btn.localizacao.bad, .feeling-menu .btn.localizacao.bad, .feeling-icon.localizacao.bad, .mec-icon.localizacao.bad {
   background-color: #c0392b;
   background-position: -66px -64px;
 }
-/* line 183, ../scss/_default.scss */
-.mec-menu .btn.atuacao-etica, .feeling-menu .btn.atuacao-etica {
-  background-position: -99px 0px;
+.mec-menu .btn.atuacao-etica, .feeling-menu .btn.atuacao-etica, .feeling-icon.atuacao-etica, .mec-icon.atuacao-etica {
+  background-position: -99px -0px;
 }
-/* line 185, ../scss/_default.scss */
-.mec-menu .btn.atuacao-etica:hover, .mec-menu .btn.atuacao-etica:active, .mec-menu .btn.atuacao-etica.active, .feeling-menu .btn.atuacao-etica:hover, .feeling-menu .btn.atuacao-etica:active, .feeling-menu .btn.atuacao-etica.active {
+.mec-menu .btn.atuacao-etica:hover, .mec-menu .btn.atuacao-etica:active, .mec-menu .btn.atuacao-etica.active, .feeling-menu .btn.atuacao-etica:hover, .feeling-menu .btn.atuacao-etica:active, .feeling-menu .btn.atuacao-etica.active, .feeling-icon.atuacao-etica:hover, .feeling-icon.atuacao-etica:active, .feeling-icon.atuacao-etica.active, .mec-icon.atuacao-etica:hover, .mec-icon.atuacao-etica:active, .mec-icon.atuacao-etica.active {
   background-position: -99px -32px;
   background-color: #fefefe;
 }
-/* line 186, ../scss/_default.scss */
-.mec-menu .btn.atuacao-etica.good, .feeling-menu .btn.atuacao-etica.good {
+.mec-menu .btn.atuacao-etica.good, .feeling-menu .btn.atuacao-etica.good, .feeling-icon.atuacao-etica.good, .mec-icon.atuacao-etica.good {
   background-color: #27ae60;
   background-position: -99px -64px;
 }
-/* line 187, ../scss/_default.scss */
-.mec-menu .btn.atuacao-etica.neutral, .feeling-menu .btn.atuacao-etica.neutral {
+.mec-menu .btn.atuacao-etica.neutral, .feeling-menu .btn.atuacao-etica.neutral, .feeling-icon.atuacao-etica.neutral, .mec-icon.atuacao-etica.neutral {
   background-color: #2980b9;
   background-position: -99px -64px;
 }
-/* line 188, ../scss/_default.scss */
-.mec-menu .btn.atuacao-etica.bad, .feeling-menu .btn.atuacao-etica.bad {
+.mec-menu .btn.atuacao-etica.bad, .feeling-menu .btn.atuacao-etica.bad, .feeling-icon.atuacao-etica.bad, .mec-icon.atuacao-etica.bad {
   background-color: #c0392b;
   background-position: -99px -64px;
 }
-/* line 191, ../scss/_default.scss */
-.mec-menu .btn.corpo-docente, .feeling-menu .btn.corpo-docente {
-  background-position: -132px 0px;
+.mec-menu .btn.corpo-docente, .feeling-menu .btn.corpo-docente, .feeling-icon.corpo-docente, .mec-icon.corpo-docente {
+  background-position: -132px -0px;
 }
-/* line 193, ../scss/_default.scss */
-.mec-menu .btn.corpo-docente:hover, .mec-menu .btn.corpo-docente:active, .mec-menu .btn.corpo-docente.active, .feeling-menu .btn.corpo-docente:hover, .feeling-menu .btn.corpo-docente:active, .feeling-menu .btn.corpo-docente.active {
+.mec-menu .btn.corpo-docente:hover, .mec-menu .btn.corpo-docente:active, .mec-menu .btn.corpo-docente.active, .feeling-menu .btn.corpo-docente:hover, .feeling-menu .btn.corpo-docente:active, .feeling-menu .btn.corpo-docente.active, .feeling-icon.corpo-docente:hover, .feeling-icon.corpo-docente:active, .feeling-icon.corpo-docente.active, .mec-icon.corpo-docente:hover, .mec-icon.corpo-docente:active, .mec-icon.corpo-docente.active {
   background-position: -132px -32px;
   background-color: #fefefe;
 }
-/* line 194, ../scss/_default.scss */
-.mec-menu .btn.corpo-docente.good, .feeling-menu .btn.corpo-docente.good {
+.mec-menu .btn.corpo-docente.good, .feeling-menu .btn.corpo-docente.good, .feeling-icon.corpo-docente.good, .mec-icon.corpo-docente.good {
   background-color: #27ae60;
   background-position: -132px -64px;
 }
-/* line 195, ../scss/_default.scss */
-.mec-menu .btn.corpo-docente.neutral, .feeling-menu .btn.corpo-docente.neutral {
+.mec-menu .btn.corpo-docente.neutral, .feeling-menu .btn.corpo-docente.neutral, .feeling-icon.corpo-docente.neutral, .mec-icon.corpo-docente.neutral {
   background-color: #2980b9;
   background-position: -132px -64px;
 }
-/* line 196, ../scss/_default.scss */
-.mec-menu .btn.corpo-docente.bad, .feeling-menu .btn.corpo-docente.bad {
+.mec-menu .btn.corpo-docente.bad, .feeling-menu .btn.corpo-docente.bad, .feeling-icon.corpo-docente.bad, .mec-icon.corpo-docente.bad {
   background-color: #c0392b;
   background-position: -132px -64px;
 }
-/* line 199, ../scss/_default.scss */
-.mec-menu .btn.credenciamento-no-mec, .feeling-menu .btn.credenciamento-no-mec {
-  background-position: -165px 0px;
+.mec-menu .btn.credenciamento-no-mec, .feeling-menu .btn.credenciamento-no-mec, .feeling-icon.credenciamento-no-mec, .mec-icon.credenciamento-no-mec {
+  background-position: -165px -0px;
 }
-/* line 201, ../scss/_default.scss */
-.mec-menu .btn.credenciamento-no-mec:hover, .mec-menu .btn.credenciamento-no-mec:active, .mec-menu .btn.credenciamento-no-mec.active, .feeling-menu .btn.credenciamento-no-mec:hover, .feeling-menu .btn.credenciamento-no-mec:active, .feeling-menu .btn.credenciamento-no-mec.active {
+.mec-menu .btn.credenciamento-no-mec:hover, .mec-menu .btn.credenciamento-no-mec:active, .mec-menu .btn.credenciamento-no-mec.active, .feeling-menu .btn.credenciamento-no-mec:hover, .feeling-menu .btn.credenciamento-no-mec:active, .feeling-menu .btn.credenciamento-no-mec.active, .feeling-icon.credenciamento-no-mec:hover, .feeling-icon.credenciamento-no-mec:active, .feeling-icon.credenciamento-no-mec.active, .mec-icon.credenciamento-no-mec:hover, .mec-icon.credenciamento-no-mec:active, .mec-icon.credenciamento-no-mec.active {
   background-position: -165px -32px;
   background-color: #fefefe;
 }
-/* line 202, ../scss/_default.scss */
-.mec-menu .btn.credenciamento-no-mec.good, .feeling-menu .btn.credenciamento-no-mec.good {
+.mec-menu .btn.credenciamento-no-mec.good, .feeling-menu .btn.credenciamento-no-mec.good, .feeling-icon.credenciamento-no-mec.good, .mec-icon.credenciamento-no-mec.good {
   background-color: #27ae60;
   background-position: -165px -64px;
 }
-/* line 203, ../scss/_default.scss */
-.mec-menu .btn.credenciamento-no-mec.neutral, .feeling-menu .btn.credenciamento-no-mec.neutral {
+.mec-menu .btn.credenciamento-no-mec.neutral, .feeling-menu .btn.credenciamento-no-mec.neutral, .feeling-icon.credenciamento-no-mec.neutral, .mec-icon.credenciamento-no-mec.neutral {
   background-color: #2980b9;
   background-position: -165px -64px;
 }
-/* line 204, ../scss/_default.scss */
-.mec-menu .btn.credenciamento-no-mec.bad, .feeling-menu .btn.credenciamento-no-mec.bad {
+.mec-menu .btn.credenciamento-no-mec.bad, .feeling-menu .btn.credenciamento-no-mec.bad, .feeling-icon.credenciamento-no-mec.bad, .mec-icon.credenciamento-no-mec.bad {
   background-color: #c0392b;
   background-position: -165px -64px;
 }
-/* line 207, ../scss/_default.scss */
-.mec-menu .btn.preco, .feeling-menu .btn.preco {
-  background-position: -198px 0px;
+.mec-menu .btn.preco, .feeling-menu .btn.preco, .feeling-icon.preco, .mec-icon.preco {
+  background-position: -198px -0px;
 }
-/* line 209, ../scss/_default.scss */
-.mec-menu .btn.preco:hover, .mec-menu .btn.preco:active, .mec-menu .btn.preco.active, .feeling-menu .btn.preco:hover, .feeling-menu .btn.preco:active, .feeling-menu .btn.preco.active {
+.mec-menu .btn.preco:hover, .mec-menu .btn.preco:active, .mec-menu .btn.preco.active, .feeling-menu .btn.preco:hover, .feeling-menu .btn.preco:active, .feeling-menu .btn.preco.active, .feeling-icon.preco:hover, .feeling-icon.preco:active, .feeling-icon.preco.active, .mec-icon.preco:hover, .mec-icon.preco:active, .mec-icon.preco.active {
   background-position: -198px -32px;
   background-color: #fefefe;
 }
-/* line 210, ../scss/_default.scss */
-.mec-menu .btn.preco.good, .feeling-menu .btn.preco.good {
+.mec-menu .btn.preco.good, .feeling-menu .btn.preco.good, .feeling-icon.preco.good, .mec-icon.preco.good {
   background-color: #27ae60;
   background-position: -198px -64px;
 }
-/* line 211, ../scss/_default.scss */
-.mec-menu .btn.preco.neutral, .feeling-menu .btn.preco.neutral {
+.mec-menu .btn.preco.neutral, .feeling-menu .btn.preco.neutral, .feeling-icon.preco.neutral, .mec-icon.preco.neutral {
   background-color: #2980b9;
   background-position: -198px -64px;
 }
-/* line 212, ../scss/_default.scss */
-.mec-menu .btn.preco.bad, .feeling-menu .btn.preco.bad {
+.mec-menu .btn.preco.bad, .feeling-menu .btn.preco.bad, .feeling-icon.preco.bad, .mec-icon.preco.bad {
   background-color: #c0392b;
   background-position: -198px -64px;
 }
-/* line 215, ../scss/_default.scss */
-.mec-menu .btn.qualidade-de-ensino, .feeling-menu .btn.qualidade-de-ensino {
-  background-position: -231px 0px;
+.mec-menu .btn.qualidade-de-ensino, .feeling-menu .btn.qualidade-de-ensino, .feeling-icon.qualidade-de-ensino, .mec-icon.qualidade-de-ensino {
+  background-position: -231px -0px;
 }
-/* line 217, ../scss/_default.scss */
-.mec-menu .btn.qualidade-de-ensino:hover, .mec-menu .btn.qualidade-de-ensino:active, .mec-menu .btn.qualidade-de-ensino.active, .feeling-menu .btn.qualidade-de-ensino:hover, .feeling-menu .btn.qualidade-de-ensino:active, .feeling-menu .btn.qualidade-de-ensino.active {
+.mec-menu .btn.qualidade-de-ensino:hover, .mec-menu .btn.qualidade-de-ensino:active, .mec-menu .btn.qualidade-de-ensino.active, .feeling-menu .btn.qualidade-de-ensino:hover, .feeling-menu .btn.qualidade-de-ensino:active, .feeling-menu .btn.qualidade-de-ensino.active, .feeling-icon.qualidade-de-ensino:hover, .feeling-icon.qualidade-de-ensino:active, .feeling-icon.qualidade-de-ensino.active, .mec-icon.qualidade-de-ensino:hover, .mec-icon.qualidade-de-ensino:active, .mec-icon.qualidade-de-ensino.active {
   background-position: -231px -32px;
   background-color: #fefefe;
 }
-/* line 218, ../scss/_default.scss */
-.mec-menu .btn.qualidade-de-ensino.good, .feeling-menu .btn.qualidade-de-ensino.good {
+.mec-menu .btn.qualidade-de-ensino.good, .feeling-menu .btn.qualidade-de-ensino.good, .feeling-icon.qualidade-de-ensino.good, .mec-icon.qualidade-de-ensino.good {
   background-color: #27ae60;
   background-position: -231px -64px;
 }
-/* line 219, ../scss/_default.scss */
-.mec-menu .btn.qualidade-de-ensino.neutral, .feeling-menu .btn.qualidade-de-ensino.neutral {
+.mec-menu .btn.qualidade-de-ensino.neutral, .feeling-menu .btn.qualidade-de-ensino.neutral, .feeling-icon.qualidade-de-ensino.neutral, .mec-icon.qualidade-de-ensino.neutral {
   background-color: #2980b9;
   background-position: -231px -64px;
 }
-/* line 220, ../scss/_default.scss */
-.mec-menu .btn.qualidade-de-ensino.bad, .feeling-menu .btn.qualidade-de-ensino.bad {
+.mec-menu .btn.qualidade-de-ensino.bad, .feeling-menu .btn.qualidade-de-ensino.bad, .feeling-icon.qualidade-de-ensino.bad, .mec-icon.qualidade-de-ensino.bad {
   background-color: #c0392b;
   background-position: -231px -64px;
 }
-/* line 223, ../scss/_default.scss */
-.mec-menu .btn.infraestrutura, .feeling-menu .btn.infraestrutura {
-  background-position: -264px 0px;
+.mec-menu .btn.infraestrutura, .feeling-menu .btn.infraestrutura, .feeling-icon.infraestrutura, .mec-icon.infraestrutura {
+  background-position: -264px -0px;
 }
-/* line 225, ../scss/_default.scss */
-.mec-menu .btn.infraestrutura:hover, .mec-menu .btn.infraestrutura:active, .mec-menu .btn.infraestrutura.active, .feeling-menu .btn.infraestrutura:hover, .feeling-menu .btn.infraestrutura:active, .feeling-menu .btn.infraestrutura.active {
+.mec-menu .btn.infraestrutura:hover, .mec-menu .btn.infraestrutura:active, .mec-menu .btn.infraestrutura.active, .feeling-menu .btn.infraestrutura:hover, .feeling-menu .btn.infraestrutura:active, .feeling-menu .btn.infraestrutura.active, .feeling-icon.infraestrutura:hover, .feeling-icon.infraestrutura:active, .feeling-icon.infraestrutura.active, .mec-icon.infraestrutura:hover, .mec-icon.infraestrutura:active, .mec-icon.infraestrutura.active {
   background-position: -264px -32px;
   background-color: #fefefe;
 }
-/* line 226, ../scss/_default.scss */
-.mec-menu .btn.infraestrutura.good, .feeling-menu .btn.infraestrutura.good {
+.mec-menu .btn.infraestrutura.good, .feeling-menu .btn.infraestrutura.good, .feeling-icon.infraestrutura.good, .mec-icon.infraestrutura.good {
   background-color: #27ae60;
   background-position: -264px -64px;
 }
-/* line 227, ../scss/_default.scss */
-.mec-menu .btn.infraestrutura.neutral, .feeling-menu .btn.infraestrutura.neutral {
+.mec-menu .btn.infraestrutura.neutral, .feeling-menu .btn.infraestrutura.neutral, .feeling-icon.infraestrutura.neutral, .mec-icon.infraestrutura.neutral {
   background-color: #2980b9;
   background-position: -264px -64px;
 }
-/* line 228, ../scss/_default.scss */
-.mec-menu .btn.infraestrutura.bad, .feeling-menu .btn.infraestrutura.bad {
+.mec-menu .btn.infraestrutura.bad, .feeling-menu .btn.infraestrutura.bad, .feeling-icon.infraestrutura.bad, .mec-icon.infraestrutura.bad {
   background-color: #c0392b;
   background-position: -264px -64px;
 }
-/* line 231, ../scss/_default.scss */
-.mec-menu .btn.relacionamento, .feeling-menu .btn.relacionamento {
-  background-position: -297px 0px;
+.mec-menu .btn.relacionamento, .feeling-menu .btn.relacionamento, .feeling-icon.relacionamento, .mec-icon.relacionamento {
+  background-position: -297px -0px;
 }
-/* line 233, ../scss/_default.scss */
-.mec-menu .btn.relacionamento:hover, .mec-menu .btn.relacionamento:active, .mec-menu .btn.relacionamento.active, .feeling-menu .btn.relacionamento:hover, .feeling-menu .btn.relacionamento:active, .feeling-menu .btn.relacionamento.active {
+.mec-menu .btn.relacionamento:hover, .mec-menu .btn.relacionamento:active, .mec-menu .btn.relacionamento.active, .feeling-menu .btn.relacionamento:hover, .feeling-menu .btn.relacionamento:active, .feeling-menu .btn.relacionamento.active, .feeling-icon.relacionamento:hover, .feeling-icon.relacionamento:active, .feeling-icon.relacionamento.active, .mec-icon.relacionamento:hover, .mec-icon.relacionamento:active, .mec-icon.relacionamento.active {
   background-position: -297px -32px;
   background-color: #fefefe;
 }
-/* line 234, ../scss/_default.scss */
-.mec-menu .btn.relacionamento.good, .feeling-menu .btn.relacionamento.good {
+.mec-menu .btn.relacionamento.good, .feeling-menu .btn.relacionamento.good, .feeling-icon.relacionamento.good, .mec-icon.relacionamento.good {
   background-color: #27ae60;
   background-position: -297px -64px;
 }
-/* line 235, ../scss/_default.scss */
-.mec-menu .btn.relacionamento.neutral, .feeling-menu .btn.relacionamento.neutral {
+.mec-menu .btn.relacionamento.neutral, .feeling-menu .btn.relacionamento.neutral, .feeling-icon.relacionamento.neutral, .mec-icon.relacionamento.neutral {
   background-color: #2980b9;
   background-position: -297px -64px;
 }
-/* line 236, ../scss/_default.scss */
-.mec-menu .btn.relacionamento.bad, .feeling-menu .btn.relacionamento.bad {
+.mec-menu .btn.relacionamento.bad, .feeling-menu .btn.relacionamento.bad, .feeling-icon.relacionamento.bad, .mec-icon.relacionamento.bad {
   background-color: #c0392b;
   background-position: -297px -64px;
 }
 
 /*btn*/
-/* line 242, ../scss/_default.scss */
+/*isolated icons*/
+.feeling-icon, .mec-icon {
+  display: inline-block;
+  background-color: transparent;
+  margin: -12px -7px;
+}
+
+a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hover {
+  background-color: transparent !important;
+}
+
+/* dropdown feeling-menu with reduced width */
+.dropdown-menu.feeling-menu {
+  min-width: 33px;
+  padding: 1px;
+  margin-left: -2px;
+}
+.dropdown-menu.feeling-menu li {
+  margin-bottom: 1px;
+}
 .dropdown-menu.feeling-menu .btn.good:hover {
   background-color: #27ae60;
   background-position: -330px -64px;
 }
-/* line 245, ../scss/_default.scss */
 .dropdown-menu.feeling-menu .btn.neutral:hover {
   background-color: #2980b9;
   background-position: -363px -64px;
 }
-/* line 248, ../scss/_default.scss */
 .dropdown-menu.feeling-menu .btn.bad:hover {
   background-color: #c0392b;
   background-position: -396px -64px;
 }
 
 /* TAGS DROPDOWN */
-/* line 255, ../scss/_default.scss */
 .tags-menu .dropdown-menu {
   background: white;
   width: 190px;
 }
-/* line 259, ../scss/_default.scss */
+.tags-menu .dropdown-menu .form-control {
+  height: 30px;
+}
 .tags-menu .dropdown-menu .auto {
   margin: 10px 0;
 }
-/* line 262, ../scss/_default.scss */
 .tags-menu .dropdown-menu .form-group {
   padding: 0 5px;
   margin: 0;
 }
-/* line 266, ../scss/_default.scss */
 .tags-menu .dropdown-menu .checkbox {
   background: #f1f1f1;
   cursor: pointer;
@@ -606,35 +532,15 @@ a:hover {
   padding: 5px;
   font-size: .9em;
 }
-/* line 273, ../scss/_default.scss */
 .tags-menu .dropdown-menu .checkbox:hover {
   background: #fefefe;
 }
-/* line 275, ../scss/_default.scss */
 .tags-menu .dropdown-menu .checkbox label {
   display: block;
 }
 
 /*tags-dropdown*/
-/*MENU DO MEC*/
-/* line 283, ../scss/_default.scss */
-.mec-menu {
-  margin: 0 66px;
-}
-/* line 286, ../scss/_default.scss */
-.mec-menu .dropdown-menu.feeling-menu {
-  min-width: 33px;
-  padding: 1px;
-  margin-left: -2px;
-}
-/* line 290, ../scss/_default.scss */
-.mec-menu .dropdown-menu.feeling-menu li {
-  margin-bottom: 1px;
-}
-
-/*mec-menu*/
 /* RIBBON */
-/* line 299, ../scss/_default.scss */
 .ribbon {
   background-color: #869198;
   display: inline-block;
@@ -644,14 +550,12 @@ a:hover {
   font-weight: bold;
   /* CORES STATUS */
 }
-/* line 307, ../scss/_default.scss */
 .ribbon:before, .ribbon:after {
   content: " ";
   position: absolute;
   height: 0;
   width: 0;
 }
-/* line 313, ../scss/_default.scss */
 .ribbon:before {
   border-bottom: 16px solid transparent;
   border-top: 16px solid transparent;
@@ -659,96 +563,75 @@ a:hover {
   left: -10px;
   top: 0px;
 }
-/* line 320, ../scss/_default.scss */
 .ribbon:after {
   border-top: 5px solid transparent;
   border-left: 5px solid #869198;
   right: 0;
   top: -5px;
 }
-/* line 328, ../scss/_default.scss */
 .ribbon.aberta {
   background-color: #d35400;
 }
-/* line 330, ../scss/_default.scss */
 .ribbon.aberta:before {
   border-right: 10px solid #d35400;
 }
-/* line 331, ../scss/_default.scss */
 .ribbon.aberta:after {
   border-left: 5px solid #ec5e00;
 }
-/* line 332, ../scss/_default.scss */
 .ribbon.aberta:hover {
   background: #ec5e00;
   color: #FFFFFF;
 }
-/* line 334, ../scss/_default.scss */
 .ribbon.aberta:hover:before {
   border-right: 10px solid #ec5e00;
 }
-/* line 335, ../scss/_default.scss */
 .ribbon.aberta:hover:after {
   border-left: 5px solid #ec5e00;
 }
-/* line 338, ../scss/_default.scss */
 .ribbon.aguardando {
   background-color: #e67e22;
 }
-/* line 340, ../scss/_default.scss */
 .ribbon.aguardando:before {
   border-right: 10px solid #e67e22;
 }
-/* line 341, ../scss/_default.scss */
 .ribbon.aguardando:after {
   border-left: 5px solid #e98b39;
 }
-/* line 342, ../scss/_default.scss */
 .ribbon.aguardando:hover {
   background: #e98b39;
   color: #FFFFFF;
 }
-/* line 344, ../scss/_default.scss */
 .ribbon.aguardando:hover:before {
   border-right: 10px solid #e98b39;
 }
-/* line 345, ../scss/_default.scss */
 .ribbon.aguardando:hover:after {
   border-left: 5px solid #e98b39;
 }
-/* line 348, ../scss/_default.scss */
 .ribbon.fechada {
   background-color: #f39c12;
 }
-/* line 350, ../scss/_default.scss */
 .ribbon.fechada:before {
   border-right: 10px solid #f39c12;
 }
-/* line 351, ../scss/_default.scss */
 .ribbon.fechada:after {
   border-left: 5px solid #f4a62a;
 }
-/* line 352, ../scss/_default.scss */
 .ribbon.fechada:hover {
   background: #f4a62a;
   color: #FFFFFF;
 }
-/* line 354, ../scss/_default.scss */
 .ribbon.fechada:hover:before {
   border-right: 10px solid #f4a62a;
 }
-/* line 355, ../scss/_default.scss */
 .ribbon.fechada:hover:after {
   border-left: 5px solid #f4a62a;
 }
 
 /*ribbon*/
 /* NAVBAR TOPO */
-/* line 363, ../scss/_default.scss */
 #navigation {
   position: relative;
 }
-/* line 366, ../scss/_default.scss */
 #navigation .navbar-brand {
   background: url(../img/planeta-y-logo.png) no-repeat center;
   width: 120px;
@@ -760,7 +643,6 @@ a:hover {
   margin: 0 -60px;
   outline: none;
 }
-/* line 378, ../scss/_default.scss */
 #navigation .nav-img {
   width: 20px;
   height: 20px;
@@ -768,7 +650,6 @@ a:hover {
 }
 
 /* CABEÇALHO*/
-/* line 387, ../scss/_default.scss */
 #header {
   background-color: #95a5a6;
   margin: -20px 0 40px;
@@ -776,48 +657,39 @@ a:hover {
 }
 
 /* CITAÇÃO */
-/* line 395, ../scss/_default.scss */
 .quote {
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
   border: 3px solid transparent;
   /*quote-content*/
   /*footer*/
   /* citação pequena */
 }
-/* line 399, ../scss/_default.scss */
 .quote.selected {
   border-color: #a1aab0;
 }
-/* line 401, ../scss/_default.scss */
 .quote.selected .quote-content {
   background-color: #cbd0d3;
 }
-/* line 404, ../scss/_default.scss */
 .quote.selected footer {
   background-color: #d9dcde;
 }
-/* line 405, ../scss/_default.scss */
 .quote.selected .accordion-hidden {
   background-color: #e6e9ea;
 }
-/* line 409, ../scss/_default.scss */
 .quote .quote-content {
   position: relative;
   background-color: white;
   /*sidebar*/
 }
-/* line 413, ../scss/_default.scss */
 .quote .quote-content .user-img {
   float: left;
   position: relative;
   width: 100px;
   height: 100px;
 }
-/* line 418, ../scss/_default.scss */
 .quote .quote-content .user-img img {
   width: 100%;
 }
-/* line 423, ../scss/_default.scss */
 .quote .quote-content .quote-checkbox {
   position: absolute;
   top: 0;
@@ -825,39 +697,31 @@ a:hover {
   margin: 0;
   text-align: center;
 }
-/* line 429, ../scss/_default.scss */
 .quote .quote-content .quote-checkbox label {
   padding: 50px;
   display: block;
 }
-/* line 430, ../scss/_default.scss */
 .quote .quote-content .quote-checkbox input {
   margin: -45px;
 }
-/* line 434, ../scss/_default.scss */
 .quote .quote-content .quote-data {
   font-size: 14px;
   float: left;
   width: 580px;
   padding: 0 10px;
 }
-/* line 441, ../scss/_default.scss */
 .quote .quote-content .quote-data h5 {
   margin: 6px 0;
 }
-/* line 444, ../scss/_default.scss */
 .quote .quote-content .quote-data h5 .user-name {
   font-weight: bold;
 }
-/* line 449, ../scss/_default.scss */
 .quote .quote-content .quote-data p {
   margin-bottom: 15px;
 }
-/* line 451, ../scss/_default.scss */
 .quote .quote-content .quote-data .quote-txt {
   line-height: 1.3em;
 }
-/* line 456, ../scss/_default.scss */
 .quote .quote-content .sidebar {
   display: block;
   float: right;
@@ -867,12 +731,10 @@ a:hover {
   width: 240px;
   padding-left: 10px;
 }
-/* line 465, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar {
   height: 32px;
   float: left;
 }
-/* line 469, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .status-btn {
   position: relative;
   padding: 6px 6px 6px 20px;
@@ -880,22 +742,19 @@ a:hover {
   width: 18px;
   text-indent: 9999px;
   outline: none;
-  -webkit-transition: width 0.4s ease-in-out, right 0.4s ease-in-out, text-indent 0.2s 0.2s step-start;
-  -moz-transition: width 0.4s ease-in-out, right 0.4s ease-in-out, text-indent 0.2s 0.2s step-start;
-  -o-transition: width 0.4s ease-in-out, right 0.4s ease-in-out, text-indent 0.2s 0.2s step-start;
-  transition: width 0.4s ease-in-out, right 0.4s ease-in-out, text-indent 0.2s 0.2s step-start;
+  -webkit-transition: width .4s ease-in-out, right .4s ease-in-out, text-indent .2s .2s step-start;
+  -moz-transition: width .4s ease-in-out, right .4s ease-in-out, text-indent .2s .2s step-start;
+  -o-transition: width .4s ease-in-out, right .4s ease-in-out, text-indent .2s .2s step-start;
+  transition: width .4s ease-in-out, right .4s ease-in-out, text-indent .2s .2s step-start;
 }
-/* line 481, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .status-btn:active, .quote .quote-content .sidebar .status-bar .status-btn:hover, .quote .quote-content .sidebar .status-bar .status-btn:link, .quote .quote-content .sidebar .status-bar .status-btn:visited, .quote .quote-content .sidebar .status-bar .status-btn:focus {
   color: #FFFFFF;
 }
-/* line 483, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .status-btn:hover {
   width: 198px;
   right: 0;
   text-indent: 0;
 }
-/* line 489, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .status-btn.atendimento {
   width: 198px;
   right: 0;
@@ -905,11 +764,9 @@ a:hover {
   -o-transition: none;
   transition: none;
 }
-/* line 499, ../scss/_default.scss */
 .quote .quote-content .sidebar .status-bar .status-btn:after {
   display: none;
 }
-/* line 504, ../scss/_default.scss */
 .quote .quote-content .sidebar .social, .quote .quote-content .sidebar .tags-btn {
   float: right;
   width: 32px;
@@ -917,7 +774,6 @@ a:hover {
   overflow: hidden;
   position: relative;
 }
-/* line 512, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags {
   float: left;
   width: 198px;
@@ -928,12 +784,10 @@ a:hover {
   padding: 2px 5px;
   overflow: auto;
 }
-/* line 522, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p {
   line-height: 1.4em;
   margin: 0;
 }
-/* line 525, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge {
   font-size: .7em;
   margin-right: 2px;
@@ -944,53 +798,48 @@ a:hover {
   -ms-transition: padding 0.1s linear;
   transition: padding 0.1s linear;
 }
-/* line 531, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge .remove-tag {
   visibility: hidden;
   color: #d9d9d9;
   margin: 0 -2px;
   cursor: pointer;
 }
-/* line 537, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge:hover {
   padding-right: 7px;
 }
-/* line 539, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags p .badge:hover .remove-tag {
   visibility: visible;
   padding-left: 2px;
   color: white;
   margin: 0;
 }
-/* line 548, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu {
   margin: 7px 0 0 0;
   float: left;
 }
-/* line 552, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .tags-btn {
   background-color: #bdc3c7;
   text-align: center;
   color: #FFFFFF;
   padding: 6px 9px;
 }
-/* line 557, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .tags-btn:hover {
   background-color: #cbd0d3;
 }
-/* line 560, ../scss/_default.scss */
 .quote .quote-content .sidebar .tags-menu .auto {
   max-height: 150px;
 }
-/* line 566, ../scss/_default.scss */
 .quote footer {
   background-color: #e4e6e8;
+  /*MENU DO MEC*/
+  /*mec-menu*/
 }
-/* line 571, ../scss/_default.scss */
+.quote footer .mec-menu {
+  margin: 0 66px;
+}
 .quote footer .feeling-menu .btn {
   width: 34px;
 }
-/* line 575, ../scss/_default.scss */
 .quote footer .btn {
   text-transform: uppercase;
   font-weight: normal;
@@ -999,24 +848,20 @@ a:hover {
   height: 32px;
   margin: 0;
 }
-/* line 583, ../scss/_default.scss */
 .quote footer .btn:link, .quote footer .btn:visited {
   background-color: #f1f1f1;
   color: #7e7e7e;
 }
-/* line 584, ../scss/_default.scss */
 .quote footer .btn:hover, .quote footer .btn:active, .quote footer .btn:focus {
   background-color: #fefefe;
   color: gray;
 }
-/* line 588, ../scss/_default.scss */
 .quote .accordion-hidden {
   background-color: white;
   padding: 0px 20px 20px 100px;
   max-height: 300px;
   overflow: auto;
 }
-/* line 596, ../scss/_default.scss */
 .quote.quote-small {
   padding: 20px 0;
   border-bottom: 1px solid #e6e6e6;
@@ -1024,37 +869,29 @@ a:hover {
   /*quote-content*/
   /*footer*/
 }
-/* line 601, ../scss/_default.scss */
 .quote.quote-small:last-child {
   border-bottom: none;
 }
-/* line 604, ../scss/_default.scss */
 .quote.quote-small .quote-content {
   background-color: #f7f7f7;
 }
-/* line 606, ../scss/_default.scss */
 .quote.quote-small .quote-content .user-img {
   width: 80px;
   height: 80px;
 }
-/* line 609, ../scss/_default.scss */
 .quote.quote-small .quote-content .user-img img {
   width: 80px;
   height: 80px;
 }
-/* line 615, ../scss/_default.scss */
 .quote.quote-small .quote-content .quote-data {
   width: 670px;
 }
-/* line 616, ../scss/_default.scss */
 .quote.quote-small .quote-content .sidebar {
   width: 32px;
 }
-/* line 620, ../scss/_default.scss */
 .quote.quote-small footer .mec-menu {
   margin: 0 52px;
 }
-/* line 621, ../scss/_default.scss */
 .quote.quote-small footer .quote-actions {
   float: right;
 }
@@ -1065,11 +902,10 @@ a:hover {
 ** partial são as suas páginas
 */
 /* CITAÇÕES */
-/* line 3, ../scss/partials/citacoes.scss */
+/*botão de atualizar*/
 .reload-box {
   padding: 20px 0;
 }
-/* line 6, ../scss/partials/citacoes.scss */
 .reload-box .reload-btn {
   display: block;
   color: #333333;
@@ -1077,21 +913,45 @@ a:hover {
   /*loading*/
   /*loading*/
 }
-/* line 11, ../scss/partials/citacoes.scss */
 .reload-box .reload-btn:hover {
   color: #666666;
 }
-/* line 15, ../scss/partials/citacoes.scss */
 .reload-box .reload-btn.loading {
   content: "atualizando...";
 }
-/* line 17, ../scss/partials/citacoes.scss */
 .reload-box .reload-btn.loading .fa.fa-refresh {
   animation: anim-rotate 2s infinite linear;
 }
-/* line 23, ../scss/partials/citacoes.scss */
 .reload-box .reload-btn.done .fa.fa-refresh {
   animation: none;
 }
 
 /*reload-box*/
+/*actions bar*/
+#actions-bar .checkbox {
+  margin: 0;
+}
+#actions-bar .btn > .fa, #actions-bar .btn > .glyphicon {
+  color: #999999;
+}
+#actions-bar .dropdown {
+  margin: 0px;
+}
+#actions-bar .dropdown-menu a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#actions-bar .dropdown-menu a .mec-icon {
+  margin-right: 0;
+}
+
+#actions-bar > .btn-group {
+  margin-right: 15px;
+}
+
+#actions-bar > .btn-group > .btn, #actions-bar > .btn-group > .dropdown > .btn {
+  text-transform: uppercase;
+  padding: 6px 10px;
+  border: none;
+  margin-left: 1px;
+}
