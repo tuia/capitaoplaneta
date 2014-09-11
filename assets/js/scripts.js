@@ -63,16 +63,20 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+
 		});
 
 	/*MUDANÇA DE STATUS*/
-	$('.status-bar .dropdown-menu .btn').click( function() {
+	$('.status-bar .dropdown-menu > li > a').click( function() {
 		var value = $(this).text(),
 		btn = $(this).parents('.status-bar').find('.status-btn');
 
-		btn.text(value);
+		
+		$(this).parents('.dropdown-menu').find('.active').removeClass('active');
+		$(this).parent().addClass('active');
+
+		btn.find('span').text(value);
 		btn.removeClass('aberto').removeClass('aguardando').removeClass('fechado');
 		btn.addClass(value);
 
-		$(this).parents('.dropdown-menu').find('.btn').show();
-		$(this).parents('.dropdown-menu').find('.btn').hasClass('value').hide();
+		$(this).parents('.dropdown-menu').find('a').show();
+		$(this).parents('.dropdown-menu').find('a').hasClass('value').hide();
 
 		$(this).parents('.dropdown.open').removeClass('open');
 
@@ -84,7 +88,7 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+
 				console.log('tenho a classe atendimento')
 			
 		  $(this).addClass('atendimento').addClass('aberto');
-		  $(this).text('aberto');
+		  $(this).find('span').text('aberto');
 		  setTimeout( function() {
 		    $(this).parents('.dropdown.open').removeClass('open');
 		  }, 1000); 

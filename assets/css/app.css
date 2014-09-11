@@ -907,7 +907,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .quote .quote-content .sidebar .tags-menu .tags-btn {
   background-color: #e3e4e5;
   text-align: center;
-  color: #FFFFFF;
+  color: #999999;
   padding: 6px 9px;
 }
 .quote .quote-content .sidebar .tags-menu .tags-btn:hover {

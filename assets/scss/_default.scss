@@ -650,7 +650,7 @@ a:hover {text-decoration: none;}
 				.tags-btn {
 					background-color: $box-bg;
 				    text-align: center;
-				    color: #FFFFFF;
+				    color: $lighter;
 				    padding: 6px 9px;
 				    &:hover { background-color: lighten($box-bg, 5%)}
 				}
