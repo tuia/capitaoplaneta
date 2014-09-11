@@ -68,7 +68,7 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+
 		btn = $(this).parents('.status-bar').find('.status-btn');
 
 		btn.text(value);
-		btn.removeClass('aberta').removeClass('aguardando').removeClass('fechada');
+		btn.removeClass('aberto').removeClass('aguardando').removeClass('fechado');
 		btn.addClass(value);
 
 		$(this).parents('.dropdown-menu').find('.btn').show();
@@ -83,8 +83,8 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+
 		if ( !$(this).hasClass('atendimento') ) {
 				console.log('tenho a classe atendimento')
 			
-		  $(this).addClass('atendimento').addClass('aberta');
-		  $(this).text('aberta');
+		  $(this).addClass('atendimento').addClass('aberto');
+		  $(this).text('aberto');
 		  setTimeout( function() {
 		    $(this).parents('.dropdown.open').removeClass('open');
 		  }, 1000); 

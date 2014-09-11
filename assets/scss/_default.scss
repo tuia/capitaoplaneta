@@ -18,14 +18,15 @@
 	$light: #666666;
 	$lighter: #999999;
 
-	/* QUOTE BUTTONS */
-	$quote-btn-bg: #F1F1F1;
-	$hover-quote-btn-txt-color: #808080;
-	$quote-btn-txt-color: #7E7E7E;
-
 	/* BOXES */
 	$light-box-bg: #FFFFFF;
-	$box-bg: #BDC3C7;
+	$box-bg: #E3E4E5;
+	/*$box-bg: #BDC3C7;*/
+
+	/* QUOTE BUTTONS */
+	/*$quote-btn-bg: darken($box-bg, 1%);*/
+	$quote-btn-bg: #E9EAEB;
+	$quote-btn-txt-color: #7E7E7E;
 
 	/* SOCIAL */
 	$facebook-color: #3b5998;
@@ -65,64 +66,129 @@ a:hover {text-decoration: none;}
 
 /* COMPONENTES */
 
-	/* SOCIAL ICONS */
-	.btn {
-		&.social {
+	/* DROPDOWN */
+	.dropdown-menu {
+		li a {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+	 }
+
+	 /* SOCIAL ICONS */
+	.social {
+		background: darken($light-box-bg, 3%);
+		text-align: center;
+		height: 32px;
+		width: 32px;
+		padding: 2px;
+		font-size: 18px;
+		&:hover {
 			color: #FFFFFF;
-			text-align: center;
-			height: 32px;
-			width: 32px;
-			padding: 2px;
-			font-size: 18px;
 		}
 
 		&.facebook {
-			background: $facebook-color;
-			&:hover { background: lighten($facebook-color, 10%) }
+			color: $facebook-color;
+			&:hover { color: lighten($facebook-color, 10%) }
 		}
 		&.twitter {
-			background: $twitter-color;
-			&:hover { background: lighten($twitter-color, 10%) }
+			color: $twitter-color;
+			&:hover { color: lighten($twitter-color, 10%) }
 		}
 		&.youtube {
-			background: $youtube-color;
-			&:hover { background: lighten($youtube-color, 10%) }
+			color: $youtube-color;
+			&:hover { color: lighten($youtube-color, 10%) }
 		}
 		&.gplus {
-			background: $gplus-color;
-			&:hover { background: lighten($gplus-color, 10%) }
+			color: $gplus-color;
+			&:hover { color: lighten($gplus-color, 10%) }
 		}
 		&.instagram {
-			background: $instagram-color;
-			&:hover { background: lighten($instagram-color, 10%) }
+			color: $instagram-color;
+			&:hover { color: lighten($instagram-color, 10%) }
 		}
 		&.flickr {
-			background: $flickr-color;
-			&:hover { background: lighten($flickr-color, 10%) }
+			color: $flickr-color;
+			&:hover { color: lighten($flickr-color, 10%) }
 		}
 		&.linkedin {
-			background: $linkedin-color;
-			&:hover { background: lighten($linkedin-color, 10%) }
+			color: $linkedin-color;
+			&:hover { color: lighten($linkedin-color, 10%) }
 		}
 		&.blogger {
-			background: $blogger-color;
-			&:hover { background: lighten($blogger-color, 10%) }
+			color: $blogger-color;
+			&:hover { color: lighten($blogger-color, 10%) }
 		}
 		&.foursquare {
-			background: $foursquare-color;
-			&:hover { background: lighten($foursquare-color, 10%) }
+			color: $foursquare-color;
+			&:hover { color: lighten($foursquare-color, 10%) }
 		}
 		&.reclame-aqui{
-			background: $reclameaqui-color;
-			&:hover { background: lighten($reclameaqui-color, 5%) }
+			color: $reclameaqui-color;
+			&:hover { color: lighten($reclameaqui-color, 5%) }
 			.reclame-aqui-icon {width: 70%; padding: 5% 0 15%}
+		}
+	
+		&.inverse {
+			color: #FFFFFF;
+
+			&.facebook {
+				background: $facebook-color;
+				&:hover { background: lighten($facebook-color, 10%) }
+			}
+			&.twitter {
+				background: $twitter-color;
+				&:hover { background: lighten($twitter-color, 10%) }
+			}
+			&.youtube {
+				background: $youtube-color;
+				&:hover { background: lighten($youtube-color, 10%) }
+			}
+			&.gplus {
+				background: $gplus-color;
+				&:hover { background: lighten($gplus-color, 10%) }
+			}
+			&.instagram {
+				background: $instagram-color;
+				&:hover { background: lighten($instagram-color, 10%) }
+			}
+			&.flickr {
+				background: $flickr-color;
+				&:hover { background: lighten($flickr-color, 10%) }
+			}
+			&.linkedin {
+				background: $linkedin-color;
+				&:hover { background: lighten($linkedin-color, 10%) }
+			}
+			&.blogger {
+				background: $blogger-color;
+				&:hover { background: lighten($blogger-color, 10%) }
+			}
+			&.foursquare {
+				background: $foursquare-color;
+				&:hover { background: lighten($foursquare-color, 10%) }
+			}
+			&.reclame-aqui{
+				background: $reclameaqui-color;
+				&:hover { background: lighten($reclameaqui-color, 5%) }
+				.reclame-aqui-icon {width: 70%; padding: 5% 0 15%}
+			}
 		}
 	}
 
+	/* BOTÕES */
+	.btn {
+		border: none;
+	}
+
+	.quote .btn-group .btn, .quote .accordion-trigger, .quote footer .btn {
+	    background-color: $quote-btn-bg;
+		&:hover, &:active, &:focus  {
+    		background-color: $light-box-bg;
+		}
+	}
 	/* BOTÕES DOS MENUS DO MEC E DE SENTIMENTO */
 	.mec-menu .btn, .feeling-menu .btn, .feeling-icon, .mec-icon {
 	    background-image: url("../img/mec-feel-sprite.png");
-	    background-color: $quote-btn-bg;
 	    border: none !important;    
 	    height: 32px;
 	    margin: 0;
@@ -131,10 +197,6 @@ a:hover {text-decoration: none;}
 	    text-indent: -999px;
 	    width: 33px;
 
-	    &:hover {
-	    	border: none !important;
-	    }
-
 	    &.inderteminate {
 	    	background-position: -330px -96px;
 	    }
@@ -142,28 +204,28 @@ a:hover {text-decoration: none;}
 	    /* SENTIMENTO */
 	    &.good {
 	    	background-position: -330px -0px;
-	    	&:hover, &:active {background-position: -330px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&:hover, &:active {background-position: -330px -32px;  }
 	    	&.active {background-position: -330px -64px; background-color: $good;}
 	    }
 	    &.neutral {
 	    	background-position: -363px -0px;
-	    	&:hover, &:active {background-position: -363px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&:hover, &:active {background-position: -363px -32px;  }
 	    	&.active {background-position: -363px -64px; background-color: $neutral;}
 	    }
 	    &.bad {
 	    	background-position: -396px -0px;
-	    	&:hover, &:active {background-position: -396px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&:hover, &:active {background-position: -396px -32px;  }
 	    	&.active {background-position: -396px -64px; background-color: $bad;}
 	    }
 	    &.remove {
 	    	background-position: -363px -96px;
-	    	&:hover, &:active {background-position: -396px -96px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&:hover, &:active {background-position: -396px -96px;  }
 	    }
 
 	    /* INDICADORES MEC */
 	    &.captacao {
 	    	background-position: -0px -0px;
-	    	&:hover, &:active, &.active {background-position: -0px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&:hover, &:active, &.active {background-position: -0px -32px;  }
 	    	&.good {background-color: $good; background-position: -0px -64px}
 	    	&.neutral {background-color: $neutral; background-position: -0px -64px}
 	    	&.bad {background-color: $bad; background-position: -0px -64px}
@@ -171,7 +233,7 @@ a:hover {text-decoration: none;}
 
 	    &.empregabilidade {
 	    	background-position: -33px -0px;
-	    	&:hover, &:active, &.active {background-position: -33px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&:hover, &:active, &.active {background-position: -33px -32px;  }
 	    	&.good {background-color: $good; background-position: -33px -64px;}
 	    	&.neutral {background-color: $neutral; background-position: -33px -64px;}
 	    	&.bad {background-color: $bad; background-position: -33px -64px;}
@@ -179,7 +241,7 @@ a:hover {text-decoration: none;}
 
 	    &.localizacao {
 	    	background-position: -66px -0px;
-	    	&:hover, &:active, &.active {background-position: -66px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&:hover, &:active, &.active {background-position: -66px -32px;  }
 	    	&.good {background-color: $good; background-position: -66px -64px;}
 	    	&.neutral {background-color: $neutral; background-position: -66px -64px;}
 	    	&.bad {background-color: $bad; background-position: -66px -64px;}
@@ -187,7 +249,7 @@ a:hover {text-decoration: none;}
 
 	    &.atuacao-etica {
 	    	background-position: -99px -0px;
-	    	&:hover, &:active, &.active {background-position: -99px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&:hover, &:active, &.active {background-position: -99px -32px;  }
 	    	&.good {background-color: $good; background-position: -99px -64px;}
 	    	&.neutral {background-color: $neutral; background-position: -99px -64px;}
 	    	&.bad {background-color: $bad; background-position: -99px -64px;}
@@ -195,7 +257,7 @@ a:hover {text-decoration: none;}
 
 	    &.corpo-docente {
 	    	background-position: -132px -0px;
-	    	&:hover, &:active, &.active {background-position: -132px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&:hover, &:active, &.active {background-position: -132px -32px;  }
 	    	&.good {background-color: $good; background-position: -132px -64px;}
 	    	&.neutral {background-color: $neutral; background-position: -132px -64px;}
 	    	&.bad {background-color: $bad; background-position: -132px -64px;}
@@ -203,7 +265,7 @@ a:hover {text-decoration: none;}
 
 	    &.credenciamento-no-mec {
 	    	background-position: -165px -0px;
-	    	&:hover, &:active, &.active {background-position: -165px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&:hover, &:active, &.active {background-position: -165px -32px;  }
 	    	&.good {background-color: $good; background-position: -165px -64px;}
 	    	&.neutral {background-color: $neutral; background-position: -165px -64px;}
 	    	&.bad {background-color: $bad; background-position: -165px -64px;}
@@ -211,7 +273,7 @@ a:hover {text-decoration: none;}
 
 	    &.preco {
 	    	background-position: -198px -0px;
-	    	&:hover, &:active, &.active {background-position: -198px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&:hover, &:active, &.active {background-position: -198px -32px;  }
 	    	&.good {background-color: $good; background-position: -198px -64px;}
 	    	&.neutral {background-color: $neutral; background-position: -198px -64px;}
 	    	&.bad {background-color: $bad; background-position: -198px -64px;}
@@ -219,7 +281,7 @@ a:hover {text-decoration: none;}
 
 	    &.qualidade-de-ensino {
 	    	background-position: -231px -0px;
-	    	&:hover, &:active, &.active {background-position: -231px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&:hover, &:active, &.active {background-position: -231px -32px;  }
 	    	&.good {background-color: $good; background-position: -231px -64px;}
 	    	&.neutral {background-color: $neutral; background-position: -231px -64px;}
 	    	&.bad {background-color: $bad; background-position: -231px -64px;}
@@ -227,7 +289,7 @@ a:hover {text-decoration: none;}
 
 	    &.infraestrutura {
 	    	background-position: -264px -0px;
-	    	&:hover, &:active, &.active {background-position: -264px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&:hover, &:active, &.active {background-position: -264px -32px;  }
 	    	&.good {background-color: $good; background-position: -264px -64px;}
 	    	&.neutral {background-color: $neutral; background-position: -264px -64px;}
 	    	&.bad {background-color: $bad; background-position: -264px -64px;}
@@ -235,7 +297,7 @@ a:hover {text-decoration: none;}
 
 	    &.relacionamento {
 	    	background-position: -297px -0px;
-	    	&:hover, &:active, &.active {background-position: -297px -32px; background-color: lighten($quote-btn-bg, 5%)}
+	    	&:hover, &:active, &.active {background-position: -297px -32px; }
 	    	&.good {background-color: $good; background-position: -297px -64px;}
 	    	&.neutral {background-color: $neutral; background-position: -297px -64px;}
 	    	&.bad {background-color: $bad; background-position: -297px -64px;}
@@ -317,6 +379,7 @@ a:hover {text-decoration: none;}
 		color: $light-box-bg;
 		font-weight: bold;
 
+		&:hover {color: $light-box-bg;}
 		&:before, &:after {
 		    content: " ";
 		    position: absolute;
@@ -337,37 +400,36 @@ a:hover {text-decoration: none;}
 		    top: -5px;
 		}
 
-		/* CORES STATUS */
-		&.aberta {
-			background-color: $open;
-			&:before {border-right: 10px solid $open}
-			&:after {border-left: 5px solid lighten($open, 5%)}
+		&.aberto, &.aguardando, &.fechado {
+			background-color: darken($light-box-bg, 10%);
+			&:before {border-right: 10px solid darken($light-box-bg, 10%)}
+			&:after {border-left: 5px solid darken($light-box-bg, 10%)}
 			&:hover { 
-				background: lighten($open, 5%); color: #FFFFFF;
-				&:before {border-right: 10px solid lighten($open, 5%)}
-				&:after {border-left: 5px solid lighten($open, 5%)}
-			}	
-		}
-		&.aguardando {
-			background-color: $waiting;
-			&:before {border-right: 10px solid $waiting}
-			&:after {border-left: 5px solid lighten($waiting, 5%)}
-			&:hover { 
-				background: lighten($waiting, 5%); color: #FFFFFF;
-				&:before {border-right: 10px solid lighten($waiting, 5%)}
-				&:after {border-left: 5px solid lighten($waiting, 5%)}
+				background: lighten($light-box-bg, 1%);
+				&:before {border-right: 10px solid lighten($light-box-bg, 1%)}
+				&:after {border-left: 5px solid lighten($light-box-bg, 1%)}
 			}
-		}
-		&.fechada {
-			background-color: $done;
-			&:before {border-right: 10px solid $done}
-			&:after {border-left: 5px solid lighten($done, 5%)}
-			&:hover { 
-				background: lighten($done, 5%); color: #FFFFFF;
-				&:before {border-right: 10px solid lighten($done, 5%)}
-				&:after {border-left: 5px solid lighten($done, 5%)}
+			/* CORES STATUS */
+			&.aberto {
+				color: $open;
+				&:hover { 
+					background: darken($light-box-bg, 1%);
+				}	
 			}
-		}
+			&.aguardando {
+				color: $waiting;
+				&:hover { 
+					background: darken($light-box-bg, 1%);
+				}	
+			}
+			&.fechado {
+				color: $done;
+				&:hover { 
+					background: darken($light-box-bg, 1%);
+				}	
+			}
+		}/**/
+		
 
 	}/*ribbon*/
 
@@ -380,7 +442,7 @@ a:hover {text-decoration: none;}
 		background: url(../img/planeta-y-logo.png) no-repeat center;
 		width: 120px;
 		height: 26px;
-		text-indent: -9999px;
+		text-indent: -99999px;
 		position: absolute;
 		top: 10px;
 		left: 50%;
@@ -475,23 +537,46 @@ a:hover {text-decoration: none;}
 			width: 240px;
 			padding-left: 10px;
 
+			.social {
+				@include box-shadow(1px, 1px, 1px, rgba(0,0,0,.15));
+			}
+
 			.status-bar {
 				height: 32px;
 				float: left;
 
+				.dropdown-menu {
+					li {
+						a {
+							font-weight: bold;
+							color: $lighter;
+							text-transform: uppercase;
+							&.aberto { color: $open;}
+							&.aguardando { color: $waiting;}
+							&.fechado { color: $done;}
+						}
+						&:last-child a { text-transform: none; font-weight: normal; font-size: .9em }
+						&.active a {background: darken($light-box-bg, 8%);}
+					}
+				}
+
 				.status-btn {
 					position: relative;
-					padding: 6px 6px 6px 20px;
 					right: -180px;
 					width: 18px;
-					text-indent: 9999px;
 					outline: none;
-					-webkit-transition: width .4s ease-in-out, right .4s ease-in-out, text-indent .2s .2s step-start;
-					-moz-transition: width .4s ease-in-out, right .4s ease-in-out, text-indent .2s .2s step-start;
-					-o-transition: width .4s ease-in-out, right .4s ease-in-out, text-indent .2s .2s step-start;
-					transition: width .4s ease-in-out, right .4s ease-in-out, text-indent .2s .2s step-start;
+					-webkit-transition: width .4s ease-in-out, right .4s ease-in-out;
+					-moz-transition: width .4s ease-in-out, right .4s ease-in-out;
+					-o-transition: width .4s ease-in-out, right .4s ease-in-out;
+					transition: width .4s ease-in-out, right .4s ease-in-out;
+					span {
+						overflow: hidden;
+						width: 100%;
+						display: block;
+						text-indent: 8px;
+					}
 
-					&:active, &:hover, &:link, &:visited, &:focus {color: #FFFFFF;}
+					/*&:active, &:hover, &:link, &:visited, &:focus {color: #FFFFFF;}*/
 
 					&:hover{
 						width: 198px;
@@ -507,6 +592,7 @@ a:hover {text-decoration: none;}
 						-moz-transition: none;
 						-o-transition: none;
 						transition: none;
+						@include box-shadow(1px, 1px, 1px, rgba(0,0,0,.15));
 					}
 
 					&:after {
@@ -521,7 +607,6 @@ a:hover {text-decoration: none;}
 				overflow: hidden;
 				position: relative;
 			}
-
 			.tags {
 				float: left;
 			    width: 198px;
@@ -577,8 +662,7 @@ a:hover {text-decoration: none;}
 	}/*quote-content*/
 
 	footer {
-
-		background-color: lighten($box-bg, 14%);
+		background-color: lighten($box-bg, 6%);
 
 		/*MENU DO MEC*/
 		.mec-menu {	margin: 0 66px;	}/*mec-menu*/
@@ -596,8 +680,6 @@ a:hover {text-decoration: none;}
 		    color: $quote-btn-txt-color;
 		    height: 32px;
 		    margin: 0;
-		    &:link, &:visited, {background-color: $quote-btn-bg; color: $quote-btn-txt-color;}
-		    &:hover, &:active, &:focus {background-color: lighten($quote-btn-bg, 5%); color: $hover-quote-btn-txt-color;}
 		}
 	}/*footer*/
 
@@ -634,7 +716,9 @@ a:hover {text-decoration: none;}
 
 		footer {
 			.mec-menu { margin: 0 52px}
-			.quote-actions {float: right;}
+			.quote-actions {
+				float: right;
+			}
 		}/*footer*/
 
 	}
