@@ -126,6 +126,18 @@ a:hover {
   color: #c0392b;
 }
 
+.good-bg {
+  background-color: #27ae60;
+}
+
+.neutral-bg {
+  background-color: #2980b9;
+}
+
+.bad-bg {
+  background-color: #c0392b;
+}
+
 /*HELPERS*/
 .auto {
   overflow: auto;
@@ -571,6 +583,46 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   background-color: transparent !important;
 }
 
+.feeling-icon.inverse.good, .mec-icon.inverse.good {
+  background-position: -330px -64px;
+}
+.feeling-icon.inverse.neutral, .mec-icon.inverse.neutral {
+  background-position: -363px -64px;
+}
+.feeling-icon.inverse.bad, .mec-icon.inverse.bad {
+  background-position: -396px -64px;
+}
+.feeling-icon.inverse.captacao, .mec-icon.inverse.captacao {
+  background-position: -0px -64px;
+}
+.feeling-icon.inverse.empregabilidade, .mec-icon.inverse.empregabilidade {
+  background-position: -33px -64px;
+}
+.feeling-icon.inverse.localizacao, .mec-icon.inverse.localizacao {
+  background-position: -66px -64px;
+}
+.feeling-icon.inverse.atuacao-etica, .mec-icon.inverse.atuacao-etica {
+  background-position: -99px -64px;
+}
+.feeling-icon.inverse.corpo-docente, .mec-icon.inverse.corpo-docente {
+  background-position: -132px -64px;
+}
+.feeling-icon.inverse.credenciamento-no-mec, .mec-icon.inverse.credenciamento-no-mec {
+  background-position: -165px -64px;
+}
+.feeling-icon.inverse.preco, .mec-icon.inverse.preco {
+  background-position: -198px -64px;
+}
+.feeling-icon.inverse.qualidade-de-ensino, .mec-icon.inverse.qualidade-de-ensino {
+  background-position: -231px -64px;
+}
+.feeling-icon.inverse.infraestrutura, .mec-icon.inverse.infraestrutura {
+  background-position: -264 -64px;
+}
+.feeling-icon.inverse.relacionamento, .mec-icon.inverse.relacionamento {
+  background-position: -297px -64px;
+}
+
 /* dropdown feeling-menu with reduced width */
 .dropdown-menu.feeling-menu {
   min-width: 33px;
@@ -714,13 +766,6 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   width: 20px;
   height: 20px;
   margin: 0 10px 0 0;
-}
-
-/* CABEÇALHO*/
-#header {
-  background-color: #95a5a6;
-  margin: -20px 0 40px;
-  padding: 30px 0 0;
 }
 
 /* CITAÇÃO */
@@ -992,6 +1037,96 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 ** PARTIALS
 ** partial são as suas páginas
 */
+/* CABEÇALHO*/
+#header {
+  background-color: #95a5a6;
+  margin: -20px 0 40px;
+}
+
+/*nav tabs*/
+.nav-tabs {
+  margin-bottom: -1px;
+}
+.nav-tabs li {
+  margin-left: 10px;
+}
+.nav-tabs li a {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #666666;
+}
+
+/*institution-box*/
+#institution-box {
+  padding: 30px 0;
+}
+#institution-box .institution-image {
+  float: left;
+  width: 77px;
+  height: 77px;
+}
+#institution-box .institution-data {
+  float: left;
+  margin-left: 10px;
+}
+#institution-box .institution-data h2 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+#institution-box .institution-data .painel {
+  height: 53px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#institution-box .institution-data .painel .institution-feeling {
+  width: 53px;
+  height: 53px;
+  text-align: center;
+  float: left;
+}
+#institution-box .institution-data .painel .institution-feeling .feeling-icon {
+  margin: 10px auto;
+}
+#institution-box .institution-data .painel .capital-social {
+  width: 85px;
+  float: left;
+  text-align: center;
+  padding: 0 5px;
+}
+#institution-box .institution-data .painel .capital-social h4 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1em;
+  margin: 0;
+  padding: 3px 0 8px;
+  border-bottom: 1px solid #cccccc;
+}
+#institution-box .institution-data .painel .capital-social p {
+  font-size: .7em;
+  color: #999999;
+  margin: 0;
+  padding: 3px 0;
+}
+#institution-box .institution-data .painel .capital-social p strong {
+  color: #666666;
+}
+#institution-box .institution-data .painel .menu {
+  float: left;
+  width: 120px;
+  padding: 5px 10px;
+  font-size: .95em;
+}
+#institution-box .institution-data .painel .menu p {
+  margin: 0;
+}
+#institution-box .institution-data .painel .menu .dropdown .dropdown-toggle {
+  color: #999999;
+  background-color: transparent;
+  padding: 2px 0;
+  font-size: .8em;
+}
+
 /* CITAÇÕES */
 /*botão de atualizar*/
 .reload-box {

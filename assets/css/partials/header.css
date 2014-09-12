@@ -1,0 +1,9 @@
+/*institution-box*/
+#institution-box .institution-image {
+  float: left;
+  width: 77px;
+  height: 77px;
+}
+#institution-box .institution-data {
+  float: left;
+}

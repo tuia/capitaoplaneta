@@ -53,9 +53,13 @@ body, p {font-family: 'Roboto', sans-serif; color: $default-color}
 .badge {@include border-radius(0)}
 label {font-weight: normal;}
 a:hover {text-decoration: none;}
+
 .good-txt {color: $good}
 .neutral-txt {color: $neutral}
 .bad-txt {color: $bad}
+.good-bg {background-color: $good}
+.neutral-bg {background-color: $neutral}
+.bad-bg {background-color: $bad}
 
 /*HELPERS*/
 .auto {overflow: auto}
@@ -316,6 +320,22 @@ a:hover {text-decoration: none;}
 	}
 	a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hover  {background-color: transparent !important}
 
+	.feeling-icon.inverse, .mec-icon.inverse {
+		&.good {background-position: -330px -64px}
+		&.neutral {background-position: -363px -64px}
+		&.bad {background-position: -396px -64px}
+		&.captacao {background-position: -0px -64px}
+		&.empregabilidade {background-position: -33px -64px}
+		&.localizacao {background-position: -66px -64px}
+		&.atuacao-etica {background-position: -99px -64px}
+		&.corpo-docente {background-position: -132px -64px}
+		&.credenciamento-no-mec {background-position: -165px -64px}
+		&.preco {background-position: -198px -64px}
+		&.qualidade-de-ensino {background-position: -231px -64px}
+		&.infraestrutura {background-position: -264 -64px}
+		&.relacionamento {background-position: -297px -64px}
+	}
+
 	/* dropdown feeling-menu with reduced width */
 	.dropdown-menu.feeling-menu{
 		min-width: 33px;
@@ -458,14 +478,6 @@ a:hover {text-decoration: none;}
 		height: 20px;
 		margin: 0 10px 0 0;
 	}
-}
-
-
-/* CABEÇALHO*/
-#header {
-	background-color: $header-bg-gray;
-	margin: -20px 0 40px;
-	padding: 30px 0 0;
 }
 
 
