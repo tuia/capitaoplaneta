@@ -101,6 +101,25 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+
 		$(this).parents('.quote').toggleClass('selected');
 	});
 
+	/*DROPDOWN MEC*/
+	$('#mec-dropdown .dropdown-menu li a').click( function() {
+		var btn = $(this),
+			v = 1;
+
+		if ( btn.hasClass('bad') ) {
+			btn.removeClass('bad');
+			v = v + 1;
+		}	if ( btn.hasClass('neutral') ) {
+			btn.removeClass('neutral').addClass('bad');
+		}	if ( btn.hasClass('good') ) {
+			btn.removeClass('good').addClass('neutral');
+		} if( !btn.hasClass('good') && !btn.hasClass('neutral') && !btn.hasClass('bad') ) {
+			if ( v === 1 ) {
+				btn.addClass('good');
+			} else {}			
+		}
+		return false
+	});
 
 
 

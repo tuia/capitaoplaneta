@@ -42,6 +42,44 @@
 			.mec-icon {margin-right: 0}
 		}
 	}
+	#mec-dropdown {
+		.help-block {
+			font-size: .9em;
+			padding: 0 10px;
+		}
+		.dropdown-menu {
+			min-width: 220px;
+			.auto {
+				max-height: 200px;
+				margin: 10px 0;
+			}
+			li > a {
+				color: $light;
+				margin: 1px;
+				padding: 5px;
+				&.good, &.neutral, &.bad {
+					color: $light-box-bg;
+					@include transition(background-color, .1s, ease-in);
+					.mec-icon {
+						&.captacao {background-position: -0px -64px}
+						&.empregabilidade {background-position: -33px -64px}
+						&.localizacao {background-position: -66px -64px}
+						&.atuacao-etica {background-position: -99px -64px}
+						&.corpo-docente {background-position: -132px -64px}
+						&.credenciamento-no-mec {background-position: -165px -64px}
+						&.preco {background-position: -198px -64px}
+						&.qualidade-de-ensino {background-position: -231px -64px}
+						&.infraestrutura {background-position: -264 -64px}
+						&.relacionamento {background-position: -297px -64px}
+					}
+				}
+				&.good {background-color: $good}
+				&.neutral {background-color: $neutral}
+				&.bad {background-color: $bad}
+			    
+			}
+		}
+	}
 }
 #actions-bar > .btn-group {
 	margin-right: 15px;

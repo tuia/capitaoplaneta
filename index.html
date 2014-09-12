@@ -141,7 +141,7 @@
           
             <!--/sentimento-->
             <div class="dropdown btn-group">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="feeling-icon inderteminate"></span> <span class="caret"></span></button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="feeling-icon indeterminate"></span> <span class="caret"></span></button>
               <ul class="dropdown-menu feeling-menu" role="menu">
                 <li><a href="#" class="btn good"> positivo</a></li>
                 <li><a href="#" class="btn neutral"> neutro</a></li>
@@ -150,26 +150,32 @@
             </div><!--/btn-group-->
           
             <!--/mec-->
-            <div class="dropdown btn-group">
+            <div id="mec-dropdown" class="dropdown btn-group">
               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> MEC <span class="caret"></span></button>
-              <ul class="dropdown-menu mec-menu" role="menu">
-                <li><a href="#" class="captacao"> <span class="mec-icon captacao"></span> captação</a></li>
-                <li><a href="#" class="empregabilidade"> <span class="mec-icon empregabilidade"></span>  empregabilidade</a></li>
-                <li><a href="#" class="localizacao"> <span class="mec-icon localizacao"></span>  localizacao</a></li>
-                <li><a href="#" class="atuacao-etica"> <span class="mec-icon atuacao-etica"></span>  atuacao etica</a></li>
-                <li><a href="#" class="corpo-docente"> <span class="mec-icon corpo-docente"></span>  corpo docente</a></li>
-                <li><a href="#" class="credenciamento-no-mec"> <span class="mec-icon credenciamento-no-mec"></span>  credenciamento no mec</a></li>
-                <li><a href="#" class="preco"> <span class="mec-icon preco"></span>  preço</a></li>
-                <li><a href="#" class="qualidade-de-ensino"> <span class="mec-icon qualidade-de-ensino"></span>  qualidade de ensino</a></li>
-                <li><a href="#" class="infraestrutura"> <span class="mec-icon infraestrutura"></span>  infraestrutura</a></li>
-                <li><a href="#" class="relacionamento"> <span class="mec-icon relacionamento"></span>  relacionamento</a></li>
-              </ul>
+              <div class="dropdown-menu" role="menu">
+                <p class="help-block">clique uma vez para definir como <span class="good-txt">positivo</span>, duas como <span class="neutral-txt">neutro</span> e três como <span class="bad-txt">negativo</span>.</p>
+                <div class="auto">
+                  <ul class="nav">
+                    <li><a href="#" class="captacao"> <span class="mec-icon captacao"></span> captação</a></li>
+                    <li><a href="#" class="empregabilidade"> <span class="mec-icon empregabilidade"></span>  empregabilidade</a></li>
+                    <li><a href="#" class="localizacao"> <span class="mec-icon localizacao"></span>  localizacao</a></li>
+                    <li><a href="#" class="atuacao-etica"> <span class="mec-icon atuacao-etica"></span>  atuacao etica</a></li>
+                    <li><a href="#" class="corpo-docente"> <span class="mec-icon corpo-docente"></span>  corpo docente</a></li>
+                    <li><a href="#" class="credenciamento-no-mec"> <span class="mec-icon credenciamento-no-mec"></span>  credenciamento no mec</a></li>
+                    <li><a href="#" class="preco"> <span class="mec-icon preco"></span>  preço</a></li>
+                    <li><a href="#" class="qualidade-de-ensino"> <span class="mec-icon qualidade-de-ensino"></span>  qualidade de ensino</a></li>
+                    <li><a href="#" class="infraestrutura"> <span class="mec-icon infraestrutura"></span>  infraestrutura</a></li>
+                    <li><a href="#" class="relacionamento"> <span class="mec-icon relacionamento"></span>  relacionamento</a></li>
+                  </ul>
+                </div>
+                <div><a href="#" class="btn btn-primary btn-block">aplicar</a></div>
+              </div>
             </div><!--/btn-group-->
 
             <!--/tags-->
             <div class="btn-group dropdown tags-menu">
               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tag"></i> <span class="caret"></span></button>
-              <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
+              <div class="dropdown-menu" role="menu" aria-labelledby="dLabel">
                 <form role="form">
 
                   <div class="form-group">

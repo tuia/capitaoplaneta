@@ -53,6 +53,9 @@ body, p {font-family: 'Roboto', sans-serif; color: $default-color}
 .badge {@include border-radius(0)}
 label {font-weight: normal;}
 a:hover {text-decoration: none;}
+.good-txt {color: $good}
+.neutral-txt {color: $neutral}
+.bad-txt {color: $bad}
 
 /*HELPERS*/
 .auto {overflow: auto}
@@ -197,7 +200,7 @@ a:hover {text-decoration: none;}
 	    text-indent: -999px;
 	    width: 33px;
 
-	    &.inderteminate {
+	    &.indeterminate {
 	    	background-position: -330px -96px;
 	    }
 
@@ -356,7 +359,7 @@ a:hover {text-decoration: none;}
 				background: $quote-btn-bg;
 				cursor: pointer;
 				display: block;
-				margin: 1px;
+				margin: 1px !important;
 				padding: 5px;
 				font-size: .9em;
 				&:hover { background: lighten($quote-btn-bg, 5%);}

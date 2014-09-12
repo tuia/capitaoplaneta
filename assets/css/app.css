@@ -114,6 +114,18 @@ a:hover {
   text-decoration: none;
 }
 
+.good-txt {
+  color: #27ae60;
+}
+
+.neutral-txt {
+  color: #2980b9;
+}
+
+.bad-txt {
+  color: #c0392b;
+}
+
 /*HELPERS*/
 .auto {
   overflow: auto;
@@ -327,7 +339,7 @@ a:hover {
   /*infraestrutura*/
   /*relacionamento*/
 }
-.mec-menu .btn.inderteminate, .feeling-menu .btn.inderteminate, .feeling-icon.inderteminate, .mec-icon.inderteminate {
+.mec-menu .btn.indeterminate, .feeling-menu .btn.indeterminate, .feeling-icon.indeterminate, .mec-icon.indeterminate {
   background-position: -330px -96px;
 }
 .mec-menu .btn.good, .feeling-menu .btn.good, .feeling-icon.good, .mec-icon.good {
@@ -600,7 +612,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   background: #e9eaeb;
   cursor: pointer;
   display: block;
-  margin: 1px;
+  margin: 1px !important;
   padding: 5px;
   font-size: .9em;
 }
@@ -1018,6 +1030,69 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 #actions-bar .dropdown-menu a .mec-icon {
   margin-right: 0;
+}
+#actions-bar #mec-dropdown .help-block {
+  font-size: .9em;
+  padding: 0 10px;
+}
+#actions-bar #mec-dropdown .dropdown-menu {
+  min-width: 220px;
+}
+#actions-bar #mec-dropdown .dropdown-menu .auto {
+  max-height: 200px;
+  margin: 10px 0;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a {
+  color: #666666;
+  margin: 1px;
+  padding: 5px;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a.good, #actions-bar #mec-dropdown .dropdown-menu li > a.neutral, #actions-bar #mec-dropdown .dropdown-menu li > a.bad {
+  color: white;
+  -moz-transition: background-color 0.1s ease-in;
+  -o-transition: background-color 0.1s ease-in;
+  -webkit-transition: background-color 0.1s ease-in;
+  -ms-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a.good .mec-icon.captacao, #actions-bar #mec-dropdown .dropdown-menu li > a.neutral .mec-icon.captacao, #actions-bar #mec-dropdown .dropdown-menu li > a.bad .mec-icon.captacao {
+  background-position: -0px -64px;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a.good .mec-icon.empregabilidade, #actions-bar #mec-dropdown .dropdown-menu li > a.neutral .mec-icon.empregabilidade, #actions-bar #mec-dropdown .dropdown-menu li > a.bad .mec-icon.empregabilidade {
+  background-position: -33px -64px;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a.good .mec-icon.localizacao, #actions-bar #mec-dropdown .dropdown-menu li > a.neutral .mec-icon.localizacao, #actions-bar #mec-dropdown .dropdown-menu li > a.bad .mec-icon.localizacao {
+  background-position: -66px -64px;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a.good .mec-icon.atuacao-etica, #actions-bar #mec-dropdown .dropdown-menu li > a.neutral .mec-icon.atuacao-etica, #actions-bar #mec-dropdown .dropdown-menu li > a.bad .mec-icon.atuacao-etica {
+  background-position: -99px -64px;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a.good .mec-icon.corpo-docente, #actions-bar #mec-dropdown .dropdown-menu li > a.neutral .mec-icon.corpo-docente, #actions-bar #mec-dropdown .dropdown-menu li > a.bad .mec-icon.corpo-docente {
+  background-position: -132px -64px;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a.good .mec-icon.credenciamento-no-mec, #actions-bar #mec-dropdown .dropdown-menu li > a.neutral .mec-icon.credenciamento-no-mec, #actions-bar #mec-dropdown .dropdown-menu li > a.bad .mec-icon.credenciamento-no-mec {
+  background-position: -165px -64px;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a.good .mec-icon.preco, #actions-bar #mec-dropdown .dropdown-menu li > a.neutral .mec-icon.preco, #actions-bar #mec-dropdown .dropdown-menu li > a.bad .mec-icon.preco {
+  background-position: -198px -64px;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a.good .mec-icon.qualidade-de-ensino, #actions-bar #mec-dropdown .dropdown-menu li > a.neutral .mec-icon.qualidade-de-ensino, #actions-bar #mec-dropdown .dropdown-menu li > a.bad .mec-icon.qualidade-de-ensino {
+  background-position: -231px -64px;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a.good .mec-icon.infraestrutura, #actions-bar #mec-dropdown .dropdown-menu li > a.neutral .mec-icon.infraestrutura, #actions-bar #mec-dropdown .dropdown-menu li > a.bad .mec-icon.infraestrutura {
+  background-position: -264 -64px;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a.good .mec-icon.relacionamento, #actions-bar #mec-dropdown .dropdown-menu li > a.neutral .mec-icon.relacionamento, #actions-bar #mec-dropdown .dropdown-menu li > a.bad .mec-icon.relacionamento {
+  background-position: -297px -64px;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a.good {
+  background-color: #27ae60;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a.neutral {
+  background-color: #2980b9;
+}
+#actions-bar #mec-dropdown .dropdown-menu li > a.bad {
+  background-color: #c0392b;
 }
 
 #actions-bar > .btn-group {
