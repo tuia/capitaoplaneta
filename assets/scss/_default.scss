@@ -17,6 +17,7 @@
 	$default-color: #333333;
 	$light: #666666;
 	$lighter: #999999;
+	$lightest: #CCCCCC;
 
 	/* BOXES */
 	$light-box-bg: #FFFFFF;
@@ -79,6 +80,21 @@ a:hover {text-decoration: none;}
 			padding-top: 5px;
 			padding-bottom: 5px;
 		}
+	 }
+
+	 /* DIVIDER  */
+	 .divider {
+	 	border-bottom: 1px solid $lightest;
+	 	text-align: center;
+	 	margin: -15px 0 35px;
+	 	span {
+	 		background: $light-box-bg;
+	 		color: $lighter;
+	 		display: inline-block;
+		    padding: 10px 20px;
+		    position: relative;
+		    top: 18px;
+	 	}
 	 }
 
 	 /* SOCIAL ICONS */

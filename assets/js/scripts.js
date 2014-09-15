@@ -7,7 +7,7 @@ $('[data-toggle="tooltip"], .hastooltip, .mec-menu .dropdown-toggle').tooltip({
 
 
 /* ACCORDIONS */
-$('.accordion-box .accordion-trigger').not('.disabled').click( function() {
+$('.accordion-box a.accordion-trigger, .accordion-box button.accordion-trigger').not('.disabled').click( function() {
 	$(this).toggleClass('open');
 	$(this).parents('.accordion-box').find('.accordion-hidden').slideToggle();
 	if ( $(this).hasClass('open') ) {
@@ -17,9 +17,16 @@ $('.accordion-box .accordion-trigger').not('.disabled').click( function() {
 	}
 	return false
 });
+$(".accordion-container input[type='radio']").change(function(){
+	console.log('estou na função');
+    $(this).parents('.accordion-container').find('.accordion-hidden').slideUp();
+    $(this).parents('.accordion-container').find('.radio label').addClass('lighter');
+    $(this).parents('.accordion-box').find('.accordion-hidden').slideDown();
+    $(this).parent().removeClass('lighter');
+});
 
-/* INDERTAMINATE CHECKBOX */
-$("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+
+/* INDERTAMINATE CHECKBOX 
+$("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 
 
 /*CITAÇÃO*/
@@ -63,10 +70,9 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+
 		});
 
 	/*MUDANÇA DE STATUS*/
-	$('.status-bar .dropdown-menu > li > a').click( function() {
+	$('.status-bar .dropdown-menu .aberto, .status-bar .dropdown-menu .aguardando, .status-bar .dropdown-menu .fechado ').click( function() {
 		var value = $(this).text(),
 		btn = $(this).parents('.status-bar').find('.status-btn');
-
 		
 		$(this).parents('.dropdown-menu').find('.active').removeClass('active');
 		$(this).parent().addClass('active');
@@ -85,7 +91,6 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+
 
 	$('.status-btn').click( function() {
 		if ( !$(this).hasClass('atendimento') ) {
-				console.log('tenho a classe atendimento')
 			
 		  $(this).addClass('atendimento').addClass('aberto');
 		  $(this).find('span').text('aberto');
@@ -116,6 +121,7 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+
 		} if( !btn.hasClass('good') && !btn.hasClass('neutral') && !btn.hasClass('bad') ) {
 			if ( v === 1 ) {
 				btn.addClass('good');
+				v = 1;
 			} else {}			
 		}
 		return false
