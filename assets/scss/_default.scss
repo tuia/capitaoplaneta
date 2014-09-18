@@ -46,7 +46,6 @@
 
 
 /* THE CSS */
-
 /*typography*/
 body, p {font-family: 'Roboto', sans-serif; color: $default-color}
 .light {color: $light}
@@ -504,10 +503,7 @@ a:hover {text-decoration: none;}
 
 	&.selected {
 		border-color: darken($box-bg, 10%);
-		.quote-content {
-			background-color: lighten($box-bg, 5%);
-		}
-		footer {background-color: lighten($box-bg, 10%)}
+		.quote-content {background-color: lighten($box-bg, 5%);	}
 		.accordion-hidden {background-color: lighten($box-bg, 15%)}
 		
 	}
