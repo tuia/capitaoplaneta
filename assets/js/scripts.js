@@ -140,6 +140,7 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 			$(this).html('<i class="fa fa-circle" data-toggle="tooltip" title="lido"></i>');
 			v = 1;
 		}
+		return false;
 	});
 
 
