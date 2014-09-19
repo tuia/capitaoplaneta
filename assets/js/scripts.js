@@ -126,7 +126,23 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 		}
 		return false
 	});
+	/* LIDO/NÃO-LIDO */
+	$('.leitura-btn').click( function() {
+		var icon = $(this).find('.fa'),
+			v = 1;
 
+		if ( $(this).hasClass('lido') ) {
+			$(this).removeClass('lido').addClass('nao-lido');
+			//$(this).tooltip({title: 'lido'});
+			icon.removeClass('fa-circle').addClass('fa-circle-o');
+			v = v + 1;
+		} if ( $(this).hasClass('nao-lido') && v != 2 ) {
+			$(this).removeClass('nao-lido').addClass('lido');
+			//$(this).tooltip({title: 'não lido'});
+			icon.removeClass('fa-circle-o').addClass('fa-circle');
+			v = 1;
+		}
+	});
 
 
 

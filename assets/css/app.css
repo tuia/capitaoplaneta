@@ -106,12 +106,18 @@ body, p {
   border-radius: 0;
 }
 
-label {
-  font-weight: normal;
-}
-
 a:hover {
   text-decoration: none;
+}
+
+.badge {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+label {
+  font-weight: normal;
 }
 
 .good-txt {
@@ -141,6 +147,7 @@ a:hover {
 /*HELPERS*/
 .auto {
   overflow: auto;
+  max-height: 150px;
 }
 
 .accordion-hidden {
@@ -691,6 +698,25 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 
 /*tags-dropdown*/
+/* STATUS DROPDOWN */
+.dropdown-menu.status-menu li a {
+  font-weight: bold;
+  color: #999999;
+  text-transform: uppercase;
+}
+.dropdown-menu.status-menu li a.aberto {
+  color: #d35400;
+}
+.dropdown-menu.status-menu li a.aguardando {
+  color: #e67e22;
+}
+.dropdown-menu.status-menu li a.fechado {
+  color: #f39c12;
+}
+.dropdown-menu.status-menu li.active a {
+  background: #ebebeb;
+}
+
 /* RIBBON */
 .ribbon {
   background-color: #aeb1b4;
@@ -855,40 +881,18 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   width: 240px;
   padding-left: 10px;
 }
-.quote .quote-content .sidebar .social {
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-}
 .quote .quote-content .sidebar .status-bar {
   height: 32px;
   float: left;
 }
-.quote .quote-content .sidebar .status-bar .dropdown-menu li a {
-  font-weight: bold;
-  color: #999999;
-  text-transform: uppercase;
-}
-.quote .quote-content .sidebar .status-bar .dropdown-menu li a.aberto {
-  color: #d35400;
-}
-.quote .quote-content .sidebar .status-bar .dropdown-menu li a.aguardando {
-  color: #e67e22;
-}
-.quote .quote-content .sidebar .status-bar .dropdown-menu li a.fechado {
-  color: #f39c12;
-}
-.quote .quote-content .sidebar .status-bar .dropdown-menu li:last-child a {
+.quote .quote-content .sidebar .status-bar .dropdown-menu.status-menu li:last-child a {
   text-transform: none;
   font-weight: normal;
   font-size: 0.9em;
 }
-.quote .quote-content .sidebar .status-bar .dropdown-menu li.active a {
-  background: #ebebeb;
-}
 .quote .quote-content .sidebar .status-bar .status-btn {
   position: relative;
-  right: -180px;
+  right: -148px;
   width: 18px;
   outline: none;
   -webkit-transition: width .4s ease-in-out, right .4s ease-in-out;
@@ -904,31 +908,44 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   text-indent: 8px;
 }
 .quote .quote-content .sidebar .status-bar .status-btn:hover {
-  width: 198px;
+  width: 166px;
   right: 0;
   text-indent: 0;
 }
 .quote .quote-content .sidebar .status-bar .status-btn.atendimento {
-  width: 198px;
+  width: 166px;
   right: 0;
   text-indent: 0;
   -webkit-transition: none;
   -moz-transition: none;
   -o-transition: none;
   transition: none;
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 .quote .quote-content .sidebar .status-bar .status-btn:after {
   display: none;
 }
-.quote .quote-content .sidebar .social, .quote .quote-content .sidebar .tags-btn {
+.quote .quote-content .sidebar .social, .quote .quote-content .sidebar .tags-btn, .quote .quote-content .sidebar .leitura-btn {
   float: right;
   width: 32px;
   max-height: 32px;
   overflow: hidden;
   position: relative;
+}
+.quote .quote-content .sidebar .social, .quote .quote-content .sidebar .atendimento {
+  background-color: #e6e6e6;
+}
+.quote .quote-content .sidebar .social:hover, .quote .quote-content .sidebar .atendimento:hover {
+  background: white;
+}
+.quote .quote-content .sidebar .leitura-btn {
+  background: #f7f7f7;
+  width: 32px;
+  height: 32px;
+  color: #999999;
+  padding: 5px 11px;
+}
+.quote .quote-content .sidebar .leitura-btn:hover {
+  background: white;
 }
 .quote .quote-content .sidebar .tags {
   float: left;
@@ -981,9 +998,6 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 .quote .quote-content .sidebar .tags-menu .tags-btn:hover {
   background-color: #f0f1f1;
-}
-.quote .quote-content .sidebar .tags-menu .auto {
-  max-height: 150px;
 }
 .quote footer {
   background-color: #f3f3f4;
