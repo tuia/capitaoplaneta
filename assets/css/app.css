@@ -928,7 +928,6 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   float: right;
   width: 32px;
   max-height: 32px;
-  overflow: hidden;
   position: relative;
 }
 .quote .quote-content .sidebar .social, .quote .quote-content .sidebar .atendimento {

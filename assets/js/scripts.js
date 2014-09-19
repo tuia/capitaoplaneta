@@ -1,8 +1,9 @@
 //SRCIPTS
 
 /* TOOLTIP */
-$('[data-toggle="tooltip"], .hastooltip, .mec-menu .dropdown-toggle').tooltip({
-	delay: { show: 400, hide: 10 }
+$('body').tooltip({
+	delay: { show: 400, hide: 10 },
+    selector: '[data-toggle="tooltip"], .hastooltip, .mec-menu .dropdown-toggle'
 });
 
 
@@ -128,18 +129,15 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 	});
 	/* LIDO/NÃO-LIDO */
 	$('.leitura-btn').click( function() {
-		var icon = $(this).find('.fa'),
-			v = 1;
+			var v = 1;
 
 		if ( $(this).hasClass('lido') ) {
 			$(this).removeClass('lido').addClass('nao-lido');
-			//$(this).tooltip({title: 'lido'});
-			icon.removeClass('fa-circle').addClass('fa-circle-o');
+			$(this).html('<i class="fa fa-circle-o" data-toggle="tooltip" title="não lido"></i>');
 			v = v + 1;
 		} if ( $(this).hasClass('nao-lido') && v != 2 ) {
 			$(this).removeClass('nao-lido').addClass('lido');
-			//$(this).tooltip({title: 'não lido'});
-			icon.removeClass('fa-circle-o').addClass('fa-circle');
+			$(this).html('<i class="fa fa-circle" data-toggle="tooltip" title="lido"></i>');
 			v = 1;
 		}
 	});
