@@ -1078,8 +1078,8 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   z-index: 1031;
   height: 100%;
   top: 0;
-  width: 300px;
-  left: -250px;
+  width: 800px;
+  left: -750px;
   -moz-transition: left 0.5s ease-in-out;
   -o-transition: left 0.5s ease-in-out;
   -webkit-transition: left 0.5s ease-in-out;
@@ -1096,13 +1096,13 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   float: right;
   height: 50px;
   padding: 5px;
-  margin: 150px 0 0;
+  margin: 180px 0 0;
 }
 #filter-panel .filter-content {
   background: #2c3e50;
   height: 100%;
   padding: 20px;
-  width: 250px;
+  width: 750px;
   float: left;
 }
 #filter-panel.open {
@@ -1241,7 +1241,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   top: 0;
   width: 100%;
   position: fixed;
-  z-index: 1031;
+  z-index: 10;
 }
 #actions-bar .checkbox {
   margin: 0;

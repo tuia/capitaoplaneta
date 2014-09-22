@@ -777,15 +777,15 @@ label {font-weight: normal;}
 
 /* PAINEL DE FILTRO */
 #filter-panel {
-	color: white;
+	color: $light-box-bg;
 
 	position: fixed;
     z-index: 1031;
     height: 100%;
     top: 0;
 
-	width: 300px;
-    left: -250px;
+	width: 800px;
+    left: -750px;
 
     @include transition (left, .5s, ease-in-out);
 
@@ -800,14 +800,14 @@ label {font-weight: normal;}
     	float: right;
     	height: 50px;
     	padding: 5px;
-    	margin: 150px 0 0;
+    	margin: 180px 0 0;
     }
 
     .filter-content {
     	background: $inverse-bgcolor;
     	height: 100%;
     	padding: 20px;
-    	width: 250px;
+    	width: 750px;
     	float: left;
     }
 

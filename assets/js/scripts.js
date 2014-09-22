@@ -156,6 +156,14 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 
 /*PAINEL FILTRAR */
 $('.filter-toggle').click( function() {
+	var icon = $(this).find('.fa');
+
+	if ( $(this).hasClass('active') ) {
+		icon.removeClass('fa-remove').addClass('fa-filter');
+	} if ( !$(this).hasClass('active') ) {
+		icon.removeClass('fa-filter').addClass('fa-remove');
+	}
 	$(this).toggleClass('active');
 	$('#filter-panel').toggleClass('open');
+	return false;
 });
