@@ -4,9 +4,12 @@
 /*botão de atualizar*/
 .reload-box {
 	padding: 20px 0;
+	display: block;
+	height: auto;
+	overflow: auto;
 
 	.reload-btn {
-		display: block;
+		display: inline-block;
 		color: $default-color;
 		font-size: .85em;
 
