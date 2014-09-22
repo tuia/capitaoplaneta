@@ -37,6 +37,15 @@
 
 /*actions bar*/
 #actions-bar {
+	padding: 15px 0;
+
+	&.affix {
+		background: $document-bg-color;
+		top: 0;
+		width: 100%;
+		position: fixed;
+		z-index: 1031;
+	}
 	.checkbox {margin: 0}
 	.btn > .fa, .btn > .glyphicon { color: $lighter }
 	.dropdown {margin: 0px}
@@ -84,10 +93,10 @@
 		}
 	}
 }
-#actions-bar > .btn-group {
+#actions-bar .container > .btn-group {
 	margin-right: 15px;
 }
-#actions-bar > .btn-group > .btn, #actions-bar > .btn-group > .dropdown > .btn {
+#actions-bar .container > .btn-group > .btn, #actions-bar .container > .btn-group > .dropdown > .btn {
 	text-transform: uppercase;
 	padding: 8px 12px;
 	border: none;

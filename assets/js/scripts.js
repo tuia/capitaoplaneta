@@ -150,6 +150,14 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 	});
 
 
+/* AFFIX ACTIONS BAR DE CITAÇÕES */
+ $('#actions-bar').affix({
+      offset: {
+        top: $('#actions-bar').offset().top
+      }
+}); 
+
+
 
 /* PAINEL FILTRAR */
 
