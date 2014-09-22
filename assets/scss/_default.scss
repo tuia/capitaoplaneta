@@ -47,6 +47,9 @@
 	/* HEADER */
 	$header-bg-gray: #95A5A6;
 
+	/* JANELAS ESCURAS */
+	$inverse-bgcolor: #2C3E50;
+
 
 /* THE CSS */
 /*typography*/
@@ -770,3 +773,45 @@ label {font-weight: normal;}
 
 
 }/* citação */
+
+
+/* PAINEL DE FILTRO */
+#filter-panel {
+	color: white;
+
+	position: fixed;
+    z-index: 1031;
+    height: 100%;
+    top: 0;
+
+	width: 300px;
+    left: -250px;
+
+    @include transition (left, .5s, ease-in-out);
+
+    .filter-toggle {
+    	background: $inverse-bgcolor;
+    	color: $light-box-bg;
+    	width: 50px;
+
+    	display: block;
+    	text-align: center;
+    	font-size: 24px;
+    	float: right;
+    	height: 50px;
+    	padding: 5px;
+    	margin: 150px 0 0;
+    }
+
+    .filter-content {
+    	background: $inverse-bgcolor;
+    	height: 100%;
+    	padding: 20px;
+    	width: 250px;
+    	float: left;
+    }
+
+    &.open {
+    	left: 0;
+    }
+}

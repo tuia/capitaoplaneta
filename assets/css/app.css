@@ -86,6 +86,7 @@ ANIMATIONS
 /*$quote-btn-bg: darken($box-bg, 1%);*/
 /* SOCIAL */
 /* HEADER */
+/* JANELAS ESCURAS */
 /* THE CSS */
 /*typography*/
 body, p {
@@ -1070,6 +1071,44 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 
 /* citação */
+/* PAINEL DE FILTRO */
+#filter-panel {
+  color: white;
+  position: fixed;
+  z-index: 1031;
+  height: 100%;
+  top: 0;
+  width: 300px;
+  left: -250px;
+  -moz-transition: left 0.5s ease-in-out;
+  -o-transition: left 0.5s ease-in-out;
+  -webkit-transition: left 0.5s ease-in-out;
+  -ms-transition: left 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out;
+}
+#filter-panel .filter-toggle {
+  background: #2c3e50;
+  color: white;
+  width: 50px;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  float: right;
+  height: 50px;
+  padding: 5px;
+  margin: 150px 0 0;
+}
+#filter-panel .filter-content {
+  background: #2c3e50;
+  height: 100%;
+  padding: 20px;
+  width: 250px;
+  float: left;
+}
+#filter-panel.open {
+  left: 0;
+}
+
 /*
 ** PARTIALS
 ** partial são as suas páginas
