@@ -71,7 +71,11 @@ label {font-weight: normal;}
 .bad-bg {background-color: $bad}
 
 /*HELPERS*/
-.auto {overflow: auto; max-height: 150px}
+.auto {
+	overflow: auto;
+	max-height: 150px;
+	&.auto-large { max-height: 250px; }
+}
 .accordion-hidden {display: none;}
 .accordion-trigger.disabled {@include opacity(.3)}
 .center-box {text-align: center;} 

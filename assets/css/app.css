@@ -156,6 +156,9 @@ label {
   overflow: auto;
   max-height: 150px;
 }
+.auto.auto-large {
+  max-height: 250px;
+}
 
 .accordion-hidden {
   display: none;

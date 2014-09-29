@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Planeta Y - Contas</title>
+
+    <!-- STYLES -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <!--/FONTAWESOME-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!--/GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div id="filter-panel">
+      <a href="#" class="filter-toggle"><i class="fa fa-filter"></i></a>
+      <div class="filter-content">
+        <h3><i class="fa fa-filter"></i> Filtrar</h3>
+      </div>
+    </div>
+
+    <!--/#NAVIGATION-->
+    <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <!--/MENU INSTITUIÇÃO-->
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+             <img src="assets/img/instituicao-02.png" alt="" class="nav-img">Anhembi Morumbi <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li class="auto">
+                <ul class="nav">
+                  <li class="active"><a href="#">Anhembi Morumbi</a></li>
+                  <li><a href="#">Anhembi</a></li>
+                  <li><a href="#">Fumec</a></li>
+                  <li><a href="#">Unibh</a></li>
+                  <li><a href="#">Una</a></li>
+                  <li><a href="#">PUC</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li><a href="#">Grupo educacional</a></li>
+              <li class="divider"></li>
+              <li><a href="gerenciar-instituicoes.html"><i class="fa fa-cog"></i> Gerenciar instituições</a></li>
+            </ul><!--/.dropdown-menu-->
+          </li><!--/.dropdown-->
+
+          <!--/alertas de citacao - instituiçao-->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-comment"></i> 18</span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">alerta 1</a></li>
+              <li><a href="#">alerta 2</a></li>
+              <li class="divider"></li>
+              <li><a href="#">limpar notificações</a></li>
+            </ul>
+          </li><!--/dropdown-->
+
+          <!--/alertas - instituiçao-->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">alerta 1</a></li>
+              <li class="divider"></li>
+              <li><a href="#">limpar notificações</a></li>
+            </ul>
+          </li><!--/dropdown-->
+        </ul><!--/.navbar-nav-->
+
+        <!--/LOGO-->
+        <a class="navbar-brand" href="index.html">Planeta Y</a>
+
+        <!--/MENU USUÁRIO-->
+        <ul class="nav navbar-nav pull-right">          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="assets/img/user-01.jpg" alt="anhanguera" class="nav-img">
+              Juliana <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li><a href="dados-cadastrais.html">Dados cadastrais</a></li>
+              <li><a href="planos.html">Planos</a></li>
+              <li><a href="#">Sair</a></li>
+              <li class="divider"></li>
+              <li><a href="ajuda.html">Ajuda</a></li>
+              <li><a href="sobre-o-planetay.html">Sobre o Planeta Y</a></li>
+              <li><a href="reportar-problema.html">Reportar problema</a></li>
+            </ul><!--/.dropdown-menu-->
+          </li><!--/.dropdown-->
+
+          <!--/alertas - usuario-->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li><a href="#">alerta 1</a></li>
+              <li class="divider"></li>
+              <li><a href="#">limpar notificações</a></li>
+            </ul>
+          </li><!--/dropdown-->
+        </ul><!--/.navbar-nav-->
+
+      </div><!-- /.container-->
+    </nav><!--/.navbar-->
+
+    <header id="header" class="">
+      <div class="container">
+        <!--/<img src="assets/img/topo.png">-->
+
+        <div id="institution-box">
+          <img src="assets/img/instituicao-02.png" class="institution-image">
+          <div class="institution-data">
+            <h2 class="institution-name">Anhembi Morumbi</h2>
+            <div class="painel">
+              <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
+              <div class="capital-social">
+                <h4>7,7</h4>
+                <p><strong>3.607</strong> citações</p>
+              </div>
+              <div class="menu">
+                <p>capital social</p>
+                <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">geral <span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 24 horas</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 7 dias</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 30 dias</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">geral</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div><!--/painel-->
+          </div><!--/institution-data-->
+          <span class="clearfix"></span>
+        </div><!--/institution-box-->
+
+        <ul class="nav nav-tabs pull-right" role="tablist">
+          <li><a href="index.html"><i class="fa fa-home"></i> início</a></li>
+          <li><a href="citacoes.html"><i class="fa fa-comment"></i> citações <span class="badge">78</span></a></a></li>
+          <li><a href="pessoas.html"><i class="fa fa-group"></i> pessoas</a></li>
+          <li><a href="relatorios.html"><i class="fa fa-pie-chart"></i> relatórios</a></li>
+          <li class="active"><a href="alertas.html"><i class="fa fa-cog"></i> preferências</a></li>
+        </ul>
+      </div><!--/container-->
+    </header>
+
+
+    <!--/CONTEÚDO DA PÁGINA-->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2">
+          
+          <!--/PREFERENCES NAVIGATION-->
+          <ul id="pref-nav" class="nav nav-pills nav-stacked">
+            <li><a href="alertas.html">alertas</a></li>
+            <li><a href="captacao.html">captação</a></li>
+            <li class="active"><a href="contas.html">contas</a></li>
+            <li><a href="marcadores-e-filtros.html">marcadores e filtros salvos</a></li>
+            <li><a href="palavras-chave.html">palavras-chave</a></li>
+            <li><a href="respostas-salvas.html">respostas salvas</a></li>
+            <li><a href="setores-e-referentes.html">setores e referentes</a></li>
+          </ul>
+
+        </div><!--/col-->
+
+        <div class="col-xs-10">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h3 class="panel-title">Contas</h3></div>
+            <div class="panel-body">
+            <p>Sincronize as contas de redes sociais da instituição para poder interagir através do Planeta Y.</p>
+
+            <!--/FACEBOOK-->
+            <div class="well">
+              <header>
+                <h4 class="pull-left">facebook</h4>
+                <a href="#" class="btn btn-default pull-right"><i class="fa fa-plus"></i> conectar nova conta</a>
+                <span class="clearfix"></span>
+              </header>
+
+              <div class="auto auto-large">
+                <table class="table table-striped">
+                  <tr>
+                    <th>conectado como</th>
+                    <th>acesso permitido em</th>
+                    <th>opções</th>
+                  </tr>
+                  <tr>
+                    <td>Universiade Anhanguera Oficial</td>
+                    <td>16/10/2011</td>
+                    <td><a href="#" class="btn btn-block btn-default">revogar permissão</a></td>
+                  </tr>
+                  <tr>
+                    <td>Universiade Anhanguera Oficial</td>
+                    <td>16/10/2011</td>
+                    <td><a href="#" class="btn btn-block btn-default">revogar permissão</a></td>
+                  </tr>
+                  <tr>
+                    <td>Universiade Anhanguera Oficial</td>
+                    <td>16/10/2011</td>
+                    <td><a href="#" class="btn btn-block btn-default">revogar permissão</a></td>
+                  </tr>
+                  <tr>
+                    <td>Universiade Anhanguera Oficial</td>
+                    <td>16/10/2011</td>
+                    <td><a href="#" class="btn btn-block btn-default">revogar permissão</a></td>
+                  </tr>
+                  <tr>
+                    <td>Universiade Anhanguera Oficial</td>
+                    <td>16/10/2011</td>
+                    <td><a href="#" class="btn btn-block btn-default">revogar permissão</a></td>
+                  </tr>
+                  <tr>
+                    <td>Universiade Anhanguera Oficial</td>
+                    <td>16/10/2011</td>
+                    <td><a href="#" class="btn btn-block btn-default">revogar permissão</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div><!--/well-->
+
+
+
+            <!--/TWITTER-->
+            <div class="well">
+              <header>
+                <h4 class="pull-left">Twitter</h4>
+                <a href="#" class="btn btn-default pull-right hidden"><i class="fa fa-plus"></i> conectar nova conta</a>
+                <span class="clearfix"></span>
+              </header>
+              <div class="row">
+                <div class="col-xs-7">
+                  <p>Você ainda não adicionou nenhuma conta do Linkedin ao Planeta Y.</p>
+                </div><!--/col-->
+                <div class="col-xs-5">
+                  <a href="#" class="btn btn-default btn-lg btn-block"><i class="fa fa-plus"></i> conectar nova conta</a></a>
+                </div><!--/col-->
+              </div><!--/row-->
+            </div><!--/well-->
+
+
+
+
+            <!--/GOOGLE +-->
+            <div class="well">
+              <header>
+                <h4 class="pull-left">Google +</h4>
+                <a href="#" class="btn btn-default pull-right"><i class="fa fa-plus"></i> conectar nova conta</a>
+                <span class="clearfix"></span>
+              </header>
+              <div class="auto auto-large">
+                <table class="table table-striped">
+                  <tr>
+                    <th>conectado como</th>
+                    <th>acesso permitido em</th>
+                    <th>opções</th>
+                  </tr>
+                  <tr>
+                    <td>Universiade Anhanguera Oficial</td>
+                    <td>16/10/2011</td>
+                    <td><a href="#" class="btn btn-block btn-default">revogar permissão</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div><!--/well-->
+
+
+
+
+            <!--/LINKEDIN-->
+            <div class="well">
+              <header>
+                <h4 class="pull-left">Linkedin</h4>
+                <a href="#" class="btn btn-default pull-right"><i class="fa fa-plus"></i> conectar nova conta</a>
+                <span class="clearfix"></span>
+              </header>
+              <div class="auto auto-large">
+                <table class="table table-striped">
+                  <tr>
+                    <th>conectado como</th>
+                    <th>acesso permitido em</th>
+                    <th>opções</th>
+                  </tr>
+                  <tr>
+                    <td>Universiade Anhanguera Oficial</td>
+                    <td>16/10/2011</td>
+                    <td><a href="#" class="btn btn-block btn-default">revogar permissão</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div><!--/well-->
+
+
+            <!--/FOURSQUARE-->
+            <div class="well">
+              <header>
+                <h4 class="pull-left">Foursquare</h4>
+                <a href="#" class="btn btn-default pull-right"><i class="fa fa-plus"></i> conectar nova conta</a>
+                <span class="clearfix"></span>
+              </header>
+              <div class="auto auto-large">
+                <table class="table table-striped">
+                  <tr>
+                    <th>conectado como</th>
+                    <th>acesso permitido em</th>
+                    <th>opções</th>
+                  </tr>
+                  <tr>
+                    <td>Universiade Anhanguera Oficial</td>
+                    <td>16/10/2011</td>
+                    <td><a href="#" class="btn btn-block btn-default">revogar permissão</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div><!--/well-->
+
+
+
+
+            <!--/INSTAGRAM-->
+            <div class="well">
+              <header>
+                <h4 class="pull-left">Instagram</h4>
+                <a href="#" class="btn btn-default pull-right"><i class="fa fa-plus"></i> conectar nova conta</a>
+                <span class="clearfix"></span>
+              </header>
+              <div class="auto auto-large">
+                <table class="table table-striped">
+                  <tr>
+                    <th>conectado como</th>
+                    <th>acesso permitido em</th>
+                    <th>opções</th>
+                  </tr>
+                  <tr>
+                    <td>Universiade Anhanguera Oficial</td>
+                    <td>16/10/2011</td>
+                    <td><a href="#" class="btn btn-block btn-default">revogar permissão</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div><!--/well-->
+
+
+
+
+            </div><!--/panel-body-->
+            <div class="panel-footer">
+              <button type="button" class="btn btn-default">cancelar</button>
+              <button type="button" class="btn btn-primary">salvar</button>
+            </div><!--/panel-footer-->
+          </div><!--/panel-->
+          
+        </div><!--/col-->
+
+
+      </div><!--/row-->
+
+
+    </div><!--/container-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery1.11.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+  </body>
+</html>
