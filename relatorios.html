@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Planeta Y - Alertas</title>
+    <title>Planeta Y - Relatórios</title>
 
     <!-- STYLES -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -153,8 +153,8 @@
           <li><a href="index.html"><i class="fa fa-home"></i> início</a></li>
           <li><a href="citacoes.html"><i class="fa fa-comment"></i> citações <span class="badge">78</span></a></a></li>
           <li><a href="pessoas.html"><i class="fa fa-group"></i> pessoas</a></li>
-          <li><a href="relatorios.html"><i class="fa fa-pie-chart"></i> relatórios</a></li>
-          <li class="active"><a href="alertas.html"><i class="fa fa-cog"></i> preferências</a></li>
+          <li class="active"><a href="relatorios.html"><i class="fa fa-pie-chart"></i> relatórios</a></li>
+          <li><a href="alertas.html"><i class="fa fa-cog"></i> preferências</a></li>
         </ul>
       </div><!--/container-->
     </header>
@@ -162,41 +162,44 @@
 
     <!--/CONTEÚDO DA PÁGINA-->
     <div class="container">
-      <div class="row">
-        <div class="col-xs-2">
+
+      <div id="report-tab" class="panel">
+        <form role="form">
+          <div class="row">
+            <div class="col-xs-8">
+              <select class="form-control input-lg">
+                <option>Relatório geral</option>
+                <option>Atendimento</option>
+                <option>Captação</option>
+              </select>
+            </div><!--/col-xs-8-->
+            <div class="col-xs-2">
+              <button type="button" class="btn btn-default btn-lg btn-block"><i class="fa fa-cogs"></i> personalizar</button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-plus"></i> novo</button>
+            </div><!--/col-xs-4-->
+          </div><!--/row-->
+          <p>Este relatório será enviado segunda-feira 18/04/2014. <a href="#">Enviar agora</a>?</p>    
+
+
+          <!--/#REPORT NAV-->
+          <div id="report-navbar">
+            <a href="#" class="btn btn-default">capital social</a>
+            <a href="#" class="btn btn-default">pessoas</a>
+            <a href="#" class="btn btn-default">palavras</a>
+            <a href="#" class="btn btn-default">MEC</a>
+            <a href="#" class="btn btn-default">marcadores</a>
+            <a href="#" class="btn btn-default">sentimento</a>
+            <a href="#" class="btn btn-default">mídia</a>
+            <a href="#" class="btn btn-default">relevância da mídia</a>
+            <a href="#" class="btn btn-default">buzz</a>
+            <a href="#" class="btn btn-default">twitter</a>
+            <a href="#" class="btn btn-default">região</a>
+          </div><!--/#report-navbar-->
           
-          <!--/PREFERENCES NAVIGATION-->
-          <ul id="pref-nav" class="nav nav-pills nav-stacked">
-            <li class="active"><a href="alertas.html">alertas</a></li>
-            <li><a href="captacao.html">captação</a></li>
-            <li><a href="contas.html">contas</a></li>
-            <li><a href="filtros-salvos.html">filtros salvos</a></li>
-            <li><a href="marcadores.html">marcadores</a></li>
-            <li><a href="palavras-chave.html">palavras-chave</a></li>
-            <li><a href="respostas-salvas.html">respostas salvas</a></li>
-            <li><a href="setores-e-referentes.html">setores e referentes</a></li>
-          </ul>
-
-        </div><!--/col-->
-
-        <div class="col-xs-10">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h3 class="panel-title">Alertas</h3></div>
-            <div class="panel-body">
-            <p>Marque os alertas e notificações que deseja receber.</p>
-
-            </div><!--/panel-body-->
-            <div class="panel-footer">
-              <button type="button" class="btn btn-default">cancelar</button>
-              <button type="button" class="btn btn-primary">salvar</button>
-            </div><!--/panel-footer-->
-          </div><!--/panel-->
-          
-        </div><!--/col-->
-
-
-      </div><!--/row-->
-
+        </form>
+      </div><!--/report-tab-->
 
     </div><!--/container-->
 

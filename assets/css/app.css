@@ -1066,11 +1066,8 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .quote.quote-small .quote-content .sidebar {
   width: 32px;
 }
-.quote.quote-small footer .mec-menu {
-  margin: 0 52px;
-}
-.quote.quote-small footer .quote-actions {
-  float: right;
+.quote.quote-small footer > .btn-group {
+  margin: 0 50px;
 }
 
 /* citação */

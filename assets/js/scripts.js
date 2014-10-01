@@ -139,11 +139,11 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 
 		if ( $(this).hasClass('lido') ) {
 			$(this).removeClass('lido').addClass('nao-lido');
-			$(this).html('<i class="fa fa-circle-o" data-toggle="tooltip" title="não lido"></i>');
+			$(this).html('<i class="fa fa-circle-o" data-toggle="tooltip" title="marcar como lido"></i>');
 			v = v + 1;
 		} if ( $(this).hasClass('nao-lido') && v != 2 ) {
 			$(this).removeClass('nao-lido').addClass('lido');
-			$(this).html('<i class="fa fa-circle" data-toggle="tooltip" title="lido"></i>');
+			$(this).html('<i class="fa fa-circle" data-toggle="tooltip" title="marcar como não lido"></i>');
 			v = 1;
 		}
 		return false;

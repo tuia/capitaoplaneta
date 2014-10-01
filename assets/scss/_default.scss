@@ -767,11 +767,10 @@ label {font-weight: normal;}
 		}/*quote-content*/
 
 		footer {
-			.mec-menu { margin: 0 52px}
-			.quote-actions {
-				float: right;
-			}
+			.mec-menu {}
 		}/*footer*/
+
+		footer > .btn-group {margin: 0 50px}
 
 	}
 
