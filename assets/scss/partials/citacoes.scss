@@ -10,11 +10,11 @@
 
 	.reload-btn {
 		display: inline-block;
-		color: $default-color;
+		color: $default-text;
 		font-size: .85em;
 
 		&:hover {
-			color: $light;
+			color: $light-text;
 		}
 
 		&.loading {
@@ -40,14 +40,14 @@
 	padding: 15px 0;
 
 	&.affix {
-		background: $document-bg-color;
+		background: $page-background;
 		top: 0;
 		width: 100%;
 		position: fixed;
 		z-index: 10;
 	}
 	.checkbox {margin: 0}
-	.btn > .fa, .btn > .glyphicon { color: $lighter }
+	.btn > .fa, .btn > .glyphicon { color: $light-text }
 	.dropdown {margin: 0px}
 	.dropdown-menu {
 		a {
@@ -66,7 +66,7 @@
 				margin: 10px 0;
 			}
 			li > a {
-				color: $light;
+				color: $light-text;
 				margin: 1px;
 				padding: 5px;
 				&.good, &.neutral, &.bad {

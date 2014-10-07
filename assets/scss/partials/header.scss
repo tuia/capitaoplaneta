@@ -1,3 +1,8 @@
+
+
+	/* CORES */
+	$header-bg-gray: #95A5A6;
+
 /* CABEÇALHO*/
 #header {
 	background-color: $header-bg-gray;
@@ -11,7 +16,7 @@
 		margin-left: 10px;
 		a {
 			background-color: rgba(255,255,255,.4);
-			color: $light;
+			color: $light-text;
 		}
 	}
 }
@@ -58,15 +63,15 @@
 					line-height: 1em;
 					margin: 0;
 					padding: 3px 0 8px;
-					border-bottom: 1px solid lighten($lighter, 20%);
+					border-bottom: 1px solid $lighter-text;
 				}
 				p {
 					font-size: .7em;
-					color: $lighter;
+					color: $light-text;
 					margin: 0;
 					padding: 3px 0;
 					strong {
-						color: $light;
+						color: $default-text;
 					}
 				}
 			}
@@ -80,7 +85,7 @@
 				}
 				.dropdown {
 					.dropdown-toggle {
-						color: $lighter;
+						color: $light-text;
 						background-color: transparent;
 						padding: 2px 0;
 						font-size: .8em;

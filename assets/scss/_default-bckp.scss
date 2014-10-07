@@ -3,17 +3,13 @@
 
 /* Cores */
 
-	/* BACKGROUND */
-	$page-background: #E2EBF1;
-	$inverse-background: #2C3E50;
-	$striped-table: #2C3E50;
-	$notification-background: #566573;
-	$tag-background: #46494D;
+	/* DOCUMENTO */
+	$document-bg-color: #EEEFF2;
 
 	/* STATUS */
-	$emergency: #D35400;
-	$urgency: #E67E22;
-	$alert: #F39C12;
+	$open: #D35400;
+	$waiting: #E67E22;
+	$done: #F39C12;
 
 	/* FEELING */
 	$good: #27AE60;
@@ -21,25 +17,20 @@
 	$bad: #C0392B;
 
 	/* TYPOGRAPHY*/
-	$dark-text: #333333;
-	$default-text: #666666;
-	$light-text: #999999;
-	$lighter-text: #CCCCCC;
-	$inverse-text: #FFFFFF;
-
-	/* LINKS */
-	$link: #558C96;
-	$visited: #6B6288;
+	$default-color: #333333;
+	$light: #666666;
+	$lighter: #999999;
+	$lightest: #CCCCCC;
 
 	/* BOXES */
 	$light-box-bg: #FFFFFF;
-	$box-bg: #F6F7F8;
-	$dark-box-bg: #E3E4E5;
+	$box-bg: #E3E4E5;
+	/*$box-bg: #BDC3C7;*/
 
-	/* BUTTONS */
-	$btn-default: #E9EAEB;
-	$btn-darker: #DDDDDD;
-	$btn-primary: #558C96;
+	/* QUOTE BUTTONS */
+	/*$quote-btn-bg: darken($box-bg, 1%);*/
+	$quote-btn-bg: #E9EAEB;
+	$quote-btn-txt-color: #7E7E7E;
 
 	/* SOCIAL */
 	$facebook-color: #3b5998;
@@ -53,14 +44,18 @@
 	$foursquare-color: #0072b1;
 	$reclameaqui-color: #008751;
 
+	/* JANELAS ESCURAS */
+	$inverse-bgcolor: #2C3E50;
+
 
 /* THE CSS */
 /*typography*/
-body, p {font-family: 'Roboto', sans-serif; color: $default-text}
-body {background: $page-background; overflow-x: hidden}
+body, p {font-family: 'Roboto', sans-serif; color: $default-color}
+body {background: $document-bg-color; overflow-x: hidden}
 
-.light {color: $light-text}
-.lighter-text {color: $lighter-text}
+.light {color: $light}
+.lighter {color: $lighter}
+.badge {@include border-radius(0)}
 a:hover {text-decoration: none;}
 .badge {@include border-radius(3px);}
 label {font-weight: normal;}
@@ -101,12 +96,12 @@ label {font-weight: normal;}
 
 	 /* DIVIDER  */
 	 .divider {
-	 	border-bottom: 1px solid $lighter-text;
+	 	border-bottom: 1px solid $lightest;
 	 	text-align: center;
 	 	margin: -15px 0 35px;
 	 	span {
 	 		background: $light-box-bg;
-	 		color: $lighter-text;
+	 		color: $lighter;
 	 		display: inline-block;
 		    padding: 10px 20px;
 		    position: relative;
@@ -116,7 +111,7 @@ label {font-weight: normal;}
 
 	 /* SOCIAL ICONS */
 	.social {
-		background: $btn-darker;
+		background: darken($light-box-bg, 3%);
 		text-align: center;
 		height: 32px;
 		width: 32px;
@@ -221,12 +216,11 @@ label {font-weight: normal;}
 	}
 
 	.quote .btn-group .btn, .quote .accordion-trigger, .quote footer .btn {
-	    background-color: $btn-default;
+	    background-color: $quote-btn-bg;
 		&:hover, &:active, &:focus  {
-    		background-color: lighten($btn-default, 5%);
+    		background-color: $light-box-bg;
 		}
 	}
-
 	/* BOTÕES DOS MENUS DO MEC E DE SENTIMENTO */
 	.mec-menu .btn, .feeling-menu .btn, .feeling-icon, .mec-icon {
 	    background-image: url("../img/mec-feel-sprite.png");
@@ -410,13 +404,13 @@ label {font-weight: normal;}
 				margin: 0;
 			}
 			.checkbox {
-				background: $btn-default;
+				background: $quote-btn-bg;
 				cursor: pointer;
 				display: block;
 				margin: 1px !important;
 				padding: 5px;
 				font-size: .9em;
-				&:hover { background: lighten($btn-default, 5%);}
+				&:hover { background: lighten($quote-btn-bg, 5%);}
 
 				label {
 					display: block;
@@ -432,26 +426,26 @@ label {font-weight: normal;}
 		li {
 			a {
 				font-weight: bold;
-				color: $lighter-text;
+				color: $lighter;
 				text-transform: uppercase;
-				&.aberto { color: $emergency;}
-				&.aguardando { color: $urgency;}
-				&.fechado { color: $alert;}
+				&.aberto { color: $open;}
+				&.aguardando { color: $waiting;}
+				&.fechado { color: $done;}
 			}
-			&.active a {background: $dark-box-bg;}
+			&.active a {background: darken($light-box-bg, 8%);}
 		}
 	}
 
 	/* RIBBON */
 	.ribbon {
-		background-color: $inverse-background;
+		background-color: darken($box-bg, 20%);
 		display: inline-block;
 		padding: 6px;
 		text-transform: uppercase;
-		color: $inverse-text;
+		color: $light-box-bg;
 		font-weight: bold;
 
-		&:hover {color: $inverse-text;}
+		&:hover {color: $light-box-bg;}
 		&:before, &:after {
 		    content: " ";
 		    position: absolute;
@@ -461,35 +455,44 @@ label {font-weight: normal;}
 		&:before {
 			border-bottom: 16px solid transparent;
 			border-top: 16px solid transparent;
-		    border-right: 10px solid $inverse-background;
+		    border-right: 10px solid darken($box-bg, 20%);
 		    left: -10px;
 		    top: 0px;
 		}
 		&:after {
 			border-top: 5px solid transparent;
-		    border-left: 5px solid $inverse-background;
+		    border-left: 5px solid darken($box-bg, 20%);
 		    right: 0;
-		    top: -5px; 
+		    top: -5px;
 		}
 
 		&.aberto, &.aguardando, &.fechado {
-			background-color: $btn-darker;
-			&:before {border-right: 10px solid $btn-darker;}
-			&:after {border-left: 5px solid $btn-darker;}
+			background-color: darken($light-box-bg, 10%);
+			&:before {border-right: 10px solid darken($light-box-bg, 10%)}
+			&:after {border-left: 5px solid darken($light-box-bg, 10%)}
 			&:hover { 
-				background: lighten($btn-darker, 5%);
-				&:before {border-right: 10px solid lighten($btn-darker, 5%);}
-				&:after {border-left: 5px solid lighten($btn-darker, 5%);}
+				background: lighten($light-box-bg, 1%);
+				&:before {border-right: 10px solid lighten($light-box-bg, 1%)}
+				&:after {border-left: 5px solid lighten($light-box-bg, 1%)}
 			}
 			/* CORES STATUS */
 			&.aberto {
-				color: $emergency;
+				color: $open;
+				&:hover { 
+					background: darken($light-box-bg, 1%);
+				}	
 			}
 			&.aguardando {
-				color: $urgency;
+				color: $waiting;
+				&:hover { 
+					background: darken($light-box-bg, 1%);
+				}	
 			}
 			&.fechado {
-				color: $alert;
+				color: $done;
+				&:hover { 
+					background: darken($light-box-bg, 1%);
+				}	
 			}
 		}/**/
 		
@@ -525,14 +528,14 @@ label {font-weight: normal;}
 .quote {
 	margin: 0 0 30px 0;
 	border: 3px solid transparent;
-/*
+
 	&.selected {
 		border-color: darken($box-bg, 10%);
 		.quote-content {background-color: lighten($box-bg, 5%);	}
 		.accordion-hidden {background-color: lighten($box-bg, 15%)}
 		
 	}
-*/
+
 	.quote-content {
 		position: relative;
 			background-color: $light-box-bg;
@@ -643,22 +646,22 @@ label {font-weight: normal;}
 				max-height: 32px;
 				position: relative;
 			}
-			.social {
-				background-color: $btn-darker;
-				&:hover {background: lighten($btn-darker, 5%)}
+			.social, .atendimento {
+				background-color: darken($light-box-bg, 10%);
+				&:hover {background: lighten($light-box-bg, 1%)}
 			}
 			.leitura-btn {
-				background: $btn-default;
+				background: darken($light-box-bg, 3%);
 				width: 32px;
 				height: 32px;
-				color: $light-text;
+				color: $lighter;
 				padding: 5px 11px;
-				&:hover { background: lighten($btn-default, 5%); }
+				&:hover { background: lighten($light-box-bg, 2%); }
 			}
 			.tags {
 				float: left;
 			    width: 198px;
-				background: $btn-default;
+				background: $box-bg;
 			    display: block;
 			    height: 47px;
 			    margin: 7px 0 0 0;
@@ -676,7 +679,7 @@ label {font-weight: normal;}
 
 			    		.remove-tag {
 			    			visibility: hidden;
-			    			color: $lighter-text;
+			    			color: darken($light-box-bg, 15%);
 			    			margin: 0 -2px;
 			    			cursor: pointer;
 			    		}
@@ -696,11 +699,11 @@ label {font-weight: normal;}
 			    float: left;	
 
 				.tags-btn {
-					background-color: $btn-default;
+					background-color: $box-bg;
 				    text-align: center;
-				    color: $lighter-text;
+				    color: $lighter;
 				    padding: 6px 9px;
-				    &:hover { background-color: lighten($btn-default, 5%)}
+				    &:hover { background-color: lighten($box-bg, 5%)}
 				}
 			}
 		}/*sidebar*/
@@ -708,7 +711,7 @@ label {font-weight: normal;}
 	}/*quote-content*/
 
 	footer {
-		background-color: $box-bg;
+		background-color: lighten($box-bg, 6%);
 
 		/*MENU DO MEC*/
 		.mec-menu {	margin: 0 66px;	}/*mec-menu*/
@@ -723,7 +726,7 @@ label {font-weight: normal;}
 		    font-weight: normal;
 		    border: none !important;
 		    
-		    color: $default-text;
+		    color: $quote-btn-txt-color;
 		    height: 32px;
 		    margin: 0;
 		}
@@ -775,7 +778,7 @@ label {font-weight: normal;}
 
 /* PAINEL DE FILTRO */
 #filter-panel {
-	color: $inverse-text;
+	color: $light-box-bg;
 
 	position: fixed;
     z-index: 1031;
@@ -788,8 +791,8 @@ label {font-weight: normal;}
     @include transition (left, .5s, ease-in-out);
 
     .filter-toggle {
-    	background: $inverse-background;
-    	color: $inverse-text;
+    	background: $inverse-bgcolor;
+    	color: $light-box-bg;
     	width: 50px;
 
     	display: block;
@@ -802,7 +805,7 @@ label {font-weight: normal;}
     }
 
     .filter-content {
-    	background: $inverse-background;
+    	background: $inverse-bgcolor;
     	height: 100%;
     	padding: 20px;
     	width: 750px;

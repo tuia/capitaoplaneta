@@ -76,41 +76,32 @@ ANIMATIONS
 */
 /* VARIAVEIS */
 /* Cores */
-/* DOCUMENTO */
+/* BACKGROUND */
 /* STATUS */
 /* FEELING */
 /* TYPOGRAPHY*/
+/* LINKS */
 /* BOXES */
-/*$box-bg: #BDC3C7;*/
-/* QUOTE BUTTONS */
-/*$quote-btn-bg: darken($box-bg, 1%);*/
+/* BUTTONS */
 /* SOCIAL */
-/* HEADER */
-/* JANELAS ESCURAS */
 /* THE CSS */
 /*typography*/
 body, p {
   font-family: 'Roboto', sans-serif;
-  color: #333333;
+  color: #666666;
 }
 
 body {
-  background: #eeeff2;
+  background: #e2ebf1;
   overflow-x: hidden;
 }
 
 .light {
-  color: #666666;
-}
-
-.lighter {
   color: #999999;
 }
 
-.badge {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
+.lighter-text {
+  color: #cccccc;
 }
 
 a:hover {
@@ -203,7 +194,7 @@ label {
 }
 .divider span {
   background: white;
-  color: #999999;
+  color: #cccccc;
   display: inline-block;
   padding: 10px 20px;
   position: relative;
@@ -212,7 +203,7 @@ label {
 
 /* SOCIAL ICONS */
 .social {
-  background: #f7f7f7;
+  background: #dddddd;
   text-align: center;
   height: 32px;
   width: 32px;
@@ -363,7 +354,7 @@ label {
   background-color: #e9eaeb;
 }
 .quote .btn-group .btn:hover, .quote .btn-group .btn:active, .quote .btn-group .btn:focus, .quote .accordion-trigger:hover, .quote .accordion-trigger:active, .quote .accordion-trigger:focus, .quote footer .btn:hover, .quote footer .btn:active, .quote footer .btn:focus {
-  background-color: white;
+  background-color: #f6f7f7;
 }
 
 /* BOTÕES DOS MENUS DO MEC E DE SENTIMENTO */
@@ -717,7 +708,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 /* STATUS DROPDOWN */
 .dropdown-menu.status-menu li a {
   font-weight: bold;
-  color: #999999;
+  color: #cccccc;
   text-transform: uppercase;
 }
 .dropdown-menu.status-menu li a.aberto {
@@ -730,12 +721,12 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   color: #f39c12;
 }
 .dropdown-menu.status-menu li.active a {
-  background: #ebebeb;
+  background: #e3e4e5;
 }
 
 /* RIBBON */
 .ribbon {
-  background-color: #aeb1b4;
+  background-color: #2c3e50;
   display: inline-block;
   padding: 6px;
   text-transform: uppercase;
@@ -755,52 +746,43 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .ribbon:before {
   border-bottom: 16px solid transparent;
   border-top: 16px solid transparent;
-  border-right: 10px solid #aeb1b4;
+  border-right: 10px solid #2c3e50;
   left: -10px;
   top: 0px;
 }
 .ribbon:after {
   border-top: 5px solid transparent;
-  border-left: 5px solid #aeb1b4;
+  border-left: 5px solid #2c3e50;
   right: 0;
   top: -5px;
 }
 .ribbon.aberto, .ribbon.aguardando, .ribbon.fechado {
-  background-color: #e6e6e6;
+  background-color: #dddddd;
   /* CORES STATUS */
 }
 .ribbon.aberto:before, .ribbon.aguardando:before, .ribbon.fechado:before {
-  border-right: 10px solid #e6e6e6;
+  border-right: 10px solid #dddddd;
 }
 .ribbon.aberto:after, .ribbon.aguardando:after, .ribbon.fechado:after {
-  border-left: 5px solid #e6e6e6;
+  border-left: 5px solid #dddddd;
 }
 .ribbon.aberto:hover, .ribbon.aguardando:hover, .ribbon.fechado:hover {
-  background: white;
+  background: #eaeaea;
 }
 .ribbon.aberto:hover:before, .ribbon.aguardando:hover:before, .ribbon.fechado:hover:before {
-  border-right: 10px solid white;
+  border-right: 10px solid #eaeaea;
 }
 .ribbon.aberto:hover:after, .ribbon.aguardando:hover:after, .ribbon.fechado:hover:after {
-  border-left: 5px solid white;
+  border-left: 5px solid #eaeaea;
 }
 .ribbon.aberto.aberto, .ribbon.aguardando.aberto, .ribbon.fechado.aberto {
   color: #d35400;
 }
-.ribbon.aberto.aberto:hover, .ribbon.aguardando.aberto:hover, .ribbon.fechado.aberto:hover {
-  background: #fcfcfc;
-}
 .ribbon.aberto.aguardando, .ribbon.aguardando.aguardando, .ribbon.fechado.aguardando {
   color: #e67e22;
 }
-.ribbon.aberto.aguardando:hover, .ribbon.aguardando.aguardando:hover, .ribbon.fechado.aguardando:hover {
-  background: #fcfcfc;
-}
 .ribbon.aberto.fechado, .ribbon.aguardando.fechado, .ribbon.fechado.fechado {
   color: #f39c12;
-}
-.ribbon.aberto.fechado:hover, .ribbon.aguardando.fechado:hover, .ribbon.fechado.fechado:hover {
-  background: #fcfcfc;
 }
 
 /*ribbon*/
@@ -829,18 +811,17 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .quote {
   margin: 0 0 30px 0;
   border: 3px solid transparent;
+  /*
+  	&.selected {
+  		border-color: darken($box-bg, 10%);
+  		.quote-content {background-color: lighten($box-bg, 5%);	}
+  		.accordion-hidden {background-color: lighten($box-bg, 15%)}
+  		
+  	}
+  */
   /*quote-content*/
   /*footer*/
   /* citação pequena */
-}
-.quote.selected {
-  border-color: #c9cbcc;
-}
-.quote.selected .quote-content {
-  background-color: #f0f1f1;
-}
-.quote.selected .accordion-hidden {
-  background-color: white;
 }
 .quote .quote-content {
   position: relative;
@@ -946,26 +927,26 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   max-height: 32px;
   position: relative;
 }
-.quote .quote-content .sidebar .social, .quote .quote-content .sidebar .atendimento {
-  background-color: #e6e6e6;
+.quote .quote-content .sidebar .social {
+  background-color: #dddddd;
 }
-.quote .quote-content .sidebar .social:hover, .quote .quote-content .sidebar .atendimento:hover {
-  background: white;
+.quote .quote-content .sidebar .social:hover {
+  background: #eaeaea;
 }
 .quote .quote-content .sidebar .leitura-btn {
-  background: #f7f7f7;
+  background: #e9eaeb;
   width: 32px;
   height: 32px;
   color: #999999;
   padding: 5px 11px;
 }
 .quote .quote-content .sidebar .leitura-btn:hover {
-  background: white;
+  background: #f6f7f7;
 }
 .quote .quote-content .sidebar .tags {
   float: left;
   width: 198px;
-  background: #e3e4e5;
+  background: #e9eaeb;
   display: block;
   height: 47px;
   margin: 7px 0 0 0;
@@ -988,7 +969,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 .quote .quote-content .sidebar .tags p .badge .remove-tag {
   visibility: hidden;
-  color: #d9d9d9;
+  color: #cccccc;
   margin: 0 -2px;
   cursor: pointer;
 }
@@ -1006,16 +987,16 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   float: left;
 }
 .quote .quote-content .sidebar .tags-menu .tags-btn {
-  background-color: #e3e4e5;
+  background-color: #e9eaeb;
   text-align: center;
-  color: #999999;
+  color: #cccccc;
   padding: 6px 9px;
 }
 .quote .quote-content .sidebar .tags-menu .tags-btn:hover {
-  background-color: #f0f1f1;
+  background-color: #f6f7f7;
 }
 .quote footer {
-  background-color: #f3f3f4;
+  background-color: #f6f7f8;
   /*MENU DO MEC*/
   /*mec-menu*/
 }
@@ -1029,7 +1010,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   text-transform: uppercase;
   font-weight: normal;
   border: none !important;
-  color: #7e7e7e;
+  color: #666666;
   height: 32px;
   margin: 0;
 }
@@ -1066,8 +1047,11 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .quote.quote-small .quote-content .sidebar {
   width: 32px;
 }
-.quote.quote-small footer > .btn-group {
-  margin: 0 50px;
+.quote.quote-small footer .mec-menu {
+  margin: 0 52px;
+}
+.quote.quote-small footer .quote-actions {
+  float: right;
 }
 
 /* citação */
@@ -1113,6 +1097,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 ** PARTIALS
 ** partial são as suas páginas
 */
+/* CORES */
 /* CABEÇALHO*/
 #header {
   background-color: #95a5a6;
@@ -1128,7 +1113,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 .nav-tabs li a {
   background-color: rgba(255, 255, 255, 0.4);
-  color: #666666;
+  color: #999999;
 }
 
 /*institution-box*/
@@ -1213,13 +1198,13 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 .reload-box .reload-btn {
   display: inline-block;
-  color: #333333;
+  color: #666666;
   font-size: .85em;
   /*loading*/
   /*loading*/
 }
 .reload-box .reload-btn:hover {
-  color: #666666;
+  color: #999999;
 }
 .reload-box .reload-btn.loading {
   content: "atualizando...";
@@ -1237,7 +1222,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   padding: 15px 0;
 }
 #actions-bar.affix {
-  background: #eeeff2;
+  background: #e2ebf1;
   top: 0;
   width: 100%;
   position: fixed;
@@ -1267,7 +1252,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   margin: 10px 0;
 }
 #actions-bar #mec-dropdown .dropdown-menu li > a {
-  color: #666666;
+  color: #999999;
   margin: 1px;
   padding: 5px;
 }
