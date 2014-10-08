@@ -84,6 +84,7 @@ ANIMATIONS
 /* BOXES */
 /* BUTTONS */
 /* SOCIAL */
+/* selected item */
 /* THE CSS */
 /*typography*/
 body, p {
@@ -118,6 +119,16 @@ label {
   font-weight: normal;
 }
 
+.badge.id {
+  background-color: #cccccc;
+  color: #666666;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.badge.id a {
+  text-transform: lowercase;
+}
+
 .good-txt {
   color: #27ae60;
 }
@@ -140,6 +151,36 @@ label {
 
 .bad-bg {
   background-color: #c0392b;
+}
+
+.btn-default:hover {
+  background-color: #f6f7f7;
+}
+
+.btn-primary:hover {
+  background-color: #609aa5;
+}
+
+.btn-darker:hover {
+  background-color: #eaeaea;
+}
+
+.dropdown .dropdown-menu {
+  background-color: #dddddd;
+}
+
+.dropdown .dropdown-menu > li a {
+  background-color: #e9eaeb;
+  margin-bottom: 1px;
+}
+
+.dropdown .dropdown-menu > li a:hover {
+  background-color: #f6f7f7;
+}
+
+.dropdown-menu .divider {
+  background-color: transparent;
+  border: none;
 }
 
 /*HELPERS*/
@@ -171,6 +212,22 @@ label {
 .container {
   width: 950px !important;
   padding: 0;
+}
+
+/* TÍTULOS */
+h1 {
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 16px;
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 /* COMPONENTES */
@@ -358,7 +415,7 @@ label {
 }
 
 /* BOTÕES DOS MENUS DO MEC E DE SENTIMENTO */
-.mec-menu .btn, .feeling-menu .btn, .feeling-icon, .mec-icon {
+.mec-menu .btn, .feeling-menu .btn, .feeling-icon, .mec-icon, .selected .mec-menu .btn, .selected .feeling-menu .btn, .selected .feeling-icon, .selected .mec-icon {
   background-image: url("../img/mec-feel-sprite.png");
   border: none !important;
   height: 32px;
@@ -380,222 +437,222 @@ label {
   /*infraestrutura*/
   /*relacionamento*/
 }
-.mec-menu .btn.indeterminate, .feeling-menu .btn.indeterminate, .feeling-icon.indeterminate, .mec-icon.indeterminate {
+.mec-menu .btn.indeterminate, .feeling-menu .btn.indeterminate, .feeling-icon.indeterminate, .mec-icon.indeterminate, .selected .mec-menu .btn.indeterminate, .selected .feeling-menu .btn.indeterminate, .selected .feeling-icon.indeterminate, .selected .mec-icon.indeterminate {
   background-position: -330px -96px;
 }
-.mec-menu .btn.good, .feeling-menu .btn.good, .feeling-icon.good, .mec-icon.good {
+.mec-menu .btn.good, .feeling-menu .btn.good, .feeling-icon.good, .mec-icon.good, .selected .mec-menu .btn.good, .selected .feeling-menu .btn.good, .selected .feeling-icon.good, .selected .mec-icon.good {
   background-position: -330px -0px;
 }
-.mec-menu .btn.good:hover, .mec-menu .btn.good:active, .feeling-menu .btn.good:hover, .feeling-menu .btn.good:active, .feeling-icon.good:hover, .feeling-icon.good:active, .mec-icon.good:hover, .mec-icon.good:active {
+.mec-menu .btn.good:hover, .mec-menu .btn.good:active, .feeling-menu .btn.good:hover, .feeling-menu .btn.good:active, .feeling-icon.good:hover, .feeling-icon.good:active, .mec-icon.good:hover, .mec-icon.good:active, .selected .mec-menu .btn.good:hover, .selected .mec-menu .btn.good:active, .selected .feeling-menu .btn.good:hover, .selected .feeling-menu .btn.good:active, .selected .feeling-icon.good:hover, .selected .feeling-icon.good:active, .selected .mec-icon.good:hover, .selected .mec-icon.good:active {
   background-position: -330px -32px;
 }
-.mec-menu .btn.good.active, .feeling-menu .btn.good.active, .feeling-icon.good.active, .mec-icon.good.active {
+.mec-menu .btn.good.active, .feeling-menu .btn.good.active, .feeling-icon.good.active, .mec-icon.good.active, .selected .mec-menu .btn.good.active, .selected .feeling-menu .btn.good.active, .selected .feeling-icon.good.active, .selected .mec-icon.good.active {
   background-position: -330px -64px;
   background-color: #27ae60;
 }
-.mec-menu .btn.neutral, .feeling-menu .btn.neutral, .feeling-icon.neutral, .mec-icon.neutral {
+.mec-menu .btn.neutral, .feeling-menu .btn.neutral, .feeling-icon.neutral, .mec-icon.neutral, .selected .mec-menu .btn.neutral, .selected .feeling-menu .btn.neutral, .selected .feeling-icon.neutral, .selected .mec-icon.neutral {
   background-position: -363px -0px;
 }
-.mec-menu .btn.neutral:hover, .mec-menu .btn.neutral:active, .feeling-menu .btn.neutral:hover, .feeling-menu .btn.neutral:active, .feeling-icon.neutral:hover, .feeling-icon.neutral:active, .mec-icon.neutral:hover, .mec-icon.neutral:active {
+.mec-menu .btn.neutral:hover, .mec-menu .btn.neutral:active, .feeling-menu .btn.neutral:hover, .feeling-menu .btn.neutral:active, .feeling-icon.neutral:hover, .feeling-icon.neutral:active, .mec-icon.neutral:hover, .mec-icon.neutral:active, .selected .mec-menu .btn.neutral:hover, .selected .mec-menu .btn.neutral:active, .selected .feeling-menu .btn.neutral:hover, .selected .feeling-menu .btn.neutral:active, .selected .feeling-icon.neutral:hover, .selected .feeling-icon.neutral:active, .selected .mec-icon.neutral:hover, .selected .mec-icon.neutral:active {
   background-position: -363px -32px;
 }
-.mec-menu .btn.neutral.active, .feeling-menu .btn.neutral.active, .feeling-icon.neutral.active, .mec-icon.neutral.active {
+.mec-menu .btn.neutral.active, .feeling-menu .btn.neutral.active, .feeling-icon.neutral.active, .mec-icon.neutral.active, .selected .mec-menu .btn.neutral.active, .selected .feeling-menu .btn.neutral.active, .selected .feeling-icon.neutral.active, .selected .mec-icon.neutral.active {
   background-position: -363px -64px;
   background-color: #2980b9;
 }
-.mec-menu .btn.bad, .feeling-menu .btn.bad, .feeling-icon.bad, .mec-icon.bad {
+.mec-menu .btn.bad, .feeling-menu .btn.bad, .feeling-icon.bad, .mec-icon.bad, .selected .mec-menu .btn.bad, .selected .feeling-menu .btn.bad, .selected .feeling-icon.bad, .selected .mec-icon.bad {
   background-position: -396px -0px;
 }
-.mec-menu .btn.bad:hover, .mec-menu .btn.bad:active, .feeling-menu .btn.bad:hover, .feeling-menu .btn.bad:active, .feeling-icon.bad:hover, .feeling-icon.bad:active, .mec-icon.bad:hover, .mec-icon.bad:active {
+.mec-menu .btn.bad:hover, .mec-menu .btn.bad:active, .feeling-menu .btn.bad:hover, .feeling-menu .btn.bad:active, .feeling-icon.bad:hover, .feeling-icon.bad:active, .mec-icon.bad:hover, .mec-icon.bad:active, .selected .mec-menu .btn.bad:hover, .selected .mec-menu .btn.bad:active, .selected .feeling-menu .btn.bad:hover, .selected .feeling-menu .btn.bad:active, .selected .feeling-icon.bad:hover, .selected .feeling-icon.bad:active, .selected .mec-icon.bad:hover, .selected .mec-icon.bad:active {
   background-position: -396px -32px;
 }
-.mec-menu .btn.bad.active, .feeling-menu .btn.bad.active, .feeling-icon.bad.active, .mec-icon.bad.active {
+.mec-menu .btn.bad.active, .feeling-menu .btn.bad.active, .feeling-icon.bad.active, .mec-icon.bad.active, .selected .mec-menu .btn.bad.active, .selected .feeling-menu .btn.bad.active, .selected .feeling-icon.bad.active, .selected .mec-icon.bad.active {
   background-position: -396px -64px;
   background-color: #c0392b;
 }
-.mec-menu .btn.remove, .feeling-menu .btn.remove, .feeling-icon.remove, .mec-icon.remove {
+.mec-menu .btn.remove, .feeling-menu .btn.remove, .feeling-icon.remove, .mec-icon.remove, .selected .mec-menu .btn.remove, .selected .feeling-menu .btn.remove, .selected .feeling-icon.remove, .selected .mec-icon.remove {
   background-position: -363px -96px;
 }
-.mec-menu .btn.remove:hover, .mec-menu .btn.remove:active, .feeling-menu .btn.remove:hover, .feeling-menu .btn.remove:active, .feeling-icon.remove:hover, .feeling-icon.remove:active, .mec-icon.remove:hover, .mec-icon.remove:active {
+.mec-menu .btn.remove:hover, .mec-menu .btn.remove:active, .feeling-menu .btn.remove:hover, .feeling-menu .btn.remove:active, .feeling-icon.remove:hover, .feeling-icon.remove:active, .mec-icon.remove:hover, .mec-icon.remove:active, .selected .mec-menu .btn.remove:hover, .selected .mec-menu .btn.remove:active, .selected .feeling-menu .btn.remove:hover, .selected .feeling-menu .btn.remove:active, .selected .feeling-icon.remove:hover, .selected .feeling-icon.remove:active, .selected .mec-icon.remove:hover, .selected .mec-icon.remove:active {
   background-position: -396px -96px;
 }
-.mec-menu .btn.captacao, .feeling-menu .btn.captacao, .feeling-icon.captacao, .mec-icon.captacao {
+.mec-menu .btn.captacao, .feeling-menu .btn.captacao, .feeling-icon.captacao, .mec-icon.captacao, .selected .mec-menu .btn.captacao, .selected .feeling-menu .btn.captacao, .selected .feeling-icon.captacao, .selected .mec-icon.captacao {
   background-position: -0px -0px;
 }
-.mec-menu .btn.captacao:hover, .mec-menu .btn.captacao:active, .mec-menu .btn.captacao.active, .feeling-menu .btn.captacao:hover, .feeling-menu .btn.captacao:active, .feeling-menu .btn.captacao.active, .feeling-icon.captacao:hover, .feeling-icon.captacao:active, .feeling-icon.captacao.active, .mec-icon.captacao:hover, .mec-icon.captacao:active, .mec-icon.captacao.active {
+.mec-menu .btn.captacao:hover, .mec-menu .btn.captacao:active, .mec-menu .btn.captacao.active, .feeling-menu .btn.captacao:hover, .feeling-menu .btn.captacao:active, .feeling-menu .btn.captacao.active, .feeling-icon.captacao:hover, .feeling-icon.captacao:active, .feeling-icon.captacao.active, .mec-icon.captacao:hover, .mec-icon.captacao:active, .mec-icon.captacao.active, .selected .mec-menu .btn.captacao:hover, .selected .mec-menu .btn.captacao:active, .selected .mec-menu .btn.captacao.active, .selected .feeling-menu .btn.captacao:hover, .selected .feeling-menu .btn.captacao:active, .selected .feeling-menu .btn.captacao.active, .selected .feeling-icon.captacao:hover, .selected .feeling-icon.captacao:active, .selected .feeling-icon.captacao.active, .selected .mec-icon.captacao:hover, .selected .mec-icon.captacao:active, .selected .mec-icon.captacao.active {
   background-position: -0px -32px;
 }
-.mec-menu .btn.captacao.good, .feeling-menu .btn.captacao.good, .feeling-icon.captacao.good, .mec-icon.captacao.good {
+.mec-menu .btn.captacao.good, .feeling-menu .btn.captacao.good, .feeling-icon.captacao.good, .mec-icon.captacao.good, .selected .mec-menu .btn.captacao.good, .selected .feeling-menu .btn.captacao.good, .selected .feeling-icon.captacao.good, .selected .mec-icon.captacao.good {
   background-color: #27ae60;
   background-position: -0px -64px;
 }
-.mec-menu .btn.captacao.neutral, .feeling-menu .btn.captacao.neutral, .feeling-icon.captacao.neutral, .mec-icon.captacao.neutral {
+.mec-menu .btn.captacao.neutral, .feeling-menu .btn.captacao.neutral, .feeling-icon.captacao.neutral, .mec-icon.captacao.neutral, .selected .mec-menu .btn.captacao.neutral, .selected .feeling-menu .btn.captacao.neutral, .selected .feeling-icon.captacao.neutral, .selected .mec-icon.captacao.neutral {
   background-color: #2980b9;
   background-position: -0px -64px;
 }
-.mec-menu .btn.captacao.bad, .feeling-menu .btn.captacao.bad, .feeling-icon.captacao.bad, .mec-icon.captacao.bad {
+.mec-menu .btn.captacao.bad, .feeling-menu .btn.captacao.bad, .feeling-icon.captacao.bad, .mec-icon.captacao.bad, .selected .mec-menu .btn.captacao.bad, .selected .feeling-menu .btn.captacao.bad, .selected .feeling-icon.captacao.bad, .selected .mec-icon.captacao.bad {
   background-color: #c0392b;
   background-position: -0px -64px;
 }
-.mec-menu .btn.empregabilidade, .feeling-menu .btn.empregabilidade, .feeling-icon.empregabilidade, .mec-icon.empregabilidade {
+.mec-menu .btn.empregabilidade, .feeling-menu .btn.empregabilidade, .feeling-icon.empregabilidade, .mec-icon.empregabilidade, .selected .mec-menu .btn.empregabilidade, .selected .feeling-menu .btn.empregabilidade, .selected .feeling-icon.empregabilidade, .selected .mec-icon.empregabilidade {
   background-position: -33px -0px;
 }
-.mec-menu .btn.empregabilidade:hover, .mec-menu .btn.empregabilidade:active, .mec-menu .btn.empregabilidade.active, .feeling-menu .btn.empregabilidade:hover, .feeling-menu .btn.empregabilidade:active, .feeling-menu .btn.empregabilidade.active, .feeling-icon.empregabilidade:hover, .feeling-icon.empregabilidade:active, .feeling-icon.empregabilidade.active, .mec-icon.empregabilidade:hover, .mec-icon.empregabilidade:active, .mec-icon.empregabilidade.active {
+.mec-menu .btn.empregabilidade:hover, .mec-menu .btn.empregabilidade:active, .mec-menu .btn.empregabilidade.active, .feeling-menu .btn.empregabilidade:hover, .feeling-menu .btn.empregabilidade:active, .feeling-menu .btn.empregabilidade.active, .feeling-icon.empregabilidade:hover, .feeling-icon.empregabilidade:active, .feeling-icon.empregabilidade.active, .mec-icon.empregabilidade:hover, .mec-icon.empregabilidade:active, .mec-icon.empregabilidade.active, .selected .mec-menu .btn.empregabilidade:hover, .selected .mec-menu .btn.empregabilidade:active, .selected .mec-menu .btn.empregabilidade.active, .selected .feeling-menu .btn.empregabilidade:hover, .selected .feeling-menu .btn.empregabilidade:active, .selected .feeling-menu .btn.empregabilidade.active, .selected .feeling-icon.empregabilidade:hover, .selected .feeling-icon.empregabilidade:active, .selected .feeling-icon.empregabilidade.active, .selected .mec-icon.empregabilidade:hover, .selected .mec-icon.empregabilidade:active, .selected .mec-icon.empregabilidade.active {
   background-position: -33px -32px;
 }
-.mec-menu .btn.empregabilidade.good, .feeling-menu .btn.empregabilidade.good, .feeling-icon.empregabilidade.good, .mec-icon.empregabilidade.good {
+.mec-menu .btn.empregabilidade.good, .feeling-menu .btn.empregabilidade.good, .feeling-icon.empregabilidade.good, .mec-icon.empregabilidade.good, .selected .mec-menu .btn.empregabilidade.good, .selected .feeling-menu .btn.empregabilidade.good, .selected .feeling-icon.empregabilidade.good, .selected .mec-icon.empregabilidade.good {
   background-color: #27ae60;
   background-position: -33px -64px;
 }
-.mec-menu .btn.empregabilidade.neutral, .feeling-menu .btn.empregabilidade.neutral, .feeling-icon.empregabilidade.neutral, .mec-icon.empregabilidade.neutral {
+.mec-menu .btn.empregabilidade.neutral, .feeling-menu .btn.empregabilidade.neutral, .feeling-icon.empregabilidade.neutral, .mec-icon.empregabilidade.neutral, .selected .mec-menu .btn.empregabilidade.neutral, .selected .feeling-menu .btn.empregabilidade.neutral, .selected .feeling-icon.empregabilidade.neutral, .selected .mec-icon.empregabilidade.neutral {
   background-color: #2980b9;
   background-position: -33px -64px;
 }
-.mec-menu .btn.empregabilidade.bad, .feeling-menu .btn.empregabilidade.bad, .feeling-icon.empregabilidade.bad, .mec-icon.empregabilidade.bad {
+.mec-menu .btn.empregabilidade.bad, .feeling-menu .btn.empregabilidade.bad, .feeling-icon.empregabilidade.bad, .mec-icon.empregabilidade.bad, .selected .mec-menu .btn.empregabilidade.bad, .selected .feeling-menu .btn.empregabilidade.bad, .selected .feeling-icon.empregabilidade.bad, .selected .mec-icon.empregabilidade.bad {
   background-color: #c0392b;
   background-position: -33px -64px;
 }
-.mec-menu .btn.localizacao, .feeling-menu .btn.localizacao, .feeling-icon.localizacao, .mec-icon.localizacao {
+.mec-menu .btn.localizacao, .feeling-menu .btn.localizacao, .feeling-icon.localizacao, .mec-icon.localizacao, .selected .mec-menu .btn.localizacao, .selected .feeling-menu .btn.localizacao, .selected .feeling-icon.localizacao, .selected .mec-icon.localizacao {
   background-position: -66px -0px;
 }
-.mec-menu .btn.localizacao:hover, .mec-menu .btn.localizacao:active, .mec-menu .btn.localizacao.active, .feeling-menu .btn.localizacao:hover, .feeling-menu .btn.localizacao:active, .feeling-menu .btn.localizacao.active, .feeling-icon.localizacao:hover, .feeling-icon.localizacao:active, .feeling-icon.localizacao.active, .mec-icon.localizacao:hover, .mec-icon.localizacao:active, .mec-icon.localizacao.active {
+.mec-menu .btn.localizacao:hover, .mec-menu .btn.localizacao:active, .mec-menu .btn.localizacao.active, .feeling-menu .btn.localizacao:hover, .feeling-menu .btn.localizacao:active, .feeling-menu .btn.localizacao.active, .feeling-icon.localizacao:hover, .feeling-icon.localizacao:active, .feeling-icon.localizacao.active, .mec-icon.localizacao:hover, .mec-icon.localizacao:active, .mec-icon.localizacao.active, .selected .mec-menu .btn.localizacao:hover, .selected .mec-menu .btn.localizacao:active, .selected .mec-menu .btn.localizacao.active, .selected .feeling-menu .btn.localizacao:hover, .selected .feeling-menu .btn.localizacao:active, .selected .feeling-menu .btn.localizacao.active, .selected .feeling-icon.localizacao:hover, .selected .feeling-icon.localizacao:active, .selected .feeling-icon.localizacao.active, .selected .mec-icon.localizacao:hover, .selected .mec-icon.localizacao:active, .selected .mec-icon.localizacao.active {
   background-position: -66px -32px;
 }
-.mec-menu .btn.localizacao.good, .feeling-menu .btn.localizacao.good, .feeling-icon.localizacao.good, .mec-icon.localizacao.good {
+.mec-menu .btn.localizacao.good, .feeling-menu .btn.localizacao.good, .feeling-icon.localizacao.good, .mec-icon.localizacao.good, .selected .mec-menu .btn.localizacao.good, .selected .feeling-menu .btn.localizacao.good, .selected .feeling-icon.localizacao.good, .selected .mec-icon.localizacao.good {
   background-color: #27ae60;
   background-position: -66px -64px;
 }
-.mec-menu .btn.localizacao.neutral, .feeling-menu .btn.localizacao.neutral, .feeling-icon.localizacao.neutral, .mec-icon.localizacao.neutral {
+.mec-menu .btn.localizacao.neutral, .feeling-menu .btn.localizacao.neutral, .feeling-icon.localizacao.neutral, .mec-icon.localizacao.neutral, .selected .mec-menu .btn.localizacao.neutral, .selected .feeling-menu .btn.localizacao.neutral, .selected .feeling-icon.localizacao.neutral, .selected .mec-icon.localizacao.neutral {
   background-color: #2980b9;
   background-position: -66px -64px;
 }
-.mec-menu .btn.localizacao.bad, .feeling-menu .btn.localizacao.bad, .feeling-icon.localizacao.bad, .mec-icon.localizacao.bad {
+.mec-menu .btn.localizacao.bad, .feeling-menu .btn.localizacao.bad, .feeling-icon.localizacao.bad, .mec-icon.localizacao.bad, .selected .mec-menu .btn.localizacao.bad, .selected .feeling-menu .btn.localizacao.bad, .selected .feeling-icon.localizacao.bad, .selected .mec-icon.localizacao.bad {
   background-color: #c0392b;
   background-position: -66px -64px;
 }
-.mec-menu .btn.atuacao-etica, .feeling-menu .btn.atuacao-etica, .feeling-icon.atuacao-etica, .mec-icon.atuacao-etica {
+.mec-menu .btn.atuacao-etica, .feeling-menu .btn.atuacao-etica, .feeling-icon.atuacao-etica, .mec-icon.atuacao-etica, .selected .mec-menu .btn.atuacao-etica, .selected .feeling-menu .btn.atuacao-etica, .selected .feeling-icon.atuacao-etica, .selected .mec-icon.atuacao-etica {
   background-position: -99px -0px;
 }
-.mec-menu .btn.atuacao-etica:hover, .mec-menu .btn.atuacao-etica:active, .mec-menu .btn.atuacao-etica.active, .feeling-menu .btn.atuacao-etica:hover, .feeling-menu .btn.atuacao-etica:active, .feeling-menu .btn.atuacao-etica.active, .feeling-icon.atuacao-etica:hover, .feeling-icon.atuacao-etica:active, .feeling-icon.atuacao-etica.active, .mec-icon.atuacao-etica:hover, .mec-icon.atuacao-etica:active, .mec-icon.atuacao-etica.active {
+.mec-menu .btn.atuacao-etica:hover, .mec-menu .btn.atuacao-etica:active, .mec-menu .btn.atuacao-etica.active, .feeling-menu .btn.atuacao-etica:hover, .feeling-menu .btn.atuacao-etica:active, .feeling-menu .btn.atuacao-etica.active, .feeling-icon.atuacao-etica:hover, .feeling-icon.atuacao-etica:active, .feeling-icon.atuacao-etica.active, .mec-icon.atuacao-etica:hover, .mec-icon.atuacao-etica:active, .mec-icon.atuacao-etica.active, .selected .mec-menu .btn.atuacao-etica:hover, .selected .mec-menu .btn.atuacao-etica:active, .selected .mec-menu .btn.atuacao-etica.active, .selected .feeling-menu .btn.atuacao-etica:hover, .selected .feeling-menu .btn.atuacao-etica:active, .selected .feeling-menu .btn.atuacao-etica.active, .selected .feeling-icon.atuacao-etica:hover, .selected .feeling-icon.atuacao-etica:active, .selected .feeling-icon.atuacao-etica.active, .selected .mec-icon.atuacao-etica:hover, .selected .mec-icon.atuacao-etica:active, .selected .mec-icon.atuacao-etica.active {
   background-position: -99px -32px;
 }
-.mec-menu .btn.atuacao-etica.good, .feeling-menu .btn.atuacao-etica.good, .feeling-icon.atuacao-etica.good, .mec-icon.atuacao-etica.good {
+.mec-menu .btn.atuacao-etica.good, .feeling-menu .btn.atuacao-etica.good, .feeling-icon.atuacao-etica.good, .mec-icon.atuacao-etica.good, .selected .mec-menu .btn.atuacao-etica.good, .selected .feeling-menu .btn.atuacao-etica.good, .selected .feeling-icon.atuacao-etica.good, .selected .mec-icon.atuacao-etica.good {
   background-color: #27ae60;
   background-position: -99px -64px;
 }
-.mec-menu .btn.atuacao-etica.neutral, .feeling-menu .btn.atuacao-etica.neutral, .feeling-icon.atuacao-etica.neutral, .mec-icon.atuacao-etica.neutral {
+.mec-menu .btn.atuacao-etica.neutral, .feeling-menu .btn.atuacao-etica.neutral, .feeling-icon.atuacao-etica.neutral, .mec-icon.atuacao-etica.neutral, .selected .mec-menu .btn.atuacao-etica.neutral, .selected .feeling-menu .btn.atuacao-etica.neutral, .selected .feeling-icon.atuacao-etica.neutral, .selected .mec-icon.atuacao-etica.neutral {
   background-color: #2980b9;
   background-position: -99px -64px;
 }
-.mec-menu .btn.atuacao-etica.bad, .feeling-menu .btn.atuacao-etica.bad, .feeling-icon.atuacao-etica.bad, .mec-icon.atuacao-etica.bad {
+.mec-menu .btn.atuacao-etica.bad, .feeling-menu .btn.atuacao-etica.bad, .feeling-icon.atuacao-etica.bad, .mec-icon.atuacao-etica.bad, .selected .mec-menu .btn.atuacao-etica.bad, .selected .feeling-menu .btn.atuacao-etica.bad, .selected .feeling-icon.atuacao-etica.bad, .selected .mec-icon.atuacao-etica.bad {
   background-color: #c0392b;
   background-position: -99px -64px;
 }
-.mec-menu .btn.corpo-docente, .feeling-menu .btn.corpo-docente, .feeling-icon.corpo-docente, .mec-icon.corpo-docente {
+.mec-menu .btn.corpo-docente, .feeling-menu .btn.corpo-docente, .feeling-icon.corpo-docente, .mec-icon.corpo-docente, .selected .mec-menu .btn.corpo-docente, .selected .feeling-menu .btn.corpo-docente, .selected .feeling-icon.corpo-docente, .selected .mec-icon.corpo-docente {
   background-position: -132px -0px;
 }
-.mec-menu .btn.corpo-docente:hover, .mec-menu .btn.corpo-docente:active, .mec-menu .btn.corpo-docente.active, .feeling-menu .btn.corpo-docente:hover, .feeling-menu .btn.corpo-docente:active, .feeling-menu .btn.corpo-docente.active, .feeling-icon.corpo-docente:hover, .feeling-icon.corpo-docente:active, .feeling-icon.corpo-docente.active, .mec-icon.corpo-docente:hover, .mec-icon.corpo-docente:active, .mec-icon.corpo-docente.active {
+.mec-menu .btn.corpo-docente:hover, .mec-menu .btn.corpo-docente:active, .mec-menu .btn.corpo-docente.active, .feeling-menu .btn.corpo-docente:hover, .feeling-menu .btn.corpo-docente:active, .feeling-menu .btn.corpo-docente.active, .feeling-icon.corpo-docente:hover, .feeling-icon.corpo-docente:active, .feeling-icon.corpo-docente.active, .mec-icon.corpo-docente:hover, .mec-icon.corpo-docente:active, .mec-icon.corpo-docente.active, .selected .mec-menu .btn.corpo-docente:hover, .selected .mec-menu .btn.corpo-docente:active, .selected .mec-menu .btn.corpo-docente.active, .selected .feeling-menu .btn.corpo-docente:hover, .selected .feeling-menu .btn.corpo-docente:active, .selected .feeling-menu .btn.corpo-docente.active, .selected .feeling-icon.corpo-docente:hover, .selected .feeling-icon.corpo-docente:active, .selected .feeling-icon.corpo-docente.active, .selected .mec-icon.corpo-docente:hover, .selected .mec-icon.corpo-docente:active, .selected .mec-icon.corpo-docente.active {
   background-position: -132px -32px;
 }
-.mec-menu .btn.corpo-docente.good, .feeling-menu .btn.corpo-docente.good, .feeling-icon.corpo-docente.good, .mec-icon.corpo-docente.good {
+.mec-menu .btn.corpo-docente.good, .feeling-menu .btn.corpo-docente.good, .feeling-icon.corpo-docente.good, .mec-icon.corpo-docente.good, .selected .mec-menu .btn.corpo-docente.good, .selected .feeling-menu .btn.corpo-docente.good, .selected .feeling-icon.corpo-docente.good, .selected .mec-icon.corpo-docente.good {
   background-color: #27ae60;
   background-position: -132px -64px;
 }
-.mec-menu .btn.corpo-docente.neutral, .feeling-menu .btn.corpo-docente.neutral, .feeling-icon.corpo-docente.neutral, .mec-icon.corpo-docente.neutral {
+.mec-menu .btn.corpo-docente.neutral, .feeling-menu .btn.corpo-docente.neutral, .feeling-icon.corpo-docente.neutral, .mec-icon.corpo-docente.neutral, .selected .mec-menu .btn.corpo-docente.neutral, .selected .feeling-menu .btn.corpo-docente.neutral, .selected .feeling-icon.corpo-docente.neutral, .selected .mec-icon.corpo-docente.neutral {
   background-color: #2980b9;
   background-position: -132px -64px;
 }
-.mec-menu .btn.corpo-docente.bad, .feeling-menu .btn.corpo-docente.bad, .feeling-icon.corpo-docente.bad, .mec-icon.corpo-docente.bad {
+.mec-menu .btn.corpo-docente.bad, .feeling-menu .btn.corpo-docente.bad, .feeling-icon.corpo-docente.bad, .mec-icon.corpo-docente.bad, .selected .mec-menu .btn.corpo-docente.bad, .selected .feeling-menu .btn.corpo-docente.bad, .selected .feeling-icon.corpo-docente.bad, .selected .mec-icon.corpo-docente.bad {
   background-color: #c0392b;
   background-position: -132px -64px;
 }
-.mec-menu .btn.credenciamento-no-mec, .feeling-menu .btn.credenciamento-no-mec, .feeling-icon.credenciamento-no-mec, .mec-icon.credenciamento-no-mec {
+.mec-menu .btn.credenciamento-no-mec, .feeling-menu .btn.credenciamento-no-mec, .feeling-icon.credenciamento-no-mec, .mec-icon.credenciamento-no-mec, .selected .mec-menu .btn.credenciamento-no-mec, .selected .feeling-menu .btn.credenciamento-no-mec, .selected .feeling-icon.credenciamento-no-mec, .selected .mec-icon.credenciamento-no-mec {
   background-position: -165px -0px;
 }
-.mec-menu .btn.credenciamento-no-mec:hover, .mec-menu .btn.credenciamento-no-mec:active, .mec-menu .btn.credenciamento-no-mec.active, .feeling-menu .btn.credenciamento-no-mec:hover, .feeling-menu .btn.credenciamento-no-mec:active, .feeling-menu .btn.credenciamento-no-mec.active, .feeling-icon.credenciamento-no-mec:hover, .feeling-icon.credenciamento-no-mec:active, .feeling-icon.credenciamento-no-mec.active, .mec-icon.credenciamento-no-mec:hover, .mec-icon.credenciamento-no-mec:active, .mec-icon.credenciamento-no-mec.active {
+.mec-menu .btn.credenciamento-no-mec:hover, .mec-menu .btn.credenciamento-no-mec:active, .mec-menu .btn.credenciamento-no-mec.active, .feeling-menu .btn.credenciamento-no-mec:hover, .feeling-menu .btn.credenciamento-no-mec:active, .feeling-menu .btn.credenciamento-no-mec.active, .feeling-icon.credenciamento-no-mec:hover, .feeling-icon.credenciamento-no-mec:active, .feeling-icon.credenciamento-no-mec.active, .mec-icon.credenciamento-no-mec:hover, .mec-icon.credenciamento-no-mec:active, .mec-icon.credenciamento-no-mec.active, .selected .mec-menu .btn.credenciamento-no-mec:hover, .selected .mec-menu .btn.credenciamento-no-mec:active, .selected .mec-menu .btn.credenciamento-no-mec.active, .selected .feeling-menu .btn.credenciamento-no-mec:hover, .selected .feeling-menu .btn.credenciamento-no-mec:active, .selected .feeling-menu .btn.credenciamento-no-mec.active, .selected .feeling-icon.credenciamento-no-mec:hover, .selected .feeling-icon.credenciamento-no-mec:active, .selected .feeling-icon.credenciamento-no-mec.active, .selected .mec-icon.credenciamento-no-mec:hover, .selected .mec-icon.credenciamento-no-mec:active, .selected .mec-icon.credenciamento-no-mec.active {
   background-position: -165px -32px;
 }
-.mec-menu .btn.credenciamento-no-mec.good, .feeling-menu .btn.credenciamento-no-mec.good, .feeling-icon.credenciamento-no-mec.good, .mec-icon.credenciamento-no-mec.good {
+.mec-menu .btn.credenciamento-no-mec.good, .feeling-menu .btn.credenciamento-no-mec.good, .feeling-icon.credenciamento-no-mec.good, .mec-icon.credenciamento-no-mec.good, .selected .mec-menu .btn.credenciamento-no-mec.good, .selected .feeling-menu .btn.credenciamento-no-mec.good, .selected .feeling-icon.credenciamento-no-mec.good, .selected .mec-icon.credenciamento-no-mec.good {
   background-color: #27ae60;
   background-position: -165px -64px;
 }
-.mec-menu .btn.credenciamento-no-mec.neutral, .feeling-menu .btn.credenciamento-no-mec.neutral, .feeling-icon.credenciamento-no-mec.neutral, .mec-icon.credenciamento-no-mec.neutral {
+.mec-menu .btn.credenciamento-no-mec.neutral, .feeling-menu .btn.credenciamento-no-mec.neutral, .feeling-icon.credenciamento-no-mec.neutral, .mec-icon.credenciamento-no-mec.neutral, .selected .mec-menu .btn.credenciamento-no-mec.neutral, .selected .feeling-menu .btn.credenciamento-no-mec.neutral, .selected .feeling-icon.credenciamento-no-mec.neutral, .selected .mec-icon.credenciamento-no-mec.neutral {
   background-color: #2980b9;
   background-position: -165px -64px;
 }
-.mec-menu .btn.credenciamento-no-mec.bad, .feeling-menu .btn.credenciamento-no-mec.bad, .feeling-icon.credenciamento-no-mec.bad, .mec-icon.credenciamento-no-mec.bad {
+.mec-menu .btn.credenciamento-no-mec.bad, .feeling-menu .btn.credenciamento-no-mec.bad, .feeling-icon.credenciamento-no-mec.bad, .mec-icon.credenciamento-no-mec.bad, .selected .mec-menu .btn.credenciamento-no-mec.bad, .selected .feeling-menu .btn.credenciamento-no-mec.bad, .selected .feeling-icon.credenciamento-no-mec.bad, .selected .mec-icon.credenciamento-no-mec.bad {
   background-color: #c0392b;
   background-position: -165px -64px;
 }
-.mec-menu .btn.preco, .feeling-menu .btn.preco, .feeling-icon.preco, .mec-icon.preco {
+.mec-menu .btn.preco, .feeling-menu .btn.preco, .feeling-icon.preco, .mec-icon.preco, .selected .mec-menu .btn.preco, .selected .feeling-menu .btn.preco, .selected .feeling-icon.preco, .selected .mec-icon.preco {
   background-position: -198px -0px;
 }
-.mec-menu .btn.preco:hover, .mec-menu .btn.preco:active, .mec-menu .btn.preco.active, .feeling-menu .btn.preco:hover, .feeling-menu .btn.preco:active, .feeling-menu .btn.preco.active, .feeling-icon.preco:hover, .feeling-icon.preco:active, .feeling-icon.preco.active, .mec-icon.preco:hover, .mec-icon.preco:active, .mec-icon.preco.active {
+.mec-menu .btn.preco:hover, .mec-menu .btn.preco:active, .mec-menu .btn.preco.active, .feeling-menu .btn.preco:hover, .feeling-menu .btn.preco:active, .feeling-menu .btn.preco.active, .feeling-icon.preco:hover, .feeling-icon.preco:active, .feeling-icon.preco.active, .mec-icon.preco:hover, .mec-icon.preco:active, .mec-icon.preco.active, .selected .mec-menu .btn.preco:hover, .selected .mec-menu .btn.preco:active, .selected .mec-menu .btn.preco.active, .selected .feeling-menu .btn.preco:hover, .selected .feeling-menu .btn.preco:active, .selected .feeling-menu .btn.preco.active, .selected .feeling-icon.preco:hover, .selected .feeling-icon.preco:active, .selected .feeling-icon.preco.active, .selected .mec-icon.preco:hover, .selected .mec-icon.preco:active, .selected .mec-icon.preco.active {
   background-position: -198px -32px;
 }
-.mec-menu .btn.preco.good, .feeling-menu .btn.preco.good, .feeling-icon.preco.good, .mec-icon.preco.good {
+.mec-menu .btn.preco.good, .feeling-menu .btn.preco.good, .feeling-icon.preco.good, .mec-icon.preco.good, .selected .mec-menu .btn.preco.good, .selected .feeling-menu .btn.preco.good, .selected .feeling-icon.preco.good, .selected .mec-icon.preco.good {
   background-color: #27ae60;
   background-position: -198px -64px;
 }
-.mec-menu .btn.preco.neutral, .feeling-menu .btn.preco.neutral, .feeling-icon.preco.neutral, .mec-icon.preco.neutral {
+.mec-menu .btn.preco.neutral, .feeling-menu .btn.preco.neutral, .feeling-icon.preco.neutral, .mec-icon.preco.neutral, .selected .mec-menu .btn.preco.neutral, .selected .feeling-menu .btn.preco.neutral, .selected .feeling-icon.preco.neutral, .selected .mec-icon.preco.neutral {
   background-color: #2980b9;
   background-position: -198px -64px;
 }
-.mec-menu .btn.preco.bad, .feeling-menu .btn.preco.bad, .feeling-icon.preco.bad, .mec-icon.preco.bad {
+.mec-menu .btn.preco.bad, .feeling-menu .btn.preco.bad, .feeling-icon.preco.bad, .mec-icon.preco.bad, .selected .mec-menu .btn.preco.bad, .selected .feeling-menu .btn.preco.bad, .selected .feeling-icon.preco.bad, .selected .mec-icon.preco.bad {
   background-color: #c0392b;
   background-position: -198px -64px;
 }
-.mec-menu .btn.qualidade-de-ensino, .feeling-menu .btn.qualidade-de-ensino, .feeling-icon.qualidade-de-ensino, .mec-icon.qualidade-de-ensino {
+.mec-menu .btn.qualidade-de-ensino, .feeling-menu .btn.qualidade-de-ensino, .feeling-icon.qualidade-de-ensino, .mec-icon.qualidade-de-ensino, .selected .mec-menu .btn.qualidade-de-ensino, .selected .feeling-menu .btn.qualidade-de-ensino, .selected .feeling-icon.qualidade-de-ensino, .selected .mec-icon.qualidade-de-ensino {
   background-position: -231px -0px;
 }
-.mec-menu .btn.qualidade-de-ensino:hover, .mec-menu .btn.qualidade-de-ensino:active, .mec-menu .btn.qualidade-de-ensino.active, .feeling-menu .btn.qualidade-de-ensino:hover, .feeling-menu .btn.qualidade-de-ensino:active, .feeling-menu .btn.qualidade-de-ensino.active, .feeling-icon.qualidade-de-ensino:hover, .feeling-icon.qualidade-de-ensino:active, .feeling-icon.qualidade-de-ensino.active, .mec-icon.qualidade-de-ensino:hover, .mec-icon.qualidade-de-ensino:active, .mec-icon.qualidade-de-ensino.active {
+.mec-menu .btn.qualidade-de-ensino:hover, .mec-menu .btn.qualidade-de-ensino:active, .mec-menu .btn.qualidade-de-ensino.active, .feeling-menu .btn.qualidade-de-ensino:hover, .feeling-menu .btn.qualidade-de-ensino:active, .feeling-menu .btn.qualidade-de-ensino.active, .feeling-icon.qualidade-de-ensino:hover, .feeling-icon.qualidade-de-ensino:active, .feeling-icon.qualidade-de-ensino.active, .mec-icon.qualidade-de-ensino:hover, .mec-icon.qualidade-de-ensino:active, .mec-icon.qualidade-de-ensino.active, .selected .mec-menu .btn.qualidade-de-ensino:hover, .selected .mec-menu .btn.qualidade-de-ensino:active, .selected .mec-menu .btn.qualidade-de-ensino.active, .selected .feeling-menu .btn.qualidade-de-ensino:hover, .selected .feeling-menu .btn.qualidade-de-ensino:active, .selected .feeling-menu .btn.qualidade-de-ensino.active, .selected .feeling-icon.qualidade-de-ensino:hover, .selected .feeling-icon.qualidade-de-ensino:active, .selected .feeling-icon.qualidade-de-ensino.active, .selected .mec-icon.qualidade-de-ensino:hover, .selected .mec-icon.qualidade-de-ensino:active, .selected .mec-icon.qualidade-de-ensino.active {
   background-position: -231px -32px;
 }
-.mec-menu .btn.qualidade-de-ensino.good, .feeling-menu .btn.qualidade-de-ensino.good, .feeling-icon.qualidade-de-ensino.good, .mec-icon.qualidade-de-ensino.good {
+.mec-menu .btn.qualidade-de-ensino.good, .feeling-menu .btn.qualidade-de-ensino.good, .feeling-icon.qualidade-de-ensino.good, .mec-icon.qualidade-de-ensino.good, .selected .mec-menu .btn.qualidade-de-ensino.good, .selected .feeling-menu .btn.qualidade-de-ensino.good, .selected .feeling-icon.qualidade-de-ensino.good, .selected .mec-icon.qualidade-de-ensino.good {
   background-color: #27ae60;
   background-position: -231px -64px;
 }
-.mec-menu .btn.qualidade-de-ensino.neutral, .feeling-menu .btn.qualidade-de-ensino.neutral, .feeling-icon.qualidade-de-ensino.neutral, .mec-icon.qualidade-de-ensino.neutral {
+.mec-menu .btn.qualidade-de-ensino.neutral, .feeling-menu .btn.qualidade-de-ensino.neutral, .feeling-icon.qualidade-de-ensino.neutral, .mec-icon.qualidade-de-ensino.neutral, .selected .mec-menu .btn.qualidade-de-ensino.neutral, .selected .feeling-menu .btn.qualidade-de-ensino.neutral, .selected .feeling-icon.qualidade-de-ensino.neutral, .selected .mec-icon.qualidade-de-ensino.neutral {
   background-color: #2980b9;
   background-position: -231px -64px;
 }
-.mec-menu .btn.qualidade-de-ensino.bad, .feeling-menu .btn.qualidade-de-ensino.bad, .feeling-icon.qualidade-de-ensino.bad, .mec-icon.qualidade-de-ensino.bad {
+.mec-menu .btn.qualidade-de-ensino.bad, .feeling-menu .btn.qualidade-de-ensino.bad, .feeling-icon.qualidade-de-ensino.bad, .mec-icon.qualidade-de-ensino.bad, .selected .mec-menu .btn.qualidade-de-ensino.bad, .selected .feeling-menu .btn.qualidade-de-ensino.bad, .selected .feeling-icon.qualidade-de-ensino.bad, .selected .mec-icon.qualidade-de-ensino.bad {
   background-color: #c0392b;
   background-position: -231px -64px;
 }
-.mec-menu .btn.infraestrutura, .feeling-menu .btn.infraestrutura, .feeling-icon.infraestrutura, .mec-icon.infraestrutura {
+.mec-menu .btn.infraestrutura, .feeling-menu .btn.infraestrutura, .feeling-icon.infraestrutura, .mec-icon.infraestrutura, .selected .mec-menu .btn.infraestrutura, .selected .feeling-menu .btn.infraestrutura, .selected .feeling-icon.infraestrutura, .selected .mec-icon.infraestrutura {
   background-position: -264px -0px;
 }
-.mec-menu .btn.infraestrutura:hover, .mec-menu .btn.infraestrutura:active, .mec-menu .btn.infraestrutura.active, .feeling-menu .btn.infraestrutura:hover, .feeling-menu .btn.infraestrutura:active, .feeling-menu .btn.infraestrutura.active, .feeling-icon.infraestrutura:hover, .feeling-icon.infraestrutura:active, .feeling-icon.infraestrutura.active, .mec-icon.infraestrutura:hover, .mec-icon.infraestrutura:active, .mec-icon.infraestrutura.active {
+.mec-menu .btn.infraestrutura:hover, .mec-menu .btn.infraestrutura:active, .mec-menu .btn.infraestrutura.active, .feeling-menu .btn.infraestrutura:hover, .feeling-menu .btn.infraestrutura:active, .feeling-menu .btn.infraestrutura.active, .feeling-icon.infraestrutura:hover, .feeling-icon.infraestrutura:active, .feeling-icon.infraestrutura.active, .mec-icon.infraestrutura:hover, .mec-icon.infraestrutura:active, .mec-icon.infraestrutura.active, .selected .mec-menu .btn.infraestrutura:hover, .selected .mec-menu .btn.infraestrutura:active, .selected .mec-menu .btn.infraestrutura.active, .selected .feeling-menu .btn.infraestrutura:hover, .selected .feeling-menu .btn.infraestrutura:active, .selected .feeling-menu .btn.infraestrutura.active, .selected .feeling-icon.infraestrutura:hover, .selected .feeling-icon.infraestrutura:active, .selected .feeling-icon.infraestrutura.active, .selected .mec-icon.infraestrutura:hover, .selected .mec-icon.infraestrutura:active, .selected .mec-icon.infraestrutura.active {
   background-position: -264px -32px;
 }
-.mec-menu .btn.infraestrutura.good, .feeling-menu .btn.infraestrutura.good, .feeling-icon.infraestrutura.good, .mec-icon.infraestrutura.good {
+.mec-menu .btn.infraestrutura.good, .feeling-menu .btn.infraestrutura.good, .feeling-icon.infraestrutura.good, .mec-icon.infraestrutura.good, .selected .mec-menu .btn.infraestrutura.good, .selected .feeling-menu .btn.infraestrutura.good, .selected .feeling-icon.infraestrutura.good, .selected .mec-icon.infraestrutura.good {
   background-color: #27ae60;
   background-position: -264px -64px;
 }
-.mec-menu .btn.infraestrutura.neutral, .feeling-menu .btn.infraestrutura.neutral, .feeling-icon.infraestrutura.neutral, .mec-icon.infraestrutura.neutral {
+.mec-menu .btn.infraestrutura.neutral, .feeling-menu .btn.infraestrutura.neutral, .feeling-icon.infraestrutura.neutral, .mec-icon.infraestrutura.neutral, .selected .mec-menu .btn.infraestrutura.neutral, .selected .feeling-menu .btn.infraestrutura.neutral, .selected .feeling-icon.infraestrutura.neutral, .selected .mec-icon.infraestrutura.neutral {
   background-color: #2980b9;
   background-position: -264px -64px;
 }
-.mec-menu .btn.infraestrutura.bad, .feeling-menu .btn.infraestrutura.bad, .feeling-icon.infraestrutura.bad, .mec-icon.infraestrutura.bad {
+.mec-menu .btn.infraestrutura.bad, .feeling-menu .btn.infraestrutura.bad, .feeling-icon.infraestrutura.bad, .mec-icon.infraestrutura.bad, .selected .mec-menu .btn.infraestrutura.bad, .selected .feeling-menu .btn.infraestrutura.bad, .selected .feeling-icon.infraestrutura.bad, .selected .mec-icon.infraestrutura.bad {
   background-color: #c0392b;
   background-position: -264px -64px;
 }
-.mec-menu .btn.relacionamento, .feeling-menu .btn.relacionamento, .feeling-icon.relacionamento, .mec-icon.relacionamento {
+.mec-menu .btn.relacionamento, .feeling-menu .btn.relacionamento, .feeling-icon.relacionamento, .mec-icon.relacionamento, .selected .mec-menu .btn.relacionamento, .selected .feeling-menu .btn.relacionamento, .selected .feeling-icon.relacionamento, .selected .mec-icon.relacionamento {
   background-position: -297px -0px;
 }
-.mec-menu .btn.relacionamento:hover, .mec-menu .btn.relacionamento:active, .mec-menu .btn.relacionamento.active, .feeling-menu .btn.relacionamento:hover, .feeling-menu .btn.relacionamento:active, .feeling-menu .btn.relacionamento.active, .feeling-icon.relacionamento:hover, .feeling-icon.relacionamento:active, .feeling-icon.relacionamento.active, .mec-icon.relacionamento:hover, .mec-icon.relacionamento:active, .mec-icon.relacionamento.active {
+.mec-menu .btn.relacionamento:hover, .mec-menu .btn.relacionamento:active, .mec-menu .btn.relacionamento.active, .feeling-menu .btn.relacionamento:hover, .feeling-menu .btn.relacionamento:active, .feeling-menu .btn.relacionamento.active, .feeling-icon.relacionamento:hover, .feeling-icon.relacionamento:active, .feeling-icon.relacionamento.active, .mec-icon.relacionamento:hover, .mec-icon.relacionamento:active, .mec-icon.relacionamento.active, .selected .mec-menu .btn.relacionamento:hover, .selected .mec-menu .btn.relacionamento:active, .selected .mec-menu .btn.relacionamento.active, .selected .feeling-menu .btn.relacionamento:hover, .selected .feeling-menu .btn.relacionamento:active, .selected .feeling-menu .btn.relacionamento.active, .selected .feeling-icon.relacionamento:hover, .selected .feeling-icon.relacionamento:active, .selected .feeling-icon.relacionamento.active, .selected .mec-icon.relacionamento:hover, .selected .mec-icon.relacionamento:active, .selected .mec-icon.relacionamento.active {
   background-position: -297px -32px;
 }
-.mec-menu .btn.relacionamento.good, .feeling-menu .btn.relacionamento.good, .feeling-icon.relacionamento.good, .mec-icon.relacionamento.good {
+.mec-menu .btn.relacionamento.good, .feeling-menu .btn.relacionamento.good, .feeling-icon.relacionamento.good, .mec-icon.relacionamento.good, .selected .mec-menu .btn.relacionamento.good, .selected .feeling-menu .btn.relacionamento.good, .selected .feeling-icon.relacionamento.good, .selected .mec-icon.relacionamento.good {
   background-color: #27ae60;
   background-position: -297px -64px;
 }
-.mec-menu .btn.relacionamento.neutral, .feeling-menu .btn.relacionamento.neutral, .feeling-icon.relacionamento.neutral, .mec-icon.relacionamento.neutral {
+.mec-menu .btn.relacionamento.neutral, .feeling-menu .btn.relacionamento.neutral, .feeling-icon.relacionamento.neutral, .mec-icon.relacionamento.neutral, .selected .mec-menu .btn.relacionamento.neutral, .selected .feeling-menu .btn.relacionamento.neutral, .selected .feeling-icon.relacionamento.neutral, .selected .mec-icon.relacionamento.neutral {
   background-color: #2980b9;
   background-position: -297px -64px;
 }
-.mec-menu .btn.relacionamento.bad, .feeling-menu .btn.relacionamento.bad, .feeling-icon.relacionamento.bad, .mec-icon.relacionamento.bad {
+.mec-menu .btn.relacionamento.bad, .feeling-menu .btn.relacionamento.bad, .feeling-icon.relacionamento.bad, .mec-icon.relacionamento.bad, .selected .mec-menu .btn.relacionamento.bad, .selected .feeling-menu .btn.relacionamento.bad, .selected .feeling-icon.relacionamento.bad, .selected .mec-icon.relacionamento.bad {
   background-color: #c0392b;
   background-position: -297px -64px;
 }
@@ -676,8 +733,10 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 
 /* TAGS DROPDOWN */
 .tags-menu .dropdown-menu {
-  background: white;
   width: 190px;
+}
+.tags-menu .dropdown-menu .btn-block {
+  margin-bottom: 1px;
 }
 .tags-menu .dropdown-menu .form-control {
   height: 30px;
@@ -686,8 +745,8 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   margin: 10px 0;
 }
 .tags-menu .dropdown-menu .form-group {
-  padding: 0 5px;
-  margin: 0;
+  background: #e9eaeb;
+  padding: 5px 10px;
 }
 .tags-menu .dropdown-menu .checkbox {
   background: #e9eaeb;
@@ -708,13 +767,13 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 /* STATUS DROPDOWN */
 .dropdown-menu.status-menu li a {
   font-weight: bold;
-  color: #cccccc;
+  color: #999999;
   text-transform: uppercase;
 }
-.dropdown-menu.status-menu li a.aberto {
+.dropdown-menu.status-menu li a.em-andamento {
   color: #d35400;
 }
-.dropdown-menu.status-menu li a.aguardando {
+.dropdown-menu.status-menu li a.encaminhado {
   color: #e67e22;
 }
 .dropdown-menu.status-menu li a.fechado {
@@ -756,32 +815,32 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   right: 0;
   top: -5px;
 }
-.ribbon.aberto, .ribbon.aguardando, .ribbon.fechado {
+.ribbon.em-andamento, .ribbon.encaminhado, .ribbon.fechado {
   background-color: #dddddd;
   /* CORES STATUS */
 }
-.ribbon.aberto:before, .ribbon.aguardando:before, .ribbon.fechado:before {
+.ribbon.em-andamento:before, .ribbon.encaminhado:before, .ribbon.fechado:before {
   border-right: 10px solid #dddddd;
 }
-.ribbon.aberto:after, .ribbon.aguardando:after, .ribbon.fechado:after {
+.ribbon.em-andamento:after, .ribbon.encaminhado:after, .ribbon.fechado:after {
   border-left: 5px solid #dddddd;
 }
-.ribbon.aberto:hover, .ribbon.aguardando:hover, .ribbon.fechado:hover {
+.ribbon.em-andamento:hover, .ribbon.encaminhado:hover, .ribbon.fechado:hover {
   background: #eaeaea;
 }
-.ribbon.aberto:hover:before, .ribbon.aguardando:hover:before, .ribbon.fechado:hover:before {
+.ribbon.em-andamento:hover:before, .ribbon.encaminhado:hover:before, .ribbon.fechado:hover:before {
   border-right: 10px solid #eaeaea;
 }
-.ribbon.aberto:hover:after, .ribbon.aguardando:hover:after, .ribbon.fechado:hover:after {
+.ribbon.em-andamento:hover:after, .ribbon.encaminhado:hover:after, .ribbon.fechado:hover:after {
   border-left: 5px solid #eaeaea;
 }
-.ribbon.aberto.aberto, .ribbon.aguardando.aberto, .ribbon.fechado.aberto {
+.ribbon.em-andamento.em-andamento, .ribbon.encaminhado.em-andamento, .ribbon.fechado.em-andamento {
   color: #d35400;
 }
-.ribbon.aberto.aguardando, .ribbon.aguardando.aguardando, .ribbon.fechado.aguardando {
+.ribbon.em-andamento.encaminhado, .ribbon.encaminhado.encaminhado, .ribbon.fechado.encaminhado {
   color: #e67e22;
 }
-.ribbon.aberto.fechado, .ribbon.aguardando.fechado, .ribbon.fechado.fechado {
+.ribbon.em-andamento.fechado, .ribbon.encaminhado.fechado, .ribbon.fechado.fechado {
   color: #f39c12;
 }
 
@@ -811,17 +870,46 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .quote {
   margin: 0 0 30px 0;
   border: 3px solid transparent;
-  /*
-  	&.selected {
-  		border-color: darken($box-bg, 10%);
-  		.quote-content {background-color: lighten($box-bg, 5%);	}
-  		.accordion-hidden {background-color: lighten($box-bg, 15%)}
-  		
-  	}
-  */
   /*quote-content*/
+  /* Quote footer */
   /*footer*/
   /* citação pequena */
+}
+.quote.selected {
+  border-color: #6e7e8b;
+}
+.quote.selected .accordion-hidden {
+  background-color: #deeaf0;
+}
+.quote.selected footer {
+  background-color: #d3e3eb;
+}
+.quote.selected .btn-group .btn, .quote.selected .accordion-trigger, .quote.selected footer .btn, .quote.selected .sidebar .btn.social, .quote.selected .quote-content .status-btn {
+  background-color: #c4d3db;
+}
+.quote.selected .btn-group .btn:hover, .quote.selected .accordion-trigger:hover, .quote.selected footer .btn:hover, .quote.selected .sidebar .btn.social:hover, .quote.selected .quote-content .status-btn:hover {
+  background-color: #d4dfe5;
+}
+.quote.selected .quote-content {
+  background-color: #d3e3eb;
+}
+.quote.selected .quote-content .status-btn:before {
+  border-right: 10px solid #c4d3db;
+}
+.quote.selected .quote-content .status-btn:after {
+  border-left: 10px solid #c4d3db;
+}
+.quote.selected .quote-content .status-btn:hover:before {
+  border-right: 10px solid #d4dfe5;
+}
+.quote.selected .quote-content .status-btn:hover:after {
+  border-left: 10px solid #d4dfe5;
+}
+.quote.selected .quote-content .sidebar .tags, .quote.selected .quote-content .sidebar .tags-menu .tags-btn {
+  background-color: #c4d3db;
+}
+.quote.selected .quote-content .sidebar .leitura-btn {
+  background: #dae4e9;
 }
 .quote .quote-content {
   position: relative;
@@ -903,6 +991,20 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   width: 100%;
   display: block;
   text-indent: 8px;
+}
+.quote .quote-content .sidebar .status-bar .status-btn.encaminhado, .quote .quote-content .sidebar .status-bar .status-btn.em-andamento, .quote .quote-content .sidebar .status-bar .status-btn.fechado {
+  padding: 5px 6px 3px;
+}
+.quote .quote-content .sidebar .status-bar .status-btn.encaminhado span, .quote .quote-content .sidebar .status-bar .status-btn.em-andamento span, .quote .quote-content .sidebar .status-bar .status-btn.fechado span {
+  font-size: 12px;
+  line-height: 1em;
+}
+.quote .quote-content .sidebar .status-bar .status-btn.encaminhado span small, .quote .quote-content .sidebar .status-bar .status-btn.em-andamento span small, .quote .quote-content .sidebar .status-bar .status-btn.fechado span small {
+  display: block;
+  text-transform: lowercase;
+  color: #999999;
+  font-weight: normal;
+  font-size: 10px;
 }
 .quote .quote-content .sidebar .status-bar .status-btn:hover {
   width: 166px;
@@ -989,19 +1091,17 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .quote .quote-content .sidebar .tags-menu .tags-btn {
   background-color: #e9eaeb;
   text-align: center;
-  color: #cccccc;
+  color: #999999;
   padding: 6px 9px;
 }
 .quote .quote-content .sidebar .tags-menu .tags-btn:hover {
   background-color: #f6f7f7;
 }
+.quote footer > .btn-group {
+  margin: 0 50px 0 0;
+}
 .quote footer {
   background-color: #f6f7f8;
-  /*MENU DO MEC*/
-  /*mec-menu*/
-}
-.quote footer .mec-menu {
-  margin: 0 66px;
 }
 .quote footer .feeling-menu .btn {
   width: 34px;
@@ -1014,14 +1114,28 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   height: 32px;
   margin: 0;
 }
-.quote .accordion-hidden {
+.quote .quote-historic {
   background-color: white;
-  padding: 0px 20px 20px 100px;
+  padding: 0px 20px 20px 20px;
   max-height: 300px;
   overflow: auto;
 }
+.quote .quote-historic dl dt {
+  width: 40px;
+  padding: 5px;
+}
+.quote .quote-historic dl dd {
+  margin: 0 0 20px 40px;
+}
+.quote .quote-historic dl dd .description {
+  background-color: #f6f7f8;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.quote .quote-historic dl dd .quote-small {
+  margin-bottom: 10px;
+}
 .quote.quote-small {
-  padding: 20px 0;
   border-bottom: 1px solid #e6e6e6;
   margin: 0;
   /*quote-content*/
@@ -1046,9 +1160,6 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 .quote.quote-small .quote-content .sidebar {
   width: 32px;
-}
-.quote.quote-small footer .mec-menu {
-  margin: 0 52px;
 }
 .quote.quote-small footer .quote-actions {
   float: right;
@@ -1252,7 +1363,8 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   margin: 10px 0;
 }
 #actions-bar #mec-dropdown .dropdown-menu li > a {
-  color: #999999;
+  background: #e9eaeb;
+  color: #666666;
   margin: 1px;
   padding: 5px;
 }
@@ -1294,6 +1406,9 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 #actions-bar #mec-dropdown .dropdown-menu li > a.good .mec-icon.relacionamento, #actions-bar #mec-dropdown .dropdown-menu li > a.neutral .mec-icon.relacionamento, #actions-bar #mec-dropdown .dropdown-menu li > a.bad .mec-icon.relacionamento {
   background-position: -297px -64px;
 }
+#actions-bar #mec-dropdown .dropdown-menu li > a:hover {
+  background: #f6f7f7;
+}
 #actions-bar #mec-dropdown .dropdown-menu li > a.good {
   background-color: #27ae60;
 }
@@ -1309,6 +1424,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 
 #actions-bar .container > .btn-group > .btn, #actions-bar .container > .btn-group > .dropdown > .btn {
+  background: white;
   text-transform: uppercase;
   padding: 8px 12px;
   border: none;

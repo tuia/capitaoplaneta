@@ -53,6 +53,12 @@
 	$foursquare-color: #0072b1;
 	$reclameaqui-color: #008751;
 
+	/* selected item */
+	$selected-bg: #D3E3EB;
+	$selected-light: #D3E3EB;
+	$selected-dark: #C4D3DB;
+	$selected-inverse: #6E7E8B;
+
 
 /* THE CSS */
 /*typography*/
@@ -64,6 +70,7 @@ body {background: $page-background; overflow-x: hidden}
 a:hover {text-decoration: none;}
 .badge {@include border-radius(3px);}
 label {font-weight: normal;}
+.badge.id {background-color: $lighter-text; color: $default-text; text-transform: uppercase; font-weight: normal; a {text-transform: lowercase;}}
 
 .good-txt {color: $good}
 .neutral-txt {color: $neutral}
@@ -71,6 +78,15 @@ label {font-weight: normal;}
 .good-bg {background-color: $good}
 .neutral-bg {background-color: $neutral}
 .bad-bg {background-color: $bad}
+
+.btn-default:hover { background-color: lighten($btn-default, 5%)}
+.btn-primary:hover { background-color: lighten($btn-primary, 5%)}
+.btn-darker:hover { background-color: lighten($btn-darker, 5%)}
+
+.dropdown .dropdown-menu {background-color: $btn-darker}
+.dropdown .dropdown-menu > li a {background-color: $btn-default; margin-bottom: 1px;}
+.dropdown .dropdown-menu > li a:hover {background-color: lighten($btn-default,5%)}
+.dropdown-menu .divider {background-color: transparent; border: none;}
 
 /*HELPERS*/
 .auto {
@@ -84,6 +100,21 @@ label {font-weight: normal;}
 
 /*Media queries breakpoints*/
 .container { width: 950px !important; padding: 0;}
+
+/* TÍTULOS */
+h1 {
+	font-size: 18px;
+	color: $dark-text;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 16px;
+	color: $dark-text;
+	font-weight: bold;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
 
 
 /* COMPONENTES */
@@ -228,7 +259,7 @@ label {font-weight: normal;}
 	}
 
 	/* BOTÕES DOS MENUS DO MEC E DE SENTIMENTO */
-	.mec-menu .btn, .feeling-menu .btn, .feeling-icon, .mec-icon {
+	.mec-menu .btn, .feeling-menu .btn, .feeling-icon, .mec-icon, .selected .mec-menu .btn, .selected .feeling-menu .btn, .selected .feeling-icon, .selected .mec-icon {
 	    background-image: url("../img/mec-feel-sprite.png");
 	    border: none !important;    
 	    height: 32px;
@@ -395,19 +426,16 @@ label {font-weight: normal;}
 	/* TAGS DROPDOWN */
 	.tags-menu {
 		.dropdown-menu {
-			background: $light-box-bg;
 			width: 190px;
 
-			.form-control {
-				height: 30px
-			}
+			.btn-block {margin-bottom: 1px}
 
-			.auto {
-				margin: 10px 0;
-			}
+			.form-control {	height: 30px}
+
+			.auto {	margin: 10px 0;	}
 			.form-group {
-				padding: 0 5px;
-				margin: 0;
+				background: $btn-default;
+				padding: 5px 10px;
 			}
 			.checkbox {
 				background: $btn-default;
@@ -418,9 +446,7 @@ label {font-weight: normal;}
 				font-size: .9em;
 				&:hover { background: lighten($btn-default, 5%);}
 
-				label {
-					display: block;
-				}
+				label {	display: block;	}
 			}
 		}
 	}/*tags-dropdown*/
@@ -432,10 +458,10 @@ label {font-weight: normal;}
 		li {
 			a {
 				font-weight: bold;
-				color: $lighter-text;
+				color: $light-text;
 				text-transform: uppercase;
-				&.aberto { color: $emergency;}
-				&.aguardando { color: $urgency;}
+				&.em-andamento { color: $emergency;}
+				&.encaminhado { color: $urgency;}
 				&.fechado { color: $alert;}
 			}
 			&.active a {background: $dark-box-bg;}
@@ -472,7 +498,7 @@ label {font-weight: normal;}
 		    top: -5px; 
 		}
 
-		&.aberto, &.aguardando, &.fechado {
+		&.em-andamento, &.encaminhado, &.fechado {
 			background-color: $btn-darker;
 			&:before {border-right: 10px solid $btn-darker;}
 			&:after {border-left: 5px solid $btn-darker;}
@@ -482,10 +508,10 @@ label {font-weight: normal;}
 				&:after {border-left: 5px solid lighten($btn-darker, 5%);}
 			}
 			/* CORES STATUS */
-			&.aberto {
+			&.em-andamento {
 				color: $emergency;
 			}
-			&.aguardando {
+			&.encaminhado {
 				color: $urgency;
 			}
 			&.fechado {
@@ -525,14 +551,35 @@ label {font-weight: normal;}
 .quote {
 	margin: 0 0 30px 0;
 	border: 3px solid transparent;
-/*
+
 	&.selected {
-		border-color: darken($box-bg, 10%);
-		.quote-content {background-color: lighten($box-bg, 5%);	}
-		.accordion-hidden {background-color: lighten($box-bg, 15%)}
-		
+		border-color: $selected-inverse;
+		.accordion-hidden {background-color: lighten($selected-light,3%)}
+		footer{background-color: $selected-light;}
+		.btn-group .btn, .accordion-trigger, footer .btn, .sidebar .btn.social, .quote-content .status-btn {
+			background-color: $selected-dark;
+			&:hover {background-color: lighten($selected-dark, 5%)}
+		}
+
+		.quote-content {
+			background-color: $selected-bg;
+
+			.status-btn {
+				&:before {border-right: 10px solid $selected-dark;}
+				&:after {border-left: 10px solid $selected-dark;}
+				&:hover {
+					&:before {border-right: 10px solid lighten($selected-dark, 5%);}
+					&:after {border-left: 10px solid lighten($selected-dark, 5%);}					
+				}
+			}
+			.sidebar {
+				.tags, .tags-menu .tags-btn {background-color: $selected-dark;}
+				.leitura-btn {background: lighten($selected-dark, 7%)}
+			}
+
+		}
 	}
-*/
+
 	.quote-content {
 		position: relative;
 			background-color: $light-box-bg;
@@ -607,11 +654,21 @@ label {font-weight: normal;}
 					-moz-transition: width .4s ease-in-out, right .4s ease-in-out;
 					-o-transition: width .4s ease-in-out, right .4s ease-in-out;
 					transition: width .4s ease-in-out, right .4s ease-in-out;
+
 					span {
 						overflow: hidden;
 						width: 100%;
 						display: block;
 						text-indent: 8px;
+					}
+
+					&.encaminhado, &.em-andamento, &.fechado {
+						padding: 5px 6px 3px;
+						span {
+							font-size: 12px;
+							line-height: 1em;
+							small {display: block; text-transform: lowercase; color: $light-text; font-weight: normal; font-size: 10px;}						
+						}
 					}
 
 					/*&:active, &:hover, &:link, &:visited, &:focus {color: #FFFFFF;}*/
@@ -698,7 +755,7 @@ label {font-weight: normal;}
 				.tags-btn {
 					background-color: $btn-default;
 				    text-align: center;
-				    color: $lighter-text;
+				    color: $light-text;
 				    padding: 6px 9px;
 				    &:hover { background-color: lighten($btn-default, 5%)}
 				}
@@ -707,11 +764,11 @@ label {font-weight: normal;}
 
 	}/*quote-content*/
 
+	/* Quote footer */
+	footer 	> .btn-group { margin: 0 50px 0 0}
+
 	footer {
 		background-color: $box-bg;
-
-		/*MENU DO MEC*/
-		.mec-menu {	margin: 0 66px;	}/*mec-menu*/
 
 		.feeling-menu {
 			.btn {
@@ -729,16 +786,30 @@ label {font-weight: normal;}
 		}
 	}/*footer*/
 
-	.accordion-hidden {
+	.quote-historic {
 		background-color: $light-box-bg;
-		padding: 0px 20px 20px 100px;
+		padding: 0px 20px 20px 20px;
 		max-height: 300px;
 		overflow: auto;
+		dl {
+			dt {
+				width: 40px;
+				padding: 5px;
+			}
+			dd {
+				margin: 0 0 20px 40px;
+				.description {
+					background-color: $box-bg;
+					padding: 5px 10px;
+					margin-bottom: 10px;
+				}
+				.quote-small {margin-bottom: 10px}
+			}
+		}
 	}
 
 	/* citação pequena */
 	&.quote-small {
-		padding: 20px 0;
 		border-bottom: 1px solid darken($light-box-bg, 10%);
 		margin: 0;
 
@@ -761,12 +832,10 @@ label {font-weight: normal;}
 		}/*quote-content*/
 
 		footer {
-			.mec-menu { margin: 0 52px}
 			.quote-actions {
 				float: right;
 			}
 		}/*footer*/
-
 	}
 
 

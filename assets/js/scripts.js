@@ -73,8 +73,8 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 		});
 
 
-	/*MUDANÇA DE STATUS*/
-	$('.status-bar .dropdown-menu .aberto, .status-bar .dropdown-menu .aguardando, .status-bar .dropdown-menu .fechado ').click( function() {
+	/*MUDANÇA DE STATUS
+	$('.status-bar .dropdown-menu .em-andamento, .status-bar .dropdown-menu .encaminhado, .status-bar .dropdown-menu .fechado ').click( function() {
 		var value = $(this).text(),
 		btn = $(this).parents('.status-bar').find('.status-btn');
 		
@@ -82,7 +82,7 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 		$(this).parent().addClass('active');
 
 		btn.find('span').text(value);
-		btn.removeClass('aberto').removeClass('aguardando').removeClass('fechado');
+		btn.removeClass('em-andamento').removeClass('encaminhado').removeClass('fechado');
 		btn.addClass(value);
 
 		$(this).parents('.dropdown-menu').find('a').show();
@@ -95,14 +95,14 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 	$('.status-btn').click( function() {
 		if ( !$(this).hasClass('atendimento') ) {
 			
-		  $(this).addClass('atendimento').addClass('aberto');
-		  $(this).find('span').text('aberto');
+		  $(this).addClass('atendimento').addClass('em-andamento');
+		  $(this).find('span').text('em-andamento');
 		  setTimeout( function() {
 		    $(this).parents('.dropdown.open').removeClass('open');
 		  }, 1000); 
 		  return false;
 		}
-	});
+	});*/
 
 
 	/*CHECKBOX*/
