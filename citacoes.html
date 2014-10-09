@@ -28,28 +28,65 @@
 
     <!--/PAINEL DE FILTROS-->
     <div id="filter-panel">
-      <a href="#" class="filter-toggle"><i class="fa fa-filter"></i></a>
-      <div class="filter-content">
 
-        <h2 class="inverse-text"><i class="fa fa-filter"></i> Filtrar</h2>
+      <!-- Split button -->
+      <div class="btn-group filter-btn-container">
+        <button type="button" class="btn" id="filter-toggle"><i class="fa fa-filter"></i></button>
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li>filtros salvos:</li>
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+
+      <div class="filter-content">
+        <div class="row">
+          <div class="col-xs-6">
+            <h2 class="inverse-text"><i class="fa fa-filter"></i> Filtrar citações</h2>
+          </div><!--/col-->
+          <div class="col-xs-6">
+            <div class="form-horizontal" role="form">
+              <div class="form-group">
+                <label for="" class="col-xs-6 control-label">filtros salvos</label>
+                <div class="col-xs-6">
+                  <select class="form-control input-sm">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div><!--/col-->
+        </div><!--/row-->
 
         <div class="row">
 
           <!--/GERAL-->
           <div class="col-xs-6">
+            <h4>Conteúdo</h4>
             <div class="row">
 
               <div class="col-xs-6">
 
                 <!--/CONTEÚDO-->
                 <div class="filter-group">
-                  <h3 class="inverse-text">conteudo da citação</h3>
+                  <h5 class="inverse-text">conteudo da citação</h5>
                   <input type="text" class="form-control search" placeholder="buscar...">
                 </div><!--/filter-group-->
 
                 <!--/MARCADORES-->
                 <div class="filter-group">
-                  <h3 class="inverse-text">marcadores</h3>
+                  <h5 class="inverse-text">marcadores</h5>
                   <div class="btn-group dropdown tags-menu">
                     <button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tag"></i> selecione <span class="caret"></span></button>
                     <div class="dropdown-menu" role="menu" aria-labelledby="dLabel">
@@ -83,7 +120,7 @@
 
                 <!--/PERÍODO-->
                 <div class="filter-group">
-                  <h3 class="inverse-text">período</h3>
+                  <h5 class="inverse-text">período</h5>
                   <div class="btn-group-vertical" data-toggle="buttons">
                     <label class="btn btn-default active">
                       <input type="radio" name="options" id="option1" checked> últimas 24h
@@ -107,22 +144,22 @@
 
                 <!--/HORÁRIO-->
                 <div class="filter-group horario">
-                  <h3 class="inverse-text">horário</h3>                
+                  <h5 class="inverse-text">horário</h5>                
                   <div class="btn-group" data-toggle="buttons">
                     <label class="btn btn-default active">
-                      <input type="radio" name="options" id="option1" checked> manhã
+                      <input type="checkbox" name="options" id="option1" checked> manhã
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option2"> tarde
+                      <input type="checkbox" name="options" id="option2"> tarde
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option3"> noite
+                      <input type="checkbox" name="options" id="option3"> noite
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option4"> madrugada
+                      <input type="checkbox" name="options" id="option4"> madrugada
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option5">
+                      <input type="checkbox" name="options" id="option5">
                       entre <input type="text" value="" class="input-small"> e <input type="text" value="" class="input-small"> 
                     </label>
                   </div><!--/btn-group-->
@@ -135,41 +172,45 @@
 
                 <!--/MÍDIAS-->
                 <div class="filter-group midias">
-                  <h3 class="inverse-text">mídias</h3>                
+                  <h5 class="inverse-text">mídias</h5>                
                   <div class="btn-group" data-toggle="buttons">
                     <label class="btn btn-default active">
-                      <input type="radio" name="options" id="option1" checked> <i class="fa fa-facebook"></i>
+                      <input type="checkbox" name="options" id="option1" checked> <i class="fa fa-facebook"></i>
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option2"> <i class="fa fa-twitter"></i>
+                      <input type="checkbox" name="options" id="option2"> <i class="fa fa-twitter"></i>
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option3"> <i class="fa fa-youtube"></i>
+                      <input type="checkbox" name="options" id="option3"> <i class="fa fa-youtube"></i>
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option4"> <i class="fa fa-google-plus"></i>
+                      <input type="checkbox" name="options" id="option4"> <i class="fa fa-google-plus"></i>
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option4"> <i class="fa fa-instagram"></i>
+                      <input type="checkbox" name="options" id="option4"> <i class="fa fa-instagram"></i>
                     </label>
                     <label class="btn btn-default active">
-                      <input type="radio" name="options" id="option5" checked> RA
+                      <input type="checkbox" name="options" id="option5" checked> RA
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option6"> <i class="fa fa-linkedin"></i>
+                      <input type="checkbox" name="options" id="option6"> <i class="fa fa-linkedin"></i>
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option7"> blog
+                      <input type="checkbox" name="options" id="option7"> blog
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option8"> <i class="fa fa-foursquare"></i>
+                      <input type="checkbox" name="options" id="option8"> <i class="fa fa-foursquare"></i>
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option9"> <i class="fa fa-flickr"></i>
+                      <input type="checkbox" name="options" id="option9"> <i class="fa fa-flickr"></i>
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option5">
+                      <input type="checkbox" name="options" id="option5">
                       fanpage
+                    </label>
+                    <label class="btn btn-default">
+                      <input type="checkbox" name="options" id="option5">
+                      mkt nas IES
                     </label>
                   </div><!--/btn-group-->
                 </div><!--/filter-group-->
@@ -177,16 +218,16 @@
 
                 <!--/SENTIMENTO-->
                 <div class="filter-group feeling">
-                  <h3 class="inverse-text">sentimento</h3>                
+                  <h5 class="inverse-text">sentimento</h5>                
                   <div class="btn-group" data-toggle="buttons">
                     <label class="btn btn-default active">
-                      <input type="radio" name="options" id="option1" checked> <i class="feeling-icon good"></i>
+                      <input type="checkbox" name="options" id="option1" checked> <i class="feeling-icon good"></i>
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option2"> <i class="feeling-icon neutral"></i>
+                      <input type="checkbox" name="options" id="option2"> <i class="feeling-icon neutral"></i>
                     </label>
                     <label class="btn btn-default">
-                      <input type="radio" name="options" id="option3"> <i class="feeling-icon bad"></i>
+                      <input type="checkbox" name="options" id="option3"> <i class="feeling-icon bad"></i>
                     </label>
                   </div><!--/btn-group-->
                 </div><!--/filter-group-->
@@ -194,7 +235,7 @@
 
                 <!--/LEITURA-->
                 <div class="filter-group leitura">
-                  <h3 class="inverse-text">leitura</h3>                
+                  <h5 class="inverse-text">leitura</h5>                
                   <div class="btn-group" data-toggle="buttons">
                     <label class="btn btn-default active">
                       <input type="radio" name="options" id="option1" checked> lido
@@ -207,8 +248,8 @@
 
 
                 <!--/CRM-->
-                <div class="filter-group leitura">
-                  <h3 class="inverse-text">CRM</h3>                
+                <div class="filter-group crm">
+                  <h5 class="inverse-text">CRM</h5>                
                   <div class="btn-group" data-toggle="buttons">
                     <label class="btn btn-default active">
                       <input type="radio" name="options" id="option1" checked> encaminhadas
@@ -226,26 +267,27 @@
           </div><!--/col-xs-6-->
 
           <div class="col-xs-3">
+            <h4>Atendimento</h4>
 
             <!--/ID-->
             <div class="filter-group">
-              <h3 class="inverse-text">ID</h3>
+              <h5 class="inverse-text">ID</h5>
               <input type="text" class="form-control search" placeholder="buscar...">
             </div><!--/filter-group-->
 
 
             <!--/STATUS-->
             <div class="filter-group status">
-              <h3 class="inverse-text">status</h3>            
+              <h5 class="inverse-text">status</h5>            
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-default active">
-                  <input type="radio" name="options" id="option1" checked> em andamento
+                  <input type="checkbox" name="options" id="option1" checked> em andamento
                 </label>
                 <label class="btn btn-default">
-                  <input type="radio" name="options" id="option2"> encaminhado
+                  <input type="checkbox" name="options" id="option2"> encaminhado
                 </label>
                 <label class="btn btn-default">
-                  <input type="radio" name="options" id="option3"> fechado
+                  <input type="checkbox" name="options" id="option3"> fechado
                 </label>
               </div><!--/btn-group-->
             </div><!--/filter-group-->
@@ -253,7 +295,7 @@
 
             <!--/NÍVEL DE ATENDIMENTO-->
             <div class="filter-group nivel-de-atendimento">
-              <h3 class="inverse-text">nível de atendimento</h3>                
+              <h5 class="inverse-text">nível de atendimento</h5>                
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-default active">
                   <input type="radio" name="options" id="option1" checked> 1
@@ -267,7 +309,7 @@
 
             <!--/ÚLTIMA INTERAÇÃO-->
             <div class="filter-group ultima-interacao">
-              <h3 class="inverse-text">última interação</h3>                
+              <h5 class="inverse-text">última interação</h5>                
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-default active">
                   <input type="radio" name="options" id="option1" checked> minha
@@ -281,7 +323,7 @@
 
             <!--/NATUREZA-->
             <div class="filter-group">
-              <h3 class="inverse-text">natureza</h3>
+              <h5 class="inverse-text">natureza</h5>
               <select class="form-control" placeholder="selecione">
                 <option>dúvida</option>
                 <option>reclamação</option>
@@ -292,7 +334,7 @@
 
             <!--/SETOR-->
             <div class="filter-group">
-              <h3 class="inverse-text">setor</h3>
+              <h5 class="inverse-text">setor</h5>
               <select class="form-control" placeholder="selecione">
                 <option>biblioteca</option>
                 <option>financeiro</option>
@@ -303,7 +345,7 @@
 
             <!--/SETOR-->
             <div class="filter-group">
-              <h3 class="inverse-text">referente a</h3>
+              <h5 class="inverse-text">referente a</h5>
               <select class="form-control" placeholder="selecione">
                 <option>biblioteca</option>
                 <option>financeiro</option>
@@ -314,16 +356,17 @@
           </div><!--/col-xs-3-->
 
           <div class="col-xs-3">
+            <h4>Usuário</h4>
 
             <!--/USUARIO-->
             <div class="filter-group">
-              <h3 class="inverse-text">usuário específico</h3>
+              <h5 class="inverse-text">usuário específico</h5>
               <input type="text" class="form-control search" placeholder="buscar...">
             </div><!--/filter-group-->
 
             <!--/-->
             <div class="filter-group">
-              <h3 class="inverse-text">grupo de usuários</h3>
+              <h5 class="inverse-text">grupo de usuários</h5>
               <select class="form-control" placeholder="selecione">
                 <option>a</option>
                 <option>b</option>
@@ -332,7 +375,7 @@
 
             <!--/-->
             <div class="filter-group">
-              <h3 class="inverse-text">sexo</h3>
+              <h5 class="inverse-text">sexo</h5>
               <select class="form-control" placeholder="selecione">
                 <option>a</option>
                 <option>b</option>
@@ -341,7 +384,7 @@
 
             <!--/-->
             <div class="filter-group">
-              <h3 class="inverse-text">curso</h3>
+              <h5 class="inverse-text">curso</h5>
               <select class="form-control" placeholder="selecione">
                 <option>a</option>
                 <option>b</option>
@@ -350,7 +393,7 @@
 
             <!--/-->
             <div class="filter-group">
-              <h3 class="inverse-text">campus</h3>
+              <h5 class="inverse-text">campus</h5>
               <select class="form-control" placeholder="selecione">
                 <option>a</option>
                 <option>b</option>
@@ -359,7 +402,7 @@
 
             <!--/-->
             <div class="filter-group">
-              <h3 class="inverse-text">turno</h3>
+              <h5 class="inverse-text">turno</h5>
               <select class="form-control" placeholder="selecione">
                 <option>a</option>
                 <option>b</option>
@@ -368,6 +411,22 @@
             
           </div><!--/col-xs-3-->
         </div><!--/row-->
+
+        <footer>
+          <div class="pull-left">            
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> desconsiderar citações oficiais da instituição
+              </label>
+            </div>
+          </div>
+          <div class="pull-right">
+            <a href="#">limpar filtro</a>
+            <a href="#" class="btn btn-default btn-lg">salvar filtro</a>
+            <a href="#" class="btn btn-primary btn-lg">filtrar</a>
+          </div>
+          <span class="clearfix"></span>
+        </footer>
 
 
       </div><!--/filter-content-->
@@ -468,7 +527,7 @@
             <div class="painel">
               <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
               <div class="capital-social">
-                <h4>7,7</h4>
+                <h5>7,7</h5>
                 <p><strong>3.607</strong> citações</p>
               </div>
               <div class="menu">
@@ -577,7 +636,10 @@
           <div id="mec-dropdown" class="dropdown btn-group">
             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> MEC <span class="caret"></span></button>
             <div class="dropdown-menu" role="menu">
-              <p class="help-block">clique uma vez para definir como <span class="good-txt">positivo</span>, duas como <span class="neutral-txt">neutro</span> e três como <span class="bad-txt">negativo</span>.</p>
+            <div class="alert alert-warning alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <p>clique uma vez para definir como <span class="good-txt">positivo</span>, duas como <span class="neutral-txt">neutro</span> e três como <span class="bad-txt">negativo</span>.</p>
+            </div>
               <div class="auto">
                 <ul class="nav">
                   <li><a href="#" class="captacao"> <span class="mec-icon captacao"></span> captação</a></li>
@@ -1399,7 +1461,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Editar atendimento</h4>
+            <h5 class="modal-title" id="myModalLabel">Editar atendimento</h5>
           </div><!--/.modal-header-->
           <div class="modal-body">
 
@@ -1507,15 +1569,77 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Responder citação</h4>
+            <h5 class="modal-title" id="myModalLabel">Responder citação</h5>
           </div><!--/.modal-header-->
           <div class="modal-body">
-            ...
+
+          <div class="panel-group" id="accordion">
+
+            <!--/Citações a se responder-->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    5 citações <i class="fa fa-chevron-down pull-right"></i>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="quote quote-small">
+                    <div class="quote-content">
+                      <!--/IMAGEM DO USUÁRIO-->
+                      <div class="user-img">
+                        <img src="assets/img/instituicao-01.png" alt="nome da instituição">
+                      </div><!--/user-img-->
+                      <!--/CITAÇÃO-->
+                      <div class="quote-data"> 
+                        <h5>
+                          <a href="perfil-do-usuario.html" class="user-name">Você</a>
+                          <small><a href="citacao-original" target="blank" class="light">segunda-feira, 24/04/14 <span class="lighter">às</span> 11:30</a> <span class="lighter">via</span> <a href="fanpage" target="blank" class="light">fanpage</a></small>
+                        </h5>
+                        <p class="quote-txt">Olá, Gustavo! Você sabia que a Universus está oferecendo cursos gratuitos na área de saúde? Confira neste link, quem sabe você não se interessa? <a href="#">http://t.co/sUQhVfzv9x</a></p>
+                      </div><!--/.quote-data-->
+                        <!--/BARRA DE STATUS-->
+                        <div class="sidebar">
+                          <!--/REDE SOCIAL-->
+                          <a href="#" class="btn social twitter"><i class="fa fa-twitter"></i></a>
+                          <div class="clearfix"></div>
+                        </div><!--/sidebar-->
+                      <div class="clearfix"></div>
+                    </div><!--/quote-content-->
+                  </div>
+                </div>
+              </div><!--/panel-->
+
+              <!--/Respostas salvas-->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                      Respostas salvas <i class="fa fa-chevron-down pull-right"></i>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            
+          </div><!--/accordion-group-->
+          
+          <textarea class="form-control" rows="5" placefolder="mensagem"></textarea>
+            
           </div><!--/.modal-body-->
           <div class="modal-footer">
-            <a href="#" class="" data-dismiss="modal">cancelar</a> 
-            <button type="button" class="btn btn-default">Salvar resposta</button>
-            <button type="button" class="btn btn-primary">Enviar</button>
+            <a href="#" class="pull-left btn btn-default" data-toggle="tooltip" data-title="limpar"><i class="fa fa-trash"></i></a>
+            <div class="pull-right">
+              <span class="character-counter">40 caracteres</span>
+              <button type="button" class="btn btn-default">Salvar resposta</button>
+              <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
           </div><!--/.modal-footer-->
         </div><!--/.modal-content-->
       </div><!--/.modal-dialog-->
@@ -1527,7 +1651,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Encaminhar citação</h4>
+            <h5 class="modal-title" id="myModalLabel">Encaminhar citação</h5>
           </div><!--/.modal-header-->
           <div class="modal-body">
             ...
@@ -1547,7 +1671,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Novo marcador</h4>
+            <h5 class="modal-title" id="myModalLabel">Novo marcador</h5>
           </div><!--/.modal-header-->
           <div class="modal-body">
             <form role="form">
@@ -1570,7 +1694,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Gerenciar marcadores</h4>
+            <h5 class="modal-title" id="myModalLabel">Gerenciar marcadores</h5>
           </div><!--/.modal-header-->
           <div class="modal-body">
             ...

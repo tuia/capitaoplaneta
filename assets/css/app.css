@@ -177,22 +177,35 @@ label {
   background-color: #eaeaea;
 }
 
-.dropdown .dropdown-menu {
+.dropdown-menu {
   background-color: #dddddd;
 }
 
-.dropdown .dropdown-menu > li a {
+.dropdown-menu > li a {
   background-color: #e9eaeb;
   margin-bottom: 1px;
+  color: #666666;
 }
 
-.dropdown .dropdown-menu > li a:hover {
+.dropdown-menu > li a:hover {
   background-color: #f6f7f7;
 }
 
 .dropdown-menu .divider {
   background-color: transparent;
   border: none;
+}
+
+.character-counter {
+  text-align: right;
+  margin-right: 10px;
+  color: #999999;
+}
+
+a[data-toggle="collapse"] {
+  display: block;
+  padding: 10px 15px;
+  margin: -10px -15px;
 }
 
 /*HELPERS*/
@@ -1202,31 +1215,61 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   z-index: 1031;
   height: 100%;
   top: 0;
-  width: 800px;
-  left: -750px;
+  width: 890px;
+  left: -840px;
   /*filter content*/
 }
-#filter-panel .filter-toggle {
+#filter-panel .filter-btn-container {
+  float: right;
+  margin: 180px 0 0;
+  background: #3e5771;
+  height: 50px;
+}
+#filter-panel .filter-btn-container .btn {
+  height: 48px;
   background: #2c3e50;
   color: white;
-  width: 50px;
-  display: block;
   text-align: center;
-  font-size: 24px;
-  float: right;
-  height: 50px;
-  padding: 5px;
-  margin: 180px 0 0;
+  margin-top: 1px;
+}
+#filter-panel .filter-btn-container .btn:hover {
+  background-color: #3e5771;
+}
+#filter-panel .filter-btn-container #filter-toggle {
+  width: 33px;
+  display: block;
+  font-size: 18px;
+}
+#filter-panel .filter-btn-container .dropdown-toggle {
+  background: #354b60;
+  width: 10px;
+  margin-left: 1px;
+}
+#filter-panel .col-xs-6, #filter-panel .col-xs-3 {
+  padding: 0 13px;
 }
 #filter-panel .filter-content {
   background: #2c3e50;
   height: 100%;
-  padding: 20px;
-  width: 750px;
+  padding: 20px 30px;
+  width: 840px;
   float: left;
   /*filter group*/
 }
-#filter-panel .filter-content h3 {
+#filter-panel .filter-content h2 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+#filter-panel .filter-content h4 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 0 0 7px 0;
+  border-bottom: 1px solid rgba(240, 240, 240, 0.3);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#filter-panel .filter-content h5 {
   margin-bottom: 5px;
 }
 #filter-panel .filter-content .filter-group .btn-group {
@@ -1235,7 +1278,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 #filter-panel .filter-content .filter-group .btn-group-vertical {
   display: block;
 }
-#filter-panel .filter-content .filter-group select, #filter-panel .filter-content .filter-group .form-control {
+#filter-panel .filter-content .filter-group .form-control {
   height: 29px;
   padding: 2px 5px;
   background-color: #e9eaeb;
@@ -1246,6 +1289,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 #filter-panel .filter-content .filter-group .btn {
   font-size: 12px;
   margin: 0;
+  padding: 6px 5px;
 }
 #filter-panel .filter-content .filter-group.horario .btn {
   width: 50%;
@@ -1256,8 +1300,8 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 #filter-panel .filter-content .filter-group.midias .btn {
   width: 20%;
 }
-#filter-panel .filter-content .filter-group.midias .btn:last-child {
-  width: 100%;
+#filter-panel .filter-content .filter-group.midias .btn:last-child, #filter-panel .filter-content .filter-group.midias .btn:nth-last-child(2) {
+  width: 50%;
 }
 #filter-panel .filter-content .filter-group.feeling .btn {
   width: 33%;
@@ -1270,8 +1314,31 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   width: 50%;
   text-align: center;
 }
+#filter-panel .filter-content .filter-group.crm .btn {
+  white-space: normal;
+  height: 50px;
+}
 #filter-panel.open {
   left: 0;
+}
+#filter-panel footer {
+  background-color: #476481;
+  color: white;
+  padding: 20px 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 840px;
+  height: auto;
+}
+#filter-panel footer .btn {
+  margin-left: 15px;
+}
+#filter-panel footer .btn-primary {
+  text-transform: uppercase;
+}
+#filter-panel footer .pull-right a:first-child {
+  color: white;
 }
 
 /* CORES */
@@ -1280,15 +1347,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 #header {
   margin: -20px 0 40px;
   position: relative;
-  background: red;
   background-color: #6eaea8;
-  background-image: -webkit-gradient(linear, left top, right top, from(#6eaea8), to(#8fc0bc));
-  background-image: -webkit-linear-gradient(left, #6eaea8, #8fc0bc);
-  background-image: -moz-linear-gradient(left, #6eaea8, #8fc0bc);
-  background-image: -ms-linear-gradient(left, #6eaea8, #8fc0bc);
-  background-image: -o-linear-gradient(left, #6eaea8, #8fc0bc);
-  background-image: linear-gradient(left, #6eaea8, #8fc0bc);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#6eaea8', endColorStr='#8fc0bc',GradientType=1 );
   background-image: url("../img/textures/blocks.png");
   background-blend-mode: multiply;
   background-position: center center;
@@ -1371,7 +1430,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   text-align: center;
   padding: 0 5px;
 }
-#institution-box .institution-data .painel .capital-social h4 {
+#institution-box .institution-data .painel .capital-social h5 {
   font-size: 20px;
   font-weight: bold;
   line-height: 1em;
@@ -1432,7 +1491,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 /*reload-box*/
 /*actions bar*/
 #actions-bar {
-  padding: 15px 0;
+  padding: 5px 0;
 }
 #actions-bar.affix {
   background: #e2ebf1;
@@ -1453,16 +1512,16 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 #actions-bar .dropdown-menu a .mec-icon {
   margin-right: 0;
 }
-#actions-bar #mec-dropdown .help-block {
+#actions-bar #mec-dropdown .alert {
   font-size: .9em;
-  padding: 0 10px;
+  margin: 0 0 5px;
 }
 #actions-bar #mec-dropdown .dropdown-menu {
   min-width: 220px;
 }
 #actions-bar #mec-dropdown .dropdown-menu .auto {
   max-height: 200px;
-  margin: 10px 0;
+  margin: 0;
 }
 #actions-bar #mec-dropdown .dropdown-menu li > a {
   background: #e9eaeb;

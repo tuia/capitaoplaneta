@@ -155,7 +155,7 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 
 
 /*PAINEL FILTRAR */
-$('.filter-toggle').click( function() {
+$('#filter-toggle').click( function() {
 	var icon = $(this).find('.fa');
 
 	if ( $(this).hasClass('active') ) {

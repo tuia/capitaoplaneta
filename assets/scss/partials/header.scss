@@ -12,8 +12,7 @@
 #header {
 	margin: -20px 0 40px;
 	position: relative;
-	background: red;
-	@include background-gradient($startColor: $header-bg-gray, $endColor: lighten($header-bg-gray, 10%));
+	background-color: $header-bg-gray;
 	background-image: $blocks;
   	background-blend-mode: multiply;
   	background-position: center center;
@@ -72,6 +71,7 @@
 		.painel {
 			height: 53px;
 			background-color: rgba(255,255,255, .7);
+
 			.institution-feeling {
 				width: 53px;
 				height: 53px;
@@ -81,12 +81,13 @@
 					margin: 10px auto;
 				}
 			}
+
 			.capital-social {
 				width: 85px;
 				float: left;
 				text-align: center;
 				padding: 0 5px;
-				h4 {
+				h5 {
 					font-size: 20px;
 					font-weight: bold;
 					line-height: 1em;

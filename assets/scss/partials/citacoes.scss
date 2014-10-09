@@ -37,7 +37,7 @@
 
 /*actions bar*/
 #actions-bar {
-	padding: 15px 0;
+	padding: 5px 0;
 
 	&.affix {
 		background: $page-background;
@@ -55,15 +55,15 @@
 		}
 	}
 	#mec-dropdown {
-		.help-block {
+		.alert {
 			font-size: .9em;
-			padding: 0 10px;
+			margin: 0 0 5px;
 		}
 		.dropdown-menu {
 			min-width: 220px;
 			.auto {
 				max-height: 200px;
-				margin: 10px 0;
+				margin: 0;
 			}
 			li > a {
 				background: $btn-default;

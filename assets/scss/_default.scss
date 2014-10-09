@@ -88,10 +88,19 @@ label {font-weight: normal;}
 .btn-primary:hover { background-color: lighten($btn-primary, 5%)}
 .btn-darker:hover { background-color: lighten($btn-darker, 5%)}
 
-.dropdown .dropdown-menu {background-color: $btn-darker}
-.dropdown .dropdown-menu > li a {background-color: $btn-default; margin-bottom: 1px;}
-.dropdown .dropdown-menu > li a:hover {background-color: lighten($btn-default,5%)}
+.dropdown-menu {background-color: $btn-darker}
+.dropdown-menu > li a {background-color: $btn-default; margin-bottom: 1px; color: $default-text}
+.dropdown-menu > li a:hover {background-color: lighten($btn-default,5%)}
 .dropdown-menu .divider {background-color: transparent; border: none;}
+
+.character-counter {text-align: right; margin-right: 10px; color: $light-text}
+
+ a[data-toggle="collapse"] {
+ 	display: block;
+ 	padding: 10px 15px;
+ 	margin: -10px -15px;
+ }
+
 
 /*HELPERS*/
 .auto {
