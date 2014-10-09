@@ -65,8 +65,11 @@
 body, p {font-family: 'Roboto', sans-serif; color: $default-text}
 body {background: $page-background; overflow-x: hidden}
 
-.light {color: $light-text}
+.dark-text {color: $dark-text}
+.light-text {color: $light-text}
 .lighter-text {color: $lighter-text}
+.inverse-text {color: $inverse-text}
+
 a:hover {text-decoration: none;}
 .badge {@include border-radius(3px);}
 label {font-weight: normal;}
@@ -80,6 +83,8 @@ label {font-weight: normal;}
 .bad-bg {background-color: $bad}
 
 .btn-default:hover { background-color: lighten($btn-default, 5%)}
+.btn-default.active:hover { background-color: $btn-darker}
+
 .btn-primary:hover { background-color: lighten($btn-primary, 5%)}
 .btn-darker:hover { background-color: lighten($btn-darker, 5%)}
 
@@ -114,6 +119,11 @@ h2 {
 	font-weight: bold;
 	line-height: 1.2;
 	text-transform: uppercase;
+}
+h3 {
+	font-size: 14px;
+	color: $default-text;
+	line-height: 1.2;
 }
 
 
@@ -841,44 +851,4 @@ h2 {
 
 }/* citação */
 
-
-/* PAINEL DE FILTRO */
-#filter-panel {
-	color: $inverse-text;
-
-	position: fixed;
-    z-index: 1031;
-    height: 100%;
-    top: 0;
-
-	width: 800px;
-    left: -750px;
-
-    @include transition (left, .5s, ease-in-out);
-
-    .filter-toggle {
-    	background: $inverse-background;
-    	color: $inverse-text;
-    	width: 50px;
-
-    	display: block;
-    	text-align: center;
-    	font-size: 24px;
-    	float: right;
-    	height: 50px;
-    	padding: 5px;
-    	margin: 180px 0 0;
-    }
-
-    .filter-content {
-    	background: $inverse-background;
-    	height: 100%;
-    	padding: 20px;
-    	width: 750px;
-    	float: left;
-    }
-
-    &.open {
-    	left: 0;
-    }
-}
+#filter-panel {@include transition (left, .5s, ease-in-out);}

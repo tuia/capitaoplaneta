@@ -1,0 +1,9 @@
+.filter-group {
+  /*btn-group-vertical*/
+}
+.filter-group .btn-group-vertical {
+  display: block;
+}
+.filter-group .btn-group-vertical input {
+  width: 40px;
+}

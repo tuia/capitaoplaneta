@@ -1,22 +1,50 @@
 
 
 	/* CORES */
-	$header-bg-gray: #95A5A6;
+	$header-bg-gray: #6eaea8;
+
+	/* IMAGENS DE FUNDO */
+	$pixel: url('../img/textures/pixel.png');
+	$plaid: url('../img/textures/plaid.png');
+	$blocks: url('../img/textures/blocks.png');
 
 /* CABEÇALHO*/
 #header {
-	background-color: $header-bg-gray;
 	margin: -20px 0 40px;
+	position: relative;
+	background: red;
+	@include background-gradient($startColor: $header-bg-gray, $endColor: lighten($header-bg-gray, 10%));
+	background-image: $blocks;
+  	background-blend-mode: multiply;
+  	background-position: center center;
 }
+#header:before {
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: " ";
+	opacity: .35;
+}
+
 
 /*nav tabs*/
 .nav-tabs {
 	margin-bottom: -1px;
+	position: relative;
 	li {
 		margin-left: 10px;
 		a {
 			background-color: rgba(255,255,255,.4);
-			color: $light-text;
+			color: $default-text;
 		}
 	}
 }
@@ -25,6 +53,7 @@
 /*institution-box*/
 #institution-box {
 	padding: 30px 0;
+	position: relative;
 	.institution-image {
 		float: left;
 		width: 77px;
@@ -85,9 +114,6 @@
 				}
 				.dropdown {
 					.dropdown-toggle {
-						color: $light-text;
-						background-color: transparent;
-						padding: 2px 0;
 						font-size: .8em;
 					}
 
