@@ -472,6 +472,51 @@ h3 {
 	}/*tags-dropdown*/
 
 
+	/* CRUD DROPDOWN */
+	.crud-menu {		
+		.dropdown-toggle {
+			text-align: left;
+			position: relative;
+			.caret {
+				position: absolute;
+				top: 50%;
+				right: 10px;
+				margin: -3px 0;
+			}
+		}
+		.dropdown-menu {
+
+			.btn { margin-bottom: 1px}
+
+			.form-control {	height: 30px}
+
+			.auto {
+				margin: 10px 0;
+				.btn {
+					display: block;
+					text-align: left;
+				}
+			}
+			.form-group {
+				background: $btn-default;
+				padding: 5px 10px;
+			}
+		}
+	}
+	.new-item-form {
+		background-color: $box-bg;
+		padding: 10px;
+		p {margin-bottom: 0; padding: 5px 0}
+		h5 {
+			text-transform: uppercase; font-weight: bold; margin-top: 0;
+			small {text-transform: lowercase; color: $light-text; font-weight: normal;}
+		}
+		&.horizontal .form-group {margin-bottom: 0}
+		.close {margin-top: -8px}
+	}
+	#editat-modal .alert {margin: 0 0 -10px}
+
+
 	/* STATUS DROPDOWN */
 
 	.dropdown-menu.status-menu {
@@ -874,4 +919,14 @@ h3 {
 	}
 	.id {margin-top: 30px;}
 	a[data-toggle="modal"]{color: $default-text}
+}
+
+/* MODAL DE RESPOSTA*/
+#answer-modal {
+	.panel {
+		margin-bottom: 10px;
+		.quote-small {
+			margin-bottom: 10px;
+		}
+	}
 }

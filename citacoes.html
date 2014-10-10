@@ -1538,18 +1538,57 @@
                       </select>
                     </div>
                     <div class="form-group col-xs-6">
-                      <label for="exampleInputPassword1">setor</label>
-                      <select class="form-control">
-                        <option>biblioteca</option>
-                        <option>financeiro</option>
-                        <option>vestibular</option>
-                      </select>
-                    </div>
-                  </div>
+                      <label for="">setor</label>
+                      <div class="dropdown crud-menu">
+                        <button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown">selecione <span class="caret"></span></button>
+                        <div class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                          <form role="form">
+                            <div class="form-group">
+                              <label for="search">pesquisar:</label>
+                              <input type="search" class="form-control" id="" placeholder="">
+                            </div><!--/form-group-->
+                            <div class="auto">
+                              <a href="#" class="btn btn-default">biblioteca</a>
+                              <a href="#" class="btn btn-default">diretoria</a>
+                              <a href="#" class="btn btn-default">educação física</a>
+                              <a href="#" class="btn btn-default">pós-graduação</a>
+                              <a href="#" class="btn btn-default">vestibular</a>
+                            </div><!--/auto-->
+                            <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target=""><span class="glyphicon glyphicon-plus"></span> novo setor</a></div>
+                          </form>
+                        </div><!--/.dropdown-menu-->
+                      </div><!--/.crud-menu-->
+                    </div><!--/form-group-->
+                  </div><!--/row-->
                   <div class="form-group">
-                    <label for="exampleInputPassword1">título</label>
-                    <input type="text" class="form-control" id="" placeholder="">
-                  </div>
+                    <label for="">referente a</label>
+                    <div class="new-item-form">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <div class="dropdown crud-menu">
+                            <button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown">selecione <span class="caret"></span></button>
+                            <div class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                              <form role="form">
+                                <div class="form-group">
+                                  <label for="search">pesquisar:</label>
+                                  <input type="search" class="form-control" id="" placeholder="">
+                                </div><!--/form-group-->
+                                <div class="auto">
+                                  <a href="#" class="btn btn-default">empréstimo de livros</a>
+                                  <a href="#" class="btn btn-default">pagamento de multa</a>
+                                  <a href="#" class="btn btn-default">horário de funcionamento</a>                      
+                                </div><!--/auto-->
+                                <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target=""><span class="glyphicon glyphicon-plus"></span> novo referente</a></div>                          
+                              </form>
+                            </div><!--/.dropdown-menu-->
+                          </div><!--/.crud-menu-->                          
+                        </div><!--/col-xs-6-->
+                        <div class="col-xs-6">
+                          <p class="deadline">prazo padrão <strong>5 dias</strong> para resolução</p>                          
+                        </div><!--/col-xs-6-->
+                      </div><!--/row-->
+                    </div><!--/new-item-form-->
+                  </div><!--/form-group-->
                 </div><!--/accordion-hidden-->
               </div><!--/form-group-->
 
@@ -1573,18 +1612,63 @@
                       </select>
                     </div>
                     <div class="form-group col-xs-6">
-                      <label for="exampleInputPassword1">setor</label>
-                      <select class="form-control">
-                        <option>biblioteca</option>
-                        <option>financeiro</option>
-                        <option>vestibular</option>
-                      </select>
-                    </div>
-                  </div>
+                      <label for="">setor</label>
+                      <div class="new-item-form">
+                      <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">fechar</span></button>
+                      <h5>novo setor</h5>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="nome">
+                            </div>
+                          </div><!--/col-xs-12-->
+                        </div><!--/row-->
+                        <div class="row">
+                          <div class="col-xs-8">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="prazo">
+                              <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">horas <span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                  <li class="active"><a href="#">horas</a></li>
+                                  <li><a href="#">dias</a></li>
+                                </ul>
+                              </div><!-- /btn-group -->
+                            </div><!-- /input-group -->                          
+                          </div><!--/col-xs-->
+                          <div class="col-xs-4"><button type="submit" class="btn btn-primary btn-block">OK</button></div><!--/col-xs-->
+                        </div><!--/row-->
+                      </div><!--/new-item-form-->
+                    </div><!--/form-group-->
+                  </div><!--/row-->
                   <div class="form-group">
-                    <label for="exampleInputPassword1">título</label>
-                    <input type="text" class="form-control" id="" placeholder="">
-                  </div>
+                    <label for="">referente a</label>
+                    <div class="new-item-form horizontal">
+
+                      <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">fechar</span></button>
+                      <h5>novo referente <small>em biblioteca</small></h5>
+                      <div class="row">
+                        <div class="col-xs-5">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="nome">
+                          </div>
+                        </div><!--/col-xs-5-->
+                        <div class="col-xs-4">
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="prazo">
+                            <div class="input-group-btn">
+                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">horas <span class="caret"></span></button>
+                              <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                <li class="active"><a href="#">horas</a></li>
+                                <li><a href="#">dias</a></li>
+                              </ul>
+                            </div><!-- /btn-group -->
+                          </div><!-- /input-group -->                          
+                        </div><!--/col-xs-4-->
+                        <div class="col-xs-3"><button type="submit" class="btn btn-primary btn-block">OK</button></div><!--/col-xs-3-->
+                      </div><!--/row-->
+                    </div><!--/new-item-form-->
+                  </div><!--/form-group-->
                   <div class="alert alert-info" role="alert"><i class="fa fa-lightbulb-o fa-3x pull-left"></i>Existem outras 5 interações dentro deste atendimento. Ao editar, certifique-se que as alterações correspondam ao atendimento inteiro.</div>
                 </div><!--/accordion-hidden-->
               </div><!--/form-group-->
@@ -1593,6 +1677,7 @@
 
           </div><!--/.modal-body-->
           <div class="modal-footer">
+            <a href="#" class="btn btn-default pull-left"><i class="fa fa-times-circle-o"></i> não é atendimento</a>
             <button type="button" class="btn btn-default" data-dismiss="modal">cancelar</button>
             <button type="button" class="btn btn-primary">Enviar</button>
           </div><!--/.modal-footer-->
@@ -1627,7 +1712,7 @@
                     <div class="quote-content">
                       <!--/IMAGEM DO USUÁRIO-->
                       <div class="user-img">
-                        <img src="assets/img/instituicao-01.png" alt="nome da instituição">
+                        <img src="assets/img/user-01.jpg" alt="nome do usuário">
                       </div><!--/user-img-->
                       <!--/CITAÇÃO-->
                       <div class="quote-data"> 
@@ -1640,30 +1725,142 @@
                         <!--/BARRA DE STATUS-->
                         <div class="sidebar">
                           <!--/REDE SOCIAL-->
-                          <a href="#" class="btn social twitter"><i class="fa fa-twitter"></i></a>
+                          <a href="#" class="btn social facebook"><i class="fa fa-facebook"></i></a>
                           <div class="clearfix"></div>
                         </div><!--/sidebar-->
                       <div class="clearfix"></div>
                     </div><!--/quote-content-->
-                  </div>
-                </div>
-              </div><!--/panel-->
+                    <footer>
+                      <!--/SENTIMENTO-->
+                      <div class="feeling-menu btn-group">
+                        <button type="button" class="btn good" data-toggle="tooltip" title="positivo">positivo</button>
+                        <button type="button" class="btn neutral" data-toggle="tooltip" title="neutro">neutro</button>
+                        <button type="button" class="btn bad" data-toggle="tooltip" title="negativo">negativo</button>
+                      </div><!--/.feeling-menu .btn-droup-->
+                      <!--/INDICADORES MEC-->
+                      <div class="mec-menu btn-group">
+                        <!--/CAPTAÇÃO-->
+                        <div class="btn-group dropup">
+                          <button type="button" class="btn dropdown-toggle captacao" data-toggle="dropdown" title="captação">captação</button>
+                          <ul class="dropdown-menu feeling-menu" role="menu">
+                            <li><a href="#" class="btn good">positivo</a></li>
+                            <li><a href="#" class="btn neutral">neutro</a></li>
+                            <li><a href="#" class="btn bad">negativo</a></li>
+                            <li><a href="#" class="btn remove">remover</a></li>
+                          </ul>
+                        </div><!--/.dropup btn-group-->
+                        <!--/EMPREGABILIDADE-->
+                        <div class="btn-group dropup">
+                          <button type="button" class="btn dropdown-toggle empregabilidade" data-toggle="dropdown" title="empregabilidade">empregabilidade</button>
+                          <ul class="dropdown-menu feeling-menu" role="menu">
+                            <li><a href="#" class="btn good">positivo</a></li>
+                            <li><a href="#" class="btn neutral">neutro</a></li>
+                            <li><a href="#" class="btn bad">negativo</a></li>
+                            <li><a href="#" class="btn remove">remover</a></li>
+                          </ul>
+                        </div><!--/.dropup btn-group-->
+                        <!--/LOCALIZAÇÃO-->
+                        <div class="btn-group dropup">
+                          <button type="button" class="btn dropdown-toggle localizacao" data-toggle="dropdown" title="localização">localização</button>
+                          <ul class="dropdown-menu feeling-menu" role="menu">
+                            <li><a href="#" class="btn good">positivo</a></li>
+                            <li><a href="#" class="btn neutral">neutro</a></li>
+                            <li><a href="#" class="btn bad">negativo</a></li>
+                            <li><a href="#" class="btn remove">remover</a></li>
+                          </ul>
+                        </div><!--/.dropup btn-group-->
+                        <!--/ATUAÇÃO ÉTICA-->
+                        <div class="btn-group dropup">
+                          <button type="button" class="btn dropdown-toggle atuacao-etica" data-toggle="dropdown" title="atuação ética">atuação ética</button>
+                          <ul class="dropdown-menu feeling-menu" role="menu">
+                            <li><a href="#" class="btn good">positivo</a></li>
+                            <li><a href="#" class="btn neutral">neutro</a></li>
+                            <li><a href="#" class="btn bad">negativo</a></li>
+                            <li><a href="#" class="btn remove">remover</a></li>
+                          </ul>
+                        </div><!--/.dropup btn-group-->
+                        <!--/CORPO DOCENTE-->
+                        <div class="btn-group dropup">
+                          <button type="button" class="btn dropdown-toggle corpo-docente" data-toggle="dropdown" title="coprpo docente">corpo docente</button>
+                          <ul class="dropdown-menu feeling-menu" role="menu">
+                            <li><a href="#" class="btn good">positivo</a></li>
+                            <li><a href="#" class="btn neutral">neutro</a></li>
+                            <li><a href="#" class="btn bad">negativo</a></li>
+                            <li><a href="#" class="btn remove">remover</a></li>
+                          </ul>
+                        </div><!--/.dropup btn-group-->
+                        <!--/CREDENCIAMENTO NO MEC-->
+                        <div class="btn-group dropup">
+                          <button type="button" class="btn dropdown-toggle credenciamento-no-mec" data-toggle="dropdown" title="credenciamento no mec">credenciamento no mec</button>
+                          <ul class="dropdown-menu feeling-menu" role="menu">
+                            <li><a href="#" class="btn good">positivo</a></li>
+                            <li><a href="#" class="btn neutral">neutro</a></li>
+                            <li><a href="#" class="btn bad">negativo</a></li>
+                            <li><a href="#" class="btn remove">remover</a></li>
+                          </ul>
+                        </div><!--/.dropup btn-group-->
+                        <!--/PREÇO-->
+                        <div class="btn-group dropup">
+                          <button type="button" class="btn dropdown-toggle preco" data-toggle="dropdown" title="preço">preço</button>
+                          <ul class="dropdown-menu feeling-menu" role="menu">
+                            <li><a href="#" class="btn good">positivo</a></li>
+                            <li><a href="#" class="btn neutral">neutro</a></li>
+                            <li><a href="#" class="btn bad">negativo</a></li>
+                            <li><a href="#" class="btn remove">remover</a></li>
+                          </ul>
+                        </div><!--/.dropup btn-group-->
+                        <!--/QUALIDADE DE ENSINO-->
+                        <div class="btn-group dropup">
+                          <button type="button" class="btn dropdown-toggle qualidade-de-ensino" data-toggle="dropdown" title="qualidade de ensino">qualidade de ensino</button>
+                          <ul class="dropdown-menu feeling-menu" role="menu">
+                            <li><a href="#" class="btn good">positivo</a></li>
+                            <li><a href="#" class="btn neutral">neutro</a></li>
+                            <li><a href="#" class="btn bad">negativo</a></li>
+                            <li><a href="#" class="btn remove">remover</a></li>
+                          </ul>
+                        </div><!--/.dropup btn-group-->
+                        <!--/INFRAESTRUTURA-->
+                        <div class="btn-group dropup">
+                          <button type="button" class="btn dropdown-toggle infraestrutura" data-toggle="dropdown" title="infraestrutura">infraestrutura</button>
+                          <ul class="dropdown-menu feeling-menu" role="menu">
+                            <li><a href="#" class="btn good">positivo</a></li>
+                            <li><a href="#" class="btn neutral">neutro</a></li>
+                            <li><a href="#" class="btn bad">negativo</a></li>
+                            <li><a href="#" class="btn remove">remover</a></li>
+                          </ul>
+                        </div><!--/.dropup btn-group-->
+                        <!--/RELACIONAMENTO-->
+                        <div class="btn-group dropup">
+                          <button type="button" class="btn dropdown-toggle relacionamento" data-toggle="dropdown" title="relacionamento">relacionamento</button>
+                          <ul class="dropdown-menu feeling-menu" role="menu">
+                            <li><a href="#" class="btn good">positivo</a></li>
+                            <li><a href="#" class="btn neutral">neutro</a></li>
+                            <li><a href="#" class="btn bad">negativo</a></li>
+                            <li><a href="#" class="btn remove">remover</a></li>
+                          </ul>
+                        </div><!--/.dropup btn-group-->
+                      </div><!--/.mec-menu .btn-group--> 
+                    </footer>
+                  </div><!--/.quote-->
+                </div><!--/panel-body-->
+              </div><!--/panel-collapse-->
+            </div><!--/panel-->
 
-              <!--/Respostas salvas-->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                      Respostas salvas <i class="fa fa-chevron-down pull-right"></i>
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
+            <!--/Respostas salvas-->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                    Respostas salvas <i class="fa fa-chevron-down pull-right"></i>
+                  </a>
+                </h4>
               </div>
+              <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div><!--/panel-body-->
+              </div><!--/panel-collapse-->
+            </div><!--/panel-->
             
           </div><!--/accordion-group-->
           

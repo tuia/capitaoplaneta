@@ -795,6 +795,64 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 
 /*tags-dropdown*/
+/* CRUD DROPDOWN */
+.crud-menu .dropdown-toggle {
+  text-align: left;
+  position: relative;
+}
+.crud-menu .dropdown-toggle .caret {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin: -3px 0;
+}
+.crud-menu .dropdown-menu .btn {
+  margin-bottom: 1px;
+}
+.crud-menu .dropdown-menu .form-control {
+  height: 30px;
+}
+.crud-menu .dropdown-menu .auto {
+  margin: 10px 0;
+}
+.crud-menu .dropdown-menu .auto .btn {
+  display: block;
+  text-align: left;
+}
+.crud-menu .dropdown-menu .form-group {
+  background: #e9eaeb;
+  padding: 5px 10px;
+}
+
+.new-item-form {
+  background-color: #f6f7f8;
+  padding: 10px;
+}
+.new-item-form p {
+  margin-bottom: 0;
+  padding: 5px 0;
+}
+.new-item-form h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+}
+.new-item-form h5 small {
+  text-transform: lowercase;
+  color: #999999;
+  font-weight: normal;
+}
+.new-item-form.horizontal .form-group {
+  margin-bottom: 0;
+}
+.new-item-form .close {
+  margin-top: -8px;
+}
+
+#editat-modal .alert {
+  margin: 0 0 -10px;
+}
+
 /* STATUS DROPDOWN */
 .dropdown-menu.status-menu li a {
   font-weight: bold;
@@ -1219,6 +1277,14 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 .at-description a[data-toggle="modal"] {
   color: #666666;
+}
+
+/* MODAL DE RESPOSTA*/
+#answer-modal .panel {
+  margin-bottom: 10px;
+}
+#answer-modal .panel .quote-small {
+  margin-bottom: 10px;
 }
 
 /*
