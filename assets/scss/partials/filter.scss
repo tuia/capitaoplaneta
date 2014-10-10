@@ -9,11 +9,6 @@
   width: 890px;
   left: -840px;
 
-  .btn, .btn-default, .form-control {
-    background-color: $btn-filter;
-    color: $dark-text;
-  }
-
   .filter-btn-container {
     float: right;
     margin: 180px 0 0;
@@ -42,7 +37,6 @@
     }
 
   }
-
   
 
   .col-xs-6, .col-xs-3 {
@@ -55,6 +49,11 @@
     padding: 20px 30px;
     width: 840px;
     float: left;
+
+    .btn, .btn-default, .form-control {
+      background-color: $btn-filter;
+      color: $dark-text;
+    }
 
     h2 {font-size: 20px; margin: 0 0 10px; }
     h4 {
@@ -85,6 +84,11 @@
         font-size: 12px;
         margin: 0;
         padding: 6px 5px;
+        &.active {
+          background-color: $notification-background;
+          color: $inverse-text;
+          &:hover {background-color: lighten($notification-background, 10%);}
+        }
       }
 
 

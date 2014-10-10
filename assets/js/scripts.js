@@ -1,5 +1,8 @@
 //SRCIPTS
 
+
+$('#answer-modal').modal('show');
+
 /* TOOLTIP */
 $('body').tooltip({
 	delay: { show: 400, hide: 10 },

@@ -502,6 +502,24 @@ h3 {
 				padding: 5px 10px;
 			}
 		}
+		&.answer-menu {
+			.dropdown-menu {
+				width: 620px;
+				.form-group {margin-bottom: 5px;}
+				.auto {
+					.title {
+						margin: 0 0 3px 0;
+					}
+					.answer{
+						color: $light-text;
+						font-size: 10px;
+						line-height: 1.1;
+						margin: 0 0 3px;
+						white-space: normal;
+					}
+				}
+			}
+		}
 	}
 	.new-item-form {
 		background-color: $box-bg;
@@ -921,12 +939,24 @@ h3 {
 	a[data-toggle="modal"]{color: $default-text}
 }
 
+/*MODAIS*/
+.modal {
+	.modal-title {text-transform: uppercase;}
+	.modal-header, .modal-footer {
+		background-color: $dark-box-bg;
+	}
+}
+
 /* MODAL DE RESPOSTA*/
 #answer-modal {
 	.panel {
 		margin-bottom: 10px;
+		.panel-body .row:first-child .form-group > label { margin-bottom: 13px;}
+		.panel-body .row:first-child .form-group:last-child > label { margin-bottom: 3px;}
 		.quote-small {
 			margin-bottom: 10px;
 		}
 	}
 }
+
+

@@ -823,6 +823,22 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   background: #e9eaeb;
   padding: 5px 10px;
 }
+.crud-menu.answer-menu .dropdown-menu {
+  width: 620px;
+}
+.crud-menu.answer-menu .dropdown-menu .form-group {
+  margin-bottom: 5px;
+}
+.crud-menu.answer-menu .dropdown-menu .auto .title {
+  margin: 0 0 3px 0;
+}
+.crud-menu.answer-menu .dropdown-menu .auto .answer {
+  color: #999999;
+  font-size: 10px;
+  line-height: 1.1;
+  margin: 0 0 3px;
+  white-space: normal;
+}
 
 .new-item-form {
   background-color: #f6f7f8;
@@ -1279,9 +1295,23 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   color: #666666;
 }
 
+/*MODAIS*/
+.modal .modal-title {
+  text-transform: uppercase;
+}
+.modal .modal-header, .modal .modal-footer {
+  background-color: #e3e4e5;
+}
+
 /* MODAL DE RESPOSTA*/
 #answer-modal .panel {
   margin-bottom: 10px;
+}
+#answer-modal .panel .panel-body .row:first-child .form-group > label {
+  margin-bottom: 13px;
+}
+#answer-modal .panel .panel-body .row:first-child .form-group:last-child > label {
+  margin-bottom: 3px;
 }
 #answer-modal .panel .quote-small {
   margin-bottom: 10px;
@@ -1300,10 +1330,6 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   width: 890px;
   left: -840px;
   /*filter content*/
-}
-#filter-panel .btn, #filter-panel .btn-default, #filter-panel .form-control {
-  background-color: rgba(233, 234, 235, 0.7);
-  color: #333333;
 }
 #filter-panel .filter-btn-container {
   float: right;
@@ -1342,6 +1368,10 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   float: left;
   /*filter group*/
 }
+#filter-panel .filter-content .btn, #filter-panel .filter-content .btn-default, #filter-panel .filter-content .form-control {
+  background-color: rgba(233, 234, 235, 0.7);
+  color: #333333;
+}
 #filter-panel .filter-content h2 {
   font-size: 20px;
   margin: 0 0 10px;
@@ -1375,6 +1405,13 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   font-size: 12px;
   margin: 0;
   padding: 6px 5px;
+}
+#filter-panel .filter-content .filter-group .btn.active, #filter-panel .filter-content .filter-group .btn-default.active {
+  background-color: #566573;
+  color: white;
+}
+#filter-panel .filter-content .filter-group .btn.active:hover, #filter-panel .filter-content .filter-group .btn-default.active:hover {
+  background-color: #6c7f90;
 }
 #filter-panel .filter-content .filter-group.horario .btn {
   width: 50%;
