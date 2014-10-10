@@ -9,6 +9,11 @@
   width: 890px;
   left: -840px;
 
+  .btn, .btn-default, .form-control {
+    background-color: $btn-filter;
+    color: $dark-text;
+  }
+
   .filter-btn-container {
     float: right;
     margin: 180px 0 0;
@@ -72,11 +77,11 @@
       .btn-group-vertical {
         display: block;
       }
-      .form-control {height: 29px; padding: 2px 5px; background-color: $btn-default}
+      .form-control {height: 29px; padding: 2px 5px;}
 
       .input-small {width: 40px;}
 
-      .btn {
+      .btn, .btn-default {
         font-size: 12px;
         margin: 0;
         padding: 6px 5px;

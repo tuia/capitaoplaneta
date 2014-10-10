@@ -40,6 +40,7 @@
 	$btn-default: #E9EAEB;
 	$btn-darker: #DDDDDD;
 	$btn-primary: #558C96;
+	$btn-filter: rgba(233,234,235, .7);
 
 	/* SOCIAL */
 	$facebook-color: #3b5998;
@@ -667,12 +668,6 @@ h3 {
 				.status-btn {
 					position: relative;
 					right: -148px;
-					width: 18px;
-					outline: none;
-					-webkit-transition: width .4s ease-in-out, right .4s ease-in-out;
-					-moz-transition: width .4s ease-in-out, right .4s ease-in-out;
-					-o-transition: width .4s ease-in-out, right .4s ease-in-out;
-					transition: width .4s ease-in-out, right .4s ease-in-out;
 
 					span {
 						overflow: hidden;
@@ -701,11 +696,7 @@ h3 {
 					&.atendimento {
 						width: 166px;
 						right: 0;
-						text-indent: 0;	
-						-webkit-transition: none;
-						-moz-transition: none;
-						-o-transition: none;
-						transition: none;
+						text-indent: 0;
 					}
 
 					&:after {
@@ -812,11 +803,11 @@ h3 {
 		overflow: auto;
 		dl {
 			dt {
-				width: 40px;
+				width: 50px;
 				padding: 5px;
 			}
 			dd {
-				margin: 0 0 20px 40px;
+				margin: 0 0 20px 60px;
 				.description {
 					background-color: $box-bg;
 					padding: 5px 10px;
@@ -861,3 +852,24 @@ h3 {
 }/* citação */
 
 #filter-panel {@include transition (left, .5s, ease-in-out);}
+
+
+
+/*HISTÓRICO*/
+.at-description {
+	position: relative;
+	background-color: darken($light-box-bg, 3%);
+	padding: 10px;
+
+	.at-name {
+		text-transform: uppercase;
+	}
+	.ribbon {
+		position: absolute;
+		top: 20px;
+		right: 0;
+		width: 180px;
+	}
+	.id {margin-top: 30px;}
+	a[data-toggle="modal"]{color: $default-text}
+}

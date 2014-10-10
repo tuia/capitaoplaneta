@@ -1009,12 +1009,6 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .quote .quote-content .sidebar .status-bar .status-btn {
   position: relative;
   right: -148px;
-  width: 18px;
-  outline: none;
-  -webkit-transition: width .4s ease-in-out, right .4s ease-in-out;
-  -moz-transition: width .4s ease-in-out, right .4s ease-in-out;
-  -o-transition: width .4s ease-in-out, right .4s ease-in-out;
-  transition: width .4s ease-in-out, right .4s ease-in-out;
   /*&:active, &:hover, &:link, &:visited, &:focus {color: #FFFFFF;}*/
 }
 .quote .quote-content .sidebar .status-bar .status-btn span {
@@ -1046,10 +1040,6 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   width: 166px;
   right: 0;
   text-indent: 0;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
 }
 .quote .quote-content .sidebar .status-bar .status-btn:after {
   display: none;
@@ -1152,11 +1142,11 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   overflow: auto;
 }
 .quote .quote-historic dl dt {
-  width: 40px;
+  width: 50px;
   padding: 5px;
 }
 .quote .quote-historic dl dd {
-  margin: 0 0 20px 40px;
+  margin: 0 0 20px 60px;
 }
 .quote .quote-historic dl dd .description {
   background-color: #f6f7f8;
@@ -1205,6 +1195,28 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   transition: left 0.5s ease-in-out;
 }
 
+/*HISTÓRICO*/
+.at-description {
+  position: relative;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+.at-description .at-name {
+  text-transform: uppercase;
+}
+.at-description .ribbon {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 180px;
+}
+.at-description .id {
+  margin-top: 30px;
+}
+.at-description a[data-toggle="modal"] {
+  color: #666666;
+}
+
 /*
 ** PARTIALS
 ** partial são as suas páginas
@@ -1218,6 +1230,10 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   width: 890px;
   left: -840px;
   /*filter content*/
+}
+#filter-panel .btn, #filter-panel .btn-default, #filter-panel .form-control {
+  background-color: rgba(233, 234, 235, 0.7);
+  color: #333333;
 }
 #filter-panel .filter-btn-container {
   float: right;
@@ -1281,12 +1297,11 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 #filter-panel .filter-content .filter-group .form-control {
   height: 29px;
   padding: 2px 5px;
-  background-color: #e9eaeb;
 }
 #filter-panel .filter-content .filter-group .input-small {
   width: 40px;
 }
-#filter-panel .filter-content .filter-group .btn {
+#filter-panel .filter-content .filter-group .btn, #filter-panel .filter-content .filter-group .btn-default {
   font-size: 12px;
   margin: 0;
   padding: 6px 5px;
