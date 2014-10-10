@@ -807,12 +807,13 @@ h3 {
 				padding: 5px;
 			}
 			dd {
-				margin: 0 0 20px 60px;
+				margin: 0 0 10px 60px;
 				.description {
 					background-color: $box-bg;
 					padding: 5px 10px;
 					margin-bottom: 10px;
 				}
+				&> div:last-child {margin-bottom: 20px;}
 				.quote-small {margin-bottom: 10px}
 			}
 		}
@@ -863,11 +864,12 @@ h3 {
 
 	.at-name {
 		text-transform: uppercase;
+		font-weight: bold;
 	}
 	.ribbon {
 		position: absolute;
 		top: 20px;
-		right: 0;
+		right: -5px;
 		width: 180px;
 	}
 	.id {margin-top: 30px;}

@@ -1146,12 +1146,15 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   padding: 5px;
 }
 .quote .quote-historic dl dd {
-  margin: 0 0 20px 60px;
+  margin: 0 0 10px 60px;
 }
 .quote .quote-historic dl dd .description {
   background-color: #f6f7f8;
   padding: 5px 10px;
   margin-bottom: 10px;
+}
+.quote .quote-historic dl dd > div:last-child {
+  margin-bottom: 20px;
 }
 .quote .quote-historic dl dd .quote-small {
   margin-bottom: 10px;
@@ -1203,11 +1206,12 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 .at-description .at-name {
   text-transform: uppercase;
+  font-weight: bold;
 }
 .at-description .ribbon {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: -5px;
   width: 180px;
 }
 .at-description .id {
