@@ -39,6 +39,13 @@
 #actions-bar {
 	padding: 5px 0;
 
+	.feeling-menu {
+		min-width: 33px;
+		padding: 1px;
+		margin-left: -2px;
+
+		li{margin-bottom: 1px}
+	}
 	&.affix {
 		background: $page-background;
 		top: 0;

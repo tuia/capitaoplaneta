@@ -1,8 +1,5 @@
 //SRCIPTS
 
-
-$('#answer-modal').modal('show');
-
 /* TOOLTIP */
 $('body').tooltip({
 	delay: { show: 400, hide: 10 },
@@ -50,7 +47,7 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 
 
 	/* DROPUP DE SETIMENTOS DA BARRA DO MEC */
-	$('.mec-menu .dropdown-menu.feeling-menu .btn').not('.remove').click( function() {
+	$('.mec-menu .dropdown-menu .btn').not('.remove').click( function() {
 		var 		trigger = $(this).parents('.dropup').find('.dropdown-toggle'),
 			selectedfeeling = $(this).attr('class'),
 				removebtn = $(this).parents('.feeling-menu').find('.remove');
@@ -68,7 +65,7 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 		return false
 	});
 		// remover sentimento selecionado
-		$('.mec-menu .dropdown-menu.feeling-menu .remove').click( function() {
+		$('.mec-menu .dropdown-menu .remove').click( function() {
 			$(this).parents('.dropup').find('.dropdown-toggle').removeClass('good').removeClass('neutral').removeClass('bad');
 			$(this).hide();
 			$(this).parents('.dropup.open').removeClass('open');

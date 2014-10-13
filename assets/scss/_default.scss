@@ -94,7 +94,18 @@ label {font-weight: normal;}
 .dropdown-menu > li a:hover {background-color: lighten($btn-default,5%)}
 .dropdown-menu .divider {background-color: transparent; border: none;}
 
+.panel-body {background-color: #f9f9f9;}
+.panel-title {
+	color: $default-text;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	.collapsed i { @include rotate(-180);}
+}
+
 .character-counter {text-align: right; margin-right: 10px; color: $light-text}
+
+textarea {resize: none;}
 
  a[data-toggle="collapse"] {
  	display: block;
@@ -316,83 +327,93 @@ h3 {
 
 	    /* INDICADORES MEC */
 	    &.captacao {
-	    	background-position: -0px -0px;
-	    	&:hover, &:active, &.active {background-position: -0px -32px;  }
-	    	&.good {background-color: $good; background-position: -0px -64px}
-	    	&.neutral {background-color: $neutral; background-position: -0px -64px}
-	    	&.bad {background-color: $bad; background-position: -0px -64px}
+	    	background-position: -0px -0px; /*default*/
+	    	&:hover, &:active, &.active {background-position: -0px -32px;  }/*gray icon*/
+	    	&.good, &.neutral, &.bad {background-position: -0px -64px}/*white icon*/
+	    	&.good {background-color: $good;}
+	    	&.neutral {background-color: $neutral;}
+	    	&.bad {background-color: $bad;}
 	    }/*captacao*/
 
 	    &.empregabilidade {
 	    	background-position: -33px -0px;
 	    	&:hover, &:active, &.active {background-position: -33px -32px;  }
-	    	&.good {background-color: $good; background-position: -33px -64px;}
-	    	&.neutral {background-color: $neutral; background-position: -33px -64px;}
-	    	&.bad {background-color: $bad; background-position: -33px -64px;}
+	    	&.good, &.neutral, &.bad {background-position: -33px -64px}/*white icon*/
+	    	&.good {background-color: $good;}
+	    	&.neutral {background-color: $neutral;}
+	    	&.bad {background-color: $bad;}
 	    }/*empregabilidade*/
 
 	    &.localizacao {
 	    	background-position: -66px -0px;
 	    	&:hover, &:active, &.active {background-position: -66px -32px;  }
-	    	&.good {background-color: $good; background-position: -66px -64px;}
-	    	&.neutral {background-color: $neutral; background-position: -66px -64px;}
-	    	&.bad {background-color: $bad; background-position: -66px -64px;}
+	    	&.good, &.neutral, &.bad {background-position: -66px -64px}/*white icon*/
+	    	&.good {background-color: $good;}
+	    	&.neutral {background-color: $neutral;}
+	    	&.bad {background-color: $bad;}
 	    }/*localizacao*/
 
 	    &.atuacao-etica {
 	    	background-position: -99px -0px;
 	    	&:hover, &:active, &.active {background-position: -99px -32px;  }
-	    	&.good {background-color: $good; background-position: -99px -64px;}
-	    	&.neutral {background-color: $neutral; background-position: -99px -64px;}
-	    	&.bad {background-color: $bad; background-position: -99px -64px;}
+	    	&.good, &.neutral, &.bad {background-position: -99px -64px}/*white icon*/
+	    	&.good {background-color: $good;}
+	    	&.neutral {background-color: $neutral;}
+	    	&.bad {background-color: $bad;}
 	    }/*atuacao-etica*/
 
 	    &.corpo-docente {
 	    	background-position: -132px -0px;
 	    	&:hover, &:active, &.active {background-position: -132px -32px;  }
-	    	&.good {background-color: $good; background-position: -132px -64px;}
-	    	&.neutral {background-color: $neutral; background-position: -132px -64px;}
-	    	&.bad {background-color: $bad; background-position: -132px -64px;}
+	    	&.good, &.neutral, &.bad {background-position: -99px -64px}/*white icon*/
+	    	&.good {background-color: $good;}
+	    	&.neutral {background-color: $neutral;}
+	    	&.bad {background-color: $bad;}
 	    }/*corpo-docente*/
 
 	    &.credenciamento-no-mec {
 	    	background-position: -165px -0px;
 	    	&:hover, &:active, &.active {background-position: -165px -32px;  }
-	    	&.good {background-color: $good; background-position: -165px -64px;}
-	    	&.neutral {background-color: $neutral; background-position: -165px -64px;}
-	    	&.bad {background-color: $bad; background-position: -165px -64px;}
+	    	&.good, &.neutral, &.bad {background-position: -165px -64px}/*white icon*/
+	    	&.good {background-color: $good;}
+	    	&.neutral {background-color: $neutral;}
+	    	&.bad {background-color: $bad;}
 	    }/*credenciamento-no-mec*/
 
 	    &.preco {
 	    	background-position: -198px -0px;
 	    	&:hover, &:active, &.active {background-position: -198px -32px;  }
-	    	&.good {background-color: $good; background-position: -198px -64px;}
-	    	&.neutral {background-color: $neutral; background-position: -198px -64px;}
-	    	&.bad {background-color: $bad; background-position: -198px -64px;}
+	    	&.good, &.neutral, &.bad {background-position: -198px -64px}/*white icon*/
+	    	&.good {background-color: $good;}
+	    	&.neutral {background-color: $neutral;}
+	    	&.bad {background-color: $bad;}
 	    }/*preco*/
 
 	    &.qualidade-de-ensino {
 	    	background-position: -231px -0px;
 	    	&:hover, &:active, &.active {background-position: -231px -32px;  }
-	    	&.good {background-color: $good; background-position: -231px -64px;}
-	    	&.neutral {background-color: $neutral; background-position: -231px -64px;}
-	    	&.bad {background-color: $bad; background-position: -231px -64px;}
+	    	&.good, &.neutral, &.bad {background-position: -231px -64px}/*white icon*/
+	    	&.good {background-color: $good;}
+	    	&.neutral {background-color: $neutral;}
+	    	&.bad {background-color: $bad;}
 	    }/*qualidade-de-ensino*/
 
 	    &.infraestrutura {
 	    	background-position: -264px -0px;
 	    	&:hover, &:active, &.active {background-position: -264px -32px;  }
-	    	&.good {background-color: $good; background-position: -264px -64px;}
-	    	&.neutral {background-color: $neutral; background-position: -264px -64px;}
-	    	&.bad {background-color: $bad; background-position: -264px -64px;}
+	    	&.good, &.neutral, &.bad {background-position: -264px -64px}/*white icon*/
+	    	&.good {background-color: $good;}
+	    	&.neutral {background-color: $neutral;}
+	    	&.bad {background-color: $bad;}
 	    }/*infraestrutura*/
 
 	    &.relacionamento {
 	    	background-position: -297px -0px;
 	    	&:hover, &:active, &.active {background-position: -297px -32px; }
-	    	&.good {background-color: $good; background-position: -297px -64px;}
-	    	&.neutral {background-color: $neutral; background-position: -297px -64px;}
-	    	&.bad {background-color: $bad; background-position: -297px -64px;}
+	    	&.good, &.neutral, &.bad {background-position: -297px -64px}/*white icon*/
+	    	&.good {background-color: $good;}
+	    	&.neutral {background-color: $neutral;}
+	    	&.bad {background-color: $bad;}
 	    }/*relacionamento*/
 	    
 	}/*btn*/
@@ -421,23 +442,39 @@ h3 {
 		&.relacionamento {background-position: -297px -64px}
 	}
 
-	/* dropdown feeling-menu with reduced width */
-	.dropdown-menu.feeling-menu{
-		min-width: 33px;
-		padding: 1px;
-		margin-left: -2px;
+	/* MEC MENU DROPUP */
+	.mec-menu {
+		.btn-group {
 
-		li {
-			margin-bottom: 1px
-		}
-		.btn.good {
-			&:hover {background-color: $good; background-position: -330px -64px;}
-		}
-		.btn.neutral {
-			&:hover {background-color: $neutral; background-position: -363px -64px;}
-		}
-		.btn.bad {
-			&:hover {background-color: $bad; background-position: -396px -64px;}
+			.dropdown-menu {
+
+				.btn {
+					&.good {background-color: $good; &:hover {background-color: lighten($good,10%)}}
+					&.neutral {background-color: $neutral; &:hover {background-color: lighten($neutral,10%)}}
+					&.bad {background-color: $bad; &:hover {background-color: lighten($bad,10%)}}
+					&.remove {background-position: -363px -96px !important;&:hover, &:active {background-position: -396px -96px!important}}
+			    }
+			}
+			/*white icons*/
+			&.captacao .dropdown-menu .btn {background-position: -0px -64px}
+			&.empregabilidade .dropdown-menu .btn {background-position: -33px -64px}
+			&.localizacao .dropdown-menu .btn {background-position: -66px -64px}
+			&.atuacao-etica .dropdown-menu .btn {background-position: -99px -64px}
+			&.corpo-docente .dropdown-menu .btn {background-position: -132px -64px}
+			&.credenciamento-no-mec .dropdown-menu .btn {background-position: -165px -64px}
+			&.preco .dropdown-menu .btn {background-position: -198px -64px}
+			&.qualidade-de-ensino .dropdown-menu .btn {background-position: -231px -64px}
+			&.infraestrutura .dropdown-menu .btn {background-position: -264px -64px}
+			&.relacionamento .dropdown-menu .btn {background-position: -297px -64px}
+
+
+			.dropdown-menu {
+				min-width: 33px;
+				padding: 1px;
+				margin-left: -2px;
+
+				li{margin-bottom: 1px}
+			}
 		}
 	}
 		
@@ -842,12 +879,7 @@ h3 {
 
 	footer {
 		background-color: $box-bg;
-
-		.feeling-menu {
-			.btn {
-				width: 34px;
-			}
-		}
+		
 		.btn {
 		    text-transform: uppercase;
 		    font-weight: normal;
@@ -951,12 +983,22 @@ h3 {
 #answer-modal {
 	.panel {
 		margin-bottom: 10px;
-		.panel-body .row:first-child .form-group > label { margin-bottom: 13px;}
-		.panel-body .row:first-child .form-group:last-child > label { margin-bottom: 3px;}
+		.panel-body {
+			padding: 10px 15px;
+
+			.row:first-child {
+				.form-group > label { margin-bottom: 13px;}
+				.form-group:last-child > label { margin-bottom: 3px;}
+			}
+		}
 		.quote-small {
 			margin-bottom: 10px;
 		}
+		&:first-child .panel-body {
+			overflow: auto;
+			max-height: 200px;
+		}
 	}
+	.btn-primary[type="submit"] {margin-top: 24px;}
 }
-
 
