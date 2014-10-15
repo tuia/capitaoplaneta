@@ -137,6 +137,10 @@ label {
   text-transform: lowercase;
 }
 
+.badge.favorite {
+  background: #f39c12;
+}
+
 .good-txt {
   color: #27ae60;
 }

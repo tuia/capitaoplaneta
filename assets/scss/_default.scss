@@ -75,6 +75,7 @@ a:hover {text-decoration: none;}
 .badge {@include border-radius(3px);}
 label {font-weight: normal;}
 .badge.id {background-color: $lighter-text; color: $default-text; text-transform: uppercase; font-weight: normal; a {text-transform: lowercase;}}
+.badge.favorite {background: $alert}
 
 .good-txt {color: $good}
 .neutral-txt {color: $neutral}
