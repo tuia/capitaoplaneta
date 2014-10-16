@@ -227,7 +227,10 @@ label {
 }
 
 textarea {
-  resize: none;
+  resize: vertical;
+  max-height: 300px;
+  min-height: 100px;
+  height: 150px;
 }
 
 a[data-toggle="collapse"] {
@@ -287,6 +290,43 @@ h3 {
   font-size: 14px;
   color: #666666;
   line-height: 1.2;
+}
+
+/* FORMS */
+/* formulario compacto*/
+.form-small .row {
+  margin: 0 -5px;
+}
+.form-small .row .col-xs-1, .form-small .row .col-xs-2, .form-small .row .col-xs-3, .form-small .row .col-xs-4, .form-small .row .col-xs-5, .form-small .row .col-xs-6, .form-small .row .col-xs-7, .form-small .row .col-xs-8, .form-small .row .col-xs-9, .form-small .row .col-xs-10, .form-small .row .col-xs-11, .form-small .row .col-xs-12 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*anexo*/
+.annex-container {
+  padding: 5px 0;
+  margin: 5px 0;
+}
+.annex-container .annex {
+  background-color: #e3e4e5;
+  padding: 10px 15px;
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+}
+.annex-container .annex .annex-name {
+  color: #333333;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.annex-container .annex .fa-paperclip {
+  margin-right: 5px;
+  font-weight: bold;
+}
+.annex-container .annex .fa-times {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #666666;
+  font-size: 18px;
 }
 
 /* COMPONENTES */
@@ -1385,6 +1425,14 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   background-color: #e3e4e5;
 }
 
+.quotes-panel {
+  overflow: auto;
+  max-height: 200px;
+}
+.quotes-panel .quote-small {
+  margin-bottom: 10px;
+}
+
 /* MODAL DE RESPOSTA*/
 #answer-modal .panel {
   margin-bottom: 10px;
@@ -1398,15 +1446,45 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 #answer-modal .panel .panel-body .row:first-child .form-group:last-child > label {
   margin-bottom: 3px;
 }
-#answer-modal .panel .quote-small {
-  margin-bottom: 10px;
-}
-#answer-modal .panel:first-child .panel-body {
-  overflow: auto;
-  max-height: 200px;
-}
 #answer-modal .btn-primary[type="submit"] {
   margin-top: 24px;
+}
+
+/* MODAL ENCAMINHAR */
+.mailtextfield-container {
+  border: 1px solid #CCCCCC;
+  padding: 6px 12px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  max-height: 300px;
+  overflow: auto;
+}
+.mailtextfield-container .mailtextfield {
+  color: #555555;
+  width: 100%;
+  min-height: 140px;
+  height: auto;
+}
+
+#foward-modal .form-group label {
+  display: block;
+}
+#foward-modal .form-group input[type="email"] {
+  display: inline-block;
+  width: 80%;
+}
+#foward-modal .form-group .btn {
+  padding: 7px 12px;
+  position: relative;
+  top: -2px;
+}
+#foward-modal .mailtextfield {
+  margin-top: 10px;
+}
+#foward-modal .cc-container {
+  display: none;
 }
 
 /*

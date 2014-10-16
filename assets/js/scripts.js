@@ -1,5 +1,13 @@
 //SRCIPTS
 
+
+$('#foward-modal').modal('show');
+
+$('#foward-modal .togglecc').click( function() {
+	$(this).parents('form').find('.cc-container').slideToggle();
+});
+
+
 /* TOOLTIP */
 $('body').tooltip({
 	delay: { show: 400, hide: 10 },

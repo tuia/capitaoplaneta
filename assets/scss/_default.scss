@@ -106,7 +106,7 @@ label {font-weight: normal;}
 
 .character-counter {text-align: right; margin-right: 10px; color: $light-text}
 
-textarea {resize: none;}
+textarea {resize: vertical; max-height: 300px; min-height: 100px; height: 150px}
 
  a[data-toggle="collapse"] {
  	display: block;
@@ -148,6 +148,43 @@ h3 {
 	line-height: 1.2;
 }
 
+/* FORMS */
+/* formulario compacto*/
+.form-small {
+	.row {
+		margin: 0 -5px;
+		.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
+}
+/*anexo*/
+.annex-container {
+	padding: 5px 0;
+	margin: 5px 0;
+	.annex {
+		background-color: $dark-box-bg;
+		padding: 10px 15px;
+		display: inline-block;
+		margin: 5px 5px 5px 0;
+		.annex-name {
+			color: $dark-text;
+			font-weight: bold;
+			margin-right: 8px;
+		}
+		.fa-paperclip {
+			margin-right: 5px;
+			font-weight: bold;
+		}
+		.fa-times {
+			margin-left: 10px;
+			cursor: pointer;
+			color: $default-text;
+			font-size: 18px;
+		}
+	}
+}
 
 /* COMPONENTES */
 
@@ -950,8 +987,6 @@ h3 {
 
 #filter-panel {@include transition (left, .5s, ease-in-out);}
 
-
-
 /*HISTÓRICO*/
 .at-description {
 	position: relative;
@@ -980,6 +1015,14 @@ h3 {
 	}
 }
 
+.quotes-panel {
+	overflow: auto;
+	max-height: 200px;
+		.quote-small {
+			margin-bottom: 10px;
+		}
+}
+
 /* MODAL DE RESPOSTA*/
 #answer-modal {
 	.panel {
@@ -992,14 +1035,40 @@ h3 {
 				.form-group:last-child > label { margin-bottom: 3px;}
 			}
 		}
-		.quote-small {
-			margin-bottom: 10px;
-		}
-		&:first-child .panel-body {
-			overflow: auto;
-			max-height: 200px;
-		}
 	}
 	.btn-primary[type="submit"] {margin-top: 24px;}
 }
 
+/* MODAL ENCAMINHAR */
+.mailtextfield-container {
+	border: 1px solid #CCCCCC;
+	padding: 6px 12px;
+	box-shadow: (0 1px 1px rgba(0, 0, 0, 0.075) inset);
+	-o-box-shadow: (0 1px 1px rgba(0, 0, 0, 0.075) inset);
+	-moz-box-shadow: (0 1px 1px rgba(0, 0, 0, 0.075) inset);
+	-webkit-box-shadow: (0 1px 1px rgba(0, 0, 0, 0.075) inset);
+	max-height: 300px;
+	overflow: auto;
+	.mailtextfield {
+		color: #555555;
+		width: 100%;
+		min-height: 140px;
+		height: auto;
+	}
+}
+#foward-modal {
+	.form-group {
+		label {display: block;}
+		input[type="email"] {
+			display: inline-block;
+			width: 80%;
+		}
+		.btn {
+			padding: 7px 12px;
+		    position: relative;
+		    top: -2px;
+		}
+	}
+	.mailtextfield {margin-top: 10px}
+	.cc-container {display: none;}
+}
