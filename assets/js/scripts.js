@@ -1,8 +1,4 @@
 //SRCIPTS
-
-
-$('#foward-modal').modal('show');
-
 $('#foward-modal .togglecc').click( function() {
 	$(this).parents('form').find('.cc-container').slideToggle();
 });

@@ -24,23 +24,24 @@
     <![endif]-->
   </head>
 
-  <body class="login">
+  <body class="login alternatebg">
     <div class="container">
       <div class="login-center">
-        <img src="assets/img/planeta-y-logo.png" alt="planeta y logo">
+        <img src="assets/img/planeta-y-logo-lg.png" alt="planeta y logo">
         <form class="form-signin" role="form">
           <div class="form-signin-heading">
             <h1>Entrar</h1>
             <p>Não possui conta no Planeta Y? <a href="cadastro.html">Cadastre-se</a>.</p>
           </div>
-          <input class="form-control" type="email" autofocus="" required="" placeholder="Email">
-          <input class="form-control" type="password" required="" placeholder="Senha">
-          <a href="esqueci-minha-senha.html" class="forgot-password-link">esqueci minha senha</a>
-          <label class="checkbox">
+          <input class="form-control login-mail" type="email" autofocus="" required="" placeholder="email">
+          <input class="form-control login-password" type="password" required="" placeholder="senha">
+          <a href="esqueci-minha-senha.html" class="forgot-password-link pull-right">esqueci minha senha</a>
+          <label class="checkbox pull-left">
           <input type="checkbox" value="lembrar-me">
           lembrar-me
           </label>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+          <span class="clearfix"></span>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">entrar</button>
         </form>
       </div>
     </div>
@@ -48,20 +49,26 @@
 
 
     <footer id="page-footer">
-      <p class="copyright">© Copyright 2014 Cadsoft. Todos os direitos reservados.</p>
-      <a href="#" target="blank"><img scr="assets/img/planeta-y-logo.png"></a>
+      <div class="container">
+        <p class="copyright">© Copyright 2014 Cadsoft. Todos os direitos reservados.</p>
+        <a href="#" target="blank"><img src="assets/img/planeta-y-logo.png"></a>
 
-      <a href="#" class="btn social facebook"><i class="fa fa-facebook"></i></a>
-      <a href="#" class="btn social twitter"><i class="fa fa-twitter"></i></a>
-      <a href="#" class="btn social gplus"><i class="fa fa-google-plus"></i></a>
+        <div class="footer-social-links">
+          <a href="https://www.facebook.com/PlanetaY" class="btn social facebook"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/planeta_y" class="btn social twitter"><i class="fa fa-twitter"></i></a>
+          <a href="https://plus.google.com/+PlanetayBr/about" class="btn social gplus"><i class="fa fa-google-plus"></i></a>
+        </div>
 
-      <a href="sobre-o-py" class="">quem somos</a>
-      <a href="sobre-o-py" class="">ajuda</a>
-      <a href="sobre-o-py" class="">reportar problema</a>
+        <a href="sobre-o-py.html" class="">quem somos</a>
+        <span class="footer-divider">.</span>
+        <a href="ajuda.html" class="">ajuda</a>
+        <span class="footer-divider">.</span>
+        <a href="reportar-problema" class="">reportar problema</a>
 
-      <div class="pull-right">
-        <span>design de interação por</span>
-        <a href="http://www.latitude14.com.br" target="blank"><img scr="assets/img/latitude-14-logo.png"></a>
+        <div class="pull-right">
+          <span>design de interação por</span>
+          <a href="http://www.latitude14.com.br" target="blank"><img src="assets/img/latitude-14-logo.png"></a>
+        </div>
       </div>
     </footer>
 

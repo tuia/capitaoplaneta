@@ -64,7 +64,11 @@
 /* THE CSS */
 /*typography*/
 body, p {font-family: 'Roboto', sans-serif; color: $default-text}
-body {background: $page-background; overflow-x: hidden}
+body {
+	background: $page-background;
+	overflow-x: hidden;
+	padding-bottom: 60px;
+}
 
 .dark-text {color: $dark-text}
 .light-text {color: $light-text}
@@ -1071,4 +1075,49 @@ h3 {
 	}
 	.mailtextfield {margin-top: 10px}
 	.cc-container {display: none;}
+}
+
+
+/* FOOTER */
+#page-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+
+	padding: 20px 0;
+	margin-top: 20px;
+
+	.copyright {
+		font-size: 12px;
+		border-bottom: 1px solid $lighter-text;
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+	}
+	.footer-social-links {
+		display: inline-block;
+		margin: 0 10px;
+		.social {
+			margin: 0 10px;
+			@include border-radius(5px);
+		}
+	}
+	
+	.footer-divider {
+		font-weight: bold;
+		color: $light-text;
+		display: inline-block;
+		padding: 0 10px;
+		line-height: .5em;
+		position: relative;
+		top: -3px;
+	}
+	.pull-right {
+		text-align: right;
+		font-size: 12px;
+		position: relative;
+		top: -10px;
+		span {display: block; margin-bottom: 3px}
+	}
 }
