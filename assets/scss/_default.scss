@@ -111,6 +111,14 @@ label {font-weight: normal;}
 .character-counter {text-align: right; margin-right: 10px; color: $light-text}
 
 textarea {resize: vertical; max-height: 300px; min-height: 100px; height: 150px}
+input.edit-on-hover {
+	background: transparent;
+	border-color: transparent;
+	&:hover {
+		background: inherit;
+		border-color: inherit;
+	}
+}
 
  a[data-toggle="collapse"] {
  	display: block;

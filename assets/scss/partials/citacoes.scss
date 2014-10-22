@@ -112,3 +112,28 @@
 	border: none;
 	margin-left: 1px;
 }	
+
+
+/* TOP PAGINATION */
+#top-pagination {
+	color: $light-text;
+	width: auto;
+	float: right;
+
+	.form-control {
+		width: 30px;
+		padding: 5px 5px;
+		position: relative;
+		top: -2px
+	}
+
+	.nav-link {
+		font-size: 20px;
+		line-height: 18px;
+		padding: 3px 6px; 
+	}
+}
+
+
+
+
