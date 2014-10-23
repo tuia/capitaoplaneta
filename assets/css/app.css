@@ -77,6 +77,7 @@ ANIMATIONS
 /* VARIAVEIS */
 /* Cores */
 /* BACKGROUND */
+/*$page-background: #E2EBF1;*/
 /* STATUS */
 /* FEELING */
 /* TYPOGRAPHY*/
@@ -93,7 +94,7 @@ body, p {
 }
 
 body {
-  background: #e2ebf1;
+  background: #e3ede2;
   overflow-x: hidden;
 }
 
@@ -230,7 +231,7 @@ label {
   font-weight: bold;
   color: #333333;
   text-align: center;
-  margin: 10px 0 20px;
+  margin: 20px 0 10px;
 }
 
 textarea {
@@ -244,15 +245,24 @@ input.edit-on-hover {
   background: transparent;
   border-color: transparent;
 }
-input.edit-on-hover:hover {
-  background: inherit;
-  border-color: inherit;
+input.edit-on-hover:hover, input.edit-on-hover:focus {
+  background: white;
+  border-color: #cccccc;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 a[data-toggle="collapse"] {
   display: block;
   padding: 10px 15px;
   margin: -10px -15px;
+}
+
+.nav-tabs > li.active > a {
+  background-color: #e3ede2;
 }
 
 /*HELPERS*/
@@ -281,7 +291,7 @@ a[data-toggle="collapse"] {
 }
 
 /*Media queries breakpoints*/
-.container {
+.container, #navigation .container {
   width: 950px !important;
   padding: 0;
 }
@@ -904,6 +914,16 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 
 /* TAGS DROPDOWN */
+.tags-menu .dropdown-toggle {
+  text-align: left;
+}
+.tags-menu .dropdown-toggle i {
+  margin: 4px 5px;
+}
+.tags-menu .dropdown-toggle .caret {
+  float: right;
+  margin-top: -1em;
+}
 .tags-menu .dropdown-menu {
   width: 190px;
 }
@@ -1094,6 +1114,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 /* NAVBAR TOPO */
 #navigation {
   position: relative;
+  max-height: 52px;
 }
 #navigation .navbar-brand {
   background: url(../img/planeta-y-logo.png) no-repeat center;
@@ -1616,9 +1637,14 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   float: left;
   /*filter group*/
 }
-#filter-panel .filter-content .btn, #filter-panel .filter-content .btn-default, #filter-panel .filter-content .form-control {
-  background-color: #b1b6bc;
+#filter-panel .filter-content .filter-group > .btn-group > .btn, #filter-panel .filter-content .btn-default, #filter-panel .filter-content .form-control {
+  background-color: rgba(255, 255, 255, 0.65);
   color: #333333;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.65);
+  border-top: none;
+}
+#filter-panel .filter-content .filter-group > .btn-group > .btn:hover, #filter-panel .filter-content .btn-default:hover, #filter-panel .filter-content .form-control:hover {
+  background: rgba(255, 255, 255, 0.8);
 }
 #filter-panel .filter-content h2 {
   font-size: 20px;
@@ -1657,6 +1683,8 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 #filter-panel .filter-content .filter-group .btn.active, #filter-panel .filter-content .filter-group .btn-default.active {
   background-color: #566573;
   color: white;
+  border-top: 1px solid #2a3239;
+  border-bottom: none;
 }
 #filter-panel .filter-content .filter-group .btn.active:hover, #filter-panel .filter-content .filter-group .btn-default.active:hover {
   background-color: #6c7f90;
@@ -1874,7 +1902,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   margin-bottom: 1px;
 }
 #actions-bar.affix {
-  background: #e2ebf1;
+  background: #e3ede2;
   top: 0;
   width: 100%;
   position: fixed;
@@ -2080,7 +2108,6 @@ body.login .btn-lg {
   margin-top: 15px;
 }
 body.login #page-footer {
-  background-color: #e2ebf1;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2089,4 +2116,7 @@ body.login #page-footer {
   z-index: 2;
   padding: 20px 0;
   margin-top: 20px;
+}
+body.login #page-footer .copyright {
+  color: #cccccc;
 }

@@ -51,9 +51,14 @@
     width: 840px;
     float: left;
 
-    .btn, .btn-default, .form-control {
+    .filter-group > .btn-group >.btn, .btn-default, .form-control {
       background-color: $btn-filter;
       color: $dark-text;
+      border-bottom: 1px solid darken($btn-filter, 40%);
+      border-top: none;
+    }
+    .filter-group > .btn-group >.btn:hover, .btn-default:hover, .form-control:hover {
+      background: rgba(255,255,255,.8);
     }
 
     h2 {font-size: 20px; margin: 0 0 10px; }
@@ -85,9 +90,12 @@
         font-size: 12px;
         margin: 0;
         padding: 6px 5px;
+
         &.active {
           background-color: $notification-background;
           color: $inverse-text;
+          border-top: 1px solid darken($notification-background, 20%);
+          border-bottom: none;
           &:hover {background-color: lighten($notification-background, 10%);}
         }
       }

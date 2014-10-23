@@ -4,7 +4,8 @@
 /* Cores */
 
 	/* BACKGROUND */
-	$page-background: #E2EBF1;
+	$page-background: #e3ede2;
+	/*$page-background: #E2EBF1;*/
 	$inverse-background: #2C3E50;;
 	$inverse-background-alpha: rgba(44, 62, 80, .75);
 	$striped-table: #2C3E50;
@@ -41,7 +42,7 @@
 	$btn-default: #E9EAEB;
 	$btn-darker: #DDDDDD;
 	$btn-primary: #558C96;
-	$btn-filter: #B1B6BC;
+	$btn-filter: rgba(255,255,255,.65);
 
 	/* SOCIAL */
 	$facebook-color: #3b5998;
@@ -109,15 +110,16 @@ label {font-weight: normal;}
 }
 
 .character-counter {text-align: right; margin-right: 10px; color: $light-text}
-.filter-feedback {font-weight: bold; color: $dark-text; text-align: center; margin: 10px 0 20px }
+.filter-feedback {font-weight: bold; color: $dark-text; text-align: center; margin: 20px 0 10px }
 
 textarea {resize: vertical; max-height: 300px; min-height: 100px; height: 150px}
 input.edit-on-hover {
 	background: transparent;
 	border-color: transparent;
-	&:hover {
-		background: inherit;
-		border-color: inherit;
+	&:hover, &:focus {
+		background: $light-box-bg;
+		border-color: $lighter-text;
+		@include transition(all, .3s, ease-in)
 	}
 }
 
@@ -126,6 +128,8 @@ input.edit-on-hover {
  	padding: 10px 15px;
  	margin: -10px -15px;
  }
+
+ .nav-tabs > li.active > a {background-color: $page-background}
 
 
 /*HELPERS*/
@@ -139,7 +143,7 @@ input.edit-on-hover {
 .center-box {text-align: center;} 
 
 /*Media queries breakpoints*/
-.container { width: 950px !important; padding: 0;}
+.container, #navigation .container { width: 950px !important; padding: 0;}
 
 /* TÍTULOS */
 h1 {
@@ -533,6 +537,11 @@ h3 {
 
 	/* TAGS DROPDOWN */
 	.tags-menu {
+		.dropdown-toggle {
+			text-align: left;
+			i {margin: 4px 5px; }
+			.caret {float: right; margin-top: -1em}
+		}
 		.dropdown-menu {
 			width: 190px;
 
@@ -556,6 +565,7 @@ h3 {
 
 				label {	display: block;	}
 			}
+
 		}
 	}/*tags-dropdown*/
 
@@ -697,6 +707,7 @@ h3 {
 /* NAVBAR TOPO */
 #navigation {
 	position: relative;
+	max-height: 52px;
 
 	.navbar-brand {
 		background: url(../img/planeta-y-logo.png) no-repeat center;
