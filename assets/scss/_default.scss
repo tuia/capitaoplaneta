@@ -67,7 +67,6 @@ body, p {font-family: 'Roboto', sans-serif; color: $default-text}
 body {
 	background: $page-background;
 	overflow-x: hidden;
-	padding-bottom: 60px;
 }
 
 .dark-text {color: $dark-text}
@@ -109,6 +108,7 @@ label {font-weight: normal;}
 }
 
 .character-counter {text-align: right; margin-right: 10px; color: $light-text}
+.filter-feedback {font-weight: bold; color: $dark-text; text-align: center; margin: 10px 0 20px }
 
 textarea {resize: vertical; max-height: 300px; min-height: 100px; height: 150px}
 input.edit-on-hover {
@@ -1088,14 +1088,8 @@ h3 {
 
 /* FOOTER */
 #page-footer {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: auto;
 
-	padding: 20px 0;
-	margin-top: 20px;
+	padding: 20px 0 30px 0;
 
 	.copyright {
 		font-size: 12px;
