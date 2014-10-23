@@ -1174,6 +1174,16 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .quote .quote-content .user-img img {
   width: 100%;
 }
+.quote .quote-content .user-img .user-tag {
+  background-color: rgba(44, 62, 80, 0.75);
+  font-size: .8em;
+  color: white;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  padding: 5px 10px;
+}
 .quote .quote-content .quote-checkbox {
   position: absolute;
   top: 0;

@@ -5,7 +5,8 @@
 
 	/* BACKGROUND */
 	$page-background: #E2EBF1;
-	$inverse-background: #2C3E50;
+	$inverse-background: #2C3E50;;
+	$inverse-background-alpha: rgba(44, 62, 80, .75);
 	$striped-table: #2C3E50;
 	$notification-background: #566573;
 	$tag-background: #46494D;
@@ -764,6 +765,16 @@ h3 {
 			height: 100px;
 			img {
 				width: 100%;				
+			}
+			.user-tag {
+				background-color: $inverse-background-alpha;
+				font-size: .8em;
+				color: $inverse-text;
+				position: absolute;
+				top: 60px;
+				left: 0;
+				width: 100%;
+				padding: 5px 10px;
 			}
 		}
 
