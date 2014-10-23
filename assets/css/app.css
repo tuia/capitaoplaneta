@@ -1441,6 +1441,14 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   background-color: #e3e4e5;
 }
 
+.new-item-modal label {
+  text-align: center;
+  display: block;
+}
+.new-item-modal .modal-body {
+  padding: 40px 70px 50px;
+}
+
 .quotes-panel {
   overflow: auto;
   max-height: 200px;

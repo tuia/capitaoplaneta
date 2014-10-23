@@ -1027,6 +1027,11 @@ h3 {
 	}
 }
 
+.new-item-modal {
+	label {text-align: center; display: block;}
+	.modal-body {padding: 40px 70px 50px;}
+}
+
 .quotes-panel {
 	overflow: auto;
 	max-height: 200px;

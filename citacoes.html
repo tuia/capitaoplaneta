@@ -424,7 +424,7 @@
         </div>
         <div class="pull-right">
           <a href="#">limpar filtro</a>
-          <a href="#" class="btn btn-default btn-lg">salvar filtro</a>
+          <a href="#" class="btn btn-default btn-lg" data-toggle="modal" data-target="#save-filter-modal">salvar filtro</a>
           <a href="#" class="btn btn-primary btn-lg">filtrar</a>
         </div>
         <span class="clearfix"></span>
@@ -2090,7 +2090,7 @@
     
 
     <!-- NOVO MARCADOR MODAL -->
-    <div class="modal fade" id="newtag-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade new-item-modal" id="newtag-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -2100,6 +2100,28 @@
           <div class="modal-body">
             <form role="form">
               <label for="novomarcador">insira o nome do novo marcador</label>
+              <input type="text" class="form-control" id="novomarcador" placeholder="novo marcador">
+            </form>
+          </div><!--/.modal-body-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">cancelar</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">ok</button>
+          </div><!--/.modal-footer-->
+        </div><!--/.modal-content-->
+      </div><!--/.modal-dialog-->
+    </div><!--/.modal-->
+
+    <!-- SALVAR FILTRO MODAL -->
+    <div class="modal fade new-item-modal" id="save-filter-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">fechar</span></button>
+            <h5 class="modal-title" id="myModalLabel">Salvar filtro</h5>
+          </div><!--/.modal-header-->
+          <div class="modal-body">
+            <form role="form">
+              <label for="novomarcador">Nome do filtro:</label>
               <input type="text" class="form-control" id="novomarcador" placeholder="novo marcador">
             </form>
           </div><!--/.modal-body-->
