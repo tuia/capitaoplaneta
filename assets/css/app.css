@@ -94,7 +94,7 @@ body, p {
 }
 
 body {
-  background: #e3ede2;
+  background: #e8f2e8;
   overflow-x: hidden;
 }
 
@@ -262,7 +262,7 @@ a[data-toggle="collapse"] {
 }
 
 .nav-tabs > li.active > a {
-  background-color: #e3ede2;
+  background-color: #e8f2e8;
 }
 
 /*HELPERS*/
@@ -1902,7 +1902,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   margin-bottom: 1px;
 }
 #actions-bar.affix {
-  background: #e3ede2;
+  background: #e8f2e8;
   top: 0;
   width: 100%;
   position: fixed;
@@ -2047,7 +2047,7 @@ body.login .login-center {
   width: 440px;
   position: absolute;
   height: 380px;
-  top: 35%;
+  top: 30%;
   left: 50%;
   margin: -165px -220px;
   text-align: center;
