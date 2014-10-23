@@ -1121,6 +1121,9 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   /*footer*/
   /* citação pequena */
 }
+.quote:nth-child(2n+1) .quote-content, .quote:nth-child(2n) .quote-historic {
+  background-color: #f2f2f2;
+}
 .quote.selected {
   border-color: #6e7e8b;
 }

@@ -722,6 +722,8 @@ h3 {
 	margin: 0 0 30px 0;
 	border: 3px solid transparent;
 
+	&:nth-child(2n+1) .quote-content, &:nth-child(2n) .quote-historic {background-color: darken($light-box-bg, 5%);}
+
 	&.selected {
 		border-color: $selected-inverse;
 		.accordion-hidden {background-color: lighten($selected-light,3%)}
@@ -750,9 +752,10 @@ h3 {
 		}
 	}
 
+
 	.quote-content {
 		position: relative;
-			background-color: $light-box-bg;
+		background-color: $light-box-bg;
 
 		.user-img {
 			float: left;
