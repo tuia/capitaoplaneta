@@ -420,7 +420,7 @@ h3 {
 	    &.corpo-docente {
 	    	background-position: -132px -0px;
 	    	&:hover, &:active, &.active {background-position: -132px -32px;  }
-	    	&.good, &.neutral, &.bad {background-position: -99px -64px}/*white icon*/
+	    	&.good, &.neutral, &.bad {background-position: -132px -64px}/*white icon*/
 	    	&.good {background-color: $good;}
 	    	&.neutral {background-color: $neutral;}
 	    	&.bad {background-color: $bad;}
