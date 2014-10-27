@@ -597,6 +597,7 @@ h3 {
 }
 .mec-menu .btn.remove, .feeling-menu .btn.remove, .feeling-icon.remove, .mec-icon.remove, .selected .mec-menu .btn.remove, .selected .feeling-menu .btn.remove, .selected .feeling-icon.remove, .selected .mec-icon.remove {
   background-position: -363px -96px;
+  display: none;
 }
 .mec-menu .btn.remove:hover, .mec-menu .btn.remove:active, .feeling-menu .btn.remove:hover, .feeling-menu .btn.remove:active, .feeling-icon.remove:hover, .feeling-icon.remove:active, .mec-icon.remove:hover, .mec-icon.remove:active, .selected .mec-menu .btn.remove:hover, .selected .mec-menu .btn.remove:active, .selected .feeling-menu .btn.remove:hover, .selected .feeling-menu .btn.remove:active, .selected .feeling-icon.remove:hover, .selected .feeling-icon.remove:active, .selected .mec-icon.remove:hover, .selected .mec-icon.remove:active {
   background-position: -396px -96px;

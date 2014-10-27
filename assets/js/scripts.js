@@ -50,7 +50,7 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 	});
 
 
-	/* DROPUP DE SETIMENTOS DA BARRA DO MEC */
+	/* DROPUP DE SETIMENTOS DA BARRA DO MEC
 	$('.mec-menu .dropdown-menu .btn').not('.remove').click( function() {
 		var 		trigger = $(this).parents('.dropup').find('.dropdown-toggle'),
 			selectedfeeling = $(this).attr('class'),
