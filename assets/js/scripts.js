@@ -50,11 +50,11 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 	});
 
 
-	/* DROPUP DE SETIMENTOS DA BARRA DO MEC
+	/* DROPUP DE SETIMENTOS DA BARRA DO MEC */
 	$('.mec-menu .dropdown-menu .btn').not('.remove').click( function() {
 		var 		trigger = $(this).parents('.dropup').find('.dropdown-toggle'),
 			selectedfeeling = $(this).attr('class'),
-				removebtn = $(this).parents('.feeling-menu').find('.remove');
+				removebtn = $(this).parents('.dropdown-menu').find('.remove');
 
 		if ( trigger.hasClass('good') || trigger.hasClass('neutral') || trigger.hasClass('bad') ) {
 			trigger.removeClass('good').removeClass('neutral').removeClass('bad');
@@ -77,7 +77,7 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 		});
 
 
-	/*MUDANÇA DE STATUS
+	/* MUDANÇA DE STATUS */
 	$('.status-bar .dropdown-menu .em-andamento, .status-bar .dropdown-menu .encaminhado, .status-bar .dropdown-menu .fechado ').click( function() {
 		var value = $(this).text(),
 		btn = $(this).parents('.status-bar').find('.status-btn');
@@ -85,17 +85,19 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 		$(this).parents('.dropdown-menu').find('.active').removeClass('active');
 		$(this).parent().addClass('active');
 
-		btn.find('span').text(value);
+		btn.find('span').html(value + "<small>setor</small>");
 		btn.removeClass('em-andamento').removeClass('encaminhado').removeClass('fechado');
+		if ( $(this).hasClass('em-andamento') ) { value = "em-andamento" }
 		btn.addClass(value);
 
 		$(this).parents('.dropdown-menu').find('a').show();
-		$(this).parents('.dropdown-menu').find('a').hasClass('value').hide();
+		$(this).parents('.dropdown-menu').find('.value').hide();
 
 		$(this).parents('.dropdown.open').removeClass('open');
 
 		return false;
 	});
+	/*
 	$('.status-btn').click( function() {
 		if ( !$(this).hasClass('atendimento') ) {
 			

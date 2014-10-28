@@ -565,6 +565,13 @@ h3 {
 .mec-menu .btn.indeterminate, .feeling-menu .btn.indeterminate, .feeling-icon.indeterminate, .mec-icon.indeterminate, .selected .mec-menu .btn.indeterminate, .selected .feeling-menu .btn.indeterminate, .selected .feeling-icon.indeterminate, .selected .mec-icon.indeterminate {
   background-position: -330px -96px;
 }
+.mec-menu .btn.remove, .feeling-menu .btn.remove, .feeling-icon.remove, .mec-icon.remove, .selected .mec-menu .btn.remove, .selected .feeling-menu .btn.remove, .selected .feeling-icon.remove, .selected .mec-icon.remove {
+  display: none;
+  background-position: -363px -96px;
+}
+.mec-menu .btn.remove:hover, .mec-menu .btn.remove:active, .feeling-menu .btn.remove:hover, .feeling-menu .btn.remove:active, .feeling-icon.remove:hover, .feeling-icon.remove:active, .mec-icon.remove:hover, .mec-icon.remove:active, .selected .mec-menu .btn.remove:hover, .selected .mec-menu .btn.remove:active, .selected .feeling-menu .btn.remove:hover, .selected .feeling-menu .btn.remove:active, .selected .feeling-icon.remove:hover, .selected .feeling-icon.remove:active, .selected .mec-icon.remove:hover, .selected .mec-icon.remove:active {
+  background-position: -396px -96px;
+}
 .mec-menu .btn.good, .feeling-menu .btn.good, .feeling-icon.good, .mec-icon.good, .selected .mec-menu .btn.good, .selected .feeling-menu .btn.good, .selected .feeling-icon.good, .selected .mec-icon.good {
   background-position: -330px -0px;
 }
@@ -594,13 +601,6 @@ h3 {
 .mec-menu .btn.bad.active, .feeling-menu .btn.bad.active, .feeling-icon.bad.active, .mec-icon.bad.active, .selected .mec-menu .btn.bad.active, .selected .feeling-menu .btn.bad.active, .selected .feeling-icon.bad.active, .selected .mec-icon.bad.active {
   background-position: -396px -64px;
   background-color: #c0392b;
-}
-.mec-menu .btn.remove, .feeling-menu .btn.remove, .feeling-icon.remove, .mec-icon.remove, .selected .mec-menu .btn.remove, .selected .feeling-menu .btn.remove, .selected .feeling-icon.remove, .selected .mec-icon.remove {
-  background-position: -363px -96px;
-  display: none;
-}
-.mec-menu .btn.remove:hover, .mec-menu .btn.remove:active, .feeling-menu .btn.remove:hover, .feeling-menu .btn.remove:active, .feeling-icon.remove:hover, .feeling-icon.remove:active, .mec-icon.remove:hover, .mec-icon.remove:active, .selected .mec-menu .btn.remove:hover, .selected .mec-menu .btn.remove:active, .selected .feeling-menu .btn.remove:hover, .selected .feeling-menu .btn.remove:active, .selected .feeling-icon.remove:hover, .selected .feeling-icon.remove:active, .selected .mec-icon.remove:hover, .selected .mec-icon.remove:active {
-  background-position: -396px -96px;
 }
 .mec-menu .btn.captacao, .feeling-menu .btn.captacao, .feeling-icon.captacao, .mec-icon.captacao, .selected .mec-menu .btn.captacao, .selected .feeling-menu .btn.captacao, .selected .feeling-icon.captacao, .selected .mec-icon.captacao {
   background-position: -0px -0px;

@@ -359,6 +359,12 @@ h3 {
 	    	background-position: -330px -96px;
 	    }
 
+	    &.remove {
+	    	display: none;
+	    	background-position: -363px -96px;
+	    	&:hover, &:active {background-position: -396px -96px;  }
+	    }
+
 	    /* SENTIMENTO */
 	    &.good {
 	    	background-position: -330px -0px;
@@ -374,11 +380,6 @@ h3 {
 	    	background-position: -396px -0px;
 	    	&:hover, &:active {background-position: -396px -32px;  }
 	    	&.active {background-position: -396px -64px; background-color: $bad;}
-	    }
-	    &.remove {
-	    	background-position: -363px -96px;
-	    	display: none;
-	    	&:hover, &:active {background-position: -396px -96px;  }
 	    }
 
 	    /* INDICADORES MEC */
