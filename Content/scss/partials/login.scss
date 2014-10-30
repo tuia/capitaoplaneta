@@ -1,14 +1,14 @@
 /* LOGIN PAGES*/
   
 body.login{
-  background: url(../img/backgrounds/bg01.jpg) no-repeat center center fixed; 
+  background: url(img/backgrounds/bg01.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover; 
   background-size: cover;
   padding-bottom: 60px;
 
-  &.alternatebg {background-image: url(../img/backgrounds/bg02.jpg)}
+  &.alternatebg {background-image: url(img/backgrounds/bg02.jpg)}
   .help-block {text-align: left; margin-top: -5px}
 
   .login-center {
