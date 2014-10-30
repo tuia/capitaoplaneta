@@ -1,110 +1,113 @@
 //SRCIPTS
-$('#foward-modal .togglecc').click( function() {
-	$(this).parents('form').find('.cc-container').slideToggle();
+var jq = jQuery.noConflict();
+
+//SRCIPTS
+jq('#foward-modal .togglecc').click( function() {
+	jq(this).parents('form').find('.cc-container').slideToggle();
 });
 
 
 /* TOOLTIP */
-$('body').tooltip({
+jq('body').tooltip({
 	delay: { show: 400, hide: 10 },
     selector: '[data-toggle="tooltip"], .hastooltip, .mec-menu .dropdown-toggle'
 });
 
 
 /* ACCORDIONS */
-$('.accordion-box a.accordion-trigger, .accordion-box button.accordion-trigger').not('.disabled').click( function() {
-	$(this).toggleClass('open');
-	$(this).parents('.accordion-box').find('.accordion-hidden').slideToggle();
-	if ( $(this).hasClass('open') ) {
-		$(this).html('<i class="fa fa-chevron-up"></i>');
+jq('.accordion-box a.accordion-trigger, .accordion-box button.accordion-trigger').not('.disabled').click( function() {
+	jq(this).toggleClass('open');
+	jq(this).parents('.accordion-box').find('.accordion-hidden').slideToggle();
+	if ( jq(this).hasClass('open') ) {
+		jq(this).html('<i class="fa fa-chevron-up"></i>');
 	} else {
-		$(this).html('<i class="fa fa-chevron-down"></i>');
+		jq(this).html('<i class="fa fa-chevron-down"></i>');
 	}
 	return false
 });
-$(".accordion-container input[type='radio']").change(function(){
+jq(".accordion-container input[type='radio']").change(function(){
 	console.log('estou na função');
-    $(this).parents('.accordion-container').find('.accordion-hidden').slideUp();
-    $(this).parents('.accordion-container').find('.radio label').addClass('lighter');
-    $(this).parents('.accordion-box').find('.accordion-hidden').slideDown();
-    $(this).parent().removeClass('lighter');
+    jq(this).parents('.accordion-container').find('.accordion-hidden').slideUp();
+    jq(this).parents('.accordion-container').find('.radio label').addClass('lighter');
+    jq(this).parents('.accordion-box').find('.accordion-hidden').slideDown();
+    jq(this).parent().removeClass('lighter');
 });
 
 /* INDERTAMINATE CHECKBOX 
-$("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
+jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 
 
 
 /*CITAÇÃO*/
 
 	/* BOTÕES DE SENTIMENTO */
-	$('.feeling-menu:not(".dropdown-menu") > .btn').click( function() {
+	jq('.feeling-menu:not(".dropdown-menu") > .btn').click( function() {
 
-		if ( $(this).hasClass('active') ) {
-			$(this).removeClass('active');
+		if ( jq(this).hasClass('active') ) {
+			jq(this).removeClass('active');
 		} else {
-			$(this).parent('.feeling-menu').find('.active.btn').removeClass('active');
-			$(this).toggleClass('active');	
+			jq(this).parent('.feeling-menu').find('.active.btn').removeClass('active');
+			jq(this).toggleClass('active');	
 		}
 		return false
 	});
 
 
 	/* DROPUP DE SETIMENTOS DA BARRA DO MEC */
-	$('.mec-menu .dropdown-menu .btn').not('.remove').click( function() {
-		var 		trigger = $(this).parents('.dropup').find('.dropdown-toggle'),
-			selectedfeeling = $(this).attr('class'),
-				removebtn = $(this).parents('.dropdown-menu').find('.remove');
+	jq('.mec-menu .dropdown-menu .btn').not('.remove').click( function() {
+		var 		trigger = jq(this).parents('.dropup').find('.dropdown-toggle'),
+			selectedfeeling = jq(this).attr('class'),
+				removebtn = jq(this).parents('.dropdown-menu').find('.remove');
 
 		if ( trigger.hasClass('good') || trigger.hasClass('neutral') || trigger.hasClass('bad') ) {
 			trigger.removeClass('good').removeClass('neutral').removeClass('bad');
 			trigger.addClass(selectedfeeling);
-			$(this).parents('.dropup.open').removeClass('open');
+			jq(this).parents('.dropup.open').removeClass('open');
 		} else {
 			removebtn.css('display', 'block');
 			trigger.addClass(selectedfeeling);
-			$(this).parents('.dropup.open').removeClass('open');
+			jq(this).parents('.dropup.open').removeClass('open');
 		}
 
 		return false
 	});
 		// remover sentimento selecionado
-		$('.mec-menu .dropdown-menu .remove').click( function() {
-			$(this).parents('.dropup').find('.dropdown-toggle').removeClass('good').removeClass('neutral').removeClass('bad');
-			$(this).hide();
-			$(this).parents('.dropup.open').removeClass('open');
+		jq('.mec-menu .dropdown-menu .remove').click( function() {
+			jq(this).parents('.dropup').find('.dropdown-toggle').removeClass('good').removeClass('neutral').removeClass('bad');
+			jq(this).hide();
+			jq(this).parents('.dropup.open').removeClass('open');
 			return false;
 		});
 
 
 	/* MUDANÇA DE STATUS */
-	$('.status-bar .dropdown-menu .em-andamento, .status-bar .dropdown-menu .encaminhado, .status-bar .dropdown-menu .fechado ').click( function() {
-		var value = $(this).text(),
-		btn = $(this).parents('.status-bar').find('.status-btn');
+	jq('.status-bar .dropdown-menu .em-andamento, .status-bar .dropdown-menu .encaminhado, .status-bar .dropdown-menu .fechado ').click( function() {
+		var value = jq(this).text(),
+		btn = jq(this).parents('.status-bar').find('.status-btn');
 		
-		$(this).parents('.dropdown-menu').find('.active').removeClass('active');
-		$(this).parent().addClass('active');
+		jq(this).parents('.dropdown-menu').find('.active').removeClass('active');
+		jq(this).parent().addClass('active');
 
 		btn.find('span').html(value + "<small>setor</small>");
 		btn.removeClass('em-andamento').removeClass('encaminhado').removeClass('fechado');
-		if ( $(this).hasClass('em-andamento') ) { value = "em-andamento" }
+		if ( jq(this).hasClass('em-andamento') ) { value = "em-andamento" }
 		btn.addClass(value);
 
-		$(this).parents('.dropdown-menu').find('a').show();
-		$(this).parents('.dropdown-menu').find('.value').hide();
+		jq(this).parents('.dropdown-menu').find('a').show();
+		jq(this).parents('.dropdown-menu').find('.value').hide();
 
-		$(this).parents('.dropdown.open').removeClass('open');
+		jq(this).parents('.dropdown.open').removeClass('open');
 
 		return false;
 	});
 	/*
-	$('.status-btn').click( function() {
-		if ( !$(this).hasClass('atendimento') ) {
+	jq('.status-btn').click( function() {
+		if ( !jq(this).hasClass('atendimento') ) {
 			
-		  $(this).addClass('atendimento').addClass('em-andamento');
-		  $(this).find('span').text('em-andamento');
+		  jq(this).addClass('atendimento').addClass('em-andamento');
+		  jq(this).find('span').text('em-andamento');
 		  setTimeout( function() {
-		    $(this).parents('.dropdown.open').removeClass('open');
+		    jq(this).parents('.dropdown.open').removeClass('open');
 		  }, 1000); 
 		  return false;
 		}
@@ -112,14 +115,14 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 
 
 	/*CHECKBOX*/
-	$('.quote-checkbox input').change( function() {
-		$(this).parents('.quote').toggleClass('selected');
+	jq('.quote-checkbox input').change( function() {
+		jq(this).parents('.quote').toggleClass('selected');
 	});
 
 
 	/*DROPDOWN MEC*/
-	$('#mec-dropdown .dropdown-menu li a').click( function() {
-		var btn = $(this),
+	jq('#mec-dropdown .dropdown-menu li a').click( function() {
+		var btn = jq(this),
 			v = 1;
 
 		if ( btn.hasClass('bad') ) {
@@ -140,16 +143,16 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 
 
 	/* LIDO/NÃO-LIDO */
-	$('.leitura-btn').click( function() {
+	jq('.leitura-btn').click( function() {
 			var v = 1;
 
-		if ( $(this).hasClass('lido') ) {
-			$(this).removeClass('lido').addClass('nao-lido');
-			$(this).html('<i class="fa fa-circle-o" data-toggle="tooltip" title="marcar como lido"></i>');
+		if ( jq(this).hasClass('lido') ) {
+			jq(this).removeClass('lido').addClass('nao-lido');
+			jq(this).html('<i class="fa fa-circle-o" data-toggle="tooltip" title="marcar como lido"></i>');
 			v = v + 1;
-		} if ( $(this).hasClass('nao-lido') && v != 2 ) {
-			$(this).removeClass('nao-lido').addClass('lido');
-			$(this).html('<i class="fa fa-circle" data-toggle="tooltip" title="marcar como não lido"></i>');
+		} if ( jq(this).hasClass('nao-lido') && v != 2 ) {
+			jq(this).removeClass('nao-lido').addClass('lido');
+			jq(this).html('<i class="fa fa-circle" data-toggle="tooltip" title="marcar como não lido"></i>');
 			v = 1;
 		}
 		return false;
@@ -157,19 +160,19 @@ $("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 
 
 /* AFFIX ACTIONS BAR DE CITAÇÕES */
- $('#actions-bar').affix({offset: { top: $('#actions-bar').offset().top }}); 
+ jq('#actions-bar').affix({offset: { top: jq('#actions-bar').offset().top }}); 
 
 
 /*PAINEL FILTRAR */
-$('#filter-toggle').click( function() {
-	var icon = $(this).find('.fa');
+jq('#filter-toggle').click( function() {
+	var icon = jq(this).find('.fa');
 
-	if ( $(this).hasClass('active') ) {
+	if ( jq(this).hasClass('active') ) {
 		icon.removeClass('fa-remove').addClass('fa-filter');
-	} if ( !$(this).hasClass('active') ) {
+	} if ( !jq(this).hasClass('active') ) {
 		icon.removeClass('fa-filter').addClass('fa-remove');
 	}
-	$(this).toggleClass('active');
-	$('#filter-panel').toggleClass('open');
+	jq(this).toggleClass('active');
+	jq('#filter-panel').toggleClass('open');
 	return false;
 });
