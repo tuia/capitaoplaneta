@@ -70,348 +70,350 @@
           </div><!--/col-->
         </div><!--/row-->
 
-        <div class="row">
+        <form id="filter-form">
+          <div class="row">
 
-          <!--/GERAL-->
-          <div class="col-xs-6">
-            <h4>Conteúdo</h4>
-            <div class="row">
+            <!--/GERAL-->
+            <div class="col-xs-6">
+              <h4>Conteúdo</h4>
+              <div class="row">
 
-              <div class="col-xs-6">
+                <div class="col-xs-6">
 
-                <!--/CONTEÚDO-->
-                <div class="filter-group">
-                  <h5 class="inverse-text">conteudo da citação</h5>
-                  <input type="text" class="form-control search" placeholder="buscar...">
-                </div><!--/filter-group-->
+                  <!--/CONTEÚDO-->
+                  <div class="filter-group">
+                    <h5 class="inverse-text">conteudo da citação</h5>
+                    <input type="text" class="form-control search" placeholder="buscar...">
+                  </div><!--/filter-group-->
 
-                <!--/MARCADORES-->
-                <div class="filter-group">
-                  <h5 class="inverse-text">marcadores</h5>
-                  <div class="btn-group dropdown tags-menu">
-                    <button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tag"></i> selecione <span class="caret"></span></button>
-                    <div class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                      <form role="form">
+                  <!--/MARCADORES-->
+                  <div class="filter-group">
+                    <h5 class="inverse-text">marcadores</h5>
+                    <div class="btn-group dropdown tags-menu">
+                      <button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tag"></i> selecione <span class="caret"></span></button>
+                      <div class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <form role="form">
 
-                        <div class="form-group">
-                          <label for="search">marcar como:</label>
-                          <input type="search" class="form-control" id="" placeholder="">
-                        </div><!--/form-group-->
+                          <div class="form-group">
+                            <label for="search">marcar como:</label>
+                            <input type="search" class="form-control" id="" placeholder="">
+                          </div><!--/form-group-->
 
-                        <div class="auto">
-                          <div class="checkbox">
-                            <label><input type="checkbox"> <i class="glyphicon glyphicon-star"></i> favoritos</label>
-                          </div>
-                          <div class="checkbox">
-                            <label><input type="checkbox"> lead</label>
-                          </div>
-                          <div class="checkbox">
-                            <label><input type="checkbox"> a responder</label>
-                          </div>
-                        </div><!--/auto-->
+                          <div class="auto">
+                            <div class="checkbox">
+                              <label><input type="checkbox"> <i class="glyphicon glyphicon-star"></i> favoritos</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox"> lead</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox"> a responder</label>
+                            </div>
+                          </div><!--/auto-->
 
-                        <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#newtag-modal"><span class="glyphicon glyphicon-plus"></span> novo marcador</a></div>
-                        <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#configtag-modal"><span class="glyphicon glyphicon-cog"></span> gerenciar marcadores</a></div>
-                        <div class=""><a href="#" class="btn-primary btn btn-block">aplicar</a></div>
-                        
-                      </form>
-                    </div><!--/.dropdown-menu-->
-                  </div><!--/.dropdown-->
-                </div><!--/filter-group-->
+                          <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#configtag-modal"><span class="glyphicon glyphicon-cog"></span> gerenciar marcadores</a></div>
+                          <div class=""><a href="#" class="btn-primary btn btn-block">aplicar</a></div>
+                          
+                        </form>
+                      </div><!--/.dropdown-menu-->
+                    </div><!--/.dropdown-->
+                  </div><!--/filter-group-->
 
-                <!--/PERÍODO-->
-                <div class="filter-group">
-                  <h5 class="inverse-text">período</h5>
-                  <div class="btn-group-vertical" data-toggle="buttons">
-                    <label class="btn btn-default active">
-                      <input type="radio" name="options" id="option1" checked> últimas 24h
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="radio" name="options" id="option2"> últimos 7 dias
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="radio" name="options" id="option3"> últimos 30 dias
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="radio" name="options" id="option4"> últimos 12 meses
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="radio" name="options" id="option5">
-                      entre <input type="text" value="" class="calendar input-small"> e <input type="text" value="" class="calendar input-small"> 
-                    </label>
-                  </div><!--/btn-group-->
-                </div><!--/filter-group-->
-
-
-                <!--/HORÁRIO-->
-                <div class="filter-group horario">
-                  <h5 class="inverse-text">horário</h5>                
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default active">
-                      <input type="checkbox" name="options" id="option1" checked> manhã
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option2"> tarde
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option3"> noite
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option4"> madrugada
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option5">
-                      entre <input type="text" value="" class="input-small"> e <input type="text" value="" class="input-small"> 
-                    </label>
-                  </div><!--/btn-group-->
-                </div><!--/filter-group-->
-
-              </div><!--/col-xs-6-->
-
-              <div class="col-xs-6">
+                  <!--/PERÍODO-->
+                  <div class="filter-group">
+                    <h5 class="inverse-text">período</h5>
+                    <div class="btn-group-vertical" data-toggle="buttons">
+                      <label class="btn btn-default active">
+                        <input type="radio" name="options" id="option1" checked> últimas 24h
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2"> últimos 7 dias
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option3"> últimos 30 dias
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option4"> últimos 12 meses
+                      </label>
+                    </div><!--/btn-group-->
+                    <div class="btn-set btn btn-default input-daterange">
+                      de
+                      <input type="text" class="date" name="start" />
+                      <span class="add-on" style="vertical-align: middle;height:20px">a</span>
+                      <input type="text" class="date" name="end" />
+                    </div><!--/btn-set-->
+                  </div><!--/filter-group-->
 
 
-                <!--/MÍDIAS-->
-                <div class="filter-group midias">
-                  <h5 class="inverse-text">mídias</h5>                
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default active">
-                      <input type="checkbox" name="options" id="option1" checked> <i class="fa fa-facebook"></i>
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option2"> <i class="fa fa-twitter"></i>
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option3"> <i class="fa fa-youtube"></i>
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option4"> <i class="fa fa-google-plus"></i>
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option4"> <i class="fa fa-instagram"></i>
-                    </label>
-                    <label class="btn btn-default active">
-                      <input type="checkbox" name="options" id="option5" checked> RA
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option6"> <i class="fa fa-linkedin"></i>
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option7"> blog
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option8"> <i class="fa fa-foursquare"></i>
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option9"> <i class="fa fa-flickr"></i>
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option5">
-                      fanpage
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option5">
-                      mkt nas IES
-                    </label>
-                  </div><!--/btn-group-->
-                </div><!--/filter-group-->
+                  <!--/HORÁRIO-->
+                  <div class="filter-group horario">
+                    <h5 class="inverse-text">horário</h5>                
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-default active">
+                        <input type="checkbox" name="options" id="option1" checked> manhã
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option2"> tarde
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option3"> noite
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option4"> madrugada
+                      </label>
+                    </div><!--/btn-group-->
+                    <div class="btn-set btn btn-default">
+                      de <input type="text" value="" class="hour"> e <input type="text" value="" class="hour"> 
+                    </div>
+                  </div><!--/filter-group-->
+
+                </div><!--/col-xs-6-->
+
+                <div class="col-xs-6">
 
 
-                <!--/SENTIMENTO-->
-                <div class="filter-group feeling">
-                  <h5 class="inverse-text">sentimento</h5>                
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default active">
-                      <input type="checkbox" name="options" id="option1" checked> <i class="feeling-icon good"></i>
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option2"> <i class="feeling-icon neutral"></i>
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="checkbox" name="options" id="option3"> <i class="feeling-icon bad"></i>
-                    </label>
-                  </div><!--/btn-group-->
-                </div><!--/filter-group-->
+                  <!--/MÍDIAS-->
+                  <div class="filter-group midias">
+                    <h5 class="inverse-text">mídias</h5>                
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-default active">
+                        <input type="checkbox" name="options" id="option1" checked> <i class="fa fa-facebook"></i>
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option2"> <i class="fa fa-twitter"></i>
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option3"> <i class="fa fa-youtube"></i>
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option4"> <i class="fa fa-google-plus"></i>
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option4"> <i class="fa fa-instagram"></i>
+                      </label>
+                      <label class="btn btn-default active">
+                        <input type="checkbox" name="options" id="option5" checked> RA
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option6"> <i class="fa fa-linkedin"></i>
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option7"> blog
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option8"> <i class="fa fa-foursquare"></i>
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option9"> <i class="fa fa-flickr"></i>
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option5">
+                        fanpage
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option5">
+                        mkt nas IES
+                      </label>
+                    </div><!--/btn-group-->
+                  </div><!--/filter-group-->
 
 
-                <!--/LEITURA-->
-                <div class="filter-group leitura">
-                  <h5 class="inverse-text">leitura</h5>                
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default active">
-                      <input type="radio" name="options" id="option1" checked> lido
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="radio" name="options" id="option2"> não lido
-                    </label>
-                  </div><!--/btn-group-->
-                </div><!--/filter-group-->
+                  <!--/SENTIMENTO-->
+                  <div class="filter-group feeling">
+                    <h5 class="inverse-text">sentimento</h5>                
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-default active">
+                        <input type="checkbox" name="options" id="option1" checked> <i class="feeling-icon good"></i>
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option2"> <i class="feeling-icon neutral"></i>
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="checkbox" name="options" id="option3"> <i class="feeling-icon bad"></i>
+                      </label>
+                    </div><!--/btn-group-->
+                  </div><!--/filter-group-->
 
 
-                <!--/CRM-->
-                <div class="filter-group crm">
-                  <h5 class="inverse-text">CRM</h5>                
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default active">
-                      <input type="radio" name="options" id="option1" checked> encaminhadas
-                    </label>
-                    <label class="btn btn-default">
-                      <input type="radio" name="options" id="option2"> não encaminhadas
-                    </label>
-                  </div><!--/btn-group-->
-                </div><!--/filter-group-->
+                  <!--/LEITURA-->
+                  <div class="filter-group leitura">
+                    <h5 class="inverse-text">leitura</h5>                
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-default active">
+                        <input type="radio" name="options" id="option1" checked> lido
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2"> não lido
+                      </label>
+                    </div><!--/btn-group-->
+                  </div><!--/filter-group-->
 
 
-              </div><!--/col-xs-6-->
-
-            </div><!--/row-->
-          </div><!--/col-xs-6-->
-
-          <div class="col-xs-3">
-            <h4>Atendimento</h4>
-
-            <!--/ID-->
-            <div class="filter-group">
-              <h5 class="inverse-text">ID</h5>
-              <input type="text" class="form-control search" placeholder="buscar...">
-            </div><!--/filter-group-->
-
-
-            <!--/STATUS-->
-            <div class="filter-group status">
-              <h5 class="inverse-text">status</h5>            
-              <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-default active">
-                  <input type="checkbox" name="options" id="option1" checked> em andamento
-                </label>
-                <label class="btn btn-default">
-                  <input type="checkbox" name="options" id="option2"> encaminhado
-                </label>
-                <label class="btn btn-default">
-                  <input type="checkbox" name="options" id="option3"> fechado
-                </label>
-              </div><!--/btn-group-->
-            </div><!--/filter-group-->
+                  <!--/CRM-->
+                  <div class="filter-group crm">
+                    <h5 class="inverse-text">CRM</h5>                
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-default active">
+                        <input type="radio" name="options" id="option1" checked> encaminhadas
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2"> não encaminhadas
+                      </label>
+                    </div><!--/btn-group-->
+                  </div><!--/filter-group-->
 
 
-            <!--/NÍVEL DE ATENDIMENTO-->
-            <div class="filter-group nivel-de-atendimento">
-              <h5 class="inverse-text">nível de atendimento</h5>                
-              <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-default active">
-                  <input type="radio" name="options" id="option1" checked> 1
-                </label>
-                <label class="btn btn-default">
-                  <input type="radio" name="options" id="option2"> 2
-                </label>
-              </div><!--/btn-group-->
-            </div><!--/filter-group-->
+                </div><!--/col-xs-6-->
+
+              </div><!--/row-->
+            </div><!--/col-xs-6-->
+
+            <div class="col-xs-3">
+              <h4>Atendimento</h4>
+
+              <!--/ID-->
+              <div class="filter-group">
+                <h5 class="inverse-text">ID</h5>
+                <input type="text" class="form-control search" placeholder="buscar...">
+              </div><!--/filter-group-->
 
 
-            <!--/ÚLTIMA INTERAÇÃO-->
-            <div class="filter-group ultima-interacao">
-              <h5 class="inverse-text">última interação</h5>                
-              <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-default active">
-                  <input type="radio" name="options" id="option1" checked> minha
-                </label>
-                <label class="btn btn-default">
-                  <input type="radio" name="options" id="option2"> do usuário
-                </label>
-              </div><!--/btn-group-->
-            </div><!--/filter-group-->
+              <!--/STATUS-->
+              <div class="filter-group status">
+                <h5 class="inverse-text">status</h5>            
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-default active">
+                    <input type="checkbox" name="options" id="option1" checked> em andamento
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options" id="option2"> encaminhado
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options" id="option3"> fechado
+                  </label>
+                </div><!--/btn-group-->
+              </div><!--/filter-group-->
 
 
-            <!--/NATUREZA-->
-            <div class="filter-group">
-              <h5 class="inverse-text">natureza</h5>
-              <select class="form-control" placeholder="selecione">
-                <option>dúvida</option>
-                <option>reclamação</option>
-                <option>sugestão</option>
-              </select>
-            </div><!--/filter-group-->
+              <!--/NÍVEL DE ATENDIMENTO-->
+              <div class="filter-group nivel-de-atendimento">
+                <h5 class="inverse-text">nível de atendimento</h5>                
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-default active">
+                    <input type="radio" name="options" id="option1" checked> 1
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option2"> 2
+                  </label>
+                </div><!--/btn-group-->
+              </div><!--/filter-group-->
 
 
-            <!--/SETOR-->
-            <div class="filter-group">
-              <h5 class="inverse-text">setor</h5>
-              <select class="form-control" placeholder="selecione">
-                <option>biblioteca</option>
-                <option>financeiro</option>
-                <option>DA</option>
-              </select>
-            </div><!--/filter-group-->
+              <!--/ÚLTIMA INTERAÇÃO-->
+              <div class="filter-group ultima-interacao">
+                <h5 class="inverse-text">última interação</h5>                
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-default active">
+                    <input type="radio" name="options" id="option1" checked> minha
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option2"> do usuário
+                  </label>
+                </div><!--/btn-group-->
+              </div><!--/filter-group-->
 
 
-            <!--/SETOR-->
-            <div class="filter-group">
-              <h5 class="inverse-text">referente a</h5>
-              <select class="form-control" placeholder="selecione">
-                <option>biblioteca</option>
-                <option>financeiro</option>
-                <option>DA</option>
-              </select>
-            </div><!--/filter-group-->
-            
-          </div><!--/col-xs-3-->
+              <!--/NATUREZA-->
+              <div class="filter-group">
+                <h5 class="inverse-text">natureza</h5>
+                <select class="form-control" placeholder="selecione">
+                  <option>dúvida</option>
+                  <option>reclamação</option>
+                  <option>sugestão</option>
+                </select>
+              </div><!--/filter-group-->
 
-          <div class="col-xs-3">
-            <h4>Usuário</h4>
 
-            <!--/USUARIO-->
-            <div class="filter-group">
-              <h5 class="inverse-text">usuário específico</h5>
-              <input type="text" class="form-control search" placeholder="buscar...">
-            </div><!--/filter-group-->
+              <!--/SETOR-->
+              <div class="filter-group">
+                <h5 class="inverse-text">setor</h5>
+                <select class="form-control" placeholder="selecione">
+                  <option>biblioteca</option>
+                  <option>financeiro</option>
+                  <option>DA</option>
+                </select>
+              </div><!--/filter-group-->
 
-            <!--/-->
-            <div class="filter-group">
-              <h5 class="inverse-text">grupo de usuários</h5>
-              <select class="form-control" placeholder="selecione">
-                <option>a</option>
-                <option>b</option>
-              </select>
-            </div><!--/filter-group-->
 
-            <!--/-->
-            <div class="filter-group">
-              <h5 class="inverse-text">sexo</h5>
-              <select class="form-control" placeholder="selecione">
-                <option>a</option>
-                <option>b</option>
-              </select>
-            </div><!--/filter-group-->
+              <!--/SETOR-->
+              <div class="filter-group">
+                <h5 class="inverse-text">referente a</h5>
+                <select class="form-control" placeholder="selecione">
+                  <option>biblioteca</option>
+                  <option>financeiro</option>
+                  <option>DA</option>
+                </select>
+              </div><!--/filter-group-->
+              
+            </div><!--/col-xs-3-->
 
-            <!--/-->
-            <div class="filter-group">
-              <h5 class="inverse-text">curso</h5>
-              <select class="form-control" placeholder="selecione">
-                <option>a</option>
-                <option>b</option>
-              </select>
-            </div><!--/filter-group-->
+            <div class="col-xs-3">
+              <h4>Usuário</h4>
 
-            <!--/-->
-            <div class="filter-group">
-              <h5 class="inverse-text">campus</h5>
-              <select class="form-control" placeholder="selecione">
-                <option>a</option>
-                <option>b</option>
-              </select>
-            </div><!--/filter-group-->
+              <!--/USUARIO-->
+              <div class="filter-group">
+                <h5 class="inverse-text">usuário específico</h5>
+                <input type="text" class="form-control search" placeholder="buscar...">
+              </div><!--/filter-group-->
 
-            <!--/-->
-            <div class="filter-group">
-              <h5 class="inverse-text">turno</h5>
-              <select class="form-control" placeholder="selecione">
-                <option>a</option>
-                <option>b</option>
-              </select>
-            </div><!--/filter-group-->
-            
-          </div><!--/col-xs-3-->
-        </div><!--/row-->
+              <!--/-->
+              <div class="filter-group">
+                <h5 class="inverse-text">grupo de usuários</h5>
+                <select class="form-control" placeholder="selecione">
+                  <option>a</option>
+                  <option>b</option>
+                </select>
+              </div><!--/filter-group-->
+
+              <!--/-->
+              <div class="filter-group">
+                <h5 class="inverse-text">sexo</h5>
+                <select class="form-control" placeholder="selecione">
+                  <option>a</option>
+                  <option>b</option>
+                </select>
+              </div><!--/filter-group-->
+
+              <!--/-->
+              <div class="filter-group">
+                <h5 class="inverse-text">curso</h5>
+                <select class="form-control" placeholder="selecione">
+                  <option>a</option>
+                  <option>b</option>
+                </select>
+              </div><!--/filter-group-->
+
+              <!--/-->
+              <div class="filter-group">
+                <h5 class="inverse-text">campus</h5>
+                <select class="form-control" placeholder="selecione">
+                  <option>a</option>
+                  <option>b</option>
+                </select>
+              </div><!--/filter-group-->
+
+              <!--/-->
+              <div class="filter-group">
+                <h5 class="inverse-text">turno</h5>
+                <select class="form-control" placeholder="selecione">
+                  <option>a</option>
+                  <option>b</option>
+                </select>
+              </div><!--/filter-group-->
+              
+            </div><!--/col-xs-3-->
+          </div><!--/row-->
+        </form>
 
       </div><!--/filter-content-->
 
@@ -424,7 +426,7 @@
           </div>
         </div>
         <div class="pull-right">
-          <a href="#">limpar filtro</a>
+          <a href="#" class="reset-filter">limpar filtro</a>
           <a href="#" class="btn btn-default btn-lg" data-toggle="modal" data-target="#save-filter-modal">salvar filtro</a>
           <a href="#" class="btn btn-primary btn-lg">filtrar</a>
         </div>
@@ -432,1097 +434,1098 @@
       </footer>
     </div><!--/#filter-panel-->
 
-    <!--/#NAVIGATION-->
-    <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div id="outside-filter">
+
+      <!--/#NAVIGATION-->
+      <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+
+          <!--/MENU INSTITUIÇÃO-->
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               <img src="Content/img/instituicao-02.png" alt="" class="nav-img">Anhembi Morumbi <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="auto">
+                  <ul class="nav">
+                    <li class="active"><a href="#">Anhembi Morumbi</a></li>
+                    <li><a href="#">Anhembi</a></li>
+                    <li><a href="#">Fumec</a></li>
+                    <li><a href="#">Unibh</a></li>
+                    <li><a href="#">Una</a></li>
+                    <li><a href="#">PUC</a></li>
+                  </ul>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">Grupo educacional</a></li>
+                <li><a href="gerenciar-instituicoes.html"><i class="fa fa-cog"></i> Gerenciar instituições</a></li>
+              </ul><!--/.dropdown-menu-->
+            </li><!--/.dropdown-->
+
+            <!--/alertas - instituiçao-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">alerta 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#">limpar notificações</a></li>
+              </ul>
+            </li><!--/dropdown-->
+          </ul><!--/.navbar-nav-->
+
+          <!--/LOGO-->
+          <a class="navbar-brand" href="index.html">Planeta Y</a>
+
+          <!--/MENU USUÁRIO-->
+          <ul class="nav navbar-nav pull-right">          
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="Content/img/user-01.jpg" alt="anhanguera" class="nav-img">
+                Juliana <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                <li><a href="dados-cadastrais.html">Dados cadastrais</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="#">Sair</a></li>
+                <li class="divider"></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+                <li><a href="sobre-o-planetay.html">Sobre o Planeta Y</a></li>
+                <li><a href="reportar-problema.html">Reportar problema</a></li>
+              </ul><!--/.dropdown-menu-->
+            </li><!--/.dropdown-->
+
+            <!--/alertas - usuario-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
+              <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                <li><a href="#">alerta 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#">limpar notificações</a></li>
+              </ul>
+            </li><!--/dropdown-->
+          </ul><!--/.navbar-nav-->
+
+        </div><!-- /.container-->
+      </nav><!--/.navbar-->
+
+      <!--/CABEÇALHO-->
+      <header id="header">
+        <div class="container">
+
+          <div id="institution-box">
+            <img src="Content/img/instituicao-02.png" class="institution-image">
+            <div class="institution-data">
+              <h2 class="institution-name">Anhembi Morumbi</h2>
+              <div class="painel">
+                <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
+                <div class="capital-social">
+                  <h5>7,7</h5>
+                  <p><strong>3.607</strong> citações</p>
+                </div>
+                <div class="menu">
+                  <p>capital social</p>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown">geral <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 24 horas</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 7 dias</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 30 dias</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">geral</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div><!--/painel-->
+            </div><!--/institution-data-->
+            <span class="clearfix"></span>
+          </div><!--/institution-box-->
+
+          <ul class="nav nav-tabs pull-right" role="tablist">
+            <li><a href="index.html"><i class="fa fa-home"></i> início</a></li>
+            <li class="active"><a href="citacoes.html"><i class="fa fa-comment"></i> citações <span class="badge">78</span></a></a></li>
+            <li><a href="pessoas.html"><i class="fa fa-group"></i> pessoas</a></li>
+            <li><a href="relatorios.html"><i class="fa fa-pie-chart"></i> relatórios</a></li>
+            <li><a href="alertas.html"><i class="fa fa-cog"></i> preferências</a></li>
+          </ul>
+        </div><!--/container-->
+      </header>
+
       <div class="container">
 
-        <!--/MENU INSTITUIÇÃO-->
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-             <img src="Content/img/instituicao-02.png" alt="" class="nav-img">Anhembi Morumbi <span class="caret"></span>
+        <!--/FEEDBACK-->
+        <div class="alert alert-success alert-dismissible center-box" role="alert">
+          <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          As 5 citações foram marcadas como <strong>lidas</strong>. <a href="#">desfazer</a>
+        </div>
+
+      </div><!--/container-->
+
+      <!--/#ACTIONS BAR-->
+      <div id="actions-bar">
+        <div class="container">
+
+          <!--/checkbox-->
+          <div class="dropdown btn-group">
+            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> 
+              <span class="checkbox">
+                <label><input type="checkbox"> <span class="caret"></span></label>
+              </span><!--/.checkbox-->
             </a>
             <ul class="dropdown-menu" role="menu">
-              <li class="auto">
-                <ul class="nav">
-                  <li class="active"><a href="#">Anhembi Morumbi</a></li>
-                  <li><a href="#">Anhembi</a></li>
-                  <li><a href="#">Fumec</a></li>
-                  <li><a href="#">Unibh</a></li>
-                  <li><a href="#">Una</a></li>
-                  <li><a href="#">PUC</a></li>
-                </ul>
-              </li>
+              <li><a href="#">todas desta página</a></li>
+              <li><a href="#">todas</a></li>
+              <li class="disabled"><a href="#">nenhuma</a></li>
               <li class="divider"></li>
-              <li><a href="#">Grupo educacional</a></li>
-              <li><a href="gerenciar-instituicoes.html"><i class="fa fa-cog"></i> Gerenciar instituições</a></li>
-            </ul><!--/.dropdown-menu-->
-          </li><!--/.dropdown-->
-
-          <!--/alertas - instituiçao-->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">alerta 1</a></li>
-              <li class="divider"></li>
-              <li><a href="#">limpar notificações</a></li>
+              <li><a href="#">em-andamentos</a></li>
+              <li><a href="#">encaminhado</a></li>
+              <li><a href="#">fechados</a></li>
             </ul>
-          </li><!--/dropdown-->
-        </ul><!--/.navbar-nav-->
+          </div><!--/btn-group-->
 
-        <!--/LOGO-->
-        <a class="navbar-brand" href="index.html">Planeta Y</a>
+          <!--/lido/naolido-->
+          <div class="btn-group">
+            <button type="button" class="btn btn-default"><i class="fa fa-circle"></i> lido</button>
+            <button type="button" class="btn btn-default"><i class="fa fa-circle-o"></i> não lido</button>
+          </div><!--/btn-group-->
 
-        <!--/MENU USUÁRIO-->
-        <ul class="nav navbar-nav pull-right">          
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="Content/img/user-01.jpg" alt="anhanguera" class="nav-img">
-              Juliana <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-right" role="menu">
-              <li><a href="dados-cadastrais.html">Dados cadastrais</a></li>
-              <li><a href="planos.html">Planos</a></li>
-              <li><a href="#">Sair</a></li>
-              <li class="divider"></li>
-              <li><a href="ajuda.html">Ajuda</a></li>
-              <li><a href="sobre-o-planetay.html">Sobre o Planeta Y</a></li>
-              <li><a href="reportar-problema.html">Reportar problema</a></li>
-            </ul><!--/.dropdown-menu-->
-          </li><!--/.dropdown-->
+          <!--/status-->
+          <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">status <span class="caret"></span></button>
+              <ul class="dropdown-menu status-menu" role="menu">
+                <li><a href="#" class="em-andamento">em andamento</a></li>
+                <li><a href="#" class="encaminhado">encaminhado</a></li>
+                <li><a href="#" class="fechado">fechado</a></li>
+              </ul>
+          </div><!--/btn-group-->
 
-          <!--/alertas - usuario-->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
-            <ul class="dropdown-menu dropdown-menu-right" role="menu">
-              <li><a href="#">alerta 1</a></li>
-              <li class="divider"></li>
-              <li><a href="#">limpar notificações</a></li>
-            </ul>
-          </li><!--/dropdown-->
-        </ul><!--/.navbar-nav-->
+          <!--/encaminhar e responder-->
+          <div class="btn-group">
+            <div class="dropdown btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle hastooltip" data-toggle="dropdown" title="encaminhar"><span class="glyphicon glyphicon-arrow-right"></span></button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CRM</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#foward-modal">email</a></li>
+              </ul>
+            </div><!--/btn-group-->
+            <button type="button" class="btn btn-default hastooltip" data-toggle="modal" data-target="#answer-modal" title="responder"><i class="fa fa-reply"></i></button>
+          </div><!--/btn-group-->
 
-      </div><!-- /.container-->
-    </nav><!--/.navbar-->
-
-    <header id="header" class="">
-      <div class="container">
-        <!--/<img src="Content/img/topo.png">-->
-
-        <div id="institution-box">
-          <img src="Content/img/instituicao-02.png" class="institution-image">
-          <div class="institution-data">
-            <h2 class="institution-name">Anhembi Morumbi</h2>
-            <div class="painel">
-              <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
-              <div class="capital-social">
-                <h5>7,7</h5>
-                <p><strong>3.607</strong> citações</p>
+          <!--/sentimento, mec e tags-->
+          <div class="btn-group">
+          
+            <!--/sentimento-->
+            <div class="dropdown btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="feeling-icon indeterminate"></span> <span class="caret"></span></button>
+              <ul class="dropdown-menu feeling-menu" role="menu">
+                <li><a href="#" class="btn good"> positivo</a></li>
+                <li><a href="#" class="btn neutral"> neutro</a></li>
+                <li><a href="#" class="btn bad"> negativo</a></li>
+              </ul>
+            </div><!--/btn-group-->
+          
+            <!--/mec-->
+            <div id="mec-dropdown" class="dropdown btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> MEC <span class="caret"></span></button>
+              <div class="dropdown-menu" role="menu">
+              <div class="alert alert-info alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <p>clique uma vez para definir como <span class="good-txt">positivo</span>, duas como <span class="neutral-txt">neutro</span> e três como <span class="bad-txt">negativo</span>.</p>
+                <button type="button" class="btn btn-primary btn-xs" data-dismiss="alert">Ok, entendi</button>
               </div>
-              <div class="menu">
-                <p>capital social</p>
-                <div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown">geral <span class="caret"></span></button>
-                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 24 horas</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 7 dias</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 30 dias</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">geral</a></li>
+                <div class="auto">
+                  <ul class="nav">
+                    <li><a href="#" class="captacao"> <span class="mec-icon captacao"></span> captação</a></li>
+                    <li><a href="#" class="empregabilidade"> <span class="mec-icon empregabilidade"></span>  empregabilidade</a></li>
+                    <li><a href="#" class="localizacao"> <span class="mec-icon localizacao"></span>  localizacao</a></li>
+                    <li><a href="#" class="atuacao-etica"> <span class="mec-icon atuacao-etica"></span>  atuacao etica</a></li>
+                    <li><a href="#" class="corpo-docente"> <span class="mec-icon corpo-docente"></span>  corpo docente</a></li>
+                    <li><a href="#" class="credenciamento-no-mec"> <span class="mec-icon credenciamento-no-mec"></span>  credenciamento no mec</a></li>
+                    <li><a href="#" class="preco"> <span class="mec-icon preco"></span>  preço</a></li>
+                    <li><a href="#" class="qualidade-de-ensino"> <span class="mec-icon qualidade-de-ensino"></span>  qualidade de ensino</a></li>
+                    <li><a href="#" class="infraestrutura"> <span class="mec-icon infraestrutura"></span>  infraestrutura</a></li>
+                    <li><a href="#" class="relacionamento"> <span class="mec-icon relacionamento"></span>  relacionamento</a></li>
                   </ul>
                 </div>
+                <div><a href="#" class="btn btn-primary btn-block">aplicar</a></div>
               </div>
-            </div><!--/painel-->
-          </div><!--/institution-data-->
-          <span class="clearfix"></span>
-        </div><!--/institution-box-->
+            </div><!--/btn-group-->
 
-        <ul class="nav nav-tabs pull-right" role="tablist">
-          <li><a href="index.html"><i class="fa fa-home"></i> início</a></li>
-          <li class="active"><a href="citacoes.html"><i class="fa fa-comment"></i> citações <span class="badge">78</span></a></a></li>
-          <li><a href="pessoas.html"><i class="fa fa-group"></i> pessoas</a></li>
-          <li><a href="relatorios.html"><i class="fa fa-pie-chart"></i> relatórios</a></li>
-          <li><a href="alertas.html"><i class="fa fa-cog"></i> preferências</a></li>
-        </ul>
-      </div><!--/container-->
-    </header>
+            <!--/tags-->
+            <div class="btn-group dropdown tags-menu">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tag"></i> <span class="caret"></span></button>
+              <div class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <form role="form">
 
+                  <div class="form-group">
+                    <label for="search">marcar como:</label>
+                    <input type="search" class="form-control" id="" placeholder="">
+                  </div><!--/form-group-->
 
-    <!--/CONTEÚDO DA PÁGINA-->
-    <div class="container">
+                  <div class="auto">
+                    <div class="checkbox">
+                      <label><input type="checkbox"> <i class="glyphicon glyphicon-star"></i> favoritos</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox"> lead</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox"> respondido</label>
+                    </div>
+                  </div><!--/auto-->
 
-      <!--/FEEDBACK-->
-      <div class="alert alert-success alert-dismissible center-box" role="alert">
-        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        As 5 citações foram marcadas como <strong>lidas</strong>. <a href="#">desfazer</a>
-      </div>
+                  <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#newtag-modal"><span class="glyphicon glyphicon-plus"></span> novo marcador</a></div>
+                  <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#configtag-modal"><span class="glyphicon glyphicon-cog"></span> gerenciar marcadores</a></div>
+                  <div class=""><a href="#" class="btn-primary btn btn-block">aplicar</a></div>
+                  
+                </form>
+              </div><!--/.dropdown-menu-->
+            </div><!--/.dropdown-->
+          </div><!--/btn-group-->
 
-    </div><!--/container-->
-
-    <!--/#ACTIONS BAR-->
-    <div id="actions-bar">
-      <div class="container">
-
-        <!--/checkbox-->
-        <div class="dropdown btn-group">
-          <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> 
-            <span class="checkbox">
-              <label><input type="checkbox"> <span class="caret"></span></label>
-            </span><!--/.checkbox-->
-          </a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">todas desta página</a></li>
-            <li><a href="#">todas</a></li>
-            <li class="disabled"><a href="#">nenhuma</a></li>
-            <li class="divider"></li>
-            <li><a href="#">em-andamentos</a></li>
-            <li><a href="#">encaminhado</a></li>
-            <li><a href="#">fechados</a></li>
-          </ul>
-        </div><!--/btn-group-->
-
-        <!--/lido/naolido-->
-        <div class="btn-group">
-          <button type="button" class="btn btn-default"><i class="fa fa-circle"></i> lido</button>
-          <button type="button" class="btn btn-default"><i class="fa fa-circle-o"></i> não lido</button>
-        </div><!--/btn-group-->
-
-        <!--/status-->
-        <div class="btn-group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">status <span class="caret"></span></button>
-            <ul class="dropdown-menu status-menu" role="menu">
-              <li><a href="#" class="em-andamento">em andamento</a></li>
-              <li><a href="#" class="encaminhado">encaminhado</a></li>
-              <li><a href="#" class="fechado">fechado</a></li>
-            </ul>
-        </div><!--/btn-group-->
-
-        <!--/encaminhar e responder-->
-        <div class="btn-group">
+          <!--/mais-->
           <div class="dropdown btn-group">
-            <button type="button" class="btn btn-default dropdown-toggle hastooltip" data-toggle="dropdown" title="encaminhar"><span class="glyphicon glyphicon-arrow-right"></span></button>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> mais <span class="caret"></span></button>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">CRM</a></li>
-              <li><a href="#" data-toggle="modal" data-target="#foward-modal">email</a></li>
+              <li><a href="#"><i class="fa fa-trash-o"></i> excluir</a></li>
+              <li class="divider"></li>
+              <li><a href="#"> copiar como texto</a></li>
+              <li><a href="#"> copiar como imagem</a></li>
+              <li><a href="#"> copiar como planilha</a></li>
+              <li class="divider"></li>
+              <li><a href="#"> gerar relatório</a></li>
             </ul>
           </div><!--/btn-group-->
-          <button type="button" class="btn btn-default hastooltip" data-toggle="modal" data-target="#answer-modal" title="responder"><i class="fa fa-reply"></i></button>
-        </div><!--/btn-group-->
 
-        <!--/sentimento, mec e tags-->
-        <div class="btn-group">
-        
-          <!--/sentimento-->
-          <div class="dropdown btn-group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="feeling-icon indeterminate"></span> <span class="caret"></span></button>
-            <ul class="dropdown-menu feeling-menu" role="menu">
-              <li><a href="#" class="btn good"> positivo</a></li>
-              <li><a href="#" class="btn neutral"> neutro</a></li>
-              <li><a href="#" class="btn bad"> negativo</a></li>
-            </ul>
-          </div><!--/btn-group-->
-        
-          <!--/mec-->
-          <div id="mec-dropdown" class="dropdown btn-group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> MEC <span class="caret"></span></button>
-            <div class="dropdown-menu" role="menu">
-            <div class="alert alert-info alert-dismissible" role="alert">
-              <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <p>clique uma vez para definir como <span class="good-txt">positivo</span>, duas como <span class="neutral-txt">neutro</span> e três como <span class="bad-txt">negativo</span>.</p>
-              <button type="button" class="btn btn-primary btn-xs" data-dismiss="alert">Ok, entendi</button>
-            </div>
-              <div class="auto">
-                <ul class="nav">
-                  <li><a href="#" class="captacao"> <span class="mec-icon captacao"></span> captação</a></li>
-                  <li><a href="#" class="empregabilidade"> <span class="mec-icon empregabilidade"></span>  empregabilidade</a></li>
-                  <li><a href="#" class="localizacao"> <span class="mec-icon localizacao"></span>  localizacao</a></li>
-                  <li><a href="#" class="atuacao-etica"> <span class="mec-icon atuacao-etica"></span>  atuacao etica</a></li>
-                  <li><a href="#" class="corpo-docente"> <span class="mec-icon corpo-docente"></span>  corpo docente</a></li>
-                  <li><a href="#" class="credenciamento-no-mec"> <span class="mec-icon credenciamento-no-mec"></span>  credenciamento no mec</a></li>
-                  <li><a href="#" class="preco"> <span class="mec-icon preco"></span>  preço</a></li>
-                  <li><a href="#" class="qualidade-de-ensino"> <span class="mec-icon qualidade-de-ensino"></span>  qualidade de ensino</a></li>
-                  <li><a href="#" class="infraestrutura"> <span class="mec-icon infraestrutura"></span>  infraestrutura</a></li>
-                  <li><a href="#" class="relacionamento"> <span class="mec-icon relacionamento"></span>  relacionamento</a></li>
-                </ul>
-              </div>
-              <div><a href="#" class="btn btn-primary btn-block">aplicar</a></div>
-            </div>
-          </div><!--/btn-group-->
 
-          <!--/tags-->
-          <div class="btn-group dropdown tags-menu">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-tag"></i> <span class="caret"></span></button>
-            <div class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-              <form role="form">
+          <div id="top-pagination" class="form-inline">
+            <a href="#" class="nav-link disabled">&lsaquo; </a> | 
+            PÁG
+            <input type="text" class="form-control edit-on-hover" vlaue="01">
+            de 
+            <a href="#"> 13 </a> | 
+            <a href="#" class="nav-link"> &rsaquo; </a>
+          </div><!--/#top-pagination-->
+            
+        </div><!--/container-->
+      </div><!--/#actions-bar-->
 
-                <div class="form-group">
-                  <label for="search">marcar como:</label>
-                  <input type="search" class="form-control" id="" placeholder="">
-                </div><!--/form-group-->
 
-                <div class="auto">
-                  <div class="checkbox">
-                    <label><input type="checkbox"> <i class="glyphicon glyphicon-star"></i> favoritos</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox"> lead</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox"> respondido</label>
-                  </div>
-                </div><!--/auto-->
-
-                <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#newtag-modal"><span class="glyphicon glyphicon-plus"></span> novo marcador</a></div>
-                <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#configtag-modal"><span class="glyphicon glyphicon-cog"></span> gerenciar marcadores</a></div>
-                <div class=""><a href="#" class="btn-primary btn btn-block">aplicar</a></div>
-                
-              </form>
-            </div><!--/.dropdown-menu-->
-          </div><!--/.dropdown-->
-        </div><!--/btn-group-->
-
-        <!--/mais-->
-        <div class="dropdown btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> mais <span class="caret"></span></button>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#"><i class="fa fa-trash-o"></i> excluir</a></li>
-            <li class="divider"></li>
-            <li><a href="#"> copiar como texto</a></li>
-            <li><a href="#"> copiar como imagem</a></li>
-            <li><a href="#"> copiar como planilha</a></li>
-            <li class="divider"></li>
-            <li><a href="#"> gerar relatório</a></li>
-          </ul>
-        </div><!--/btn-group-->
-
-
-        <div id="top-pagination" class="form-inline">
-          <a href="#" class="nav-link disabled">&lsaquo; </a> | 
-          PÁG
-          <input type="text" class="form-control edit-on-hover" vlaue="01">
-          de 
-          <a href="#"> 13 </a> | 
-          <a href="#" class="nav-link"> &rsaquo; </a>
-        </div><!--/#top-pagination-->
-          
-      </div><!--/container-->
-    </div><!--/#actions-bar-->
-
-
-    <div class="container">
-
-      <!--/FEEDBACK FILTRO-->
-      <p class="filter-feedback">Exibindo 57 citações com o marcador “lead”, staus aberto, encaminhadas para CRM nas últimas 24h. <a href="#">limpar filtro</a></p>
-
-      <!--/RELOAD-->
-      <div class="reload-box">
-      <!--/STATES
-        DEFAULT
-        <a href="#" class="reload-btn"><i class="fa fa-refresh"></i> <span>atualizado a 2 minutos</span></a>
-        MOUSEOVER HOVER
-        <a href="#" class="reload-btn"><i class="fa fa-refresh"></i> <span>atualizar</span></a>
-        DONE
-        <a href="#" class="reload-btn done"><i class="fa fa-refresh"></i> <span>atualizado a poucos segundos</span></a>
-      -->
-
-        <!--/LOADING-->
-        <a href="#" class="reload-btn loading"><i class="fa fa-refresh"></i> <span>atualizando</span></a>
-
-      </div><!--/reload-box-->
-    
-
-      <!--/CITAÇÃO-->
-
-      <div class="quote accordion-box">
-
-        <div class="quote-content">
-
-          <!--/IMAGEM DO USUÁRIO-->
-          <div class="user-img">
-            <img src="Content/img/user-01.jpg" alt="nome do usuário">
-            <p class="user-tag"><i class="fa fa-trophy"></i> influenciador</p>
-          </div><!--/user-img-->
-
-          <!--/CHECKBOX-->
-          <div class="quote-checkbox checkbox">
-            <label><input type="checkbox"></label>
-          </div><!--/.checkbox-->
-
-          <!--/CITAÇÃO-->
-          <div class="quote-data"> 
-            <h5>
-              <a href="perfil-do-usuario.html" class="user-name">Nome do Usuário</a>
-              <small><a href="citacao-original" target="blank" class="light">terça-feira, 25/04/14 <span class="lighter">às</span> 10:30</a> <span class="lighter">via</span> <a href="fanpage" target="blank" class="light">fanpage</a></small>
-            </h5>
-
-            <p class="quote-txt">As notas estão postadas. Aos alunos que passaram direto, desejo excelentes férias, um Feliz Natal e um Ano Novo com ainda mais alegrias. Aos demais, ainda nos encontraremos no dia 17/12/13.</p>
-          </div><!--/.quote-data-->
-
-
-          <!--/CONTROLES-->
-
-            <!--/BARRA DE STATUS-->
-            <div class="sidebar">
-              <div class="dropdown status-bar">
-                <ul class="dropdown-menu status-menu" role="menu" aria-labelledby="dLabel">
-                  <li><a href="javascript:void(0)" class="em-andamento">em andamento</a></li>
-                  <li><a href="javascript:void(0)" class="encaminhado">encaminhado</a></li>
-                  <li><a href="javascript:void(0)" class="fechado">fechado</a></li>
-                  <li><a href="javascript:void(0)" class="edit-atend" data-toggle="modal" data-target="#editat-modal"><i class="fa fa-pencil"></i> editar atendimento</a></li>                    
-                </ul>
-              </div><!--/.dropdown-->
-              
-              <!--/REDE SOCIAL-->
-              <a href="#" class="btn social facebook"><i class="fa fa-facebook"></i></a>
-
-              <!--/LIDO/NÃO-LIDO-->
-              <a href="#" class="btn leitura-btn nao-lido"><i class="fa fa-circle-o" data-toggle="tooltip" title="marcar como lido"></i></a>
-
-              <div class="clearfix"></div>
-
-              <!--/TAGS-->
-              <div class="tags">
-                <p>
-                  <span class="badge"><i class="fa fa-quote-left"></i> a responder  <a href="#" class="remove-tag"><i class="fa fa-times"></i></a></span>
-                  <span class="badge favorite"><i class="fa fa-star"></i> favoritos <a href="#" class="remove-tag"><i class="fa fa-times"></i></a></span> 
-                  <span class="badge">teste <a href="#" class="remove-tag"><i class="fa fa-times"></i></a></span>
-                </p>
-              </div><!--/.tags-->                  
-              <div class="dropdown tags-menu">
-                <a data-toggle="dropdown" href="#" class="btn tags-btn"><i class="glyphicon glyphicon-tag"></i></a>
-                <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
-                  <form role="form">
-
-                    <div class="form-group">
-                      <label for="search">marcar como:</label>
-                      <input type="search" class="form-control" id="" placeholder="">
-                    </div><!--/form-group-->
-
-                    <div class="auto">
-                      <div class="checkbox">
-                        <label><input type="checkbox"> <i class="glyphicon glyphicon-star"></i> favoritos</label>
-                      </div>
-                      <div class="checkbox">
-                        <label><input type="checkbox"> lead</label>
-                      </div>
-                      <div class="checkbox">
-                        <label><input type="checkbox"> a responder</label>
-                      </div>
-                    </div><!--/auto-->
-
-                    <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#newtag-modal"><span class="glyphicon glyphicon-plus"></span> novo marcador</a></div>
-                    <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#configtag-modal"><span class="glyphicon glyphicon-cog"></span> gerenciar marcadores</a></div>
-                    <div class=""><a href="#" class="btn-primary btn btn-block">aplicar</a></div>
-                    
-                  </form>
-                </div><!--/.dropdown-menu-->
-              </div><!--/.dropdown-->
-
-
-            </div><!--/sidebar-->
-
-            <div class="clearfix"></div>
-        </div><!--/quote-content-->
-
-
-        <footer>
-
-          <!--/SENTIMENTO-->
-          <div class="feeling-menu btn-group">
-            <button type="button" class="btn good active" data-toggle="tooltip" title="positivo">positivo</button>
-            <button type="button" class="btn neutral" data-toggle="tooltip" title="neutro">neutro</button>
-            <button type="button" class="btn bad" data-toggle="tooltip" title="negativo">negativo</button>
-          </div><!--/.feeling-menu .btn-droup-->
-
-
-          <!--/INDICADORES MEC-->
-          <div class="mec-menu btn-group">
-
-            <!--/CAPTAÇÃO-->
-            <div class="btn-group dropup captacao">
-              <button type="button" class="btn dropdown-toggle captacao" data-toggle="dropdown" title="captação">captação</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/EMPREGABILIDADE-->
-            <div class="btn-group dropup empregabilidade">
-              <button type="button" class="btn dropdown-toggle empregabilidade" data-toggle="dropdown" title="empregabilidade">empregabilidade</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/LOCALIZAÇÃO-->
-            <div class="btn-group dropup localizacao">
-              <button type="button" class="btn dropdown-toggle localizacao" data-toggle="dropdown" title="localização">localização</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/ATUAÇÃO ÉTICA-->
-            <div class="btn-group dropup atuacao-etica">
-              <button type="button" class="btn dropdown-toggle atuacao-etica" data-toggle="dropdown" title="atuação ética">atuação ética</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/CORPO DOCENTE-->
-            <div class="btn-group dropup corpo-docente">
-              <button type="button" class="btn dropdown-toggle corpo-docente" data-toggle="dropdown" title="coprpo docente">corpo docente</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/CREDENCIAMENTO NO MEC-->
-            <div class="btn-group dropup credenciamento-no-mec">
-              <button type="button" class="btn dropdown-toggle credenciamento-no-mec" data-toggle="dropdown" title="credenciamento no mec">credenciamento no mec</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/PREÇO-->
-            <div class="btn-group dropup preco">
-              <button type="button" class="btn dropdown-toggle preco" data-toggle="dropdown" title="preço">preço</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/QUALIDADE DE ENSINO-->
-            <div class="btn-group dropup qualidade-de-ensino">
-              <button type="button" class="btn dropdown-toggle qualidade-de-ensino" data-toggle="dropdown" title="qualidade de ensino">qualidade de ensino</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/INFRAESTRUTURA-->
-            <div class="btn-group dropup infraestrutura">
-              <button type="button" class="btn dropdown-toggle infraestrutura" data-toggle="dropdown" title="infraestrutura">infraestrutura</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/RELACIONAMENTO-->
-            <div class="btn-group dropup relacionamento">
-              <button type="button" class="btn dropdown-toggle relacionamento" data-toggle="dropdown" title="relacionamento">relacionamento</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-          </div><!--/.mec-menu .btn-group--> 
-
-
-          <!--/AÇÕES - ENCAMINHAR E RESPONDER-->
-          <div class="btn-group">
-
-            <!--/ENCAMINAR-->
-            <div class="btn-group">
-              <button type="button" class="btn dropdown-toggle hastooltip" data-toggle="dropdown" title="encaminhar"><span class="glyphicon glyphicon-arrow-right"></span> </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">CRM</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#foward-modal">email</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/RESPONDER-->
-            <button type="button" class="btn hastooltip" data-toggle="modal" data-target="#answer-modal" title="responder"><i class="fa fa-reply"></i> </button>
-
-          </div><!--/ .btn-group--> 
-
-
-          <!--/ATENDIMENTO-->
-          <div class="btn-group">
-            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><img src="Content/img/atendimento-icon.png" /> abrir atendimento </button>
-          </div>
-
-
-          <!--/EXPANDIR-->
-          <a href="#" class="btn pull-right accordion-trigger"><i class="fa fa-chevron-down"></i></a>
-
-        </footer>
-
-        <!--/CONTEÚDO ESCONDIDO-->
-        <div class="accordion-hidden quote-historic">
-
-          <!--/HISTÓRICO DA CITAÇÃO-->
-          <h2>Histórico</h2>
-
-          <p class="date">quinta-feira, 29 de abril de 2014</p>
-          <dl class="dl-horizontal">
-            <dt>2:45</dt>
-            <dd><p class="description">Você marcou esta citação como <span class="badge">a responder</span>. <a href="#">remover marcação</a></p></dd>
-            <dt>1:07</dt>
-            <dd><p class="description">Você <strong>encaminhou por email</strong> a citação de <a href="#">Gustavo Freitas</a> para <strong>juliana.prates@anhanguera.com.br</strong></p></dd>
-          </dl>
-          <p class="date">quarta-feira, 28 de abril de 2014</p>
-          <dl class="dl-horizontal">
-
-            <dt>2:45</dt>
-            <dd>
-              <div class="description">Você relacionou esta citação ao atendimento de <span class="badge id">id <strong>12345</strong> (<a href="#">copiar</a>)</span></div>
-              <div class="quote quote-small">
-                <div class="quote-content">
-                  <!--/IMAGEM DO USUÁRIO-->
-                  <div class="user-img">
-                    <img src="Content/img/instituicao-01.png" alt="nome da instituição">
-                  </div><!--/user-img-->
-                  <!--/CITAÇÃO-->
-                  <div class="quote-data"> 
-                    <h5>
-                      <a href="perfil-do-usuario.html" class="user-name">Você</a>
-                      <small><a href="citacao-original" target="blank" class="light">segunda-feira, 24/04/14 <span class="lighter">às</span> 11:30</a> <span class="lighter">via</span> <a href="fanpage" target="blank" class="light">fanpage</a></small>
-                    </h5>
-                    <p class="quote-txt">Olá, Gustavo! Você sabia que a Universus está oferecendo cursos gratuitos na área de saúde? Confira neste link, quem sabe você não se interessa? <a href="#">http://t.co/sUQhVfzv9x</a></p>
-                  </div><!--/.quote-data-->
-                    <!--/BARRA DE STATUS-->
-                    <div class="sidebar">
-                      <!--/REDE SOCIAL-->
-                      <a href="#" class="btn social twitter"><i class="fa fa-twitter"></i></a>
-                      <div class="clearfix"></div>
-                    </div><!--/sidebar-->
-                  <div class="clearfix"></div>
-                </div><!--/quote-content-->
-              </div><!--/.quote-->
-            </dd>
-
-            <dt>22:45</dt>
-            <dd>
-              <div class="description">Você <strong>respondeu</strong> a citação de <a href="perfil-do-usuario.html">Gustavo Freitas</a></span></div>
-              <!--/CITAÇÃO 02-->
-              <div class="quote quote-small">
-                <div class="quote-content">
-                  <!--/IMAGEM DO USUÁRIO-->
-                  <div class="user-img">
-                    <img src="Content/img/user-01.jpg" alt="nome do usuário">
-                  </div><!--/user-img-->
-                  <!--/CITAÇÃO-->
-                  <div class="quote-data"> 
-                    <h5>
-                      <a href="perfil-do-usuario.html" class="user-name">Você</a>
-                      <small><a href="citacao-original" target="blank" class="light">segunda-feira, 24/04/14 <span class="lighter">às</span> 11:30</a> <span class="lighter">via</span> <a href="fanpage" target="blank" class="light">fanpage</a></small>
-                    </h5>
-                    <p class="quote-txt">Olá, Gustavo! Você sabia que a Universus está oferecendo cursos gratuitos na área de saúde? Confira neste link, quem sabe você não se interessa? <a href="#">http://t.co/sUQhVfzv9x</a></p>
-                  </div><!--/.quote-data-->
-                    <!--/BARRA DE STATUS-->
-                    <div class="sidebar">
-                      <!--/REDE SOCIAL-->
-                      <a href="#" class="btn social facebook"><i class="fa fa-facebook"></i></a>
-                      <div class="clearfix"></div>
-                    </div><!--/sidebar-->
-                  <div class="clearfix"></div>
-                </div><!--/quote-content-->
-                <footer>
-                  <!--/SENTIMENTO-->
-                  <div class="feeling-menu btn-group">
-                    <button type="button" class="btn good" data-toggle="tooltip" title="positivo">positivo</button>
-                    <button type="button" class="btn neutral" data-toggle="tooltip" title="neutro">neutro</button>
-                    <button type="button" class="btn bad" data-toggle="tooltip" title="negativo">negativo</button>
-                  </div><!--/.feeling-menu .btn-droup-->
-                  <!--/INDICADORES MEC-->
-                  <div class="mec-menu btn-group">
-
-                    <!--/CAPTAÇÃO-->
-                    <div class="btn-group dropup captacao">
-                      <button type="button" class="btn dropdown-toggle captacao" data-toggle="dropdown" title="captação">captação</button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#" class="btn good">positivo</a></li>
-                        <li><a href="#" class="btn neutral">neutro</a></li>
-                        <li><a href="#" class="btn bad">negativo</a></li>
-                        <li><a href="#" class="btn remove">remover</a></li>
-                      </ul>
-                    </div><!--/.dropup btn-group-->
-
-                    <!--/EMPREGABILIDADE-->
-                    <div class="btn-group dropup empregabilidade">
-                      <button type="button" class="btn dropdown-toggle empregabilidade" data-toggle="dropdown" title="empregabilidade">empregabilidade</button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#" class="btn good">positivo</a></li>
-                        <li><a href="#" class="btn neutral">neutro</a></li>
-                        <li><a href="#" class="btn bad">negativo</a></li>
-                        <li><a href="#" class="btn remove">remover</a></li>
-                      </ul>
-                    </div><!--/.dropup btn-group-->
-
-                    <!--/LOCALIZAÇÃO-->
-                    <div class="btn-group dropup localizacao">
-                      <button type="button" class="btn dropdown-toggle localizacao" data-toggle="dropdown" title="localização">localização</button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#" class="btn good">positivo</a></li>
-                        <li><a href="#" class="btn neutral">neutro</a></li>
-                        <li><a href="#" class="btn bad">negativo</a></li>
-                        <li><a href="#" class="btn remove">remover</a></li>
-                      </ul>
-                    </div><!--/.dropup btn-group-->
-
-                    <!--/ATUAÇÃO ÉTICA-->
-                    <div class="btn-group dropup atuacao-etica">
-                      <button type="button" class="btn dropdown-toggle atuacao-etica" data-toggle="dropdown" title="atuação ética">atuação ética</button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#" class="btn good">positivo</a></li>
-                        <li><a href="#" class="btn neutral">neutro</a></li>
-                        <li><a href="#" class="btn bad">negativo</a></li>
-                        <li><a href="#" class="btn remove">remover</a></li>
-                      </ul>
-                    </div><!--/.dropup btn-group-->
-
-                    <!--/CORPO DOCENTE-->
-                    <div class="btn-group dropup corpo-docente">
-                      <button type="button" class="btn dropdown-toggle corpo-docente" data-toggle="dropdown" title="coprpo docente">corpo docente</button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#" class="btn good">positivo</a></li>
-                        <li><a href="#" class="btn neutral">neutro</a></li>
-                        <li><a href="#" class="btn bad">negativo</a></li>
-                        <li><a href="#" class="btn remove">remover</a></li>
-                      </ul>
-                    </div><!--/.dropup btn-group-->
-
-                    <!--/CREDENCIAMENTO NO MEC-->
-                    <div class="btn-group dropup credenciamento-no-mec">
-                      <button type="button" class="btn dropdown-toggle credenciamento-no-mec" data-toggle="dropdown" title="credenciamento no mec">credenciamento no mec</button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#" class="btn good">positivo</a></li>
-                        <li><a href="#" class="btn neutral">neutro</a></li>
-                        <li><a href="#" class="btn bad">negativo</a></li>
-                        <li><a href="#" class="btn remove">remover</a></li>
-                      </ul>
-                    </div><!--/.dropup btn-group-->
-
-                    <!--/PREÇO-->
-                    <div class="btn-group dropup preco">
-                      <button type="button" class="btn dropdown-toggle preco" data-toggle="dropdown" title="preço">preço</button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#" class="btn good">positivo</a></li>
-                        <li><a href="#" class="btn neutral">neutro</a></li>
-                        <li><a href="#" class="btn bad">negativo</a></li>
-                        <li><a href="#" class="btn remove">remover</a></li>
-                      </ul>
-                    </div><!--/.dropup btn-group-->
-
-                    <!--/QUALIDADE DE ENSINO-->
-                    <div class="btn-group dropup qualidade-de-ensino">
-                      <button type="button" class="btn dropdown-toggle qualidade-de-ensino" data-toggle="dropdown" title="qualidade de ensino">qualidade de ensino</button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#" class="btn good">positivo</a></li>
-                        <li><a href="#" class="btn neutral">neutro</a></li>
-                        <li><a href="#" class="btn bad">negativo</a></li>
-                        <li><a href="#" class="btn remove">remover</a></li>
-                      </ul>
-                    </div><!--/.dropup btn-group-->
-
-                    <!--/INFRAESTRUTURA-->
-                    <div class="btn-group dropup infraestrutura">
-                      <button type="button" class="btn dropdown-toggle infraestrutura" data-toggle="dropdown" title="infraestrutura">infraestrutura</button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#" class="btn good">positivo</a></li>
-                        <li><a href="#" class="btn neutral">neutro</a></li>
-                        <li><a href="#" class="btn bad">negativo</a></li>
-                        <li><a href="#" class="btn remove">remover</a></li>
-                      </ul>
-                    </div><!--/.dropup btn-group-->
-
-                    <!--/RELACIONAMENTO-->
-                    <div class="btn-group dropup relacionamento">
-                      <button type="button" class="btn dropdown-toggle relacionamento" data-toggle="dropdown" title="relacionamento">relacionamento</button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#" class="btn good">positivo</a></li>
-                        <li><a href="#" class="btn neutral">neutro</a></li>
-                        <li><a href="#" class="btn bad">negativo</a></li>
-                        <li><a href="#" class="btn remove">remover</a></li>
-                      </ul>
-                    </div><!--/.dropup btn-group-->
-
-                  </div><!--/.mec-menu .btn-group--> 
-                  <!--/AÇÕES - ENCAMINHAR E RESPONDER-->
-                  <div class="btn-group">
-
-                    <!--/ENCAMINAR-->
-                    <div class="btn-group">
-                      <button type="button" class="btn dropdown-toggle hastooltip" data-toggle="dropdown" title="encaminhar"><span class="glyphicon glyphicon-arrow-right"></span> </button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">CRM</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#foward-modal">email</a></li>
-                      </ul>
-                    </div><!--/.dropup btn-group-->
-
-                    <!--/RESPONDER-->
-                    <button type="button" class="btn hastooltip" data-toggle="modal" data-target="#answer-modal" title="responder"><i class="fa fa-reply"></i> </button>
-
-                  </div><!--/ .btn-group--> 
-                </footer>
-              </div><!--/.quote-->
-            </dd>
-          </dl>
-
-          <p class="date">terça-feira, 27 de abril de 2014</p>
-
-          <dl class="dl-horizontal">
-            <dt>22:45</dt>
-            <dd>
-              <div class="description">Você relacionou esta citação ao atendimento de <span class="badge id">id <strong>12345</strong> (<a href="#">copiar</a>)</span></div>
-              <div class="at-description">
-                <div class="ribbon status-btn atendimento encaminhado"><span>encaminhado</span></div>
-                <p><a href="#" class="at-name">Atendimento 95823</a> <a href="#" data-toggle="modal" data-target="#editat-modal"> <i class="fa fa-pencil"></i></a></p>
-                <div class="row">
-                  <div class="col-xs-2">
-                    <p class="light-text">natureza</p>
-                    <p>dúvida</p>
-                  </div>
-                  <div class="col-xs-2">
-                    <p class="light-text">setor</p>
-                    <p>biblioteca</p>
-                  </div>
-                  <div class="col-xs-6">
-                    <p class="light-text">referente a</p>
-                    <p>empréstimo de livros</p>
-                  </div>
-                  <div class="col-xs-2">
-                    <p><span class="badge id">id <strong>12345</strong> (<a href="#">copiar</a>)</span></p>
-                  </div>
-                </div><!--/row-->
-              </div><!--/-->
-            </dd>
-
-          </dl>
-
-
-        </div><!--/accordion-hidden-->
-      </div><!--/.quote-->
-
-
-
-
-
-
-
-
-
-      <!--/CITAÇÃO-->
-
-      <div class="quote accordion-box">
-
-        <div class="quote-content">
-
-          <!--/IMAGEM DO USUÁRIO-->
-          <div class="user-img">
-            <img src="Content/img/user-02.jpg" alt="nome do usuário">
-          </div><!--/user-img-->
-
-          <!--/CHECKBOX-->
-          <div class="quote-checkbox checkbox">
-            <label><input type="checkbox"></label>
-          </div><!--/.checkbox-->
-
-          <!--/CITAÇÃO-->
-          <div class="quote-data"> 
-            <h5>
-              <a href="perfil-do-usuario.html" class="user-name">Nome do Usuário</a>
-              <small><a href="citacao-original" target="blank" class="light">terça-feira, 25/04/14 <span class="lighter">às</span> 10:30</a> <span class="lighter">via</span> <a href="fanpage" target="blank" class="light">fanpage</a></small>
-            </h5>
-
-            <p class="quote-txt">As notas estão postadas. Aos alunos que passaram direto, desejo excelentes férias, um Feliz Natal e um Ano Novo com ainda mais alegrias. Aos demais, ainda nos encontraremos no dia 17/12/13.</p>
-          </div><!--/.quote-data-->
-
-
-          <!--/CONTROLES-->
-
-            <!--/BARRA DE STATUS-->
-            <div class="sidebar">
-              <div class="dropdown status-bar">
-                <a data-toggle="dropdown" href="#" class="ribbon status-btn atendimento encaminhado"><span>encaminhado <small>biblioteca</small></span></a>
-                <ul class="dropdown-menu status-menu" role="menu" aria-labelledby="dLabel">
-                  <li><a href="javascript:void(0)" class="em-andamento">em andamento</a></li>
-                  <li><a href="javascript:void(0)" class="encaminhado">encaminhado</a></li>
-                  <li><a href="javascript:void(0)" class="fechado">fechado</a></li>
-                  <li><a href="javascript:void(0)" class="edit-atend" data-toggle="modal" data-target="#editat-modal"><i class="fa fa-pencil"></i> editar atendimento</a></li>                    
-                </ul>
-              </div><!--/.dropdown-->
-              
-              <!--/REDE SOCIAL-->
-              <a href="#" class="btn social facebook"><i class="fa fa-facebook"></i></a>
-
-              <!--/LIDO/NÃO-LIDO-->
-              <a href="#" class="btn leitura-btn nao-lido"><i class="fa fa-circle-o" data-toggle="tooltip" title="marcar como lido"></i></a>
-
-              <div class="clearfix"></div>
-
-              <!--/TAGS-->
-              <div class="tags">
-                <p>
-                  <span class="badge"><i class="fa fa-quote-left"></i> a responder  <a href="#" class="remove-tag"><i class="fa fa-times"></i></a></span>
-                  <span class="badge favorite"><i class="fa fa-star"></i> favoritos <a href="#" class="remove-tag"><i class="fa fa-times"></i></a></span> 
-                  <span class="badge">teste <a href="#" class="remove-tag"><i class="fa fa-times"></i></a></span>
-                </p>
-              </div><!--/.tags-->                  
-              <div class="dropdown tags-menu">
-                <a data-toggle="dropdown" href="#" class="btn tags-btn"><i class="glyphicon glyphicon-tag"></i></a>
-                <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
-                  <form role="form">
-
-                    <div class="form-group">
-                      <label for="search">marcar como:</label>
-                      <input type="search" class="form-control" id="" placeholder="">
-                    </div><!--/form-group-->
-
-                    <div class="auto">
-                      <div class="checkbox">
-                        <label><input type="checkbox"> <i class="glyphicon glyphicon-star"></i> favoritos</label>
-                      </div>
-                      <div class="checkbox">
-                        <label><input type="checkbox"> lead</label>
-                      </div>
-                      <div class="checkbox">
-                        <label><input type="checkbox"> a responder</label>
-                      </div>
-                    </div><!--/auto-->
-
-                    <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#newtag-modal"><span class="glyphicon glyphicon-plus"></span> novo marcador</a></div>
-                    <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#configtag-modal"><span class="glyphicon glyphicon-cog"></span> gerenciar marcadores</a></div>
-                    <div class=""><a href="#" class="btn-primary btn btn-block">aplicar</a></div>
-                    
-                  </form>
-                </div><!--/.dropdown-menu-->
-              </div><!--/.dropdown-->
-
-
-            </div><!--/sidebar-->
-
-            <div class="clearfix"></div>
-        </div><!--/quote-content-->
-
-
-        <footer>
-
-          <!--/SENTIMENTO-->
-          <div class="feeling-menu btn-group">
-            <button type="button" class="btn good active" data-toggle="tooltip" title="positivo">positivo</button>
-            <button type="button" class="btn neutral" data-toggle="tooltip" title="neutro">neutro</button>
-            <button type="button" class="btn bad" data-toggle="tooltip" title="negativo">negativo</button>
-          </div><!--/.feeling-menu .btn-droup-->
-
-
-          <!--/INDICADORES MEC-->
-          <div class="mec-menu btn-group">
-
-            <!--/CAPTAÇÃO-->
-            <div class="btn-group dropup captacao">
-              <button type="button" class="btn dropdown-toggle captacao" data-toggle="dropdown" title="captação">captação</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/EMPREGABILIDADE-->
-            <div class="btn-group dropup empregabilidade">
-              <button type="button" class="btn dropdown-toggle empregabilidade" data-toggle="dropdown" title="empregabilidade">empregabilidade</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/LOCALIZAÇÃO-->
-            <div class="btn-group dropup localizacao">
-              <button type="button" class="btn dropdown-toggle localizacao" data-toggle="dropdown" title="localização">localização</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/ATUAÇÃO ÉTICA-->
-            <div class="btn-group dropup atuacao-etica">
-              <button type="button" class="btn dropdown-toggle atuacao-etica" data-toggle="dropdown" title="atuação ética">atuação ética</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/CORPO DOCENTE-->
-            <div class="btn-group dropup corpo-docente">
-              <button type="button" class="btn dropdown-toggle corpo-docente" data-toggle="dropdown" title="coprpo docente">corpo docente</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/CREDENCIAMENTO NO MEC-->
-            <div class="btn-group dropup credenciamento-no-mec">
-              <button type="button" class="btn dropdown-toggle credenciamento-no-mec" data-toggle="dropdown" title="credenciamento no mec">credenciamento no mec</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/PREÇO-->
-            <div class="btn-group dropup preco">
-              <button type="button" class="btn dropdown-toggle preco" data-toggle="dropdown" title="preço">preço</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/QUALIDADE DE ENSINO-->
-            <div class="btn-group dropup qualidade-de-ensino">
-              <button type="button" class="btn dropdown-toggle qualidade-de-ensino" data-toggle="dropdown" title="qualidade de ensino">qualidade de ensino</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/INFRAESTRUTURA-->
-            <div class="btn-group dropup infraestrutura">
-              <button type="button" class="btn dropdown-toggle infraestrutura" data-toggle="dropdown" title="infraestrutura">infraestrutura</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/RELACIONAMENTO-->
-            <div class="btn-group dropup relacionamento">
-              <button type="button" class="btn dropdown-toggle relacionamento" data-toggle="dropdown" title="relacionamento">relacionamento</button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" class="btn good">positivo</a></li>
-                <li><a href="#" class="btn neutral">neutro</a></li>
-                <li><a href="#" class="btn bad">negativo</a></li>
-                <li><a href="#" class="btn remove">remover</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-          </div><!--/.mec-menu .btn-group--> 
-
-
-          <!--/AÇÕES - ENCAMINHAR E RESPONDER-->
-          <div class="btn-group">
-
-            <!--/ENCAMINAR-->
-            <div class="btn-group">
-              <button type="button" class="btn dropdown-toggle hastooltip" data-toggle="dropdown" title="encaminhar"><span class="glyphicon glyphicon-arrow-right"></span> </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">CRM</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#foward-modal">email</a></li>
-              </ul>
-            </div><!--/.dropup btn-group-->
-
-            <!--/RESPONDER-->
-            <button type="button" class="btn hastooltip" data-toggle="modal" data-target="#answer-modal" title="responder"><i class="fa fa-reply"></i> </button>
-
-          </div><!--/ .btn-group--> 
-
-          <!--/ATENDIMENTO-->
-          <div class="btn-group">
-            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><img src="Content/img/atendimento-icon.png" /> abrir atendimento </button>
-          </div>
-
-          <!--/EXPANDIR-->
-          <a href="#" class="btn pull-right accordion-trigger disabled"><i class="fa fa-chevron-down"></i></a>
-
-        </footer>
-      </div><!--/.quote-->
-
-
-      <!--/PAGINAÇÃO-->
-      <div class="center-box">
-        <ul class="pagination">
-          <li class="disabled"><a href="#">&laquo;</a></li>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">&raquo;</a></li>
-        </ul>
-      </div>
-      
-    </div><!--/container-->
-
-
-    <!--/#FOOTER-->
-    <footer id="page-footer">
       <div class="container">
-        <p class="copyright">© Copyright 2014 Cadsoft. Todos os direitos reservados.</p>
-        <a href="#" target="blank"><img src="Content/img/planeta-y-logo.png"></a>
 
-        <div class="footer-social-links">
-          <a href="https://www.facebook.com/PlanetaY" class="btn social facebook"><i class="fa fa-facebook"></i></a>
-          <a href="https://twitter.com/planeta_y" class="btn social twitter"><i class="fa fa-twitter"></i></a>
-          <a href="https://plus.google.com/+PlanetayBr/about" class="btn social gplus"><i class="fa fa-google-plus"></i></a>
+        <!--/FEEDBACK FILTRO-->
+        <p class="filter-feedback">Exibindo 57 citações com o marcador “lead”, staus aberto, encaminhadas para CRM nas últimas 24h. <a href="#">limpar filtro</a></p>
+
+        <!--/RELOAD-->
+        <div class="reload-box">
+        <!--/STATES
+          DEFAULT
+          <a href="#" class="reload-btn"><i class="fa fa-refresh"></i> <span>atualizado a 2 minutos</span></a>
+          MOUSEOVER HOVER
+          <a href="#" class="reload-btn"><i class="fa fa-refresh"></i> <span>atualizar</span></a>
+          DONE
+          <a href="#" class="reload-btn done"><i class="fa fa-refresh"></i> <span>atualizado a poucos segundos</span></a>
+        -->
+
+          <!--/LOADING-->
+          <a href="#" class="reload-btn loading"><i class="fa fa-refresh"></i> <span>atualizando</span></a>
+
+        </div><!--/reload-box-->
+      
+
+        <!--/CITAÇÃO-->
+
+        <div class="quote accordion-box">
+
+          <div class="quote-content">
+
+            <!--/IMAGEM DO USUÁRIO-->
+            <div class="user-img">
+              <img src="Content/img/user-01.jpg" alt="nome do usuário">
+              <p class="user-tag"><i class="fa fa-trophy"></i> influenciador</p>
+            </div><!--/user-img-->
+
+            <!--/CHECKBOX-->
+            <div class="quote-checkbox checkbox">
+              <label><input type="checkbox"></label>
+            </div><!--/.checkbox-->
+
+            <!--/CITAÇÃO-->
+            <div class="quote-data"> 
+              <h5>
+                <a href="perfil-do-usuario.html" class="user-name">Nome do Usuário</a>
+                <small><a href="citacao-original" target="blank" class="light">terça-feira, 25/04/14 <span class="lighter">às</span> 10:30</a> <span class="lighter">via</span> <a href="fanpage" target="blank" class="light">fanpage</a></small>
+              </h5>
+
+              <p class="quote-txt">As notas estão postadas. Aos alunos que passaram direto, desejo excelentes férias, um Feliz Natal e um Ano Novo com ainda mais alegrias. Aos demais, ainda nos encontraremos no dia 17/12/13.</p>
+            </div><!--/.quote-data-->
+
+
+            <!--/CONTROLES-->
+
+              <!--/BARRA DE STATUS-->
+              <div class="sidebar">
+                <div class="dropdown status-bar">
+                  <ul class="dropdown-menu status-menu" role="menu" aria-labelledby="dLabel">
+                    <li><a href="javascript:void(0)" class="em-andamento">em andamento</a></li>
+                    <li><a href="javascript:void(0)" class="encaminhado">encaminhado</a></li>
+                    <li><a href="javascript:void(0)" class="fechado">fechado</a></li>
+                    <li><a href="javascript:void(0)" class="edit-atend" data-toggle="modal" data-target="#editat-modal"><i class="fa fa-pencil"></i> editar atendimento</a></li>                    
+                  </ul>
+                </div><!--/.dropdown-->
+                
+                <!--/REDE SOCIAL-->
+                <a href="#" class="btn social facebook"><i class="fa fa-facebook"></i></a>
+
+                <!--/LIDO/NÃO-LIDO-->
+                <a href="#" class="btn leitura-btn nao-lido"><i class="fa fa-circle-o" data-toggle="tooltip" title="marcar como lido"></i></a>
+
+                <div class="clearfix"></div>
+
+                <!--/TAGS-->
+                <div class="tags">
+                  <p>
+                    <span class="badge"><i class="fa fa-quote-left"></i> a responder  <a href="#" class="remove-tag"><i class="fa fa-times"></i></a></span>
+                    <span class="badge favorite"><i class="fa fa-star"></i> favoritos <a href="#" class="remove-tag"><i class="fa fa-times"></i></a></span> 
+                    <span class="badge">teste <a href="#" class="remove-tag"><i class="fa fa-times"></i></a></span>
+                  </p>
+                </div><!--/.tags-->                  
+                <div class="dropdown tags-menu">
+                  <a data-toggle="dropdown" href="#" class="btn tags-btn"><i class="glyphicon glyphicon-tag"></i></a>
+                  <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
+                    <form role="form">
+
+                      <div class="form-group">
+                        <label for="search">marcar como:</label>
+                        <input type="search" class="form-control" id="" placeholder="">
+                      </div><!--/form-group-->
+
+                      <div class="auto">
+                        <div class="checkbox">
+                          <label><input type="checkbox"> <i class="glyphicon glyphicon-star"></i> favoritos</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox"> lead</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox"> a responder</label>
+                        </div>
+                      </div><!--/auto-->
+
+                      <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#newtag-modal"><span class="glyphicon glyphicon-plus"></span> novo marcador</a></div>
+                      <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#configtag-modal"><span class="glyphicon glyphicon-cog"></span> gerenciar marcadores</a></div>
+                      <div class=""><a href="#" class="btn-primary btn btn-block">aplicar</a></div>
+                      
+                    </form>
+                  </div><!--/.dropdown-menu-->
+                </div><!--/.dropdown-->
+
+
+              </div><!--/sidebar-->
+
+              <div class="clearfix"></div>
+          </div><!--/quote-content-->
+
+
+          <footer>
+
+            <!--/SENTIMENTO-->
+            <div class="feeling-menu btn-group">
+              <button type="button" class="btn good active" data-toggle="tooltip" title="positivo">positivo</button>
+              <button type="button" class="btn neutral" data-toggle="tooltip" title="neutro">neutro</button>
+              <button type="button" class="btn bad" data-toggle="tooltip" title="negativo">negativo</button>
+            </div><!--/.feeling-menu .btn-droup-->
+
+
+            <!--/INDICADORES MEC-->
+            <div class="mec-menu btn-group">
+
+              <!--/CAPTAÇÃO-->
+              <div class="btn-group dropup captacao">
+                <button type="button" class="btn dropdown-toggle captacao" data-toggle="dropdown" title="captação">captação</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/EMPREGABILIDADE-->
+              <div class="btn-group dropup empregabilidade">
+                <button type="button" class="btn dropdown-toggle empregabilidade" data-toggle="dropdown" title="empregabilidade">empregabilidade</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/LOCALIZAÇÃO-->
+              <div class="btn-group dropup localizacao">
+                <button type="button" class="btn dropdown-toggle localizacao" data-toggle="dropdown" title="localização">localização</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/ATUAÇÃO ÉTICA-->
+              <div class="btn-group dropup atuacao-etica">
+                <button type="button" class="btn dropdown-toggle atuacao-etica" data-toggle="dropdown" title="atuação ética">atuação ética</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/CORPO DOCENTE-->
+              <div class="btn-group dropup corpo-docente">
+                <button type="button" class="btn dropdown-toggle corpo-docente" data-toggle="dropdown" title="coprpo docente">corpo docente</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/CREDENCIAMENTO NO MEC-->
+              <div class="btn-group dropup credenciamento-no-mec">
+                <button type="button" class="btn dropdown-toggle credenciamento-no-mec" data-toggle="dropdown" title="credenciamento no mec">credenciamento no mec</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/PREÇO-->
+              <div class="btn-group dropup preco">
+                <button type="button" class="btn dropdown-toggle preco" data-toggle="dropdown" title="preço">preço</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/QUALIDADE DE ENSINO-->
+              <div class="btn-group dropup qualidade-de-ensino">
+                <button type="button" class="btn dropdown-toggle qualidade-de-ensino" data-toggle="dropdown" title="qualidade de ensino">qualidade de ensino</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/INFRAESTRUTURA-->
+              <div class="btn-group dropup infraestrutura">
+                <button type="button" class="btn dropdown-toggle infraestrutura" data-toggle="dropdown" title="infraestrutura">infraestrutura</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/RELACIONAMENTO-->
+              <div class="btn-group dropup relacionamento">
+                <button type="button" class="btn dropdown-toggle relacionamento" data-toggle="dropdown" title="relacionamento">relacionamento</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+            </div><!--/.mec-menu .btn-group--> 
+
+
+            <!--/AÇÕES - ENCAMINHAR E RESPONDER-->
+            <div class="btn-group">
+
+              <!--/ENCAMINAR-->
+              <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle hastooltip" data-toggle="dropdown" title="encaminhar"><span class="glyphicon glyphicon-arrow-right"></span> </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">CRM</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#foward-modal">email</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/RESPONDER-->
+              <button type="button" class="btn hastooltip" data-toggle="modal" data-target="#answer-modal" title="responder"><i class="fa fa-reply"></i> </button>
+
+            </div><!--/ .btn-group--> 
+
+
+            <!--/ATENDIMENTO-->
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><img src="Content/img/atendimento-icon.png" /> abrir atendimento </button>
+            </div>
+
+
+            <!--/EXPANDIR-->
+            <a href="#" class="btn pull-right accordion-trigger"><i class="fa fa-chevron-down"></i></a>
+
+          </footer>
+
+          <!--/CONTEÚDO ESCONDIDO-->
+          <div class="accordion-hidden quote-historic">
+
+            <!--/HISTÓRICO DA CITAÇÃO-->
+            <h2>Histórico</h2>
+
+            <p class="date">quinta-feira, 29 de abril de 2014</p>
+            <dl class="dl-horizontal">
+              <dt>2:45</dt>
+              <dd><p class="description">Você marcou esta citação como <span class="badge">a responder</span>. <a href="#">remover marcação</a></p></dd>
+              <dt>1:07</dt>
+              <dd><p class="description">Você <strong>encaminhou por email</strong> a citação de <a href="#">Gustavo Freitas</a> para <strong>juliana.prates@anhanguera.com.br</strong></p></dd>
+            </dl>
+            <p class="date">quarta-feira, 28 de abril de 2014</p>
+            <dl class="dl-horizontal">
+
+              <dt>2:45</dt>
+              <dd>
+                <div class="description">Você relacionou esta citação ao atendimento de <span class="badge id">id <strong>12345</strong> (<a href="#">copiar</a>)</span></div>
+                <div class="quote quote-small">
+                  <div class="quote-content">
+                    <!--/IMAGEM DO USUÁRIO-->
+                    <div class="user-img">
+                      <img src="Content/img/instituicao-01.png" alt="nome da instituição">
+                    </div><!--/user-img-->
+                    <!--/CITAÇÃO-->
+                    <div class="quote-data"> 
+                      <h5>
+                        <a href="perfil-do-usuario.html" class="user-name">Você</a>
+                        <small><a href="citacao-original" target="blank" class="light">segunda-feira, 24/04/14 <span class="lighter">às</span> 11:30</a> <span class="lighter">via</span> <a href="fanpage" target="blank" class="light">fanpage</a></small>
+                      </h5>
+                      <p class="quote-txt">Olá, Gustavo! Você sabia que a Universus está oferecendo cursos gratuitos na área de saúde? Confira neste link, quem sabe você não se interessa? <a href="#">http://t.co/sUQhVfzv9x</a></p>
+                    </div><!--/.quote-data-->
+                      <!--/BARRA DE STATUS-->
+                      <div class="sidebar">
+                        <!--/REDE SOCIAL-->
+                        <a href="#" class="btn social twitter"><i class="fa fa-twitter"></i></a>
+                        <div class="clearfix"></div>
+                      </div><!--/sidebar-->
+                    <div class="clearfix"></div>
+                  </div><!--/quote-content-->
+                </div><!--/.quote-->
+              </dd>
+
+              <dt>22:45</dt>
+              <dd>
+                <div class="description">Você <strong>respondeu</strong> a citação de <a href="perfil-do-usuario.html">Gustavo Freitas</a></span></div>
+                <!--/CITAÇÃO 02-->
+                <div class="quote quote-small">
+                  <div class="quote-content">
+                    <!--/IMAGEM DO USUÁRIO-->
+                    <div class="user-img">
+                      <img src="Content/img/user-01.jpg" alt="nome do usuário">
+                    </div><!--/user-img-->
+                    <!--/CITAÇÃO-->
+                    <div class="quote-data"> 
+                      <h5>
+                        <a href="perfil-do-usuario.html" class="user-name">Você</a>
+                        <small><a href="citacao-original" target="blank" class="light">segunda-feira, 24/04/14 <span class="lighter">às</span> 11:30</a> <span class="lighter">via</span> <a href="fanpage" target="blank" class="light">fanpage</a></small>
+                      </h5>
+                      <p class="quote-txt">Olá, Gustavo! Você sabia que a Universus está oferecendo cursos gratuitos na área de saúde? Confira neste link, quem sabe você não se interessa? <a href="#">http://t.co/sUQhVfzv9x</a></p>
+                    </div><!--/.quote-data-->
+                      <!--/BARRA DE STATUS-->
+                      <div class="sidebar">
+                        <!--/REDE SOCIAL-->
+                        <a href="#" class="btn social facebook"><i class="fa fa-facebook"></i></a>
+                        <div class="clearfix"></div>
+                      </div><!--/sidebar-->
+                    <div class="clearfix"></div>
+                  </div><!--/quote-content-->
+                  <footer>
+                    <!--/SENTIMENTO-->
+                    <div class="feeling-menu btn-group">
+                      <button type="button" class="btn good" data-toggle="tooltip" title="positivo">positivo</button>
+                      <button type="button" class="btn neutral" data-toggle="tooltip" title="neutro">neutro</button>
+                      <button type="button" class="btn bad" data-toggle="tooltip" title="negativo">negativo</button>
+                    </div><!--/.feeling-menu .btn-droup-->
+                    <!--/INDICADORES MEC-->
+                    <div class="mec-menu btn-group">
+
+                      <!--/CAPTAÇÃO-->
+                      <div class="btn-group dropup captacao">
+                        <button type="button" class="btn dropdown-toggle captacao" data-toggle="dropdown" title="captação">captação</button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#" class="btn good">positivo</a></li>
+                          <li><a href="#" class="btn neutral">neutro</a></li>
+                          <li><a href="#" class="btn bad">negativo</a></li>
+                          <li><a href="#" class="btn remove">remover</a></li>
+                        </ul>
+                      </div><!--/.dropup btn-group-->
+
+                      <!--/EMPREGABILIDADE-->
+                      <div class="btn-group dropup empregabilidade">
+                        <button type="button" class="btn dropdown-toggle empregabilidade" data-toggle="dropdown" title="empregabilidade">empregabilidade</button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#" class="btn good">positivo</a></li>
+                          <li><a href="#" class="btn neutral">neutro</a></li>
+                          <li><a href="#" class="btn bad">negativo</a></li>
+                          <li><a href="#" class="btn remove">remover</a></li>
+                        </ul>
+                      </div><!--/.dropup btn-group-->
+
+                      <!--/LOCALIZAÇÃO-->
+                      <div class="btn-group dropup localizacao">
+                        <button type="button" class="btn dropdown-toggle localizacao" data-toggle="dropdown" title="localização">localização</button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#" class="btn good">positivo</a></li>
+                          <li><a href="#" class="btn neutral">neutro</a></li>
+                          <li><a href="#" class="btn bad">negativo</a></li>
+                          <li><a href="#" class="btn remove">remover</a></li>
+                        </ul>
+                      </div><!--/.dropup btn-group-->
+
+                      <!--/ATUAÇÃO ÉTICA-->
+                      <div class="btn-group dropup atuacao-etica">
+                        <button type="button" class="btn dropdown-toggle atuacao-etica" data-toggle="dropdown" title="atuação ética">atuação ética</button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#" class="btn good">positivo</a></li>
+                          <li><a href="#" class="btn neutral">neutro</a></li>
+                          <li><a href="#" class="btn bad">negativo</a></li>
+                          <li><a href="#" class="btn remove">remover</a></li>
+                        </ul>
+                      </div><!--/.dropup btn-group-->
+
+                      <!--/CORPO DOCENTE-->
+                      <div class="btn-group dropup corpo-docente">
+                        <button type="button" class="btn dropdown-toggle corpo-docente" data-toggle="dropdown" title="coprpo docente">corpo docente</button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#" class="btn good">positivo</a></li>
+                          <li><a href="#" class="btn neutral">neutro</a></li>
+                          <li><a href="#" class="btn bad">negativo</a></li>
+                          <li><a href="#" class="btn remove">remover</a></li>
+                        </ul>
+                      </div><!--/.dropup btn-group-->
+
+                      <!--/CREDENCIAMENTO NO MEC-->
+                      <div class="btn-group dropup credenciamento-no-mec">
+                        <button type="button" class="btn dropdown-toggle credenciamento-no-mec" data-toggle="dropdown" title="credenciamento no mec">credenciamento no mec</button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#" class="btn good">positivo</a></li>
+                          <li><a href="#" class="btn neutral">neutro</a></li>
+                          <li><a href="#" class="btn bad">negativo</a></li>
+                          <li><a href="#" class="btn remove">remover</a></li>
+                        </ul>
+                      </div><!--/.dropup btn-group-->
+
+                      <!--/PREÇO-->
+                      <div class="btn-group dropup preco">
+                        <button type="button" class="btn dropdown-toggle preco" data-toggle="dropdown" title="preço">preço</button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#" class="btn good">positivo</a></li>
+                          <li><a href="#" class="btn neutral">neutro</a></li>
+                          <li><a href="#" class="btn bad">negativo</a></li>
+                          <li><a href="#" class="btn remove">remover</a></li>
+                        </ul>
+                      </div><!--/.dropup btn-group-->
+
+                      <!--/QUALIDADE DE ENSINO-->
+                      <div class="btn-group dropup qualidade-de-ensino">
+                        <button type="button" class="btn dropdown-toggle qualidade-de-ensino" data-toggle="dropdown" title="qualidade de ensino">qualidade de ensino</button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#" class="btn good">positivo</a></li>
+                          <li><a href="#" class="btn neutral">neutro</a></li>
+                          <li><a href="#" class="btn bad">negativo</a></li>
+                          <li><a href="#" class="btn remove">remover</a></li>
+                        </ul>
+                      </div><!--/.dropup btn-group-->
+
+                      <!--/INFRAESTRUTURA-->
+                      <div class="btn-group dropup infraestrutura">
+                        <button type="button" class="btn dropdown-toggle infraestrutura" data-toggle="dropdown" title="infraestrutura">infraestrutura</button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#" class="btn good">positivo</a></li>
+                          <li><a href="#" class="btn neutral">neutro</a></li>
+                          <li><a href="#" class="btn bad">negativo</a></li>
+                          <li><a href="#" class="btn remove">remover</a></li>
+                        </ul>
+                      </div><!--/.dropup btn-group-->
+
+                      <!--/RELACIONAMENTO-->
+                      <div class="btn-group dropup relacionamento">
+                        <button type="button" class="btn dropdown-toggle relacionamento" data-toggle="dropdown" title="relacionamento">relacionamento</button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#" class="btn good">positivo</a></li>
+                          <li><a href="#" class="btn neutral">neutro</a></li>
+                          <li><a href="#" class="btn bad">negativo</a></li>
+                          <li><a href="#" class="btn remove">remover</a></li>
+                        </ul>
+                      </div><!--/.dropup btn-group-->
+
+                    </div><!--/.mec-menu .btn-group--> 
+                    <!--/AÇÕES - ENCAMINHAR E RESPONDER-->
+                    <div class="btn-group">
+
+                      <!--/ENCAMINAR-->
+                      <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle hastooltip" data-toggle="dropdown" title="encaminhar"><span class="glyphicon glyphicon-arrow-right"></span> </button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">CRM</a></li>
+                          <li><a href="#" data-toggle="modal" data-target="#foward-modal">email</a></li>
+                        </ul>
+                      </div><!--/.dropup btn-group-->
+
+                      <!--/RESPONDER-->
+                      <button type="button" class="btn hastooltip" data-toggle="modal" data-target="#answer-modal" title="responder"><i class="fa fa-reply"></i> </button>
+
+                    </div><!--/ .btn-group--> 
+                  </footer>
+                </div><!--/.quote-->
+              </dd>
+            </dl>
+
+            <p class="date">terça-feira, 27 de abril de 2014</p>
+
+            <dl class="dl-horizontal">
+              <dt>22:45</dt>
+              <dd>
+                <div class="description">Você relacionou esta citação ao atendimento de <span class="badge id">id <strong>12345</strong> (<a href="#">copiar</a>)</span></div>
+                <div class="at-description">
+                  <div class="ribbon status-btn atendimento encaminhado"><span>encaminhado</span></div>
+                  <p><a href="#" class="at-name">Atendimento 95823</a> <a href="#" data-toggle="modal" data-target="#editat-modal"> <i class="fa fa-pencil"></i></a></p>
+                  <div class="row">
+                    <div class="col-xs-2">
+                      <p class="light-text">natureza</p>
+                      <p>dúvida</p>
+                    </div>
+                    <div class="col-xs-2">
+                      <p class="light-text">setor</p>
+                      <p>biblioteca</p>
+                    </div>
+                    <div class="col-xs-6">
+                      <p class="light-text">referente a</p>
+                      <p>empréstimo de livros</p>
+                    </div>
+                    <div class="col-xs-2">
+                      <p><span class="badge id">id <strong>12345</strong> (<a href="#">copiar</a>)</span></p>
+                    </div>
+                  </div><!--/row-->
+                </div><!--/-->
+              </dd>
+
+            </dl>
+
+
+          </div><!--/accordion-hidden-->
+        </div><!--/.quote-->
+
+
+
+
+
+
+
+
+
+        <!--/CITAÇÃO-->
+
+        <div class="quote accordion-box">
+
+          <div class="quote-content">
+
+            <!--/IMAGEM DO USUÁRIO-->
+            <div class="user-img">
+              <img src="Content/img/user-02.jpg" alt="nome do usuário">
+            </div><!--/user-img-->
+
+            <!--/CHECKBOX-->
+            <div class="quote-checkbox checkbox">
+              <label><input type="checkbox"></label>
+            </div><!--/.checkbox-->
+
+            <!--/CITAÇÃO-->
+            <div class="quote-data"> 
+              <h5>
+                <a href="perfil-do-usuario.html" class="user-name">Nome do Usuário</a>
+                <small><a href="citacao-original" target="blank" class="light">terça-feira, 25/04/14 <span class="lighter">às</span> 10:30</a> <span class="lighter">via</span> <a href="fanpage" target="blank" class="light">fanpage</a></small>
+              </h5>
+
+              <p class="quote-txt">As notas estão postadas. Aos alunos que passaram direto, desejo excelentes férias, um Feliz Natal e um Ano Novo com ainda mais alegrias. Aos demais, ainda nos encontraremos no dia 17/12/13.</p>
+            </div><!--/.quote-data-->
+
+
+            <!--/CONTROLES-->
+
+              <!--/BARRA DE STATUS-->
+              <div class="sidebar">
+                <div class="dropdown status-bar">
+                  <a data-toggle="dropdown" href="#" class="ribbon status-btn atendimento encaminhado"><span>encaminhado <small>biblioteca</small></span></a>
+                  <ul class="dropdown-menu status-menu" role="menu" aria-labelledby="dLabel">
+                    <li><a href="javascript:void(0)" class="em-andamento">em andamento</a></li>
+                    <li><a href="javascript:void(0)" class="encaminhado">encaminhado</a></li>
+                    <li><a href="javascript:void(0)" class="fechado">fechado</a></li>
+                    <li><a href="javascript:void(0)" class="edit-atend" data-toggle="modal" data-target="#editat-modal"><i class="fa fa-pencil"></i> editar atendimento</a></li>                    
+                  </ul>
+                </div><!--/.dropdown-->
+                
+                <!--/REDE SOCIAL-->
+                <a href="#" class="btn social facebook"><i class="fa fa-facebook"></i></a>
+
+                <!--/LIDO/NÃO-LIDO-->
+                <a href="#" class="btn leitura-btn nao-lido"><i class="fa fa-circle-o" data-toggle="tooltip" title="marcar como lido"></i></a>
+
+                <div class="clearfix"></div>
+
+                <!--/TAGS-->
+                <div class="tags">
+                  <p>
+                    <span class="badge"><i class="fa fa-quote-left"></i> a responder  <a href="#" class="remove-tag"><i class="fa fa-times"></i></a></span>
+                    <span class="badge favorite"><i class="fa fa-star"></i> favoritos <a href="#" class="remove-tag"><i class="fa fa-times"></i></a></span> 
+                    <span class="badge">teste <a href="#" class="remove-tag"><i class="fa fa-times"></i></a></span>
+                  </p>
+                </div><!--/.tags-->                  
+                <div class="dropdown tags-menu">
+                  <a data-toggle="dropdown" href="#" class="btn tags-btn"><i class="glyphicon glyphicon-tag"></i></a>
+                  <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
+                    <form role="form">
+
+                      <div class="form-group">
+                        <label for="search">marcar como:</label>
+                        <input type="search" class="form-control" id="" placeholder="">
+                      </div><!--/form-group-->
+
+                      <div class="auto">
+                        <div class="checkbox">
+                          <label><input type="checkbox"> <i class="glyphicon glyphicon-star"></i> favoritos</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox"> lead</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox"> a responder</label>
+                        </div>
+                      </div><!--/auto-->
+
+                      <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#newtag-modal"><span class="glyphicon glyphicon-plus"></span> novo marcador</a></div>
+                      <div class=""><a href="#" class="btn btn-block btn-default" data-toggle="modal" data-target="#configtag-modal"><span class="glyphicon glyphicon-cog"></span> gerenciar marcadores</a></div>
+                      <div class=""><a href="#" class="btn-primary btn btn-block">aplicar</a></div>
+                      
+                    </form>
+                  </div><!--/.dropdown-menu-->
+                </div><!--/.dropdown-->
+
+
+              </div><!--/sidebar-->
+
+              <div class="clearfix"></div>
+          </div><!--/quote-content-->
+
+
+          <footer>
+
+            <!--/SENTIMENTO-->
+            <div class="feeling-menu btn-group">
+              <button type="button" class="btn good active" data-toggle="tooltip" title="positivo">positivo</button>
+              <button type="button" class="btn neutral" data-toggle="tooltip" title="neutro">neutro</button>
+              <button type="button" class="btn bad" data-toggle="tooltip" title="negativo">negativo</button>
+            </div><!--/.feeling-menu .btn-droup-->
+
+
+            <!--/INDICADORES MEC-->
+            <div class="mec-menu btn-group">
+
+              <!--/CAPTAÇÃO-->
+              <div class="btn-group dropup captacao">
+                <button type="button" class="btn dropdown-toggle captacao" data-toggle="dropdown" title="captação">captação</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/EMPREGABILIDADE-->
+              <div class="btn-group dropup empregabilidade">
+                <button type="button" class="btn dropdown-toggle empregabilidade" data-toggle="dropdown" title="empregabilidade">empregabilidade</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/LOCALIZAÇÃO-->
+              <div class="btn-group dropup localizacao">
+                <button type="button" class="btn dropdown-toggle localizacao" data-toggle="dropdown" title="localização">localização</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/ATUAÇÃO ÉTICA-->
+              <div class="btn-group dropup atuacao-etica">
+                <button type="button" class="btn dropdown-toggle atuacao-etica" data-toggle="dropdown" title="atuação ética">atuação ética</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/CORPO DOCENTE-->
+              <div class="btn-group dropup corpo-docente">
+                <button type="button" class="btn dropdown-toggle corpo-docente" data-toggle="dropdown" title="coprpo docente">corpo docente</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/CREDENCIAMENTO NO MEC-->
+              <div class="btn-group dropup credenciamento-no-mec">
+                <button type="button" class="btn dropdown-toggle credenciamento-no-mec" data-toggle="dropdown" title="credenciamento no mec">credenciamento no mec</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/PREÇO-->
+              <div class="btn-group dropup preco">
+                <button type="button" class="btn dropdown-toggle preco" data-toggle="dropdown" title="preço">preço</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/QUALIDADE DE ENSINO-->
+              <div class="btn-group dropup qualidade-de-ensino">
+                <button type="button" class="btn dropdown-toggle qualidade-de-ensino" data-toggle="dropdown" title="qualidade de ensino">qualidade de ensino</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/INFRAESTRUTURA-->
+              <div class="btn-group dropup infraestrutura">
+                <button type="button" class="btn dropdown-toggle infraestrutura" data-toggle="dropdown" title="infraestrutura">infraestrutura</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/RELACIONAMENTO-->
+              <div class="btn-group dropup relacionamento">
+                <button type="button" class="btn dropdown-toggle relacionamento" data-toggle="dropdown" title="relacionamento">relacionamento</button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#" class="btn good">positivo</a></li>
+                  <li><a href="#" class="btn neutral">neutro</a></li>
+                  <li><a href="#" class="btn bad">negativo</a></li>
+                  <li><a href="#" class="btn remove">remover</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+            </div><!--/.mec-menu .btn-group--> 
+
+
+            <!--/AÇÕES - ENCAMINHAR E RESPONDER-->
+            <div class="btn-group">
+
+              <!--/ENCAMINAR-->
+              <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle hastooltip" data-toggle="dropdown" title="encaminhar"><span class="glyphicon glyphicon-arrow-right"></span> </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">CRM</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#foward-modal">email</a></li>
+                </ul>
+              </div><!--/.dropup btn-group-->
+
+              <!--/RESPONDER-->
+              <button type="button" class="btn hastooltip" data-toggle="modal" data-target="#answer-modal" title="responder"><i class="fa fa-reply"></i> </button>
+
+            </div><!--/ .btn-group--> 
+
+            <!--/ATENDIMENTO-->
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><img src="Content/img/atendimento-icon.png" /> abrir atendimento </button>
+            </div>
+
+            <!--/EXPANDIR-->
+            <a href="#" class="btn pull-right accordion-trigger disabled"><i class="fa fa-chevron-down"></i></a>
+
+          </footer>
+        </div><!--/.quote-->
+
+
+        <!--/PAGINAÇÃO-->
+        <div class="center-box">
+          <ul class="pagination">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
         </div>
+        
+      </div><!--/container-->
 
-        <a href="sobre-o-py.html" class="">quem somos</a>
-        <span class="footer-divider">.</span>
-        <a href="ajuda.html" class="">ajuda</a>
-        <span class="footer-divider">.</span>
-        <a href="reportar-problema" class="">reportar problema</a>
 
-        <div class="pull-right">
-          <span>design de interação por</span>
-          <a href="http://www.latitude14.com.br" target="blank"><img src="Content/img/latitude-14-logo.png"></a>
+      <!--/#FOOTER-->
+      <footer id="page-footer">
+        <div class="container">
+          <p class="copyright">© Copyright 2014 Cadsoft. Todos os direitos reservados.</p>
+          <a href="#" target="blank"><img src="Content/img/planeta-y-logo.png"></a>
+
+          <div class="footer-social-links">
+            <a href="https://www.facebook.com/PlanetaY" class="btn social facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/planeta_y" class="btn social twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/+PlanetayBr/about" class="btn social gplus"><i class="fa fa-google-plus"></i></a>
+          </div>
+
+          <a href="sobre-o-py.html" class="">quem somos</a>
+          <span class="footer-divider">.</span>
+          <a href="ajuda.html" class="">ajuda</a>
+          <span class="footer-divider">.</span>
+          <a href="reportar-problema" class="">reportar problema</a>
+
+          <div class="pull-right">
+            <span>design de interação por</span>
+            <a href="http://www.latitude14.com.br" target="blank"><img src="Content/img/latitude-14-logo.png"></a>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div><!--/outside-filter-->
 
 
 
@@ -2160,6 +2163,8 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="Scripts/jquery1.11.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery.maskedinput.min.js"></script>
+    <script src="Scripts/datepicker.js"></script>
     <script src="Scripts/scripts.js"></script>
 
   </body>

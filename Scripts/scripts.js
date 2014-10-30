@@ -6,7 +6,6 @@ jq('#foward-modal .togglecc').click( function() {
 	jq(this).parents('form').find('.cc-container').slideToggle();
 });
 
-
 /* TOOLTIP */
 jq('body').tooltip({
 	delay: { show: 400, hide: 10 },
@@ -35,7 +34,6 @@ jq(".accordion-container input[type='radio']").change(function(){
 
 /* INDERTAMINATE CHECKBOX 
 jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
-
 
 
 /*CITAÇÃO*/
@@ -163,16 +161,67 @@ jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
  jq('#actions-bar').affix({offset: { top: jq('#actions-bar').offset().top }}); 
 
 
-/*PAINEL FILTRAR */
-jq('#filter-toggle').click( function() {
-	var icon = jq(this).find('.fa');
+	/*PAINEL FILTRAR */
 
-	if ( jq(this).hasClass('active') ) {
-		icon.removeClass('fa-remove').addClass('fa-filter');
-	} if ( !jq(this).hasClass('active') ) {
-		icon.removeClass('fa-filter').addClass('fa-remove');
-	}
-	jq(this).toggleClass('active');
-	jq('#filter-panel').toggleClass('open');
-	return false;
-});
+	//animação
+	jq('#filter-toggle').click( function() {
+		var icon = jq(this).find('.fa');
+
+		if ( jq(this).hasClass('active') ) {
+			icon.removeClass('fa-remove').addClass('fa-filter');
+		} if ( !jq(this).hasClass('active') ) {
+			icon.removeClass('fa-filter').addClass('fa-remove');
+		}
+		jq(this).toggleClass('active');
+		jq('#filter-panel').toggleClass('open');
+		return false;
+	});
+	//Esconder ao clicar fora
+	jq('#outside-filter').click( function() {
+		var filtro = jq('#filter-panel')
+			icon = jq('#filter-toggle').find('.fa');
+
+		if ( filtro.hasClass('open') ) {
+			filtro.removeClass('open');
+			icon.removeClass('fa-remove').addClass('fa-filter');
+		}
+	});
+	//resetar form
+	jq('.reset-filter').click(function () {
+	    jq('#filter-form').find('.active').removeClass('active');
+		jq('#filter-form').find(':radio, :checkbox').removeAttr('checked').end();
+		jq('#filter-form').find('textarea, :text, select').val('');
+	    return false;
+	});
+
+	// MASKED INPUT
+	jq(function($){
+	   $("input.hour").mask("99:99",{placeholder:"00:00"});
+	});
+
+	//DATEPICKER
+	jq('.input-daterange').datepicker({
+		language: "pt-BR",
+		autoclose: true,
+		todayHighlight: true
+	});
+
+	//Filter groups with buttons that contain text inputs
+	jq('.filter-group .btn').click( function() {
+		if ( !jq(this).hasClass('btn-set') ) {
+			jq(this).parents('.filter-group').find('.btn-set').removeClass('active');
+		} else {}
+	});
+	jq('.btn-set').click(function() {
+		var group = jq(this).parents('.filter-group');
+		if ( !jq(this).hasClass('active')) {
+			group.find('.active').removeClass('active');
+			jq(this).addClass('active');
+		} else {	
+		}
+	});
+
+
+
+
+

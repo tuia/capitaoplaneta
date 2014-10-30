@@ -1,6 +1,5 @@
 /* PAINEL DE FILTRO */
 #filter-panel {
-
   position: fixed;
   z-index: 1031;
   height: 100%;
@@ -79,7 +78,7 @@
       .btn-group {
         width: 100%;
       }
-      .btn-group-vertical {
+      .btn-group-vertical { 
         display: block;
       }
       .form-control {height: 29px; padding: 2px 5px;}
@@ -90,20 +89,26 @@
         font-size: 12px;
         margin: 0;
         padding: 6px 5px;
+        border-right: 1px solid darken($btn-filter, 40%);
+        &:last-child {border-right: none;}
 
         &.active {
           background-color: $notification-background;
           color: $inverse-text;
           border-top: 1px solid darken($notification-background, 20%);
+          border-right: 1px solid darken($notification-background, 10%);
           border-bottom: none;
+          z-index: 0;
           &:hover {background-color: lighten($notification-background, 10%);}
+          input {color: $default-text}
         }
       }
 
+      .btn-set {width: 100%}
 
       &.horario {
         .btn {width: 50%;}
-        .btn:last-child {width: 100%}
+        .btn-set {width: 100%}
       }
       &.midias {
         .btn {width: 20%;}
@@ -116,7 +121,13 @@
       &.leitura, &.crm, &.nivel-de-atendimento, &.ultima-interacao, &.status {
         .btn {width: 50%; text-align: center;}
       }
-      &.crm .btn {white-space: normal;height: 50px}
+      &.crm {
+        .btn {
+          white-space: normal;
+          height: 50px;
+          &:first-child {padding-top: 14px;}
+        }
+      }
       
     }/*filter group*/
   }/*filter content*/

@@ -112,17 +112,6 @@ label {font-weight: normal;}
 .character-counter {text-align: right; margin-right: 10px; color: $light-text}
 .filter-feedback {font-weight: bold; color: $dark-text; text-align: center; margin: 20px 0 10px }
 
-textarea {resize: vertical; max-height: 300px; min-height: 100px; height: 150px}
-input.edit-on-hover {
-	background: transparent;
-	border-color: transparent;
-	&:hover, &:focus {
-		background: $light-box-bg;
-		border-color: $lighter-text;
-		@include transition(all, .3s, ease-in)
-	}
-}
-
  a[data-toggle="collapse"] {
  	display: block;
  	padding: 10px 15px;
@@ -130,6 +119,9 @@ input.edit-on-hover {
  }
 
  .nav-tabs > li.active > a {background-color: $page-background}
+
+/*Media queries breakpoints*/
+.container, #navigation .container { width: 950px !important; padding: 0;}
 
 
 /*HELPERS*/
@@ -142,8 +134,21 @@ input.edit-on-hover {
 .accordion-trigger.disabled {@include opacity(.3)}
 .center-box {text-align: center;} 
 
-/*Media queries breakpoints*/
-.container, #navigation .container { width: 950px !important; padding: 0;}
+/* FORMS */
+textarea {resize: vertical; max-height: 300px; min-height: 100px; height: 150px}
+input.edit-on-hover {
+	background: transparent;
+	border-color: transparent;
+	&:hover, &:focus {
+		background: $light-box-bg;
+		border-color: $lighter-text;
+		@include transition(all, .3s, ease-in)
+	}
+}
+input.hour { width: 60px }
+input.date { width: 63px}
+
+
 
 /* TÍTULOS */
 h1 {
@@ -759,6 +764,7 @@ h3 {
 				}
 			}
 			.sidebar {
+				.tags-btn {float: right;}
 				.tags, .tags-menu .tags-btn {background-color: $selected-dark;}
 				.leitura-btn {background: lighten($selected-dark, 7%)}
 			}
