@@ -74,6 +74,10 @@
 
 
     .filter-group {
+
+      .selectpicker {
+        background-color: transparent;
+      }
       
       .btn-group {
         width: 100%;
@@ -81,14 +85,13 @@
       .btn-group-vertical { 
         display: block;
       }
-      .form-control {height: 29px; padding: 2px 5px;}
+      .form-control {height: 29px;}
 
       .input-small {width: 40px;}
 
       .btn, .btn-default {
         font-size: 12px;
         margin: 0;
-        padding: 6px 5px;
         border-right: 1px solid darken($btn-filter, 40%);
         &:last-child {border-right: none;}
 
@@ -119,7 +122,10 @@
         .btn:last-child {width: 34%}
       }
       &.leitura, &.crm, &.nivel-de-atendimento, &.ultima-interacao, &.status {
-        .btn {width: 50%; text-align: center;}
+        .btn {
+          width: 50%;
+          text-align: center;
+          padding: 6px 5px;}
       }
       &.crm {
         .btn {

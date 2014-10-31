@@ -222,6 +222,8 @@ jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 	});
 
 
+	//SELECT MULTIPLO
+     jq('.selectpicker').selectpicker();
 
 
 
