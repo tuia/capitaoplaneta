@@ -54,17 +54,6 @@
             </ul><!--/.dropdown-menu-->
           </li><!--/.dropdown-->
 
-          <!--/alertas de citacao - instituiçao-->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-comment"></i> 18</span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">alerta 1</a></li>
-              <li><a href="#">alerta 2</a></li>
-              <li class="divider"></li>
-              <li><a href="#">limpar notificações</a></li>
-            </ul>
-          </li><!--/dropdown-->
-
           <!--/alertas - instituiçao-->
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
@@ -144,10 +133,10 @@
 
           <ul class="nav nav-tabs pull-right" role="tablist">
             <li><a href="index.html"><i class="fa fa-home"></i> início</a></li>
-            <li class="active"><a href="citacoes.html"><i class="fa fa-comment"></i> citações <span class="badge">78</span></a></a></li>
+            <li><a href="citacoes.html"><i class="fa fa-comment"></i> citações <span class="badge">78</span></a></a></li>
             <li><a href="pessoas.html"><i class="fa fa-group"></i> pessoas</a></li>
             <li><a href="relatorios.html"><i class="fa fa-pie-chart"></i> relatórios</a></li>
-            <li><a href="alertas.html"><i class="fa fa-cog"></i> preferências</a></li>
+            <li class="active"><a href="alertas.html"><i class="fa fa-cog"></i> preferências</a></li>
           </ul>
         </div><!--/container-->
       </header>
@@ -173,15 +162,76 @@
         </div><!--/col-->
 
         <div class="col-xs-10">
-          <div class="panel panel-default">
+          <div class="panel panel-default panel-big">
             <div class="panel-heading"><h3 class="panel-title">Marcadores</h3></div>
             <div class="panel-body">
-            <p>Marque os alertas e notificações que deseja receber.</p>
+            <div class="intro">
+              <p>Gerencie seus marcadores.</p>
+            </div>
+
+            <ul class="list-group configure">
+              <li class="list-group-item">
+                <span class="name"><i class="fa fa-star"></i>  favoritos <span class="lighter-text">(500)</span></span>
+                <span class="options">
+                  <a href="" class="occult-item">ocultar</a>
+                  <a href="" class="edit-item">editar</a>
+                  <a href="" class="remove-item">remover</a>
+                </span><!--/options-->
+              </li>
+              <li class="list-group-item">
+                <span class="name">respondidas <span class="lighter-text">(5)</span></span>
+                <span class="options">
+                  <a href="" class="occult-item">ocultar</a>
+                  <a href="" class="edit-item">editar</a>
+                  <a href="" class="remove-item">remover</a>
+                </span><!--/options-->
+              </li>
+              <li class="list-group-item">
+                <span class="name">a responder <span class="lighter-text">(15)</span></span>
+                <span class="options">
+                  <a href="" class="occult-item">ocultar</a>
+                  <a href="" class="edit-item">editar</a>
+                  <a href="" class="remove-item">remover</a>
+                </span><!--/options-->
+              </li>
+              <li class="list-group-item">
+                <span class="name">secretaria <span class="lighter-text">(25)</span></span>
+                <span class="options">
+                  <a href="" class="occult-item">ocultar</a>
+                  <a href="" class="edit-item">editar</a>
+                  <a href="" class="remove-item">remover</a>
+                </span><!--/options-->
+              </li>
+              <li class="list-group-item occult">
+                <span class="name">[OCULTO] responder depois  <span class="lighter-text">(5)</span></span>
+                <span class="options">
+                  <a href="" class="occult-item">mostrar</a>
+                  <a href="" class="edit-item">editar</a>
+                  <a href="" class="remove-item">remover</a>
+                </span><!--/options-->
+              </li>
+              <li class="list-group-item list-group-item-danger">
+                <span class="name">biblioteca <span class="lighter-text">(5)</span></span>
+                <span class="options">
+                  <a href="" class="occult-item">ocultar</a>
+                  <a href="" class="edit-item">editar</a>
+                  <a href="" class="remove-item">remover</a>
+                </span><!--/options-->
+                <div class="validation"><i class="fa fa-times-circle fa-2x pull-left"></i> o marcador deve ter até 30 caracteres</div>
+              </li>
+              <li class="list-group-item editing-item">
+                <input type="text" class="form-control" value="direito OF4" />
+                <span class="options">
+                  <a href="" class="btn btn-primary edit-item">salvar</a>
+                  <a href="" class="btn btn-default remove-item">cancelar</a>
+                </span><!--/options-->
+              </li>
+            </ul>
 
             </div><!--/panel-body-->
             <div class="panel-footer">
-              <button type="button" class="btn btn-default">cancelar</button>
-              <button type="button" class="btn btn-primary">salvar</button>
+              <button type="button" class="btn btn-lg btn-default">cancelar</button>
+              <button type="button" class="btn btn-lg btn-primary">salvar</button>
             </div><!--/panel-footer-->
           </div><!--/panel-->
           
