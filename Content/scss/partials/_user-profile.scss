@@ -1,0 +1,26 @@
+/* PERFIL DO USUARIO */
+.user-profile {
+	.panel {
+		padding: 10px;
+
+		.capital-social, .institution-feeling {
+			float: right;
+		}
+
+		.painel {
+			margin-bottom: 15px;
+			.menu {
+				width: auto;
+				padding: 5px 0 0 5px;
+			}
+			h2 {
+				color: $default-text;
+				margin: 0 0 5px;
+			}
+		}
+
+	}
+}
+.highcharts-title{
+	display: none;
+}

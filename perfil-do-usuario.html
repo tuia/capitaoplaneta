@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Planeta Y - Perfil do Usuário</title>
+
+    <!-- STYLES -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/app.css" rel="stylesheet">
+    <!--/FONTAWESOME-->
+    <link rel="stylesheet" href="Content/font-awesome.min.css">
+
+    <!--/GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!--/#NAVIGATION-->
+    <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <!--/MENU INSTITUIÇÃO-->
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+             <img src="Content/img/instituicao-02.png" alt="" class="nav-img">Anhembi Morumbi <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li class="auto">
+                <ul class="nav">
+                  <li class="active"><a href="#">Anhembi Morumbi</a></li>
+                  <li><a href="#">Anhembi</a></li>
+                  <li><a href="#">Fumec</a></li>
+                  <li><a href="#">Unibh</a></li>
+                  <li><a href="#">Una</a></li>
+                  <li><a href="#">PUC</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li><a href="#">Grupo educacional</a></li>
+              <li class="divider"></li>
+              <li><a href="gerenciar-instituicoes.html"><i class="fa fa-cog"></i> Gerenciar instituições</a></li>
+            </ul><!--/.dropdown-menu-->
+          </li><!--/.dropdown-->
+
+          <!--/alertas - instituiçao-->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">alerta 1</a></li>
+              <li class="divider"></li>
+              <li><a href="#">limpar notificações</a></li>
+            </ul>
+          </li><!--/dropdown-->
+        </ul><!--/.navbar-nav-->
+
+        <!--/LOGO-->
+        <a class="navbar-brand" href="index.html">Planeta Y</a>
+
+        <!--/MENU USUÁRIO-->
+        <ul class="nav navbar-nav pull-right">          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="Content/img/user-01.jpg" alt="anhanguera" class="nav-img">
+              Juliana <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li><a href="dados-cadastrais.html">Dados cadastrais</a></li>
+              <li><a href="planos.html">Planos</a></li>
+              <li><a href="#">Sair</a></li>
+              <li class="divider"></li>
+              <li><a href="ajuda.html">Ajuda</a></li>
+              <li><a href="sobre-o-planetay.html">Sobre o Planeta Y</a></li>
+              <li><a href="reportar-problema.html">Reportar problema</a></li>
+            </ul><!--/.dropdown-menu-->
+          </li><!--/.dropdown-->
+
+          <!--/alertas - usuario-->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li><a href="#">alerta 1</a></li>
+              <li class="divider"></li>
+              <li><a href="#">limpar notificações</a></li>
+            </ul>
+          </li><!--/dropdown-->
+        </ul><!--/.navbar-nav-->
+
+      </div><!-- /.container-->
+    </nav><!--/.navbar-->
+
+      <!--/CABEÇALHO-->
+      <header id="header">
+        <div class="container">
+
+          <div id="institution-box">
+            <img src="Content/img/instituicao-02.png" class="institution-image">
+            <div class="institution-data">
+              <h2 class="institution-name">Anhembi Morumbi</h2>
+              <div class="painel">
+                <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
+                <div class="capital-social">
+                  <h5>7,7</h5>
+                  <p><strong>3.607</strong> citações</p>
+                </div>
+                <div class="menu">
+                  <p>capital social</p>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown">geral <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 24 horas</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 7 dias</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 30 dias</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">geral</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div><!--/painel-->
+            </div><!--/institution-data-->
+            <span class="clearfix"></span>
+          </div><!--/institution-box-->
+
+          <ul class="nav nav-tabs pull-right" role="tablist">
+            <li><a href="index.html"><i class="fa fa-home"></i> início</a></li>
+            <li><a href="citacoes.html"><i class="fa fa-comment"></i> citações <span class="badge">78</span></a></a></li>
+            <li class="active"><a href="pessoas.html"><i class="fa fa-group"></i> pessoas</a></li>
+            <li><a href="relatorios.html"><i class="fa fa-pie-chart"></i> relatórios</a></li>
+            <li><a href="alertas.html"><i class="fa fa-cog"></i> preferências</a></li>
+          </ul>
+        </div><!--/container-->
+      </header>
+
+
+    <!--/CONTEÚDO DA PÁGINA-->
+    <div class="container">
+
+      <ol class="breadcrumb">
+        <li><a href="#">Pessoas</a></li>
+        <li class="active">Roberto de Freitas</li>
+      </ol>
+
+      <div class="user-profile">
+        <div class="row">
+          <div class="col-xs-8 panel">
+
+            <!--/USER IMAGE-->
+            <img src="Content/img/user-01.jpg" class="pull-left" alt="Roberto de Freitas">
+
+            <div class="col-xs-7">
+              <!--/USER NAME-->
+              <div class="form-group">
+                <input type="text" class="form-control editable" id="" value="Roberto de Freitas" placeholder="nome">
+              </div><!--/form-group-->
+
+              <!--/USER LOCATION-->
+              <div class="form-group">
+                <i class="fa fa-exclamation-triangle"></i>
+                <select class="form-control">
+                  <option>Minas gerais</option>
+                  <option>São paulo</option>
+                </select>
+              </div><!--/form-group-->
+
+              <!--/GENDER-->
+              <div class="form-group">
+                <i class="fa fa-exclamation-triangle"></i>
+                <select class="form-control">
+                  <option>feminino</option>
+                  <option>masculino</option>
+                </select>
+              </div><!--/form-group-->
+            </div><!--/col-xs-6-->
+
+            <div class="col-xs-4">
+              <div class="ribbon user-statusCar">
+                <div class="pull-left">
+                  <span>Captação</span>
+                  <small>lead</small>
+                </div>
+                <div class="pull-right">
+                  <a href="#" tabindex="0" class="help-button" role="button" data-toggle="popover" data-trigger="focus" title="status" data-content="And here's some amazing content. It's very engaging. Right?"><i class="fa fa-info-circle"></i></a>
+                </div>
+              </div><!--/ribbon-->
+            </div><!--/col-xs-4-->
+
+            <div class="form-group"></div><!--/form-group-->
+            <div class="form-group"></div><!--/form-group-->
+            <div class="form-group"></div><!--/form-group-->
+            <div class="form-group"></div><!--/form-group-->
+
+          </div><!--/col-xs-8-->
+
+          <!--/PAINEL DE CAPITAL SOCIAL-->
+          <div class="col-xs-4 panel">
+            
+            <div class="painel">
+              <div class="menu">
+                <h2>capital social</h2>
+                <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown">geral <span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 24 horas</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 7 dias</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 30 dias</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">geral</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="capital-social">
+                <h5>7,7</h5>
+                <p><strong>3.607</strong> citações</p>
+              </div>
+              <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
+            </div><!--/painel-->
+
+            <!--/GRÁFICO PIZZA-->
+            <div id="usergraph" style="min-width: 305px; height: 400px; max-width: 300px; margin: 0 auto -80px"></div><!--/usergraph-->
+
+          </div><!--/col-xs-4-->
+
+        </div><!--/row-->
+      </div><!--/user-profile-->
+
+
+    </div><!--/container-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="Scripts/jquery1.11.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script src="Scripts/scripts.js"></script>
+    <script type="text/javascript">
+    jq(function () {
+
+    jq(document).ready(function () {
+
+        // Build the chart
+        jq('#usergraph').highcharts({
+            chart: {
+                backgroundColor: '#f5f5f5',
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                width: 305,
+                height: 310,
+                marginLeft: 50,
+                marginRight: 50,
+                marginBottom: 50,
+                marginTop: 0,
+                spacingTop: 15,
+                spacingBottom: 20
+            },
+            title: {
+                text: 'Sentimento - Roberta de Freitas'
+            },
+            tooltip: {
+                pointFormat: '<b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'sentimento de Roberto de Freitas',
+                data: [
+                    {
+                        name: 'positivas',
+                        y: 13,
+                        color: '#27AE60'
+                    },
+                    {
+                      name: 'neutras',
+                      y: 5,
+                      color: '#2980B9',
+                    },
+                    {
+                      name: 'negativas',
+                      y: 4,
+                      color: '#C0392B',
+                    }
+                ]
+            }]
+        });
+    });
+
+});
+    </script>
+
+  </body>
+</html>

@@ -11,6 +11,8 @@ jq('body').tooltip({
 	delay: { show: 400, hide: 10 },
     selector: '[data-toggle="tooltip"], .hastooltip, .mec-menu .dropdown-toggle'
 });
+//POPOVER DE AJUDA
+jq('.help-button').popover();
 
 
 /* ACCORDIONS */
