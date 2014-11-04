@@ -766,9 +766,37 @@ h3 {
 
 
 /* CITAÇÃO */
+
+.quote-historic {
+	background-color: $light-box-bg;
+	padding: 0px 20px 20px 20px;
+	max-height: 300px;
+	overflow: auto;
+	dl {
+		dt {
+			width: 50px;
+			padding: 5px;
+		}
+		dd {
+			margin: 0 0 10px 60px;
+			.description {
+				background-color: $box-bg;
+				padding: 5px 10px;
+				margin-bottom: 10px;
+			}
+			&> div:last-child {margin-bottom: 20px;}
+			.quote-small {margin-bottom: 10px}
+		}
+	}
+}
+
 .quote {
 	margin: 0 0 30px 0;
 	border: 3px solid transparent;
+
+	.quote-storic {
+		
+	}
 
 	&:nth-child(2n+1) .quote-content, &:nth-child(2n) .quote-historic {background-color: darken($light-box-bg, 5%);}
 
@@ -1002,29 +1030,6 @@ h3 {
 		    margin: 0;
 		}
 	}/*footer*/
-
-	.quote-historic {
-		background-color: $light-box-bg;
-		padding: 0px 20px 20px 20px;
-		max-height: 300px;
-		overflow: auto;
-		dl {
-			dt {
-				width: 50px;
-				padding: 5px;
-			}
-			dd {
-				margin: 0 0 10px 60px;
-				.description {
-					background-color: $box-bg;
-					padding: 5px 10px;
-					margin-bottom: 10px;
-				}
-				&> div:last-child {margin-bottom: 20px;}
-				.quote-small {margin-bottom: 10px}
-			}
-		}
-	}
 
 	/* citação pequena */
 	&.quote-small {

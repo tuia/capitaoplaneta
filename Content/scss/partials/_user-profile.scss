@@ -3,7 +3,7 @@
 	padding: 0 20px;
 
 	h2 {
-		margin: 10px 20px;
+		margin: 10px;
 		color: $default-text;
 	}
 
@@ -37,8 +37,11 @@
 	.capital-social {
 		height: 440px;
 	}
-
-
+	.panel-body {
+		padding: 0;
+		margin: 10px 0;
+		.quote-historic {max-height: 400px}
+	}
 
 	/* FORM */
 	.form-horizontal .form-group {
@@ -132,6 +135,8 @@
 		.user-image {
 			border: 6px solid $box-bg;
 			margin: 10px 0 0 10px;
+			width: 110px;
+			height: 110px;
 			@include rotate(-4);
 		}
 

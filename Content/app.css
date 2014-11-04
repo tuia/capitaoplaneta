@@ -1184,6 +1184,31 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 
 /* CITAÇÃO */
+.quote-historic {
+  background-color: white;
+  padding: 0px 20px 20px 20px;
+  max-height: 300px;
+  overflow: auto;
+}
+.quote-historic dl dt {
+  width: 50px;
+  padding: 5px;
+}
+.quote-historic dl dd {
+  margin: 0 0 10px 60px;
+}
+.quote-historic dl dd .description {
+  background-color: #f6f7f8;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.quote-historic dl dd > div:last-child {
+  margin-bottom: 20px;
+}
+.quote-historic dl dd .quote-small {
+  margin-bottom: 10px;
+}
+
 .quote {
   margin: 0 0 30px 0;
   border: 3px solid transparent;
@@ -1433,30 +1458,6 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   color: #666666;
   height: 32px;
   margin: 0;
-}
-.quote .quote-historic {
-  background-color: white;
-  padding: 0px 20px 20px 20px;
-  max-height: 300px;
-  overflow: auto;
-}
-.quote .quote-historic dl dt {
-  width: 50px;
-  padding: 5px;
-}
-.quote .quote-historic dl dd {
-  margin: 0 0 10px 60px;
-}
-.quote .quote-historic dl dd .description {
-  background-color: #f6f7f8;
-  padding: 5px 10px;
-  margin-bottom: 10px;
-}
-.quote .quote-historic dl dd > div:last-child {
-  margin-bottom: 20px;
-}
-.quote .quote-historic dl dd .quote-small {
-  margin-bottom: 10px;
 }
 .quote.quote-small {
   border-bottom: 1px solid #e6e6e6;
@@ -3418,7 +3419,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   /* FORM */
 }
 .user-profile h2 {
-  margin: 10px 20px;
+  margin: 10px;
   color: #666666;
 }
 .user-profile .panel {
@@ -3455,6 +3456,13 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 .user-profile .capital-social {
   height: 440px;
+}
+.user-profile .panel-body {
+  padding: 0;
+  margin: 10px 0;
+}
+.user-profile .panel-body .quote-historic {
+  max-height: 400px;
 }
 .user-profile .form-horizontal .form-group {
   margin: 0;
@@ -3549,6 +3557,8 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .user-profile .user-header .user-image {
   border: 6px solid #f6f7f8;
   margin: 10px 0 0 10px;
+  width: 110px;
+  height: 110px;
   -moz-transform: rotate(-4deg);
   -o-transform: rotate(-4deg);
   -webkit-transform: rotate(-4deg);
