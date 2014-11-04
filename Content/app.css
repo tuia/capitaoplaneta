@@ -3416,7 +3416,10 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   padding: 0 20px;
   /* painel */
   /* FORM */
-  /* RIBBON */
+}
+.user-profile h2 {
+  margin: 10px 20px;
+  color: #666666;
 }
 .user-profile .panel {
   border: 1px solid #e8f2e8;
@@ -3441,47 +3444,142 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   text-indent: 5px;
   color: #333333;
 }
+.user-profile .contact {
+  padding-bottom: 120px;
+}
+.user-profile .midias {
+  padding-bottom: 120px;
+}
+.user-profile .contact, .user-profile .midias {
+  height: 300px;
+}
+.user-profile .capital-social {
+  height: 440px;
+}
+.user-profile .form-horizontal .form-group {
+  margin: 0;
+}
+.user-profile .form-horizontal .form-group label {
+  text-align: right;
+  padding-right: 0;
+  color: #999999;
+}
 .user-profile .form-group {
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 0;
   width: 100%;
+  /* seta escondida do select */
 }
 .user-profile .form-group:hover {
   background: #f6f7f8;
 }
-.user-profile .form-group i {
-  float: left;
-  padding: 10px 10px 10px 0;
+.user-profile .form-group:hover .form-control {
+  border: 1px solid #CCCCCC;
+  -webkit-box-shadow: inset 0 1 1 rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1 1 rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1 1 rgba(0, 0, 0, 0.075);
 }
 .user-profile .form-group .form-control {
-  width: 80%;
+  border: 1px solid transparent;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
 }
 .user-profile .form-group .form-control.input-lg {
   font-size: 24px;
   font-weight: bold;
   color: #333333;
+  padding: 5px 10px;
+  height: 40px;
 }
-.user-profile .ribbon {
+.user-profile .form-group:hover .input-group select {
+  width: 100%;
+}
+.user-profile .form-group .input-group {
+  overflow: hidden;
+}
+.user-profile .form-group .input-group select {
+  width: 120%;
+}
+.user-profile .form-group .input-group-addon {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.user-profile .form-group .input-group-addon .fa-facebook {
+  color: #3b5998;
+}
+.user-profile .form-group .input-group-addon .fa-twitter {
+  color: #00aced;
+}
+.user-profile .form-group .input-group-addon .fa-youtube {
+  color: #bb0000;
+}
+.user-profile .form-group .input-group-addon .fa-google-plus {
+  color: #dd4b39;
+}
+.user-profile .form-group .input-group-addon .fa-instagram {
+  color: #517fa4;
+}
+.user-profile .form-group .input-group-addon .fa-flickr {
+  color: #ff0084;
+}
+.user-profile .form-group .input-group-addon .fa-linkedin {
+  color: #007bb6;
+}
+.user-profile .form-group .input-group-addon .fa-blogger {
+  color: #ff6600;
+}
+.user-profile .form-group .input-group-addon .fa-foursquare {
+  color: #0072b1;
+}
+.user-profile .form-group .input-group-addon .fa-reclame-aqui {
+  color: #008751;
+}
+.user-profile .form-group .input-group-addon .fa-reclame-aqui .reclame-aqui-icon {
+  width: 70%;
+  padding: 5% 0 15%;
+}
+.user-profile .user-header {
+  margin-bottom: 0;
+  padding: 5px;
+  height: 140px;
+  /* RIBBON */
+}
+.user-profile .user-header .user-image {
+  border: 6px solid #f6f7f8;
+  margin: 10px 0 0 10px;
+  -moz-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0, M12=0, M21=0, M22=0, sizingMethod='auto expand');
+  zoom: 1;
+}
+.user-profile .user-header .user-header-data {
+  padding: 0 60px 0 40px;
+}
+.user-profile .user-header .ribbon {
   float: right;
   position: relative;
   right: -15px;
   height: 48px;
-  max-width: 100%;
-  min-width: 160px;
+  min-width: 140px;
 }
-.user-profile .ribbon:after {
+.user-profile .user-header .ribbon:after {
   display: none;
 }
-.user-profile .ribbon:before {
+.user-profile .user-header .ribbon:before {
   border-width: 24px 12px 24px 0;
   left: -12px;
 }
-.user-profile .ribbon .pull-left span {
+.user-profile .user-header .ribbon .pull-left span {
   max-width: 120px;
   display: block;
   word-wrap: break-word;
 }
-.user-profile .ribbon small {
+.user-profile .user-header .ribbon small {
   text-transform: none;
   font-weight: normal;
   display: block;
