@@ -1,6 +1,9 @@
 /* PERFIL DO USUARIO */
 .user-profile {
+	padding: 0 20px;
+
 	.panel {
+		border: 1px solid $page-background;
 		padding: 10px;
 
 		.capital-social, .institution-feeling {
@@ -17,10 +20,64 @@
 				color: $default-text;
 				margin: 0 0 5px;
 			}
+			h5 {text-align: left; text-indent: 5px; color: $dark-text}
 		}
 
+	}/* painel */
+
+	/* FORM */
+	.form-group {
+		padding: 10px;
+		margin-bottom: 0;
+		width: 100%;
+		&:hover {
+			background: $box-bg;
+		}
+
+		i {
+			float: left;
+			padding: 10px 10px 10px 0;
+		}
+
+		.form-control {
+			width: 80%;
+
+			&.input-lg {
+				font-size: 24px;
+				font-weight: bold;
+				color: $dark-text;
+			}
+		}
 	}
+
+	/* RIBBON */
+	.ribbon {
+		float: right;
+		position: relative;
+		right: -15px;
+		height: 48px;
+		max-width: 100%;
+		min-width: 160px; 
+
+		&:after {display:none}
+		&:before {
+		    border-width: 24px 12px 24px 0;
+		    left: -12px;
+		}
+		.pull-left span {max-width: 120px; display: block; word-wrap: break-word;}
+		small {
+			text-transform: none;
+			font-weight: normal;
+			display: block;
+			font-size: 12px;
+			margin: -2px 0 2px;
+		}
+	}
+
 }
-.highcharts-title{
-	display: none;
-}
+
+
+
+
+
+
