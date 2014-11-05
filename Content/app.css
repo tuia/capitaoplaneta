@@ -309,17 +309,18 @@ input.date {
   top: 2px;
   right: 2px;
 }
-.form-group.has-success input, .form-group.has-success select {
+.form-group.has-success input, .form-group.has-success select, .form-group.has-success textarea {
   background-color: #dff0d8;
   border-color: #d6e9c6;
   padding-right: 40px !important;
 }
-.form-group.has-error input, .form-group.has-error select {
+.form-group.has-error input, .form-group.has-error select, .form-group.has-error textarea {
   background-color: #ebccd1;
   border-color: #ebccd1;
   padding-right: 40px !important;
 }
-.form-group.loading input, .form-group.loading select {
+.form-group.loading input, .form-group.loading select, .form-group.loading textarea {
+  background-color: #fcfcfc;
   border-color: #cccccc !important;
 }
 .form-group .validation {
@@ -371,6 +372,10 @@ input.date {
   color: #cccccc !important;
 }
 
+.modal .panel-title {
+  font-size: 14px;
+}
+
 /* PAINEIS */
 .panel .panel-body {
   background-color: #f9f9f9;
@@ -381,7 +386,6 @@ input.date {
 .panel .panel-title {
   color: #666666;
   text-transform: uppercase;
-  font-size: 14px;
   font-weight: bold;
 }
 .panel .panel-title .collapsed i {
@@ -3471,12 +3475,13 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .user-profile .panel {
   border: 1px solid #e8f2e8;
   padding: 10px;
+  margin: 0;
 }
 .user-profile .panel .capital-social, .user-profile .panel .institution-feeling {
   float: right;
 }
 .user-profile .panel .painel {
-  margin-bottom: 15px;
+  margin: 0 auto 15px;
 }
 .user-profile .panel .painel .menu {
   width: auto;
@@ -3491,6 +3496,9 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   text-indent: 5px;
   color: #333333;
 }
+.user-profile .historic {
+  margin: 20px auto 50px;
+}
 .user-profile .contact {
   padding-bottom: 120px;
 }
@@ -3500,8 +3508,11 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .user-profile .contact, .user-profile .midias {
   height: 300px;
 }
-.user-profile .capital-social {
+.user-profile .capital-social-panel {
   height: 440px;
+}
+.user-profile .institution, .user-profile .observations {
+  height: 240px;
 }
 .user-profile .panel-body {
   padding: 0;
@@ -3509,6 +3520,9 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 .user-profile .panel-body .quote-historic {
   max-height: 400px;
+}
+.user-profile textarea {
+  resize: none;
 }
 .user-profile .form-horizontal .form-group {
   margin: 0;

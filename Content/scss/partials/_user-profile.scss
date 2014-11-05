@@ -10,13 +10,14 @@
 	.panel {
 		border: 1px solid $page-background;
 		padding: 10px;
+		margin: 0;
 
 		.capital-social, .institution-feeling {
 			float: right;
 		}
 
 		.painel {
-			margin-bottom: 15px;
+			margin: 0 auto 15px;
 			.menu {
 				width: auto;
 				padding: 5px 0 0 5px;
@@ -29,13 +30,20 @@
 		}
 
 	}/* painel */
+
+	.historic {
+		margin: 20px auto 50px;
+	}
 	.contact {padding-bottom: 120px	}
 	.midias {padding-bottom: 120px	}
 	.contact, .midias {
 		height: 300px;
 	}
-	.capital-social {
+	.capital-social-panel {
 		height: 440px;
+	}
+	.institution, .observations {
+		height: 240px
 	}
 	.panel-body {
 		padding: 0;
@@ -44,6 +52,7 @@
 	}
 
 	/* FORM */
+	textarea {resize: none;}
 	.form-horizontal .form-group {
 		margin: 0;
 		label {text-align: right; padding-right: 0; color: $light-text}

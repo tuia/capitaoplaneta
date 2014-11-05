@@ -155,21 +155,22 @@ input.date { width: 63px}
 			right: 2px;
 		}
 		&.has-success {
-			input, select {
+			input, select, textarea {
 				background-color: #dff0d8;
 				border-color: #d6e9c6;
 				padding-right: 40px !important
 			}
 		}
 		&.has-error {
-			input, select {
+			input, select, textarea {
 				background-color: #ebccd1;
 				border-color: #ebccd1;
 				padding-right: 40px !important
 			}
 		}
 		&.loading {
-			input, select {
+			input, select, textarea {
+				background-color: darken($light-box-bg, 1%);
 				border-color: $lighter-text !important;
 			}
 		}
@@ -216,7 +217,7 @@ input.date { width: 63px}
 	   color:    $lighter-text !important;
 	}
 
-
+.modal .panel-title {font-size: 14px;}
 /* PAINEIS */
 .panel {
 	.panel-body {background-color: #f9f9f9;
@@ -225,7 +226,6 @@ input.date { width: 63px}
 	.panel-title {
 		color: $default-text;
 		text-transform: uppercase;
-		font-size: 14px;
 		font-weight: bold;
 		.collapsed i { @include rotate(-180);}
 	}
