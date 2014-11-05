@@ -50,6 +50,7 @@
 	}
 	.form-group {
 		padding: 5px;
+		color: $dark-text;
 		margin-bottom: 0;
 		width: 100%;
 		&:hover {
@@ -90,6 +91,18 @@
 		.input-group-addon {
 			background-color: transparent;
 			border: 1px solid transparent;
+			padding: 0;
+
+			a {
+				background: $box-bg;
+				display: inline-block;
+				padding: 6px 12px;
+				width: 40px;
+
+				&:hover {
+					background: $light-box-bg;
+				}
+			}
 
 			.fa-facebook {
 				color: $facebook-color;

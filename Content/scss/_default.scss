@@ -146,6 +146,22 @@ input.edit-on-hover {
 input.hour { width: 60px }
 input.date { width: 63px}
 
+	/* placeholder */
+	::-webkit-input-placeholder { /* WebKit browsers */
+	    color:    $lighter-text !important;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color:    $lighter-text !important;
+	   opacity:  1;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color:    $lighter-text !important;
+	   opacity:  1;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+	   color:    $lighter-text !important;
+	}
+
 
 /* PAINEIS */
 .panel {
@@ -795,7 +811,7 @@ h3 {
 	border: 3px solid transparent;
 
 	.quote-storic {
-		
+
 	}
 
 	&:nth-child(2n+1) .quote-content, &:nth-child(2n) .quote-historic {background-color: darken($light-box-bg, 5%);}
