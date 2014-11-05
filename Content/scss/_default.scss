@@ -146,6 +146,60 @@ input.edit-on-hover {
 input.hour { width: 60px }
 input.date { width: 63px}
 
+	/* validation and feedback */
+
+	.form-group {
+		/* feedback  */
+		.form-control-feedback {
+			top: 2px;
+			right: 2px;
+		}
+		&.has-success {
+			input, select {
+				background-color: #dff0d8;
+				border-color: #d6e9c6;
+				padding-right: 40px !important
+			}
+		}
+		&.has-error {
+			input, select {
+				background-color: #ebccd1;
+				border-color: #ebccd1;
+				padding-right: 40px !important
+			}
+		}
+		&.loading {
+			input, select {
+				border-color: $lighter-text !important;
+			}
+		}
+
+		.validation {
+			position: absolute;
+			left: 100%;
+			top: 0;
+			width: 175px;
+			background-color: $bad;
+			color: $inverse-text;
+			margin-left: 15px;
+			padding: 5px 10px;
+			line-height: 1.2em;
+			font-size: 13px;
+			@include border-radius(5px);
+			z-index: 10;
+		}
+		.validation:before {
+		    content:"\A";
+		    border-style: solid;
+		    border-width: 8px 8px 8px 0;
+		    border-color: transparent $bad transparent transparent;
+		    position: absolute;
+		    left: -8px;
+		    top: 8px;
+		}
+	}
+
+
 	/* placeholder */
 	::-webkit-input-placeholder { /* WebKit browsers */
 	    color:    $lighter-text !important;
@@ -1234,28 +1288,6 @@ h3 {
 			.occult-item {
 				margin-right: 60px;
 			}
-		}
-		.validation {
-			position: absolute;
-			left: 100%;
-			top: 0;
-			width: 175px;
-			background-color: $bad;
-			color: $inverse-text;
-			margin-left: 15px;
-			padding: 5px 10px;
-			line-height: 1.2em;
-			font-size: 13px;
-			@include border-radius(5px);
-		}
-		.validation:before {
-		    content:"\A";
-		    border-style: solid;
-		    border-width: 8px 8px 8px 0;
-		    border-color: transparent $bad transparent transparent;
-		    position: absolute;
-		    left: -8px;
-		    top: 8px;
 		}
 
 		&:nth-child(2n) { background-color: $striped-table }

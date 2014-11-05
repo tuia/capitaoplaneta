@@ -53,6 +53,11 @@
 		color: $dark-text;
 		margin-bottom: 0;
 		width: 100%;
+
+		&.has-feedback .input-group {
+			overflow: visible !important;
+		}
+
 		&:hover {
 			background: $box-bg;
 			.form-control {
@@ -152,6 +157,8 @@
 			height: 110px;
 			@include rotate(-4);
 		}
+
+		.input-group-addon {padding: 6px 6px 6px 12px}
 
 		.user-header-data {padding: 0 60px 0 40px;}
 

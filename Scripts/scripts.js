@@ -11,6 +11,9 @@ jq('body').tooltip({
 	delay: { show: 400, hide: 10 },
     selector: '[data-toggle="tooltip"], .hastooltip, .mec-menu .dropdown-toggle'
 });
+jq('.validation').click( function() {
+	jq(this).fadeOut();
+});
 //POPOVER DE AJUDA
 jq('.help-button').popover();
 

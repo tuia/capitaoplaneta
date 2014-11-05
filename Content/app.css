@@ -301,6 +301,53 @@ input.date {
   width: 63px;
 }
 
+/* validation and feedback */
+.form-group {
+  /* feedback  */
+}
+.form-group .form-control-feedback {
+  top: 2px;
+  right: 2px;
+}
+.form-group.has-success input, .form-group.has-success select {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  padding-right: 40px !important;
+}
+.form-group.has-error input, .form-group.has-error select {
+  background-color: #ebccd1;
+  border-color: #ebccd1;
+  padding-right: 40px !important;
+}
+.form-group.loading input, .form-group.loading select {
+  border-color: #cccccc !important;
+}
+.form-group .validation {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 175px;
+  background-color: #c0392b;
+  color: white;
+  margin-left: 15px;
+  padding: 5px 10px;
+  line-height: 1.2em;
+  font-size: 13px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 10;
+}
+.form-group .validation:before {
+  content: "\A";
+  border-style: solid;
+  border-width: 8px 8px 8px 0;
+  border-color: transparent #c0392b transparent transparent;
+  position: absolute;
+  left: -8px;
+  top: 8px;
+}
+
 /* placeholder */
 ::-webkit-input-placeholder {
   /* WebKit browsers */
@@ -1689,30 +1736,6 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 .configure.list-group .list-group-item .options .occult-item {
   margin-right: 60px;
-}
-.configure.list-group .list-group-item .validation {
-  position: absolute;
-  left: 100%;
-  top: 0;
-  width: 175px;
-  background-color: #c0392b;
-  color: white;
-  margin-left: 15px;
-  padding: 5px 10px;
-  line-height: 1.2em;
-  font-size: 13px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-}
-.configure.list-group .list-group-item .validation:before {
-  content: "\A";
-  border-style: solid;
-  border-width: 8px 8px 8px 0;
-  border-color: transparent #c0392b transparent transparent;
-  position: absolute;
-  left: -8px;
-  top: 8px;
 }
 .configure.list-group .list-group-item:nth-child(2n) {
   background-color: #f9f9f9;
@@ -3502,6 +3525,9 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   width: 100%;
   /* seta escondida do select */
 }
+.user-profile .form-group.has-feedback .input-group {
+  overflow: visible !important;
+}
 .user-profile .form-group:hover {
   background: #f6f7f8;
 }
@@ -3600,6 +3626,9 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   transform: rotate(-4deg);
   filter: progid:DXImageTransform.Microsoft.Matrix(M11=0, M12=0, M21=0, M22=0, sizingMethod='auto expand');
   zoom: 1;
+}
+.user-profile .user-header .input-group-addon {
+  padding: 6px 6px 6px 12px;
 }
 .user-profile .user-header .user-header-data {
   padding: 0 60px 0 40px;
