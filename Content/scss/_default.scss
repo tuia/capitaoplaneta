@@ -66,7 +66,7 @@
 
 /* THE CSS */
 /*typography*/
-body, p {font-family: 'Roboto', sans-serif; color: $default-text}
+body, p {font-family: 'Roboto', sans-serif; color: $default-text; font-weight: 300}
 body {
 	background: $page-background;
 	overflow-x: hidden;
@@ -79,8 +79,8 @@ body {
 
 a:hover {text-decoration: none;}
 .badge {@include border-radius(3px);}
-label {font-weight: normal;}
-.badge.id {background-color: $lighter-text; color: $default-text; text-transform: uppercase; font-weight: normal; a {text-transform: lowercase;}}
+label {font-weight: 300;}
+.badge.id {background-color: $lighter-text; color: $default-text; text-transform: uppercase; font-weight: 300; a {text-transform: lowercase;}}
 .badge.favorite {background: $alert}
 
 .good-txt {color: $good}
@@ -105,6 +105,12 @@ label {font-weight: normal;}
 .character-counter {text-align: right; margin-right: 10px; color: $light-text}
 .filter-feedback {font-weight: bold; color: $dark-text; text-align: center; margin: 20px 0 10px }
 
+.popover {
+	.popover-content {
+		font-size: 14px;
+	}
+}
+
  a[data-toggle="collapse"] {
  	display: block;
  	padding: 10px 15px;
@@ -112,11 +118,20 @@ label {font-weight: normal;}
  }
 
 .highcharts-title{display: none}
-
+text[text-anchor="end"] {display: none;}
+.affix-bar {
+	&.affix {
+		background: $page-background;
+		top: 0;
+		width: 100%;
+		position: fixed;
+		z-index: 10;
+	}
+}
  .nav-tabs > li.active > a {background-color: $page-background}
 
  .help-button { padding: 10px; font-size: 16px; margin: -3px -3px -3px 0;}
- .popover {color: $default-text; text-transform: none; font-weight: normal;}
+ .popover {color: $default-text; text-transform: none; font-weight: 300;}
 
 /*Media queries breakpoints*/
 .container, #navigation .container { width: 950px !important; padding: 0;}
@@ -238,7 +253,7 @@ input.date { width: 63px}
 	&.panel-big {
 		.panel-title {
 			padding: 10px 0;
-			font-weight: normal;
+			font-weight: 300;
 			font-size: 18px;
 		}
 		border: none;
@@ -630,7 +645,11 @@ h3 {
 		&.infraestrutura {background-position: -264 -64px}
 		&.relacionamento {background-position: -297px -64px}
 	}
-
+	.feeling-icon.dark {
+		&.good {background-position: -330px -32px}
+		&.neutral {background-position: -363px -32px}
+		&.bad {background-position: -396px -32px}
+	}
 	/* MEC MENU DROPUP */
 	.mec-menu {
 		.btn-group {
@@ -758,7 +777,7 @@ h3 {
 		p {margin-bottom: 0; padding: 5px 0}
 		h5 {
 			text-transform: uppercase; font-weight: bold; margin-top: 0;
-			small {text-transform: lowercase; color: $light-text; font-weight: normal;}
+			small {text-transform: lowercase; color: $light-text; font-weight: 300;}
 		}
 		&.horizontal .form-group {margin-bottom: 0}
 		.close {margin-top: -8px}
@@ -999,7 +1018,7 @@ h3 {
 
 				.dropdown-menu.status-menu {
 					li {
-						&:last-child a { text-transform: none; font-weight: normal; font-size: .9em }
+						&:last-child a { text-transform: none; font-weight: 300; font-size: .9em }
 					}
 				}
 				.status-btn {
@@ -1018,7 +1037,7 @@ h3 {
 						span {
 							font-size: 12px;
 							line-height: 1em;
-							small {display: block; text-transform: lowercase; color: $light-text; font-weight: normal; font-size: 10px;}						
+							small {display: block; text-transform: lowercase; color: $light-text; font-weight: 300; font-size: 10px;}						
 						}
 					}
 
@@ -1119,7 +1138,7 @@ h3 {
 		
 		.btn {
 		    text-transform: uppercase;
-		    font-weight: normal;
+		    font-weight: 300;
 		    border: none !important;
 		    
 		    color: $default-text;

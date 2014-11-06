@@ -46,13 +46,6 @@
 
 		li{margin-bottom: 1px}
 	}
-	&.affix {
-		background: $page-background;
-		top: 0;
-		width: 100%;
-		position: fixed;
-		z-index: 10;
-	}
 	.checkbox {margin: 0}
 	.btn > .fa, .btn > .glyphicon { color: $light-text }
 	.dropdown {margin: 0px}

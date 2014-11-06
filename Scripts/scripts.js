@@ -168,11 +168,8 @@ jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 
 	/* AFFIX ACTIONS BARRA DE CITAÇÕES */
 	jq(function () {
-		if (jq("#actions-bar")[0]){
-		    jq('#actions-bar').affix({offset: { top: jq('#actions-bar').offset().top }});
-		} 
-		if (jq("#report-navbar")[0]){
-		    jq('#actions-bar').affix({offset: { top: jq('#report-navbar').offset().top }});
+		if (jq(".affix-bar")[0]){
+		    jq('.affix-bar').affix({offset: { top: jq('.affix-bar').offset().top }});
 		} 
 		/* DATEPICKER */
 		if (jq(".input-daterange")[0]){

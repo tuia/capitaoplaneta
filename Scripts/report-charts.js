@@ -1,128 +1,273 @@
-jq(function () {
 
-    jq(document).ready(function () {
+//CAPITAL SOCIAL
 
+    //COMPARATIVOS
 
-        // CAPTAÇÃO
-        
-            // COMPARATIVO
-            jq(function () {
+        //ULTIMAS 24H
+        jq('#comparativo-a').highcharts({
 
-                jq('#comparativo').highcharts({
+            chart: {
+                backgroundColor: 'transparent',
+                type: 'gauge',
+                plotBackgroundColor: null,
+                plotBackgroundImage: null,
+                plotBorderWidth: 0,
+                plotShadow: false,
+                height: 210
+            },
 
-                    chart: {
-                        type: 'gauge',
-                        plotBackgroundColor: null,
-                        plotBackgroundImage: null,
-                        plotBorderWidth: 0,
-                        plotShadow: false
-                    },
+            title: {
+                text: 'capital social - últimas 24h'
+            },
 
-                    title: {
-                        text: 'Speedometer'
-                    },
+            pane: {
+                startAngle: -90,
+                endAngle: 90,
+            },
 
-                    pane: {
-                        startAngle: -150,
-                        endAngle: 150,
-                        background: [{
-                            backgroundColor: {
-                                linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
-                                stops: [
-                                    [0, '#FFF'],
-                                    [1, '#333']
-                                ]
-                            },
-                            borderWidth: 0,
-                            outerRadius: '109%'
-                        }, {
-                            backgroundColor: {
-                                linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
-                                stops: [
-                                    [0, '#333'],
-                                    [1, '#FFF']
-                                ]
-                            },
-                            borderWidth: 1,
-                            outerRadius: '107%'
-                        }, {
-                            // default background
-                        }, {
-                            backgroundColor: '#DDD',
-                            borderWidth: 0,
-                            outerRadius: '105%',
-                            innerRadius: '103%'
-                        }]
-                    },
+            // the value axis
+            yAxis: {
+                min: 0,
+                max: 10,
 
-                    // the value axis
-                    yAxis: {
-                        min: 0,
-                        max: 200,
+                minorTickInterval: 'auto',
+                minorTickWidth: 1,
+                minorTickLength: 10,
+                minorTickPosition: 'inside',
+                minorTickColor: '#666',
+                marginLeft: 0,
+                marginRight: 0,
+                marginBottom: 0,
+                marginTop: 0,
+                spacingTop: 0,
+                spacingBottom: 0,
 
-                        minorTickInterval: 'auto',
-                        minorTickWidth: 1,
-                        minorTickLength: 10,
-                        minorTickPosition: 'inside',
-                        minorTickColor: '#666',
-
-                        tickPixelInterval: 30,
-                        tickWidth: 2,
-                        tickPosition: 'inside',
-                        tickLength: 10,
-                        tickColor: '#666',
-                        labels: {
-                            step: 2,
-                            rotation: 'auto'
-                        },
-                        title: {
-                            text: 'km/h'
-                        },
-                        plotBands: [{
-                            from: 0,
-                            to: 120,
-                            color: '#55BF3B' // green
-                        }, {
-                            from: 120,
-                            to: 160,
-                            color: '#DDDF0D' // yellow
-                        }, {
-                            from: 160,
-                            to: 200,
-                            color: '#DF5353' // red
-                        }]
-                    },
-
-                    series: [{
-                        name: 'Speed',
-                        data: [80],
-                        tooltip: {
-                            valueSuffix: ' km/h'
-                        }
-                    }]
-
+                tickInterval: 5,
+                tickWidth: 2,
+                tickPosition: 'inside',
+                tickLength: 10,
+                tickColor: '#666',
+                labels: {
+                    step: 1,
+                    rotation: 'auto'
                 },
-                    // Add some life
-                    function (chart) {
-                        if (!chart.renderer.forExport) {
-                            setInterval(function () {
-                                var point = chart.series[0].points[0],
-                                    newVal,
-                                    inc = Math.round((Math.random() - 0.5) * 20);
+                plotBands: [{
+                    from: 0,
+                    to: 3,
+                    color: '#C0392B' // good
+                }, {
+                    from: 3,
+                    to: 7,
+                    color: '#2980B9' // neutral
+                }, {
+                    from: 7,
+                    to: 10,
+                    color: '#27AE60' // bad
+                }]
+            },
 
-                                newVal = point.y + inc;
-                                if (newVal < 0 || newVal > 200) {
-                                    newVal = point.y - inc;
-                                }
+            series: [{
+                name: 'cs',
+                data: [7.5]
+            }]
 
-                                point.update(newVal);
+        });
 
-                            }, 3000);
-                        }
-                    });
-            });
+        //ULTIMOS 7 DIAS
+        jq('#comparativo-b').highcharts({
+
+            chart: {
+                backgroundColor: 'transparent',
+                type: 'gauge',
+                plotBackgroundColor: null,
+                plotBackgroundImage: null,
+                plotBorderWidth: 0,
+                plotShadow: false,
+                height: 180,
+                marginLeft: 0,
+                marginRight: 0,
+                marginBottom: 0,
+                marginTop: 0,
+                spacingTop: 0,
+                spacingBottom: 0
+            },
+
+            title: {
+                text: 'capital social - últimos 7 dias'
+            },
+
+            pane: {
+                startAngle: -90,
+                endAngle: 90,
+            },
+
+            // the value axis
+            yAxis: {
+                min: 0,
+                max: 10,
+
+                minorTickInterval: 'auto',
+                minorTickWidth: 1,
+                minorTickLength: 10,
+                minorTickPosition: 'inside',
+                minorTickColor: '#666',
+
+                tickInterval: 5,
+                tickWidth: 2,
+                tickPosition: 'inside',
+                tickLength: 10,
+                tickColor: '#666',
+                plotBands: [{
+                    from: 0,
+                    to: 3,
+                    color: '#C0392B' // good
+                }, {
+                    from: 3,
+                    to: 7,
+                    color: '#2980B9' // neutral
+                }, {
+                    from: 7,
+                    to: 10,
+                    color: '#27AE60' // bad
+                }]
+            },
+
+            series: [{
+                name: 'cs',
+                data: [2.5],
+            }]
+
+        });
+
+        //ULTIMOS 30 DIAS
+        jq('#comparativo-c').highcharts({
+
+            chart: {
+                backgroundColor: 'transparent',
+                type: 'gauge',
+                plotBackgroundColor: null,
+                plotBackgroundImage: null,
+                plotBorderWidth: 0,
+                plotShadow: false,
+                height: 180,
+                marginLeft: 0,
+                marginRight: 0,
+                marginBottom: 0,
+                marginTop: 0,
+                spacingTop: 0,
+                spacingBottom: 0
+            },
+
+            title: {
+                text: 'capital social - últimos 7 dias'
+            },
+
+            pane: {
+                startAngle: -90,
+                endAngle: 90,
+            },
+
+            // the value axis
+            yAxis: {
+                min: 0,
+                max: 10,
+
+                minorTickInterval: 'auto',
+                minorTickWidth: 1,
+                minorTickLength: 10,
+                minorTickPosition: 'inside',
+                minorTickColor: '#666',
+
+                tickInterval: 5,
+                tickWidth: 2,
+                tickPosition: 'inside',
+                tickLength: 10,
+                tickColor: '#666',
+                plotBands: [{
+                    from: 0,
+                    to: 3,
+                    color: '#C0392B' // good
+                }, {
+                    from: 3,
+                    to: 7,
+                    color: '#2980B9' // neutral
+                }, {
+                    from: 7,
+                    to: 10,
+                    color: '#27AE60' // bad
+                }]
+            },
+
+            series: [{
+                name: 'cs',
+                data: [2.5],
+            }]
+
+        });
 
 
-    });
+        //CAPITAL SOCIAL Y
+        jq('#comparativo-d').highcharts({
 
-});
+            chart: {
+                backgroundColor: 'transparent',
+                type: 'gauge',
+                plotBackgroundColor: null,
+                plotBackgroundImage: null,
+                plotBorderWidth: 0,
+                plotShadow: false,
+                height: 180,
+                marginLeft: 0,
+                marginRight: 0,
+                marginBottom: 0,
+                marginTop: 0,
+                spacingTop: 0,
+                spacingBottom: 0
+            },
+
+            title: {
+                text: 'capital social - últimos 7 dias'
+            },
+
+            pane: {
+                startAngle: -90,
+                endAngle: 90,
+            },
+
+            // the value axis
+            yAxis: {
+                min: 0,
+                max: 10,
+
+                minorTickInterval: 'auto',
+                minorTickWidth: 1,
+                minorTickLength: 10,
+                minorTickPosition: 'inside',
+                minorTickColor: '#666',
+
+                tickInterval: 5,
+                tickWidth: 2,
+                tickPosition: 'inside',
+                tickLength: 10,
+                tickColor: '#666',
+                plotBands: [{
+                    from: 0,
+                    to: 3,
+                    color: '#C0392B' // good
+                }, {
+                    from: 3,
+                    to: 7,
+                    color: '#2980B9' // neutral
+                }, {
+                    from: 7,
+                    to: 10,
+                    color: '#27AE60' // bad
+                }]
+            },
+
+            series: [{
+                name: 'cs',
+                data: [2.5],
+            }]
+
+        });

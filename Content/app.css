@@ -91,6 +91,7 @@ ANIMATIONS
 body, p {
   font-family: 'Roboto', sans-serif;
   color: #666666;
+  font-weight: 300;
 }
 
 body {
@@ -125,14 +126,14 @@ a:hover {
 }
 
 label {
-  font-weight: normal;
+  font-weight: 300;
 }
 
 .badge.id {
   background-color: #cccccc;
   color: #666666;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 300;
 }
 .badge.id a {
   text-transform: lowercase;
@@ -214,6 +215,10 @@ label {
   margin: 20px 0 10px;
 }
 
+.popover .popover-content {
+  font-size: 14px;
+}
+
 a[data-toggle="collapse"] {
   display: block;
   padding: 10px 15px;
@@ -222,6 +227,18 @@ a[data-toggle="collapse"] {
 
 .highcharts-title {
   display: none;
+}
+
+text[text-anchor="end"] {
+  display: none;
+}
+
+.affix-bar.affix {
+  background: #e8f2e8;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
 }
 
 .nav-tabs > li.active > a {
@@ -237,7 +254,7 @@ a[data-toggle="collapse"] {
 .popover {
   color: #666666;
   text-transform: none;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 /*Media queries breakpoints*/
@@ -408,7 +425,7 @@ input.date {
 }
 .panel.panel-big .panel-title {
   padding: 10px 0;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 18px;
 }
 .panel.panel-big .panel-footer, .panel.panel-big .panel-heading {
@@ -1008,6 +1025,16 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   background-position: -297px -64px;
 }
 
+.feeling-icon.dark.good {
+  background-position: -330px -32px;
+}
+.feeling-icon.dark.neutral {
+  background-position: -363px -32px;
+}
+.feeling-icon.dark.bad {
+  background-position: -396px -32px;
+}
+
 /* MEC MENU DROPUP */
 .mec-menu .btn-group {
   /*white icons*/
@@ -1179,7 +1206,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .new-item-form h5 small {
   text-transform: lowercase;
   color: #999999;
-  font-weight: normal;
+  font-weight: 300;
 }
 .new-item-form.horizontal .form-group {
   margin-bottom: 0;
@@ -1442,7 +1469,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 .quote .quote-content .sidebar .status-bar .dropdown-menu.status-menu li:last-child a {
   text-transform: none;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 0.9em;
 }
 .quote .quote-content .sidebar .status-bar .status-btn {
@@ -1467,7 +1494,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   display: block;
   text-transform: lowercase;
   color: #999999;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 10px;
 }
 .quote .quote-content .sidebar .status-bar .status-btn:hover {
@@ -1565,7 +1592,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 .quote footer .btn, .quote footer .report-panel .panel-body .carousel .carousel-indicators li, .report-panel .panel-body .carousel .carousel-indicators .quote footer li {
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 300;
   border: none !important;
   color: #666666;
   height: 32px;
@@ -2124,13 +2151,6 @@ used in citacoes and perfil-do-usuario */
 }
 #actions-bar .feeling-menu li {
   margin-bottom: 1px;
-}
-#actions-bar.affix {
-  background: #e8f2e8;
-  top: 0;
-  width: 100%;
-  position: fixed;
-  z-index: 10;
 }
 #actions-bar .checkbox {
   margin: 0;
@@ -3709,6 +3729,10 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 
 /* RELATÓRIOS */
+#report-header {
+  padding: 10px;
+}
+
 .report-panel .panel-heading {
   background-color: #f6f7f8;
   text-align: center;
@@ -3718,11 +3742,12 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   margin: 0 auto;
   padding: 0 10px;
 }
-.report-panel .panel-heading .panel-title h3 {
+.report-panel .panel-heading .panel-title > h3 {
   font-size: 26px;
   text-transform: none;
-  font-weight: normal;
+  font-weight: 300;
   display: inline;
+  color: #333333;
 }
 .report-panel .panel-heading .panel-title .help-button {
   margin: 0;
@@ -3732,11 +3757,15 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 .report-panel .panel-body {
   background-color: white;
-  padding: 15px 0;
+  padding: 25px 0;
 }
 .report-panel .panel-body h4 {
   color: #666666;
   margin-top: 0;
+  font-size: 13px;
+}
+.report-panel .panel-body .btn-block {
+  white-space: normal;
 }
 .report-panel .panel-body .carousel {
   padding: 0 7% 50px;
@@ -3771,8 +3800,18 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   background-color: #8c8c8c;
   color: white;
 }
-.report-panel .panel-body .carousel .chart-container {
-  min-height: 300px;
+.report-panel .panel-body .carousel .item > .row {
+  margin: 0;
+}
+.report-panel .panel-body .carousel .item > .row .well {
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+}
+.report-panel .panel-body .carousel .item .list-unstyled.feeling li {
+  font-size: 13px;
+  margin: 4px;
+  display: inline-block;
 }
 
 /* .report-panel */

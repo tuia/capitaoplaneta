@@ -172,7 +172,7 @@
       <!--/CONTEÚDO DA PÁGINA-->
       <div class="container">
 
-        <div id="report-tab" class="panel">
+        <div id="report-header" class="panel">
           <form role="form">
             <div class="row">
               <div class="col-xs-8">
@@ -193,7 +193,7 @@
 
 
             <!--/#REPORT NAV-->
-            <div id="report-navbar">
+            <div id="report-navbar" class="affix-bar">
               <a href="#" class="btn btn-default">capital social</a>
               <a href="#" class="btn btn-default">pessoas</a>
               <a href="#" class="btn btn-default">palavras</a>
@@ -204,7 +204,13 @@
               <a href="#" class="btn btn-default">relevância da mídia</a>
               <a href="#" class="btn btn-default">buzz</a>
               <a href="#" class="btn btn-default">twitter</a>
-              <a href="#" class="btn btn-default">região</a>
+              <div class="dropdown">
+                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">...</a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                  <li><a href="#">região</a></li>
+                  <li><a href="#">atendimento</a></li>
+                </ul>
+              </div>
             </div><!--/#report-navbar-->
             
           </form>
@@ -268,14 +274,52 @@
                 <div class="item active">
                   <div class="row">
 
-                    <div class="col-xs-4 well center-box">
-                      <h4>Comparativo</h4>
-                      <div id="comparativo" class="chart-container"></div><!--/#comparativo-->
-                    </div><!--/col-xs-4-->
-                    <div class="col-xs-2 well">teste</div>
-                    <div class="col-xs-2 well">teste</div>
-                    <div class="col-xs-2 well">teste</div>
-                    <div class="col-xs-2 well">teste</div>
+                    <div class="col-xs-3 well center-box">
+                      <h4>ÚLTIMAS 24H</h4>
+                      <div id="comparativo-a" class="chart-container"></div><!--/#comparativo-->
+                      <ul class="list-unstyled feeling">
+                        <li><span class="feeling-icon good dark"></span> <span class="good-txt">285.903</span></li>
+                        <li><span class="feeling-icon neutral dark"></span> <span class="neutral-txt">185.903</span></li>
+                        <li><span class="feeling-icon neutral dark"></span> <span class="bad-txt">5.903</span></li>
+                      </ul>
+                    </div><!--/col-xs-3-->
+
+                    <div class="col-xs-2 well center-box">
+                      <h4>ÚLTIMOS 7 DIAS</h4>
+                      <div id="comparativo-b" class="chart-container"></div><!--/#comparativo-->
+                      <ul class="list-unstyled feeling">
+                        <li><span class="feeling-icon good dark"></span> <span class="good-txt">285.903</span></li>
+                        <li><span class="feeling-icon neutral dark"></span> <span class="neutral-txt">185.903</span></li>
+                        <li><span class="feeling-icon neutral dark"></span> <span class="bad-txt">5.903</span></li>
+                      </ul>
+                    </div><!--/col-xs-2-->
+
+                    <div class="col-xs-2 well center-box">
+                      <h4>ÚLTIMOS 30 DIAS</h4>
+                      <div id="comparativo-c" class="chart-container"></div><!--/#comparativo-->
+                      <ul class="list-unstyled feeling">
+                        <li><span class="feeling-icon good dark"></span> <span class="good-txt">285.903</span></li>
+                        <li><span class="feeling-icon neutral dark"></span> <span class="neutral-txt">185.903</span></li>
+                        <li><span class="feeling-icon neutral dark"></span> <span class="bad-txt">5.903</span></li>
+                      </ul>
+                    </div><!--/col-xs-2-->
+
+                    <div class="col-xs-2 well center-box">
+                      <h4>CAPITAL SOCIAL Y</h4>
+                      <div id="comparativo-d" class="chart-container"></div><!--/#comparativo-->
+                      <ul class="list-unstyled feeling">
+                        <li><span class="feeling-icon good dark"></span> <span class="good-txt">285.903</span></li>
+                        <li><span class="feeling-icon neutral dark"></span> <span class="neutral-txt">185.903</span></li>
+                        <li><span class="feeling-icon neutral dark"></span> <span class="bad-txt">5.903</span></li>
+                      </ul>
+                    </div><!--/col-xs-2-->
+
+                    <div class="col-xs-2 well">
+                      <a href="#" class="btn btn-block btn-lg" role="button">
+                        <i class="fa fa-plus fa-4x"></i>
+                        <p>selecionar período</p>
+                      </a>
+                    </div>
                   </div><!--/row-->
                 </div><!--/item-->
                 <div class="item ">
@@ -334,7 +378,7 @@
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/highcharts.js"></script>
     <script src="Scripts/highcharts-more.js"></script>
-    <script src="Scripts/highcharts-export.js"></script>
+    <!--<script src="Scripts/highcharts-export.js"></script>-->
     <script src="Scripts/scripts.js"></script>
     <script src="Scripts/report-charts.js"></script>
 
