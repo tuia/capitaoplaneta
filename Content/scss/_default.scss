@@ -41,6 +41,7 @@
 	/* BUTTONS */
 	$btn-default: #E9EAEB;
 	$btn-darker: #DDDDDD;
+	$btn-inverse: #666666;
 	$btn-primary: #558C96;
 	$btn-filter: rgba(255,255,255,.65);
 
@@ -446,6 +447,32 @@ h3 {
 	    background-color: $btn-default;
 		&:hover, &:active, &:focus  {
     		background-color: lighten($btn-default, 5%);
+		}
+	}
+	.btn-group.feeling {
+		label {
+		background-image: url("img/mec-feel-sprite.png");
+		width: 33px;
+		text-indent: -9999px;
+		overflow: hidden;
+
+	    /* SENTIMENTO */
+	    &.good {
+	    	background-position: -330px -0px;
+	    	&:hover, &:active {background-position: -330px -32px;  }
+	    	&.active {background-position: -330px -64px; background-color: $good;}
+	    }
+	    &.neutral {
+	    	background-position: -363px -0px;
+	    	&:hover, &:active {background-position: -363px -32px;  }
+	    	&.active {background-position: -363px -64px; background-color: $neutral;}
+	    }
+	    &.bad {
+	    	background-position: -396px -0px;
+	    	&:hover, &:active {background-position: -396px -32px;  }
+	    	&.active {background-position: -396px -64px; background-color: $bad;}
+	    }
+
 		}
 	}
 

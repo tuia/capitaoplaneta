@@ -27,187 +27,316 @@
   <body>
 
     <div id="filter-panel">
-      <a href="#" class="filter-toggle"><i class="fa fa-filter"></i></a>
+
+      <!-- Split button -->
+      <div class="btn-group filter-btn-container">
+        <button type="button" class="btn" id="filter-toggle"><i class="fa fa-filter"></i></button>
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li>filtros salvos:</li>
+          <li><a href="#">negativas</a></li>
+          <li><a href="#">busca anhanguera</a></li>
+          <li><a href="#">teste</a></li>
+          <li><a href="#">sentimento bom</a></li>
+          <li class="divider"></li>
+          <li><a href="#"><i class="fa fa-cog"></i> gerenciar filtros salvos</a></li>
+        </ul>
+      </div>
+
       <div class="filter-content">
         <h3><i class="fa fa-filter"></i> Filtrar</h3>
       </div>
-    </div>
+    </div><!--/filter-panel-->
 
-    <!--/#NAVIGATION-->
-    <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
 
-        <!--/MENU INSTITUIÇÃO-->
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-             <img src="Content/img/instituicao-02.png" alt="" class="nav-img">Anhembi Morumbi <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li class="auto">
-                <ul class="nav">
-                  <li class="active"><a href="#">Anhembi Morumbi</a></li>
-                  <li><a href="#">Anhembi</a></li>
-                  <li><a href="#">Fumec</a></li>
-                  <li><a href="#">Unibh</a></li>
-                  <li><a href="#">Una</a></li>
-                  <li><a href="#">PUC</a></li>
-                </ul>
-              </li>
-              <li class="divider"></li>
-              <li><a href="#">Grupo educacional</a></li>
-              <li class="divider"></li>
-              <li><a href="gerenciar-instituicoes.html"><i class="fa fa-cog"></i> Gerenciar instituições</a></li>
-            </ul><!--/.dropdown-menu-->
-          </li><!--/.dropdown-->
+    <div id="outside-filter">
 
-          <!--/alertas de citacao - instituiçao-->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-comment"></i> 18</span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">alerta 1</a></li>
-              <li><a href="#">alerta 2</a></li>
-              <li class="divider"></li>
-              <li><a href="#">limpar notificações</a></li>
-            </ul>
-          </li><!--/dropdown-->
+      <!--/#NAVIGATION-->
+      <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
 
-          <!--/alertas - instituiçao-->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">alerta 1</a></li>
-              <li class="divider"></li>
-              <li><a href="#">limpar notificações</a></li>
-            </ul>
-          </li><!--/dropdown-->
-        </ul><!--/.navbar-nav-->
-
-        <!--/LOGO-->
-        <a class="navbar-brand" href="index.html">Planeta Y</a>
-
-        <!--/MENU USUÁRIO-->
-        <ul class="nav navbar-nav pull-right">          
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="Content/img/user-01.jpg" alt="anhanguera" class="nav-img">
-              Juliana <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-right" role="menu">
-              <li><a href="dados-cadastrais.html">Dados cadastrais</a></li>
-              <li><a href="planos.html">Planos</a></li>
-              <li><a href="#">Sair</a></li>
-              <li class="divider"></li>
-              <li><a href="ajuda.html">Ajuda</a></li>
-              <li><a href="sobre-o-planetay.html">Sobre o Planeta Y</a></li>
-              <li><a href="reportar-problema.html">Reportar problema</a></li>
-            </ul><!--/.dropdown-menu-->
-          </li><!--/.dropdown-->
-
-          <!--/alertas - usuario-->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
-            <ul class="dropdown-menu dropdown-menu-right" role="menu">
-              <li><a href="#">alerta 1</a></li>
-              <li class="divider"></li>
-              <li><a href="#">limpar notificações</a></li>
-            </ul>
-          </li><!--/dropdown-->
-        </ul><!--/.navbar-nav-->
-
-      </div><!-- /.container-->
-    </nav><!--/.navbar-->
-
-    <header id="header" class="">
-      <div class="container">
-        <!--/<img src="Content/img/topo.png">-->
-
-        <div id="institution-box">
-          <img src="Content/img/instituicao-02.png" class="institution-image">
-          <div class="institution-data">
-            <h2 class="institution-name">Anhembi Morumbi</h2>
-            <div class="painel">
-              <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
-              <div class="capital-social">
-                <h4>7,7</h4>
-                <p><strong>3.607</strong> citações</p>
-              </div>
-              <div class="menu">
-                <p>capital social</p>
-                <div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">geral <span class="caret"></span></button>
-                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 24 horas</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 7 dias</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 30 dias</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">geral</a></li>
+          <!--/MENU INSTITUIÇÃO-->
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               <img src="Content/img/instituicao-02.png" alt="" class="nav-img">Anhembi Morumbi <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="auto">
+                  <ul class="nav">
+                    <li class="active"><a href="#">Anhembi Morumbi</a></li>
+                    <li><a href="#">Anhembi</a></li>
+                    <li><a href="#">Fumec</a></li>
+                    <li><a href="#">Unibh</a></li>
+                    <li><a href="#">Una</a></li>
+                    <li><a href="#">PUC</a></li>
                   </ul>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">Grupo educacional</a></li>
+                <li><a href="gerenciar-instituicoes.html"><i class="fa fa-cog"></i> Gerenciar instituições</a></li>
+              </ul><!--/.dropdown-menu-->
+            </li><!--/.dropdown-->
+
+            <!--/alertas - instituiçao-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">alerta 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#">limpar notificações</a></li>
+              </ul>
+            </li><!--/dropdown-->
+          </ul><!--/.navbar-nav-->
+
+          <!--/LOGO-->
+          <a class="navbar-brand" href="index.html">Planeta Y</a>
+
+          <!--/MENU USUÁRIO-->
+          <ul class="nav navbar-nav pull-right">          
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="Content/img/user-01.jpg" alt="anhanguera" class="nav-img">
+                Juliana <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                <li><a href="dados-cadastrais.html">Dados cadastrais</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="#">Sair</a></li>
+                <li class="divider"></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+                <li><a href="sobre-o-planetay.html">Sobre o Planeta Y</a></li>
+                <li><a href="reportar-problema.html">Reportar problema</a></li>
+              </ul><!--/.dropdown-menu-->
+            </li><!--/.dropdown-->
+
+            <!--/alertas - usuario-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
+              <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                <li><a href="#">alerta 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#">limpar notificações</a></li>
+              </ul>
+            </li><!--/dropdown-->
+          </ul><!--/.navbar-nav-->
+
+        </div><!-- /.container-->
+      </nav><!--/.navbar-->
+
+      <!--/CABEÇALHO-->
+      <header id="header">
+        <div class="container">
+
+          <div id="institution-box">
+            <img src="Content/img/instituicao-02.png" class="institution-image">
+            <div class="institution-data">
+              <h2 class="institution-name">Anhembi Morumbi</h2>
+              <div class="painel">
+                <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
+                <div class="capital-social">
+                  <h5>7,7</h5>
+                  <p><strong>3.607</strong> citações</p>
                 </div>
+                <div class="menu">
+                  <p>capital social</p>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown">geral <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 24 horas</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 7 dias</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 30 dias</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">geral</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div><!--/painel-->
+            </div><!--/institution-data-->
+            <span class="clearfix"></span>
+          </div><!--/institution-box-->
+
+          <ul class="nav nav-tabs pull-right" role="tablist">
+            <li><a href="index.html"><i class="fa fa-home"></i> início</a></li>
+            <li><a href="citacoes.html"><i class="fa fa-comment"></i> citações <span class="badge">78</span></a></a></li>
+            <li><a href="pessoas.html"><i class="fa fa-group"></i> pessoas</a></li>
+            <li class="active"><a href="relatorios.html"><i class="fa fa-pie-chart"></i> relatórios</a></li>
+            <li><a href="alertas.html"><i class="fa fa-cog"></i> preferências</a></li>
+          </ul>
+        </div><!--/container-->
+      </header>
+
+
+      <!--/CONTEÚDO DA PÁGINA-->
+      <div class="container">
+
+        <div id="report-tab" class="panel">
+          <form role="form">
+            <div class="row">
+              <div class="col-xs-8">
+                <select class="form-control input-lg">
+                  <option>Relatório geral</option>
+                  <option>Atendimento</option>
+                  <option>Captação</option>
+                </select>
+              </div><!--/col-xs-8-->
+              <div class="col-xs-2">
+                <button type="button" class="btn btn-default btn-lg btn-block"><i class="fa fa-cogs"></i> personalizar</button>
               </div>
-            </div><!--/painel-->
-          </div><!--/institution-data-->
-          <span class="clearfix"></span>
-        </div><!--/institution-box-->
-
-        <ul class="nav nav-tabs pull-right" role="tablist">
-          <li><a href="index.html"><i class="fa fa-home"></i> início</a></li>
-          <li><a href="citacoes.html"><i class="fa fa-comment"></i> citações <span class="badge">78</span></a></a></li>
-          <li><a href="pessoas.html"><i class="fa fa-group"></i> pessoas</a></li>
-          <li class="active"><a href="relatorios.html"><i class="fa fa-pie-chart"></i> relatórios</a></li>
-          <li><a href="alertas.html"><i class="fa fa-cog"></i> preferências</a></li>
-        </ul>
-      </div><!--/container-->
-    </header>
+              <div class="col-xs-2">
+                <button type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-plus"></i> novo</button>
+              </div><!--/col-xs-4-->
+            </div><!--/row-->
+            <p>Este relatório será enviado segunda-feira 18/04/2014. <a href="#">Enviar agora</a>?</p>    
 
 
-    <!--/CONTEÚDO DA PÁGINA-->
-    <div class="container">
+            <!--/#REPORT NAV-->
+            <div id="report-navbar">
+              <a href="#" class="btn btn-default">capital social</a>
+              <a href="#" class="btn btn-default">pessoas</a>
+              <a href="#" class="btn btn-default">palavras</a>
+              <a href="#" class="btn btn-default">MEC</a>
+              <a href="#" class="btn btn-default">marcadores</a>
+              <a href="#" class="btn btn-default">sentimento</a>
+              <a href="#" class="btn btn-default">mídia</a>
+              <a href="#" class="btn btn-default">relevância da mídia</a>
+              <a href="#" class="btn btn-default">buzz</a>
+              <a href="#" class="btn btn-default">twitter</a>
+              <a href="#" class="btn btn-default">região</a>
+            </div><!--/#report-navbar-->
+            
+          </form>
+        </div><!--/report-tab-->
 
-      <div id="report-tab" class="panel">
-        <form role="form">
-          <div class="row">
-            <div class="col-xs-8">
-              <select class="form-control input-lg">
-                <option>Relatório geral</option>
-                <option>Atendimento</option>
-                <option>Captação</option>
-              </select>
-            </div><!--/col-xs-8-->
-            <div class="col-xs-2">
-              <button type="button" class="btn btn-default btn-lg btn-block"><i class="fa fa-cogs"></i> personalizar</button>
-            </div>
-            <div class="col-xs-2">
-              <button type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-plus"></i> novo</button>
-            </div><!--/col-xs-4-->
-          </div><!--/row-->
-          <p>Este relatório será enviado segunda-feira 18/04/2014. <a href="#">Enviar agora</a>?</p>    
-
-
-          <!--/#REPORT NAV-->
-          <div id="report-navbar">
-            <a href="#" class="btn btn-default">capital social</a>
-            <a href="#" class="btn btn-default">pessoas</a>
-            <a href="#" class="btn btn-default">palavras</a>
-            <a href="#" class="btn btn-default">MEC</a>
-            <a href="#" class="btn btn-default">marcadores</a>
-            <a href="#" class="btn btn-default">sentimento</a>
-            <a href="#" class="btn btn-default">mídia</a>
-            <a href="#" class="btn btn-default">relevância da mídia</a>
-            <a href="#" class="btn btn-default">buzz</a>
-            <a href="#" class="btn btn-default">twitter</a>
-            <a href="#" class="btn btn-default">região</a>
-          </div><!--/#report-navbar-->
+        <!--/REPORT CONTENT-->
+        <div id="report-content">
           
-        </form>
-      </div><!--/report-tab-->
+          <!--/CAPITAL SOCIAL-->
+          <div class="panel report-panel">
+            <div class="panel-heading">
+              <div class="pull-left">
+                <i class="fa fa-filter"></i> filtrar:
+                <div class="btn-group feeling" data-toggle="buttons">
+                  <label class="btn btn-default active good">
+                    <input type="checkbox" name="options" id="option1" checked> bom </i>
+                  </label>
+                  <label class="btn btn-default neutral">
+                    <input type="checkbox" name="options" id="option2"> neutro
+                  </label>
+                  <label class="btn btn-default bad">
+                    <input type="checkbox" name="options" id="option3"> mau
+                  </label>
+                </div><!--/btn-group-->
+              </div><!--/pull-left-->
 
-    </div><!--/container-->
+              <div class="panel-title">
+                <h3>Capital Social</h3> <a href="#" class="help-button" data-toggle="popover" title="Capital Social" data-content="O capital social refere-se a"> <i class="fa fa-info-circle"></i></a>
+              </div>
+
+              <div class="pull-right">
+                <div class="btn-toolbar" role="toolbar">
+                  <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-default active">
+                      <input type="radio" name="options" id="option1" checked> %
+                    </label>
+                    <label class="btn btn-default">
+                      <input type="radio" name="options" id="option2"> #
+                    </label>
+                  </div><!--/btn-group-->
+                    <button type="button" class="btn btn-default hastooltip" title="exibir tabela"><i class="fa fa-table"></i></button>
+                    <button type="button" class="btn btn-default hastooltip" title="personalizar relatório" data-toggle="modal" data-target="#personalize-report-modal"><i class="fa fa-cog"></i></button>
+                </div><!--/btn-toolbar-->
+              </div><!--/pull-right-->
+
+              <span class="clearfix"></span>
+            </div><!--/panel-heading-->
+
+            <div class="panel-body">
+              
+            <div id="capital-social-carousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#capital-social-carousel" data-slide-to="0" class="active">comparativo</li>
+                <li data-target="#capital-social-carousel" data-slide-to="1">variação</li>
+                <li data-target="#capital-social-carousel" data-slide-to="2">sentimento</li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div class="row">
+
+                    <div class="col-xs-4 well center-box">
+                      <h4>Comparativo</h4>
+                      <div id="comparativo" class="chart-container"></div><!--/#comparativo-->
+                    </div><!--/col-xs-4-->
+                    <div class="col-xs-2 well">teste</div>
+                    <div class="col-xs-2 well">teste</div>
+                    <div class="col-xs-2 well">teste</div>
+                    <div class="col-xs-2 well">teste</div>
+                  </div><!--/row-->
+                </div><!--/item-->
+                <div class="item ">
+                  <div id="" class="chart-container">teste</div><!--/.comparativo-->
+                </div><!--/item-->
+              </div><!--/carousel-inner-->
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#capital-social-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#capital-social-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div><!--/#capital-social-carousel .carousel-->
+
+
+
+            </div><!--/panel-body-->
+          </div><!--/report-panel-->
+
+        </div><!--/report-content-->
+
+
+      <!--/#FOOTER-->
+      <footer id="page-footer">
+        <p class="copyright">© Copyright 2014 Cadsoft. Todos os direitos reservados.</p>
+        <a href="#" target="blank"><img src="Content/img/planeta-y-logo.png"></a>
+
+        <div class="footer-social-links">
+          <a href="https://www.facebook.com/PlanetaY" class="btn social facebook"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/planeta_y" class="btn social twitter"><i class="fa fa-twitter"></i></a>
+          <a href="https://plus.google.com/+PlanetayBr/about" class="btn social gplus"><i class="fa fa-google-plus"></i></a>
+        </div>
+
+        <a href="sobre-o-py.html" class="">quem somos</a>
+        <span class="footer-divider">.</span>
+        <a href="ajuda.html" class="">ajuda</a>
+        <span class="footer-divider">.</span>
+        <a href="reportar-problema" class="">reportar problema</a>
+
+        <div class="pull-right">
+          <span>design de interação por</span>
+          <a href="http://www.latitude14.com.br" target="blank"><img src="Content/img/latitude-14-logo.png"></a>
+        </div>
+      </footer>
+
+      </div><!--/container-->
+    </div><!--/outside filter-->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="Scripts/jquery1.11.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/highcharts.js"></script>
+    <script src="Scripts/highcharts-more.js"></script>
+    <script src="Scripts/highcharts-export.js"></script>
     <script src="Scripts/scripts.js"></script>
+    <script src="Scripts/report-charts.js"></script>
 
   </body>
 </html>

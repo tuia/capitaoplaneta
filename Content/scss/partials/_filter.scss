@@ -11,12 +11,12 @@
   .filter-btn-container {
     float: right;
     margin: 180px 0 0;
-    background: lighten($inverse-background, 10%);
+    background-color: lighten($inverse-background, 10%);
     height: 50px;
 
     .btn {
       height: 48px;
-      background: $inverse-background;
+      background-color: $inverse-background;
       color: $inverse-text;
       text-align: center;
       margin-top: 1px;
@@ -30,7 +30,7 @@
       font-size: 18px;
     }
     .dropdown-toggle {
-      background: lighten($inverse-background, 5%);
+      background-color: lighten($inverse-background, 5%);
       padding: 4px;
       margin-left: 1px;
       width: 16px;
@@ -44,7 +44,7 @@
   }
 
   .filter-content {
-    background: $inverse-background;
+    background-color: $inverse-background;
     height: 100%;
     padding: 20px 30px;
     width: 840px;
@@ -57,7 +57,7 @@
       border-top: none;
     }
     .filter-group > .btn-group >.btn:hover, .btn-default:hover, .form-control:hover {
-      background: rgba(255,255,255,.8);
+      background-color: rgba(255,255,255,.8);
     }
 
     h2 {font-size: 20px; margin: 0 0 10px; }
@@ -118,8 +118,8 @@
         .btn:last-child, .btn:nth-last-child(2) {width: 50%}
       }
       &.feeling {
-        .btn {width: 33%; text-align: center;}
-        .btn:last-child {width: 34%}
+        @extend .btn-group.feeling;
+        label:hover {background-image: url("img/mec-feel-sprite.png");}
       }
       &.leitura, &.crm, &.nivel-de-atendimento, &.ultima-interacao, &.status {
         .btn {

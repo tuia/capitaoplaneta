@@ -1,0 +1,74 @@
+/* RELATÓRIOS */
+
+.report-panel {
+
+	.panel-heading {
+		background-color: $box-bg;
+		text-align: center;
+
+		.panel-title {
+			display: inline-block;
+			margin: 0 auto;
+			padding: 0 10px;
+
+			h3 {
+				font-size: 26px;
+				text-transform: none;
+				font-weight: normal;
+				display: inline;
+			}
+
+			.help-button {
+				margin: 0;
+				padding: 5px;
+				position: relative;
+				top: -3px;
+			}
+		}
+	}
+	.panel-body {
+		background-color: $light-box-bg;
+		padding: 15px 0;
+
+		h4 { @extend h2; color: $default-text; margin-top: 0 }
+
+		.carousel {
+			padding: 0 7% 50px;
+			.carousel-control {
+				background: transparent;
+				color: $dark-text;
+				height: 100px;
+			    margin: -50px 0;
+			    top: 50%;
+			    width: 7%;
+			}
+			.carousel-indicators {
+				bottom: -10px;
+				li {
+					background-color: $btn-default;
+					@include border-radius(5px);
+					text-indent: 0;
+					width: auto;
+					height: auto;
+					padding: 5px 10px;
+					margin: 0 10px;
+					@extend .btn;
+					@extend .btn-default;
+
+					&.active {
+						background-color: $btn-inverse;
+						color: $inverse-text;
+						&:hover {
+							background-color: lighten($btn-inverse, 15%);
+							color: $inverse-text;
+						}
+					}
+				}
+			}
+			.chart-container {
+				min-height: 300px;
+			}
+		}
+	}
+
+} /* .report-panel */

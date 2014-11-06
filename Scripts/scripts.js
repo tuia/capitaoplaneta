@@ -16,6 +16,10 @@ jq('.validation').click( function() {
 });
 //POPOVER DE AJUDA
 jq('.help-button').popover();
+//CAROUSEL
+jq('.carousel').carousel({
+	interval: false
+});
 
 
 /* ACCORDIONS */
@@ -162,9 +166,34 @@ jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 	});
 
 
-/* AFFIX ACTIONS BAR DE CITAÇÕES */
- jq('#actions-bar').affix({offset: { top: jq('#actions-bar').offset().top }}); 
+	/* AFFIX ACTIONS BARRA DE CITAÇÕES */
+	jq(function () {
+		if (jq("#actions-bar")[0]){
+		    jq('#actions-bar').affix({offset: { top: jq('#actions-bar').offset().top }});
+		} 
+		if (jq("#report-navbar")[0]){
+		    jq('#actions-bar').affix({offset: { top: jq('#report-navbar').offset().top }});
+		} 
+		/* DATEPICKER */
+		if (jq(".input-daterange")[0]){
+		    jq('.input-daterange').datepicker({
+				language: "pt-BR",
+				autoclose: true,
+				todayHighlight: true
+			});
+		} 
+		/* MASKED INPUT */
+		if (jq("input.hour")[0]){
+			jq("input.hour").mask("99:99",{placeholder:"00:00"});
+		}
+		/* SELECT MÚLTIPLO */
+		if (jq(".selectpicker")[0]){
+			jq('.selectpicker').selectpicker();
+		}
+		else {};
+	});
 
+     
 
 	/*PAINEL FILTRAR */
 
@@ -199,18 +228,6 @@ jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 	    return false;
 	});
 
-	// MASKED INPUT
-	jq(function($){
-	   $("input.hour").mask("99:99",{placeholder:"00:00"});
-	});
-
-	//DATEPICKER
-	jq('.input-daterange').datepicker({
-		language: "pt-BR",
-		autoclose: true,
-		todayHighlight: true
-	});
-
 	//Filter groups with buttons that contain text inputs
 	jq('.filter-group .btn').click( function() {
 		if ( !jq(this).hasClass('btn-set') ) {
@@ -225,10 +242,6 @@ jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 		} else {	
 		}
 	});
-
-
-	//SELECT MULTIPLO
-     jq('.selectpicker').selectpicker();
 
 
 
