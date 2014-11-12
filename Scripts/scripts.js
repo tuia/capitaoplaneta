@@ -14,13 +14,14 @@ jq('body').tooltip({
 jq('.validation').click( function() {
 	jq(this).fadeOut();
 });
+
 //POPOVER DE AJUDA
 jq('.help-button').popover();
+
 //CAROUSEL
 jq('.carousel').carousel({
 	interval: false
 });
-
 
 /* ACCORDIONS */
 jq('.accordion-box a.accordion-trigger, .accordion-box button.accordion-trigger').not('.disabled').click( function() {

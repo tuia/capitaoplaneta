@@ -271,3 +271,45 @@
             }]
 
         });
+    
+    // VARIAÇÃO CAPITAL SOCIAL
+    jq(function () {
+        jq('#variacao-cs').highcharts({
+            chart: {
+                width: 705,
+                height: 300,
+                type: 'line'
+            },
+            title: {
+                text: 'capital social: variação',
+                x: -20 //center
+            },
+            xAxis: {
+                categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+            },
+            yAxis: {
+                title: {
+                    text: 'capital social'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1
+                }]
+            },
+            plotOptions: {
+                line: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            series: [{
+                name: 'anhembi morumbi',
+                data: [1, 3, 7, 7, 6, 4, 4, 4.5, 5, 5.6, 6, 6],
+                color: '#609AA5'
+            }]
+        });
+    });

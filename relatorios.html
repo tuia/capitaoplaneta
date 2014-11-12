@@ -204,7 +204,7 @@
               <a href="#" class="btn btn-default">relevância da mídia</a>
               <a href="#" class="btn btn-default">buzz</a>
               <a href="#" class="btn btn-default">twitter</a>
-              <div class="dropdown">
+              <div class="dropdown pull-right">
                 <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">...</a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
                   <li><a href="#">região</a></li>
@@ -251,8 +251,21 @@
                       <input type="radio" name="options" id="option2"> #
                     </label>
                   </div><!--/btn-group-->
+                  <div class="btn-group">
                     <button type="button" class="btn btn-default hastooltip" title="exibir tabela"><i class="fa fa-table"></i></button>
-                    <button type="button" class="btn btn-default hastooltip" title="personalizar relatório" data-toggle="modal" data-target="#personalize-report-modal"><i class="fa fa-cog"></i></button>
+                  </div><!--/btn-group-->
+                  <div class="btn-group">
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-cogs"></i></button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+                        <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-eye-slash"></i> esconder seção</a></li>
+                        <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-chevron-down"></i> expandir seção</a></li>
+                        <li class="divider"></li>
+                        <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-download"></i> baixar gráficos</a></li>
+                        <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-print"></i>  imprimir</a></li>
+                      </ul>
+                    </div>
+                  </div><!--/btn-group-->
                 </div><!--/btn-toolbar-->
               </div><!--/pull-right-->
 
@@ -266,7 +279,6 @@
               <ol class="carousel-indicators">
                 <li data-target="#capital-social-carousel" data-slide-to="0" class="active">comparativo</li>
                 <li data-target="#capital-social-carousel" data-slide-to="1">variação</li>
-                <li data-target="#capital-social-carousel" data-slide-to="2">sentimento</li>
               </ol>
 
               <!-- Wrapper for slides -->
@@ -323,7 +335,18 @@
                   </div><!--/row-->
                 </div><!--/item-->
                 <div class="item ">
-                  <div id="" class="chart-container">teste</div><!--/.comparativo-->
+                  <div id="variacao-cs" class="chart-container has-control"></div><!--/.comparativo-->
+                  <div class="btn-group-vertical" data-toggle="buttons">
+                    <label class="btn btn-default active">
+                      <input type="radio" name="options" id="option1" autocomplete="off"> dia
+                    </label>
+                    <label class="btn btn-default">
+                      <input type="radio" name="options" id="option2" autocomplete="off"> semana
+                    </label>
+                    <label class="btn btn-default">
+                      <input type="radio" name="options" id="option3" autocomplete="off" checked> mês
+                    </label>
+                  </div><!--/button-group-veritcal-->
                 </div><!--/item-->
               </div><!--/carousel-inner-->
 

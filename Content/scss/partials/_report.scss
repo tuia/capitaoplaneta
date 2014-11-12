@@ -37,7 +37,7 @@
 		h4 { @extend h2; color: $default-text; margin-top: 0; font-size: 13px; }
 		.btn-block {white-space: normal;}
 
-		.carousel {
+		.slide /* carousel */ {
 			padding: 0 7% 50px;
 			.carousel-control {
 				background: transparent;
@@ -56,7 +56,7 @@
 					width: auto;
 					height: auto;
 					padding: 5px 10px;
-					margin: 0 10px;
+					margin: 0 5px;
 					@extend .btn;
 					@extend .btn-default;
 
@@ -88,6 +88,15 @@
 				}
 			}
 			.chart-container {
+				width: 100%;
+				&.has-control {
+					width: calc(100% - 110px);
+					float: right;
+				}
+			}		
+			.btn-group-vertical {
+				width: 100px;
+				float: left;
 			}
 		}
 	}
