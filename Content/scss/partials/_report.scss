@@ -4,7 +4,6 @@
 	padding: 10px
 }
 .report-panel {
-
 	.panel-heading {
 		background-color: $box-bg;
 		text-align: center;
@@ -42,9 +41,6 @@
 			.carousel-control {
 				background: transparent;
 				color: $dark-text;
-				height: 100px;
-			    margin: -50px 0;
-			    top: 50%;
 			    width: 7%;
 			}
 			.carousel-indicators {
@@ -102,3 +98,18 @@
 	}
 
 } /* .report-panel */
+
+#report-navbar {
+	&.affix {
+		background-color: $page-background;
+		left: 0;
+		padding: 10px 0;
+		@include transition(all, .3s, ease-in-out);
+		.container {
+			padding-right: 0
+		}
+	}
+	.container {
+		padding-right: 20px
+	}
+}

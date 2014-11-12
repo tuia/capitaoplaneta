@@ -194,22 +194,24 @@
 
             <!--/#REPORT NAV-->
             <div id="report-navbar" class="affix-bar">
-              <a href="#" class="btn btn-default">capital social</a>
-              <a href="#" class="btn btn-default">pessoas</a>
-              <a href="#" class="btn btn-default">palavras</a>
-              <a href="#" class="btn btn-default">MEC</a>
-              <a href="#" class="btn btn-default">marcadores</a>
-              <a href="#" class="btn btn-default">sentimento</a>
-              <a href="#" class="btn btn-default">mídia</a>
-              <a href="#" class="btn btn-default">relevância da mídia</a>
-              <a href="#" class="btn btn-default">buzz</a>
-              <a href="#" class="btn btn-default">twitter</a>
-              <div class="dropdown pull-right">
-                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">...</a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                  <li><a href="#">região</a></li>
-                  <li><a href="#">atendimento</a></li>
-                </ul>
+              <div class="container">
+                <a href="#" class="btn btn-default">capital social</a>
+                <a href="#" class="btn btn-default">pessoas</a>
+                <a href="#" class="btn btn-default">palavras</a>
+                <a href="#" class="btn btn-default">MEC</a>
+                <a href="#" class="btn btn-default">marcadores</a>
+                <a href="#" class="btn btn-default">sentimento</a>
+                <a href="#" class="btn btn-default">mídia</a>
+                <a href="#" class="btn btn-default">relevância da mídia</a>
+                <a href="#" class="btn btn-default">buzz</a>
+                <a href="#" class="btn btn-default">twitter</a>
+                <div class="dropdown pull-right">
+                  <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">...</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li><a href="#">região</a></li>
+                    <li><a href="#">atendimento</a></li>
+                  </ul>
+                </div>
               </div>
             </div><!--/#report-navbar-->
             
@@ -361,12 +363,116 @@
               </a>
             </div><!--/#capital-social-carousel .carousel-->
 
+          </div><!--/panel-body-->
+        </div><!--/report-panel-->
+
+          
+        <!--/PALAVRAS E PALAVRAS-CHAVE SOCIAL-->
+        <div class="panel report-panel">
+          <div class="panel-heading">
+            <div class="pull-left">
+              <i class="fa fa-filter"></i> filtrar:
+              <div class="btn-group feeling" data-toggle="buttons">
+                <label class="btn btn-default active good">
+                  <input type="checkbox" name="options" id="option1" checked> bom </i>
+                </label>
+                <label class="btn btn-default neutral">
+                  <input type="checkbox" name="options" id="option2"> neutro
+                </label>
+                <label class="btn btn-default bad">
+                  <input type="checkbox" name="options" id="option3"> mau
+                </label>
+              </div><!--/btn-group-->
+            </div><!--/pull-left-->
+
+            <div class="panel-title">
+              <h3>Palavras e palavras-chave</h3> <a href="#" class="help-button" data-toggle="popover" title="Capital Social" data-content=""> <i class="fa fa-info-circle"></i></a>
+            </div>
+
+            <div class="pull-right">
+              <div class="btn-toolbar" role="toolbar">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-default active">
+                    <input type="radio" name="options" id="option1" checked> %
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option2"> #
+                  </label>
+                </div><!--/btn-group-->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default hastooltip" title="exibir tabela"><i class="fa fa-table"></i></button>
+                </div><!--/btn-group-->
+                <div class="btn-group">
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-cogs"></i></button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+                      <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-eye-slash"></i> esconder seção</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-chevron-down"></i> expandir seção</a></li>
+                      <li class="divider"></li>
+                      <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-download"></i> baixar gráficos</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-print"></i>  imprimir</a></li>
+                    </ul>
+                  </div>
+                </div><!--/btn-group-->
+              </div><!--/btn-toolbar-->
+            </div><!--/pull-right-->
+
+            <span class="clearfix"></span>
+          </div><!--/panel-heading-->
+
+          <div class="panel-body">
+              
+            <div id="palavras-carousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#palavras-carousel" data-slide-to="0" class="active">palavras</li>
+                <li data-target="#palavras-carousel" data-slide-to="1">palavras-chave</li>
+                <li data-target="#palavras-carousel" data-slide-to="2">sentimento por palavras-chave</li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div id="palavras" class="chart-container"></div><!--/.palavras-->
+                </div><!--/item-->
+
+                <div class="item">
+                  <div id="palavras-chave" class="chart-container has-control"></div><!--/.comparativo-->
+                  <div class="btn-group-vertical" data-toggle="buttons">
+                    <label class="btn btn-default active">
+                      <input type="radio" name="options" id="option1" autocomplete="off"> dia
+                    </label>
+                    <label class="btn btn-default">
+                      <input type="radio" name="options" id="option2" autocomplete="off"> semana
+                    </label>
+                    <label class="btn btn-default">
+                      <input type="radio" name="options" id="option3" autocomplete="off" checked> mês
+                    </label>
+                  </div><!--/button-group-veritcal-->
+                </div><!--/item-->
+
+                <div class="item">
+                  <div id="sentimento-por-palavras-chave" class="chart-container"></div><!--/.palavras-->
+                </div><!--/item-->
+
+              </div><!--/carousel-inner-->
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#palavras-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#palavras-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div><!--/#palavras-carousel .carousel-->
+
+          </div><!--/panel-body-->
+        </div><!--/report-panel-->
 
 
-            </div><!--/panel-body-->
-          </div><!--/report-panel-->
-
-        </div><!--/report-content-->
+      </div><!--/report-content-->
 
 
       <!--/#FOOTER-->

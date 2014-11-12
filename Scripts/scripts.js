@@ -20,7 +20,8 @@ jq('.help-button').popover();
 
 //CAROUSEL
 jq('.carousel').carousel({
-	interval: false
+	interval: false,
+	wrap: false
 });
 
 /* ACCORDIONS */

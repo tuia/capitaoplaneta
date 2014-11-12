@@ -3773,9 +3773,6 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .report-panel .panel-body .slide .carousel-control {
   background: transparent;
   color: #333333;
-  height: 100px;
-  margin: -50px 0;
-  top: 50%;
   width: 7%;
 }
 .report-panel .panel-body .slide .carousel-indicators {
@@ -3826,3 +3823,19 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 
 /* .report-panel */
+#report-navbar.affix {
+  background-color: #e8f2e8;
+  left: 0;
+  padding: 10px 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#report-navbar.affix .container {
+  padding-right: 0;
+}
+#report-navbar .container {
+  padding-right: 20px;
+}
