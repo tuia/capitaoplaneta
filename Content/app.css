@@ -3823,8 +3823,10 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 
 /* .report-panel */
+#report-navbar {
+  margin-bottom: 0;
+}
 #report-navbar.affix {
-  background-color: #e8f2e8;
   left: 0;
   padding: 10px 0;
   -moz-transition: all 0.3s ease-in-out;

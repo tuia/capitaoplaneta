@@ -100,8 +100,8 @@
 } /* .report-panel */
 
 #report-navbar {
+	margin-bottom: 0;
 	&.affix {
-		background-color: $page-background;
 		left: 0;
 		padding: 10px 0;
 		@include transition(all, .3s, ease-in-out);

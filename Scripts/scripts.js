@@ -242,5 +242,21 @@ jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 		}
 	});
 
+//SMOOTH SCROLLING
+//Faz a tela "deslizar" quando clica em link âncora pra própria página
+jq(function() {
+  jq('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = jq(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        jq('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
 

@@ -24,7 +24,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#report-navbar">
 
     <div id="filter-panel">
 
@@ -193,26 +193,28 @@
 
 
             <!--/#REPORT NAV-->
-            <div id="report-navbar" class="affix-bar">
+            <div id="report-navbar" class="affix-bar navbar navbar-default">
               <div class="container">
-                <a href="#" class="btn btn-default">capital social</a>
-                <a href="#" class="btn btn-default">pessoas</a>
-                <a href="#" class="btn btn-default">palavras</a>
-                <a href="#" class="btn btn-default">MEC</a>
-                <a href="#" class="btn btn-default">marcadores</a>
-                <a href="#" class="btn btn-default">sentimento</a>
-                <a href="#" class="btn btn-default">mídia</a>
-                <a href="#" class="btn btn-default">relevância da mídia</a>
-                <a href="#" class="btn btn-default">buzz</a>
-                <a href="#" class="btn btn-default">twitter</a>
-                <div class="dropdown pull-right">
-                  <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">...</a>
-                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                    <li><a href="#">região</a></li>
-                    <li><a href="#">atendimento</a></li>
-                  </ul>
-                </div>
-              </div>
+                <ul class="nav navbar-nav">
+                  <li><a href="#capital-social">capital social</a></li>
+                  <li><a href="#pessoas">pessoas</a></li>
+                  <li><a href="#palavras">palavras</a></li>
+                  <li><a href="#mec">MEC</a></li>
+                  <li><a href="#marcadores">marcadores</a></li>
+                  <li><a href="#sentimento">sentimento</a></li>
+                  <li><a href="#midia">mídia</a></li>
+                  <li><a href="#relevancia-da-midia">relevância da mídia</a></li>
+                  <li><a href="#buzz">buzz</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">... <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#twitter">twitter</a></li>
+                      <li><a href="#regiao">região</a></li>
+                      <li><a href="#atendimento">atendimento</a></li>
+                    </ul>
+                  </li>
+                </ul><!--/nav-->
+              </div><!--/container-->
             </div><!--/#report-navbar-->
             
           </form>
@@ -222,7 +224,7 @@
         <div id="report-content">
           
           <!--/CAPITAL SOCIAL-->
-          <div class="panel report-panel">
+          <div class="panel report-panel" id="capital-social">
             <div class="panel-heading">
               <div class="pull-left">
                 <i class="fa fa-filter"></i> filtrar:
@@ -368,7 +370,7 @@
 
           
         <!--/PALAVRAS E PALAVRAS-CHAVE SOCIAL-->
-        <div class="panel report-panel">
+        <div class="panel report-panel" id="palavras">
           <div class="panel-heading">
             <div class="pull-left">
               <i class="fa fa-filter"></i> filtrar:
