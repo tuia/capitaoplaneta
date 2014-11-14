@@ -196,21 +196,21 @@
             <div id="report-navbar" class="affix-bar navbar navbar-default">
               <div class="container">
                 <ul class="nav navbar-nav">
-                  <li><a href="#capital-social">capital social</a></li>
-                  <li><a href="#pessoas">pessoas</a></li>
-                  <li><a href="#palavras">palavras</a></li>
-                  <li><a href="#mec">MEC</a></li>
-                  <li><a href="#marcadores">marcadores</a></li>
-                  <li><a href="#sentimento">sentimento</a></li>
-                  <li><a href="#midia">mídia</a></li>
-                  <li><a href="#relevancia-da-midia">relevância da mídia</a></li>
-                  <li><a href="#buzz">buzz</a></li>
+                  <li><a href="#capital-social-panel">capital social</a></li>
+                  <li><a href="#pessoas-panel">pessoas</a></li>
+                  <li><a href="#palavras-panel">palavras</a></li>
+                  <li><a href="#indicadores-mec-panel">MEC</a></li>
+                  <li><a href="#marcadores-panel">marcadores</a></li>
+                  <li><a href="#sentimento-panel">sentimento</a></li>
+                  <li><a href="#midia-panel">mídia</a></li>
+                  <li><a href="#relevancia-da-midia-panel">relevância da mídia</a></li>
+                  <li><a href="#buzz-panel">buzz</a></li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">... <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                      <li><a href="#twitter">twitter</a></li>
-                      <li><a href="#regiao">região</a></li>
-                      <li><a href="#atendimento">atendimento</a></li>
+                      <li><a href="#twitter-panel">twitter</a></li>
+                      <li><a href="#regiao-panel">região</a></li>
+                      <li><a href="#atendimento-panel">atendimento</a></li>
                     </ul>
                   </li>
                 </ul><!--/nav-->
@@ -224,7 +224,7 @@
         <div id="report-content">
           
           <!--/CAPITAL SOCIAL-->
-          <div class="panel report-panel" id="capital-social">
+          <div class="panel report-panel" id="capital-social-panel">
             <div class="panel-heading">
               <div class="pull-left">
                 <i class="fa fa-filter"></i> filtrar:
@@ -278,11 +278,11 @@
 
             <div class="panel-body">
               
-            <div id="capital-social-carousel" class="carousel slide" data-ride="carousel">
+            <div id="capital-social" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ol class="carousel-indicators">
-                <li data-target="#capital-social-carousel" data-slide-to="0" class="active">comparativo</li>
-                <li data-target="#capital-social-carousel" data-slide-to="1">variação</li>
+                <li data-target="#capital-social" data-slide-to="0" class="active">comparativo</li>
+                <li data-target="#capital-social" data-slide-to="1">variação</li>
               </ol>
 
               <!-- Wrapper for slides -->
@@ -355,22 +355,109 @@
               </div><!--/carousel-inner-->
 
               <!-- Controls -->
-              <a class="left carousel-control" href="#capital-social-carousel" role="button" data-slide="prev">
+              <a class="left carousel-control" href="#capital-social" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="right carousel-control" href="#capital-social-carousel" role="button" data-slide="next">
+              <a class="right carousel-control" href="#capital-social" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
               </a>
-            </div><!--/#capital-social-carousel .carousel-->
+            </div><!--/#capital-social .carousel-->
 
           </div><!--/panel-body-->
         </div><!--/report-panel-->
 
-          
+
+        <!--/PESSOAS-->
+        <div class="panel report-panel" id="pessoas-panel">
+          <div class="panel-heading">
+            <div class="pull-left">
+              <i class="fa fa-filter"></i> filtrar:
+              <div class="btn-group feeling" data-toggle="buttons">
+                <label class="btn btn-default active good">
+                  <input type="checkbox" name="options" id="option1" checked> bom </i>
+                </label>
+                <label class="btn btn-default neutral">
+                  <input type="checkbox" name="options" id="option2"> neutro
+                </label>
+                <label class="btn btn-default bad">
+                  <input type="checkbox" name="options" id="option3"> mau
+                </label>
+              </div><!--/btn-group-->
+            </div><!--/pull-left-->
+
+            <div class="panel-title">
+              <h3>Pessoas</h3>
+            </div>
+
+            <div class="pull-right">
+              <div class="btn-toolbar" role="toolbar">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-default active">
+                    <input type="radio" name="options" id="option1" checked> %
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option2"> #
+                  </label>
+                </div><!--/btn-group-->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default hastooltip" title="exibir tabela"><i class="fa fa-table"></i></button>
+                </div><!--/btn-group-->
+                <div class="btn-group">
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-cogs"></i></button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+                      <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-eye-slash"></i> esconder seção</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-chevron-down"></i> expandir seção</a></li>
+                      <li class="divider"></li>
+                      <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-download"></i> baixar gráficos</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-print"></i>  imprimir</a></li>
+                    </ul>
+                  </div>
+                </div><!--/btn-group-->
+              </div><!--/btn-toolbar-->
+            </div><!--/pull-right-->
+
+            <span class="clearfix"></span>
+          </div><!--/panel-heading-->
+
+          <div class="panel-body">
+              
+            <div id="pessoas" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#pessoas" data-slide-to="0" class="active">rakinkg-geral</li>
+                <li data-target="#pessoas" data-slide-to="1">paixão</li>
+                <li data-target="#pessoas" data-slide-to="2">influenciadores</li>
+                <li data-target="#pessoas" data-slide-to="3">mais ativas</li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  teste
+                </div><!--/item-->
+
+              </div><!--/carousel-inner-->
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#pessoas" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#pessoas" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div><!--/#pessoas .carousel-->
+
+          </div><!--/panel-body-->
+        </div><!--/report-panel-->
+
+
         <!--/PALAVRAS E PALAVRAS-CHAVE SOCIAL-->
-        <div class="panel report-panel" id="palavras">
+        <div class="panel report-panel" id="palavras-panel">
           <div class="panel-heading">
             <div class="pull-left">
               <i class="fa fa-filter"></i> filtrar:
@@ -424,12 +511,12 @@
 
           <div class="panel-body">
               
-            <div id="palavras-carousel" class="carousel slide" data-ride="carousel">
+            <div id="palavras" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ol class="carousel-indicators">
-                <li data-target="#palavras-carousel" data-slide-to="0" class="active">palavras</li>
-                <li data-target="#palavras-carousel" data-slide-to="1">palavras-chave</li>
-                <li data-target="#palavras-carousel" data-slide-to="2">sentimento por palavras-chave</li>
+                <li data-target="#palavras" data-slide-to="0" class="active">palavras</li>
+                <li data-target="#palavras" data-slide-to="1">palavras-chave</li>
+                <li data-target="#palavras" data-slide-to="2">sentimento por palavras-chave</li>
               </ol>
 
               <!-- Wrapper for slides -->
@@ -460,18 +547,107 @@
               </div><!--/carousel-inner-->
 
               <!-- Controls -->
-              <a class="left carousel-control" href="#palavras-carousel" role="button" data-slide="prev">
+              <a class="left carousel-control" href="#palavras" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="right carousel-control" href="#palavras-carousel" role="button" data-slide="next">
+              <a class="right carousel-control" href="#palavras" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
               </a>
-            </div><!--/#palavras-carousel .carousel-->
+            </div><!--/#palavras .carousel-->
 
           </div><!--/panel-body-->
         </div><!--/report-panel-->
+
+
+         <!--/MEC-->
+        <div class="panel report-panel" id="indicadores-mec-panel">
+          <div class="panel-heading">
+            <div class="pull-left">
+              <i class="fa fa-filter"></i> filtrar:
+              <div class="btn-group feeling" data-toggle="buttons">
+                <label class="btn btn-default active good">
+                  <input type="checkbox" name="options" id="option1" checked> bom </i>
+                </label>
+                <label class="btn btn-default neutral">
+                  <input type="checkbox" name="options" id="option2"> neutro
+                </label>
+                <label class="btn btn-default bad">
+                  <input type="checkbox" name="options" id="option3"> mau
+                </label>
+              </div><!--/btn-group-->
+            </div><!--/pull-left-->
+
+            <div class="panel-title">
+              <h3>Indicadores MEC</h3>
+            </div>
+
+            <div class="pull-right">
+              <div class="btn-toolbar" role="toolbar">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-default active">
+                    <input type="radio" name="options" id="option1" checked> %
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option2"> #
+                  </label>
+                </div><!--/btn-group-->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default hastooltip" title="exibir tabela"><i class="fa fa-table"></i></button>
+                </div><!--/btn-group-->
+                <div class="btn-group">
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-cogs"></i></button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+                      <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-eye-slash"></i> esconder seção</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-chevron-down"></i> expandir seção</a></li>
+                      <li class="divider"></li>
+                      <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-download"></i> baixar gráficos</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-print"></i>  imprimir</a></li>
+                    </ul>
+                  </div>
+                </div><!--/btn-group-->
+              </div><!--/btn-toolbar-->
+            </div><!--/pull-right-->
+
+            <span class="clearfix"></span>
+          </div><!--/panel-heading-->
+
+          <div class="panel-body">
+              
+            <div id="indicadores-mec" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#indicadores-mec" data-slide-to="0" class="active">rakinkg-geral</li>
+                <li data-target="#indicadores-mec" data-slide-to="1">paixão</li>
+                <li data-target="#indicadores-mec" data-slide-to="2">influenciadores</li>
+                <li data-target="#indicadores-mec" data-slide-to="3">mais ativas</li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  teste
+                </div><!--/item-->
+
+              </div><!--/carousel-inner-->
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#indicadores-mec" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#indicadores-mec" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div><!--/#indicadores-mec .carousel-->
+
+          </div><!--/panel-body-->
+        </div><!--/report-panel-->
+
+
 
 
       </div><!--/report-content-->

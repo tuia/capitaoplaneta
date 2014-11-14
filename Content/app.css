@@ -3825,6 +3825,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 /* .report-panel */
 #report-navbar {
   margin-bottom: 0;
+  z-index: 16;
 }
 #report-navbar.affix {
   left: 0;
