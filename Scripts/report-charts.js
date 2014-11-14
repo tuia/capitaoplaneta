@@ -423,3 +423,122 @@
                 }]
             });
         });
+
+    
+    //INDICADORES MEC
+
+            // CAPITAL SOCIAL
+            jq(function () {
+                jq('#indicadores-cs').highcharts({
+                    chart: {
+                        type: 'column',
+                        height: 300
+                    },
+                    title: {
+                        text: 'Indicadores MEC por Capital Social'
+                    },
+                    subtitle: {
+                        text: 'planetaY'
+                    },
+                    xAxis: {
+                        type: 'category',
+                        labels: {
+                            rotation: -45,
+                            style: {
+                                fontSize: '13px',
+                                fontFamily: 'Verdana, sans-serif'
+                            }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: 'capital social'
+                        }
+                    },
+                    legend: {
+                        enabled: false
+                    },
+                    tooltip: {
+                        pointFormat: 'capital social: <b>{point.y:.1f}</b>'
+                    },
+                    series: [{
+                        name: 'Population',
+                        data: [
+                            ['captação', 23.7],
+                            ['empregabilidade', 16.1],
+                            ['localização', 14.2],
+                            ['atuação ética', 14.0],
+                            ['corpo docente', 12.5],
+                            ['credenciamento no mec', 12.1],
+                            ['preço', 11.8],
+                            ['qualidade de ensino', 11.7],
+                            ['infraestrutura', 11.1],
+                            ['relacionamento', 11.1]
+                        ],
+                        dataLabels: {
+                            enabled: true,
+                            rotation: -90,
+                            color: '#FFFFFF',
+                            align: 'right',
+                            x: 4,
+                            y: 10,
+                            style: {
+                                fontSize: '13px',
+                                fontFamily: 'Verdana, sans-serif',
+                                textShadow: '0 0 3px black'
+                            }
+                        }
+                    }]
+                });
+            });
+        
+        //DISTRIBUIÇÃO
+        jq(function () {
+            jq(document).ready(function () {
+
+                // Build the chart
+                jq('#indicadores-distribuicao').highcharts({
+                    chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false,
+                        height: 300
+                    },
+                    title: {
+                        text: 'Browser market shares at a specific website, 2014'
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                    },
+                    plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: false
+                            },
+                            showInLegend: true
+                        }
+                    },
+                    series: [{
+                        type: 'pie',
+                        name: 'Browser share',
+                        data: [
+                            ['Firefox',   45.0],
+                            ['IE',       26.8],
+                            {
+                                name: 'Chrome',
+                                y: 12.8,
+                                sliced: true,
+                                selected: true
+                            },
+                            ['Safari',    8.5],
+                            ['Opera',     6.2],
+                            ['Others',   0.7]
+                        ]
+                    }]
+                });
+            });
+
+        });
