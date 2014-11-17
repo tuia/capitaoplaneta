@@ -260,3 +260,9 @@ jq(function() {
 });
 
 
+// CHECKBOX PALAVRAS-CHAVE
+jq('.word-group .word-box .toggle-word').click( function() {
+	jq(this).parents('.word-box').toggleClass('selected');
+	console.log('tuia');
+	return false
+});
