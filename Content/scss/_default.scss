@@ -133,6 +133,12 @@ text[text-anchor="end"] {display: none;}
  .help-button { padding: 10px; font-size: 16px; margin: -3px -3px -3px 0;}
  .popover {color: $default-text; text-transform: none; font-weight: 300;}
 
+/* FLAT */
+.well {
+	@include box-shadow(0,0,0,transparent);
+	border: 1px solid transparent;
+}
+
 /*Media queries breakpoints*/
 .container, #navigation .container { width: 950px !important; padding: 0;}
 

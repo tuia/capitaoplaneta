@@ -257,6 +257,14 @@ text[text-anchor="end"] {
   font-weight: 300;
 }
 
+/* FLAT */
+.well {
+  -webkit-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  border: 1px solid transparent;
+}
+
 /*Media queries breakpoints*/
 .container, #navigation .container {
   width: 950px !important;
@@ -3797,13 +3805,23 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   background-color: #8c8c8c;
   color: white;
 }
+.report-panel .panel-body .slide .item {
+  height: 300px;
+}
 .report-panel .panel-body .slide .item > .row {
   margin: 0;
 }
-.report-panel .panel-body .slide .item > .row .well {
+.report-panel .panel-body .slide .item > .row .col-xs-3, .report-panel .panel-body .slide .item > .row .col-xs-2 {
   padding: 10px;
   margin: 0 5px;
-  border: none;
+}
+.report-panel .panel-body .slide .item .people-chart > .row {
+  margin: 0 5px;
+}
+.report-panel .panel-body .slide .item .people-chart > .row .col-xs-4 {
+  width: calc(33.3333% - 10px);
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .report-panel .panel-body .slide .item .list-unstyled.feeling li {
   font-size: 13px;
@@ -3841,4 +3859,116 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 #report-navbar .container {
   padding-right: 20px;
+}
+
+/* PEOPLE CHART */
+.people-chart > .row:first-child .person-box {
+  padding: 10px;
+  height: auto;
+}
+.people-chart > .row:first-child .person-box .person-badge {
+  background-color: transparent;
+  background-image: url("img/badge.png");
+  height: 62px;
+  width: 41px;
+  padding: 6px 0;
+  font-size: 20px;
+}
+.people-chart > .row:first-child .person-box .person-image img {
+  width: 120px;
+  height: 120px;
+  margin: 0;
+}
+.people-chart > .row:first-child .person-box .person-data {
+  font-size: 13px;
+}
+.people-chart > .row:first-child .person-box .person-data p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.people-chart > .row:first-child .person-box .person-title {
+  padding: 0 40px;
+  font-size: 14px;
+  margin: -3px 0 8px;
+}
+.people-chart > .row:first-child .person-box .progress-container .progress {
+  height: 20px;
+  width: calc(100% - 27px);
+  float: left;
+}
+.people-chart > .row:first-child .person-box .progress-container .progress .progress-bar {
+  font-size: 12px;
+  line-height: 20px;
+}
+.people-chart .person-box {
+  padding: 0 10px;
+  margin: 8px 0;
+  position: relative;
+  overflow: visible;
+  height: 120px;
+}
+.people-chart .person-box .person-badge {
+  background-color: #566573;
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  padding: 3px 0;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+.people-chart .person-box .person-title {
+  font-weight: normal;
+  color: #333333;
+  word-wrap: break-word;
+  line-height: 1.1;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  margin: 5px 0;
+}
+.people-chart .person-box .person-title:hover {
+  color: #666666;
+}
+.people-chart .person-box .person-image {
+  float: left;
+  margin-right: 10px;
+}
+.people-chart .person-box .person-image img {
+  width: 80px;
+  height: 80px;
+}
+.people-chart .person-box .person-data p {
+  font-size: 11px;
+  font-style: italic;
+  margin: -5px 0 5px;
+  width: 105px;
+}
+.people-chart .person-box .person-data .progress-container {
+  width: 100%;
+  position: relative;
+}
+.people-chart .person-box .person-data .progress-container .progress {
+  margin-bottom: 5px;
+  height: 15px;
+  width: 78px;
+  -webkit-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+}
+.people-chart .person-box .person-data .progress-container .progress .progress-bar {
+  min-width: 30%;
+  font-size: 10px;
+  line-height: 15px;
+}
+.people-chart .person-box .person-data .progress-container .feeling-icon {
+  float: left;
+  margin: -8px 0;
+  width: 27px;
 }

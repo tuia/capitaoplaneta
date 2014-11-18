@@ -67,12 +67,20 @@
 				}
 			}
 			.item {
-				&>.row {
+				height: 300px;
+				&>.row{
 					margin: 0;
-					.well {
+					.col-xs-3, .col-xs-2 {
 						padding: 10px;
 						margin: 0 5px;
-						border: none;
+					}
+				}
+				.people-chart > .row {
+					margin: 0 5px;	
+					.col-xs-4 {
+						width: calc(33.3333% - 10px);
+						margin-left: 5px;
+						margin-right: 5px;
 					}
 				}
 				.list-unstyled.feeling {
@@ -114,3 +122,136 @@
 		padding-right: 20px
 	}
 }
+
+/* PEOPLE CHART */
+.people-chart {
+
+	&>.row:first-child {
+
+		.person-box {
+			padding: 10px;
+			height: auto;
+
+			.person-badge {
+				background-color: transparent;
+				background-image: url("img/badge.png");
+				height: 62px;
+				width: 41px;
+				padding: 6px 0;
+				font-size: 20px;
+			}
+			.person-image img{
+				width: 120px;
+				height: 120px;
+				margin: 0;
+			}	
+			.person-data {
+				font-size: 13px;
+				p {
+					font-size: 12px;
+					margin-bottom: 10px;
+				}
+			}
+			.person-title {
+				padding: 0 40px;
+				font-size: 14px;
+				margin: -3px 0 8px;
+			}
+			.progress-container {
+				.progress {
+					height: 20px;
+					width: calc(100% - 27px);
+					float: left;
+					.progress-bar {
+						font-size: 12px;
+						line-height: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	.person-box {
+		padding: 0 10px;
+		margin: 8px 0;
+		position: relative;
+		overflow: visible;
+		height: 120px;
+
+		.person-badge {
+			background-color: $notification-background;
+			position: absolute;
+			top: -5px;
+			left: 0px;
+			width: 30px;
+			height: 30px;
+			color: $inverse-text;
+			font-weight: bold;
+			text-align: center;
+			font-size: 16px;
+			padding: 3px 0;
+			@include border-radius(30px);
+		}
+
+		.person-title {
+			font-weight: normal;
+			color: $dark-text;
+			word-wrap: break-word;
+			line-height: 1.1;
+			font-size: 12px;
+			display: block;
+			text-align: center;
+			margin: 5px 0;
+			&:hover {color: $default-text}
+		}
+
+		.person-image {
+			float: left;
+			margin-right: 10px;
+			img {
+				width: 80px;
+				height: 80px;
+			}
+		}
+		.person-data {
+			p {
+				font-size: 11px;
+				font-style: italic;
+				margin: -5px 0 5px;
+				width: 105px;
+			}
+			.progress-container {
+				width: 100%;
+				position: relative;
+
+				.progress {
+					margin-bottom: 5px;
+					height: 15px;
+					width: 78px;
+					@include box-shadow(0,0,0,transparent);
+
+					.progress-bar {
+						min-width: 30%;
+						font-size: 10px;
+						line-height: 15px;
+					}
+				}
+				.feeling-icon {
+					float: left;
+					margin: -8px 0;
+					width: 27px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
