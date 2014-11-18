@@ -1,3 +1,9 @@
+//TEMA
+Highcharts.theme = {
+    colors: ['#82799F', '#F39C12', '#16A085', '#7A82CD', '#f45b5b', '#90ee7e',
+             '#DF5353', '#7798BF', '#ff2266']
+}
+Highcharts.setOptions(Highcharts.theme);
 
 //CAPITAL SOCIAL
 
@@ -308,8 +314,7 @@
             },
             series: [{
                 name: 'anhembi morumbi',
-                data: [1, 3, 7, 7, 6, 4, 4, 4.5, 5, 5.6, 6, 6],
-                color: '#609AA5'
+                data: [1, 3, 7, 7, 6, 4, 4, 4.5, 5, 5.6, 6, 6]
             }]
         });
     });
@@ -344,20 +349,16 @@
                 },
                 series: [{
                     name: 'palavra1',
-                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
-                    color: '#34495E'
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
                 }, {
                     name: 'palavra2',
-                    data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5],
-                    color: '#F39C12'
+                    data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
                 }, {
                     name: 'palavra3',
-                    data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0],
-                    color: '#16A085'
+                    data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
                 }, {
-                    name: 'palavra5',
-                    data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8],
-                    color: '#7A82CD'
+                    name: 'palavra4',
+                    data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
                 }]
             });
         });
@@ -371,7 +372,7 @@
                     height: 300
                 },
                 title: {
-                    text: 'sentimento por palavra-chave'
+                    text: 'palavras-chave por sentimento'
                 },
                 xAxis: {
                     categories: ['palavra1', 'palavra2', 'palavra3', 'palavra4', 'palavra5']
@@ -379,26 +380,16 @@
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'citações'
-                    },
-                    stackLabels: {
-                        enabled: true,
-                        style: {
-                            fontWeight: 'bold',
-                            color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
-                        }
+                        text: null
                     }
                 },
                 tooltip: {
-                    formatter: function () {
-                        return '<b>' + this.x + '</b><br/>' +
-                            this.series.name + ': ' + this.y + '<br/>' +
-                            'Total: ' + this.point.stackTotal;
-                    }
+                    pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+                    shared: true
                 },
                 plotOptions: {
                     column: {
-                        stacking: 'normal',
+                        stacking: 'percent',
                         dataLabels: {
                             enabled: true,
                             color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
@@ -420,7 +411,7 @@
                     name: 'negativo',
                     data: [3, 4, 4, 2, 5],
                     color: '#C0392B' // bad
-                }]
+                }],
             });
         });
 
@@ -431,23 +422,16 @@
             jq(function () {
                 jq('#indicadores-cs').highcharts({
                     chart: {
-                        type: 'column',
+                        type: 'bar',
                         height: 300
                     },
                     title: {
                         text: 'Indicadores MEC por Capital Social'
                     },
-                    subtitle: {
-                        text: 'planetaY'
-                    },
                     xAxis: {
-                        type: 'category',
-                        labels: {
-                            rotation: -45,
-                            style: {
-                                fontSize: '13px',
-                                fontFamily: 'Verdana, sans-serif'
-                            }
+                        type: 'categories',
+                        title: {
+                            text: null
                         }
                     },
                     yAxis: {
@@ -456,39 +440,44 @@
                             text: 'capital social'
                         }
                     },
+                    plotOptions: {
+                        bar: {
+                            dataLabels: {
+                                enabled: true
+                            }
+                        }
+                    },
                     legend: {
-                        enabled: false
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'top',
+                        x: -40,
+                        y: 100,
+                        floating: true,
+                        borderWidth: 1,
+                        backgroundColor: 'transparent',
+                        shadow: true
                     },
                     tooltip: {
                         pointFormat: 'capital social: <b>{point.y:.1f}</b>'
                     },
+                    credits: {
+                        enabled: false
+                    },
                     series: [{
-                        name: 'Population',
+                        name: 'capital social',
                         data: [
-                            ['captação', 23.7],
-                            ['empregabilidade', 16.1],
-                            ['localização', 14.2],
-                            ['atuação ética', 14.0],
-                            ['corpo docente', 12.5],
-                            ['credenciamento no mec', 12.1],
-                            ['preço', 11.8],
-                            ['qualidade de ensino', 11.7],
-                            ['infraestrutura', 11.1],
-                            ['relacionamento', 11.1]
-                        ],
-                        dataLabels: {
-                            enabled: true,
-                            rotation: -90,
-                            color: '#FFFFFF',
-                            align: 'right',
-                            x: 4,
-                            y: 10,
-                            style: {
-                                fontSize: '13px',
-                                fontFamily: 'Verdana, sans-serif',
-                                textShadow: '0 0 3px black'
-                            }
-                        }
+                            ['captação', 3.7],
+                            ['empregabilidade', 6.1],
+                            ['localização', 4.2],
+                            ['atuação ética', 4.0],
+                            ['corpo docente', 2.5],
+                            ['credenciamento no mec', 2.1],
+                            ['preço', 1.8],
+                            ['qualidade de ensino', 1.7],
+                            ['infraestrutura', 9.1],
+                            ['relacionamento', 1.1]
+                        ]
                     }]
                 });
             });
@@ -503,42 +492,95 @@
                         plotBackgroundColor: null,
                         plotBorderWidth: null,
                         plotShadow: false,
-                        height: 300
+                        height: 300,
+                        width: 815,
                     },
                     title: {
-                        text: 'Browser market shares at a specific website, 2014'
+                        text: 'Indicadores mec: distribuição'
                     },
                     tooltip: {
-                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                        pointFormat: '{series.name}: <b>{point.percentage:.1f}</b>'
                     },
                     plotOptions: {
                         pie: {
                             allowPointSelect: true,
                             cursor: 'pointer',
                             dataLabels: {
-                                enabled: false
-                            },
-                            showInLegend: true
+                                enabled: true,
+                                format: '<b>{point.name}</b>: {point.percentage:.1f} ',
+                                style: {
+                                    color: '#666666'
+                                }
+                            }
                         }
                     },
                     series: [{
                         type: 'pie',
-                        name: 'Browser share',
+                        name: 'citações por indicador',
                         data: [
-                            ['Firefox',   45.0],
-                            ['IE',       26.8],
-                            {
-                                name: 'Chrome',
-                                y: 12.8,
-                                sliced: true,
-                                selected: true
-                            },
-                            ['Safari',    8.5],
-                            ['Opera',     6.2],
-                            ['Others',   0.7]
+                            ['captação', 3.7],
+                            ['empregabilidade', 6.1],
+                            ['localização', 4.2],
+                            ['atuação ética', 4.0],
+                            ['corpo docente', 2.5],
+                            ['credenciamento no mec', 2.1],
+                            ['preço', 1.8],
+                            ['qualidade de ensino', 1.7],
+                            ['infraestrutura', 9.1],
+                            ['relacionamento', 1.1]
                         ]
                     }]
                 });
             });
 
         });
+
+        //SENTIMENTO
+        jq(function () {
+            jq('#indicadores-sentimento').highcharts({
+                chart: {
+                    type: 'column',
+                    width: 815,
+                    height: 300
+                },
+                title: {
+                    text: 'indicadores por sentimento'
+                },
+                xAxis: {
+                    categories: ['captação', 'empregabilidade', 'localização', 'atuação ética', 'corpo docente', 'credenciamento no mec', 'preço', 'qualidade de ensino', 'infraestrutura', 'relacionamento']
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: null
+                    }
+                },
+                tooltip: {
+                    pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+                    shared: true
+                },
+                plotOptions: {
+                    column: {
+                        stacking: 'percent'
+                    }
+                },
+                series: [{
+                    name: 'positivo',
+                    data: [5, 3, 4, 7, 2, 3, 4, 4, 2, 5],
+                    color: '#27AE60' // good
+                }, {
+                    name: 'neutro',
+                    data: [2, 2, 3, 2, 1, 5, 3, 4, 7, 2],
+                    color: '#2980B9' // neutral
+                }, {
+                    name: 'negativo',
+                    data: [3, 4, 4, 2, 5, 2, 2, 3, 2, 1],
+                    color: '#C0392B' // bad
+                }],
+            });
+        });
+
+
+
+
+
