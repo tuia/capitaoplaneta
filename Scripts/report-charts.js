@@ -423,7 +423,8 @@ Highcharts.setOptions(Highcharts.theme);
                 jq('#indicadores-cs').highcharts({
                     chart: {
                         type: 'bar',
-                        height: 300
+                        height: 300,
+                        width: 815
                     },
                     title: {
                         text: 'Indicadores MEC por Capital Social'
