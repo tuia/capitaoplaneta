@@ -229,20 +229,12 @@ a[data-toggle="collapse"] {
   display: none;
 }
 
-text[text-anchor="end"] {
-  display: none;
-}
-
 .affix-bar.affix {
   background: #e8f2e8;
   top: 0;
   width: 100%;
   position: fixed;
   z-index: 10;
-}
-
-.nav-tabs > li.active > a {
-  background-color: #e8f2e8;
 }
 
 .help-button {
@@ -529,6 +521,41 @@ h3 {
   padding: 10px 20px;
   position: relative;
   top: 18px;
+}
+
+/* TABS  */
+.tab-container .tab-content {
+  padding: 20px;
+  display: none;
+}
+.tab-container .tab-content.active {
+  display: block;
+}
+.tab-container .nav-tabs > li.active > a, .tab-container .tab-content {
+  background-color: #f6f7f8;
+}
+
+/* DRAGGABLE LIST */
+#draggable-list .draggable-item {
+  cursor: move;
+  padding: 1px 15px 1px 30px;
+  background-color: #f0f1f1;
+  background-image: url("img/draggable-texture.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+}
+#draggable-list .draggable-item.active {
+  background-color: #b3eecc;
+}
+#draggable-list .draggable-item.active:hover {
+  background-color: #89e5b0;
+}
+#draggable-list .draggable-item:hover {
+  background-color: #e6e7e7;
+}
+#draggable-list .draggable-item label {
+  width: 100%;
 }
 
 /* SOCIAL ICONS */
@@ -2057,8 +2084,8 @@ used in citacoes and perfil-do-usuario */
   background-image: url("img/textures/blocks.png");
   background-blend-mode: multiply;
   background-position: center center;
+  /*nav tabs*/
 }
-
 #header:before {
   background: -moz-linear-gradient(left, transparent 0%, white 100%);
   /* FF3.6+ */
@@ -2082,19 +2109,20 @@ used in citacoes and perfil-do-usuario */
   content: " ";
   opacity: .35;
 }
-
-/*nav tabs*/
-.nav-tabs {
+#header .nav-tabs {
   margin-bottom: -1px;
   position: relative;
 }
-.nav-tabs li {
+#header .nav-tabs li {
   margin-left: 10px;
 }
-.nav-tabs li a {
+#header .nav-tabs li a {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.4);
   color: #666666;
+}
+#header .nav-tabs > li.active > a {
+  background-color: #e8f2e8;
 }
 
 /*institution-box*/

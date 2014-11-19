@@ -581,6 +581,68 @@ Highcharts.setOptions(Highcharts.theme);
             });
         });
 
+    // MARCADORES
+
+            // CAPITAL SOCIAL
+            jq(function () {
+                jq('#marcadores-cs').highcharts({
+                    chart: {
+                        type: 'bar',
+                        height: 300,
+                        width: 815
+                    },
+                    title: {
+                        text: 'Marcadores por Capital Social'
+                    },
+                    xAxis: {
+                        type: 'categories',
+                        title: {
+                            text: null
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: 'capital social'
+                        }
+                    },
+                    plotOptions: {
+                        bar: {
+                            dataLabels: {
+                                enabled: true
+                            }
+                        }
+                    },
+                    legend: {
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'top',
+                        x: -40,
+                        y: 100,
+                        floating: true,
+                        borderWidth: 1,
+                        backgroundColor: 'transparent',
+                        shadow: true
+                    },
+                    tooltip: {
+                        pointFormat: 'capital social: <b>{point.y:.1f}</b>'
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    series: [{
+                        name: 'capital social',
+                        data: [
+                            ['IEC', 3.7],
+                            ['exemplo', 6.1],
+                            ['favoritos', 4.2],
+                            ['lido', 4.0],
+                            ['não lido', 2.5]
+                        ]
+                    }]
+                });
+            });
+
 
 
 

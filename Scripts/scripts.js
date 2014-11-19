@@ -1,50 +1,129 @@
 //SRCIPTS
+//utilizar jq ao invés de $ para evitar conflitos
 var jq = jQuery.noConflict();
 
+
 //SRCIPTS
-jq('#foward-modal .togglecc').click( function() {
-	jq(this).parents('form').find('.cc-container').slideToggle();
-});
 
-/* TOOLTIP */
-jq('body').tooltip({
-	delay: { show: 400, hide: 10 },
-    selector: '[data-toggle="tooltip"], .hastooltip, .mec-menu .dropdown-toggle'
-});
-jq('.validation').click( function() {
-	jq(this).fadeOut();
-});
 
-//POPOVER DE AJUDA
-jq('.help-button').popover();
+	//BOOTSTRAP
 
-//CAROUSEL
-jq('.carousel').carousel({
-	interval: false,
-	wrap: false
-});
+		//MODAL
+		jq('#reportModal').modal('show');
 
-/* ACCORDIONS */
-jq('.accordion-box a.accordion-trigger, .accordion-box button.accordion-trigger').not('.disabled').click( function() {
-	jq(this).toggleClass('open');
-	jq(this).parents('.accordion-box').find('.accordion-hidden').slideToggle();
-	if ( jq(this).hasClass('open') ) {
-		jq(this).html('<i class="fa fa-chevron-up"></i>');
-	} else {
-		jq(this).html('<i class="fa fa-chevron-down"></i>');
-	}
-	return false
-});
-jq(".accordion-container input[type='radio']").change(function(){
-	console.log('estou na função');
-    jq(this).parents('.accordion-container').find('.accordion-hidden').slideUp();
-    jq(this).parents('.accordion-container').find('.radio label').addClass('lighter');
-    jq(this).parents('.accordion-box').find('.accordion-hidden').slideDown();
-    jq(this).parent().removeClass('lighter');
-});
+		// TOOLTIP 
+		jq('body').tooltip({
+			delay: { show: 400, hide: 10 },
+		    selector: '[data-toggle="tooltip"], .hastooltip, .mec-menu .dropdown-toggle'
+		});
+		jq('.validation').click( function() {
+			jq(this).fadeOut();
+		});
 
-/* INDERTAMINATE CHECKBOX 
-jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
+		//POPOVER DE AJUDA
+		jq('.help-button').popover();
+
+		//CAROUSEL
+		jq('.carousel').carousel({
+			interval: false,
+			wrap: false
+		});
+
+		// AFFIX ACTIONS BARRA DE CITAÇÕES 
+		jq(function () {
+		if (jq(".affix-bar")[0]){
+		    jq('.affix-bar').affix({offset: { top: jq('.affix-bar').offset().top }});
+		}
+
+
+	//FORMS
+
+		// DATEPICKER 
+		if (jq(".input-daterange")[0]){
+		    jq('.input-daterange').datepicker({
+				language: "pt-BR",
+				autoclose: true,
+				todayHighlight: true
+			});
+		} 
+		// MASKED INPUT 
+		if (jq("input.hour")[0]){
+			jq("input.hour").mask("99:99",{placeholder:"00:00"});
+		}
+		// SELECT MÚLTIPLO 
+		if (jq(".selectpicker")[0]){
+			jq('.selectpicker').selectpicker();
+		}
+		else {};
+		});
+		// CHECKBOX PALAVRAS-CHAVE
+		jq('.word-group .word-box .toggle-word').click( function() {
+			jq(this).parents('.word-box').toggleClass('selected');
+			console.log('tuia');
+			return false
+		});
+		/* INDERTAMINATE CHECKBOX 
+		jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
+
+
+	//COMPONENTES
+
+		// ACCORDIONS
+		jq('.accordion-box a.accordion-trigger, .accordion-box button.accordion-trigger').not('.disabled').click( function() {
+			jq(this).toggleClass('open');
+			jq(this).parents('.accordion-box').find('.accordion-hidden').slideToggle();
+			if ( jq(this).hasClass('open') ) {
+				jq(this).html('<i class="fa fa-chevron-up"></i>');
+			} else {
+				jq(this).html('<i class="fa fa-chevron-down"></i>');
+			}
+			return false
+		});
+		jq(".accordion-container input[type='radio']").change(function(){
+			console.log('estou na função');
+		    jq(this).parents('.accordion-container').find('.accordion-hidden').slideUp();
+		    jq(this).parents('.accordion-container').find('.radio label').addClass('lighter');
+		    jq(this).parents('.accordion-box').find('.accordion-hidden').slideDown();
+		    jq(this).parent().removeClass('lighter');
+		});
+
+		// TABS
+		jq('.tab-container .nav-tabs li a').click( function(event) {
+			var aba = jq(this).attr('href');
+
+			jq(this).parents('.nav-tabs').find('li').removeClass('active');
+			jq(this).parents('li').addClass('active');
+			jq(this).parents('.tab-container').find('.tab-content').removeClass('active');
+			jq(this).parents('.tab-container').find(aba).addClass('active');
+
+			event.preventDefault()
+
+			return false
+		});
+
+		//DRAGGABLE LIST
+	    jQuery(function(jq) {
+	        var panelList = jq('#draggable-list');
+
+	        panelList.sortable({
+	            update: function() {
+	                jq('.draggable-item', panelList).each(function(index, elem) {
+	                     var jqlistItem = jq(elem),
+	                         newIndex = jqlistItem.index();
+
+	                     // Persist the new indices.
+	                });
+	            }
+	        });
+	    });
+	    	//with checkbox
+	    	jq('.draggable-item input[type="checkbox"]').change( function() {
+	    		if(jq(this).is(":checked")){
+			        jq(this).parents('.draggable-item').addClass("active"); 
+			    }else{
+			        jq(this).parents('.draggable-item').removeClass("active");  
+			    }
+	    	});
 
 
 /*CITAÇÃO*/
@@ -60,7 +139,6 @@ jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 		}
 		return false
 	});
-
 
 	/* DROPUP DE SETIMENTOS DA BARRA DO MEC */
 	jq('.mec-menu .dropdown-menu .btn').not('.remove').click( function() {
@@ -90,6 +168,7 @@ jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 
 
 	/* MUDANÇA DE STATUS */
+
 	jq('.status-bar .dropdown-menu .em-andamento, .status-bar .dropdown-menu .encaminhado, .status-bar .dropdown-menu .fechado ').click( function() {
 		var value = jq(this).text(),
 		btn = jq(this).parents('.status-bar').find('.status-btn');
@@ -122,12 +201,10 @@ jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 		}
 	});*/
 
-
 	/*CHECKBOX*/
 	jq('.quote-checkbox input').change( function() {
 		jq(this).parents('.quote').toggleClass('selected');
 	});
-
 
 	/*DROPDOWN MEC*/
 	jq('#mec-dropdown .dropdown-menu li a').click( function() {
@@ -150,7 +227,6 @@ jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 		return false
 	});
 
-
 	/* LIDO/NÃO-LIDO */
 	jq('.leitura-btn').click( function() {
 			var v = 1;
@@ -167,32 +243,6 @@ jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 		return false;
 	});
 
-
-	/* AFFIX ACTIONS BARRA DE CITAÇÕES */
-	jq(function () {
-		if (jq(".affix-bar")[0]){
-		    jq('.affix-bar').affix({offset: { top: jq('.affix-bar').offset().top }});
-		} 
-		/* DATEPICKER */
-		if (jq(".input-daterange")[0]){
-		    jq('.input-daterange').datepicker({
-				language: "pt-BR",
-				autoclose: true,
-				todayHighlight: true
-			});
-		} 
-		/* MASKED INPUT */
-		if (jq("input.hour")[0]){
-			jq("input.hour").mask("99:99",{placeholder:"00:00"});
-		}
-		/* SELECT MÚLTIPLO */
-		if (jq(".selectpicker")[0]){
-			jq('.selectpicker').selectpicker();
-		}
-		else {};
-	});
-
-     
 
 	/*PAINEL FILTRAR */
 
@@ -242,13 +292,18 @@ jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 		}
 	});
 
+
+jq('#foward-modal .togglecc').click( function() {
+	jq(this).parents('form').find('.cc-container').slideToggle();
+});
+
 //SMOOTH SCROLLING
 //Faz a tela "deslizar" quando clica em link âncora pra própria página
 jq(function() {
-  jq('a[href*=#]:not([href=#]):not(".carousel-control"):not([data-toggle="modal"])').click(function() {
+  jq('a[href*=#]:not([href=#], .carousel-control, .tab-container .nav-tabs li a, [data-toggle="modal"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = jq(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      target = target.length ? target : jq('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         jq('html,body').animate({
           scrollTop: target.offset().top
@@ -260,9 +315,3 @@ jq(function() {
 });
 
 
-// CHECKBOX PALAVRAS-CHAVE
-jq('.word-group .word-box .toggle-word').click( function() {
-	jq(this).parents('.word-box').toggleClass('selected');
-	console.log('tuia');
-	return false
-});

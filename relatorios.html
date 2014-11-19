@@ -183,7 +183,7 @@
                 </select>
               </div><!--/col-xs-8-->
               <div class="col-xs-2">
-                <button type="button" class="btn btn-default btn-lg btn-block"><i class="fa fa-cogs"></i> personalizar</button>
+                <button type="button" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#reportModal"><i class="fa fa-cogs"></i> personalizar</button>
               </div>
               <div class="col-xs-2">
                 <button type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-plus"></i> novo</button>
@@ -1458,8 +1458,101 @@
     </div><!--/outside filter-->
 
 
+    <!--/MODAL-->
+    <div id="reportModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="personalizar relatório" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">fechar</span></button>
+            <h4 class="modal-title">Personalizar relatório</h4>
+          </div>
+          <div class="modal-body tab-container">
+
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#geral-tab">geral</a></li>
+              <li><a href="#envio-automatico-tab">envio automático</a></li>
+            </ul>
+
+            <div id="geral-tab" class="tab-content active">
+              <form role="form">
+                <div class="form-group">
+                  <label for="">nome</label>
+                  <input type="text" class="form-control" id="" placeholder="Nome do relatório">
+                </div>
+              </form>
+              <form role="form">
+                <div class="form-group">
+                  <label for="">seções</label>
+
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <!-- Bootstrap 3 panel list. -->
+                      <div id="draggable-list" class="list-unstyled">
+
+                          <div class="draggable-item active">
+                            <div class="checkbox"><label><input type="checkbox"> capital social</label></div>
+                          </div><!--/.draggable-item-->
+
+                          <div class="draggable-item">
+                            <div class="checkbox"><label><input type="checkbox"> pessoas</label></div>
+                          </div><!--/.draggable-item-->
+
+                          <div class="draggable-item">
+                            <div class="checkbox"><label><input type="checkbox"> palavras</label></div>
+                          </div><!--/.draggable-item-->
+
+                          <div class="draggable-item">
+                            <div class="checkbox"><label><input type="checkbox"> MEC</label></div>
+                          </div><!--/.draggable-item-->
+
+                          <div class="draggable-item">
+                            <div class="checkbox"><label><input type="checkbox"> marcadores</label></div>
+                          </div><!--/.draggable-item-->
+
+                          <div class="draggable-item">
+                            <div class="checkbox"><label><input type="checkbox"> midias</label></div>
+                          </div><!--/.draggable-item-->
+
+                          <div class="draggable-item">
+                            <div class="checkbox"><label><input type="checkbox"> relevância da mídia</label></div>
+                          </div><!--/.draggable-item-->
+
+                          <div class="draggable-item">
+                            <div class="checkbox"><label><input type="checkbox"> twitter</label></div>
+                          </div><!--/.draggable-item-->
+
+                          <div class="draggable-item">
+                            <div class="checkbox"><label><input type="checkbox"> região</label></div>
+                          </div><!--/.draggable-item-->
+
+                          <div class="draggable-item">
+                            <div class="checkbox"><label><input type="checkbox"> outro</label></div>
+                          </div><!--/.draggable-item-->
+                      </div>
+                    </div><!--/.col-->
+                    <div class="col-xs-4">teste</div><!--/.col-->
+                  </div><!--/row-->
+                </div><!--/.form-group-->
+              </form>
+            </div><!--/tab-content-->
+
+            <div id="envio-automatico-tab" class="tab-content">
+              conteúdo da aba 2
+            </div><!--/tab-content-->
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="Scripts/jquery1.11.0.min.js"></script>
+    <script src="Scripts/jquery-ui.min.js"></script><!--/required dor drag and drop function-->
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/highcharts.js"></script>
     <script src="Scripts/highcharts-more.js"></script>

@@ -118,7 +118,6 @@ label {font-weight: 300;}
  }
 
 .highcharts-title{display: none}
-text[text-anchor="end"] {display: none;}
 .affix-bar {
 	&.affix {
 		background: $page-background;
@@ -128,7 +127,6 @@ text[text-anchor="end"] {display: none;}
 		z-index: 10;
 	}
 }
- .nav-tabs > li.active > a {background-color: $page-background}
 
  .help-button { padding: 10px; font-size: 16px; margin: -3px -3px -3px 0;}
  .popover {color: $default-text; text-transform: none; font-weight: 300;}
@@ -240,7 +238,11 @@ input.date { width: 63px}
 	}
 
 .modal .panel-title {font-size: 14px;}
+
+
+
 /* PAINEIS */
+
 .panel {
 	.panel-body {background-color: #f9f9f9;
 		.intro {margin-bottom: 25px}
@@ -355,6 +357,36 @@ h3 {
 		    padding: 10px 20px;
 		    position: relative;
 		    top: 18px;
+	 	}
+	 }
+
+	 /* TABS  */
+	 .tab-container {
+	 	.tab-content {
+	 		padding: 20px;
+	 		display: none;
+
+	 		&.active {display: block;}
+	 	}
+	 	.nav-tabs > li.active > a, .tab-content {background-color: $box-bg}
+	 }
+
+	 /* DRAGGABLE LIST */
+	 #draggable-list {
+	 	.draggable-item {
+	 		cursor: move;
+	 		padding: 1px 15px 1px 30px;
+	 		background-color: lighten($dark-box-bg, 5%);
+	 		background-image:  url("img/draggable-texture.png");
+	 		background-position: 10px 10px;
+	 		background-repeat: no-repeat;
+	 		margin-bottom: 5px;
+
+	 		&.active {background-color: lighten($good, 40%)}
+	 		&.active:hover {background-color: lighten($good, 30%)}
+	 		&:hover {background-color: lighten($dark-box-bg, 1%);};
+
+	 		label {width: 100%}
 	 	}
 	 }
 
