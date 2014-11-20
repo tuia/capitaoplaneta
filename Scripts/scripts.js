@@ -73,14 +73,15 @@ var jq = jQuery.noConflict();
 			jq(this).toggleClass('open');
 			jq(this).parents('.accordion-box').find('.accordion-hidden').slideToggle();
 			if ( jq(this).hasClass('open') ) {
-				jq(this).html('<i class="fa fa-chevron-up"></i>');
+				jq(this).find('.fa').removeClass('fa-chevron-down');
+				jq(this).find('.fa').addClass('fa-chevron-up');
 			} else {
-				jq(this).html('<i class="fa fa-chevron-down"></i>');
+				jq(this).find('.fa').removeClass('fa-chevron-up');
+				jq(this).find('.fa').addClass('fa-chevron-down');
 			}
 			return false
 		});
 		jq(".accordion-container input[type='radio']").change(function(){
-			console.log('estou na função');
 		    jq(this).parents('.accordion-container').find('.accordion-hidden').slideUp();
 		    jq(this).parents('.accordion-container').find('.radio label').addClass('lighter');
 		    jq(this).parents('.accordion-box').find('.accordion-hidden').slideDown();

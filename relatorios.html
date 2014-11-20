@@ -1473,7 +1473,7 @@
               <li><a href="#envio-automatico-tab">envio automático</a></li>
             </ul>
 
-            <div id="geral-tab" class="tab-content active">
+            <div id="geral-tab" class="tab-content">
               <form role="form">
                 <div class="form-group">
                   <label for="">nome</label>
@@ -1530,20 +1530,96 @@
                           </div><!--/.draggable-item-->
                       </div>
                     </div><!--/.col-->
-                    <div class="col-xs-4">teste</div><!--/.col-->
+                    <div class="col-xs-6">
+                      <p><img src="Content/img/cursor-move.png" alt="" class="pull-left">clique e arraste para reordenar as seções.</p>
+                      <p>marque o checkbox para exibir e desmarque o checkbox para esconder seções.</p>
+                      <a href="" class="btn btn-default btn-block">restaurar seções padrão</a>
+                    </div><!--/.col-->
                   </div><!--/row-->
                 </div><!--/.form-group-->
               </form>
             </div><!--/tab-content-->
 
-            <div id="envio-automatico-tab" class="tab-content">
-              conteúdo da aba 2
+            <div id="envio-automatico-tab" class="tab-content active">
+              <div class="alert">envio automático ativo</div>
+
+              <div class="accordion-container">
+
+
+                <div class="panel panel-default accordion-box">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a href="#" class="panel-title accordion-trigger btn-block">
+                       Destinatários <i class="fa fa-chevron-down pull-right  "></i>
+                      </a>
+                    </h4>
+                  </div>
+                  <div class="accordion-hidden">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-11">
+                          <p>pedrodealbergaria@anhanguera.com.br, juliana.almada@gmail.com, jose.assis@latitude14.com.br</p>
+                        </div>
+                        <div class="col-xs-1">
+                          <a href="#" class="edit-button">editar</a>
+                        </div>
+                      </div>
+                      <form>
+                        <div class="form-group">
+                          <div class="input-group col-xs-6">
+                            <input type="text" class="form-control" value="pedrodealbergaria@anhanguera.com.br" placeholder="email">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button"><i class="fa fa-times"></i></button>
+                            </span>
+                          </div><!-- /input-group -->
+                        </div><!--/form-group-->
+                        <div class="form-group">
+                          <div class="input-group col-xs-6">
+                            <input type="text" class="form-control" value="julianaalmada@yahoo.com.br" placeholder="email">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button"><i class="fa fa-times"></i></button>
+                            </span>
+                          </div><!-- /input-group -->
+                        </div><!--/form-group-->
+                        <div class="form-group">
+                          <div class="input-group col-xs-6">
+                            <input type="text" class="form-control" value="jose.assis@gmail.com.br" placeholder="email">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button"><i class="fa fa-times"></i></button>
+                            </span>
+                          </div><!-- /input-group -->
+                        </div><!--/form-group-->
+                        <div class="form-group">
+                          <div class="input-group col-xs-6">
+                            <input type="text" class="form-control" value="jose.assis@gmail.com.br" placeholder="email">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button"><i class="fa fa-times"></i></button>
+                            </span>
+                          </div><!-- /input-group -->
+                        </div><!--/form-group-->
+                        <div class="form-group has-error">
+                          <div class="input-group col-xs-6 pull-left">
+                            <input type="text" class="form-control" value="" placeholder="email">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button"><i class="fa fa-plus"></i> adicionar</button>
+                            </span>
+                          </div><!-- /input-group -->
+                          <div class="col-xs-6">
+                          <span class="help-block"><span class="glyphicon glyphicon-remove"></span> favor inserir um endereço de email válido.</div></span>
+                        </div><!--/form-group-->
+                      </form>
+                    </div><!--/panel-body-->                    
+                  </div><!--/accordion-hidden-->
+                </div><!--/accordion-box-->
+
+              </div><!--/accordion-group-->
+
             </div><!--/tab-content-->
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">cancelar</button>
+            <button type="button" class="btn btn-primary">salvar</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
