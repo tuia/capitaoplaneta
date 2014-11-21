@@ -314,6 +314,10 @@ input.hour {
   width: 60px;
 }
 
+input.days {
+  width: 30px;
+}
+
 input.date {
   width: 63px;
 }
@@ -538,10 +542,10 @@ h3 {
 /* DRAGGABLE LIST */
 #draggable-list .draggable-item {
   cursor: move;
-  padding: 1px 15px 1px 30px;
+  padding: 0 15px 0 25px;
   background-color: #f0f1f1;
   background-image: url("img/draggable-texture.png");
-  background-position: 10px 10px;
+  background-position: 5px 5px;
   background-repeat: no-repeat;
   margin-bottom: 5px;
 }
@@ -556,6 +560,34 @@ h3 {
 }
 #draggable-list .draggable-item label {
   width: 100%;
+}
+#draggable-list .draggable-item .checkbox {
+  margin: 0;
+  padding: 5px 0;
+}
+
+/* TOGGLE BAR */
+.toggle-bar {
+  background-color: #e3e4e5;
+  display: block;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.toggle-bar.active {
+  background-color: #27ae60;
+  color: white;
+}
+.toggle-bar .fa {
+  display: inline-block;
+  margin-right: 5px;
 }
 
 /* SOCIAL ICONS */

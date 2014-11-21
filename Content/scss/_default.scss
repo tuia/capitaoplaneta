@@ -164,6 +164,7 @@ input.edit-on-hover {
 	}
 }
 input.hour { width: 60px }
+input.days {width: 30px}
 input.date { width: 63px}
 
 	/* validation and feedback */
@@ -375,10 +376,10 @@ h3 {
 	 #draggable-list {
 	 	.draggable-item {
 	 		cursor: move;
-	 		padding: 1px 15px 1px 30px;
+	 		padding: 0 15px 0 25px;
 	 		background-color: lighten($dark-box-bg, 5%);
 	 		background-image:  url("img/draggable-texture.png");
-	 		background-position: 10px 10px;
+	 		background-position: 5px 5px;
 	 		background-repeat: no-repeat;
 	 		margin-bottom: 5px;
 
@@ -387,6 +388,27 @@ h3 {
 	 		&:hover {background-color: lighten($dark-box-bg, 1%);};
 
 	 		label {width: 100%}
+	 		.checkbox {margin: 0; padding: 5px 0}
+	 	}
+	 }
+
+	 /* TOGGLE BAR */
+	 .toggle-bar {
+	 	background-color: $dark-box-bg;
+	 	display: block;
+	 	padding: 8px 10px;
+	 	margin-bottom: 15px;
+		@include border-radius(5px);
+ 		@include transition(all, .4s, ease-in-out);
+
+	 	&.active {
+	 		background-color: $good;
+	 		color: $inverse-text;
+	 	}
+
+	 	.fa {
+	 		display: inline-block;
+	 		margin-right: 5px;
 	 	}
 	 }
 
