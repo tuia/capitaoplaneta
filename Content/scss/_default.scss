@@ -118,6 +118,8 @@ label {font-weight: 300;}
  }
 
 .highcharts-title{display: none}
+text[text-anchor="end"] {display: none;}
+
 .affix-bar {
 	&.affix {
 		background: $page-background;

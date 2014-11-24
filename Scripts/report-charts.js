@@ -643,7 +643,20 @@ Highcharts.setOptions(Highcharts.theme);
                 });
             });
 
+    //MIDIAS
+
+        // EVOLUCAO 
+
+        /*
+        jq(function () {
+            jq('#midias-evolucao').highcharts({
+
+
+        // TOTAL 
+
+        jq(function () {
+            jq('#midias-total').highcharts({
 
 
 
-
+*/

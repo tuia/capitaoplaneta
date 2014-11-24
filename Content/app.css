@@ -229,6 +229,10 @@ a[data-toggle="collapse"] {
   display: none;
 }
 
+text[text-anchor="end"] {
+  display: none;
+}
+
 .affix-bar.affix {
   background: #e8f2e8;
   top: 0;
