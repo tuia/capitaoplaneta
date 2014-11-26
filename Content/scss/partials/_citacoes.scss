@@ -37,7 +37,7 @@
 
 /*actions bar*/
 #actions-bar {
-	padding: 5px 0;
+	padding: 10px 0;
 
 	.feeling-menu {
 		min-width: 33px;
@@ -92,7 +92,7 @@
 						&.relacionamento {background-position: -297px -64px}
 					}
 				}
-				&:hover {background: lighten($btn-default, 5%);}
+				&:hover {background: darken($btn-default, 5%);}
 				&.good {background-color: $good}
 				&.neutral {background-color: $neutral}
 				&.bad {background-color: $bad}

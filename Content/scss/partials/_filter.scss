@@ -8,6 +8,24 @@
   width: 890px;
   left: -840px;
 
+    /* placeholder */
+  ::-webkit-input-placeholder { /* WebKit browsers */
+      color:    $default-text !important;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+     color:    $default-text !important;
+     opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color:    $default-text !important;
+     opacity:  1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+     color:    $default-text !important;
+  }
+
+  select, input[type=text], .dropdown-toggle {font-size: 12px; border: 1px solid transparent;}
+
   .filter-btn-container {
     float: right;
     margin: 180px 0 0;
@@ -53,16 +71,19 @@
     .filter-group > .btn-group >.btn, .btn-default, .form-control {
       background-color: $btn-filter;
       color: $dark-text;
-      border-bottom: 1px solid darken($btn-filter, 40%);
+      border-bottom: 1px solid darken($btn-filter, 5%);
+      border-right: 1px solid darken($btn-filter, 5%);
       border-top: none;
     }
     .filter-group > .btn-group >.btn:hover, .btn-default:hover, .form-control:hover {
-      background-color: rgba(255,255,255,.8);
+      background-color: darken($btn-filter, 5%);
+      z-index: inherit;
     }
+    .saved-filters .control-label {color: lighten($notification-background, 30%); padding: 5px 0 0; font-size: 12px;}
 
     h2 {font-size: 20px; margin: 0 0 10px; }
     h4 {
-      color: $inverse-text;
+      color: lighten($notification-background, 50%);
       text-transform: uppercase;
       font-size: 15px;
       padding: 0 0 7px 0;
@@ -70,13 +91,14 @@
       font-weight: bold;
       margin-bottom: 10px;
     }
-    h5 {margin-bottom: 5px;}
+    h5 {margin-bottom: 5px; color: lighten($notification-background, 40%);}
 
 
     .filter-group {
 
       .selectpicker {
         background-color: transparent;
+        font-weight: 300;
       }
       
       .btn-group {
@@ -91,19 +113,31 @@
 
       .btn, .btn-default {
         font-size: 12px;
+        font-weight: 200;
         margin: 0;
-        border-right: 1px solid darken($btn-filter, 40%);
         &:last-child {border-right: none;}
 
         &.active {
-          background-color: $notification-background;
-          color: $inverse-text;
-          border-top: 1px solid darken($notification-background, 20%);
-          border-right: 1px solid darken($notification-background, 10%);
+          background-color: $selected-filter;
+          color: lighten($notification-background, 5%);
+          border-top: 1px solid darken($selected-filter, 5%);
+          border-right: 1px solid darken($selected-filter, 5%);
           border-bottom: none;
           z-index: 0;
-          &:hover {background-color: lighten($notification-background, 10%);}
+          &:hover {background-color: darken($selected-filter, 5%);}
           input {color: $default-text}
+          &.good {
+            border-top: 1px solid darken($good, 5%);
+            border-right: 1px solid darken($good, 5%);
+          }
+          &.neutral {
+            border-top: 1px solid darken($neutral, 5%);
+            border-right: 1px solid darken($neutral, 5%);
+          }
+          &.bad {
+            border-top: 1px solid darken($bad, 5%);
+            border-right: 1px solid darken($bad, 5%);
+          }
         }
       }
 
@@ -116,6 +150,7 @@
       &.midias {
         .btn {width: 20%;}
         .btn:last-child, .btn:nth-last-child(2) {width: 50%}
+        .btn:nth-child(8) {padding: 6px}
       }
       &.feeling {
         @extend .btn-group.feeling;
@@ -130,9 +165,13 @@
       &.crm {
         .btn {
           white-space: normal;
-          height: 50px;
+          height: 41px;
+          line-height: 1.1em;
           &:first-child {padding-top: 14px;}
         }
+      }
+      &.status .btn:first-child {
+        font-size: 11px;
       }
       
     }/*filter group*/
@@ -158,5 +197,10 @@
       text-transform: uppercase;
     }
     .pull-right a:first-child {color: $inverse-text}
+  }
+
+  .tags-menu {
+    .btn-default, .btn-default:hover {background-color: inherit; color: inherit;}
+    .form-control, .form-control:hover {background-color: #FFFFFF; border: 1px solid transparent;}
   }
 }

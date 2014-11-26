@@ -84,6 +84,7 @@ ANIMATIONS
 /* LINKS */
 /* BOXES */
 /* BUTTONS */
+/*$btn-filter: rgba(255,255,255,.65);*/
 /* SOCIAL */
 /* selected item */
 /* THE CSS */
@@ -168,7 +169,7 @@ label {
 }
 
 .btn-default:hover, .report-panel.panel .panel-body .slide .carousel-indicators li:hover {
-  background-color: #f6f7f7;
+  background-color: #dcdddf;
 }
 
 .btn-default.active:hover, .report-panel.panel .panel-body .slide .carousel-indicators li.active:hover {
@@ -176,7 +177,7 @@ label {
 }
 
 .btn-primary:hover {
-  background-color: #609aa5;
+  background-color: #4c7d86;
 }
 
 .btn-darker:hover {
@@ -194,7 +195,7 @@ label {
 }
 
 .dropdown-menu > li a:hover {
-  background-color: #f6f7f7;
+  background-color: #dcdddf;
 }
 
 .dropdown-menu .divider {
@@ -217,6 +218,12 @@ label {
 
 .popover .popover-content {
   font-size: 14px;
+}
+
+.btn-lg {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 
 a[data-toggle="collapse"] {
@@ -375,26 +382,26 @@ input.date {
 }
 
 /* placeholder */
-::-webkit-input-placeholder {
+.form-control ::-webkit-input-placeholder, ::-webkit-input-placeholder {
   /* WebKit browsers */
-  color: #cccccc !important;
+  color: #cccccc;
 }
 
-:-moz-placeholder {
+.form-control :-moz-placeholder, :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: #cccccc !important;
+  color: #cccccc;
   opacity: 1;
 }
 
-::-moz-placeholder {
+.form-control ::-moz-placeholder, ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: #cccccc !important;
+  color: #cccccc;
   opacity: 1;
 }
 
-:-ms-input-placeholder {
+.form-control :-ms-input-placeholder, :-ms-input-placeholder {
   /* Internet Explorer 10+ */
-  color: #cccccc !important;
+  color: #cccccc;
 }
 
 .modal .panel-title {
@@ -610,61 +617,61 @@ h3 {
   color: #3b5998;
 }
 .social.facebook:hover {
-  color: #4c70ba;
+  color: #2d4373;
 }
 .social.twitter {
   color: #00aced;
 }
 .social.twitter:hover {
-  color: #21c2ff;
+  color: #0087ba;
 }
 .social.youtube {
   color: #bb0000;
 }
 .social.youtube:hover {
-  color: #ee0000;
+  color: #880000;
 }
 .social.gplus {
   color: #dd4b39;
 }
 .social.gplus:hover {
-  color: #e47365;
+  color: #c23321;
 }
 .social.instagram {
   color: #517fa4;
 }
 .social.instagram:hover {
-  color: #7098b8;
+  color: #406582;
 }
 .social.flickr {
   color: #ff0084;
 }
 .social.flickr:hover {
-  color: #ff339d;
+  color: #cc006a;
 }
 .social.linkedin {
   color: #007bb6;
 }
 .social.linkedin:hover {
-  color: #009de9;
+  color: #005983;
 }
 .social.blogger {
   color: #ff6600;
 }
 .social.blogger:hover {
-  color: #ff8533;
+  color: #cc5200;
 }
 .social.foursquare {
   color: #0072b1;
 }
 .social.foursquare:hover {
-  color: #0093e4;
+  color: #00517e;
 }
 .social.reclame-aqui {
   color: #008751;
 }
 .social.reclame-aqui:hover {
-  color: #00a160;
+  color: #006e42;
 }
 .social.reclame-aqui .reclame-aqui-icon {
   width: 70%;
@@ -747,7 +754,7 @@ h3 {
   background-color: #e9eaeb;
 }
 .quote .btn-group .btn:hover, .quote .btn-group .report-panel.panel .panel-body .slide .carousel-indicators li:hover, .report-panel.panel .panel-body .slide .carousel-indicators .quote .btn-group li:hover, .quote .btn-group .btn:active, .quote .btn-group .report-panel.panel .panel-body .slide .carousel-indicators li:active, .report-panel.panel .panel-body .slide .carousel-indicators .quote .btn-group li:active, .quote .btn-group .btn:focus, .quote .btn-group .report-panel.panel .panel-body .slide .carousel-indicators li:focus, .report-panel.panel .panel-body .slide .carousel-indicators .quote .btn-group li:focus, .quote .accordion-trigger:hover, .quote .accordion-trigger:active, .quote .accordion-trigger:focus, .quote footer .btn:hover, .quote footer .report-panel.panel .panel-body .slide .carousel-indicators li:hover, .report-panel.panel .panel-body .slide .carousel-indicators .quote footer li:hover, .quote footer .btn:active, .quote footer .report-panel.panel .panel-body .slide .carousel-indicators li:active, .report-panel.panel .panel-body .slide .carousel-indicators .quote footer li:active, .quote footer .btn:focus, .quote footer .report-panel.panel .panel-body .slide .carousel-indicators li:focus, .report-panel.panel .panel-body .slide .carousel-indicators .quote footer li:focus {
-  background-color: #f6f7f7;
+  background-color: #dcdddf;
 }
 
 .btn-group.feeling label, #filter-panel .filter-content .filter-group.feeling label {
@@ -1114,19 +1121,19 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   background-color: #27ae60;
 }
 .mec-menu .btn-group .dropdown-menu .btn.good:hover, .mec-menu .btn-group .dropdown-menu .report-panel.panel .panel-body .slide .carousel-indicators li.good:hover, .report-panel.panel .panel-body .slide .carousel-indicators .mec-menu .btn-group .dropdown-menu li.good:hover {
-  background-color: #36d278;
+  background-color: #1e8449;
 }
 .mec-menu .btn-group .dropdown-menu .btn.neutral, .mec-menu .btn-group .dropdown-menu .report-panel.panel .panel-body .slide .carousel-indicators li.neutral, .report-panel.panel .panel-body .slide .carousel-indicators .mec-menu .btn-group .dropdown-menu li.neutral {
   background-color: #2980b9;
 }
 .mec-menu .btn-group .dropdown-menu .btn.neutral:hover, .mec-menu .btn-group .dropdown-menu .report-panel.panel .panel-body .slide .carousel-indicators li.neutral:hover, .report-panel.panel .panel-body .slide .carousel-indicators .mec-menu .btn-group .dropdown-menu li.neutral:hover {
-  background-color: #409ad5;
+  background-color: #20638f;
 }
 .mec-menu .btn-group .dropdown-menu .btn.bad, .mec-menu .btn-group .dropdown-menu .report-panel.panel .panel-body .slide .carousel-indicators li.bad, .report-panel.panel .panel-body .slide .carousel-indicators .mec-menu .btn-group .dropdown-menu li.bad {
   background-color: #c0392b;
 }
 .mec-menu .btn-group .dropdown-menu .btn.bad:hover, .mec-menu .btn-group .dropdown-menu .report-panel.panel .panel-body .slide .carousel-indicators li.bad:hover, .report-panel.panel .panel-body .slide .carousel-indicators .mec-menu .btn-group .dropdown-menu li.bad:hover {
-  background-color: #d65548;
+  background-color: #962d22;
 }
 .mec-menu .btn-group .dropdown-menu .btn.remove, .mec-menu .btn-group .dropdown-menu .report-panel.panel .panel-body .slide .carousel-indicators li.remove, .report-panel.panel .panel-body .slide .carousel-indicators .mec-menu .btn-group .dropdown-menu li.remove {
   background-position: -363px -96px !important;
@@ -1174,33 +1181,33 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 
 /* TAGS DROPDOWN */
-.tags-menu .dropdown-toggle {
+.tags-menu .dropdown-toggle, #filter-panel .tags-menu .dropdown-toggle {
   text-align: left;
 }
-.tags-menu .dropdown-toggle i {
+.tags-menu .dropdown-toggle i, #filter-panel .tags-menu .dropdown-toggle i {
   margin: 4px 5px;
 }
-.tags-menu .dropdown-toggle .caret {
+.tags-menu .dropdown-toggle .caret, #filter-panel .tags-menu .dropdown-toggle .caret {
   float: right;
   margin-top: -1em;
 }
-.tags-menu .dropdown-menu {
+.tags-menu .dropdown-menu, #filter-panel .tags-menu .dropdown-menu {
   width: 190px;
 }
-.tags-menu .dropdown-menu .btn-block {
+.tags-menu .dropdown-menu .btn-block, #filter-panel .tags-menu .dropdown-menu .btn-block {
   margin-bottom: 1px;
 }
-.tags-menu .dropdown-menu .form-control {
+.tags-menu .dropdown-menu .form-control, #filter-panel .tags-menu .dropdown-menu .form-control {
   height: 30px;
 }
-.tags-menu .dropdown-menu .auto {
+.tags-menu .dropdown-menu .auto, #filter-panel .tags-menu .dropdown-menu .auto {
   margin: 10px 0;
 }
-.tags-menu .dropdown-menu .form-group {
+.tags-menu .dropdown-menu .form-group, #filter-panel .tags-menu .dropdown-menu .form-group {
   background: #e9eaeb;
   padding: 5px 10px;
 }
-.tags-menu .dropdown-menu .checkbox {
+.tags-menu .dropdown-menu .checkbox, #filter-panel .tags-menu .dropdown-menu .checkbox {
   background: #e9eaeb;
   cursor: pointer;
   display: block;
@@ -1208,10 +1215,10 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   padding: 5px;
   font-size: .9em;
 }
-.tags-menu .dropdown-menu .checkbox:hover {
-  background: #f6f7f7;
+.tags-menu .dropdown-menu .checkbox:hover, #filter-panel .tags-menu .dropdown-menu .checkbox:hover {
+  background: #dcdddf;
 }
-.tags-menu .dropdown-menu .checkbox label {
+.tags-menu .dropdown-menu .checkbox label, #filter-panel .tags-menu .dropdown-menu .checkbox label {
   display: block;
 }
 
@@ -1352,13 +1359,13 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   border-left: 5px solid #dddddd;
 }
 .ribbon.em-andamento:hover, .ribbon.encaminhado:hover, .ribbon.fechado:hover {
-  background: #eaeaea;
+  background: #d0d0d0;
 }
 .ribbon.em-andamento:hover:before, .ribbon.encaminhado:hover:before, .ribbon.fechado:hover:before {
-  border-right: 10px solid #eaeaea;
+  border-right: 10px solid #d0d0d0;
 }
 .ribbon.em-andamento:hover:after, .ribbon.encaminhado:hover:after, .ribbon.fechado:hover:after {
-  border-left: 5px solid #eaeaea;
+  border-left: 5px solid #d0d0d0;
 }
 .ribbon.em-andamento.em-andamento, .ribbon.encaminhado.em-andamento, .ribbon.fechado.em-andamento {
   color: #d35400;
@@ -1418,6 +1425,9 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .quote-historic dl dd .quote-small {
   margin-bottom: 10px;
 }
+.quote-historic dl dd .quote-small .quote-content {
+  background-color: #f6f7f8;
+}
 
 .quote {
   margin: 0 0 30px 0;
@@ -1443,7 +1453,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   background-color: #c4d3db;
 }
 .quote.selected .btn-group .btn:hover, .quote.selected .btn-group .report-panel.panel .panel-body .slide .carousel-indicators li:hover, .report-panel.panel .panel-body .slide .carousel-indicators .quote.selected .btn-group li:hover, .quote.selected .accordion-trigger:hover, .quote.selected footer .btn:hover, .quote.selected footer .report-panel.panel .panel-body .slide .carousel-indicators li:hover, .report-panel.panel .panel-body .slide .carousel-indicators .quote.selected footer li:hover, .quote.selected .sidebar .btn.social:hover, .quote.selected .sidebar .report-panel.panel .panel-body .slide .carousel-indicators li.social:hover, .report-panel.panel .panel-body .slide .carousel-indicators .quote.selected .sidebar li.social:hover, .quote.selected .quote-content .status-btn:hover {
-  background-color: #d4dfe5;
+  background-color: #b4c7d1;
 }
 .quote.selected .quote-content {
   background-color: #d3e3eb;
@@ -1455,10 +1465,10 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   border-left: 10px solid #c4d3db;
 }
 .quote.selected .quote-content .status-btn:hover:before {
-  border-right: 10px solid #d4dfe5;
+  border-right: 10px solid #b4c7d1;
 }
 .quote.selected .quote-content .status-btn:hover:after {
-  border-left: 10px solid #d4dfe5;
+  border-left: 10px solid #b4c7d1;
 }
 .quote.selected .quote-content .sidebar .tags-btn {
   float: right;
@@ -1466,8 +1476,20 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .quote.selected .quote-content .sidebar .tags, .quote.selected .quote-content .sidebar .tags-menu .tags-btn {
   background-color: #c4d3db;
 }
+.quote.selected .quote-content .sidebar .tags-menu .tags-btn:hover {
+  background-color: #baccd5;
+}
 .quote.selected .quote-content .sidebar .leitura-btn {
   background: #dae4e9;
+}
+.quote.selected .quote-content .sidebar .leitura-btn:hover {
+  background-color: #d1dce3;
+}
+.quote.selected .quote-historic dl dd .description {
+  background-color: #EEF4F7;
+}
+.quote.selected .quote-historic dl dd .quote-small .quote-content {
+  background-color: #EEF4F7;
 }
 .quote .quote-content {
   position: relative;
@@ -1591,7 +1613,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   background-color: #dddddd;
 }
 .quote .quote-content .sidebar .social:hover {
-  background: #eaeaea;
+  background: #d0d0d0;
 }
 .quote .quote-content .sidebar .leitura-btn {
   background: #e9eaeb;
@@ -1601,7 +1623,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   padding: 5px 11px;
 }
 .quote .quote-content .sidebar .leitura-btn:hover {
-  background: #f6f7f7;
+  background: #dcdddf;
 }
 .quote .quote-content .sidebar .tags {
   float: left;
@@ -1653,7 +1675,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   padding: 6px 9px;
 }
 .quote .quote-content .sidebar .tags-menu .tags-btn:hover {
-  background-color: #f6f7f7;
+  background-color: #dcdddf;
 }
 .quote footer > .btn-group {
   margin: 0 50px 0 0;
@@ -1711,7 +1733,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 /*HISTÓRICO*/
 .at-description {
   position: relative;
-  background-color: #f7f7f7;
+  background-color: #EEF4F7;
   padding: 10px;
 }
 .at-description .at-name {
@@ -1858,7 +1880,6 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   background-color: #f4f4f4;
   border: none;
   position: relative;
-  color: #333333;
 }
 .configure.list-group .list-group-item .form-control {
   max-width: 200px;
@@ -1867,6 +1888,7 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .configure.list-group .list-group-item .name {
   max-width: 260px;
   display: inline-block;
+  color: #333333;
 }
 .configure.list-group .list-group-item .options {
   float: right;
@@ -1955,7 +1977,30 @@ used in citacoes and perfil-do-usuario */
   top: 0;
   width: 890px;
   left: -840px;
+  /* placeholder */
   /*filter content*/
+}
+#filter-panel ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #666666 !important;
+}
+#filter-panel :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #666666 !important;
+  opacity: 1;
+}
+#filter-panel ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #666666 !important;
+  opacity: 1;
+}
+#filter-panel :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #666666 !important;
+}
+#filter-panel select, #filter-panel input[type=text], #filter-panel .dropdown-toggle {
+  font-size: 12px;
+  border: 1px solid transparent;
 }
 #filter-panel .filter-btn-container {
   float: right;
@@ -1996,20 +2041,27 @@ used in citacoes and perfil-do-usuario */
   /*filter group*/
 }
 #filter-panel .filter-content .filter-group > .btn-group > .btn, #filter-panel .filter-content .report-panel.panel .panel-body .slide .carousel-indicators .filter-group > .btn-group > li, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group > .btn-group > li, #filter-panel .filter-content .btn-default, #filter-panel .filter-content .report-panel.panel .panel-body .slide .carousel-indicators li, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content li, #filter-panel .filter-content .form-control {
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: #86909a;
   color: #333333;
-  border-bottom: 1px solid rgba(153, 153, 153, 0.65);
+  border-bottom: 1px solid #78838e;
+  border-right: 1px solid #78838e;
   border-top: none;
 }
 #filter-panel .filter-content .filter-group > .btn-group > .btn:hover, #filter-panel .filter-content .report-panel.panel .panel-body .slide .carousel-indicators .filter-group > .btn-group > li:hover, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group > .btn-group > li:hover, #filter-panel .filter-content .btn-default:hover, #filter-panel .filter-content .report-panel.panel .panel-body .slide .carousel-indicators li:hover, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content li:hover, #filter-panel .filter-content .form-control:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #78838e;
+  z-index: inherit;
+}
+#filter-panel .filter-content .saved-filters .control-label {
+  color: #a6b1bc;
+  padding: 5px 0 0;
+  font-size: 12px;
 }
 #filter-panel .filter-content h2, #filter-panel .filter-content .report-panel.panel .panel-body h4, .report-panel.panel .panel-body #filter-panel .filter-content h4 {
   font-size: 20px;
   margin: 0 0 10px;
 }
 #filter-panel .filter-content h4 {
-  color: white;
+  color: #e0e4e8;
   text-transform: uppercase;
   font-size: 15px;
   padding: 0 0 7px 0;
@@ -2019,9 +2071,11 @@ used in citacoes and perfil-do-usuario */
 }
 #filter-panel .filter-content h5 {
   margin-bottom: 5px;
+  color: #c3cbd2;
 }
 #filter-panel .filter-content .filter-group .selectpicker {
   background-color: transparent;
+  font-weight: 300;
 }
 #filter-panel .filter-content .filter-group .btn-group {
   width: 100%;
@@ -2037,25 +2091,37 @@ used in citacoes and perfil-do-usuario */
 }
 #filter-panel .filter-content .filter-group .btn, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li, #filter-panel .filter-content .filter-group .btn-default, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li {
   font-size: 12px;
+  font-weight: 200;
   margin: 0;
-  border-right: 1px solid rgba(153, 153, 153, 0.65);
 }
 #filter-panel .filter-content .filter-group .btn:last-child, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li:last-child, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li:last-child, #filter-panel .filter-content .filter-group .btn-default:last-child, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li:last-child, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li:last-child {
   border-right: none;
 }
 #filter-panel .filter-content .filter-group .btn.active, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li.active, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li.active, #filter-panel .filter-content .filter-group .btn-default.active, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li.active, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li.active {
-  background-color: #566573;
-  color: white;
-  border-top: 1px solid #2a3239;
-  border-right: 1px solid #404b56;
+  background-color: #213045;
+  color: #617282;
+  border-top: 1px solid #192434;
+  border-right: 1px solid #192434;
   border-bottom: none;
   z-index: 0;
 }
 #filter-panel .filter-content .filter-group .btn.active:hover, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li.active:hover, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li.active:hover, #filter-panel .filter-content .filter-group .btn-default.active:hover, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li.active:hover, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li.active:hover {
-  background-color: #6c7f90;
+  background-color: #192434;
 }
 #filter-panel .filter-content .filter-group .btn.active input, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li.active input, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li.active input, #filter-panel .filter-content .filter-group .btn-default.active input, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li.active input, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li.active input {
   color: #666666;
+}
+#filter-panel .filter-content .filter-group .btn.active.good, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li.active.good, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li.active.good, #filter-panel .filter-content .filter-group .btn-default.active.good, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li.active.good, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li.active.good {
+  border-top: 1px solid #229955;
+  border-right: 1px solid #229955;
+}
+#filter-panel .filter-content .filter-group .btn.active.neutral, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li.active.neutral, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li.active.neutral, #filter-panel .filter-content .filter-group .btn-default.active.neutral, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li.active.neutral, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li.active.neutral {
+  border-top: 1px solid #2472a4;
+  border-right: 1px solid #2472a4;
+}
+#filter-panel .filter-content .filter-group .btn.active.bad, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li.active.bad, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li.active.bad, #filter-panel .filter-content .filter-group .btn-default.active.bad, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li.active.bad, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li.active.bad {
+  border-top: 1px solid #ab3326;
+  border-right: 1px solid #ab3326;
 }
 #filter-panel .filter-content .filter-group .btn-set {
   width: 100%;
@@ -2072,6 +2138,9 @@ used in citacoes and perfil-do-usuario */
 #filter-panel .filter-content .filter-group.midias .btn:last-child, #filter-panel .filter-content .filter-group.midias .report-panel.panel .panel-body .slide .carousel-indicators li:last-child, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group.midias li:last-child, #filter-panel .filter-content .filter-group.midias .btn:nth-last-child(2), #filter-panel .filter-content .filter-group.midias .report-panel.panel .panel-body .slide .carousel-indicators li:nth-last-child(2), .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group.midias li:nth-last-child(2) {
   width: 50%;
 }
+#filter-panel .filter-content .filter-group.midias .btn:nth-child(8), #filter-panel .filter-content .filter-group.midias .report-panel.panel .panel-body .slide .carousel-indicators li:nth-child(8), .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group.midias li:nth-child(8) {
+  padding: 6px;
+}
 #filter-panel .filter-content .filter-group.feeling label:hover {
   background-image: url("img/mec-feel-sprite.png");
 }
@@ -2082,10 +2151,14 @@ used in citacoes and perfil-do-usuario */
 }
 #filter-panel .filter-content .filter-group.crm .btn, #filter-panel .filter-content .filter-group.crm .report-panel.panel .panel-body .slide .carousel-indicators li, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group.crm li {
   white-space: normal;
-  height: 50px;
+  height: 41px;
+  line-height: 1.1em;
 }
 #filter-panel .filter-content .filter-group.crm .btn:first-child, #filter-panel .filter-content .filter-group.crm .report-panel.panel .panel-body .slide .carousel-indicators li:first-child, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group.crm li:first-child {
   padding-top: 14px;
+}
+#filter-panel .filter-content .filter-group.status .btn:first-child, #filter-panel .filter-content .filter-group.status .report-panel.panel .panel-body .slide .carousel-indicators li:first-child, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group.status li:first-child {
+  font-size: 11px;
 }
 #filter-panel.open {
   left: 0;
@@ -2108,6 +2181,14 @@ used in citacoes and perfil-do-usuario */
 }
 #filter-panel footer .pull-right a:first-child {
   color: white;
+}
+#filter-panel .tags-menu .btn-default, #filter-panel .tags-menu .report-panel.panel .panel-body .slide .carousel-indicators li, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .tags-menu li, #filter-panel .tags-menu .btn-default:hover, #filter-panel .tags-menu .report-panel.panel .panel-body .slide .carousel-indicators li:hover, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .tags-menu li:hover {
+  background-color: inherit;
+  color: inherit;
+}
+#filter-panel .tags-menu .form-control, #filter-panel .tags-menu .form-control:hover {
+  background-color: #FFFFFF;
+  border: 1px solid transparent;
 }
 
 /* CORES */
@@ -2214,7 +2295,7 @@ used in citacoes and perfil-do-usuario */
 /*reload-box*/
 /*actions bar*/
 #actions-bar {
-  padding: 5px 0;
+  padding: 10px 0;
 }
 #actions-bar .feeling-menu {
   min-width: 33px;
@@ -2301,7 +2382,7 @@ used in citacoes and perfil-do-usuario */
   background-position: -297px -64px;
 }
 #actions-bar #mec-dropdown .dropdown-menu li > a:hover {
-  background: #f6f7f7;
+  background: #dcdddf;
 }
 #actions-bar #mec-dropdown .dropdown-menu li > a.good {
   background-color: #27ae60;
@@ -3870,7 +3951,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   color: white;
 }
 .report-panel.panel .panel-body .slide .carousel-indicators li.active:hover {
-  background-color: #8c8c8c;
+  background-color: #4d4d4d;
   color: white;
 }
 .report-panel.panel .panel-body .slide .item {
@@ -4041,3 +4122,5 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   margin: -8px 0;
   width: 27px;
 }
+
+/*  MODAL  */

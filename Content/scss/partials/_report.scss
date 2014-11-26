@@ -63,7 +63,7 @@
 						background-color: $btn-inverse;
 						color: $inverse-text;
 						&:hover {
-							background-color: lighten($btn-inverse, 15%);
+							background-color: darken($btn-inverse, 10%);
 							color: $inverse-text;
 						}
 					}
@@ -251,7 +251,10 @@
 }
 
 
-
+/*  MODAL  */
+#reportModal {
+	
+}
 
 
 

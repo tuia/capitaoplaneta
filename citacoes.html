@@ -33,7 +33,6 @@
         <button type="button" class="btn" id="filter-toggle"><i class="fa fa-filter"></i></button>
         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
           <span class="caret"></span>
-          <span class="sr-only">Toggle Dropdown</span>
         </button>
         <ul class="dropdown-menu" role="menu">
           <li>filtros salvos:</li>
@@ -53,16 +52,21 @@
           </div><!--/col-->
           <div class="col-xs-6">
             <div class="form-horizontal" role="form">
-              <div class="form-group">
-                <label for="" class="col-xs-6 control-label text-inverse">filtros salvos</label>
+              <div class="form-group saved-filters">
+                <label for="" class="col-xs-6 control-label">filtros salvos:</label>
                 <div class="col-xs-6">
-                  <select class="form-control input-sm">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown"><span class="pull-left">selecione</span> <span class="pull-right"><span class="caret"></span></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li>filtros salvos:</li>
+                      <li><a href="#">negativas</a></li>
+                      <li><a href="#">busca anhanguera</a></li>
+                      <li><a href="#">teste</a></li>
+                      <li><a href="#">sentimento bom</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#"><i class="fa fa-cog"></i> gerenciar filtros salvos</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -428,7 +432,7 @@
           </div>
         </div>
         <div class="pull-right">
-          <a href="#" class="reset-filter">limpar filtro</a>
+          <a href="#" class="btn btn-link reset-filter">limpar filtro</a>
           <a href="#" class="btn btn-default btn-lg" data-toggle="modal" data-target="#save-filter-modal">salvar filtro</a>
           <a href="#" class="btn btn-primary btn-lg">filtrar</a>
         </div>
@@ -702,7 +706,7 @@
           <div id="top-pagination" class="form-inline">
             <a href="#" class="nav-link disabled">&lsaquo; </a> | 
             PÁG
-            <input type="text" class="form-control edit-on-hover" vlaue="01">
+            <input type="text" class="form-control edit-on-hover" value="01">
             de 
             <a href="#"> 13 </a> | 
             <a href="#" class="nav-link"> &rsaquo; </a>

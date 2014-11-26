@@ -43,7 +43,8 @@
 	$btn-darker: #DDDDDD;
 	$btn-inverse: #666666;
 	$btn-primary: #558C96;
-	$btn-filter: rgba(255,255,255,.65);
+	/*$btn-filter: rgba(255,255,255,.65);*/
+	$btn-filter: #86909A;
 
 	/* SOCIAL */
 	$facebook-color: #3b5998;
@@ -62,6 +63,7 @@
 	$selected-light: #D3E3EB;
 	$selected-dark: #C4D3DB;
 	$selected-inverse: #6E7E8B;
+	$selected-filter: #213045;
 
 
 /* THE CSS */
@@ -90,15 +92,15 @@ label {font-weight: 300;}
 .neutral-bg {background-color: $neutral}
 .bad-bg {background-color: $bad}
 
-.btn-default:hover { background-color: lighten($btn-default, 5%)}
+.btn-default:hover { background-color: darken($btn-default, 5%)}
 .btn-default.active:hover { background-color: $btn-darker}
 
-.btn-primary:hover { background-color: lighten($btn-primary, 5%)}
+.btn-primary:hover { background-color: darken($btn-primary, 5%)}
 .btn-darker:hover { background-color: lighten($btn-darker, 5%)}
 
 .dropdown-menu {background-color: $btn-darker}
 .dropdown-menu > li a {background-color: $btn-default; margin-bottom: 1px; color: $default-text}
-.dropdown-menu > li a:hover {background-color: lighten($btn-default,5%)}
+.dropdown-menu > li a:hover {background-color: darken($btn-default,5%)}
 .dropdown-menu .divider {background-color: transparent; border: none;}
 
 
@@ -110,7 +112,9 @@ label {font-weight: 300;}
 		font-size: 14px;
 	}
 }
-
+.btn-lg {
+	@include border-radius(3px);
+}
  a[data-toggle="collapse"] {
  	display: block;
  	padding: 10px 15px;
@@ -225,19 +229,19 @@ input.date { width: 63px}
 
 
 	/* placeholder */
-	::-webkit-input-placeholder { /* WebKit browsers */
-	    color:    $lighter-text !important;
+	.form-control ::-webkit-input-placeholder, ::-webkit-input-placeholder { /* WebKit browsers */
+	    color:    $lighter-text;
 	}
-	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-	   color:    $lighter-text !important;
+	.form-control :-moz-placeholder, :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color:    $lighter-text;
 	   opacity:  1;
 	}
-	::-moz-placeholder { /* Mozilla Firefox 19+ */
-	   color:    $lighter-text !important;
+	.form-control ::-moz-placeholder, ::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color:    $lighter-text;
 	   opacity:  1;
 	}
-	:-ms-input-placeholder { /* Internet Explorer 10+ */
-	   color:    $lighter-text !important;
+	.form-control :-ms-input-placeholder, :-ms-input-placeholder { /* Internet Explorer 10+ */
+	   color:    $lighter-text;
 	}
 
 .modal .panel-title {font-size: 14px;}
@@ -428,43 +432,43 @@ h3 {
 
 		&.facebook {
 			color: $facebook-color;
-			&:hover { color: lighten($facebook-color, 10%) }
+			&:hover { color: darken($facebook-color, 10%) }
 		}
 		&.twitter {
 			color: $twitter-color;
-			&:hover { color: lighten($twitter-color, 10%) }
+			&:hover { color: darken($twitter-color, 10%) }
 		}
 		&.youtube {
 			color: $youtube-color;
-			&:hover { color: lighten($youtube-color, 10%) }
+			&:hover { color: darken($youtube-color, 10%) }
 		}
 		&.gplus {
 			color: $gplus-color;
-			&:hover { color: lighten($gplus-color, 10%) }
+			&:hover { color: darken($gplus-color, 10%) }
 		}
 		&.instagram {
 			color: $instagram-color;
-			&:hover { color: lighten($instagram-color, 10%) }
+			&:hover { color: darken($instagram-color, 10%) }
 		}
 		&.flickr {
 			color: $flickr-color;
-			&:hover { color: lighten($flickr-color, 10%) }
+			&:hover { color: darken($flickr-color, 10%) }
 		}
 		&.linkedin {
 			color: $linkedin-color;
-			&:hover { color: lighten($linkedin-color, 10%) }
+			&:hover { color: darken($linkedin-color, 10%) }
 		}
 		&.blogger {
 			color: $blogger-color;
-			&:hover { color: lighten($blogger-color, 10%) }
+			&:hover { color: darken($blogger-color, 10%) }
 		}
 		&.foursquare {
 			color: $foursquare-color;
-			&:hover { color: lighten($foursquare-color, 10%) }
+			&:hover { color: darken($foursquare-color, 10%) }
 		}
 		&.reclame-aqui{
 			color: $reclameaqui-color;
-			&:hover { color: lighten($reclameaqui-color, 5%) }
+			&:hover { color: darken($reclameaqui-color, 5%) }
 			.reclame-aqui-icon {width: 70%; padding: 5% 0 15%}
 		}
 	
@@ -523,7 +527,7 @@ h3 {
 	.quote .btn-group .btn, .quote .accordion-trigger, .quote footer .btn {
 	    background-color: $btn-default;
 		&:hover, &:active, &:focus  {
-    		background-color: lighten($btn-default, 5%);
+    		background-color: darken($btn-default, 5%);
 		}
 	}
 	.btn-group.feeling {
@@ -719,9 +723,9 @@ h3 {
 			.dropdown-menu {
 
 				.btn {
-					&.good {background-color: $good; &:hover {background-color: lighten($good,10%)}}
-					&.neutral {background-color: $neutral; &:hover {background-color: lighten($neutral,10%)}}
-					&.bad {background-color: $bad; &:hover {background-color: lighten($bad,10%)}}
+					&.good {background-color: $good; &:hover {background-color: darken($good,10%)}}
+					&.neutral {background-color: $neutral; &:hover {background-color: darken($neutral,10%)}}
+					&.bad {background-color: $bad; &:hover {background-color: darken($bad,10%)}}
 					&.remove {background-position: -363px -96px !important;&:hover, &:active {background-position: -396px -96px!important}}
 			    }
 			}
@@ -750,7 +754,7 @@ h3 {
 
 
 	/* TAGS DROPDOWN */
-	.tags-menu {
+	.tags-menu, #filter-panel .tags-menu {
 		.dropdown-toggle {
 			text-align: left;
 			i {margin: 4px 5px; }
@@ -775,7 +779,7 @@ h3 {
 				margin: 1px !important;
 				padding: 5px;
 				font-size: .9em;
-				&:hover { background: lighten($btn-default, 5%);}
+				&:hover { background: darken($btn-default, 5%);}
 
 				label {	display: block;	}
 			}
@@ -898,9 +902,9 @@ h3 {
 			&:before {border-right: 10px solid $btn-darker;}
 			&:after {border-left: 5px solid $btn-darker;}
 			&:hover { 
-				background: lighten($btn-darker, 5%);
-				&:before {border-right: 10px solid lighten($btn-darker, 5%);}
-				&:after {border-left: 5px solid lighten($btn-darker, 5%);}
+				background: darken($btn-darker, 5%);
+				&:before {border-right: 10px solid darken($btn-darker, 5%);}
+				&:after {border-left: 5px solid darken($btn-darker, 5%);}
 			}
 			/* CORES STATUS */
 			&.em-andamento {
@@ -958,12 +962,15 @@ h3 {
 		dd {
 			margin: 0 0 10px 60px;
 			.description {
-				background-color: $box-bg;
+				background-color: #f6f7f8;
 				padding: 5px 10px;
 				margin-bottom: 10px;
 			}
 			&> div:last-child {margin-bottom: 20px;}
-			.quote-small {margin-bottom: 10px}
+			.quote-small {
+				margin-bottom: 10px;
+				.quote-content {background-color: #f6f7f8}
+			}
 		}
 	}
 }
@@ -972,19 +979,18 @@ h3 {
 	margin: 0 0 30px 0;
 	border: 3px solid transparent;
 
-	.quote-storic {
-
-	}
-
 	&:nth-child(2n+1) .quote-content, &:nth-child(2n) .quote-historic {background-color: darken($light-box-bg, 5%);}
 
 	&.selected {
 		border-color: $selected-inverse;
+
 		.accordion-hidden {background-color: lighten($selected-light,3%)}
+
 		footer{background-color: $selected-light;}
+
 		.btn-group .btn, .accordion-trigger, footer .btn, .sidebar .btn.social, .quote-content .status-btn {
 			background-color: $selected-dark;
-			&:hover {background-color: lighten($selected-dark, 5%)}
+			&:hover {background-color: darken($selected-dark, 5%)}
 		}
 
 		.quote-content {
@@ -994,19 +1000,37 @@ h3 {
 				&:before {border-right: 10px solid $selected-dark;}
 				&:after {border-left: 10px solid $selected-dark;}
 				&:hover {
-					&:before {border-right: 10px solid lighten($selected-dark, 5%);}
-					&:after {border-left: 10px solid lighten($selected-dark, 5%);}					
+					&:before {border-right: 10px solid darken($selected-dark, 5%);}
+					&:after {border-left: 10px solid darken($selected-dark, 5%);}					
 				}
 			}
 			.sidebar {
 				.tags-btn {float: right;}
-				.tags, .tags-menu .tags-btn {background-color: $selected-dark;}
-				.leitura-btn {background: lighten($selected-dark, 7%)}
+				.tags, .tags-menu .tags-btn {
+					background-color: $selected-dark;
+				}
+				.tags-menu .tags-btn:hover {background-color: darken($selected-dark, 3%)}
+				.leitura-btn {
+					background: lighten($selected-dark, 7%);
+					&:hover {background-color: lighten($selected-dark, 4%)}
+				}
 			}
 
 		}
-	}
+		.quote-historic {
+			dl {
+				dd {
+					.description {
+						background-color: #EEF4F7;
+					}
 
+					.quote-small {
+						.quote-content {background-color: #EEF4F7}
+					}
+				}
+			}
+		}
+	}
 
 	.quote-content {
 		position: relative;
@@ -1130,7 +1154,7 @@ h3 {
 			}
 			.social {
 				background-color: $btn-darker;
-				&:hover {background: lighten($btn-darker, 5%)}
+				&:hover {background: darken($btn-darker, 5%)}
 			}
 			.leitura-btn {
 				background: $btn-default;
@@ -1138,7 +1162,7 @@ h3 {
 				height: 32px;
 				color: $light-text;
 				padding: 5px 11px;
-				&:hover { background: lighten($btn-default, 5%); }
+				&:hover { background: darken($btn-default, 5%); }
 			}
 			.tags {
 				float: left;
@@ -1185,7 +1209,7 @@ h3 {
 				    text-align: center;
 				    color: $light-text;
 				    padding: 6px 9px;
-				    &:hover { background-color: lighten($btn-default, 5%)}
+				    &:hover { background-color: darken($btn-default, 5%)}
 				}
 			}
 		}/*sidebar*/
@@ -1247,7 +1271,7 @@ h3 {
 /*HISTÓRICO*/
 .at-description {
 	position: relative;
-	background-color: darken($light-box-bg, 3%);
+	background-color: #EEF4F7;
 	padding: 10px;
 
 	.at-name {
@@ -1384,10 +1408,9 @@ h3 {
 		background-color: darken($striped-table, 2%);
 		border: none;
 		position: relative;
-		color: $dark-text;
 
 		.form-control { max-width: 200px; display: inline-block;}
-		.name { max-width: 260px; display: inline-block;}
+		.name { max-width: 260px; display: inline-block; color: $dark-text;}
 		.options {
 			float: right;
 			a {
