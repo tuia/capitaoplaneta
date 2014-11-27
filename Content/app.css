@@ -2086,6 +2086,21 @@ used in citacoes and perfil-do-usuario */
   background-color: transparent;
   font-weight: 300;
 }
+#filter-panel .filter-content .filter-group .unite-indicators {
+  margin: 0;
+  display: block;
+}
+#filter-panel .filter-content .filter-group .unite-indicators label {
+  color: #6c7f90;
+  font-weight: 300;
+  font-size: 12px;
+}
+#filter-panel .filter-content .filter-group .unite-indicators input[type="checkbox"] {
+  margin-top: 2px;
+}
+#filter-panel .filter-content .filter-group .unite-indicators .help-button {
+  padding: 3px 5px;
+}
 #filter-panel .filter-content .filter-group .btn-group {
   width: 100%;
 }
@@ -2208,10 +2223,6 @@ used in citacoes and perfil-do-usuario */
 }
 #filter-panel.report-filter-panel .filter-content > .row {
   margin-bottom: 20px;
-}
-#filter-panel.report-filter-panel .unite-indicators label {
-  color: #c3cbd2;
-  font-weight: 300;
 }
 
 /* CORES */
