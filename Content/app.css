@@ -4134,6 +4134,36 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 
 /*  MODAL  */
 /* PREFERÊNCIAS */
+/* NAVEGAÇÃO */
+#pref-nav li a, #config-nav li a {
+  background-color: #e3e4e5;
+  color: #666666;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+#pref-nav li.active a, #config-nav li.active a {
+  background-color: white;
+  color: #333333;
+  position: relative;
+  font-weight: bold;
+}
+#pref-nav li.active a:after, #config-nav li.active a:after {
+  content: " ";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-left: 20px solid white;
+  right: -20px;
+  top: 0px;
+}
+#pref-nav li.divider, #config-nav li.divider {
+  margin: 40px 0;
+  border: none;
+}
+
 /* PALAVRAS-CHAVE */
 #word-group .word-box {
   background-color: #f6f7f8;
@@ -4206,6 +4236,9 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 #word-group .word-box .word-media .btn .fa, #word-group .word-box .word-media .report-panel.panel .panel-body .slide .carousel-indicators li .fa, .report-panel.panel .panel-body .slide .carousel-indicators #word-group .word-box .word-media li .fa {
   margin-top: -1px;
+}
+#word-group .word-box .word-media .btn :hover, #word-group .word-box .word-media .report-panel.panel .panel-body .slide .carousel-indicators li :hover, .report-panel.panel .panel-body .slide .carousel-indicators #word-group .word-box .word-media li :hover {
+  background-color: #e9eaeb;
 }
 #word-group .word-box .edit-word {
   -moz-border-radius: 3px;

@@ -1,5 +1,40 @@
 /* PREFERÊNCIAS */
 
+	/* NAVEGAÇÃO */
+	#pref-nav, #config-nav {
+		li {
+			a {
+				background-color: $dark-box-bg;
+				color: $default-text;
+				text-transform: uppercase;
+				font-size: 13px;
+				margin-bottom: 10px
+			}
+			&.active {
+				a {
+					background-color: $light-box-bg;
+					color: $dark-text;
+					position: relative;
+					font-weight: bold;
+					&:after {
+					    content: " ";
+					    position: absolute;
+					    height: 0;
+					    width: 0;
+						border-bottom: 20px solid transparent;
+						border-top: 20px solid transparent;
+					    border-left: 20px solid $light-box-bg;
+					    right: -20px;
+					    top: 0px;
+					}
+				}
+			}
+			&.divider {
+				margin: 40px 0;
+				border: none;
+			}
+		}
+	}
 
 
 	/* PALAVRAS-CHAVE */
@@ -76,6 +111,9 @@
 					@include border-radius(3px);
 					.fa {
 						margin-top: -1px
+					}
+					:hover {
+						background-color: $btn-default;
 					}
 				}
 			}
