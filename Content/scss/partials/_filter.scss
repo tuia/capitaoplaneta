@@ -173,6 +173,18 @@
       &.status .btn:first-child {
         font-size: 11px;
       }
+
+      &.mec {
+        .mec-menu  {
+          .dropup {
+            float: left;
+            width: 33px;
+          }
+          .dropdown-menu {
+            border: none;
+          }
+        }
+      }
       
     }/*filter group*/
   }/*filter content*/
@@ -202,5 +214,16 @@
   .tags-menu {
     .btn-default, .btn-default:hover {background-color: inherit; color: inherit;}
     .form-control, .form-control:hover {background-color: #FFFFFF; border: 1px solid transparent;}
+  }
+
+
+  &.report-filter-panel {
+    .filter-content > .row {
+      margin-bottom: 20px
+    }
+    .unite-indicators label {
+      color: lighten($notification-background, 40%);
+      font-weight: 300;
+    }
   }
 }

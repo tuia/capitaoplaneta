@@ -561,7 +561,7 @@ h3 {
 	}
 
 	/* BOTÕES DOS MENUS DO MEC E DE SENTIMENTO */
-	.mec-menu .btn, .feeling-menu .btn, .feeling-icon, .mec-icon, .selected .mec-menu .btn, .selected .feeling-menu .btn, .selected .feeling-icon, .selected .mec-icon {
+	.mec-menu .btn, #filter-panel .mec-menu .btn, .feeling-menu .btn, .feeling-icon, .mec-icon, .selected .mec-menu .btn, .selected .feeling-menu .btn, .selected .feeling-icon, .selected .mec-icon {
 	    background-image: url("img/mec-feel-sprite.png");
 	    border: none !important;    
 	    height: 32px;
@@ -720,7 +720,7 @@ h3 {
 		&.bad {background-position: -396px -32px}
 	}
 	/* MEC MENU DROPUP */
-	.mec-menu {
+	.mec-menu, #filter-panel .mec-menu {
 		.btn-group {
 
 			.dropdown-menu {
