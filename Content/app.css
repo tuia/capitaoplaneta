@@ -226,6 +226,10 @@ label {
   border-radius: 3px;
 }
 
+.input-daterange .form-control {
+  display: inline-block;
+}
+
 a[data-toggle="collapse"] {
   display: block;
   padding: 10px 15px;
@@ -4129,3 +4133,93 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 
 /*  MODAL  */
+/* PREFERÊNCIAS */
+/* PALAVRAS-CHAVE */
+#word-group .word-box {
+  background-color: #f6f7f8;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+#word-group .word-box.active {
+  background-color: #566573;
+  color: white;
+}
+#word-group .word-box.active.hover {
+  background-color: #4b5864;
+}
+#word-group .word-box.active .toggle-word {
+  color: white;
+}
+#word-group .word-box.active .word-date, #word-group .word-box.active .word-count small:last-child {
+  color: #AAB0B3;
+}
+#word-group .word-box.hover {
+  background-color: #e8eaed;
+}
+#word-group .word-box .word-date, #word-group .word-box .word-count {
+  display: block;
+  text-align: center;
+}
+#word-group .word-box .word-title, #word-group .word-box .word-date, #word-group .word-box .word-media, #word-group .word-box .word-count {
+  margin: 0 -15px;
+  padding: 0 15px 0 0;
+  word-wrap: break-word;
+}
+#word-group .word-box .toggle-word {
+  font-size: 22px;
+  padding: 0 10px 10px;
+  margin: -10px;
+}
+#word-group .word-box .word-title {
+  text-transform: uppercase;
+  font-weight: normal;
+  display: block;
+}
+#word-group .word-box .word-date {
+  font-size: 12px;
+  color: #999999;
+}
+#word-group .word-box .word-count {
+  font-size: 18px;
+  line-height: 1.1em;
+}
+#word-group .word-box .word-count small {
+  font-size: 12px;
+}
+#word-group .word-box .word-count small:last-child {
+  margin-top: -3px;
+  display: block;
+  color: #999999;
+}
+#word-group .word-box .word-media .btn, #word-group .word-box .word-media .report-panel.panel .panel-body .slide .carousel-indicators li, .report-panel.panel .panel-body .slide .carousel-indicators #word-group .word-box .word-media li {
+  font-size: 12px;
+  padding: 0 3px;
+  margin: 3px;
+  min-width: 18px;
+  width: auto;
+  height: 18px;
+  cursor: default;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+#word-group .word-box .word-media .btn .fa, #word-group .word-box .word-media .report-panel.panel .panel-body .slide .carousel-indicators li .fa, .report-panel.panel .panel-body .slide .carousel-indicators #word-group .word-box .word-media li .fa {
+  margin-top: -1px;
+}
+#word-group .word-box .edit-word {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.modal .word-media .btn, .modal .word-media .report-panel.panel .panel-body .slide .carousel-indicators li, .report-panel.panel .panel-body .slide .carousel-indicators .modal .word-media li {
+  margin: 3px;
+}
+.modal .word-media .btn.active, .modal .word-media .report-panel.panel .panel-body .slide .carousel-indicators li.active, .report-panel.panel .panel-body .slide .carousel-indicators .modal .word-media li.active {
+  background-color: #566573;
+  color: white;
+}
+.modal .word-media .btn.active:hover, .modal .word-media .report-panel.panel .panel-body .slide .carousel-indicators li.active:hover, .report-panel.panel .panel-body .slide .carousel-indicators .modal .word-media li.active:hover {
+  background-color: #4b5864;
+}

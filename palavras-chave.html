@@ -193,36 +193,36 @@
             <div class="panel-body">
               <div class="intro">
                 <p>Saldo comprado: <strong>1900</strong>  Saldo restante: <strong>900 </strong>.  <a href="">adquirir mais</a></p>
-                <a href="" class="btn btn-default"><i class="fa fa-plus"></i> adicionar palavra-chave</a>
+                <a href="" class="btn btn-default" data-toggle="modal" data-target="#create-word-modal"><i class="fa fa-plus"></i> adicionar palavra-chave</a>
               </div>
 
-              <div class="word-group">
+              <div id="word-group">
 
                 <!--/PALAVRA-CHAVE-->
                 <div class="well word-box">
                   <div class="row">
-                    <div class="col-xs-1"><a href="" class="toggle-word"><i class="fa fa-check"></i></a></div>
+                    <div class="col-xs-1"><a href="#" class="toggle-word"><i class="fa fa-square-o"></i></a></div>
                     <div class="col-xs-3"><span class="word-title">Universidade Anhanguera Morumbi</span></div>
                     <div class="col-xs-2"><span class="word-date">de 01/04/14 a 01/01/15</span></div>
                     <div class="col-xs-3">
                       <!--/MÍDIAS-->
-                      <div class="btn-group word-media" data-toggle="buttons">
-                        <label class="btn btn-default active"><input type="checkbox" name="options" id="option1" checked> <i class="fa fa-facebook"></i></label>
-                        <label class="btn btn-default"><input type="checkbox" name="options" id="option2"> <i class="fa fa-twitter"></i></label>
-                        <label class="btn btn-default"><input type="checkbox" name="options" id="option3"> <i class="fa fa-youtube"></i></label>
-                        <label class="btn btn-default"><input type="checkbox" name="options" id="option4"> <i class="fa fa-google-plus"></i></label>
-                        <label class="btn btn-default"><input type="checkbox" name="options" id="option4"> <i class="fa fa-instagram"></i></label>
-                        <label class="btn btn-default active"><input type="checkbox" name="options" id="option5" checked> RA</label>
-                        <label class="btn btn-default"><input type="checkbox" name="options" id="option6"> <i class="fa fa-linkedin"></i></label>
-                        <label class="btn btn-default"><input type="checkbox" name="options" id="option7"> blog</label>
-                        <label class="btn btn-default"><input type="checkbox" name="options" id="option8"> <i class="fa fa-foursquare"></i></label>
-                        <label class="btn btn-default"><input type="checkbox" name="options" id="option9"> <i class="fa fa-flickr"></i></label>
-                        <label class="btn btn-default"><input type="checkbox" name="options" id="option5">fanpage</label>
-                        <label class="btn btn-default"><input type="checkbox" name="options" id="option5">mkt nas IES</label>
-                      </div><!--/btn-group-->
+                      <ul class="btn-group word-media">
+                        <li class="btn btn-default"> <i class="fa fa-facebook"></i></li>
+                        <li class="btn btn-default"> <i class="fa fa-twitter"></i></li>
+                        <li class="btn btn-default"> <i class="fa fa-youtube"></i></li>
+                        <li class="btn btn-default"> <i class="fa fa-google-plus"></i></li>
+                        <li class="btn btn-default"> <i class="fa fa-instagram"></i></li>
+                        <li class="btn btn-default"> RA</li>
+                        <li class="btn btn-default"> <i class="fa fa-linkedin"></i></li>
+                        <li class="btn btn-default"> <i class="fa fa-foursquare"></i></li>
+                        <li class="btn btn-default"> <i class="fa fa-flickr"></i></li>
+                        <li class="btn btn-default"> blog</li>
+                        <li class="btn btn-default"> fanpage</li>
+                        <li class="btn btn-default"> mkt na IES</li>
+                      </ul><!--/btn-group-->
                     </div>
                     <div class="col-xs-2"><span class="word-count">863 <small> de </small> 1.000 <small> citações </small></span></div>
-                    <div class="col-xs-1"><a href="" class="btn btn-default edit-word"><i class="fa fa-pencil"></i></a></div>
+                    <div class="col-xs-1"><a href="" class="btn btn-primary edit-word hastooltip" data-toggle="modal" data-target="#edit-word-modal" data-title="editar palavra-chave"><i class="fa fa-pencil"></i></a></div>
                   </div><!--/row-->
                 </div><!--/word-box-->
 
@@ -231,7 +231,7 @@
                 <!--/PALAVRA-CHAVE-->
                 <div class="well word-box">
                   <div class="row">
-                    <div class="col-xs-1"><a href="" class="toggle-word"><i class="fa fa-check"></i></a></div>
+                    <div class="col-xs-1"><a href="#" class="toggle-word"><i class="fa fa-check"></i></a></div>
                     <div class="col-xs-3"><span class="word-title">Universidade Anhanguera Morumbi</span></div>
                     <div class="col-xs-2"><span class="word-date">de 01/04/14 a 01/01/15</span></div>
                     <div class="col-xs-3">
@@ -336,9 +336,141 @@
     </div><!--/container-->
 
 
+
+    <!--/MODAL-->
+    <div class="modal fade" id="edit-word-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">fechar</span></button>
+            <h4 class="modal-title" id="myModalLabel">Editar palavra-chave</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label for="" class="col-sm-3 control-label">palavra-chave</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="" placeholder="palavra-chave">
+                </div>
+              </div><!--/form-group-->
+              <div class="form-group">
+                <label for="" class="col-sm-3 control-label">ignorar termos</label>
+                <div class="col-sm-9">
+                  <textarea class="form-control" rows="1" placeholder="ignorar termos"></textarea>
+                </div>
+              </div><!--/form-group-->
+              <div class="form-group">
+                <label for="" class="col-sm-3 control-label">período de busca</label>
+                <div class="col-sm-9">
+                  <div class="input-daterange">
+                    de
+                    <input type="text" class="date form-control" name="start" />
+                    <span class="add-on" style="vertical-align: middle;height:20px">a</span>
+                    <input type="text" class="date form-control" name="end" />
+                  </div><!--/btn-set-->
+                </div>
+              </div><!--/form-group-->
+              <div class="form-group">
+                <label for="" class="col-sm-3 control-label">mídias</label>
+                <div class="col-sm-9">
+                  <!--/MÍDIAS-->
+                  <div class="btn-group word-media" data-toggle="buttons">
+                    <label class="btn btn-default active"><input type="checkbox" name="options" id="option1" checked> <i class="fa fa-facebook"></i></label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option2"> <i class="fa fa-twitter"></i></label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option3"> <i class="fa fa-youtube"></i></label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option4"> <i class="fa fa-google-plus"></i></label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option4"> <i class="fa fa-instagram"></i></label>
+                    <label class="btn btn-default active"><input type="checkbox" name="options" id="option5" checked> RA</label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option6"> <i class="fa fa-linkedin"></i></label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option7"> blog</label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option8"> <i class="fa fa-foursquare"></i></label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option9"> <i class="fa fa-flickr"></i></label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option5">fanpage</label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option5">mkt nas IES</label>
+                  </div><!--/btn-group-->
+                </div>
+              </div><!--/form-group-->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">cancelar</button>
+            <button type="button" class="btn btn-primary">adicionar</button>
+          </div>
+        </div>
+      </div>
+    </div><!--/modal-->
+
+
+
+    <div class="modal fade" id="create-word-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">fechar</span></button>
+            <h4 class="modal-title" id="myModalLabel">Adicionar palavra-chave</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label for="" class="col-sm-3 control-label">palavra-chave</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="" placeholder="palavra-chave">
+                </div>
+              </div><!--/form-group-->
+              <div class="form-group">
+                <label for="" class="col-sm-3 control-label">ignorar termos</label>
+                <div class="col-sm-9">
+                  <textarea class="form-control" rows="1" placeholder="ignorar termos"></textarea>
+                </div>
+              </div><!--/form-group-->
+              <div class="form-group">
+                <label for="" class="col-sm-3 control-label">período de busca</label>
+                <div class="col-sm-9">
+                  <div class="input-daterange">
+                    de
+                    <input type="text" class="date form-control" name="start" />
+                    <span class="add-on" style="vertical-align: middle;height:20px">a</span>
+                    <input type="text" class="date form-control" name="end" />
+                  </div><!--/btn-set-->
+                </div>
+              </div><!--/form-group-->
+              <div class="form-group">
+                <label for="" class="col-sm-3 control-label">mídias</label>
+                <div class="col-sm-9">
+                  <!--/MÍDIAS-->
+                  <div class="btn-group word-media" data-toggle="buttons">
+                    <label class="btn btn-default active"><input type="checkbox" name="options" id="option1" checked> <i class="fa fa-facebook"></i></label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option2"> <i class="fa fa-twitter"></i></label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option3"> <i class="fa fa-youtube"></i></label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option4"> <i class="fa fa-google-plus"></i></label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option4"> <i class="fa fa-instagram"></i></label>
+                    <label class="btn btn-default active"><input type="checkbox" name="options" id="option5" checked> RA</label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option6"> <i class="fa fa-linkedin"></i></label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option7"> blog</label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option8"> <i class="fa fa-foursquare"></i></label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option9"> <i class="fa fa-flickr"></i></label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option5">fanpage</label>
+                    <label class="btn btn-default"><input type="checkbox" name="options" id="option5">mkt nas IES</label>
+                  </div><!--/btn-group-->
+                </div>
+              </div><!--/form-group-->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">cancelar</button>
+            <button type="button" class="btn btn-primary">adicionar</button>
+          </div>
+        </div>
+      </div>
+    </div><!--/modal-->
+
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="Scripts/jquery1.11.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/datepicker.js"></script>
     <script src="Scripts/scripts.js"></script>
 
   </body>

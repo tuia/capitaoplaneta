@@ -62,11 +62,19 @@ var jq = jQuery.noConflict();
 		else {};
 		});
 		// CHECKBOX PALAVRAS-CHAVE
-		jq('.word-group .word-box .toggle-word').click( function() {
-			jq(this).parents('.word-box').toggleClass('selected');
-			console.log('tuia');
-			return false
+		jq('#word-group .word-box .toggle-word').click( function() {
+
+			if ( jq(this).parents('.word-box').hasClass('active') ) {
+				jq(this).parents('.word-box').removeClass('active');
+				jq(this).find('.fa').removeClass('fa-check-square-o').addClass('fa-square-o');
+				return false
+			} if ( !jq(this).parents('.word-box').hasClass('active') ) {
+				jq(this).parents('.word-box').addClass('active');
+				jq(this).find('.fa').removeClass('fa-square-o').addClass('fa-check-square-o');
+				return false
+			}
 		});
+
 		/* INDERTAMINATE CHECKBOX 
 		jq("checkbox").prop("indeterminate", true); // prop is jQuery 1.6+ */
 
