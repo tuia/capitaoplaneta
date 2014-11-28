@@ -4144,7 +4144,8 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   font-size: 12px;
   line-height: 20px;
 }
-.people-chart .person-box {
+
+.people-chart .person-box, .twitter-chart .person-box {
   background-color: #f6f7f8;
   padding: 0 10px;
   margin: 12px 0;
@@ -4152,7 +4153,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   overflow: visible;
   height: 120px;
 }
-.people-chart .person-box .person-badge {
+.people-chart .person-box .person-badge, .twitter-chart .person-box .person-badge {
   background-color: #566573;
   position: absolute;
   top: -5px;
@@ -4168,7 +4169,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   -webkit-border-radius: 30px;
   border-radius: 30px;
 }
-.people-chart .person-box .person-title {
+.people-chart .person-box .person-title, .twitter-chart .person-box .person-title {
   font-weight: normal;
   color: #333333;
   word-wrap: break-word;
@@ -4178,28 +4179,28 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   text-align: center;
   margin: 5px 0;
 }
-.people-chart .person-box .person-title:hover {
+.people-chart .person-box .person-title:hover, .twitter-chart .person-box .person-title:hover {
   color: #666666;
 }
-.people-chart .person-box .person-image {
+.people-chart .person-box .person-image, .twitter-chart .person-box .person-image {
   float: left;
   margin-right: 10px;
 }
-.people-chart .person-box .person-image img {
+.people-chart .person-box .person-image img, .twitter-chart .person-box .person-image img {
   width: 80px;
   height: 80px;
 }
-.people-chart .person-box .person-data p {
+.people-chart .person-box .person-data p, .twitter-chart .person-box .person-data p {
   font-size: 11px;
   font-style: italic;
   margin: -5px 0 5px;
   width: 105px;
 }
-.people-chart .person-box .person-data .progress-container {
+.people-chart .person-box .person-data .progress-container, .twitter-chart .person-box .person-data .progress-container {
   width: 100%;
   position: relative;
 }
-.people-chart .person-box .person-data .progress-container .progress {
+.people-chart .person-box .person-data .progress-container .progress, .twitter-chart .person-box .person-data .progress-container .progress {
   margin-bottom: 5px;
   height: 15px;
   width: 78px;
@@ -4207,15 +4208,38 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   -moz-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
 }
-.people-chart .person-box .person-data .progress-container .progress .progress-bar {
+.people-chart .person-box .person-data .progress-container .progress .progress-bar, .twitter-chart .person-box .person-data .progress-container .progress .progress-bar {
   min-width: 30%;
   font-size: 10px;
   line-height: 15px;
 }
-.people-chart .person-box .person-data .progress-container .feeling-icon {
+.people-chart .person-box .person-data .progress-container .feeling-icon, .twitter-chart .person-box .person-data .progress-container .feeling-icon {
   float: left;
   margin: -8px 0;
   width: 27px;
+}
+
+.twitter-chart .row {
+  margin: 0;
+}
+.twitter-chart .row .col-xs-3 {
+  width: calc(25% - 10px);
+  margin: 6px 5px;
+}
+.twitter-chart .row .person-box {
+  height: 85px;
+}
+.twitter-chart .row .person-box .person-image img {
+  width: 50px;
+  height: 50px;
+}
+.twitter-chart .row .person-box .person-data {
+  position: relative;
+  width: calc(100% - 60px);
+}
+.twitter-chart .row .person-box .person-data .progress-container .progress {
+  margin-bottom: 3px;
+  width: 100%;
 }
 
 /*  MODAL  */

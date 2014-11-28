@@ -189,6 +189,8 @@
 			}
 		}
 	}
+}
+.people-chart, .twitter-chart {
 
 	.person-box {
 		background-color: $box-bg;
@@ -260,6 +262,35 @@
 					float: left;
 					margin: -8px 0;
 					width: 27px;
+				}
+			}
+		}
+	}
+}
+.twitter-chart {
+	.row {
+		margin: 0;
+
+		.col-xs-3 {
+			width: calc(25% - 10px);
+			margin: 6px 5px;
+		}
+		.person-box {
+			height: 85px;
+
+			.person-image img{
+				width: 50px;
+				height: 50px;
+			}
+			.person-data {
+				position: relative;
+				width: calc(100% - 60px);
+				.progress-container {
+
+					.progress {
+						margin-bottom: 3px;
+						width: 100%;
+					}
 				}
 			}
 		}
