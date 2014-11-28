@@ -179,7 +179,7 @@ var jq = jQuery.noConflict();
 				removebtn = jq(this).parents('.dropdown-menu').find('.remove');
 
 		if ( trigger.hasClass('good') || trigger.hasClass('neutral') || trigger.hasClass('bad') ) {
-			trigger.removeClass('good').removeClass('neutral').removeClass('bad');
+			//trigger.removeClass('good').removeClass('neutral').removeClass('bad');
 			trigger.addClass(selectedfeeling);
 			jq(this).parents('.dropup.open').removeClass('open');
 		} else {
@@ -305,6 +305,7 @@ var jq = jQuery.noConflict();
 	    jq('#filter-form').find('.active').removeClass('active');
 		jq('#filter-form').find(':radio, :checkbox').removeAttr('checked').end();
 		jq('#filter-form').find('textarea, :text, select').val('');
+		jq('.mec-menu > .btn-group > .btn').removeClass('good').removeClass('neutral').removeClass('bad');
 	    return false;
 	});
 

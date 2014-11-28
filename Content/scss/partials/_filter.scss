@@ -75,6 +75,14 @@
       border-right: 1px solid darken($btn-filter, 5%);
       border-top: none;
     }
+
+    .mec-menu > .btn-group > .btn-default {
+      border-bottom: 1px solid darken($btn-filter, 5%) !important;
+      border-right: 1px solid darken($btn-filter, 5%) !important;
+      border-top: none;
+      width: 34px;
+      height: 33px;
+    }
     .filter-group > .btn-group >.btn:hover, .btn-default:hover, .form-control:hover {
       background-color: darken($btn-filter, 5%);
       z-index: inherit;

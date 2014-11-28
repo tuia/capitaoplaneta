@@ -524,7 +524,7 @@ h3 {
 
 	/* BOTÕES */
 	.btn {
-		border: none;
+		border: 1px solid transparent;
 	}
 
 	.quote .btn-group .btn, .quote .accordion-trigger, .quote footer .btn {
@@ -597,6 +597,45 @@ h3 {
 	    	&:hover, &:active {background-position: -396px -32px;  }
 	    	&.active {background-position: -396px -64px; background-color: $bad;}
 	    }
+
+	    &.captacao, &.empregabilidade, &.localizacao, &.atuacao-etica, &.corpo-docente, &.credenciamento-no-mec, &.preco, &.qualidade-de-ensico, &.infraestrutura, &.relacionamento {
+	    	&.good.neutral {
+				background-image: url(img/mec-feel-sprite.png); /* fallback */
+				background-image: url(img/mec-feel-sprite.png), -webkit-gradient(linear, left top, right bottom, color-stop(0%,$good), color-stop(50%,$good), color-stop(51%,$neutral), color-stop(100%,$neutral));
+				background-image: url(img/mec-feel-sprite.png), -webkit-linear-gradient(-45deg, $good 0%,$good 50%,$neutral 51%,$neutral 100%);
+				background-image: url(img/mec-feel-sprite.png),    -moz-linear-gradient(-45deg, $good 0%, $good 50%, $neutral 51%, $neutral 100%);
+				background-image: url(img/mec-feel-sprite.png),     -ms-linear-gradient(-45deg, $good 0%,$good 50%,$neutral 51%,$neutral 100%);
+				background-image: url(img/mec-feel-sprite.png),      -o-linear-gradient(-45deg, $good 0%,$good 50%,$neutral 51%,$neutral 100%);
+				background-image: url(img/mec-feel-sprite.png),         linear-gradient(135deg, $good 0%,$good 50%,$neutral 51%,$neutral 100%);
+    		}
+	    	&.good.bad {
+				background-image: url(img/mec-feel-sprite.png); /* fallback */
+				background-image: url(img/mec-feel-sprite.png), -webkit-gradient(linear, left top, right bottom, color-stop(0%,$good), color-stop(50%,$good), color-stop(51%,$bad), color-stop(100%,$bad));
+				background-image: url(img/mec-feel-sprite.png), -webkit-linear-gradient(-45deg, $good 0%,$good 50%,$bad 51%,$bad 100%);
+				background-image: url(img/mec-feel-sprite.png),    -moz-linear-gradient(-45deg, $good 0%, $good 50%, $bad 51%, $bad 100%);
+				background-image: url(img/mec-feel-sprite.png),     -ms-linear-gradient(-45deg, $good 0%,$good 50%,$bad 51%,$bad 100%);
+				background-image: url(img/mec-feel-sprite.png),      -o-linear-gradient(-45deg, $good 0%,$good 50%,$bad 51%,$bad 100%);
+				background-image: url(img/mec-feel-sprite.png),         linear-gradient(135deg, $good 0%,$good 50%,$bad 51%,$bad 100%);
+    		}
+	    	&.bad.neutral {
+				background-image: url(img/mec-feel-sprite.png); /* fallback */
+				background-image: url(img/mec-feel-sprite.png), -webkit-gradient(linear, left top, right bottom, color-stop(0%,$bad), color-stop(50%,$bad), color-stop(51%,$neutral), color-stop(100%,$neutral));
+				background-image: url(img/mec-feel-sprite.png), -webkit-linear-gradient(-45deg, $bad 0%,$bad 50%,$neutral 51%,$neutral 100%);
+				background-image: url(img/mec-feel-sprite.png),    -moz-linear-gradient(-45deg, $bad 0%, $bad 50%, $neutral 51%, $neutral 100%);
+				background-image: url(img/mec-feel-sprite.png),     -ms-linear-gradient(-45deg, $bad 0%,$bad 50%,$neutral 51%,$neutral 100%);
+				background-image: url(img/mec-feel-sprite.png),      -o-linear-gradient(-45deg, $bad 0%,$bad 50%,$neutral 51%,$neutral 100%);
+				background-image: url(img/mec-feel-sprite.png),         linear-gradient(135deg, $bad 0%,$bad 50%,$neutral 51%,$neutral 100%);
+    		}
+			&.good.bad.neutral {
+				background-image: url(img/mec-feel-sprite.png); /* fallback */
+				background-image: url(img/mec-feel-sprite.png), -moz-linear-gradient(-45deg,  #27ae60 0%, #27ae60 33%, #2980b9 33%, #2980b9 66%, #c0392b 66%, #c0392b 66%, #c0392b 100%);
+				background-image: url(img/mec-feel-sprite.png), -webkit-gradient(linear, left top, right bottom, color-stop(0%,#27ae60), color-stop(33%,#27ae60), color-stop(33%,#2980b9), color-stop(66%,#2980b9), color-stop(66%,#c0392b), color-stop(66%,#c0392b), color-stop(100%,#c0392b));
+				background-image: url(img/mec-feel-sprite.png),    -o-linear-gradient(-45deg,  #27ae60 0%,#27ae60 33%,#2980b9 33%,#2980b9 66%,#c0392b 66%,#c0392b 66%,#c0392b 100%);
+				background-image: url(img/mec-feel-sprite.png),     -ms-linear-gradient(-45deg,  #27ae60 0%,#27ae60 33%,#2980b9 33%,#2980b9 66%,#c0392b 66%,#c0392b 66%,#c0392b 100%);
+				background-image: url(img/mec-feel-sprite.png),      -o-linear-gradient(-45deg,  #27ae60 0%,#27ae60 33%,#2980b9 33%,#2980b9 66%,#c0392b 66%,#c0392b 66%,#c0392b 100%);
+				background-image: url(img/mec-feel-sprite.png),         linear-gradient(135deg,  #27ae60 0%,#27ae60 33%,#2980b9 33%,#2980b9 66%,#c0392b 66%,#c0392b 66%,#c0392b 100%);
+    		}
+		}
 
 	    /* INDICADORES MEC */
 	    &.captacao {
