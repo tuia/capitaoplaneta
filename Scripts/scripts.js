@@ -29,10 +29,25 @@ var jq = jQuery.noConflict();
 			wrap: false
 		});
 
-		// AFFIX ACTIONS BARRA DE CITAÇÕES 
+		// AFFIX
+		jq('.affix-bar .nav li a').click( function() {
+			var target = jq(this.hash),
+				height = jq(this).parents('.affix-bar').outerHeight();
+
+	        jq('html,body').animate({
+	          scrollTop: target.offset().top - height
+	        }, 1000);
+
+	        return false
+		})
+
 		jq(function () {
 		if (jq(".affix-bar")[0]){
-		    jq('.affix-bar').affix({offset: { top: jq('.affix-bar').offset().top }});
+		    jq('.affix-bar').affix({
+		    	offset: {
+		    		top: jq('.affix-bar').offset().top,
+		    	},
+		    });
 		}
 
 		//DROPDOWN COM INPUT
@@ -316,7 +331,7 @@ jq('#foward-modal .togglecc').click( function() {
 //SMOOTH SCROLLING
 //Faz a tela "deslizar" quando clica em link âncora pra própria página
 jq(function() {
-  jq('a[href*=#]:not([href=#], .carousel-control, .tab-container .nav-tabs li a, [data-toggle="collapse"], [data-toggle="modal"])').click(function() {
+  jq('a[href*=#]:not([href=#], .carousel-control, .tab-container .nav-tabs li a, [data-toggle="collapse"], [data-toggle="modal"], .affix-bar .nav li a)').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = jq(this.hash);
       target = target.length ? target : jq('[name=' + this.hash.slice(1) +']');
