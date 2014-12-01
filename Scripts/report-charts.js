@@ -643,20 +643,553 @@ Highcharts.setOptions(Highcharts.theme);
                 });
             });
 
+            //SENTIMENTO
+            jq(function () {
+                jq('#marcadores-sentimento').highcharts({
+                    chart: {
+                        type: 'column',
+                        width: 815,
+                        height: 300
+                    },
+                    title: {
+                        text: 'indicadores por sentimento'
+                    },
+                    xAxis: {
+                        categories: ['IEC', 'favoritos', 'lido', 'a responder', '2014']
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: null
+                        }
+                    },
+                    tooltip: {
+                        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+                        shared: true
+                    },
+                    plotOptions: {
+                        column: {
+                            stacking: 'percent'
+                        }
+                    },
+                    series: [{
+                        name: 'positivo',
+                        data: [5, 3, 4, 7, 2],
+                        color: '#27AE60' // good
+                    }, {
+                        name: 'neutro',
+                        data: [2, 2, 3, 2, 1],
+                        color: '#2980B9' // neutral
+                    }, {
+                        name: 'negativo',
+                        data: [3, 4, 4, 2, 5],
+                        color: '#C0392B' // bad
+                    }],
+                });
+            });
+
     //MIDIAS
 
         // EVOLUCAO 
-
-        /*
         jq(function () {
             jq('#midias-evolucao').highcharts({
+                chart: {
+                    width: 611,
+                    height: 350
+                },
+                title: {
+                    text: 'Mídicas: evolução'
+                },
+                xAxis: {
+                    categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+                },
+                yAxis: {
+                    title: {
+                        text: 'citações'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: '°C'
+                },
+                series: [{
+                    name: 'facebook',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                }, {
+                    name: 'twitter',
+                    data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'linkedin',
+                    data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'blog',
+                    data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+                }, {
+                    name: 'instagram',
+                    data: [-5.2, 1, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'youtube',
+                    data: [-3, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'google +',
+                    data: [-8, 1.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'reclame aqui',
+                    data: [-9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'flickr',
+                    data: [-6.7, -4.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'pinterest',
+                    data: [-3.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'foursquare',
+                    data: [-9.2, 6.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }]
+            });
+        });
 
 
-        // TOTAL 
-
+        //DISTRIBUIÇÃO
         jq(function () {
-            jq('#midias-total').highcharts({
+            jq(document).ready(function () {
+
+                // Build the chart
+                jq('#midias-distribuicao').highcharts({
+                    chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false,
+                        height: 300,
+                        width: 815,
+                    },
+                    title: {
+                        text: 'Mídias: distribuição'
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.percentage:.1f}</b>'
+                    },
+                    plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: true,
+                                format: '<b>{point.name}</b>: {point.percentage:.1f} ',
+                                style: {
+                                    color: '#666666'
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        type: 'pie',
+                        name: 'citações por midia',
+                        data: [
+                            ['facebook', 3.7],
+                            ['twitter', 6.1],
+                            ['linkedin', 4.2],
+                            ['blog', 4.0],
+                            ['instagram', 2.5],
+                            ['youtube', 2.1],
+                            ['google +', 1.8],
+                            ['reclame aqui', 1.7],
+                            ['flickr', 9.1],
+                            ['pinterest', 0.6],
+                            ['foursquare', 0.5]
+                        ]
+                    }]
+                });
+            });
+
+        });
 
 
 
-*/
+    // RELEVÂNCIA DAS MÍDIAS 
+
+        // POR MíDIA
+        jq(function () {
+            jq('#relevancia-das-midias-por-midia').highcharts({
+                    chart: {
+                    type: 'column',
+                    height: 300
+                },
+                title: {
+                    text: 'Relevância das mídias por mídia'
+                },
+                xAxis: {
+                    type: 'category',
+                    labels: {
+                        rotation: -45,
+                        style: {
+                            fontSize: '13px',
+                            fontFamily: 'Verdana, sans-serif'
+                        }
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Population (millions)'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                tooltip: {
+                    pointFormat: 'Population in 2008: <b>{point.y:.1f} millions</b>'
+                },
+                series: [{
+                    name: 'Population',
+                    data: [
+                        ['Shanghai', 23.7],
+                        ['Lagos', 16.1],
+                        ['Instanbul', 14.2],
+                        ['Karachi', 14.0],
+                        ['Mumbai', 12.5],
+                        ['Moscow', 12.1],
+                        ['São Paulo', 11.8],
+                        ['Beijing', 11.7],
+                        ['Guangzhou', 11.1],
+                        ['Delhi', 11.1],
+                        ['Shenzhen', 10.5],
+                        ['Seoul', 10.4],
+                        ['Jakarta', 10.0],
+                        ['Kinshasa', 9.3],
+                        ['Tianjin', 9.3],
+                        ['Tokyo', 9.0],
+                        ['Cairo', 8.9],
+                        ['Dhaka', 8.9],
+                        ['Mexico City', 8.9],
+                        ['Lima', 8.9]
+                    ],
+                    dataLabels: {
+                        enabled: true,
+                        rotation: -90,
+                        color: '#FFFFFF',
+                        align: 'right',
+                        x: 4,
+                        y: 10,
+                        style: {
+                            fontSize: '13px',
+                            fontFamily: 'Verdana, sans-serif',
+                            textShadow: '0 0 3px black'
+                        }
+                    }
+                }]
+            });
+        });
+
+
+        // VARIAÇÃO
+        jq(function () {
+            jq('#relevancia-das-midias-evolucao').highcharts({
+                chart: {
+                    width: 705,
+                    height: 300
+                },
+                title: {
+                    text: 'Palavras-chave'
+                },
+                xAxis: {
+                    categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+                },
+                yAxis: {
+                    title: {
+                        text: 'citações'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: '%'
+                },
+                series: [{
+                    name: 'facebook',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                }, {
+                    name: 'twitter',
+                    data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'linkedin',
+                    data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'blog',
+                    data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+                }, {
+                    name: 'instagram',
+                    data: [-5.2, 1, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'youtube',
+                    data: [-3, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'google +',
+                    data: [-8, 1.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'reclame aqui',
+                    data: [-9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'flickr',
+                    data: [-6.7, -4.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'pinterest',
+                    data: [-3.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'foursquare',
+                    data: [-9.2, 6.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }]
+            });
+        });
+
+
+        // SEGUIDORES
+        jq(function () {
+            jq('#relevancia-das-midias-seguidores').highcharts({
+                chart: {
+                    width: 705,
+                    height: 300
+                },
+                title: {
+                    text: 'Palavras-chave'
+                },
+                xAxis: {
+                    categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+                },
+                yAxis: {
+                    title: {
+                        text: 'citações'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: '%'
+                },
+                series: [{
+                    name: 'facebook',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                }, {
+                    name: 'twitter',
+                    data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'linkedin',
+                    data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'blog',
+                    data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+                }, {
+                    name: 'instagram',
+                    data: [-5.2, 1, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'youtube',
+                    data: [-3, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'google +',
+                    data: [-8, 1.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'reclame aqui',
+                    data: [-9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'flickr',
+                    data: [-6.7, -4.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'pinterest',
+                    data: [-3.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'foursquare',
+                    data: [-9.2, 6.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }]
+            });
+        });
+
+
+
+    //BUZZ
+
+        // CITAÇÕES POR DIA
+        jq(function () {
+            jq('#buzz-por-dia').highcharts({
+                chart: {
+                    width: 705,
+                    height: 300
+                },
+                title: {
+                    text: 'Citações por dia'
+                },
+                xAxis: {
+                    categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+                },
+                yAxis: {
+                    title: {
+                        text: 'quantidade de citações'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: ' '
+                },
+                series: [{
+                    name: 'facebook',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                }, {
+                    name: 'twitter',
+                    data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'linkedin',
+                    data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'blog',
+                    data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+                }, {
+                    name: 'instagram',
+                    data: [-5.2, 1, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'youtube',
+                    data: [-3, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'google +',
+                    data: [-8, 1.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'reclame aqui',
+                    data: [-9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'flickr',
+                    data: [-6.7, -4.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'pinterest',
+                    data: [-3.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'foursquare',
+                    data: [-9.2, 6.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }]
+            });
+        });
+
+        // CITAÇÕES POR HORARIO
+        jq(function () {
+            jq('#buzz-por-horario').highcharts({
+                chart: {
+                    width: 705,
+                    height: 300
+                },
+                title: {
+                    text: 'Citações por horário'
+                },
+                xAxis: {
+                    categories: ['00-02', '02-04', '04-06', '06-08', '08-10', '10-12', '12-14', '14-16', '16-18', '18-20', '20-22', '22-00']
+                },
+                yAxis: {
+                    title: {
+                        text: 'quantidade de citações'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: ' '
+                },
+                series: [{
+                    name: 'facebook',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                }, {
+                    name: 'twitter',
+                    data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'linkedin',
+                    data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'blog',
+                    data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+                }, {
+                    name: 'instagram',
+                    data: [-5.2, 1, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'youtube',
+                    data: [-3, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'google +',
+                    data: [-8, 1.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'reclame aqui',
+                    data: [-9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'flickr',
+                    data: [-6.7, -4.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }, {
+                    name: 'pinterest',
+                    data: [-3.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+                }, {
+                    name: 'foursquare',
+                    data: [-9.2, 6.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+                }]
+            });
+        });
+
+        //SENTIMENTO
+        jq(function () {
+            jq('#buzz-sentimento').highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false,
+                    height: 300,
+                    width: 815
+                },
+                title: {
+                    text: 'Buzz: sentimento'
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                            style: {
+                                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                            }
+                        }
+                    }
+                },
+                series: [{
+                    type: 'pie',
+                    name: 'Browser share',
+                    data: [
+                        {
+                            name: 'negativo',
+                            y: 12.8,
+                            color: '#C0392B'
+                        },{
+                            name: 'neutro',
+                            y: 7,
+                            color: '#2980B9'
+                        },{
+                            name: 'positivo',
+                            y: 3.4,
+                            color: '#27AE60'
+                        },
+                    ]
+                }]
+            });
+        });
