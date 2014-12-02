@@ -110,9 +110,13 @@
 			}
 			.chart-container {
 				width: 100%;
+				margin-top: -60px;
 				&.has-control {
 					width: calc(100% - 110px);
 					float: right;
+				}
+				&.people-chart, &.word-cloud, &.twitter-chart {
+					margin-top: 0;
 				}
 			}		
 			.btn-group-vertical {
@@ -122,6 +126,32 @@
 		}
 	}
 
+	&.expanded {
+		.carousel-control, .carousel-indicators {
+			display: none;
+		}
+		.carousel-inner {
+			.item {
+				display: block;
+				margin: 0 0 50px;
+				&:last-child {margin-bottom: 0;}
+				.chart-container {
+					margin: 0;
+					.highcharts-title{display: block;}
+				}
+				.people-chart h5, .twitter-chart h5 {display: block;}
+			}
+		}
+		#capital-social {
+			.carousel-inner .item .chart-container .highcharts-title{display: none;}
+		}
+	}
+	#capital-social {
+		.carousel-inner .item .chart-container {margin-top: -20px;}
+	}
+		
+	.expand-btn:before { content:'expandir'}
+	&.expanded {.expand-btn:before {content:'encolher'}}
 } /* .report-panel */
 
 
@@ -144,6 +174,7 @@
 
 /* PEOPLE CHART */
 .people-chart {
+
 
 	&>.row:first-child {
 
@@ -191,6 +222,16 @@
 	}
 }
 .people-chart, .twitter-chart {
+
+	h5 {
+		font-size: 18px;
+		display: none;
+		color: $default-text;
+		margin: 0 0 15px;
+		text-align: center;
+		text-transform: none;
+		font-weight: 400;
+	}
 
 	.person-box {
 		background-color: $box-bg;
@@ -250,6 +291,7 @@
 					margin-bottom: 5px;
 					height: 15px;
 					width: 78px;
+					float: right;
 					@include box-shadow(0,0,0,transparent);
 
 					.progress-bar {
@@ -260,7 +302,7 @@
 				}
 				.feeling-icon {
 					float: left;
-					margin: -8px 0;
+					margin: -8px 6px -5px -7px;
 					width: 27px;
 				}
 			}
@@ -359,6 +401,9 @@
 	}
 }
 
+#pessoas .item {
+	height: auto;
+}
 
 
 /*  MODAL  */

@@ -2174,7 +2174,7 @@ used in citacoes and perfil-do-usuario */
   border-top: 1px solid #192434;
   border-right: 1px solid #192434;
   border-bottom: none;
-  z-index: 0;
+  z-index: 1032;
 }
 #filter-panel .filter-content .filter-group .btn.active:hover, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li.active:hover, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li.active:hover, #filter-panel .filter-content .filter-group .btn-default.active:hover, #filter-panel .filter-content .filter-group .report-panel.panel .panel-body .slide .carousel-indicators li.active:hover, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group li.active:hover {
   background-color: #192434;
@@ -2250,6 +2250,7 @@ used in citacoes and perfil-do-usuario */
   left: 0;
   width: 840px;
   height: auto;
+  z-index: 1032;
 }
 #filter-panel footer .btn, #filter-panel footer .report-panel.panel .panel-body .slide .carousel-indicators li, .report-panel.panel .panel-body .slide .carousel-indicators #filter-panel footer li {
   margin-left: 15px;
@@ -4111,14 +4112,49 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 .report-panel.panel .panel-body .slide .chart-container {
   width: 100%;
+  margin-top: -60px;
 }
 .report-panel.panel .panel-body .slide .chart-container.has-control {
   width: calc(100% - 110px);
   float: right;
 }
+.report-panel.panel .panel-body .slide .chart-container.people-chart, .report-panel.panel .panel-body .slide .chart-container.word-cloud, .report-panel.panel .panel-body .slide .chart-container.twitter-chart {
+  margin-top: 0;
+}
 .report-panel.panel .panel-body .slide .btn-group-vertical {
   width: 100px;
   float: left;
+}
+.report-panel.panel.expanded .carousel-control, .report-panel.panel.expanded .carousel-indicators {
+  display: none;
+}
+.report-panel.panel.expanded .carousel-inner .item {
+  display: block;
+  margin: 0 0 50px;
+}
+.report-panel.panel.expanded .carousel-inner .item:last-child {
+  margin-bottom: 0;
+}
+.report-panel.panel.expanded .carousel-inner .item .chart-container {
+  margin: 0;
+}
+.report-panel.panel.expanded .carousel-inner .item .chart-container .highcharts-title {
+  display: block;
+}
+.report-panel.panel.expanded .carousel-inner .item .people-chart h5, .report-panel.panel.expanded .carousel-inner .item .twitter-chart h5 {
+  display: block;
+}
+.report-panel.panel.expanded #capital-social .carousel-inner .item .chart-container .highcharts-title {
+  display: none;
+}
+.report-panel.panel #capital-social .carousel-inner .item .chart-container {
+  margin-top: -20px;
+}
+.report-panel.panel .expand-btn:before {
+  content: 'expandir';
+}
+.report-panel.panel.expanded .expand-btn:before {
+  content: 'encolher';
 }
 
 /* .report-panel */
@@ -4183,6 +4219,15 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   line-height: 20px;
 }
 
+.people-chart h5, .twitter-chart h5 {
+  font-size: 18px;
+  display: none;
+  color: #666666;
+  margin: 0 0 15px;
+  text-align: center;
+  text-transform: none;
+  font-weight: 400;
+}
 .people-chart .person-box, .twitter-chart .person-box {
   background-color: #f6f7f8;
   padding: 0 10px;
@@ -4242,6 +4287,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   margin-bottom: 5px;
   height: 15px;
   width: 78px;
+  float: right;
   -webkit-box-shadow: 0 0 0 transparent;
   -moz-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
@@ -4253,7 +4299,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 .people-chart .person-box .person-data .progress-container .feeling-icon, .twitter-chart .person-box .person-data .progress-container .feeling-icon {
   float: left;
-  margin: -8px 0;
+  margin: -8px 6px -5px -7px;
   width: 27px;
 }
 
@@ -4343,6 +4389,10 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 #palavras > span > span:nth-child(2n+2) {
   top: -15px;
+}
+
+#pessoas .item {
+  height: auto;
 }
 
 /*  MODAL  */

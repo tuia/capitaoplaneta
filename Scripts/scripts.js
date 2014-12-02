@@ -25,8 +25,7 @@ var jq = jQuery.noConflict();
 
 		//CAROUSEL
 		jq('.carousel').carousel({
-			interval: false,
-			wrap: false
+			interval: false
 		});
 
 		// AFFIX
@@ -65,7 +64,8 @@ var jq = jQuery.noConflict();
 				autoclose: true,
 				todayHighlight: true
 			});
-		} 
+		}
+
 		// MASKED INPUT 
 		if (jq("input.hour")[0]){
 			jq("input.hour").mask("99:99",{placeholder:"00:00"});
@@ -313,14 +313,14 @@ var jq = jQuery.noConflict();
 	jq('.filter-group .btn').click( function() {
 		if ( !jq(this).hasClass('btn-set') ) {
 			jq(this).parents('.filter-group').find('.btn-set').removeClass('active');
-		} else {}
-	});
-	jq('.btn-set').click(function() {
-		var group = jq(this).parents('.filter-group');
-		if ( !jq(this).hasClass('active')) {
-			group.find('.active').removeClass('active');
-			jq(this).addClass('active');
-		} else {	
+		}
+		if ( jq(this).hasClass('btn-set') ) {
+			var group = jq(this).parents('.filter-group');
+			
+			if ( !jq(this).hasClass('active')) {
+				group.find('.active').removeClass('active');
+				jq(this).addClass('active');
+			} else {}
 		}
 	});
 
@@ -345,5 +345,24 @@ jq(function() {
     }
   });
 });
+
+
+	//RELATÓRIOS
+
+		//EXPANDIR PAINEL
+		jq('.report-panel .expand-btn').click(function() {
+			jq(this).parents('.report-panel').toggleClass('expanded');
+			return false
+		});
+
+		//ESCONDER PAINEL
+		jq('.report-panel .hide-btn').click(function() {
+			jq(this).parents('.report-panel').fadeOut('fast');
+			jq('html,body').animate({
+      		scrollTop: 0}, 1000, function() {
+		   		jq('#report-content').prepend('<!--/FEEDBACK--><div class="alert alert-success alert-dismissible center-box" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>A seção <strong>capital social</strong> foi escondida. <a href="#">desfazer</a></div>');
+			});
+			return false
+		});
 
 

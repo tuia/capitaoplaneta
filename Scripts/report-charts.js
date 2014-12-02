@@ -1,7 +1,16 @@
 //TEMA
 Highcharts.theme = {
     colors: ['#82799F', '#F39C12', '#16A085', '#7A82CD', '#f45b5b', '#90ee7e',
-             '#DF5353', '#7798BF', '#ff2266']
+             '#DF5353', '#7798BF', '#ff2266'],
+    chart: {
+        marginTop: 60
+    },
+    title: {
+        style: {
+            color: '#666',
+            font: '400 18px "Roboto", sans-serif;'
+        }
+    },
 }
 Highcharts.setOptions(Highcharts.theme);
 
@@ -19,7 +28,8 @@ Highcharts.setOptions(Highcharts.theme);
                 plotBackgroundImage: null,
                 plotBorderWidth: 0,
                 plotShadow: false,
-                height: 210
+                height: 210,
+                marginTop: 0
             },
 
             title: {
@@ -424,7 +434,8 @@ Highcharts.setOptions(Highcharts.theme);
                     chart: {
                         type: 'bar',
                         height: 300,
-                        width: 815
+                        width: 815,
+                        marginTop: 60
                     },
                     title: {
                         text: 'Indicadores MEC por Capital Social'
@@ -894,7 +905,7 @@ Highcharts.setOptions(Highcharts.theme);
                     height: 300
                 },
                 title: {
-                    text: 'Palavras-chave'
+                    text: 'Relevância das mídias: evolução'
                 },
                 xAxis: {
                     categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
@@ -958,7 +969,7 @@ Highcharts.setOptions(Highcharts.theme);
                     height: 300
                 },
                 title: {
-                    text: 'Palavras-chave'
+                    text: 'Relevância das mídias: seguidores'
                 },
                 xAxis: {
                     categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
@@ -1154,7 +1165,7 @@ Highcharts.setOptions(Highcharts.theme);
                     width: 815
                 },
                 title: {
-                    text: 'Buzz: sentimento'
+                    text: 'Sentimento'
                 },
                 tooltip: {
                     pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
