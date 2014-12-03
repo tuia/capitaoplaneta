@@ -65,11 +65,14 @@ var jq = jQuery.noConflict();
 				todayHighlight: true
 			});
 		}
-
 		// MASKED INPUT 
 		if (jq("input.hour")[0]){
 			jq("input.hour").mask("99:99",{placeholder:"00:00"});
 		}
+		/* TAGSINPUT
+		if (jq("[data-role='tagsinput']")[0]){
+			jq(this).tagsinput('["Amsterdam","Washington","Sydney","Beijing","Cairo","asdlkasd","asdasd","saddasd","dasd"]')
+		}*/
 		// SELECT MÚLTIPLO 
 		if (jq(".selectpicker")[0]){
 			jq('.selectpicker').selectpicker();
