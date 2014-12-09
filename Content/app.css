@@ -1944,10 +1944,14 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   color: #333333;
 }
 .configure.list-group .list-group-item .options {
-  float: right;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: -10px 0;
+  padding: 0 20px;
 }
 .configure.list-group .list-group-item .options a {
-  margin: 0 0 0 15px;
+  margin: 0 0 0 10px;
 }
 .configure.list-group .list-group-item .options .occult-item {
   margin-right: 60px;
@@ -1964,6 +1968,13 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 }
 .configure.list-group .list-group-item.list-group-item-danger {
   background-color: #f2dede;
+}
+.configure.list-group.large .list-group-item .name {
+  max-width: 360px;
+}
+.configure.list-group.large .list-group-item p {
+  font-size: 13px;
+  line-height: 1.2;
 }
 
 /* CAPITAL SOCIAL PANEL

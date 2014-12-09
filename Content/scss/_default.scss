@@ -1455,9 +1455,13 @@ h3 {
 		.form-control { max-width: 200px; display: inline-block;}
 		.name { max-width: 260px; display: inline-block; color: $dark-text;}
 		.options {
-			float: right;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin: -10px 0;
+			padding: 0 20px;
 			a {
-				margin: 0 0 0 15px;
+				margin: 0 0 0 10px;
 			}
 			.occult-item {
 				margin-right: 60px;
@@ -1469,6 +1473,19 @@ h3 {
 		&.occult { background-color: $light-box-bg; color: $light-text;}
 		&.list-group-item-danger {background-color: #f2dede;}
 	}
+	&.large {
+		.list-group-item {
+			.name {
+				max-width: 360px;
+			}
+			p { 
+				font-size: 13px;
+				line-height: 1.2
+			}
+
+		}
+	}
+
 }
 
 
