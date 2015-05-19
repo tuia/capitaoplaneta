@@ -2077,9 +2077,25 @@
             </div><!--/panel-->
             
           </div><!--/accordion-group-->
-          
-          <textarea class="form-control" rows="5" placeholder="resposta"></textarea>
-            
+
+          <div class="row">
+            <div class="col-xs-1 form-group">
+              <label class="control-label" for="">mídia</label>
+              <div class="dropdown">
+                <a href="#" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true"> <i class="fa fa-whatsapp"></i> <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li role=""><a href="#"> <i class="fa fa-whatsapp"></i> WhatsApp</a></li>
+                  <li role=""><a href="#"> <i class="fa fa-facebook"></i> Facebook</a></li>
+                  <li role=""><a href="#"> <i class="fa fa-twitter"></i> Twitter</a></li>
+                </ul>
+              </div>
+            </div><!--/form-group-->
+            <div class="col-xs-11">
+              <textarea class="form-control" rows="5" placeholder="resposta"></textarea>
+            </div>
+          </div><!--/row-->
+              
           </div><!--/.modal-body-->
           <div class="modal-footer">
             <a href="#" class="pull-left btn btn-default" data-toggle="tooltip" data-title="limpar"><i class="fa fa-trash"></i></a>
@@ -2188,19 +2204,19 @@
             <form role="form" class="form-small">
               <div class="row">
                 <div class="form-group col-xs-4 has-error">
-                  <label class="control-label" for="exampleInputEmail1">Para</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                  <label class="control-label" for="">Para</label>
+                  <input type="email" class="form-control" id="" placeholder="">
                   <a href="#" class="togglecc"> Cc Cco</a>
                   <small class="help-block">endereço de email inválido</small>
+                </div><!--/form-group-->
+                <div class="form-group col-xs-4">
+                  <label class="control-label" for="">assunto</label>
+                  <input type="text" class="form-control" id="" placeholder="assunto">
                 </div><!--/form-group-->
                 <div class="form-group col-xs-4">
                   <label class="control-label" for="exampleInputEmail2">De</label>
                   <input type="email" class="form-control" id="exampleInputEmail2" value="meuemail@email.com" readonly>
                   <a href="dados-cadastrais.html" class="btn btn-default" data-toggle="tooltip" title="editar meu endereço de email (dados cadastrais)"><i class="fa fa-pencil"></i></a>
-                </div><!--/form-group-->
-                <div class="form-group col-xs-4">
-                  <label class="control-label" for="">Assunto</label>
-                  <input type="text" class="form-control" id="" placeholder="assunto">
                 </div><!--/form-group-->
               </div><!--/row-->
               <div class="row cc-container">
