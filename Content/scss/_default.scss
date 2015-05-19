@@ -47,6 +47,7 @@
 	$btn-filter: #86909A;
 
 	/* SOCIAL */
+	$whatsapp-color: #234242;
 	$facebook-color: #3b5998;
 	$twitter-color: #00aced;
 	$youtube-color: #bb0000;
@@ -434,6 +435,11 @@ h3 {
 			color: #FFFFFF;
 		}
 
+		&.whatsapp {
+			color: $whatsapp-color;
+			&:hover { color: darken($whatsapp-color, 10%) }
+		}
+
 		&.facebook {
 			color: $facebook-color;
 			&:hover { color: darken($facebook-color, 10%) }
@@ -479,6 +485,10 @@ h3 {
 		&.inverse {
 			color: #FFFFFF;
 
+			&.whatsapp {
+				background: $whatsapp-color;
+				&:hover { background: lighten($whatsapp-color, 10%) }
+			}
 			&.facebook {
 				background: $facebook-color;
 				&:hover { background: lighten($facebook-color, 10%) }
@@ -1266,7 +1276,6 @@ h3 {
 		background-color: $box-bg;
 		
 		.btn {
-		    text-transform: uppercase;
 		    font-weight: 300;
 		    border: none !important;
 		    

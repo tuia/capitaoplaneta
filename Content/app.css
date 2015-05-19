@@ -626,6 +626,12 @@ h3 {
 .social:hover {
   color: #FFFFFF;
 }
+.social.whatsapp {
+  color: #234242;
+}
+.social.whatsapp:hover {
+  color: #112121;
+}
 .social.facebook {
   color: #3b5998;
 }
@@ -692,6 +698,12 @@ h3 {
 }
 .social.inverse {
   color: #FFFFFF;
+}
+.social.inverse.whatsapp {
+  background: #234242;
+}
+.social.inverse.whatsapp:hover {
+  background: #356363;
 }
 .social.inverse.facebook {
   background: #3b5998;
@@ -1737,7 +1749,6 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
   background-color: #f6f7f8;
 }
 .quote footer .btn, .quote footer .report-panel.panel .panel-body .slide .carousel-indicators li, .report-panel.panel .panel-body .slide .carousel-indicators .quote footer li {
-  text-transform: uppercase;
   font-weight: 300;
   border: none !important;
   color: #666666;

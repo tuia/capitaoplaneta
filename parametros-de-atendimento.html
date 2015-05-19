@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Planeta Y - Filtros salvos</title>
+    <title>Planeta Y - Parâmetros de atendimento</title>
 
     <!-- STYLES -->
     <link href="Content/bootstrap.min.css" rel="stylesheet">
@@ -68,6 +68,17 @@
               <li><a href="gerenciar-instituicoes.html"><i class="fa fa-cog"></i> Gerenciar instituições</a></li>
             </ul><!--/.dropdown-menu-->
           </li><!--/.dropdown-->
+
+          <!--/alertas de citacao - instituiçao-->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-comment"></i> 18</span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">alerta 1</a></li>
+              <li><a href="#">alerta 2</a></li>
+              <li class="divider"></li>
+              <li><a href="#">limpar notificações</a></li>
+            </ul>
+          </li><!--/dropdown-->
 
           <!--/alertas - instituiçao-->
           <li class="dropdown">
@@ -167,82 +178,76 @@
             <li><a href="alertas.html">alertas</a></li>
             <li><a href="captacao.html">captação</a></li>
             <li><a href="contas.html">contas</a></li>
-            <li class="active"><a href="filtros-salvos.html">filtros salvos</a></li>
+            <li><a href="filtros-salvos.html">filtros salvos</a></li>
             <li><a href="marcadores.html">marcadores</a></li>
             <li><a href="palavras-chave.html">palavras-chave</a></li>
             <li><a href="respostas-salvas.html">respostas salvas</a></li>
-            <li><a href="parametros-de-atendimento.html">parâmetros de atendimento</a></li>
+            <li class="active"><a href="parametros-de-atendimento.html">parâmetros de atendimento</a></li>
           </ul>
 
         </div><!--/col-->
 
         <div class="col-xs-10">
           <div class="panel panel-default panel-big">
-            <div class="panel-heading"><h3 class="panel-title">Filros salvos</h3></div>
+            <div class="panel-heading"><h3 class="panel-title">Parâmetros de atendimento</h3></div>
             <div class="panel-body">
-            <div class="intro">
-              <p>Gerencie os filtros salvos. Para editar os critérios dos filtros, utilize o painel de filtros à esqurda da tela <a href="citacoes.html">citações</a></p>
-            </div>
+              <div class="intro">
+                <p>Configure seus parâmetros de atendimento.</p>
+                <a href="" class="btn btn-default" data-toggle="modal" data-target="#create-parameter-modal"><i class="fa fa-plus"></i> adicionar parâmetro...</a>
+              </div><!--/.intro-->
 
-            <ul class="list-group configure large">
-              <li class="list-group-item">
-                <span class="name">
-                  negativas 
-                  <p class="lighter-text">sentimento negativo. palavras-chave: anhembi da depressão, mídias: facebook, twitter, foursquare.</p>
-                </span>
-                <span class="options">
-                  <a href="" class="edit-item">editar</a>
-                  <a href="" class="remove-item">remover</a>
-                </span><!--/options-->
-              </li>
-              <li class="list-group-item">
-                <span class="name">busca anhanguera <span class="lighter-text">(5)</span></span>
-                <span class="options">
-                  <a href="" class="edit-item">editar</a>
-                  <a href="" class="remove-item">remover</a>
-                </span><!--/options-->
-              </li>
-              <li class="list-group-item">
-                <span class="name">a responder
-                  <p class="lighter-text">sentimento negativo. palavras-chave: anhembi da depressão, mídias: facebook, twitter, foursquare.</p>
-                </span>
-                <span class="options">
-                  <a href="" class="edit-item">editar</a>
-                  <a href="" class="remove-item">remover</a>
-                </span><!--/options-->
-              </li>
-              <li class="list-group-item">
-                <span class="name">secretaria
-                  <p class="lighter-text">sentimento negativo. palavras-chave: anhembi da depressão, mídias: facebook, twitter, foursquare.</p>
-                </span>
-                <span class="options">
-                  <a href="" class="edit-item">editar</a>
-                  <a href="" class="remove-item">remover</a>
-                </span><!--/options-->
-              </li>
-              <li class="list-group-item list-group-item-danger">
-                <span class="name">biblioteca
-                  <p class="lighter-text">sentimento negativo. palavras-chave: anhembi da depressão, mídias: facebook, twitter, foursquare.</p>
-                </span>
-                <span class="options">
-                  <a href="" class="edit-item">editar</a>
-                  <a href="" class="remove-item">remover</a>
-                </span><!--/options-->
-                <div class="validation"><i class="fa fa-times-circle fa-2x pull-left"></i> o marcador deve ter até 30 caracteres</div>
-              </li>
-              <li class="list-group-item editing-item">
-                <span class="name">
-                  <input type="text" class="form-control" value="direito OF4" />
-                  <p class="lighter-text">sentimento negativo. palavras-chave: anhembi da depressão, mídias: facebook, twitter, foursquare.</p>
-                </span>
-                <span class="options">
-                  <a href="" class="btn btn-primary edit-item">salvar</a>
-                  <a href="" class="btn btn-default remove-item">cancelar</a>
-                </span><!--/options-->
-              </li>
-            </ul>
+
+              <div id="word-group">
+
+                <!--/PALAVRA-CHAVE-->
+                <div class="well word-box">
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <a href="#" class="toggle-word"><i class="fa fa-square-o"></i></a>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="form-group">
+                        <label>Nome do parâmetro</label>
+                        <input type="text" class="form-control" />
+                      </div><!--/form-group-->
+                      <div class="form-group">
+
+
+                        <!--/
+                        
+                        ADICIONAR AUTOCOMPLETE
+                        
+                        -->
+                        <label>tags relacionadas</label>
+                        <input type="text" class="form-control" data-role="tagsinput" id="" placeholder="">
+
+
+
+
+                      </div><!--/form-group-->
+                    </div><!--/col-->
+                    <div class="col-xs-2">
+                      <div class="form-group">
+                        <label>cor</label>
+                        <input type="color" class="form-control" />
+                      </div><!--/form-group-->
+                    </div><!--/col-->
+                    <div class="col-xs-1">
+                      <a href="" class="btn btn-primary edit-word hastooltip" data-toggle="modal" data-target="#edit-word-modal" data-title="editar palavra-chave"><i class="fa fa-pencil"></i></a>
+                    </div>
+                  </div><!--/row-->
+                  <div class="options">
+                    <a class="btn btn-primary edit-item" href="">salvar</a>
+                    <a class="btn btn-default remove-item" href="">cancelar</a>
+                  </div>
+                </div><!--/word-box-->
+              </div><!--/word-group-->
 
             </div><!--/panel-body-->
+            <div class="panel-footer">
+              <button type="button" class="btn btn-default btn-lg">cancelar</button>
+              <button type="button" class="btn btn-primary btn-lg">salvar</button>
+            </div><!--/panel-footer-->
           </div><!--/panel-->
           
         </div><!--/col-->
@@ -255,36 +260,37 @@
 
     
 
-      <!--/#FOOTER-->
-      <footer id="page-footer">
-        <div class="container">
-          <p class="copyright">© Copyright 2014 Cadsoft. Todos os direitos reservados.</p>
-          <a href="#" target="blank"><img src="Content/img/planeta-y-logo.png"></a>
+    <!--/#FOOTER-->
+    <footer id="page-footer">
+      <div class="container">
+        <p class="copyright">© Copyright 2014 Cadsoft. Todos os direitos reservados.</p>
+        <a href="#" target="blank"><img src="Content/img/planeta-y-logo.png"></a>
 
-          <div class="footer-social-links">
-            <a href="https://www.facebook.com/PlanetaY" class="btn social facebook"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/planeta_y" class="btn social twitter"><i class="fa fa-twitter"></i></a>
-            <a href="https://plus.google.com/+PlanetayBr/about" class="btn social gplus"><i class="fa fa-google-plus"></i></a>
-          </div>
-
-          <a href="sobre-o-py.html" class="">quem somos</a>
-          <span class="footer-divider">.</span>
-          <a href="ajuda.html" class="">ajuda</a>
-          <span class="footer-divider">.</span>
-          <a href="reportar-problema" class="">reportar problema</a>
-
-          <div class="pull-right">
-            <span>design de interação por</span>
-            <a href="http://www.latitude14.com.br" target="blank"><img src="Content/img/latitude-14-logo.png"></a>
-          </div>
+        <div class="footer-social-links">
+          <a href="https://www.facebook.com/PlanetaY" class="btn social facebook"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/planeta_y" class="btn social twitter"><i class="fa fa-twitter"></i></a>
+          <a href="https://plus.google.com/+PlanetayBr/about" class="btn social gplus"><i class="fa fa-google-plus"></i></a>
         </div>
-      </footer>
-    </div><!--/outside-filter-->
+
+        <a href="sobre-o-py.html" class="">quem somos</a>
+        <span class="footer-divider">.</span>
+        <a href="ajuda.html" class="">ajuda</a>
+        <span class="footer-divider">.</span>
+        <a href="reportar-problema" class="">reportar problema</a>
+
+        <div class="pull-right">
+          <span>design de interação por</span>
+          <a href="http://www.latitude14.com.br" target="blank"><img src="Content/img/latitude-14-logo.png"></a>
+        </div>
+      </div>
+    </footer>
+  </div><!--/outside-filter-->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="Scripts/jquery1.11.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/bootstrap-tagsinput.min.js"></script>
     <script src="Scripts/scripts.js"></script>
 
   </body>
