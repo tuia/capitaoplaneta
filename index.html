@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Planeta Y - Home</title>
+
+    <!-- STYLES -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/app.css" rel="stylesheet">
+    <!--/FONTAWESOME-->
+    <link rel="stylesheet" href="Content/font-awesome.min.css">
+
+    <!--/GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--/FAVICONS-->
+    <link rel="icon" href="Content/img/favicons/favicon-16.png" sizes="16x16">
+    <link rel="icon" href="Content/img/favicons/favicon-24.png" sizes="24x24">
+    <link rel="icon" href="Content/img/favicons/favicon-32.png" sizes="32x32">
+
+    <!--/TOUCHICONS-->
+    <!-- iPad com Retina Display -->
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <!-- iPhone com Retina Display -->
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <!-- Primeira e segunda geração de iPad -->
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <!-- Versões antigas de iPhone, iPod Touch e Android 2.2+  -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  </head>
+
+  <body id="home">
+
+    <!--/#NAVIGATION-->
+    <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <!--/MENU INSTITUIÇÃO-->
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+             <img src="Content/img/instituicao-02.png" alt="" class="nav-img">Anhembi Morumbi <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li class="auto">
+                <ul class="nav">
+                  <li class="active"><a href="#">Anhembi Morumbi</a></li>
+                  <li><a href="#">Anhembi</a></li>
+                  <li><a href="#">Fumec</a></li>
+                  <li><a href="#">Unibh</a></li>
+                  <li><a href="#">Una</a></li>
+                  <li><a href="#">PUC</a></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li><a href="#">Grupo educacional</a></li>
+              <li class="divider"></li>
+              <li><a href="gerenciar-instituicoes.html"><i class="fa fa-cog"></i> Gerenciar instituições</a></li>
+            </ul><!--/.dropdown-menu-->
+          </li><!--/.dropdown-->
+
+          <!--/alertas - instituiçao-->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">alerta 1</a></li>
+              <li class="divider"></li>
+              <li><a href="#">limpar notificações</a></li>
+            </ul>
+          </li><!--/dropdown-->
+        </ul><!--/.navbar-nav-->
+
+        <!--/LOGO-->
+        <a class="navbar-brand" href="index.html">Planeta Y</a>
+
+        <!--/MENU USUÁRIO-->
+        <ul class="nav navbar-nav pull-right">          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="Content/img/user-01.jpg" alt="anhanguera" class="nav-img">
+              Juliana <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li><a href="dados-cadastrais.html">Dados cadastrais</a></li>
+              <li><a href="planos.html">Planos</a></li>
+              <li><a href="#">Sair</a></li>
+              <li class="divider"></li>
+              <li><a href="ajuda.html">Ajuda</a></li>
+              <li><a href="sobre-o-planetay.html">Sobre o Planeta Y</a></li>
+              <li><a href="reportar-problema.html">Reportar problema</a></li>
+            </ul><!--/.dropdown-menu-->
+          </li><!--/.dropdown-->
+
+          <!--/alertas - usuario-->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li><a href="#">alerta 1</a></li>
+              <li class="divider"></li>
+              <li><a href="#">limpar notificações</a></li>
+            </ul>
+          </li><!--/dropdown-->
+        </ul><!--/.navbar-nav-->
+
+      </div><!-- /.container-->
+    </nav><!--/.navbar-->
+
+      <!--/CABEÇALHO-->
+      <header id="header">
+        <div class="container">
+
+          <div id="institution-box">
+            <img src="Content/img/instituicao-02.png" class="institution-image">
+            <div class="institution-data">
+              <h2 class="institution-name">Anhembi Morumbi</h2>
+              <div class="painel">
+                <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
+                <div class="capital-social">
+                  <h5>7,7</h5>
+                  <p><strong>3.607</strong> citações</p>
+                </div>
+                <div class="menu">
+                  <p>capital social</p>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown">geral <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 24 horas</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 7 dias</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 30 dias</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">geral</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div><!--/painel-->
+            </div><!--/institution-data-->
+            <span class="clearfix"></span>
+          </div><!--/institution-box-->
+
+          <ul class="nav nav-tabs pull-right" role="tablist">
+            <li class="active"><a href="index.html"><i class="fa fa-home"></i> início</a></li>
+            <li><a href="citacoes.html"><i class="fa fa-comment"></i> citações <span class="badge">78</span></a></a></li>
+            <li><a href="pessoas.html"><i class="fa fa-group"></i> pessoas</a></li>
+            <li><a href="relatorios.html"><i class="fa fa-pie-chart"></i> relatórios</a></li>
+            <li><a href="alertas.html"><i class="fa fa-cog"></i> preferências</a></li>
+          </ul>
+        </div><!--/container-->
+      </header>
+
+
+    <!--/CONTEÚDO DA PÁGINA-->
+    <div class="container user-profile">
+
+      <div class="btn-toolbar" role="toolbar">
+        <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default">últimas 24h</button>
+          <button type="button" class="btn btn-default">últimos 7 dias</button>
+          <button type="button" class="btn btn-default">últimos 30 dias</button>
+        </div>
+      </div>
+
+      <h2>Visão geral</h2>
+
+      <div class="panel panel-default">
+        <div class="row">
+
+          <div class="col-xs-3">
+            <h3>Capital Social</h3>
+              <div class="painel">
+                <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
+                <div class="capital-social">
+                  <h5>7,7</h5>
+                  <p><strong>3.607</strong> citações</p>
+                </div>
+              </div>
+          </div><!--/col3-->
+
+          <div class="col-xs-5">
+            <h3>Evolução</h3>
+            <div id="variacao-chart"></div>
+          </div><!--/col5-->
+
+          <div class="col-xs-4">
+            <h3>Sentimento</h3>
+            <div id="sentimento-chart"></div>
+          </div><!--/col4-->
+        </div><!--/.row-->
+        <div class="row">
+          <div class="col-xs-12"><a href="relatorios.html" class="pull-right">ver mais &raquo;</a></div>
+        </div>
+      </div><!--/.panel-->
+
+      <div class="panel panel-default">
+        <div class="row">
+
+          <div class="col-xs-3">
+            <h3>Atendimento</h3>
+            <div class="progress-container">
+              <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 73%;">2.630 Citações</div>
+              </div>
+              <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">1.320 Atendimento</div>
+              </div>
+              <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 42%;">320 Captação</div>
+              </div>
+              <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 21%;"> 3 </div>&nbsp; Inscritos
+              </div>
+            </div><!--/progress-container-->
+          </div><!--/col3-->
+
+          <div class="col-xs-3">
+            <h3>Palavras-chave</h3>
+            <div id="variacao-chart"></div>
+          </div><!--/col3-->
+
+          <div class="col-xs-6">
+            <h3>Redes sociais</h3>
+            <div id="sentimento-chart"></div>
+          </div><!--/col6-->
+        </div><!--/.row-->
+      </div><!--/.panel-->
+
+
+      <h2>Visão específica</h2>
+      <div class="panel panel-default">
+        <div class="row">
+
+          <div class="col-xs-6">
+            <h3>Indicadores</h3>
+          </div><!--/col6-->
+
+          <div class="col-xs-6">
+            <h3>Marcadores</h3>
+            <div id="variacao-chart"></div>
+          </div><!--/col6-->
+        </div><!--/.row-->
+      </div><!--/.panel-->
+
+
+      <h2>Ranking</h2>
+      <div class="panel panel-default">
+        <div class="row">
+
+          <div class="col-xs-4">
+            <h3>Citações relevantes</h3>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <p class="quote-text">“Aluno sofre preconceito em sala de aula. Professor é chamado para depor na PF.”</p>
+                  <p>
+                    <a href="#"><i class="fa fa-twitter-square"></i> @princessraquelnazareth</a>
+                    25/06  10:31
+                  </p>
+                </div>
+                <div class="item">
+                  <p class="quote-text">“Aluno sofre preconceito em sala de aula. Professor é chamado para depor na PF.”</p>
+                  <div class="">
+                    <a href="#">@princessraquelnazareth</a>
+                    25/06  10:31
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div><!--/col4-->
+
+          <div class="col-xs-4 people-chart">
+            <h3>Pessoa mais ativa</h3>
+            <!--/PERSON-->
+            <div class="person-box">
+              <div class="person-badge">1</div>
+              <a href="" class="person-title">princess-raquel-nazareth</a>
+              <a href="" class="person-image"><img src="Content/img/person-02.jpg" alt="nome da pessoa"></a>
+              <div class="person-data pull-left">
+                <p><span class="light-text">citações</span> 423<br>
+                <span class="light-text">influência</span> 423.321</p>
+                <div class="progress-container">
+                  <div class="progress"><div class="progress-bar good-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">60</div>
+                  </div><span class="feeling-icon good"></span>
+                </div><!--/progress-container-->
+                <div class="progress-container">
+                  <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">30</div>
+                  </div><span class="feeling-icon neutral"></span>
+                </div><!--/progress-container-->
+                <div class="progress-container">
+                  <div class="progress"><div class="progress-bar bad-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">10</div>
+                  </div><span class="feeling-icon bad"></span>
+                </div><!--/progress-container-->
+              </div><!--/person-data-->
+            </div><!--/.person-box-->
+          </div><!--/col4-->
+
+
+          <div class="col-xs-4 people-chart">
+            <h3>Influenciadora</h3>
+            <!--/PERSON-->
+            <div class="person-box">
+              <div class="person-badge">1</div>
+              <a href="" class="person-title">princess-raquel-nazareth</a>
+              <a href="" class="person-image"><img src="Content/img/person-02.jpg" alt="nome da pessoa"></a>
+              <div class="person-data pull-left">
+                <p><span class="light-text">citações</span> 423<br>
+                <span class="light-text">influência</span> 423.321</p>
+                <div class="progress-container">
+                  <div class="progress"><div class="progress-bar good-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">60</div>
+                  </div><span class="feeling-icon good"></span>
+                </div><!--/progress-container-->
+                <div class="progress-container">
+                  <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">30</div>
+                  </div><span class="feeling-icon neutral"></span>
+                </div><!--/progress-container-->
+                <div class="progress-container">
+                  <div class="progress"><div class="progress-bar bad-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">10</div>
+                  </div><span class="feeling-icon bad"></span>
+                </div><!--/progress-container-->
+              </div><!--/person-data-->
+            </div><!--/.person-box-->
+          </div><!--/col4-->
+
+        </div><!--/.row-->
+      </div><!--/.panel-->
+
+
+      <!--/#FOOTER-->
+      <footer id="page-footer">
+        <div class="container">
+          <p class="copyright">© Copyright 2014 Cadsoft. Todos os direitos reservados.</p>
+          <a href="#" target="blank"><img src="Content/img/planeta-y-logo.png"></a>
+
+          <div class="footer-social-links">
+            <a href="https://www.facebook.com/PlanetaY" class="btn social facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/planeta_y" class="btn social twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/+PlanetayBr/about" class="btn social gplus"><i class="fa fa-google-plus"></i></a>
+          </div>
+
+          <a href="sobre-o-py.html" class="">quem somos</a>
+          <span class="footer-divider">.</span>
+          <a href="ajuda.html" class="">ajuda</a>
+          <span class="footer-divider">.</span>
+          <a href="reportar-problema" class="">reportar problema</a>
+
+          <div class="pull-right">
+            <span>design de interação por</span>
+            <a href="http://www.latitude14.com.br" target="blank"><img src="Content/img/latitude-14-logo.png"></a>
+          </div>
+        </div>
+      </footer>
+
+    </div><!--/container-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="Scripts/jquery1.11.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/highcharts.js"></script>
+    <script src="Scripts/highcharts-export.js"></script>
+    <script src="Scripts/scripts.js"></script>
+    <script src="Scripts/home-charts.js"></script>
+
+  </body>
+</html>

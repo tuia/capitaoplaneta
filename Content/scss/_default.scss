@@ -93,6 +93,17 @@ label {font-weight: 300;}
 .neutral-bg {background-color: $neutral}
 .bad-bg {background-color: $bad}
 
+.quote-text {
+	font-family: "georgia", serif;
+	font-style: italic;
+	font-size: 20px;
+}
+.progress-container .progress {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
 .btn-default:hover { background-color: darken($btn-default, 5%)}
 .btn-default.active:hover { background-color: $btn-darker}
 
@@ -107,6 +118,21 @@ label {font-weight: 300;}
 
 .character-counter {text-align: right; margin-right: 10px; color: $light-text}
 .filter-feedback {font-weight: bold; color: $dark-text; text-align: center; margin: 20px 0 10px }
+
+.carousel {	
+	padding: 0 7%;
+	.carousel-control {
+		background: transparent;
+		color: $dark-text;
+		width: 7%;
+	}
+	.carousel-indicators li {
+		border-color: $light-text;
+		&.active {
+			background-color: $light-text;
+		}
+	}
+}
 
 .popover {
 	.popover-content {

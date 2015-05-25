@@ -196,14 +196,13 @@
                 <a href="" class="btn btn-default" data-toggle="modal" data-target="#create-parameter-modal"><i class="fa fa-plus"></i> adicionar parâmetro...</a>
               </div><!--/.intro-->
 
-
               <div id="word-group">
 
-                <!--/PARÂMETRO-->
+              
+                <!--/PARÂMETRO SENDO EDITADO-->
                 <div class="well word-box">
                   <div class="row">
                     <div class="col-xs-1">
-                      <a href="#" class="toggle-word"><i class="fa fa-square-o"></i></a>
                     </div>
                     <div class="col-xs-8">
                       <div class="form-group">
@@ -212,17 +211,11 @@
                       </div><!--/form-group-->
                       <div class="form-group">
 
-
                         <!--/
-                        
                         ADICIONAR AUTOCOMPLETE
-                        
                         -->
                         <label>tags relacionadas</label>
                         <input type="text" class="form-control" data-role="tagsinput" id="" placeholder="">
-
-
-
 
                       </div><!--/form-group-->
                     </div><!--/col-->
@@ -233,14 +226,84 @@
                       </div><!--/form-group-->
                     </div><!--/col-->
                     <div class="col-xs-1">
-                      <a href="" class="btn btn-primary edit-word hastooltip" data-toggle="modal" data-target="#edit-word-modal" data-title="editar palavra-chave"><i class="fa fa-pencil"></i></a>
                     </div>
                   </div><!--/row-->
                   <div class="options">
-                    <a class="btn btn-primary edit-item" href="">salvar</a>
-                    <a class="btn btn-default remove-item" href="">cancelar</a>
+                    <a class="btn btn-primary edit-item pull-right" href="">salvar</a>
+                    <a class="btn btn-default remove-item pull-right" href="">cancelar</a>
+                    <span class="clearfix"></span>
                   </div>
                 </div><!--/word-box-->
+
+
+                <!--/PARÂMETRO-->
+                <div class="well word-box active">
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <a href="#" class="toggle-word"><i class="fa fa-check-square-o"></i></a>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="form-group">
+                        <span class="word-title">Setor</span>
+                      </div><!--/form-group-->
+                      <div class="form-group tags">
+
+                        <p>
+                          <span class="label label-info">financeiro</span>
+                          <span class="label label-info">biblioteca</span>
+                          <span class="label label-info">apoio acadêmico</span>
+                          <span class="label label-info">secretaria</span>
+                          <span class="label label-info">processo seletivo</span>
+                        </p>
+
+                      </div><!--/form-group-->
+                    </div><!--/col-->
+                    <div class="col-xs-2">
+                      <div class="form-group">
+                        <label>cor</label>
+                        <input type="color" class="form-control" disabled="true" value="#5bc0de" />
+                      </div><!--/form-group-->
+                    </div><!--/col-->
+                    <div class="col-xs-1"> 
+                      <a href="" class="btn btn-primary edit-word hastooltip" data-toggle="modal" data-target="#edit-word-modal" data-title="editar palavra-chave"><i class="fa fa-pencil"></i></a>
+                    </div>
+                  </div><!--/row-->
+                </div><!--/word-box-->
+
+
+                <!--/PARÂMETRO-->
+                <div class="well word-box">
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <a href="#" class="toggle-word"><i class="fa fa-square-o"></i></a>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="form-group">
+                        <span class="word-title">Referente a:</span>
+                      </div><!--/form-group-->
+                      <div class="form-group tags">
+
+                        <p>
+                          <span class="label label-danger">pagamento de multas</span>
+                          <span class="label label-danger">documentos</span>
+                          <span class="label label-danger">mensalidade</span>
+                        </p>
+
+                      </div><!--/form-group-->
+                    </div><!--/col-->
+                    <div class="col-xs-2">
+                      <div class="form-group">
+                        <label>cor</label>
+                        <input type="color" class="form-control" disabled="true" value="#d9534f" />
+                      </div><!--/form-group-->
+                    </div><!--/col-->
+                    <div class="col-xs-1"> 
+                      <a href="" class="btn btn-primary edit-word hastooltip" data-toggle="modal" data-target="#edit-word-modal" data-title="editar palavra-chave"><i class="fa fa-pencil"></i></a>
+                    </div>
+                  </div><!--/row-->
+                </div><!--/word-box-->
+
+
               </div><!--/word-group-->
 
             </div><!--/panel-body-->
