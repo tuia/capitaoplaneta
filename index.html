@@ -161,10 +161,16 @@
     <div class="container user-profile">
 
       <div class="btn-toolbar" role="toolbar">
-        <div class="btn-group" role="group" aria-label="...">
-          <button type="button" class="btn btn-default">últimas 24h</button>
-          <button type="button" class="btn btn-default">últimos 7 dias</button>
-          <button type="button" class="btn btn-default">últimos 30 dias</button>
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-default active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked> últimas 24h
+          </label>
+          <label class="btn btn-default">
+            <input type="radio" name="options" id="option2" autocomplete="off"> últimos 7 dias
+          </label>
+          <label class="btn btn-default">
+            <input type="radio" name="options" id="option3" autocomplete="off"> últimos 30 dias
+          </label>
         </div>
       </div>
 
@@ -173,18 +179,21 @@
       <div class="panel panel-default">
         <div class="row">
 
-          <div class="col-xs-3">
+          <div class="col-xs-2">
             <h3>Capital Social</h3>
-              <div class="painel">
-                <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
-                <div class="capital-social">
-                  <h5>7,7</h5>
-                  <p><strong>3.607</strong> citações</p>
-                </div>
+            <div class="painel extended">
+              <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
+              <div class="capital-social">
+                <h5>7,7</h5>
               </div>
+              <span class="clearfix"></span>
+              <p><strong>3.607</strong> citações</p>
+            </div>
+            <p class="text-center">
+              <small class="light-text">período anterior:</small><br /> <span class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></span> 8,5</p>
           </div><!--/col3-->
 
-          <div class="col-xs-5">
+          <div class="col-xs-6">
             <h3>Evolução</h3>
             <div id="variacao-chart"></div>
           </div><!--/col5-->
@@ -202,30 +211,55 @@
       <div class="panel panel-default">
         <div class="row">
 
-          <div class="col-xs-3">
+          <div class="col-xs-4">
             <h3>Atendimento</h3>
             <div class="progress-container">
-              <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 73%;">2.630 Citações</div>
+              <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 63%;">2.630 </div>&nbsp; Citações
               </div>
-              <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">1.320 Atendimento</div>
+              <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">1.320 </div>&nbsp; Atendimento
               </div>
-              <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 42%;">320 Captação</div>
+              <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 42%;">320 </div>&nbsp; Captação
               </div>
               <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 21%;"> 3 </div>&nbsp; Inscritos
               </div>
             </div><!--/progress-container-->
-          </div><!--/col3-->
+          </div><!--/col4-->
 
           <div class="col-xs-3">
             <h3>Palavras-chave</h3>
-            <div id="variacao-chart"></div>
+            <div class="progress-container">
+              <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 53%;">385</div>&nbsp; <a href="citacoes.html">Anhanguera</a>
+              </div>
+              <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">201</div>&nbsp; <a href="citacoes.html">Anhanguera Campus</a>
+              </div>
+              <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 32%;">103</div>&nbsp; <a href="citacoes.html">Anhanguera da depressão</a>
+              </div>
+              <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 21%;"> 3 </div>&nbsp; <a href="citacoes.html">anhang</a>
+              </div>
+            </div><!--/progress-container-->
           </div><!--/col3-->
 
-          <div class="col-xs-6">
+          <div class="col-xs-5">
             <h3>Redes sociais</h3>
-            <div id="sentimento-chart"></div>
-          </div><!--/col6-->
+            <ul class="social-list">
+              <li><i class="fa fa-facebook-square"></i>9,1</li>
+              <li><i class="fa fa-twitter-square"></i>8,7</li>
+              <li><i class="fa fa-linkedin-square"></i>8,6</li>
+              <li><i class="fa fa-youtube-square"></i>7,1</li>
+              <li><i class="fa fa-whatsapp"></i>8,6</li>
+              <li><i class="fa fa-pinterest-square"></i>7,1</li>
+              <li><i class="fa fa-facebook-square"></i>9,1</li>
+              <li><i class="fa fa-twitter-square"></i>8,7</li>
+              <li><i class="fa fa-linkedin-square"></i>8,6</li>
+              <li><i class="fa fa-youtube-square"></i>7,1</li>
+              <li><i class="fa fa-whatsapp"></i>8,6</li>
+              <li><i class="fa fa-pinterest-square"></i>7,1</li>
+            </ul><!--/social-list-->
+          </div><!--/col5-->
         </div><!--/.row-->
+        <div class="row">
+          <div class="col-xs-12"><a href="relatorios.html" class="pull-right">ver mais &raquo;</a></div>
+        </div>
       </div><!--/.panel-->
 
 
@@ -235,11 +269,12 @@
 
           <div class="col-xs-6">
             <h3>Indicadores</h3>
+            <div id="indicadores-chart" class="chart-container"></div>
           </div><!--/col6-->
 
           <div class="col-xs-6">
             <h3>Marcadores</h3>
-            <div id="variacao-chart"></div>
+            <div id="marcadores-chart" class="chart-container"></div>
           </div><!--/col6-->
         </div><!--/.row-->
       </div><!--/.panel-->
@@ -263,17 +298,24 @@
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
                   <p class="quote-text">“Aluno sofre preconceito em sala de aula. Professor é chamado para depor na PF.”</p>
-                  <p>
-                    <a href="#"><i class="fa fa-twitter-square"></i> @princessraquelnazareth</a>
+                  <p class="carousel-caption">
+                    <a href="user-profile.html"><i class="fa fa-twitter-square"></i> @princessraquelnazareth</a>
                     25/06  10:31
                   </p>
                 </div>
                 <div class="item">
-                  <p class="quote-text">“Aluno sofre preconceito em sala de aula. Professor é chamado para depor na PF.”</p>
-                  <div class="">
-                    <a href="#">@princessraquelnazareth</a>
+                  <p class="quote-text">“Inscrições para o vestibular Anhanguera 2016 abertas.”</p>
+                  <p class="carousel-caption">
+                    <a href="user-profile.html">@clarissageni</a>
                     25/06  10:31
-                  </div>
+                  </p>
+                </div>
+                <div class="item">
+                  <p class="quote-text">“Esperar 50 horas para conseguir cadastrar no vestibular. Anhnanguera pior faculdade.”</p>
+                  <p class="carousel-caption">
+                    <a href="user-profile.html">@princessraquelnazareth</a>
+                    25/06  10:31
+                  </p>
                 </div>
               </div>
 

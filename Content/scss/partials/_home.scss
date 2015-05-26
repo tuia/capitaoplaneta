@@ -19,13 +19,94 @@
 		font-size: 20px;
 		font-weight: normal; 
 		margin: 30px 0 15px;
+		color: #101010;
 	}
 	h3 {
 		margin: 10px 0 20px;
 		text-transform: uppercase;
 		font-weight: bold;
+		color: $dark-text;
+	}
+	.institution-feeling {float: none; display: inline-block; padding: 3px; margin: 3px;}
+	.painel.extended {
+		height: auto;
+		.institution-feeling {
+			float: left;
+			padding: 0;
+			margin: 0;
+		}
+		.capital-social {
+			width: calc(100% - 53px);
+			background-color: $box-bg;
+			font-size: 26px;
+			height: 53px;
+			padding: 10px;
+			h5 {border: none;}
+		}
+		p {
+			text-align: center;
+			padding: 5px;
+			background-color: $dark-box-bg;
+			display: block;
+		}
 	}
 	.carousel {
 		text-align: center;
+		.item {
+			.carousel-caption {
+				color: $light-text;
+				display: block;
+				position: static;
+				padding: 0 0 20px;
+				font-size: 12px;
+				text-shadow: none;
+				a {
+					display: block;
+				}
+			}
+		}
+		.carousel-indicators {
+			bottom: 0;
+			margin: 0 -30%;
+		}
+	}
+	.person-box {
+		float: left;
+		width: 100%;
+		height: auto;
+		.person-title {
+			margin-bottom: 8px;
+		}
+		.person-image > img{
+			width: 120px;
+			height: 120px;
+			margin-bottom: 10px
+		}
+		.person-badge {
+			background-color: transparent;
+			background-image: url("img/badge.png");
+			height: 62px;
+			width: 41px;
+			padding: 8px 0;
+		}
+	}
+	.social-list {
+		list-style: none;
+		padding: 0;
+		li {
+			background-color: $box-bg;
+			display: inline-block;
+			float: left;
+			margin: 0 1px 1px 0;
+			width: 52px;
+			height: 72px;
+			text-align: center;
+			.fa {
+				display: block;
+				font-size: 26px;
+				line-height: 1.5;
+				padding: 2px 0;
+			}
+		}
 	}
 }

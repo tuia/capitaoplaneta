@@ -20,7 +20,7 @@ Highcharts.setOptions(Highcharts.theme);
     jq(function () {
         jq('#variacao-chart').highcharts({
             chart: {
-                width: 350,
+                width: 450,
                 height: 150,
                 type: 'line',
                 marginTop: 0,
@@ -67,7 +67,7 @@ Highcharts.setOptions(Highcharts.theme);
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
                 plotShadow: false,
-                width: 242,
+                width: 290,
                 height: 160,
                 marginLeft: 50,
                 marginRight: 50,
@@ -114,3 +114,112 @@ Highcharts.setOptions(Highcharts.theme);
             }]
         });
     });
+
+    
+//INDICADORES MEC
+
+        jq(function () {
+            jq('#indicadores-chart').highcharts({
+                chart: {
+                    type: 'bar',
+                    height: 200,
+                    width: 441,
+                    marginTop: 0,
+                    marginLeft: 0,
+                    spacingTop: 0
+                },
+                title: {
+                    text: 'Indicadores MEC por Capital Social'
+                },
+                xAxis: {
+                    type: 'categories',
+                    title: {
+                        text: null
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: null
+                    }
+                },
+                plotOptions: {
+                    bar: {
+                        dataLabels: {
+                            enabled: true
+                        }
+                    }
+                },
+                tooltip: {
+                    pointFormat: 'capital social: <b>{point.y:.1f}</b>'
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'capital social',
+                    data: [
+                        ['captação', 3.7],
+                        ['empregabilidade', 6.1],
+                        ['localização', 4.2],
+                        ['atuação ética', 4.0],
+                        ['corpo docente', 2.5],
+                        ['credenciamento no mec', 2.1],
+                        ['preço', 1.8],
+                        ['qualidade de ensino', 1.7],
+                        ['infraestrutura', 9.1],
+                        ['relacionamento', 1.1]
+                    ]
+                }]
+            });
+        });
+
+
+// MARCADORES
+
+        jq(function () {
+            jq('#marcadores-chart').highcharts({
+                chart: {
+                    type: 'column',
+                    width: 441,
+                    height: 200,
+                    marginTop: 0,
+                    marginLeft: 0,
+                    spacingTop: 0
+                },
+                title: {
+                    text: 'indicadores por sentimento'
+                },
+                xAxis: {
+                    categories: ['IEC', 'favoritos', 'lido', 'a responder', '2014']
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: null
+                    }
+                },
+                tooltip: {
+                    pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+                    shared: true
+                },
+                plotOptions: {
+                    column: {
+                        stacking: 'percent'
+                    }
+                },
+                series: [{
+                    name: 'positivo',
+                    data: [5, 3, 4, 7, 2],
+                    color: '#27AE60' // good
+                }, {
+                    name: 'neutro',
+                    data: [2, 2, 3, 2, 1],
+                    color: '#2980B9' // neutral
+                }, {
+                    name: 'negativo',
+                    data: [3, 4, 4, 2, 5],
+                    color: '#C0392B' // bad
+                }],
+            });
+        });

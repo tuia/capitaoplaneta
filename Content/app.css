@@ -2091,14 +2091,100 @@ used in citacoes and perfil-do-usuario */
   font-size: 20px;
   font-weight: normal;
   margin: 30px 0 15px;
+  color: #101010;
 }
 #home h3 {
   margin: 10px 0 20px;
   text-transform: uppercase;
   font-weight: bold;
+  color: #333333;
+}
+#home .institution-feeling {
+  float: none;
+  display: inline-block;
+  padding: 3px;
+  margin: 3px;
+}
+#home .painel.extended {
+  height: auto;
+}
+#home .painel.extended .institution-feeling {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+#home .painel.extended .capital-social {
+  width: calc(100% - 53px);
+  background-color: #f6f7f8;
+  font-size: 26px;
+  height: 53px;
+  padding: 10px;
+}
+#home .painel.extended .capital-social h5 {
+  border: none;
+}
+#home .painel.extended p {
+  text-align: center;
+  padding: 5px;
+  background-color: #e3e4e5;
+  display: block;
 }
 #home .carousel {
   text-align: center;
+}
+#home .carousel .item .carousel-caption {
+  color: #999999;
+  display: block;
+  position: static;
+  padding: 0 0 20px;
+  font-size: 12px;
+  text-shadow: none;
+}
+#home .carousel .item .carousel-caption a {
+  display: block;
+}
+#home .carousel .carousel-indicators {
+  bottom: 0;
+  margin: 0 -30%;
+}
+#home .person-box {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+#home .person-box .person-title {
+  margin-bottom: 8px;
+}
+#home .person-box .person-image > img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+#home .person-box .person-badge {
+  background-color: transparent;
+  background-image: url("img/badge.png");
+  height: 62px;
+  width: 41px;
+  padding: 8px 0;
+}
+#home .social-list {
+  list-style: none;
+  padding: 0;
+}
+#home .social-list li {
+  background-color: #f6f7f8;
+  display: inline-block;
+  float: left;
+  margin: 0 1px 1px 0;
+  width: 52px;
+  height: 72px;
+  text-align: center;
+}
+#home .social-list li .fa {
+  display: block;
+  font-size: 26px;
+  line-height: 1.5;
+  padding: 2px 0;
 }
 
 /* PAINEL DE FILTRO */
