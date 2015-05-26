@@ -415,14 +415,64 @@
 
     </div><!--/container-->
 
+    <div id="ticker">
+      <div class="container">
+
+        <!--/Carousel-->
+        <div id="ticker-carousel" class="carousel carousel-fade" data-ride="carousel">
+
+          <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="carousel-caption">
+                <a href="user-profile.html"><i class="fa fa-twitter-square"></i> @luana-pil</a>
+                23s
+              </div>
+              <div class="marquee-container">
+                <p class="marquee-data">Final de semestre = passar raiva com professor que passa nota errada no diário. E olha que eu nem faltei esse semestre! Raiva! #desapontado!</p>
+              </div><!--/.marquee-container-->
+            </div>
+            <div class="item">
+              <div class="carousel-caption">
+                <a href="user-profile.html"><i class="fa fa-twitter-square"></i> @princessraquelnazareth</a>
+                23s
+              </div>
+              <div class="marquee-container">
+                <p class="marquee-data">Aluno sofre preconceito em sala de aula. Professor é chamado para depor na PF.</p>
+              </div><!--/.marquee-container-->
+            </div>
+          </div><!--/carousel-inner-->
+
+          <div class="close">
+            <a href="#" class="close-ticker-btn">&times;</a>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+          </a>
+        </div>
+
+      </div><!--/.container-->
+    </div><!--/#ticker-->
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="Scripts/jquery1.11.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/highcharts.js"></script>
-    <script src="Scripts/highcharts-export.js"></script>
     <script src="Scripts/scripts.js"></script>
     <script src="Scripts/home-charts.js"></script>
+    <script type="text/javascript">
+      jq('#ticker-carousel').carousel({
+        interval: 5000
+      });
+    </script>
 
   </body>
 </html>

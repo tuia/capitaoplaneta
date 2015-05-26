@@ -24,7 +24,7 @@ var jq = jQuery.noConflict();
 		jq('.help-button').popover();
 
 		//CAROUSEL
-		jq('.carousel').carousel({
+		jq('#report-content .carousel').carousel({
 			interval: false
 		});
 

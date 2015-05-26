@@ -258,3 +258,29 @@ ANIMATIONS
     transform: rotate(360deg);
   }
 } /* example: animation: anim-rotate 2s infinite linear; */
+
+/* MARQUEE */
+@-webkit-keyframes marquee-animation {
+  0% { left: 0; }
+  20% {left: 0}
+  80% { left: -50%; }
+  100% { left: -50%; }
+}
+@-moz-keyframes marquee-animation {
+  0% { left: 0; }
+  20% {left: 0}
+  80% { left: -50%; }
+  100% { left: -50%; }
+}
+@-o-keyframes marquee-animation {
+  0% { left: 0; }
+  20% {left: 0}
+  80% { left: -50%; }
+  100% { left: -50%; }
+}
+@keyframes marquee-animation {
+  0% { left: 0; }
+  20% {left: 0}
+  80% { left: -50%; }
+  100% { left: -50%; }
+}
