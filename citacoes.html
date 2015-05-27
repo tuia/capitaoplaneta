@@ -1119,7 +1119,7 @@
 
             <!--/ATENDIMENTO-->
             <div class="btn-group">
-              <a href="#abrir-atendimento-modal" class="btn" data-toggle="modal"><img src="Content/img/novo-atendimento-icon.png" /> abrir atendimento </button>
+              <a href="#editat-modal" class="btn" data-toggle="modal"><img src="Content/img/atendimento-icon.png" /> editar atendimento </a>
             </div>
 
 
@@ -1622,7 +1622,7 @@
 
             <!--/ATENDIMENTO-->
             <div class="btn-group">
-              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><img src="Content/img/atendimento-icon.png" /> editar atendimento </button>
+              <a href="#abrir-atendimento-modal" class="btn" data-toggle="modal"><img src="Content/img/novo-atendimento-icon.png" /> abrir atendimento </a>
             </div>
 
             <!--/EXPANDIR-->
@@ -1699,7 +1699,7 @@
                   </label>
                 </div>
                 <div id="opt1" class="accordion-hidden">
-                  <select class="form-control">
+                  <select class="form-control selectpicker">
                     <option><span class="id">08273</span> - <span class="nome">Fernanda Ribeiro</span> - <span class="natureza">Dúvida</span> - <span class="setor">Biblioteca</span> - <span class="referente">Empréstimo de livros</span>   <small class="date"> iniciado em 16/09</small></option>
                     <option><span class="id">08201</span> - <span class="nome">Fernanda Ribeiro</span> - <span class="natureza">Dúvida</span> - <span class="setor">Biblioteca</span> - <span class="referente">Pagamento de multa</span>   <small class="date"> iniciado em 10/09</small></option>
                   </select>
@@ -1719,7 +1719,7 @@
                   <div class="row">
                     <div class="form-group col-xs-6">
                       <label for="exampleInputPassword1">natureza do atendimento</label>
-                      <select class="form-control">
+                      <select class="form-control selectpicker">
                         <option>reclamação</option>
                         <option>dúvida</option>
                       </select>
@@ -1793,7 +1793,7 @@
                   <div class="row">
                     <div class="form-group col-xs-6">
                       <label for="exampleInputPassword1">natureza do atendimento</label>
-                      <select class="form-control">
+                      <select class="form-control selectpicker">
                         <option>reclamação</option>
                         <option>dúvida</option>
                       </select>
@@ -2002,7 +2002,7 @@
                     </div><!--/col-xs-4-->
                     <div class="col-xs-2 form-group">
                       <label for="">natureza</label>
-                      <select class="form-control">
+                      <select class="form-control selectpicker">
                         <option>dúvida</option><option>sugestão</option><option>reclamação</option>
                       </select>
                     </div><!--/col-xs-4-->
@@ -2380,11 +2380,9 @@
 
 
 
-
-
     <!--/MODAL - ABRIR ATENDIMENTO-->
     <div id="abrir-atendimento-modal" class="modal fade">
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
