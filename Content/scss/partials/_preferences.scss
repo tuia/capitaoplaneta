@@ -50,6 +50,17 @@
 		}
 	}
 
+	/* FILA DE CAPTAÇÃO */
+	.quote-queue {
+		background: $box-bg;
+		padding: 15px 10px 10px;
+		.icon-box {
+			text-align: center;
+			padding: 5px 0;
+			.fa {font-size: 30px}
+		}
+	}
+
 
 
 

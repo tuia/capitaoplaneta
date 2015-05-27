@@ -442,6 +442,12 @@ input.date {
   width: 63px;
 }
 
+.form-box {
+  margin: 0 0 30px;
+  height: auto;
+  overflow: auto;
+}
+
 /* validation and feedback */
 .form-group {
   /* feedback  */
@@ -4842,6 +4848,19 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .alert-form .checkbox select {
   display: inline-block;
   margin-left: 5px;
+}
+
+/* FILA DE CAPTAÇÃO */
+.quote-queue {
+  background: #f6f7f8;
+  padding: 15px 10px 10px;
+}
+.quote-queue .icon-box {
+  text-align: center;
+  padding: 5px 0;
+}
+.quote-queue .icon-box .fa {
+  font-size: 30px;
 }
 
 /* PALAVRAS-CHAVE */
