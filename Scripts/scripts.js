@@ -9,7 +9,7 @@ var jq = jQuery.noConflict();
 	//BOOTSTRAP
 
 		//MODAL
-		jq('#abrir-atendimento-modal').modal('show');
+		//jq('#abrir-atendimento-modal').modal('show');
 
 		// TOOLTIP 
 		jq('body').tooltip({
