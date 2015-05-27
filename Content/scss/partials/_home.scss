@@ -227,3 +227,59 @@
 .carousel-fade .carousel-control {
   z-index: 2;
 }
+
+
+
+/* RADIO PANEL */
+.radio-panel-container {
+
+	.radio-panel {
+		.radio-box {
+			.radio-btn {
+				display: block;
+				padding: 8px;
+				color: $lighter-text;
+				.fa {
+					font-size: 18px;
+					margin-right: 5px;
+					&:first-child {display: inline-block;}
+					&:nth-child(2) {display: none;}
+				}
+			}
+			&.active {
+				.radio-btn {
+					color: $dark-text;
+					.fa {
+						&:first-child {display: none;}
+						&:nth-child(2) {display: inline-block;}
+					}
+				}
+			}
+		}
+		.radio-panel-content {
+			padding: 15px;
+			.form-group {margin-bottom: 0}
+		}
+	}
+
+	.or-divider{
+		border-top: 1px solid $box-bg;
+		margin: 20px 0 -5px;
+		text-align: center;
+		span {
+			display: inline-block;
+			padding: 5px 15px;
+			background: $light-box-bg;
+			position: relative;
+			top: -17px;
+		}
+	}
+
+}/*radio-panel-container*/
+
+
+
+
+
+
+

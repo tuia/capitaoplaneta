@@ -2379,6 +2379,51 @@ used in citacoes and perfil-do-usuario */
   z-index: 2;
 }
 
+/* RADIO PANEL */
+.radio-panel-container .radio-panel .radio-box .radio-btn {
+  display: block;
+  padding: 8px;
+  color: #cccccc;
+}
+.radio-panel-container .radio-panel .radio-box .radio-btn .fa {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.radio-panel-container .radio-panel .radio-box .radio-btn .fa:first-child {
+  display: inline-block;
+}
+.radio-panel-container .radio-panel .radio-box .radio-btn .fa:nth-child(2) {
+  display: none;
+}
+.radio-panel-container .radio-panel .radio-box.active .radio-btn {
+  color: #333333;
+}
+.radio-panel-container .radio-panel .radio-box.active .radio-btn .fa:first-child {
+  display: none;
+}
+.radio-panel-container .radio-panel .radio-box.active .radio-btn .fa:nth-child(2) {
+  display: inline-block;
+}
+.radio-panel-container .radio-panel .radio-panel-content {
+  padding: 15px;
+}
+.radio-panel-container .radio-panel .radio-panel-content .form-group {
+  margin-bottom: 0;
+}
+.radio-panel-container .or-divider {
+  border-top: 1px solid #f6f7f8;
+  margin: 20px 0 -5px;
+  text-align: center;
+}
+.radio-panel-container .or-divider span {
+  display: inline-block;
+  padding: 5px 15px;
+  background: white;
+  position: relative;
+  top: -17px;
+}
+
+/*radio-panel-container*/
 /* PAINEL DE FILTRO */
 #filter-panel {
   position: fixed;

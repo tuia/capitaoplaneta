@@ -1119,7 +1119,7 @@
 
             <!--/ATENDIMENTO-->
             <div class="btn-group">
-              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><img src="Content/img/novo-atendimento-icon.png" /> abrir atendimento </button>
+              <a href="#abrir-atendimento-modal" class="btn" data-toggle="modal"><img src="Content/img/novo-atendimento-icon.png" /> abrir atendimento </button>
             </div>
 
 
@@ -2377,6 +2377,96 @@
         </div><!--/.modal-content-->
       </div><!--/.modal-dialog-->
     </div><!--/.modal-->
+
+
+
+
+
+    <!--/MODAL - ABRIR ATENDIMENTO-->
+    <div id="abrir-atendimento-modal" class="modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Abrir atendimento</h4>
+          </div>
+          <div class="modal-body radio-panel-container">
+
+            <div class="radio-panel">
+
+              <div class="radio-box">
+                <a href="#" class="radio-btn">
+                  <i class="fa fa-circle"></i>
+                  <i class="fa fa-check-circle"></i>
+                  atendimento anterior
+                </a>
+              </div><!--/.radio-->
+
+              <div class="radio-panel-content" style="display: none">
+                <div class="form-group">
+                  <select class="selectpicker form-control">
+                    <option data-subtext="iniciado em 16/09/14">08237 - Juliana Almada - Dúvida - Biblioteca - Empréstimo de livros</option>
+                    <option data-subtext="iniciado em 16/09/14">08237 - Frederico H. Júnior - Reclamação - Financeiro - Atraso boleto</option>
+                    <option data-subtext="iniciado em 16/09/14">08237 - Juliana Almada - Dúvida - Biblioteca - Empréstimo de livros</option>
+                    <option data-subtext="iniciado em 16/09/14">08237 - Frederico H. Júnior - Reclamação - Financeiro - Atraso boleto</option>
+                  </select>
+                </div><!--/form-group-->
+              </div><!--/.radio-panel-content-->
+              
+            </div><!--/.radio-panel-->
+
+            <div class="or-divider"><span>ou</span></div><!--/.or-divider-->
+
+            <div class="radio-panel">
+
+              <div class="radio-box active">
+                <a href="#" class="radio-btn">
+                  <i class="fa fa-circle"></i>
+                  <i class="fa fa-check-circle"></i>
+                  novo atendimento
+                </a>
+              </div><!--/.radio-->
+
+              <div class="radio-panel-content">
+                <div class="row">
+                  <div class="form-group col-xs-4">
+                    <label for="">natureza do atendimento</label>
+                    <select class="selectpicker form-control">
+                      <option>dúvida</option>
+                      <option>sugestão</option>
+                      <option>reclamação</option>
+                    </select>
+                  </div><!--/col4-->
+                  <div class="form-group col-xs-4">
+                    <label for="">setor</label>
+                    <select class="selectpicker form-control">
+                      <option>biblioteca</option>
+                      <option>financeiro</option>
+                      <option>pedagogia</option>
+                    </select>
+                  </div><!--/col4-->
+                  <div class="form-group col-xs-4">
+                    <label for="">referente a</label>
+                    <select class="selectpicker form-control">
+                      <option>dúvida</option>
+                      <option>sugestão</option>
+                      <option>reclamação</option>
+                    </select>
+                  </div><!--/col4-->
+                </div><!--/.row-->
+              </div><!--/.radio-panel-content-->
+              
+            </div><!--/.radio-panel-->
+
+
+          </div><!--/.modal-body-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">cancelar</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">salvar</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
 
 

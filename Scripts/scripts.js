@@ -9,7 +9,7 @@ var jq = jQuery.noConflict();
 	//BOOTSTRAP
 
 		//MODAL
-		//jq('#reportModal').modal('show');
+		jq('#abrir-atendimento-modal').modal('show');
 
 		// TOOLTIP 
 		jq('body').tooltip({
@@ -331,6 +331,37 @@ var jq = jQuery.noConflict();
 jq('#foward-modal .togglecc').click( function() {
 	jq(this).parents('form').find('.cc-container').slideToggle();
 });
+
+
+/*
+.radio-panel-container {
+
+	.radio-panel {
+		.radio {}
+		.radio-panel-content {}
+	} radio-panel
+
+	.or-divider{}
+
+}/*radio-panel-container*/
+ 
+
+	//RADIO PANEL (EXPANDABLE)
+	jq('.radio-btn').click( function() {
+		if ( jq(this).parent().hasClass('active') ) {
+	  		return false
+		} else {
+		  jq(this).parents('.radio-panel-container').find('.radio-box').removeClass('active');
+		  jq(this).parent().addClass('active');
+
+		  jq(this).parents('.radio-panel-container').find('.radio-panel-content').slideUp();
+		  jq(this).parents('.radio-panel').find('.radio-panel-content').slideDown();
+		}
+
+	  return false
+	});
+
+
 
 //SMOOTH SCROLLING
 //Faz a tela "deslizar" quando clica em link âncora pra própria página
