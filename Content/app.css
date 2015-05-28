@@ -4854,6 +4854,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .quote-queue {
   background: #f6f7f8;
   padding: 15px 10px 10px;
+  margin-bottom: 30px;
 }
 .quote-queue .icon-box {
   text-align: center;
