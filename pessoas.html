@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Planeta Y - essoas </title>
+
+    <!-- STYLES -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/app.css" rel="stylesheet">
+    <!--/FONTAWESOME-->
+    <link rel="stylesheet" href="Content/font-awesome.min.css">
+
+    <!--/GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--/FAVICONS-->
+    <link rel="icon" href="Content/img/favicons/favicon-16.png" sizes="16x16">
+    <link rel="icon" href="Content/img/favicons/favicon-24.png" sizes="24x24">
+    <link rel="icon" href="Content/img/favicons/favicon-32.png" sizes="32x32">
+
+    <!--/TOUCHICONS-->
+    <!-- iPad com Retina Display -->
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <!-- iPhone com Retina Display -->
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <!-- Primeira e segunda geração de iPad -->
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <!-- Versões antigas de iPhone, iPod Touch e Android 2.2+  -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  </head>
+
+  <body>
+
+    <!--/PAINEL DE FILTROS-->
+    <div id="filter-panel">
+
+      <!-- Split button -->
+      <div class="btn-group filter-btn-container">
+        <button type="button" class="btn" id="filter-toggle"><i class="fa fa-filter"></i></button>
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li>filtros salvos:</li>
+          <li><a href="#">negativas</a></li>
+          <li><a href="#">busca anhanguera</a></li>
+          <li><a href="#">teste</a></li>
+          <li><a href="#">sentimento bom</a></li>
+          <li class="divider"></li>
+          <li><a href="#"><i class="fa fa-cog"></i> gerenciar filtros salvos</a></li>
+        </ul>
+      </div>
+
+      <div class="filter-content">
+        <div class="row">
+          <div class="col-xs-6">
+            <h2 class="inverse-text"><i class="fa fa-filter"></i> Filtrar citações</h2>
+          </div><!--/col-->
+          <div class="col-xs-6">
+            <div class="form-horizontal" role="form">
+              <div class="form-group saved-filters">
+                <label for="" class="col-xs-6 control-label">filtros salvos:</label>
+                <div class="col-xs-6">
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown"><span class="pull-left">selecione</span> <span class="pull-right"><span class="caret"></span></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li>filtros salvos:</li>
+                      <li><a href="#">negativas</a></li>
+                      <li><a href="#">busca anhanguera</a></li>
+                      <li><a href="#">teste</a></li>
+                      <li><a href="#">sentimento bom</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#"><i class="fa fa-cog"></i> gerenciar filtros salvos</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--/col-->
+        </div><!--/row-->
+
+        <form id="filter-form">
+
+          <div class="row">
+            <div class="col-xs-12">
+              <!--/CONTEÚDO-->
+              <div class="filter-group">
+                <h5 class="inverse-text">Nome</h5>
+                <input type="text" class="form-control search" placeholder="nome...">
+              </div><!--/filter-group-->
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-xs-4">
+              <!--/STATUS-->
+              <div class="filter-group status">
+                <h5 class="inverse-text">atendimento</h5>            
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-default active">
+                    <input type="checkbox" name="options" id="option1" checked> em andamento
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options" id="option2"> encaminhado
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options" id="option3"> fechado
+                  </label>
+                </div><!--/btn-group-->
+              </div><!--/filter-group--> 
+              <!--/STATUS-->
+              <div class="filter-group">
+                <h5 class="inverse-text">captação</h5>            
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-default active">
+                    <input type="checkbox" name="options" id="option1" checked> prospect
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options" id="option2"> lead
+                  </label>
+                </div>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options" id="option3"> inscrito
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options" id="option3"> não-inscrito
+                  </label>
+                </div><!--/btn-group-->
+              </div><!--/filter-group--> 
+            </div><!--/.col4-->
+
+            <div class="col-xs-4">
+              <!--/SENTIMENTO-->
+              <div class="filter-group feeling">
+                <h5 class="inverse-text">sentimento</h5>                
+                <div class="btn-group feeling" data-toggle="buttons">
+                  <label class="btn btn-default active good">
+                    <input type="checkbox" name="options" id="option1" checked> bom </i>
+                  </label>
+                  <label class="btn btn-default neutral">
+                    <input type="checkbox" name="options" id="option2"> neutro
+                  </label>
+                  <label class="btn btn-default bad">
+                    <input type="checkbox" name="options" id="option3"> mau
+                  </label>
+                </div><!--/btn-group-->
+              </div><!--/filter-group-->
+            </div><!--/.col4-->
+
+            <div class="col-xs-4">
+              <!--/FASE FUNIL-->
+              <div class="filter-group">
+                <h5 class="inverse-text">fase funil</h5>
+                <div class="btn-group-vertical" data-toggle="buttons">
+                  <label class="btn btn-default active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> 1. reconhecimento da necessidade
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> 2. busca de informações
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> 3. avaliação de alternativas
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> 4. inscrito
+                  </label>
+                </div>
+              </div><!--/filter-group-->
+            </div><!--/.col4-->
+          </div><!--/.row-->
+        </form>
+
+      </div><!--/filter-content-->
+
+      <footer>
+        <div class="pull-right">
+          <a href="#" class="btn btn-link reset-filter">limpar filtro</a>
+          <a href="#" class="btn btn-default btn-lg" data-toggle="modal" data-target="#save-filter-modal">salvar filtro</a>
+          <a href="#" class="btn btn-primary btn-lg">filtrar</a>
+        </div>
+        <span class="clearfix"></span>
+      </footer>
+    </div><!--/#filter-panel-->
+
+    <div id="outside-filter">
+      <!--/#NAVIGATION-->
+      <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+
+          <!--/MENU INSTITUIÇÃO-->
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               <img src="Content/img/instituicao-02.png" alt="" class="nav-img">Anhembi Morumbi <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="auto">
+                  <ul class="nav">
+                    <li class="active"><a href="#">Anhembi Morumbi</a></li>
+                    <li><a href="#">Anhembi</a></li>
+                    <li><a href="#">Fumec</a></li>
+                    <li><a href="#">Unibh</a></li>
+                    <li><a href="#">Una</a></li>
+                    <li><a href="#">PUC</a></li>
+                  </ul>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">Grupo educacional</a></li>
+                <li class="divider"></li>
+                <li><a href="gerenciar-instituicoes.html"><i class="fa fa-cog"></i> Gerenciar instituições</a></li>
+              </ul><!--/.dropdown-menu-->
+            </li><!--/.dropdown-->
+
+            <!--/alertas - instituiçao-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">alerta 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#">limpar notificações</a></li>
+              </ul>
+            </li><!--/dropdown-->
+          </ul><!--/.navbar-nav-->
+
+          <!--/LOGO-->
+          <a class="navbar-brand" href="index.html">Planeta Y</a>
+
+          <!--/MENU USUÁRIO-->
+          <ul class="nav navbar-nav pull-right">          
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="Content/img/user-01.jpg" alt="anhanguera" class="nav-img">
+                Juliana <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                <li><a href="dados-cadastrais.html">Dados cadastrais</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="#">Sair</a></li>
+                <li class="divider"></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+                <li><a href="sobre-o-planetay.html">Sobre o Planeta Y</a></li>
+                <li><a href="reportar-problema.html">Reportar problema</a></li>
+              </ul><!--/.dropdown-menu-->
+            </li><!--/.dropdown-->
+
+            <!--/alertas - usuario-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge"><i class="fa fa-exclamation-triangle"></i> 1</span></a>
+              <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                <li><a href="#">alerta 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#">limpar notificações</a></li>
+              </ul>
+            </li><!--/dropdown-->
+          </ul><!--/.navbar-nav-->
+
+        </div><!-- /.container-->
+      </nav><!--/.navbar-->
+
+        <!--/CABEÇALHO-->
+        <header id="header">
+          <div class="container">
+
+            <div id="institution-box">
+              <img src="Content/img/instituicao-02.png" class="institution-image">
+              <div class="institution-data">
+                <h2 class="institution-name">Anhembi Morumbi</h2>
+                <div class="painel">
+                  <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
+                  <div class="capital-social">
+                    <h5>7,7</h5>
+                    <p><strong>3.607</strong> citações</p>
+                  </div>
+                  <div class="menu">
+                    <p>capital social</p>
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown">geral <span class="caret"></span></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 24 horas</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 7 dias</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">últimas 30 dias</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">geral</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div><!--/painel-->
+              </div><!--/institution-data-->
+              <span class="clearfix"></span>
+            </div><!--/institution-box-->
+
+            <ul class="nav nav-tabs pull-right" role="tablist">
+              <li><a href="index.html"><i class="fa fa-home"></i> início</a></li>
+              <li><a href="citacoes.html"><i class="fa fa-comment"></i> citações <span class="badge">78</span></a></a></li>
+              <li class="active"><a href="pessoas.html"><i class="fa fa-group"></i> pessoas</a></li>
+              <li><a href="relatorios.html"><i class="fa fa-pie-chart"></i> relatórios</a></li>
+              <li><a href="alertas.html"><i class="fa fa-cog"></i> preferências</a></li>
+            </ul>
+          </div><!--/container-->
+        </header>
+
+
+      <!--/CONTEÚDO DA PÁGINA-->
+      <div class="container">
+
+        <div class="user-profile">
+          <div class="row">
+            <div class="col-xs-12">
+
+              <div class="row">
+                <div class="col-xs-12 panel user-header">
+
+                  <div class="row">
+
+                    <!--/USER IMAGE-->
+                    <div class="col-xs-2">
+                      <img src="Content/img/user-01.jpg" alt="Roberto de Freitas" class="user-image">
+                    </div>
+
+                    <div class="col-xs-4">
+
+                      <!--/USER NAME-->
+                      <a href="perfil-do-usuario.html" class="user-name">Roberto de Freitas</a>
+                      <p class="user-detail">
+                        <span><i class="fa fa-map-marker"></i> Minas gerais</span>
+                        <span><i class="fa fa-map-marker"></i> (31) 8989-0972</span>
+                      </p>
+                      <p class="user-detail">
+                        <i class="fa fa-envelope"></i> <a href="mailto:">robertodefreitas@gmail.com</a>
+                      </p>
+                      <p class="user-detail">
+                        <a href="http://facebook.com/" class="btn btn-link"><i class="fa fa-facebook-square"></i></a>
+                        <a href="http://twitter.com/" class="btn btn-link"><i class="fa fa-twitter-square"></i></a>
+                      </p>
+                    </div>
+
+                    <div class="col-xs-4">
+                      <div class="row">
+                        <div class="col-xs-7">
+                          <div class="painel">
+                            <div class="capital-social">
+                              <h5>7,7</h5>
+                              <p><strong>3.607</strong> citações</p>
+                            </div>
+                            <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
+                          </div><!--/painel-->
+                        </div><!--/col6-->
+                        <div class="col-xs-6">
+                          <div class="people-chart">
+                            <div class="person-box">
+                              <div class="person-data">
+                                <div class="progress-container">
+                                  <div class="progress"><div class="progress-bar good-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">60</div>
+                                  </div><span class="feeling-icon good"></span>
+                                </div><!--/progress-container-->
+                                <div class="progress-container">
+                                  <div class="progress"><div class="progress-bar neutral-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">30</div>
+                                  </div><span class="feeling-icon neutral"></span>
+                                </div><!--/progress-container-->
+                                <div class="progress-container">
+                                  <div class="progress"><div class="progress-bar bad-bg" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">10</div>
+                                  </div><span class="feeling-icon bad"></span>
+                                </div><!--/progress-container-->
+                              </div><!--/person-data-->
+                            </div>
+                          </div>
+                        </div><!--/col6-->
+                      </div><!--/.row-->
+                    </div><!--/.col4-->
+
+                    <div class="col-xs-2">
+                      <a href="#" class="ribbon">
+                        <span class="pull-left">
+                          <span>Captação</span>
+                          <small>lead</small>
+                        </span>
+                        <span class="pull-right"><i class="fa fa-info-circle help-button"></i>
+                        </span>
+                      </a><!--/ribbon-->
+                      <div>
+                        <a href="#" class="hastooltip" title="novo atendimento"><img src="Content/img/novo-atendimento-icon.png" /></a>
+                        <a href="#" class="hastooltip" title="editar"><i class="fa fa-pencil"></i></a>
+                      </div>
+                    </div><!--/col-xs-3-->
+                  </div><!--/row-->
+                </div><!--/user-header-->
+
+              </div><!--/row-->
+            </div><!--/col-xs-12-->
+
+          </div><!--/user-profile-->
+        </div><!--/row-->
+
+      </div><!--/container-->
+    </div><!--/#outside-filter-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="Scripts/jquery1.11.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/highcharts.js"></script>
+    <script src="Scripts/scripts.js"></script>
+
+  </body>
+</html>
