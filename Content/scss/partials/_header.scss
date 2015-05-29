@@ -1,7 +1,7 @@
 
 
 	/* CORES */
-	$header-bg-gray: #6eaea8;
+	$header-bg-gray: #3e9e98;
 
 	/* IMAGENS DE FUNDO */
 	$pixel: url('img/textures/pixel.png');
@@ -82,6 +82,21 @@
 #institution-box {
 	padding: 30px 0;
 	position: relative;
+	height: auto;
+	.colorpicker {
+		float: right;
+		.dropdown-toggle {
+			color: $inverse-text;
+			background: transparent;
+			opacity: .5;
+			&:hover {
+				opacity: 1;
+			}
+			.fa {
+				font-size: 20px;
+			}
+		}
+	}
 	.institution-image {
 		float: left;
 		width: 77px;

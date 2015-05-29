@@ -169,6 +169,13 @@ body {
   overflow-x: hidden;
 }
 
+.marquee {
+  width: 300px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #ccc;
+}
+
 .dark-text {
   color: #333333;
 }
@@ -2691,7 +2698,7 @@ used in citacoes and perfil-do-usuario */
 #header {
   margin: -20px 0 40px;
   position: relative;
-  background-color: #6eaea8;
+  background-color: #3e9e98;
   background-image: url("img/textures/blocks.png");
   background-blend-mode: multiply;
   background-position: center center;
@@ -2778,6 +2785,21 @@ used in citacoes and perfil-do-usuario */
 #institution-box {
   padding: 30px 0;
   position: relative;
+  height: auto;
+}
+#institution-box .colorpicker {
+  float: right;
+}
+#institution-box .colorpicker .dropdown-toggle {
+  color: white;
+  background: transparent;
+  opacity: .5;
+}
+#institution-box .colorpicker .dropdown-toggle:hover {
+  opacity: 1;
+}
+#institution-box .colorpicker .dropdown-toggle .fa {
+  font-size: 20px;
 }
 #institution-box .institution-image {
   float: left;

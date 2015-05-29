@@ -74,7 +74,12 @@ body {
 	background: $page-background;
 	overflow-x: hidden;
 }
-
+.marquee {
+  width: 300px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #ccc;
+}
 .dark-text {color: $dark-text}
 .light-text {color: $light-text}
 .lighter-text {color: $lighter-text}
