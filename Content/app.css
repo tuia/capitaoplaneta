@@ -4413,6 +4413,126 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   margin: -2px 0 2px;
 }
 
+/* PESSOAS */
+#pessoas .user-profile {
+  padding: 0 10px 30px;
+  position: relative;
+  margin-bottom: 20px;
+}
+#pessoas .user-profile .user-image {
+  float: left;
+  width: 120px;
+  height: 120px;
+  margin: 0;
+  border: none;
+  transform: none;
+  -moz-transform: none;
+  -webkit-transform: none;
+  -o-transform: none;
+}
+#pessoas .user-profile .panel {
+  padding: 0;
+}
+#pessoas .user-profile .panel .user-header {
+  height: auto;
+  padding: 0;
+}
+#pessoas .user-profile .panel .user-header .painel {
+  float: left;
+}
+#pessoas .user-profile .panel .user-header .user-profile-data {
+  float: left;
+  width: 370px;
+  padding: 5px 0 0 10px;
+}
+#pessoas .user-profile .panel .user-header .user-profile-data .user-name {
+  font-size: 22px;
+  font-weight: 400;
+  display: block;
+  margin: 0 0 3px;
+  line-height: 1.1;
+}
+#pessoas .user-profile .panel .user-header .user-profile-data .user-name small {
+  font-size: 11px;
+  color: #666666;
+}
+#pessoas .user-profile .panel .user-header .user-profile-data .user-detail {
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+#pessoas .user-profile .panel .user-header .user-profile-data .user-detail:last-child {
+  margin-bottom: 0;
+}
+#pessoas .user-profile .panel .user-header .user-profile-data .user-detail .btn-sm {
+  padding: 0 5px 0 0;
+}
+#pessoas .user-profile .panel .user-header .user-profile-data .user-detail .btn-sm .fa {
+  font-size: 22px;
+}
+#pessoas .user-profile .panel .user-header .user-graphs {
+  float: left;
+  width: 270px;
+  margin: 10px 0 0 10px;
+}
+#pessoas .user-profile .panel .user-header .user-graphs .people-chart {
+  float: right;
+  width: 130px;
+}
+#pessoas .user-profile .panel .user-header .user-graphs .people-chart .person-box {
+  background: transparent;
+  height: auto;
+  margin-top: 22px;
+}
+#pessoas .user-profile .panel .user-header .ribbon-container {
+  float: right;
+  width: 150px;
+}
+#pessoas .user-profile .panel .user-header .ribbon-container .ribbon {
+  right: -5px;
+  top: 5px;
+}
+#pessoas .user-profile .panel .user-header .actions {
+  padding: 65px 10px 0 0;
+  text-align: right;
+}
+#pessoas .user-profile .panel .user-header .actions .btn, #pessoas .user-profile .report-panel.panel .user-header .actions .panel-body .slide .carousel-indicators li, #pessoas .user-profile .report-panel.panel .panel-body .slide .carousel-indicators .user-header .actions li {
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+}
+#pessoas .user-profile .panel .accordion-trigger {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: calc(100% - 20px );
+}
+#pessoas .user-profile .panel .accordion-trigger:before {
+  content: "expandir";
+}
+#pessoas .user-profile .panel .accordion-trigger.open:before {
+  content: "esconder";
+}
+#pessoas .user-profile .panel .accordion-hidden {
+  padding: 15px;
+}
+#pessoas .user-profile .panel .accordion-hidden > .row:first-child {
+  margin-bottom: 10px;
+}
+#pessoas .user-profile .panel .accordion-hidden h2, #pessoas .user-profile .report-panel.panel .accordion-hidden .panel-body h4, #pessoas .user-profile .report-panel.panel .panel-body .accordion-hidden h4 {
+  margin: 10px 0;
+}
+#pessoas .user-profile .panel .accordion-hidden .quote-text {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+#pessoas #filter-panel #filter-form .row:last-child {
+  margin-top: 20px;
+}
+#pessoas #filter-panel #filter-form .filter-group.captacao .btn-group .btn, #pessoas #filter-panel #filter-form .filter-group.captacao .btn-group .report-panel.panel .panel-body .slide .carousel-indicators li, .report-panel.panel .panel-body .slide .carousel-indicators #pessoas #filter-panel #filter-form .filter-group.captacao .btn-group li {
+  width: 50%;
+}
+
 /* RELATÓRIOS */
 #report-header {
   padding: 10px;

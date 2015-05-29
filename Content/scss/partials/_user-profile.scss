@@ -197,4 +197,138 @@
 
 }
 
+/* PESSOAS */
+
+#pessoas {
+	.user-profile {
+		padding: 0 10px 30px;
+		position: relative;
+		margin-bottom: 20px;
+		.user-image {
+			float: left;
+			width: 120px;
+			height: 120px;
+			margin: 0;
+			border: none;
+			transform: none;
+			-moz-transform: none;
+			-webkit-transform: none;
+			-o-transform: none;
+		}
+		.panel {
+			padding: 0;
+			.user-header {
+				height: auto;
+				padding: 0;
+				.painel {
+					float: left;
+				}
+				.user-profile-data {
+					float: left;
+					width: 370px;
+					padding: 5px 0 0 10px;
+					.user-name {
+						font-size: 22px;
+						font-weight: 400;
+						display: block;
+						margin: 0 0 3px;
+						line-height: 1.1;
+						small {
+							font-size: 11px;
+							color: $default-text;
+						}
+					}
+					.user-detail {
+						margin-bottom: 5px;
+						font-size: 13px;
+						&:last-child {margin-bottom: 0;}
+						.btn-sm {
+							padding: 0 5px 0 0;
+							.fa {
+								font-size: 22px;
+							}
+						}
+					}
+				}
+				.user-graphs {
+					float: left;
+					width: 270px;
+					margin: 10px 0 0 10px;
+					.people-chart {
+						float: right;
+						width: 130px;
+						.person-box {
+							background: transparent;
+							height: auto;
+							margin-top: 22px;
+						}
+					}
+				}
+				.ribbon-container {
+					float: right;
+					width: 150px;
+					.ribbon {
+						right: -5px;
+						top: 5px;
+					}
+				}
+				.actions {
+					padding: 65px 10px 0 0;
+					text-align: right;
+					.btn {
+						height: 30px;
+						width: 30px;
+						padding: 2px;
+					}
+				}
+			}
+			.accordion-trigger {
+				position: absolute;
+				bottom: 0;
+				left: 10px;
+				width: calc( 100% - 20px );
+				&:before {
+					content: "expandir";
+				}
+				&.open:before {
+					content: "esconder";
+				}
+			}
+			.accordion-hidden {
+				padding: 15px;
+				& > .row:first-child {
+					margin-bottom: 10px;
+				}
+				h2 {
+					margin: 10px 0;
+				}
+				.quote-text {
+					font-size: 16px;
+					line-height: 1.4;
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+	#filter-panel {
+		#filter-form {
+			.row:last-child {
+				margin-top: 20px;
+			}
+			.filter-group {
+				&.captacao {
+					.btn-group .btn {
+						width: 50%;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
 

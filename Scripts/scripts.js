@@ -223,6 +223,10 @@ var jq = jQuery.noConflict();
 
 		return false;
 	});
+	jq('.ribbon-container .status-bar .dropdown-menu li a').click( function() {
+		var value = jq(this).text();
+		jq(this).parents('.status-bar').find('.dropdown-toggle small').text(value);
+	});
 	/*
 	jq('.status-btn').click( function() {
 		if ( !jq(this).hasClass('atendimento') ) {
