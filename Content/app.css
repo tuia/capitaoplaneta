@@ -5077,6 +5077,71 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   background-color: #4b5864;
 }
 
+/* INSTITUIÇÕES */
+.institution-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.institution-list .institution-item {
+  background: white;
+  padding: 10px;
+  height: auto;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+.institution-list .institution-item > img {
+  float: left;
+  margin-right: 10px;
+  width: 43px;
+  height: 43px;
+}
+.institution-list .institution-item .data {
+  float: left;
+  color: #666666;
+}
+.institution-list .institution-item .data small {
+  display: block;
+  color: #cccccc;
+}
+.institution-list .institution-item .options {
+  float: right;
+}
+.institution-list .institution-item .options .btn, .institution-list .institution-item .options .report-panel.panel .panel-body .slide .carousel-indicators li, .report-panel.panel .panel-body .slide .carousel-indicators .institution-list .institution-item .options li {
+  margin-left: 10px;
+}
+
+/* PLANOS */
+.plano {
+  border-bottom: 1px solid #cccccc;
+  padding: 20px 0 20px;
+}
+.plano:last-child {
+  border-bottom: none;
+}
+.plano:first-child {
+  margin-top: -20px;
+}
+.plano .plano-title {
+  margin: 0 0 20px;
+  font-size: 30px;
+}
+.plano .plano-subtitle {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.plano .call-to-action {
+  text-transform: uppercase;
+}
+.plano .call-to-action span {
+  color: #c0392b;
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .bootstrap-tagsinput {
   background-color: #fff;
   border: 1px solid #ccc;

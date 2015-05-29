@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Planeta Y - Ajuda</title>
+    <title>Planeta Y - Gerenciar Instituições</title>
 
     <!-- STYLES -->
     <link href="Content/bootstrap.min.css" rel="stylesheet">
@@ -37,6 +37,12 @@
     <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
     <!-- Versões antigas de iPhone, iPod Touch e Android 2.2+  -->
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!--/FAVICONS-->
+    <link rel="icon" href="Content/img/favicons/favicon-16.png" sizes="16x16">
+    <link rel="icon" href="Content/img/favicons/favicon-24.png" sizes="24x24">
+    <link rel="icon" href="Content/img/favicons/favicon-32.png" sizes="32x32">
+
   </head>
 
   <body>
@@ -107,7 +113,7 @@
               <li><a href="gerenciar-instituicoes.html">Gerenciar Instituições</a></li>
               <li><a href="#">Sair</a></li>
               <li class="divider"></li>
-              <li class="active"><a href="ajuda.html">Ajuda</a></li>
+              <li><a href="ajuda.html">Ajuda</a></li>
               <li><a href="http://www.planetay.com.br">Sobre o Planeta Y</a></li>
               <li><a href="reportar-problema.html">Reportar problema</a></li>
             </ul><!--/.dropdown-menu-->
@@ -136,10 +142,10 @@
           <!--/CONFIG NAVIGATION-->
           <ul id="config-nav" class="nav nav-pills nav-stacked">
             <li><a href="dados-cadastrais.html">dados cadastrais</a></li>
-            <li><a href="gerenciar-instituicoes.html">gerenciar instituições</a></li>
+            <li class="active"><a href="gerenciar-instituicoes.html">gerenciar instituições</a></li>
             <li><a href="planos.html">planos</a></li>
             <li class="divider"></li>
-            <li class="active"><a href="ajuda.html">ajuda</a></li>
+            <li><a href="ajuda.html">ajuda</a></li>
             <li><a href="sobre-o-py.html">sobre o Planeta Y</a></li>
             <li><a href="reportar-problema.html">reportar problema</a></li>
           </ul>
@@ -148,47 +154,65 @@
 
         <div class="col-xs-9">
           <div class="panel panel-default">
-            <div class="panel-heading"><h3 class="panel-title">Ajuda</h3></div>
+            <div class="panel-heading"><h3 class="panel-title">Gerenciar Instituições</h3></div>
             <div class="panel-body">
 
-              <!--/PERGUNTAS-->
-              <div>
-                <ol>
-                  <li><a href="#pergunta1">Pergunta1</a></li>
-                  <li><a href="#pergunta2">Pergunta2</a></li>
-                  <li><a href="#pergunta3">Pergunta3</a></li>
-                  <li><a href="#pergunta4">Pergunta4</a></li>
-                </ol>
-              </div>
+              <ul class="institution-list">
+                <li class="institution-item">
+                  <img src="Content/img/instituicao-02.png" width="43" height="43" />
+                  <span class="data">
+                    <span>Anhanguera</span>
+                    <small>adicionada em 23/05/13</small>
+                  </span>
+                  <span class="options">
+                    <a href="#" class="hastooltip btn btn-default btn-primary" title="editar"><i class="fa fa-pencil"></i></a>
+                    <a href="#" class="hastooltip btn btn-default btn-primary" title="remover"><i class="fa fa-trash"></i></a>
+                  </span>
+                </li>
+                <li class="institution-item">
+                  <img src="Content/img/instituicao-01.png" width="43" height="43" />
+                  <span class="data">
+                    <span>Anhanguera</span>
+                    <small>adicionada em 23/05/13</small>
+                  </span>
+                  <span class="options">
+                    <a href="#" class="hastooltip btn btn-default btn-primary" title="editar"><i class="fa fa-pencil"></i></a>
+                    <a href="#" class="hastooltip btn btn-default btn-primary" title="remover"><i class="fa fa-trash"></i></a>
+                  </span>
+                </li>
+                <li class="institution-item">
+                  <img src="Content/img/instituicao-02.png" width="43" height="43" />
+                  <span class="data">
+                    <span>Anhanguera</span>
+                    <small>adicionada em 23/05/13</small>
+                  </span>
+                  <span class="options">
+                    <a href="#" class="hastooltip btn btn-default btn-primary" title="editar"><i class="fa fa-pencil"></i></a>
+                    <a href="#" class="hastooltip btn btn-default btn-primary" title="remover"><i class="fa fa-trash"></i></a>
+                  </span>
+                </li>
+                <li class="institution-item">
+                  <img src="Content/img/instituicao-01.png" width="43" height="43" />
+                  <span class="data">
+                    <span>Anhanguera</span>
+                    <small>adicionada em 23/05/13</small>
+                  </span>
+                  <span class="options">
+                    <a href="#" class="hastooltip btn btn-default btn-primary" title="editar"><i class="fa fa-pencil"></i></a>
+                    <a href="#" class="hastooltip btn btn-default btn-primary" title="remover"><i class="fa fa-trash"></i></a>
+                  </span>
+                </li>
+              </ul><!--/.institution-list-->
 
-              <!--/RESPOSTAS-->
-              <div id="pergunta1">
-                <h4>Pergunta 1</h4>
-                <p>Vivamus at luctus orci. Etiam diam nunc, vehicula ut tempor quis, facilisis in nunc. Vestibulum blandit faucibus magna, et pretium nisi. Donec ac sem fermentum, commodo leo eget, mattis dolor. Donec a sem pharetra enim eleifend accumsan. </p>
-              </div><!--/#pergunta1-->
-              <div id="pergunta2">
-                <h4>Pergunta 2</h4>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non turpis elit. Donec congue massa lorem, sit amet gravida nisi tincidunt vitae. Fusce ut lorem pharetra, imperdiet enim et, consequat quam. Donec et turpis quam. In ultrices orci lacus, a lacinia nisl mattis condimentum. Quisque hendrerit mi id magna pulvinar dapibus. Morbi auctor vitae libero vel aliquet. Integer lacinia interdum mi.</p>
-              </div><!--/#pergunta2-->
-              <div id="pergunta3">
-                <h4>Pergunta 3</h4>
-                <p>Vivamus at luctus orci. Etiam diam nunc, vehicula ut tempor quis, facilisis in nunc. Vestibulum blandit faucibus magna, et pretium nisi. Donec ac sem fermentum, commodo leo eget, mattis dolor. Donec a sem pharetra enim eleifend accumsan. </p>
-              </div><!--/#pergunta3-->
-              <div id="pergunta4">
-                <h4>Pergunta 4</h4>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non turpis elit. Donec congue massa lorem, sit amet gravida nisi tincidunt vitae. Fusce ut lorem pharetra, imperdiet enim et, consequat quam. Donec et turpis quam. In ultrices orci lacus, a lacinia nisl mattis condimentum. Quisque hendrerit mi id magna pulvinar dapibus. Morbi auctor vitae libero vel aliquet. Integer lacinia interdum mi.</p>
-              </div><!--/#pergunta4-->
+              <div class="alert alert-danger">As alterações precisarão ser aprovadas antes de serem concluidas. Em um prazo de 48 horas você receberá uma notificação sobre a aprovação.</div>
 
 
-
-
-            </div><!--/panel-body-->
+            </div>
             <div class="panel-footer">
               <button type="button" class="btn btn-default">cancelar</button>
               <button type="button" class="btn btn-primary">salvar</button>
-            </div><!--/panel-footer-->
-          </div><!--/panel-->
-          
+            </div>
+          </div>
         </div><!--/col-->
       </div><!--/row-->
 

@@ -165,3 +165,73 @@
 			}
 		}
 	}
+
+
+	/* INSTITUIÇÕES */
+	.institution-list {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 30px;
+
+		.institution-item {
+			background: $light-box-bg;
+			padding: 10px;
+			height: auto;
+			overflow: auto;
+			margin-bottom: 20px;
+
+			&> img {
+				float: left;
+				margin-right: 10px;
+				width: 43px;
+				height: 43px;
+			}
+			.data {
+				float: left;
+				color: $default-text;
+				small {
+					display: block;
+					color: $lighter-text;
+				}
+			}
+			.options {
+				float: right;
+				.btn {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+
+
+	/* PLANOS */
+
+	.plano {
+		border-bottom: 1px solid $lighter-text;
+		padding: 20px 0 20px;
+		&:last-child {
+			border-bottom: none;
+		}
+		&:first-child {
+			margin-top: -20px;
+		}
+		.plano-title {
+			margin: 0 0 20px;
+			font-size: 30px;
+		}
+		.plano-subtitle {
+			font-size: 24px;
+			text-transform: uppercase;
+			margin: 0 0 10px;
+		}
+		.call-to-action {
+			text-transform: uppercase;
+			span {
+				color: $bad;
+				display: inline-block;
+				margin-right: 5px;
+				font-weight: bold;
+				font-size: 20px;
+			}
+		}
+	}
