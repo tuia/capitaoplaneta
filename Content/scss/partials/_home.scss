@@ -160,10 +160,10 @@
 		}
 		.carousel-inner {
 			.item.active .marquee-container .marquee-data{
-				-webkit-animation: marquee-animation 5s linear infinite; /* Safari 4+ */
-				-moz-animation:    marquee-animation 5s linear infinite; /* Fx 5+ */
-				-o-animation:      marquee-animation 5s linear infinite; /* Opera 12+ */
-				animation:         marquee-animation 5s linear infinite;
+				-webkit-animation: marquee-animation 5s linear; /* Safari 4+ */
+				-moz-animation:    marquee-animation 5s linear; /* Fx 5+ */
+				-o-animation:      marquee-animation 5s linear; /* Opera 12+ */
+				animation:         marquee-animation 5s linear;
 			}
 			.item {
 				padding: 10px 0;

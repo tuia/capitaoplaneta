@@ -438,7 +438,7 @@
       <div class="container">
 
         <!--/Carousel-->
-        <div id="ticker-carousel" class="carousel carousel-fade" data-ride="carousel">
+        <div id="ticker-carousel" class="carousel vertical" data-ride="carousel">
 
           <div class="good-bg institution-feeling"><span class="feeling-icon good inverse"></span></div>
 
@@ -450,8 +450,11 @@
                 23s
               </div>
               <div class="marquee-container">
-                <p class="marquee-data">Final de semestre = passar raiva com professor que passa nota errada no diário. E olha que eu nem faltei esse semestre! Raiva! #desapontado!</p>
-              </div><!--/.marquee-container-->
+                <p class="marquee-data" data-animation="animated bounceInUp">
+                  <span>Final de semestre = passar raiva com professor que passa nota errada no diário. E olha que eu nem faltei esse semestre! Raiva! #desapontado!</span>
+                  <span>Final de semestre = passar raiva com professor que passa nota errada no diário. E olha que eu nem faltei esse semestre! Raiva! #desapontado!</span>
+                </p>
+              </div>
             </div>
             <div class="item">
               <div class="carousel-caption">
@@ -459,8 +462,11 @@
                 23s
               </div>
               <div class="marquee-container">
-                <p class="marquee-data">Aluno sofre preconceito em sala de aula. Professor é chamado para depor na PF.</p>
-              </div><!--/.marquee-container-->
+                <p class="marquee-data" data-animation="animated bounceInUp">
+                  <span>Aluno sofre preconceito em sala de aula. Professor é chamado para depor na PF.</span>
+                  <span>Aluno sofre preconceito em sala de aula. Professor é chamado para depor na PF.</span>
+                </p>
+              </div>
             </div>
           </div><!--/carousel-inner-->
 
@@ -469,10 +475,10 @@
           </div>
 
           <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <a class="left carousel-control" href="#ticker-carousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
           </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <a class="right carousel-control" href="#ticker-carousel" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
           </a>
         </div>
@@ -488,9 +494,48 @@
     <script src="Scripts/scripts.js"></script>
     <script src="Scripts/home-charts.js"></script>
     <script type="text/javascript">
-      jq('#ticker-carousel').carousel({
-        interval: 5000
-      });
+    /* Demo Scripts for Bootstrap Carousel and Animate.css article
+    * on SitePoint by Maria Antonietta Perna
+    */
+    (function( jq ) {
+
+        //Function to animate slider captions 
+        function doAnimations( elems ) {
+            //Cache the animationend event in a variable
+            var animEndEv = 'webkitAnimationEnd animationend';
+            
+            elems.each(function () {
+                var jqthis = jq(this),
+                    jqanimationType = jqthis.data('animation');
+                jqthis.addClass(jqanimationType).one(animEndEv, function () {
+                    jqthis.removeClass(jqanimationType);
+                });
+            });
+        }
+        
+        //Variables on page load 
+        var jqmyCarousel = jq('#ticker-carousel'),
+            jqfirstAnimatingElems = jqmyCarousel.find('.item:first').find("[data-animation ^= 'animated']");
+            
+        //Initialize carousel 
+        jqmyCarousel.carousel({
+          interval: 10001,
+        });
+        
+        //Animate captions in first slide on page load 
+        doAnimations(jqfirstAnimatingElems);
+        
+        //Pause carousel  
+        jqmyCarousel.carousel('pause');
+        
+        
+        //Other slides to be animated on carousel slide event 
+        jqmyCarousel.on('slide.bs.carousel', function (e) {
+            var jqanimatingElems = jq(e.relatedTarget).find("[data-animation ^= 'animated']");
+            doAnimations(jqanimatingElems);
+        });  
+        
+    })(jQuery);
     </script>
 
   </body>

@@ -70,75 +70,47 @@ ANIMATIONS
   }
 }
 /* example: animation: anim-rotate 2s infinite linear; */
-/* MARQUEE */
-@-webkit-keyframes marquee-animation {
+
+
+/* BOUNCE IN OUT */
+
+@-webkit-keyframes bounceInUp {
+
   0% {
-    left: 0;
-  }
-
-  20% {
-    left: 0;
-  }
-
-  80% {
-    left: -50%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   100% {
-    left: -50%;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
   }
 }
-@-moz-keyframes marquee-animation {
+
+@keyframes bounceInUp {
+
   0% {
-    left: 0;
-  }
-
-  20% {
-    left: 0;
-  }
-
-  80% {
-    left: -50%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   100% {
-    left: -50%;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
   }
 }
-@-o-keyframes marquee-animation {
-  0% {
-    left: 0;
-  }
 
-  20% {
-    left: 0;
-  }
-
-  80% {
-    left: -50%;
-  }
-
-  100% {
-    left: -50%;
-  }
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
 }
-@keyframes marquee-animation {
-  0% {
-    left: 0;
-  }
-
-  20% {
-    left: 0;
-  }
-
-  80% {
-    left: -50%;
-  }
-
-  100% {
-    left: -50%;
-  }
+.animated {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
 }
+
 /*
 ** DEFAULT
 ** Onde você coloca todas as suas variaveis
@@ -2318,15 +2290,6 @@ used in citacoes and perfil-do-usuario */
 #ticker .carousel .close .close-ticker-btn {
   color: white;
 }
-#ticker .carousel .carousel-inner .item.active .marquee-container .marquee-data {
-  -webkit-animation: marquee-animation 5s linear infinite;
-  /* Safari 4+ */
-  -moz-animation: marquee-animation 5s linear infinite;
-  /* Fx 5+ */
-  -o-animation: marquee-animation 5s linear infinite;
-  /* Opera 12+ */
-  animation: marquee-animation 5s linear infinite;
-}
 #ticker .carousel .carousel-inner .item {
   padding: 10px 0;
 }
@@ -2356,6 +2319,12 @@ used in citacoes and perfil-do-usuario */
   left: 0;
   white-space: nowrap;
 }
+#ticker .carousel .carousel-inner .marquee-container .marquee-data span{
+  display: inline-block;
+}
+#ticker .carousel .carousel-inner .marquee-container .marquee-data span:last-child{
+  margin-left: 50px;
+}
 #ticker .carousel .carousel-inner .carousel-caption {
   text-align: left;
   padding: 0;
@@ -2364,33 +2333,6 @@ used in citacoes and perfil-do-usuario */
   display: inline;
 }
 
-.carousel-fade .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-}
-
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
 
 /* RADIO PANEL */
 .radio-panel-container .radio-panel .radio-box .radio-btn {
