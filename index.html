@@ -179,6 +179,13 @@
     <!--/CONTEÚDO DA PÁGINA-->
     <div class="container user-profile">
 
+
+      <!--/FEEDBACK-->
+      <div class="alert alert-success alert-dismissible center-box" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">fechar</span></button>
+        O ticker foi escondido. Você pode voltar a exibí-lo selecionando-o na página <a href="alertas.html">alertas</a>.
+      </div>
+
       <div class="btn-toolbar" role="toolbar">
         <div class="btn-group" data-toggle="buttons">
           <label class="btn btn-default active">
@@ -468,6 +475,18 @@
                 </p>
               </div>
             </div>
+            <div class="item">
+              <div class="carousel-caption">
+                <a href="user-profile.html"><i class="fa fa-twitter-square"></i> @amandasantos</a>
+                23s
+              </div>
+              <div class="marquee-container">
+                <p class="marquee-data" data-animation="animated bounceInUp">
+                  <span>A nova cantina da universidade está demais! Barata, gostosa e cheia de opções.</span>
+                  <span>A nova cantina da universidade está demais! Barata, gostosa e cheia de opções.</span>
+                </p>
+              </div>
+            </div>
           </div><!--/carousel-inner-->
 
           <div class="close">
@@ -493,55 +512,5 @@
     <script src="Scripts/highcharts.js"></script>
     <script src="Scripts/scripts.js"></script>
     <script src="Scripts/home-charts.js"></script>
-    <script type="text/javascript">
-    /* Demo Scripts for Bootstrap Carousel and Animate.css article
-    * on SitePoint by Maria Antonietta Perna
-    */
-    (function( jq ) {
-
-        //Function to animate slider captions 
-        function doAnimations( elems ) {
-            //Cache the animationend event in a variable
-            var animEndEv = 'webkitAnimationEnd animationend';
-            
-            elems.each(function () {
-                var jqthis = jq(this),
-                    jqanimationType = jqthis.data('animation');
-                jqthis.addClass(jqanimationType).one(animEndEv, function () {
-                    jqthis.removeClass(jqanimationType);
-                });
-            });
-        }
-        
-        //Variables on page load 
-        var jqmyCarousel = jq('#ticker-carousel'),
-            jqfirstAnimatingElems = jqmyCarousel.find('.item:first').find("[data-animation ^= 'animated']");
-            
-        //Initialize carousel 
-        jqmyCarousel.carousel({
-          interval: 10001,
-        });
-        
-        //Animate captions in first slide on page load 
-        doAnimations(jqfirstAnimatingElems);
-        
-        //Pause carousel  
-        jqmyCarousel.carousel('pause');
-        
-        
-        //Other slides to be animated on carousel slide event 
-        jqmyCarousel.on('slide.bs.carousel', function (e) {
-            var jqanimatingElems = jq(e.relatedTarget).find("[data-animation ^= 'animated']");
-            doAnimations(jqanimatingElems);
-        });  
-        
-    })(jQuery);
-
-
-
-
-
-    </script>
-
   </body>
 </html>

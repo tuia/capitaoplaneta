@@ -404,3 +404,53 @@ jq(function() {
 		});
 
 
+	//TICKER
+	/* Demo Scripts for Bootstrap Carousel and Animate.css article
+    * on SitePoint by Maria Antonietta Perna
+    */
+    (function( jq ) {
+
+        //Function to animate slider captions 
+        function doAnimations( elems ) {
+            //Cache the animationend event in a variable
+            var animEndEv = 'webkitAnimationEnd animationend';
+            
+            elems.each(function () {
+                var jqthis = jq(this),
+                    jqanimationType = jqthis.data('animation');
+                jqthis.addClass(jqanimationType).one(animEndEv, function () {
+                    jqthis.removeClass(jqanimationType);
+                });
+            });
+        }
+        
+        //Variables on page load 
+        var jqmyCarousel = jq('#ticker-carousel'),
+            jqfirstAnimatingElems = jqmyCarousel.find('.item:first').find("[data-animation ^= 'animated']");
+            
+        //Initialize carousel 
+        jqmyCarousel.carousel({
+          interval: 10001,
+        });
+        
+        //Animate captions in first slide on page load 
+        doAnimations(jqfirstAnimatingElems);
+        
+        //Pause carousel  
+        jqmyCarousel.carousel('pause');
+        
+        
+        //Other slides to be animated on carousel slide event 
+        jqmyCarousel.on('slide.bs.carousel', function (e) {
+            var jqanimatingElems = jq(e.relatedTarget).find("[data-animation ^= 'animated']");
+            doAnimations(jqanimatingElems);
+        });  
+        
+    })(jQuery);
+
+    jq('#ticker-carousel .close').click( function() {
+    	jq(this).parents('#ticker').fadeOut();
+    	return false
+    });
+
+
