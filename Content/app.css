@@ -2175,11 +2175,13 @@ used in citacoes and perfil-do-usuario */
 #home .carousel {
   text-align: center;
 }
+#home .carousel .item {
+  padding: 5px;
+}
 #home .carousel .item .carousel-caption {
   color: #999999;
   display: block;
   position: static;
-  padding: 0 0 20px;
   font-size: 12px;
   text-shadow: none;
 }
@@ -2240,15 +2242,17 @@ used in citacoes and perfil-do-usuario */
   background-color: #566573;
   height: 80px;
   width: 100%;
+  padding: 10px 0;
 }
 #ticker .carousel {
   padding: 0 30px;
 }
 #ticker .carousel .institution-feeling {
-  width: 53px;
-  height: 53px;
-  padding: 15px 0;
+  width: 60px;
+  height: 60px;
+  padding: 18px 0;
   float: left;
+  margin: 0;
 }
 #ticker .carousel .carousel-control {
   left: 0;
@@ -2261,19 +2265,17 @@ used in citacoes and perfil-do-usuario */
   bottom: auto;
 }
 #ticker .carousel .carousel-control.right {
-  bottom: 0;
+  bottom: -5px;
   top: auto;
 }
 #ticker .carousel .close {
   position: absolute;
   top: 50%;
   right: 0;
+  margin: -10px 0;
 }
 #ticker .carousel .close .close-ticker-btn {
   color: white;
-}
-#ticker .carousel .carousel-inner .item {
-  padding: 10px 0;
 }
 #ticker .carousel .carousel-inner .marquee-container {
   position: relative;
@@ -2281,6 +2283,7 @@ used in citacoes and perfil-do-usuario */
   width: 840px;
   height: 30px;
   text-align: left;
+  margin-top: 3px;
 }
 #ticker .carousel .carousel-inner .marquee-container:after {
   width: 100%;

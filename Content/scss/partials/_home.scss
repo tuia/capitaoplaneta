@@ -60,11 +60,11 @@
 	.carousel {
 		text-align: center;
 		.item {
+			padding: 5px;
 			.carousel-caption {
 				color: $light-text;
 				display: block;
 				position: static;
-				padding: 0 0 20px;
 				font-size: 12px;
 				text-shadow: none;
 				a {
@@ -129,14 +129,16 @@
 	background-color: $notification-background;
 	height: 80px;
 	width: 100%;
+	padding: 10px 0;
 
 	.carousel {
 		padding: 0 30px;
 		.institution-feeling {
-			width: 53px;
-			height: 53px;
-			padding: 15px 0;
+			width: 60px;
+			height: 60px;
+			padding: 18px 0;
 			float: left;
+			margin: 0;
 		}
 		.carousel-control {
 			left: 0;
@@ -148,7 +150,7 @@
 				bottom: auto;
 			}
 			&.right {
-				bottom: 0;
+				bottom: -5px;
 				top: auto;
 			}
 		}
@@ -156,18 +158,17 @@
 			position: absolute;
 			top: 50%;
 			right: 0;
+			margin: -10px 0;
 			.close-ticker-btn {color: $light-box-bg;}
 		}
 		.carousel-inner {
-			.item {
-				padding: 10px 0;
-			}
 			.marquee-container {
 				position: relative;
 				overflow: hidden;
 				width: 840px;
 				height: 30px;
 				text-align: left;
+				margin-top: 3px;
 
 				&:after {
 					width:100%;
