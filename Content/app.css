@@ -70,12 +70,8 @@ ANIMATIONS
   }
 }
 /* example: animation: anim-rotate 2s infinite linear; */
-
-
 /* BOUNCE IN OUT */
-
 @-webkit-keyframes bounceInUp {
-
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -86,9 +82,7 @@ ANIMATIONS
     transform: translate3d(-50%, 0, 0);
   }
 }
-
 @keyframes bounceInUp {
-
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -99,18 +93,6 @@ ANIMATIONS
     transform: translate3d(-50%, 0, 0);
   }
 }
-
-.bounceInUp {
-  -webkit-animation-name: bounceInUp;
-  animation-name: bounceInUp;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-}
-.animated {
-  -webkit-animation-duration: 10s;
-  animation-duration: 10s;
-}
-
 /*
 ** DEFAULT
 ** Onde você coloca todas as suas variaveis
@@ -2319,11 +2301,11 @@ used in citacoes and perfil-do-usuario */
   left: 0;
   white-space: nowrap;
 }
-#ticker .carousel .carousel-inner .marquee-container .marquee-data span{
+#ticker .carousel .carousel-inner .marquee-container .marquee-data span {
   display: inline-block;
 }
-#ticker .carousel .carousel-inner .marquee-container .marquee-data span:last-child{
-  margin-left: 50px;
+#ticker .carousel .carousel-inner .marquee-container .marquee-data span:last-child {
+  margin-left: 25px;
 }
 #ticker .carousel .carousel-inner .carousel-caption {
   text-align: left;
@@ -2333,6 +2315,33 @@ used in citacoes and perfil-do-usuario */
   display: inline;
 }
 
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
 
 /* RADIO PANEL */
 .radio-panel-container .radio-panel .radio-box .radio-btn {
@@ -2379,6 +2388,58 @@ used in citacoes and perfil-do-usuario */
 }
 
 /*radio-panel-container*/
+/* marquee */
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.animated {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+}
+
+#ticker-carousel .carousel-inner {
+  height: 100%;
+}
+#ticker-carousel .carousel-inner .item {
+  background: #566573;
+  -webkit-transition: 0.6s ease-in-out top;
+  -moz-transition: 0.6s ease-in-out top;
+  -ms-transition: 0.6s ease-in-out top;
+  -o-transition: 0.6s ease-in-out top;
+  transition: 0.6s ease-in-out top;
+  left: 0;
+}
+#ticker-carousel .carousel-inner .item:hover .animated {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+#ticker-carousel .carousel-inner .item.active {
+  top: 0;
+}
+#ticker-carousel .carousel-inner .item.active.left {
+  top: -400px;
+}
+#ticker-carousel .carousel-inner .item.active.right {
+  top: 400pc;
+}
+#ticker-carousel .carousel-inner .item.next.left, #ticker-carousel .carousel-inner .item.prev.right {
+  top: 0;
+}
+#ticker-carousel .carousel-inner .prev {
+  top: -400px;
+}
+#ticker-carousel .carousel-inner .next {
+  top: 400px;
+}
+
 /* PAINEL DE FILTRO */
 #filter-panel {
   position: fixed;

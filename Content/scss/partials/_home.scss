@@ -159,12 +159,6 @@
 			.close-ticker-btn {color: $light-box-bg;}
 		}
 		.carousel-inner {
-			.item.active .marquee-container .marquee-data{
-				-webkit-animation: marquee-animation 5s linear; /* Safari 4+ */
-				-moz-animation:    marquee-animation 5s linear; /* Fx 5+ */
-				-o-animation:      marquee-animation 5s linear; /* Opera 12+ */
-				animation:         marquee-animation 5s linear;
-			}
 			.item {
 				padding: 10px 0;
 			}
@@ -194,6 +188,12 @@
 					position: relative;
 					left: 0;
 					white-space: nowrap;
+					span {
+						display: inline-block;
+						&:last-child {
+							margin-left: 25px;
+						}
+					}
 				}
 			}
 			.carousel-caption {
@@ -276,6 +276,63 @@
 	}
 
 }/*radio-panel-container*/
+
+
+/* marquee */
+.bounceInUp {
+	-webkit-animation-name: bounceInUp;
+	animation-name: bounceInUp;
+
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+.animated {
+	-webkit-animation-duration: 10s;
+	animation-duration: 10s;
+}
+
+#ticker-carousel {
+	.carousel-inner {
+		height: 100%;
+		.item {
+			background: $notification-background;
+			-webkit-transition: 0.6s ease-in-out top;
+			-moz-transition: 0.6s ease-in-out top;
+			-ms-transition: 0.6s ease-in-out top;
+			-o-transition: 0.6s ease-in-out top;
+			transition: 0.6s ease-in-out top;
+			left: 0;
+
+			&:hover .animated {
+				-webkit-animation-play-state: paused;
+				-moz-animation-play-state: paused;
+				-o-animation-play-state: paused;
+				animation-play-state: paused;
+			}
+		&.active {
+			top: 0;
+			&.left {
+				top: -400px;
+			}
+			&.right {
+				top: 400pc;
+			}
+		}
+		&.next.left, &.prev.right {
+			top: 0
+			}
+		}
+		.prev {
+			top: -400px;
+		}
+		.next {
+			top: 400px;
+		}
+	}
+}
 
 
 

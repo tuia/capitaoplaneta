@@ -259,28 +259,31 @@ ANIMATIONS
   }
 } /* example: animation: anim-rotate 2s infinite linear; */
 
-/* MARQUEE */
-@-webkit-keyframes marquee-animation {
-  0% { left: 0; }
-  20% {left: 0}
-  80% { left: -50%; }
-  100% { left: -50%; }
+
+/* BOUNCE IN OUT */
+
+@-webkit-keyframes bounceInUp {
+
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
 }
-@-moz-keyframes marquee-animation {
-  0% { left: 0; }
-  20% {left: 0}
-  80% { left: -50%; }
-  100% { left: -50%; }
-}
-@-o-keyframes marquee-animation {
-  0% { left: 0; }
-  20% {left: 0}
-  80% { left: -50%; }
-  100% { left: -50%; }
-}
-@keyframes marquee-animation {
-  0% { left: 0; }
-  20% {left: 0}
-  80% { left: -50%; }
-  100% { left: -50%; }
+
+@keyframes bounceInUp {
+
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
 }
