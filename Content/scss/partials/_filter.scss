@@ -180,7 +180,9 @@
         .btn {
           width: 50%;
           text-align: center;
-          padding: 6px 5px;}
+          padding: 6px 5px;
+          min-height: 30px;
+        }
       }
       &.crm {
         .btn {

@@ -1315,10 +1315,6 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .tags-menu .dropdown-toggle i, #filter-panel .tags-menu .dropdown-toggle i {
   margin: 4px 5px;
 }
-.tags-menu .dropdown-toggle .caret, #filter-panel .tags-menu .dropdown-toggle .caret {
-  float: right;
-  margin-top: -1em;
-}
 .tags-menu .dropdown-menu, #filter-panel .tags-menu .dropdown-menu {
   width: 190px;
 }

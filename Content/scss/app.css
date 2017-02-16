@@ -1109,10 +1109,6 @@ a:hover .feeling-icon, a:hover .mec-icon, a .feeling-icon:hover, a .mec-icon:hov
 .tags-menu .dropdown-toggle i {
   margin: 4px 5px;
 }
-.tags-menu .dropdown-toggle .caret {
-  float: right;
-  margin-top: -1em;
-}
 .tags-menu .dropdown-menu {
   width: 190px;
 }
@@ -2008,6 +2004,7 @@ used in citacoes and perfil-do-usuario */
   width: 50%;
   text-align: center;
   padding: 6px 5px;
+  min-height: 30px;
 }
 #filter-panel .filter-content .filter-group.crm .btn, #filter-panel .filter-content .filter-group.crm .report-panel .panel-body .slide .carousel-indicators li, .report-panel .panel-body .slide .carousel-indicators #filter-panel .filter-content .filter-group.crm li {
   white-space: normal;

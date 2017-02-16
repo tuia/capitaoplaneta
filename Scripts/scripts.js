@@ -34,7 +34,7 @@ var jq = jQuery.noConflict();
 				height = jq(this).parents('.affix-bar').outerHeight();
 
 	        jq('html,body').animate({
-	          scrollTop: target.offset().top - height
+	          scrollTop: target.offset() - height
 	        }, 1000);
 
 	        return false
