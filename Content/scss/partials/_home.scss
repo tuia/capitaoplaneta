@@ -162,6 +162,7 @@
 			.close-ticker-btn {color: $light-box-bg;}
 		}
 		.carousel-inner {
+	    width: calc(100% - 60px);
 			.marquee-container {
 				position: relative;
 				overflow: hidden;

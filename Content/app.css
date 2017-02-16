@@ -2277,6 +2277,9 @@ used in citacoes and perfil-do-usuario */
 #ticker .carousel .close .close-ticker-btn {
   color: white;
 }
+#ticker .carousel .carousel-inner  {
+  width: calc(100% - 60px);
+}
 #ticker .carousel .carousel-inner .marquee-container {
   position: relative;
   overflow: hidden;
